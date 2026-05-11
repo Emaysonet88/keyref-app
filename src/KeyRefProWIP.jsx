@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from 'react-router-dom';
 
 // Hardcoded make list for 2025 Auto Truck Key Blank Reference Guide
 const MAKES = [
@@ -373,15 +374,10 @@ export default function KeyRefPro() {
             <div style={S.logo}>KEY<span style={S.logoSpan}>REF</span> PRO</div>
             <div style={S.logoSub}>AUTOMOTIVE KEY DATABASE · 2025 REFERENCE</div>
           </div>
-        </header>
-
-        {/* DATA SET ATTRIBUTION */}
-        <div style={S.panel}>
-          <div style={S.panelLabel}><span style={S.labelBar}/>Data Set</div>
-          <div style={{fontFamily: 'monospace', fontSize: 13, color: '#e8e8e8', lineHeight: 1.6}}>
-            2025 Auto Truck Key Blank Reference Guide
+          <div style={{marginLeft: 'auto'}}>
+            <Link to="/settings" style={{color: '#f5a623', textDecoration: 'none', fontSize: '14px', fontFamily: 'monospace'}}>⚙ Settings</Link>
           </div>
-        </div>
+        </header>
 
         {/* FORM */}
         <div style={S.panel}>
@@ -488,14 +484,6 @@ export default function KeyRefPro() {
             </div>
           </div>
         )}
-
-        {/* SETTINGS */}
-        <div style={S.panel}>
-          <div style={S.panelLabel}><span style={S.labelBar}/>Settings</div>
-          <div style={{fontFamily: 'monospace', fontSize: 11, color: '#787878', lineHeight: 1.8}}>
-            <div style={{marginBottom: 12}}>Sourced from 2025 Auto Truck Key Blank Reference Guide</div>
-          </div>
-        </div>
 
         {/* SAVED */}
         <div style={S.panel}>
