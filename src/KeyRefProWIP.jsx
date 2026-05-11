@@ -226,6 +226,7 @@ export default function KeyRefPro() {
       setModels([]); 
       setModel(''); 
       setCurrentMakeData(null);
+      setError('');
       return; 
     }
     
@@ -233,27 +234,40 @@ export default function KeyRefPro() {
     setModel('');
     setModels([]);
     setCurrentMakeData(null);
+    setError('');
     
     (async () => {
       try {
         // Lazy load JSON from public folder for selected make
-        const response = await fetch(`/data/inventory/${make.toLowerCase()}.json`);
-        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const url = `/data/inventory/${make.toLowerCase()}.json`;
+        console.log('Fetching:', url);
+        
+        const response = await fetch(url);
+        console.log('Response status:', response.status, response.ok);
+        
+        if (!response.ok) throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+        
         const makeData = await response.json();
+        console.log('Loaded data for make:', make, makeData);
+        
         setCurrentMakeData(makeData);
         
         if (makeData && typeof makeData === 'object' && makeData[make]) {
           const modelList = Object.keys(makeData[make]).sort();
+          console.log('Models found:', modelList);
           setModels(modelList);
         } else if (makeData && typeof makeData === 'object') {
-          // Handle alternate structure where make is top-level key
+          // Handle alternate structure
           const modelList = Object.keys(makeData).sort();
+          console.log('Models (alt structure):', modelList);
           setModels(modelList);
+        } else {
+          throw new Error('Unexpected data structure');
         }
       } catch (e) {
         console.error(`Failed to load data for make: ${make}`, e);
         setModels([]);
-        setError(`Data unavailable for ${make}`);
+        setError(`Data unavailable for ${make}: ${e.message}`);
       } finally {
         setModelsLoading(false);
       }
