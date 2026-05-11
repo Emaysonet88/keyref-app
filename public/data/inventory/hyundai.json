@@ -1,0 +1,10 @@
+{
+  "Hyundai": {
+    "Elantra": [
+      { "yearStart": 2011, "yearEnd": 2025, "keyBlanks": ["HY24"], "keyType": "Laser Cut", "transponderChip": "ID46", "programmingRequired": true, "programmingMethod": "Smart Pro/TCP", "notes": "Hyundai laser cut key" }
+    ],
+    "Sonata": [
+      { "yearStart": 2011, "yearEnd": 2025, "keyBlanks": ["HY24"], "keyType": "Laser Cut", "transponderChip": "ID46", "programmingRequired": true, "programmingMethod": "Smart Pro/TCP", "notes": "Hyundai laser cut key" }
+    ]
+  }
+}

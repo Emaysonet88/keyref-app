@@ -1,0 +1,24 @@
+{
+  "2004": [
+    {
+      "yearStart": 2013,
+      "yearEnd": 2013,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "10100-12283",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "2004-2013": [
+    {
+      "yearStart": 0,
+      "yearEnd": 0,
+      "keyBlanks": [],
+      "transponderChip": "",
+      "cloningDetails": "EB3-J-MAZ24",
+      "onBoardProgramming": ""
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "1996": [
+    {
+      "yearStart": 2002,
+      "yearEnd": 2002,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "CH680-CH1175",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "ALL": [
+    {
+      "yearStart": 0,
+      "yearEnd": 0,
+      "keyBlanks": [
+        "All H6"
+      ],
+      "transponderChip": "01-H1100",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "1983": [
+    {
+      "yearStart": 1988,
+      "yearEnd": 1988,
+      "keyBlanks": [
+        "Doors"
+      ],
+      "transponderChip": "1501-2000",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "1989": [
+    {
+      "yearStart": 1990,
+      "yearEnd": 1990,
+      "keyBlanks": [
+        "Door"
+      ],
+      "transponderChip": "A4AA-A4JZ",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "1981": [
+    {
+      "yearStart": 1981,
+      "yearEnd": 1981,
+      "keyBlanks": [
+        "Door/ Trunk"
+      ],
+      "transponderChip": "FS, FK",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    },
+    {
+      "yearStart": 2004,
+      "yearEnd": 2004,
+      "keyBlanks": [
+        "Door"
+      ],
+      "transponderChip": "L1-L1000",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "1973": [
+    {
+      "yearStart": 1980,
+      "yearEnd": 1980,
+      "keyBlanks": [
+        "Ignition"
+      ],
+      "transponderChip": "D225-D814",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "2001": [
+    {
+      "yearStart": 2007,
+      "yearEnd": 2007,
+      "keyBlanks": [],
+      "transponderChip": "",
+      "cloningDetails": "All",
+      "onBoardProgramming": ""
+    }
+  ]
+}

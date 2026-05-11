@@ -1,0 +1,22 @@
+{
+  "2014": [
+    {
+      "yearStart": 2014,
+      "yearEnd": 2014,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "K1-K2500",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    },
+    {
+      "yearStart": 1980,
+      "yearEnd": 1980,
+      "keyBlanks": [],
+      "transponderChip": "",
+      "cloningDetails": "EB3-G-TOY40",
+      "onBoardProgramming": ""
+    }
+  ]
+}

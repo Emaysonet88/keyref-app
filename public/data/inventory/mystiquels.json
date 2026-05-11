@@ -1,0 +1,36 @@
+{
+  "1998": [
+    {
+      "yearStart": 2000,
+      "yearEnd": 2000,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "A-B-C-D-E",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "1997": [
+    {
+      "yearStart": 1998,
+      "yearEnd": 1998,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "A-B-C-D-E",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "1997-2000": [
+    {
+      "yearStart": 0,
+      "yearEnd": 0,
+      "keyBlanks": [],
+      "transponderChip": "",
+      "cloningDetails": "EB3-C-H73",
+      "onBoardProgramming": ""
+    }
+  ]
+}

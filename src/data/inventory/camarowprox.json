@@ -1,0 +1,26 @@
+{
+  "2021 2": [
+    {
+      "yearStart": 2025,
+      "yearEnd": 2025,
+      "keyBlanks": [
+        "Z0001-Z6000"
+      ],
+      "transponderChip": "OEM# 13522890/13522885 522891/13522886",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "2016 2": [
+    {
+      "yearStart": 2020,
+      "yearEnd": 2020,
+      "keyBlanks": [
+        "V0001-V5718"
+      ],
+      "transponderChip": "OEM# 13584504 / 1352966 13522891 (LAL)",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ]
+}

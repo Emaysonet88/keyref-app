@@ -1,0 +1,34 @@
+{
+  "2008": [
+    {
+      "yearStart": 2020,
+      "yearEnd": 2020,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "M1-M2618",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "2008-2020": [
+    {
+      "yearStart": 0,
+      "yearEnd": 0,
+      "keyBlanks": [],
+      "transponderChip": "",
+      "cloningDetails": "EB3-T-Y170",
+      "onBoardProgramming": ""
+    }
+  ],
+  "2001-2003": [
+    {
+      "yearStart": 0,
+      "yearEnd": 0,
+      "keyBlanks": [],
+      "transponderChip": "",
+      "cloningDetails": "EB3-A-Y160",
+      "onBoardProgramming": ""
+    }
+  ]
+}

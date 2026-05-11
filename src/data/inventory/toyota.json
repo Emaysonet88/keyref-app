@@ -1,0 +1,13 @@
+{
+  "Toyota": {
+    "Camry": [
+      { "yearStart": 2012, "yearEnd": 2025, "keyBlanks": ["TOY143"], "keyType": "Smart Key", "transponderChip": null, "programmingRequired": false, "programmingMethod": "Smart Pro", "notes": "Toyota laser cut key" }
+    ],
+    "Corolla": [
+      { "yearStart": 2014, "yearEnd": 2025, "keyBlanks": ["TOY143"], "keyType": "Smart Key", "transponderChip": null, "programmingRequired": false, "programmingMethod": "Smart Pro", "notes": "Toyota laser cut key" }
+    ],
+    "RAV4": [
+      { "yearStart": 2013, "yearEnd": 2025, "keyBlanks": ["TOY143"], "keyType": "Smart Key", "transponderChip": null, "programmingRequired": false, "programmingMethod": "Smart Pro", "notes": "Toyota laser cut key" }
+    ]
+  }
+}

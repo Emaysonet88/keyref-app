@@ -1,0 +1,14 @@
+{
+  "2021": [
+    {
+      "yearStart": 2025,
+      "yearEnd": 2025,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "D1-D3000",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ]
+}

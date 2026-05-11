@@ -1,0 +1,7 @@
+{
+  "Subaru": {
+    "Legacy": [
+      { "yearStart": 2015, "yearEnd": 2025, "keyBlanks": ["DAT24"], "keyType": "Laser Cut", "transponderChip": "ID46", "programmingRequired": true, "programmingMethod": "Smart Pro/TCP", "notes": "Subaru laser cut key" }
+    ]
+  }
+}

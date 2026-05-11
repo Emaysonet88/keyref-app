@@ -1,0 +1,13 @@
+{
+  "Nissan": {
+    "Altima": [
+      { "yearStart": 2013, "yearEnd": 2025, "keyBlanks": ["NS-DAM"], "keyType": "Smart Key", "transponderChip": null, "programmingRequired": false, "programmingMethod": "Nissan Consult", "notes": "Nissan smart key" }
+    ],
+    "Maxima": [
+      { "yearStart": 2009, "yearEnd": 2025, "keyBlanks": ["NS-DAM"], "keyType": "Smart Key", "transponderChip": null, "programmingRequired": false, "programmingMethod": "Nissan Consult", "notes": "Nissan smart key" }
+    ],
+    "Rogue": [
+      { "yearStart": 2014, "yearEnd": 2025, "keyBlanks": ["NS-DAM"], "keyType": "Smart Key", "transponderChip": null, "programmingRequired": false, "programmingMethod": "Nissan Consult", "notes": "Nissan smart key" }
+    ]
+  }
+}

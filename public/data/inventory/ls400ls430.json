@@ -1,0 +1,44 @@
+{
+  "2001": [
+    {
+      "yearStart": 2006,
+      "yearEnd": 2006,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "40000-49999",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "1997": [
+    {
+      "yearStart": 1997,
+      "yearEnd": 1997,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "O0001-O5000",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    },
+    {
+      "yearStart": 0,
+      "yearEnd": 0,
+      "keyBlanks": [],
+      "transponderChip": "",
+      "cloningDetails": "EB3-G-TOY40",
+      "onBoardProgramming": ""
+    }
+  ],
+  "2001-2006": [
+    {
+      "yearStart": 0,
+      "yearEnd": 0,
+      "keyBlanks": [],
+      "transponderChip": "",
+      "cloningDetails": "EB3-F-TOY48",
+      "onBoardProgramming": ""
+    }
+  ]
+}

@@ -1,7 +1,14 @@
 import { useState, useEffect } from "react";
 
-// 2025 PDF Database - Ilco Auto/Truck Key Blank Reference Guide
-const KEY_DATABASE_2025 = {
+// Hardcoded make list for 2025 Auto Truck Key Blank Reference Guide
+const MAKES = [
+  'Acura', 'Audi', 'BMW', 'Buick', 'Cadillac', 'Chevrolet', 'Chrysler', 'Dodge',
+  'Ford', 'GMC', 'Honda', 'Hyundai', 'Jeep', 'Kia', 'Mazda', 'Nissan', 'Subaru',
+  'Tesla', 'Toyota', 'Volkswagen', 'Volvo'
+].sort();
+
+// Placeholder - not used, kept for reference
+const KEY_DATABASE_2025_BACKUP = {
   'Acura': {
     'CL': [
       { yearStart: 1998, yearEnd: 2003, keyBlanks: ['HD106-PT', 'HD107-PT'], keyType: 'Mechanical', transponderChip: 'Megamos (13)', programmingRequired: true, programmingMethod: 'Smart Pro/TCP/MVPP/SDD/TKO', notes: 'Fixed Code System' },
@@ -173,17 +180,15 @@ const KEY_DATABASE_2025 = {
     ],
   },
 };
-
-const COMMON_MAKES = Object.keys(KEY_DATABASE_2025).sort();
 const currentYear = new Date().getFullYear();
 const years = Array.from({ length: currentYear - 1980 }, (_, i) => currentYear - i);
 
 function getSaved() { try { return JSON.parse(localStorage.getItem('keyref_saved') || '[]'); } catch { return []; } }
 function setSaved(arr) { try { localStorage.setItem('keyref_saved', JSON.stringify(arr.slice(0, 30))); } catch {} }
 
-function searchDatabase(year, make, model) {
-  if (!make || !model) return null;
-  const makeData = KEY_DATABASE_2025[make];
+async function searchDatabase(year, make, model, currentMakeData) {
+  if (!make || !model || !currentMakeData) return null;
+  const makeData = currentMakeData[make];
   if (!makeData || !makeData[model]) return null;
   
   const entries = makeData[model];
@@ -197,86 +202,88 @@ function searchDatabase(year, make, model) {
       programmingRequired: matching.programmingRequired,
       programmingMethod: matching.programmingMethod,
       notes: matching.notes,
-      dataSource: '2025 PDF Database',
+      dataSource: '2025 Auto Truck Key Blank Reference Guide',
     };
   }
   return null;
 }
 
 export default function KeyRefPro() {
-  const [year, setYear]        = useState('');
-  const [make, setMake]        = useState('');
-  const [model, setModel]      = useState('');
-  const [models, setModels]    = useState([]);
-  const [modLoad, setModLoad]  = useState(false);
-  const [loading, setLoading]  = useState(false);
-  const [result, setResult]    = useState(null);
-  const [vehicle, setVehicle]  = useState(null);
-  const [error, setError]      = useState('');
-  const [saved, setSavedState] = useState(getSaved);
-  const [dataSource, setDataSource] = useState('database'); // 'database' or 'api'
+  const [year, setYear]            = useState('');
+  const [make, setMake]            = useState('');
+  const [model, setModel]          = useState('');
+  const [models, setModels]        = useState([]);
+  const [modelsLoading, setModelsLoading] = useState(false);
+  const [loading, setLoading]      = useState(false);
+  const [result, setResult]        = useState(null);
+  const [vehicle, setVehicle]      = useState(null);
+  const [error, setError]          = useState('');
+  const [saved, setSavedState]     = useState(getSaved);
+  const [currentMakeData, setCurrentMakeData] = useState(null);
 
   useEffect(() => {
-    if (!make) { setModels([]); setModel(''); return; }
-    setModLoad(true); setModel(''); setModels([]);
-    
-    // Use local database when available
-    const makeData = KEY_DATABASE_2025[make];
-    if (makeData) {
-      const modelList = Object.keys(makeData).sort();
-      setModels(modelList);
-      setModLoad(false);
-    } else {
-      // Fallback to NHTSA API for makes not in database
-      const url = year
-        ? `https://vpic.nhtsa.dot.gov/api/vehicles/GetModelsForMakeYear/make/${encodeURIComponent(make)}/modelyear/${year}?format=json`
-        : `https://vpic.nhtsa.dot.gov/api/vehicles/GetModelsForMake/${encodeURIComponent(make)}?format=json`;
-      fetch(url).then(r => r.json())
-        .then(d => setModels([...new Set(d.Results.map(r => r.Model_Name).filter(Boolean))].sort()))
-        .catch(() => setModels([]))
-        .finally(() => setModLoad(false));
+    if (!make) { 
+      setModels([]); 
+      setModel(''); 
+      setCurrentMakeData(null);
+      return; 
     }
-  }, [make, year]);
+    
+    setModelsLoading(true);
+    setModel('');
+    setModels([]);
+    setCurrentMakeData(null);
+    
+    (async () => {
+      try {
+        // Lazy load JSON from public folder for selected make
+        const response = await fetch(`/data/inventory/${make.toLowerCase()}.json`);
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const makeData = await response.json();
+        setCurrentMakeData(makeData);
+        
+        if (makeData && typeof makeData === 'object' && makeData[make]) {
+          const modelList = Object.keys(makeData[make]).sort();
+          setModels(modelList);
+        } else if (makeData && typeof makeData === 'object') {
+          // Handle alternate structure where make is top-level key
+          const modelList = Object.keys(makeData).sort();
+          setModels(modelList);
+        }
+      } catch (e) {
+        console.error(`Failed to load data for make: ${make}`, e);
+        setModels([]);
+        setError(`Data unavailable for ${make}`);
+      } finally {
+        setModelsLoading(false);
+      }
+    })();
+  }, [make]);
 
-  const canLookup = year && make && model && !loading;
+  const canLookup = year && make && model && !loading && currentMakeData;
 
   async function runLookup() {
     if (!canLookup) return;
-    setLoading(true); setError(''); setResult(null);
+    setLoading(true);
+    setError('');
+    setResult(null);
     
     try {
-      if (dataSource === 'database') {
-        // Search local database
-        const dbResult = searchDatabase(parseInt(year), make, model);
-        if (dbResult) {
-          setResult(dbResult);
-          setVehicle({ year, make, model });
-        } else {
-          setError(`No data found for ${year} ${make} ${model} in 2025 database. Please use API when available.`);
-        }
-      } else {
-        // API lookup (when available)
-        const res = await fetch('https://api.anthropic.com/v1/messages', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            model: 'claude-sonnet-4-20250514',
-            max_tokens: 1000,
-            messages: [{ role: 'user', content:
-              `You are an expert automotive locksmith database. For a ${year} ${make} ${model}, return ONLY valid JSON:
-{"keyBlanks":["key blank numbers e.g. HD106-PT"],"keyType":"Mechanical|Transponder|Smart/Proximity|Switchblade/Flip|Laser-Cut/Sidewinder","transponderChip":"chip ID or null","programmingRequired":true or false,"programmingMethod":"method or null","remoteFobPartNumbers":["part numbers or empty array"],"keywayOrProfile":"e.g. HON66 or null","notes":"brief locksmith notes about this vehicle","dataSource":"API"}
-Use real OEM/aftermarket part numbers. Return ONLY the JSON object, no markdown backticks.` }]
-          })
-        });
-        const data = await res.json();
-        if (data.error) throw new Error(data.error.message);
-        const raw = data.content.map(b => b.text || '').join('').replace(/```json|```/g, '').trim();
-        setResult(JSON.parse(raw));
+      // Search current make data where yearStart ≤ year ≤ yearEnd
+      const dbResult = await searchDatabase(parseInt(year), make, model, currentMakeData);
+      if (dbResult) {
+        setResult(dbResult);
         setVehicle({ year, make, model });
+      } else {
+        setError(`Data unavailable for ${year} ${make} ${model}`);
       }
-    } catch(e) {
-      setError('Lookup failed: ' + (e.message || 'Please try again.'));
-    } finally { setLoading(false); }
+    } catch (e) {
+      console.error('Lookup error:', e);
+      setError('Data unavailable. ' + (e.message || 'Please try again.'));
+    } finally {
+      setLoading(false);
+    }
+  }
 
   function saveResult() {
     if (!result || !vehicle) return;
@@ -316,15 +323,15 @@ Use real OEM/aftermarket part numbers. Return ONLY the JSON object, no markdown 
     selWrap: { position: 'relative' },
     select: { background: '#0d0d0d', border: '1px solid #3a3a3a', color: '#e8e8e8', fontFamily: 'monospace', fontSize: 13, padding: '9px 28px 9px 10px', width: '100%', appearance: 'none', WebkitAppearance: 'none', outline: 'none' },
     selArrow: { position: 'absolute', right: 10, top: '50%', transform: 'translateY(-50%)', color: '#f5a623', fontSize: 11, pointerEvents: 'none' },
-    btnLookup: (disabled) => ({ width: '100%', background: disabled ? '#555' : '#f5a623', border: 'none', color: disabled ? '#999' : '#000', fontFamily: "'Bebas Neue', sans-serif", fontSize: 20, letterSpacing: 3, padding: 13, cursor: disabled ? 'not-allowed' : 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10, opacity: disabled ? 0.5 : 1 }),
+    btnLookup: (disabled) => ({ width: '100%', background: disabled ? '#555' : '#f5a623', border: 'none', color: disabled ? '#999' : '#000', fontFamily: "'Bebas Neue', sans-serif", fontSize: 20, letterSpacing: 3, padding: 13, cursor: disabled ? 'not-allowed' : 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10, opacity: disabled ? 0.5 : 1, minHeight: '44px' }),
     errMsg: { background: 'rgba(224,82,82,0.08)', borderLeft: '3px solid #e05252', color: '#e05252', fontFamily: 'monospace', fontSize: 12, padding: '11px 15px', marginBottom: 14 },
     resultCard: { background: '#161616', border: '1px solid #2a2a2a', marginBottom: 16, overflow: 'hidden' },
     resultHeader: { background: '#1e1e1e', borderBottom: '1px solid #2a2a2a', padding: '12px 18px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 12 },
     resultVehicle: { fontFamily: "'Bebas Neue', sans-serif", fontSize: 24, letterSpacing: 1, color: '#f5a623', lineHeight: 1 },
-    btnSave: (saved) => ({ background: 'transparent', border: `1px solid ${saved ? '#52e0a0' : '#3a3a3a'}`, color: saved ? '#52e0a0' : '#787878', fontFamily: 'monospace', fontSize: 10, letterSpacing: 2, padding: '5px 11px', cursor: saved ? 'default' : 'pointer', textTransform: 'uppercase', whiteSpace: 'nowrap' }),
-    resultBody: { padding: 18, display: 'grid', gap: 10 },
-    dataRow: { display: 'grid', gridTemplateColumns: '150px 1fr', gap: 10, alignItems: 'start', borderBottom: '1px solid #2a2a2a', paddingBottom: 10 },
-    dataRowLast: { display: 'grid', gridTemplateColumns: '150px 1fr', gap: 10, alignItems: 'start' },
+    btnSave: (saved) => ({ background: 'transparent', border: `1px solid ${saved ? '#52e0a0' : '#3a3a3a'}`, color: saved ? '#52e0a0' : '#787878', fontFamily: 'monospace', fontSize: 10, letterSpacing: 2, padding: '5px 11px', cursor: saved ? 'default' : 'pointer', textTransform: 'uppercase', whiteSpace: 'nowrap', minHeight: '44px', display: 'flex', alignItems: 'center', minWidth: '44px' }),
+    resultBody: { padding: 18, display: 'grid', gap: 10, '@media (max-width: 768px)': { gridTemplateColumns: '1fr' } },
+    dataRow: { display: 'grid', gridTemplateColumns: '150px 1fr', gap: 10, alignItems: 'start', borderBottom: '1px solid #2a2a2a', paddingBottom: 10, '@media (max-width: 640px)': { gridTemplateColumns: '100px 1fr' } },
+    dataRowLast: { display: 'grid', gridTemplateColumns: '150px 1fr', gap: 10, alignItems: 'start', '@media (max-width: 640px)': { gridTemplateColumns: '100px 1fr' } },
     dataKey: { fontFamily: 'monospace', fontSize: 9, letterSpacing: 2, color: '#787878', textTransform: 'uppercase', paddingTop: 2 },
     dataVal: { fontFamily: 'monospace', fontSize: 13, color: '#e8e8e8', lineHeight: 1.5 },
     dataValHi: { fontFamily: 'monospace', fontSize: 15, color: '#f5a623', fontWeight: 600, lineHeight: 1.5 },
@@ -344,60 +351,22 @@ Use real OEM/aftermarket part numbers. Return ONLY the JSON object, no markdown 
   return (
     <div style={S.app}>
       <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono&family=IBM+Plex+Sans&display=swap" rel="stylesheet"/>
-      <div style={S.inner}>
+      <div style={{...S.inner, maxWidth: 1000}}>
 
         {/* HEADER */}
         <header style={S.header}>
           <div>
             <div style={S.logo}>KEY<span style={S.logoSpan}>REF</span> PRO</div>
-            <div style={S.logoSub}>AUTOMOTIVE KEY DATABASE · 2025 PDF DATA</div>
-          </div>
-          <div style={{display: 'flex', gap: 8, alignItems: 'center'}}>
-            <div style={{...S.badge, background: dataSource === 'database' ? 'rgba(82,224,160,0.12)' : 'rgba(245,166,35,0.12)', borderColor: dataSource === 'database' ? '#4caf50' : '#c47d0e', color: dataSource === 'database' ? '#52e0a0' : '#f5a623'}}>
-              {dataSource === 'database' ? '✓ 2025' : '⚡ API'}
-            </div>
+            <div style={S.logoSub}>AUTOMOTIVE KEY DATABASE · 2025 REFERENCE</div>
           </div>
         </header>
 
-        {/* DATA SOURCE TOGGLE */}
+        {/* DATA SET ATTRIBUTION */}
         <div style={S.panel}>
-          <div style={S.panelLabel}><span style={S.labelBar}/>Data Source</div>
-          <div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10}}>
-            <button 
-              onClick={() => setDataSource('database')}
-              style={{
-                padding: 12,
-                border: `2px solid ${dataSource === 'database' ? '#52e0a0' : '#3a3a3a'}`,
-                background: dataSource === 'database' ? 'rgba(82,224,160,0.1)' : '#0d0d0d',
-                color: dataSource === 'database' ? '#52e0a0' : '#787878',
-                fontFamily: 'monospace',
-                fontSize: 12,
-                letterSpacing: 1,
-                cursor: 'pointer',
-                textTransform: 'uppercase',
-              }}
-            >
-              2025 Database
-            </button>
-            <button 
-              onClick={() => setDataSource('api')}
-              style={{
-                padding: 12,
-                border: `2px solid ${dataSource === 'api' ? '#f5a623' : '#3a3a3a'}`,
-                background: dataSource === 'api' ? 'rgba(245,166,35,0.1)' : '#0d0d0d',
-                color: dataSource === 'api' ? '#f5a623' : '#787878',
-                fontFamily: 'monospace',
-                fontSize: 12,
-                letterSpacing: 1,
-                cursor: 'pointer',
-                textTransform: 'uppercase',
-              }}
-            >
-              API (Future)
-            </button>
+          <div style={S.panelLabel}><span style={S.labelBar}/>Data Set</div>
+          <div style={{fontFamily: 'monospace', fontSize: 13, color: '#e8e8e8', lineHeight: 1.6}}>
+            2025 Auto Truck Key Blank Reference Guide
           </div>
-          {dataSource === 'database' && <div style={{...S.empty, marginTop: 10}}>Ilco 2025 Auto/Truck Key Blank Reference Database</div>}
-          {dataSource === 'api' && <div style={{...S.empty, marginTop: 10, color: '#f5a623'}}>Ready for custom API integration</div>}
         </div>
 
         {/* FORM */}
@@ -419,7 +388,7 @@ Use real OEM/aftermarket part numbers. Return ONLY the JSON object, no markdown 
               <div style={S.selWrap}>
                 <select style={S.select} value={make} onChange={e => setMake(e.target.value)}>
                   <option value="">— Select —</option>
-                  {COMMON_MAKES.map(m => <option key={m} value={m}>{m}</option>)}
+                  {MAKES.map(m => <option key={m} value={m}>{m}</option>)}
                 </select>
                 <span style={S.selArrow}>▾</span>
               </div>
@@ -427,8 +396,8 @@ Use real OEM/aftermarket part numbers. Return ONLY the JSON object, no markdown 
             <div style={S.field}>
               <div style={S.fieldLabel}>Model</div>
               <div style={S.selWrap}>
-                <select style={{...S.select, opacity: (!make || modLoad) ? 0.4 : 1}} value={model} onChange={e => setModel(e.target.value)} disabled={!make || modLoad}>
-                  <option value="">{modLoad ? 'Loading...' : '— Select —'}</option>
+                <select style={{...S.select, opacity: (!make || modelsLoading) ? 0.4 : 1}} value={model} onChange={e => setModel(e.target.value)} disabled={!make || modelsLoading}>
+                  <option value="">{modelsLoading ? 'Loading...' : '— Select —'}</option>
                   {models.map(m => <option key={m} value={m}>{m}</option>)}
                 </select>
                 <span style={S.selArrow}>▾</span>
@@ -506,6 +475,14 @@ Use real OEM/aftermarket part numbers. Return ONLY the JSON object, no markdown 
           </div>
         )}
 
+        {/* SETTINGS */}
+        <div style={S.panel}>
+          <div style={S.panelLabel}><span style={S.labelBar}/>Settings</div>
+          <div style={{fontFamily: 'monospace', fontSize: 11, color: '#787878', lineHeight: 1.8}}>
+            <div style={{marginBottom: 12}}>Sourced from 2025 Auto Truck Key Blank Reference Guide</div>
+          </div>
+        </div>
+
         {/* SAVED */}
         <div style={S.panel}>
           <div style={S.panelLabel}><span style={S.labelBar}/>Saved Lookups</div>
@@ -526,7 +503,7 @@ Use real OEM/aftermarket part numbers. Return ONLY the JSON object, no markdown 
           </div>
         </div>
 
-        <div style={S.footer}>KeyRef Pro · Professional Use Only · 2025 Ilco Database + API Ready</div>
+        <div style={S.footer}>KeyRef Pro · Professional Use Only · 2025 Reference Guide</div>
       </div>
       <style>{`@keyframes spin { to { transform: rotate(360deg); } }`}</style>
     </div>

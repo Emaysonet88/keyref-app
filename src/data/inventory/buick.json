@@ -1,0 +1,10 @@
+{
+  "Buick": {
+    "LaCrosse": [
+      { "yearStart": 2005, "yearEnd": 2025, "keyBlanks": ["B111-PT"], "keyType": "High Security", "transponderChip": "Philips (46)", "programmingRequired": true, "programmingMethod": "Smart Pro/TCP/MVPP", "notes": "Encrypted System" }
+    ],
+    "Enclave": [
+      { "yearStart": 2007, "yearEnd": 2017, "keyBlanks": ["B111-PT"], "keyType": "High Security", "transponderChip": "Philips (46)", "programmingRequired": true, "programmingMethod": "Smart Pro/TCP/MVPP", "notes": "Encrypted System" }
+    ]
+  }
+}

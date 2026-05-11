@@ -1,0 +1,14 @@
+{
+  "2016": [
+    {
+      "yearStart": 2022,
+      "yearEnd": 2022,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "80000-89999",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ]
+}

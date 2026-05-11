@@ -1,0 +1,10 @@
+{
+  "Dodge": {
+    "Ram 1500": [
+      { "yearStart": 2014, "yearEnd": 2025, "keyBlanks": ["C-DAM"], "keyType": "Laser Cut", "transponderChip": null, "programmingRequired": false, "programmingMethod": "Smart Pro", "notes": "Chrysler laser cut key" }
+    ],
+    "Caravan": [
+      { "yearStart": 2001, "yearEnd": 2007, "keyBlanks": ["CH690-CH"], "keyType": "Mechanical", "transponderChip": "Megamos", "programmingRequired": true, "programmingMethod": "Smart Pro/TCP/MVPP", "notes": "Chrysler key" }
+    ]
+  }
+}

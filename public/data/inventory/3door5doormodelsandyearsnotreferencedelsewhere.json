@@ -1,0 +1,26 @@
+{
+  "1995": [
+    {
+      "yearStart": 1996,
+      "yearEnd": 1996,
+      "keyBlanks": [
+        "All L1-"
+      ],
+      "transponderChip": "L3580",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "1990": [
+    {
+      "yearStart": 1991,
+      "yearEnd": 1991,
+      "keyBlanks": [
+        "All G1"
+      ],
+      "transponderChip": "-G1394",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ]
+}

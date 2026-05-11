@@ -1,0 +1,7 @@
+{
+  "Audi": {
+    "A4": [
+      { "yearStart": 2012, "yearEnd": 2025, "keyBlanks": ["HU66"], "keyType": "Laser Cut", "transponderChip": "ID48", "programmingRequired": true, "programmingMethod": "Smart Pro/TCP", "notes": "Audi laser cut key" }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "Chevrolet": {
+    "Silverado": [
+      { "yearStart": 2014, "yearEnd": 2025, "keyBlanks": ["B111-PT"], "keyType": "Laser Cut", "transponderChip": "Philips PCF7937E", "programmingRequired": true, "programmingMethod": "Smart Pro/TCP/MVPP", "notes": "GM laser cut key, Encrypted System" }
+    ],
+    "Malibu": [
+      { "yearStart": 2013, "yearEnd": 2025, "keyBlanks": ["B111-PT"], "keyType": "Laser Cut", "transponderChip": "Philips PCF7937E", "programmingRequired": true, "programmingMethod": "Smart Pro/TCP/MVPP", "notes": "GM laser cut key" }
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "2000": [
+    {
+      "yearStart": 2004,
+      "yearEnd": 2004,
+      "keyBlanks": [
+        "Door/ Trunk"
+      ],
+      "transponderChip": "S000A-S999K",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "1994": [
+    {
+      "yearStart": 1996,
+      "yearEnd": 1996,
+      "keyBlanks": [
+        "Door/ Trunk/ GB"
+      ],
+      "transponderChip": "L, M",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "2011-2017": [
+    {
+      "yearStart": 0,
+      "yearEnd": 0,
+      "keyBlanks": [],
+      "transponderChip": "",
+      "cloningDetails": "EB3-V-HU100",
+      "onBoardProgramming": ""
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "2009": [
+    {
+      "yearStart": 2010,
+      "yearEnd": 2010,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "J1-2500",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "2009-2010": [
+    {
+      "yearStart": 0,
+      "yearEnd": 0,
+      "keyBlanks": [],
+      "transponderChip": "",
+      "cloningDetails": "EB3-F-TOY48",
+      "onBoardProgramming": ""
+    }
+  ]
+}

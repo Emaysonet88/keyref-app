@@ -1,0 +1,26 @@
+{
+  "1997": [
+    {
+      "yearStart": 1997,
+      "yearEnd": 1997,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "1X-1706X",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "1991": [
+    {
+      "yearStart": 1993,
+      "yearEnd": 1993,
+      "keyBlanks": [
+        "GB"
+      ],
+      "transponderChip": "FB0-FB1863",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ]
+}

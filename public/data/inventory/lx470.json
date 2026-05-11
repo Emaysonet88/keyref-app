@@ -1,0 +1,46 @@
+{
+  "2003": [
+    {
+      "yearStart": 2008,
+      "yearEnd": 2008,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "O0001-O5000",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "1998": [
+    {
+      "yearStart": 2000,
+      "yearEnd": 2000,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "O0001-O5000",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "2003-2008": [
+    {
+      "yearStart": 0,
+      "yearEnd": 0,
+      "keyBlanks": [],
+      "transponderChip": "",
+      "cloningDetails": "EB3-F-TOY48",
+      "onBoardProgramming": ""
+    }
+  ],
+  "1998-2000": [
+    {
+      "yearStart": 0,
+      "yearEnd": 0,
+      "keyBlanks": [],
+      "transponderChip": "",
+      "cloningDetails": "EB3-F-TOY48",
+      "onBoardProgramming": ""
+    }
+  ]
+}

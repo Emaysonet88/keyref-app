@@ -1,0 +1,36 @@
+{
+  "2008": [
+    {
+      "yearStart": 2009,
+      "yearEnd": 2009,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "K001-N718",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "2004": [
+    {
+      "yearStart": 2005,
+      "yearEnd": 2005,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "K001-N718",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "2008-2009": [
+    {
+      "yearStart": 0,
+      "yearEnd": 0,
+      "keyBlanks": [],
+      "transponderChip": "",
+      "cloningDetails": "EB3-S-HO03",
+      "onBoardProgramming": ""
+    }
+  ]
+}

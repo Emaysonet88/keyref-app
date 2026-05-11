@@ -1,0 +1,24 @@
+{
+  "2014": [
+    {
+      "yearStart": 2022,
+      "yearEnd": 2022,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "K001-N718",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "2014-2022": [
+    {
+      "yearStart": 2049,
+      "yearEnd": 2049,
+      "keyBlanks": [],
+      "transponderChip": "",
+      "cloningDetails": "EB3-S-HO03",
+      "onBoardProgramming": ""
+    }
+  ]
+}

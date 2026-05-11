@@ -1,0 +1,24 @@
+{
+  "2018": [
+    {
+      "yearStart": 2024,
+      "yearEnd": 2024,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "V0001-V5573",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "2010-2024": [
+    {
+      "yearStart": 0,
+      "yearEnd": 0,
+      "keyBlanks": [],
+      "transponderChip": "",
+      "cloningDetails": "EB3-V-HU100",
+      "onBoardProgramming": ""
+    }
+  ]
+}

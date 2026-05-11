@@ -1,0 +1,24 @@
+{
+  "2019 20": [
+    {
+      "yearStart": 2023,
+      "yearEnd": 2023,
+      "keyBlanks": [
+        "M1-M2618"
+      ],
+      "transponderChip": "OEM# 68394190AA or 68394191AA",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "2008-2015": [
+    {
+      "yearStart": 0,
+      "yearEnd": 0,
+      "keyBlanks": [],
+      "transponderChip": "",
+      "cloningDetails": "EB3-T-Y170",
+      "onBoardProgramming": ""
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "1996": [
+    {
+      "yearStart": 1997,
+      "yearEnd": 1997,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "Mfg. Restricted",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "1990": [
+    {
+      "yearStart": 1994,
+      "yearEnd": 1994,
+      "keyBlanks": [
+        "Valet"
+      ],
+      "transponderChip": "BH010001- BH241450",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ]
+}

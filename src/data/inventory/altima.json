@@ -1,0 +1,36 @@
+{
+  "2023": [
+    {
+      "yearStart": 2024,
+      "yearEnd": 2024,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "1-22185",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "2005": [
+    {
+      "yearStart": 2006,
+      "yearEnd": 2006,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "1-22185",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "2005-2006": [
+    {
+      "yearStart": 0,
+      "yearEnd": 0,
+      "keyBlanks": [],
+      "transponderChip": "",
+      "cloningDetails": "EB3-H-NI02",
+      "onBoardProgramming": ""
+    }
+  ]
+}

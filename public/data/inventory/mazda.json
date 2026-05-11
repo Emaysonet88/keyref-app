@@ -1,0 +1,10 @@
+{
+  "Mazda": {
+    "CX-5": [
+      { "yearStart": 2013, "yearEnd": 2025, "keyBlanks": ["MAZ24"], "keyType": "Laser Cut", "transponderChip": "ID51", "programmingRequired": true, "programmingMethod": "Smart Pro/TCP", "notes": "Mazda laser cut key" }
+    ],
+    "Mazda3": [
+      { "yearStart": 2014, "yearEnd": 2025, "keyBlanks": ["MAZ24"], "keyType": "Laser Cut", "transponderChip": "ID51", "programmingRequired": true, "programmingMethod": "Smart Pro/TCP", "notes": "Mazda laser cut key" }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "Cadillac": {
+    "Escalade": [
+      { "yearStart": 2015, "yearEnd": 2025, "keyBlanks": ["B111-PT"], "keyType": "Laser Cut", "transponderChip": "Philips PCF7937E", "programmingRequired": true, "programmingMethod": "Smart Pro/TCP/MVPP", "notes": "GM laser cut key, Encrypted System" }
+    ],
+    "DeVille": [
+      { "yearStart": 2000, "yearEnd": 2005, "keyBlanks": ["B99-PT", "B100-PT"], "keyType": "Mechanical", "transponderChip": "Megamos", "programmingRequired": true, "programmingMethod": "Smart Pro/TCP/MVPP", "notes": "Fixed Code System" }
+    ],
+    "CTS": [
+      { "yearStart": 2003, "yearEnd": 2007, "keyBlanks": ["B111-PT"], "keyType": "High Security", "transponderChip": "Philips (46)", "programmingRequired": true, "programmingMethod": "Smart Pro/TCP/MVPP", "notes": "Encrypted System" }
+    ]
+  }
+}

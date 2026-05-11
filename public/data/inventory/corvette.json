@@ -1,0 +1,38 @@
+{
+  "2020": [
+    {
+      "yearStart": 2025,
+      "yearEnd": 2025,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "V0001-V5718",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "1991": [
+    {
+      "yearStart": 1996,
+      "yearEnd": 1996,
+      "keyBlanks": [
+        "Door/ GB"
+      ],
+      "transponderChip": "L, M",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "1986": [
+    {
+      "yearStart": 1986,
+      "yearEnd": 1986,
+      "keyBlanks": [
+        "Door/ GB"
+      ],
+      "transponderChip": "NPSU",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ]
+}

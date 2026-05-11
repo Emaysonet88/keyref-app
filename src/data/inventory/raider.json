@@ -1,0 +1,48 @@
+{
+  "1987": [
+    {
+      "yearStart": 1990,
+      "yearEnd": 1990,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "H0001-H5143",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "2006": [
+    {
+      "yearStart": 2010,
+      "yearEnd": 2010,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "M1-M2618",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "1990": [
+    {
+      "yearStart": 1991,
+      "yearEnd": 1991,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "X1001-X2000",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "2006-2010": [
+    {
+      "yearStart": 0,
+      "yearEnd": 0,
+      "keyBlanks": [],
+      "transponderChip": "",
+      "cloningDetails": "EB3-A-Y160",
+      "onBoardProgramming": ""
+    }
+  ]
+}

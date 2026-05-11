@@ -1,0 +1,36 @@
+{
+  "2008": [
+    {
+      "yearStart": 2010,
+      "yearEnd": 2010,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "V2001-V3200",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "2002": [
+    {
+      "yearStart": 2007,
+      "yearEnd": 2007,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "H0001-H3988",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "2008-2010": [
+    {
+      "yearStart": 0,
+      "yearEnd": 0,
+      "keyBlanks": [],
+      "transponderChip": "",
+      "cloningDetails": "",
+      "onBoardProgramming": "EB3-W-B114R"
+    }
+  ]
+}

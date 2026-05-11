@@ -1,0 +1,14 @@
+{
+  "2016": [
+    {
+      "yearStart": 2020,
+      "yearEnd": 2020,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "D0001-D3000",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ]
+}

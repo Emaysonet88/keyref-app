@@ -1,0 +1,17 @@
+{
+  "BMW": {
+    "1 Series": [
+      { "yearStart": 2008, "yearEnd": 2011, "keyBlanks": ["HU92RP"], "keyType": "Smart Key", "transponderChip": null, "programmingRequired": false, "programmingMethod": "Smart Pro", "notes": "Dealer FOB, Rolling Code System" }
+    ],
+    "3 Series": [
+      { "yearStart": 2012, "yearEnd": 2025, "keyBlanks": ["HU92RP"], "keyType": "Smart Key", "transponderChip": null, "programmingRequired": false, "programmingMethod": "Smart Pro RW5", "notes": "High Security, Rolling Code" }
+    ],
+    "5 Series": [
+      { "yearStart": 1995, "yearEnd": 1996, "keyBlanks": ["S7BW-P", "S6BW"], "keyType": "Mechanical", "transponderChip": null, "programmingRequired": false, "programmingMethod": null, "notes": "High Security Key" },
+      { "yearStart": 2002, "yearEnd": 2008, "keyBlanks": ["HU92RMH"], "keyType": "Smart Key", "transponderChip": null, "programmingRequired": false, "programmingMethod": "Smart Pro", "notes": "Philips (46) Encrypted System" }
+    ],
+    "7 Series": [
+      { "yearStart": 2008, "yearEnd": 2009, "keyBlanks": ["HU92RP"], "keyType": "Smart Key", "transponderChip": null, "programmingRequired": false, "programmingMethod": "Smart Pro RW5", "notes": "Dealer FOB, Phillips Rolling Code" }
+    ]
+  }
+}

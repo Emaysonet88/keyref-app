@@ -1,0 +1,10 @@
+{
+  "GMC": {
+    "Sierra": [
+      { "yearStart": 2014, "yearEnd": 2025, "keyBlanks": ["B111-PT"], "keyType": "Laser Cut", "transponderChip": "Philips PCF7937E", "programmingRequired": true, "programmingMethod": "Smart Pro/TCP/MVPP", "notes": "GM laser cut key" }
+    ],
+    "Yukon": [
+      { "yearStart": 2015, "yearEnd": 2025, "keyBlanks": ["B111-PT"], "keyType": "Laser Cut", "transponderChip": "Philips PCF7937E", "programmingRequired": true, "programmingMethod": "Smart Pro/TCP/MVPP", "notes": "GM laser cut key" }
+    ]
+  }
+}

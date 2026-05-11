@@ -1,0 +1,13 @@
+{
+  "Honda": {
+    "Accord": [
+      { "yearStart": 2013, "yearEnd": 2025, "keyBlanks": ["HON66"], "keyType": "Smart Key", "transponderChip": null, "programmingRequired": false, "programmingMethod": "Smart Pro", "notes": "Honda keyway profile HON66" }
+    ],
+    "Civic": [
+      { "yearStart": 2012, "yearEnd": 2025, "keyBlanks": ["HON66"], "keyType": "Smart Key", "transponderChip": null, "programmingRequired": false, "programmingMethod": "Smart Pro", "notes": "Honda keyway profile HON66" }
+    ],
+    "CR-V": [
+      { "yearStart": 2012, "yearEnd": 2025, "keyBlanks": ["HON66"], "keyType": "Smart Key", "transponderChip": null, "programmingRequired": false, "programmingMethod": "Smart Pro", "notes": "Honda keyway profile HON66" }
+    ]
+  }
+}

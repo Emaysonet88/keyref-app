@@ -1,0 +1,24 @@
+{
+  "1999": [
+    {
+      "yearStart": 2003,
+      "yearEnd": 2003,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "1-22185",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "1999-2003": [
+    {
+      "yearStart": 0,
+      "yearEnd": 0,
+      "keyBlanks": [],
+      "transponderChip": "",
+      "cloningDetails": "EB3-H-NI02",
+      "onBoardProgramming": ""
+    }
+  ]
+}

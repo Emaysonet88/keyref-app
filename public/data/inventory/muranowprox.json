@@ -1,0 +1,26 @@
+{
+  "2022": [
+    {
+      "yearStart": 2025,
+      "yearEnd": 2025,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "1-22185",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "2005": [
+    {
+      "yearStart": 2008,
+      "yearEnd": 2008,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "40,000-41,520",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ]
+}

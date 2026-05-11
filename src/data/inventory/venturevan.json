@@ -1,0 +1,26 @@
+{
+  "2003": [
+    {
+      "yearStart": 2005,
+      "yearEnd": 2005,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "S000A-S999K",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "2000 20": [
+    {
+      "yearStart": 2002,
+      "yearEnd": 2002,
+      "keyBlanks": [
+        "S000A-S999K"
+      ],
+      "transponderChip": "B97-PT B97-PT5",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ]
+}

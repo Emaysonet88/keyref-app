@@ -1,0 +1,10 @@
+{
+  "Volvo": {
+    "XC90": [
+      { "yearStart": 2015, "yearEnd": 2025, "keyBlanks": ["VOLVO-K1"], "keyType": "Smart Key", "transponderChip": null, "programmingRequired": false, "programmingMethod": "Volvo PTT", "notes": "Volvo smart key" }
+    ],
+    "S90": [
+      { "yearStart": 2016, "yearEnd": 2025, "keyBlanks": ["VOLVO-K1"], "keyType": "Smart Key", "transponderChip": null, "programmingRequired": false, "programmingMethod": "Volvo PTT", "notes": "Volvo smart key" }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "Ford": {
+    "F-150": [
+      { "yearStart": 2015, "yearEnd": 2025, "keyBlanks": ["FO38"], "keyType": "Smart Key", "transponderChip": null, "programmingRequired": false, "programmingMethod": "Ford IDS", "notes": "Ford laser cut key" }
+    ],
+    "Fusion": [
+      { "yearStart": 2013, "yearEnd": 2025, "keyBlanks": ["FO38"], "keyType": "Smart Key", "transponderChip": null, "programmingRequired": false, "programmingMethod": "Ford IDS", "notes": "Ford laser cut key" }
+    ],
+    "Mustang": [
+      { "yearStart": 2015, "yearEnd": 2025, "keyBlanks": ["FO38"], "keyType": "Smart Key", "transponderChip": null, "programmingRequired": false, "programmingMethod": "Ford IDS", "notes": "Ford laser cut key" }
+    ]
+  }
+}

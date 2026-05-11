@@ -1,0 +1,14 @@
+{
+  "ALL": [
+    {
+      "yearStart": 0,
+      "yearEnd": 0,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "X1-X8000",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ]
+}

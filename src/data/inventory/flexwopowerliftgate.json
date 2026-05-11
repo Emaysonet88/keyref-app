@@ -1,0 +1,24 @@
+{
+  "2011": [
+    {
+      "yearStart": 2018,
+      "yearEnd": 2018,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "1X-1706X",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "2011-2018": [
+    {
+      "yearStart": 1980,
+      "yearEnd": 1980,
+      "keyBlanks": [],
+      "transponderChip": "",
+      "cloningDetails": "EB3-D-H84",
+      "onBoardProgramming": ""
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "2007": [
+    {
+      "yearStart": 2017,
+      "yearEnd": 2017,
+      "keyBlanks": [
+        "Al"
+      ],
+      "transponderChip": "B1 G0000-G3631 EK B1",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "2007-2017": [
+    {
+      "yearStart": 0,
+      "yearEnd": 0,
+      "keyBlanks": [],
+      "transponderChip": "",
+      "cloningDetails": "EB3-R-B111",
+      "onBoardProgramming": ""
+    }
+  ]
+}

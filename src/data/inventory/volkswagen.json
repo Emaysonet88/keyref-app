@@ -1,0 +1,10 @@
+{
+  "Volkswagen": {
+    "Passat": [
+      { "yearStart": 2012, "yearEnd": 2025, "keyBlanks": ["HU66"], "keyType": "Laser Cut", "transponderChip": "ID48", "programmingRequired": true, "programmingMethod": "Smart Pro/TCP", "notes": "VW laser cut key, High Security" }
+    ],
+    "Jetta": [
+      { "yearStart": 2011, "yearEnd": 2025, "keyBlanks": ["HU66"], "keyType": "Laser Cut", "transponderChip": "ID48", "programmingRequired": true, "programmingMethod": "Smart Pro/TCP", "notes": "VW laser cut key" }
+    ]
+  }
+}

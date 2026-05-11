@@ -1,0 +1,24 @@
+{
+  "2008": [
+    {
+      "yearStart": 2010,
+      "yearEnd": 2010,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "M1-M2618",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "2008-2010": [
+    {
+      "yearStart": 0,
+      "yearEnd": 0,
+      "keyBlanks": [],
+      "transponderChip": "",
+      "cloningDetails": "EB3-T-Y170",
+      "onBoardProgramming": ""
+    }
+  ]
+}

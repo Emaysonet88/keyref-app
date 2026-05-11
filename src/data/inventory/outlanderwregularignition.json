@@ -1,0 +1,24 @@
+{
+  "2007": [
+    {
+      "yearStart": 2021,
+      "yearEnd": 2021,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "30010-32009",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "2007-2021": [
+    {
+      "yearStart": 0,
+      "yearEnd": 0,
+      "keyBlanks": [],
+      "transponderChip": "",
+      "cloningDetails": "EB3-M-MIT14",
+      "onBoardProgramming": ""
+    }
+  ]
+}

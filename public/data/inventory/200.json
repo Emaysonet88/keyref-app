@@ -1,0 +1,24 @@
+{
+  "2011 20": [
+    {
+      "yearStart": 2014,
+      "yearEnd": 2014,
+      "keyBlanks": [
+        "OBP Program F, Smart Pro/TCP/MVPP/TKO/ Y164-PT (LAL) Service Key Y159 Philips (46) Encrypted System 745 SDD M1-M2618 EK3P-Y164/EK3LB-Y160*/ RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Service Key Y159 Philips (46) Encrypted System 745 Y160-GTK# Plus, Plus Box"
+      ],
+      "transponderChip": "",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "2011-2014": [
+    {
+      "yearStart": 0,
+      "yearEnd": 0,
+      "keyBlanks": [],
+      "transponderChip": "",
+      "cloningDetails": "EB3-A-Y160",
+      "onBoardProgramming": ""
+    }
+  ]
+}

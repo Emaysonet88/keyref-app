@@ -1,0 +1,26 @@
+{
+  "2013": [
+    {
+      "yearStart": 2017,
+      "yearEnd": 2017,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "M1-M2618",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "1993": [
+    {
+      "yearStart": 1993,
+      "yearEnd": 1993,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "J1-J3580",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "1991": [
+    {
+      "yearStart": 1995,
+      "yearEnd": 1995,
+      "keyBlanks": [
+        "Door/ Hatch/ GB"
+      ],
+      "transponderChip": "L, M",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "1990": [
+    {
+      "yearStart": 1990,
+      "yearEnd": 1990,
+      "keyBlanks": [
+        "Door/ Hatch/ GB"
+      ],
+      "transponderChip": "NPSU",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ]
+}

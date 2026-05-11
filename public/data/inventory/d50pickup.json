@@ -1,0 +1,14 @@
+{
+  "ALL": [
+    {
+      "yearStart": 0,
+      "yearEnd": 0,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "H0001-H5143",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ]
+}

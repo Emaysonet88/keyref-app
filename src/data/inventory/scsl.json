@@ -1,0 +1,14 @@
+{
+  "2001": [
+    {
+      "yearStart": 2002,
+      "yearEnd": 2002,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "S000A-S999K",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ]
+}

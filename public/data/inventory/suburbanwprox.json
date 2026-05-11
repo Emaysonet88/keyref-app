@@ -1,0 +1,26 @@
+{
+  "2021": [
+    {
+      "yearStart": 2022,
+      "yearEnd": 2022,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "Z0001-Z6000",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "2015": [
+    {
+      "yearStart": 2020,
+      "yearEnd": 2020,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "V0001-V5573",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "Jeep": {
+    "Wrangler": [
+      { "yearStart": 2007, "yearEnd": 2025, "keyBlanks": ["J-DAM"], "keyType": "Laser Cut", "transponderChip": "PCF7937E", "programmingRequired": true, "programmingMethod": "Smart Pro", "notes": "Jeep laser cut key" }
+    ],
+    "Grand Cherokee": [
+      { "yearStart": 2011, "yearEnd": 2025, "keyBlanks": ["J-DAM"], "keyType": "Laser Cut", "transponderChip": "PCF7937E", "programmingRequired": true, "programmingMethod": "Smart Pro", "notes": "Jeep laser cut key" }
+    ]
+  }
+}

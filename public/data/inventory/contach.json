@@ -1,0 +1,26 @@
+{
+  "1988": [
+    {
+      "yearStart": 1989,
+      "yearEnd": 1989,
+      "keyBlanks": [
+        "Door/ Trunk"
+      ],
+      "transponderChip": "4100-4309",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "1980": [
+    {
+      "yearStart": 1987,
+      "yearEnd": 1987,
+      "keyBlanks": [
+        "Door/ Trunk"
+      ],
+      "transponderChip": "4100-4309",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ]
+}

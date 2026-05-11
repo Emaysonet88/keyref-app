@@ -1,0 +1,36 @@
+{
+  "2020": [
+    {
+      "yearStart": 2022,
+      "yearEnd": 2022,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "32000-39999",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "2010": [
+    {
+      "yearStart": 2014,
+      "yearEnd": 2014,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "T001-3000",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "2010-2014": [
+    {
+      "yearStart": 0,
+      "yearEnd": 0,
+      "keyBlanks": [],
+      "transponderChip": "",
+      "cloningDetails": "",
+      "onBoardProgramming": "EB3-N-SUB1"
+    }
+  ]
+}

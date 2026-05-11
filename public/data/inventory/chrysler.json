@@ -1,0 +1,10 @@
+{
+  "Chrysler": {
+    "300": [
+      { "yearStart": 2005, "yearEnd": 2025, "keyBlanks": ["C-DAM"], "keyType": "Laser Cut", "transponderChip": null, "programmingRequired": false, "programmingMethod": "Smart Pro", "notes": "Chrysler laser cut key" }
+    ],
+    "Pacifica": [
+      { "yearStart": 2017, "yearEnd": 2025, "keyBlanks": ["C-DAM"], "keyType": "Laser Cut", "transponderChip": null, "programmingRequired": false, "programmingMethod": "Smart Pro", "notes": "Chrysler laser cut key" }
+    ]
+  }
+}

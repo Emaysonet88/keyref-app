@@ -1,0 +1,26 @@
+{
+  "2000": [
+    {
+      "yearStart": 2005,
+      "yearEnd": 2005,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "O5000-O6999",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "1992": [
+    {
+      "yearStart": 1999,
+      "yearEnd": 1999,
+      "keyBlanks": [
+        "Door/ Trunk/ GB"
+      ],
+      "transponderChip": "L, M",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "2015": [
+    {
+      "yearStart": 2025,
+      "yearEnd": 2025,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "V0001-V5573",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "2007": [
+    {
+      "yearStart": 2014,
+      "yearEnd": 2014,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "G0000-G3631",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "2015-2024": [
+    {
+      "yearStart": 0,
+      "yearEnd": 0,
+      "keyBlanks": [],
+      "transponderChip": "",
+      "cloningDetails": "EB3-V-HU100",
+      "onBoardProgramming": ""
+    }
+  ]
+}

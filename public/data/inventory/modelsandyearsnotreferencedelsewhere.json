@@ -1,0 +1,147 @@
+{
+  "1991": [
+    {
+      "yearStart": 1996,
+      "yearEnd": 1996,
+      "keyBlanks": [
+        "Door/ Trunk",
+        "Door/ Trunk/ GB"
+      ],
+      "transponderChip": "L, M",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    },
+    {
+      "yearStart": 1994,
+      "yearEnd": 1994,
+      "keyBlanks": [
+        "Door/ Other Locks"
+      ],
+      "transponderChip": "L, M S1",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    },
+    {
+      "yearStart": 1995,
+      "yearEnd": 1995,
+      "keyBlanks": [
+        "Door/ Trunk/ GB"
+      ],
+      "transponderChip": "L, M",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "1981": [
+    {
+      "yearStart": 1981,
+      "yearEnd": 1981,
+      "keyBlanks": [
+        "Door/ Trunk/ GB"
+      ],
+      "transponderChip": "L, M",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    },
+    {
+      "yearStart": 1983,
+      "yearEnd": 1983,
+      "keyBlanks": [
+        "Door/ Trunk"
+      ],
+      "transponderChip": "4100-4309",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    },
+    {
+      "yearStart": 1995,
+      "yearEnd": 1995,
+      "keyBlanks": [
+        "Ignition/ Door"
+      ],
+      "transponderChip": "FA1-FA1863",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    },
+    {
+      "yearStart": 1982,
+      "yearEnd": 1982,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "3001-4500",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "1987": [
+    {
+      "yearStart": 1990,
+      "yearEnd": 1990,
+      "keyBlanks": [
+        "Door/ Trunk"
+      ],
+      "transponderChip": "NPSU",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "1995": [
+    {
+      "yearStart": 1996,
+      "yearEnd": 1996,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "L1-L3580",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "1986": [
+    {
+      "yearStart": 1988,
+      "yearEnd": 1988,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "A1-2-3-4-5",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "1994": [
+    {
+      "yearStart": 2004,
+      "yearEnd": 2004,
+      "keyBlanks": [
+        "Ignition/ Door"
+      ],
+      "transponderChip": "N225-N814",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    },
+    {
+      "yearStart": 1996,
+      "yearEnd": 1996,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "L1-L3580",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "1982": [
+    {
+      "yearStart": 1982,
+      "yearEnd": 1982,
+      "keyBlanks": [
+        "Door/ Other Locks"
+      ],
+      "transponderChip": "EFGH",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ]
+}

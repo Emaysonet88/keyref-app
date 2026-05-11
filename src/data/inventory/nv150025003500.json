@@ -1,0 +1,24 @@
+{
+  "2012": [
+    {
+      "yearStart": 2021,
+      "yearEnd": 2021,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "1-22185",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "2012-2021": [
+    {
+      "yearStart": 0,
+      "yearEnd": 0,
+      "keyBlanks": [],
+      "transponderChip": "",
+      "cloningDetails": "EB3-H-NI02",
+      "onBoardProgramming": ""
+    }
+  ]
+}

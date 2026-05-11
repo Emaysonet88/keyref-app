@@ -1,0 +1,24 @@
+{
+  "2015": [
+    {
+      "yearStart": 2023,
+      "yearEnd": 2023,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "B1 Z0001-Z6000 EK HU",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "2015-2023": [
+    {
+      "yearStart": 0,
+      "yearEnd": 0,
+      "keyBlanks": [],
+      "transponderChip": "",
+      "cloningDetails": "EB3-V-HU100",
+      "onBoardProgramming": ""
+    }
+  ]
+}

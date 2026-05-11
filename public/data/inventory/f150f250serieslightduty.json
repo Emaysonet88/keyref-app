@@ -1,0 +1,48 @@
+{
+  "2004": [
+    {
+      "yearStart": 2010,
+      "yearEnd": 2010,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "1X-1706X",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "1997": [
+    {
+      "yearStart": 1998,
+      "yearEnd": 1998,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "1X-1706X",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "1980": [
+    {
+      "yearStart": 1991,
+      "yearEnd": 1991,
+      "keyBlanks": [
+        "Door/ GB"
+      ],
+      "transponderChip": "FB0-FB1863",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "2011-2014": [
+    {
+      "yearStart": 1980,
+      "yearEnd": 1980,
+      "keyBlanks": [],
+      "transponderChip": "",
+      "cloningDetails": "EB3-D-H84",
+      "onBoardProgramming": ""
+    }
+  ]
+}

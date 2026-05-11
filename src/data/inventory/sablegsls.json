@@ -1,0 +1,36 @@
+{
+  "2000": [
+    {
+      "yearStart": 2007,
+      "yearEnd": 2007,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "1X-1706X",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "1993": [
+    {
+      "yearStart": 1995,
+      "yearEnd": 1995,
+      "keyBlanks": [
+        "Ignition/ Door"
+      ],
+      "transponderChip": "A-B-C-D-E",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "2000-2007": [
+    {
+      "yearStart": 0,
+      "yearEnd": 0,
+      "keyBlanks": [],
+      "transponderChip": "",
+      "cloningDetails": "EB3-D-H84",
+      "onBoardProgramming": ""
+    }
+  ]
+}

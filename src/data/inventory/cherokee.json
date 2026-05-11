@@ -1,0 +1,36 @@
+{
+  "2014": [
+    {
+      "yearStart": 2025,
+      "yearEnd": 2025,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "M1-M2618",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "1992": [
+    {
+      "yearStart": 1992,
+      "yearEnd": 1992,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "G1-G1394",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "2015-2023": [
+    {
+      "yearStart": 0,
+      "yearEnd": 0,
+      "keyBlanks": [],
+      "transponderChip": "",
+      "cloningDetails": "EB3-A-Y160",
+      "onBoardProgramming": ""
+    }
+  ]
+}

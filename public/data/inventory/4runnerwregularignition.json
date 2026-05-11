@@ -1,0 +1,24 @@
+{
+  "2020": [
+    {
+      "yearStart": 2022,
+      "yearEnd": 2022,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "50000-69999",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "2020-2022": [
+    {
+      "yearStart": 128,
+      "yearEnd": 128,
+      "keyBlanks": [],
+      "transponderChip": "",
+      "cloningDetails": "",
+      "onBoardProgramming": "EB3-E-TOY43"
+    }
+  ]
+}

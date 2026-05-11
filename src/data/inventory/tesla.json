@@ -1,0 +1,10 @@
+{
+  "Tesla": {
+    "Model 3": [
+      { "yearStart": 2017, "yearEnd": 2025, "keyBlanks": ["TESLA-K1"], "keyType": "Card Key", "transponderChip": null, "programmingRequired": false, "programmingMethod": null, "notes": "Tesla proprietary key card" }
+    ],
+    "Model S": [
+      { "yearStart": 2012, "yearEnd": 2025, "keyBlanks": ["TESLA-K1"], "keyType": "Card Key", "transponderChip": null, "programmingRequired": false, "programmingMethod": null, "notes": "Tesla proprietary key card" }
+    ]
+  }
+}

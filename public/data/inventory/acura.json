@@ -1,0 +1,30 @@
+{
+  "Acura": {
+    "CL": [
+      { "yearStart": 1998, "yearEnd": 2003, "keyBlanks": ["HD106-PT", "HD107-PT"], "keyType": "Mechanical", "transponderChip": "Megamos (13)", "programmingRequired": true, "programmingMethod": "Smart Pro/TCP/MVPP/SDD/TKO", "notes": "Fixed Code System" }
+    ],
+    "CSX": [
+      { "yearStart": 2006, "yearEnd": 2011, "keyBlanks": ["HO03-PT(V)"], "keyType": "High Security", "transponderChip": "Philips (46)", "programmingRequired": true, "programmingMethod": "Smart Pro/TCP/MVPP", "notes": "Encrypted System" }
+    ],
+    "ILX": [
+      { "yearStart": 2016, "yearEnd": 2025, "keyBlanks": ["K001-N718"], "keyType": "Smart Key", "transponderChip": null, "programmingRequired": false, "programmingMethod": null, "notes": "Smart Pro/TCP/MVPP compatible" }
+    ],
+    "MDX": [
+      { "yearStart": 2007, "yearEnd": 2013, "keyBlanks": ["HO03-PT(V)", "HO03-GTK"], "keyType": "High Security", "transponderChip": "Philips (46)", "programmingRequired": true, "programmingMethod": "Smart Pro/TCP/MVPP/SDD/TKO", "notes": "Encrypted System" },
+      { "yearStart": 2001, "yearEnd": 2006, "keyBlanks": ["HD106-PT", "HD107-PT"], "keyType": "Mechanical", "transponderChip": "Megamos (13)", "programmingRequired": true, "programmingMethod": "Smart Pro/TCP/MVPP/SDD/TKO", "notes": "Fixed Code System" }
+    ],
+    "NSX": [
+      { "yearStart": 1997, "yearEnd": 2005, "keyBlanks": ["HD106-PT", "HD107-PT"], "keyType": "Mechanical", "transponderChip": "Megamos (13)", "programmingRequired": true, "programmingMethod": "Smart Pro/TCP/MVPP/SDD/TKO", "notes": "Fixed Code System" }
+    ],
+    "RDX": [
+      { "yearStart": 2019, "yearEnd": 2025, "keyBlanks": ["K001-N718"], "keyType": "Smart Key", "transponderChip": null, "programmingRequired": false, "programmingMethod": null, "notes": "2025 Database" }
+    ],
+    "TL": [
+      { "yearStart": 2007, "yearEnd": 2014, "keyBlanks": ["HO03-PT(V)", "HO03-GTK"], "keyType": "High Security", "transponderChip": "Philips (46)", "programmingRequired": true, "programmingMethod": "Smart Pro/TCP/MVPP/SDD/TKO", "notes": "Encrypted System" },
+      { "yearStart": 1999, "yearEnd": 2003, "keyBlanks": ["HD106-PT", "HD107-PT"], "keyType": "Mechanical", "transponderChip": "Megamos (13)", "programmingRequired": true, "programmingMethod": "Smart Pro/TCP/MVPP/SDD/TKO", "notes": "Fixed Code System" }
+    ],
+    "TLX": [
+      { "yearStart": 2021, "yearEnd": 2025, "keyBlanks": ["K001-N718"], "keyType": "Smart Key", "transponderChip": null, "programmingRequired": false, "programmingMethod": null, "notes": "2025 Database" }
+    ]
+  }
+}

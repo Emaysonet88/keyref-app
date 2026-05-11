@@ -1,0 +1,24 @@
+{
+  "2004": [
+    {
+      "yearStart": 2007,
+      "yearEnd": 2007,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "50000-69999",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "2004-2007": [
+    {
+      "yearStart": 0,
+      "yearEnd": 0,
+      "keyBlanks": [],
+      "transponderChip": "",
+      "cloningDetails": "",
+      "onBoardProgramming": "EB3-E-TOY43"
+    }
+  ]
+}

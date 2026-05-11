@@ -1,0 +1,24 @@
+{
+  "1998": [
+    {
+      "yearStart": 2001,
+      "yearEnd": 2001,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "40000-49999",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "1998-2001": [
+    {
+      "yearStart": 0,
+      "yearEnd": 0,
+      "keyBlanks": [],
+      "transponderChip": "",
+      "cloningDetails": "EB3-G-TOY40",
+      "onBoardProgramming": ""
+    }
+  ]
+}

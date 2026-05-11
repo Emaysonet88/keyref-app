@@ -1,0 +1,24 @@
+{
+  "1998": [
+    {
+      "yearStart": 2002,
+      "yearEnd": 2002,
+      "keyBlanks": [
+        "All"
+      ],
+      "transponderChip": "1X-1706X",
+      "cloningDetails": "",
+      "onBoardProgramming": ""
+    }
+  ],
+  "1998-2002": [
+    {
+      "yearStart": 0,
+      "yearEnd": 0,
+      "keyBlanks": [],
+      "transponderChip": "",
+      "cloningDetails": "EB3-B-H72",
+      "onBoardProgramming": ""
+    }
+  ]
+}
