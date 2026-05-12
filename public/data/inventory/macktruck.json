@@ -1,0 +1,76 @@
+{
+  "Mack Truck": {
+    "MIDLINER": [
+      {
+        "yearStart": 1989,
+        "yearEnd": 1989,
+        "lockApps": "Door",
+        "codeRange": "A4AA-A4JZ",
+        "keyBlanks": [
+          "R62UC"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "36"
+      },
+      {
+        "yearStart": 1982,
+        "yearEnd": 1988,
+        "lockApps": "Door",
+        "codeRange": "A4AA-A4JZ",
+        "keyBlanks": [
+          "R62UC"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "36"
+      }
+    ],
+    "US DESIGNED": [
+      {
+        "yearStart": 1987,
+        "yearEnd": 2004,
+        "lockApps": "Ignition/ Door",
+        "codeRange": "M000-M221",
+        "keyBlanks": [
+          "1098M/B1"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "1098GM",
+        "notes": null,
+        "cardNo": "142"
+      },
+      {
+        "yearStart": 1971,
+        "yearEnd": 1986,
+        "lockApps": "Ignition/ Door",
+        "codeRange": "M000-M221",
+        "keyBlanks": [
+          "1098/B1"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "142"
+      }
+    ]
+  }
+}

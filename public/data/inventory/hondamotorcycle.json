@@ -1,0 +1,378 @@
+{
+  "Honda Motorcycle": {
+    "BLACK SPIRIT": [
+      {
+        "yearStart": 2010,
+        "yearEnd": 2010,
+        "lockApps": null,
+        "codeRange": "HON70MH",
+        "keyBlanks": [],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "GOLD WING 1800": [
+      {
+        "yearStart": 2001,
+        "yearEnd": 2001,
+        "lockApps": null,
+        "codeRange": "HON58RMH",
+        "keyBlanks": [],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "SILVER WING": [
+      {
+        "yearStart": 2001,
+        "yearEnd": 2001,
+        "lockApps": null,
+        "codeRange": "HON70MH",
+        "keyBlanks": [],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "VTX 1800": [
+      {
+        "yearStart": 2002,
+        "yearEnd": 2002,
+        "lockApps": null,
+        "codeRange": "HON70MH",
+        "keyBlanks": [],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "CBR 1000": [
+      {
+        "yearStart": 2004,
+        "yearEnd": 2004,
+        "lockApps": null,
+        "codeRange": "HON70MH",
+        "keyBlanks": [],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "CBR 1100F": [
+      {
+        "yearStart": 1999,
+        "yearEnd": 1999,
+        "lockApps": null,
+        "codeRange": "HON70MH",
+        "keyBlanks": [],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "CBR 1100XX": [
+      {
+        "yearStart": 1999,
+        "yearEnd": 1999,
+        "lockApps": null,
+        "codeRange": "HON70MH",
+        "keyBlanks": [],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "CBR 600F": [
+      {
+        "yearStart": 1999,
+        "yearEnd": 1999,
+        "lockApps": null,
+        "codeRange": "HON70MH",
+        "keyBlanks": [],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "CBR 600RR": [
+      {
+        "yearStart": 2003,
+        "yearEnd": 2003,
+        "lockApps": null,
+        "codeRange": "HON70MH",
+        "keyBlanks": [],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "CBR 900": [
+      {
+        "yearStart": 2003,
+        "yearEnd": 2003,
+        "lockApps": null,
+        "codeRange": "HON70MH",
+        "keyBlanks": [],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "CTX700": [
+      {
+        "yearStart": 2014,
+        "yearEnd": 2014,
+        "lockApps": null,
+        "codeRange": "HON70MH",
+        "keyBlanks": [],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "CTX1300": [
+      {
+        "yearStart": 2014,
+        "yearEnd": 2014,
+        "lockApps": null,
+        "codeRange": "HON70MH",
+        "keyBlanks": [],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "NC700 S": [
+      {
+        "yearStart": 2012,
+        "yearEnd": 2012,
+        "lockApps": null,
+        "codeRange": "HON70MH",
+        "keyBlanks": [],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "NC700 X": [
+      {
+        "yearStart": 2012,
+        "yearEnd": 2012,
+        "lockApps": null,
+        "codeRange": "HON70MH",
+        "keyBlanks": [],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "NC750 X": [
+      {
+        "yearStart": 2014,
+        "yearEnd": 2014,
+        "lockApps": null,
+        "codeRange": "HON70MH",
+        "keyBlanks": [],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "NT 650V": [
+      {
+        "yearStart": 1999,
+        "yearEnd": 1999,
+        "lockApps": null,
+        "codeRange": "HON70MH",
+        "keyBlanks": [],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "NT 700V": [
+      {
+        "yearStart": 2006,
+        "yearEnd": 2006,
+        "lockApps": null,
+        "codeRange": "HON70MH",
+        "keyBlanks": [],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "SHADOW 750": [
+      {
+        "yearStart": 2004,
+        "yearEnd": 2004,
+        "lockApps": null,
+        "codeRange": "HON70MH",
+        "keyBlanks": [],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "VARADERO": [
+      {
+        "yearStart": 2003,
+        "yearEnd": 2003,
+        "lockApps": null,
+        "codeRange": "HON70MH",
+        "keyBlanks": [],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "VT 750 C4": [
+      {
+        "yearStart": 2004,
+        "yearEnd": 2004,
+        "lockApps": null,
+        "codeRange": "HON70MH",
+        "keyBlanks": [],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "SH 300": [
+      {
+        "yearStart": 2007,
+        "yearEnd": 2007,
+        "lockApps": null,
+        "codeRange": "HON70MH",
+        "keyBlanks": [],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "X 11": [
+      {
+        "yearStart": 2001,
+        "yearEnd": 2001,
+        "lockApps": null,
+        "codeRange": "HON70MH",
+        "keyBlanks": [],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ]
+  }
+}

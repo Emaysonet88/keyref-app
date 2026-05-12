@@ -1,0 +1,240 @@
+{
+  "Daewoo": {
+    "LANOS": [
+      {
+        "yearStart": 2004,
+        "yearEnd": 2004,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 2000,
+        "yearEnd": 2003,
+        "lockApps": "All",
+        "codeRange": "T0001-T1200",
+        "keyBlanks": [
+          "DW05RT5"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, RW3, RW2,EZ Clone Plus, EZ Clone",
+        "substitutes": "-",
+        "notes": "Transponder is buyer option",
+        "cardNo": "110"
+      },
+      {
+        "yearStart": 1998,
+        "yearEnd": 1999,
+        "lockApps": "All",
+        "codeRange": "T0001-T1200",
+        "keyBlanks": [
+          "DW05RAP"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": "Transponder is buyer option",
+        "cardNo": "110"
+      }
+    ],
+    "LEGANZA": [
+      {
+        "yearStart": 2005,
+        "yearEnd": 2005,
+        "lockApps": "All",
+        "codeRange": "V2001-V3200",
+        "keyBlanks": [
+          "DW05AP"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": "Transponder is buyer option",
+        "cardNo": "110"
+      },
+      {
+        "yearStart": 2000,
+        "yearEnd": 2004,
+        "lockApps": "All",
+        "codeRange": "V1-V1200",
+        "keyBlanks": [
+          "DW05T5"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, RW3, RW2,EZ Clone Plus, EZ Clone",
+        "substitutes": "-",
+        "notes": "Transponder is buyer option",
+        "cardNo": "110"
+      },
+      {
+        "yearStart": 1998,
+        "yearEnd": 1999,
+        "lockApps": "All",
+        "codeRange": "V1-V1200",
+        "keyBlanks": [
+          "DW05AP"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": "Transponder is buyer option",
+        "cardNo": "110"
+      },
+      {
+        "yearStart": 2000,
+        "yearEnd": 2000,
+        "lockApps": null,
+        "codeRange": "DW05T5",
+        "keyBlanks": [],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, RW3, RW2,EZ Clone Plus, EZ Clone",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "NUBIRA": [
+      {
+        "yearStart": 2004,
+        "yearEnd": 2004,
+        "lockApps": "All",
+        "codeRange": "J1-J1200",
+        "keyBlanks": [
+          "DW04RAP"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": "Transponder is buyer option",
+        "cardNo": "110"
+      },
+      {
+        "yearStart": 2001,
+        "yearEnd": 2002,
+        "lockApps": "All",
+        "codeRange": "J1-J1200",
+        "keyBlanks": [
+          "DW04RT5"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, RW3, RW2,EZ Clone Plus, EZ Clone",
+        "substitutes": "DW04RAP",
+        "notes": "Transponder is buyer option",
+        "cardNo": "110"
+      },
+      {
+        "yearStart": 1998,
+        "yearEnd": 2000,
+        "lockApps": "All",
+        "codeRange": "J1-J1200",
+        "keyBlanks": [
+          "DW04RT5"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, RW3, RW2,EZ Clone Plus, EZ Clone",
+        "substitutes": "DW04RAP",
+        "notes": "Transponder is buyer option",
+        "cardNo": "110"
+      },
+      {
+        "yearStart": 1997,
+        "yearEnd": 1997,
+        "lockApps": "All",
+        "codeRange": "J1-J1200",
+        "keyBlanks": [
+          "DW04RAP"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": "Transponder is buyer option",
+        "cardNo": "110"
+      },
+      {
+        "yearStart": 2001,
+        "yearEnd": 2001,
+        "lockApps": null,
+        "codeRange": "DW04RT5",
+        "keyBlanks": [],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, RW3, RW2,EZ Clone Plus, EZ Clone",
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 1998,
+        "yearEnd": 1998,
+        "lockApps": null,
+        "codeRange": "DW04RT5",
+        "keyBlanks": [],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, RW3, RW2,EZ Clone Plus, EZ Clone",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "DAKOTA": [
+      {
+        "yearStart": 2000,
+        "yearEnd": 2000,
+        "lockApps": null,
+        "codeRange": "DW05RT5",
+        "keyBlanks": [],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, RW3, RW2,EZ Clone Plus, EZ Clone",
+        "notes": null,
+        "cardNo": null
+      }
+    ]
+  }
+}

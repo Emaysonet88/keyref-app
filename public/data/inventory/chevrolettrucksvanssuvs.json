@@ -1,0 +1,1768 @@
+{
+  "Chevrolet Trucks, Vans, Suvs": {
+    "ASTRO VAN": [
+      {
+        "yearStart": 2000,
+        "yearEnd": 2005,
+        "lockApps": "All",
+        "codeRange": "S000A-S999K",
+        "keyBlanks": [
+          "P1113/B102 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "P1106/B86",
+        "notes": null,
+        "cardNo": "567"
+      },
+      {
+        "yearStart": 1999,
+        "yearEnd": 1999,
+        "lockApps": "All",
+        "codeRange": "AA00-7T51",
+        "keyBlanks": [
+          "P1113/B102 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "567"
+      },
+      {
+        "yearStart": 1996,
+        "yearEnd": 1998,
+        "lockApps": "All",
+        "codeRange": "AA00-7T51",
+        "keyBlanks": [
+          "P1107/B89 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "P1106/B86",
+        "notes": null,
+        "cardNo": "567"
+      }
+    ],
+    "AVALANCHE": [
+      {
+        "yearStart": 2007,
+        "yearEnd": 2013,
+        "lockApps": "All",
+        "codeRange": "G0000-G3631",
+        "keyBlanks": [
+          "B111-PT"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips (46) Encrypted System",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program A or G, Smart Pro/TCP/MVPP/ TKO/SDD",
+        "cloningMethod": null,
+        "substitutes": "Service Key B106-P",
+        "notes": "Circle +, Philips (46) Encrypted System",
+        "cardNo": "2020"
+      },
+      {
+        "yearStart": 2001,
+        "yearEnd": 2006,
+        "lockApps": "All",
+        "codeRange": "S000A-S999K",
+        "keyBlanks": [
+          "P1113/B102 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "567"
+      },
+      {
+        "yearStart": 2007,
+        "yearEnd": 2007,
+        "lockApps": "EB3-R-B111",
+        "codeRange": "B111-GTK",
+        "keyBlanks": [
+          "B111-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "BLAZER": [
+      {
+        "yearStart": 2019,
+        "yearEnd": 2023,
+        "lockApps": "All",
+        "codeRange": "Z0001-Z6000",
+        "keyBlanks": [
+          "OEM# 13529638 OEM# 13585728 OEM# 13530713"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "cloningMethod": null,
+        "substitutes": "P1116/B119",
+        "notes": "Z1-2000(card 758), Z2001-4000(card 923), & Z4001- 6000(card 766)",
+        "cardNo": "2200"
+      },
+      {
+        "yearStart": 2000,
+        "yearEnd": 2006,
+        "lockApps": "All",
+        "codeRange": "S000A-S999K",
+        "keyBlanks": [
+          "P1113/B102 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "567"
+      },
+      {
+        "yearStart": 1999,
+        "yearEnd": 1999,
+        "lockApps": "All",
+        "codeRange": "AA00-7T51",
+        "keyBlanks": [
+          "P1113/B102 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "P1106/B86",
+        "notes": null,
+        "cardNo": "567"
+      },
+      {
+        "yearStart": 1995,
+        "yearEnd": 1998,
+        "lockApps": "All",
+        "codeRange": "AA00-7T51 or S000A-S999K",
+        "keyBlanks": [
+          "P1107/B89 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "P1106/B86",
+        "notes": null,
+        "cardNo": "567"
+      },
+      {
+        "yearStart": 1991,
+        "yearEnd": 1994,
+        "lockApps": "Door/ Hatch/ GB",
+        "codeRange": "L, M",
+        "keyBlanks": [
+          "S1098H/B45 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "S1098WH/B79",
+        "notes": null,
+        "cardNo": "14"
+      }
+    ],
+    "CAPTIVA SPORT": [
+      {
+        "yearStart": 2012,
+        "yearEnd": 2015,
+        "lockApps": "All",
+        "codeRange": "V2001-V3200",
+        "keyBlanks": [
+          "B114R-PT"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips (46) Encrypted System",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program A or G, Smart Pro/TCP/MVPP/ TKO/SDD",
+        "cloningMethod": null,
+        "substitutes": "DW05RAP",
+        "notes": "Circle +, Philips (46) Encrypted System",
+        "cardNo": "110"
+      },
+      {
+        "yearStart": 2012,
+        "yearEnd": 2012,
+        "lockApps": "EB3-W-B114R",
+        "codeRange": "B114R-GTK",
+        "keyBlanks": [],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "CITY EXPRESS": [
+      {
+        "yearStart": 2015,
+        "yearEnd": 2018,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "NI04T (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "cloningMethod": null,
+        "substitutes": "Service Key DA34",
+        "notes": "Philips Crypto (46) Transponder key",
+        "cardNo": "607"
+      },
+      {
+        "yearStart": 2015,
+        "yearEnd": 2015,
+        "lockApps": "EB3-H-NI02",
+        "codeRange": "NI02-GTK",
+        "keyBlanks": [
+          "NI02-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "C/K PICK UP, SILVERADO, TYPHOON": [
+      {
+        "yearStart": 2004,
+        "yearEnd": 2006,
+        "lockApps": "All",
+        "codeRange": "70000-75928",
+        "keyBlanks": [
+          "P1114/B110 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "1420"
+      },
+      {
+        "yearStart": 2000,
+        "yearEnd": 2005,
+        "lockApps": "All",
+        "codeRange": "S000A-S999K",
+        "keyBlanks": [
+          "P1107/B89 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "P1106/B86",
+        "notes": null,
+        "cardNo": "567"
+      },
+      {
+        "yearStart": 1999,
+        "yearEnd": 1999,
+        "lockApps": "All",
+        "codeRange": "AA00-7T51",
+        "keyBlanks": [
+          "P1113/B102 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "P1106/B86",
+        "notes": null,
+        "cardNo": "567"
+      },
+      {
+        "yearStart": 1995,
+        "yearEnd": 1998,
+        "lockApps": "All",
+        "codeRange": "AA00-7T51",
+        "keyBlanks": [
+          "P1107/B89 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "P1106/B86",
+        "notes": null,
+        "cardNo": "567"
+      },
+      {
+        "yearStart": 1991,
+        "yearEnd": 1994,
+        "lockApps": "Door/ GB",
+        "codeRange": "L, M",
+        "keyBlanks": [
+          "S1098H/B45 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "S1098WH/B79",
+        "notes": null,
+        "cardNo": "14"
+      }
+    ],
+    "COLORADO - CREW, EXTENDED, REGULAR CABS": [
+      {
+        "yearStart": 2015,
+        "yearEnd": 2024,
+        "lockApps": "All",
+        "codeRange": "Z0001-Z6000",
+        "keyBlanks": [
+          "B119-PT"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "cloningMethod": null,
+        "substitutes": "P1116/B119",
+        "notes": "Z1-2000(card 758), Z2001-4000(card 923), & Z4001- 6000(card 766)",
+        "cardNo": "2200"
+      },
+      {
+        "yearStart": 2004,
+        "yearEnd": 2012,
+        "lockApps": "All",
+        "codeRange": "70000-75928",
+        "keyBlanks": [
+          "P1114/B110 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "1420"
+      },
+      {
+        "yearStart": 2015,
+        "yearEnd": 2015,
+        "lockApps": "EB3-V-HU100",
+        "codeRange": "HU100-GTK",
+        "keyBlanks": [
+          "HU100-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "COLORADO - CREW, EXTENDED, REGULAR CABS (CANADA)": [
+      {
+        "yearStart": 2008,
+        "yearEnd": 2012,
+        "lockApps": "All",
+        "codeRange": "70000-75928",
+        "keyBlanks": [
+          "OEM#19267217"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Megamos (48) Encrypted System",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key P1114/ B110[-P]",
+        "notes": "Megamos (48) Encrypted System",
+        "cardNo": "1420"
+      }
+    ],
+    "EQUINOX W/ PROX": [
+      {
+        "yearStart": 2018,
+        "yearEnd": 2021,
+        "lockApps": "All",
+        "codeRange": "Z0001-Z6000",
+        "keyBlanks": [
+          "OEM# 13585723 / 13585722 / 13584498 (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "2200"
+      }
+    ],
+    "EQUINOX": [
+      {
+        "yearStart": 2010,
+        "yearEnd": 2019,
+        "lockApps": "All",
+        "codeRange": "Z0001-Z6000",
+        "keyBlanks": [
+          "B119-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program M, Smart Pro/TCP/MVPP/TKO/SDD",
+        "cloningMethod": null,
+        "substitutes": "P1116/B119",
+        "notes": "Z1-2000(card 758), Z2001-4000(card 923), & Z4001- 6000(card 766)",
+        "cardNo": "2200"
+      },
+      {
+        "yearStart": 2007,
+        "yearEnd": 2009,
+        "lockApps": "All",
+        "codeRange": "G0000-G3631",
+        "keyBlanks": [
+          "B111-PT"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips (46) Encrypted System",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program A or G, Smart Pro/TCP/MVPP/ TKO/SDD",
+        "cloningMethod": null,
+        "substitutes": "Service Key B106-P",
+        "notes": "Circle +, Philips (46) Encrypted System",
+        "cardNo": "2020"
+      },
+      {
+        "yearStart": 2005,
+        "yearEnd": 2006,
+        "lockApps": "All",
+        "codeRange": "O5000-O6999",
+        "keyBlanks": [
+          "P1110/B96 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "567"
+      },
+      {
+        "yearStart": 2010,
+        "yearEnd": 2010,
+        "lockApps": "EB3-V-HU100",
+        "codeRange": null,
+        "keyBlanks": [
+          "HU100-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "HU100-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      },
+      {
+        "yearStart": 2007,
+        "yearEnd": 2007,
+        "lockApps": "EB3-R-B111",
+        "codeRange": null,
+        "keyBlanks": [
+          "B111-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "B111-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "EXPRESS": [
+      {
+        "yearStart": 2015,
+        "yearEnd": 2024,
+        "lockApps": "All",
+        "codeRange": "V0001-V5573",
+        "keyBlanks": [
+          "B120-PT"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "cloningMethod": null,
+        "substitutes": "P1116/B119",
+        "notes": "Z1-2000(card 758), Z2001-4000(card 923), & Z4001- 6000(card 766)",
+        "cardNo": "3647"
+      },
+      {
+        "yearStart": 2008,
+        "yearEnd": 2014,
+        "lockApps": "All",
+        "codeRange": "S000A-S999K",
+        "keyBlanks": [
+          "B111-PT"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips (46) Encrypted System",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program A or G, Smart Pro/TCP/MVPP/ TKO/SDD",
+        "cloningMethod": null,
+        "substitutes": "Service Key B106-P",
+        "notes": "Circle +, Philips (46) Encrypted System",
+        "cardNo": "567"
+      },
+      {
+        "yearStart": 1999,
+        "yearEnd": 2007,
+        "lockApps": "All",
+        "codeRange": "S000A-S999K",
+        "keyBlanks": [
+          "P1113/B102 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "P1106/B86",
+        "notes": null,
+        "cardNo": "567"
+      },
+      {
+        "yearStart": 1995,
+        "yearEnd": 1998,
+        "lockApps": "All",
+        "codeRange": "AA00-7T51",
+        "keyBlanks": [
+          "P1107/B89 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "P1106/B86",
+        "notes": null,
+        "cardNo": "567"
+      },
+      {
+        "yearStart": 2015,
+        "yearEnd": 2015,
+        "lockApps": "EB3-V-HU100",
+        "codeRange": null,
+        "keyBlanks": [
+          "HU100-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "HU100-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      },
+      {
+        "yearStart": 2008,
+        "yearEnd": 2008,
+        "lockApps": "EB3-R-B111",
+        "codeRange": null,
+        "keyBlanks": [
+          "B111-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "B111-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "FSR, FRR, FTR": [
+      {
+        "yearStart": 2006,
+        "yearEnd": 2007,
+        "lockApps": "All",
+        "codeRange": "S8001-S9000",
+        "keyBlanks": [
+          "P1113/B102 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "145"
+      },
+      {
+        "yearStart": 1984,
+        "yearEnd": 2005,
+        "lockApps": "All",
+        "codeRange": "S8001-S9000",
+        "keyBlanks": [
+          "X154/B54"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "145"
+      }
+    ],
+    "HHR": [
+      {
+        "yearStart": 2006,
+        "yearEnd": 2011,
+        "lockApps": "All",
+        "codeRange": "G0000-G3631",
+        "keyBlanks": [
+          "B111-PT"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips (46) Encrypted System",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program A or G, Smart Pro/TCP/MVPP/ TKO/SDD",
+        "cloningMethod": null,
+        "substitutes": "Service Key B106-P",
+        "notes": "Circle +, Philips (46) Encrypted System",
+        "cardNo": "2020"
+      },
+      {
+        "yearStart": 2006,
+        "yearEnd": 2006,
+        "lockApps": "EB3-R-B111",
+        "codeRange": null,
+        "keyBlanks": [
+          "B111-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "B111-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "LUMINA APV": [
+      {
+        "yearStart": 1991,
+        "yearEnd": 1995,
+        "lockApps": "Door/ Hatch/ GB",
+        "codeRange": "L, M",
+        "keyBlanks": [
+          "S1098H/B45 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "S1098WH/B79",
+        "notes": null,
+        "cardNo": "14"
+      },
+      {
+        "yearStart": 1990,
+        "yearEnd": 1990,
+        "lockApps": "Door/ Hatch/ GB",
+        "codeRange": "NPSU",
+        "keyBlanks": [
+          "S1098D/B51 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "S1098WD/B67",
+        "notes": null,
+        "cardNo": "14"
+      }
+    ],
+    "MODELS AND YEARS NOT REFERENCED ELSEWHERE": [
+      {
+        "yearStart": 1991,
+        "yearEnd": 1996,
+        "lockApps": "Door/ Trunk",
+        "codeRange": "L, M",
+        "keyBlanks": [
+          "S1098H/B45 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "S1098WH/B79",
+        "notes": null,
+        "cardNo": "14"
+      },
+      {
+        "yearStart": 1987,
+        "yearEnd": 1990,
+        "lockApps": "Door/ Trunk",
+        "codeRange": "NPSU",
+        "keyBlanks": [
+          "S1098D/B51 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "S1098WD/B67",
+        "notes": null,
+        "cardNo": "14"
+      },
+      {
+        "yearStart": 1983,
+        "yearEnd": 1986,
+        "lockApps": "Door/ Trunk",
+        "codeRange": "VWXY",
+        "keyBlanks": [
+          "S1098B/B49 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "14"
+      },
+      {
+        "yearStart": 1982,
+        "yearEnd": 1982,
+        "lockApps": "Door/ Trunk/ GB",
+        "codeRange": "EFGH",
+        "keyBlanks": [
+          "S1098K/B47"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "14"
+      },
+      {
+        "yearStart": 1981,
+        "yearEnd": 1981,
+        "lockApps": "Door/ Trunk/ GB",
+        "codeRange": "L, M",
+        "keyBlanks": [
+          "S1098H/B45 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "S1098WH/B79",
+        "notes": null,
+        "cardNo": "14"
+      }
+    ],
+    "ORLANDO (CANADA)": [
+      {
+        "yearStart": 2012,
+        "yearEnd": 2014,
+        "lockApps": "All",
+        "codeRange": "Z0001-Z6000",
+        "keyBlanks": [
+          "OEM# 13500222 or 13504199"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Philips (46) Encrypted System",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP (12-13)",
+        "cloningMethod": null,
+        "substitutes": "P1116/B119",
+        "notes": "Circle +, Philips (46) Encrypted System",
+        "cardNo": "2020"
+      }
+    ],
+    "NPR, NRR, W4, W5": [
+      {
+        "yearStart": 1989,
+        "yearEnd": 2000,
+        "lockApps": "All",
+        "codeRange": "N5001-N7000",
+        "keyBlanks": [
+          "X184/B65 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "MIT1, SUZ15",
+        "notes": null,
+        "cardNo": "264"
+      },
+      {
+        "yearStart": 1986,
+        "yearEnd": 1988,
+        "lockApps": "All",
+        "codeRange": "A8001-A9400",
+        "keyBlanks": [
+          "X158/B57"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "B53",
+        "notes": null,
+        "cardNo": "156"
+      }
+    ],
+    "NQR": [
+      {
+        "yearStart": 2000,
+        "yearEnd": 2003,
+        "lockApps": "All",
+        "codeRange": "N5001-N7000",
+        "keyBlanks": [
+          "X184/B65 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "MIT1, SUZ15",
+        "notes": null,
+        "cardNo": "264"
+      }
+    ],
+    "S-10 PICK-UP": [
+      {
+        "yearStart": 2000,
+        "yearEnd": 2004,
+        "lockApps": "All",
+        "codeRange": "S000A-S999K",
+        "keyBlanks": [
+          "P1113/B102 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "567"
+      },
+      {
+        "yearStart": 1999,
+        "yearEnd": 1999,
+        "lockApps": "All",
+        "codeRange": "AA00-7T51",
+        "keyBlanks": [
+          "P1113/B102 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "567"
+      },
+      {
+        "yearStart": 1995,
+        "yearEnd": 1998,
+        "lockApps": "All",
+        "codeRange": "AA00-7T51",
+        "keyBlanks": [
+          "P1107/B89 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "567"
+      },
+      {
+        "yearStart": 1991,
+        "yearEnd": 1994,
+        "lockApps": "Door/ GB",
+        "codeRange": "L, M",
+        "keyBlanks": [
+          "S1098H/B45 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "14"
+      }
+    ],
+    "SILVERADO - 1500 CREW, EXTENDED CABS, SILVERADO HYBRID, SSR": [
+      {
+        "yearStart": 2014,
+        "yearEnd": 2024,
+        "lockApps": "All",
+        "codeRange": "V0001-V5573",
+        "keyBlanks": [
+          "B119-PT"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program M or R, Smart Pro/TCP/MVPP/ TKO/SDD",
+        "cloningMethod": null,
+        "substitutes": "P1116/B119",
+        "notes": null,
+        "cardNo": "3647"
+      },
+      {
+        "yearStart": 2007,
+        "yearEnd": 2013,
+        "lockApps": "All",
+        "codeRange": "G0000-G3631",
+        "keyBlanks": [
+          "B111-PT"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips (46) Encrypted System",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program A or G, Smart Pro/TCP/MVPP/ TKO/SDD",
+        "cloningMethod": null,
+        "substitutes": "Service Key B106-P",
+        "notes": "Circle +, Philips (46) Encrypted System",
+        "cardNo": "2020"
+      },
+      {
+        "yearStart": 2014,
+        "yearEnd": 2014,
+        "lockApps": "EB3-V-HU100",
+        "codeRange": null,
+        "keyBlanks": [
+          "HU100-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "HU100-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      },
+      {
+        "yearStart": 2007,
+        "yearEnd": 2007,
+        "lockApps": "EB3-R-B111",
+        "codeRange": null,
+        "keyBlanks": [
+          "B111-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "B111-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "SILVERADO - CLASSIC SS": [
+      {
+        "yearStart": 2007,
+        "yearEnd": 2014,
+        "lockApps": "All",
+        "codeRange": "G0000-G3631",
+        "keyBlanks": [
+          "B111-PT"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips (46) Encrypted System",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program A or G, Smart Pro/TCP/MVPP/ TKO/SDD",
+        "cloningMethod": null,
+        "substitutes": "Service Key B106-P",
+        "notes": "Circle +, Philips (46) Encrypted System",
+        "cardNo": "2020"
+      },
+      {
+        "yearStart": 2007,
+        "yearEnd": 2007,
+        "lockApps": "EB3-R-B111",
+        "codeRange": null,
+        "keyBlanks": [
+          "B111-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "B111-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "SILVERADO 1500/HD/ SS, 2500/HD/3500": [
+      {
+        "yearStart": 2004,
+        "yearEnd": 2007,
+        "lockApps": "All",
+        "codeRange": "O5000-O6999",
+        "keyBlanks": [
+          "P1114/B110 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "567"
+      }
+    ],
+    "SUBURBAN W/ PROX": [
+      {
+        "yearStart": 2021,
+        "yearEnd": 2022,
+        "lockApps": "All",
+        "codeRange": "Z0001-Z6000",
+        "keyBlanks": [
+          "OEM# 13541561 / 13541559 / 13537962"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "cloningMethod": null,
+        "substitutes": "P1116/B119",
+        "notes": "Z1-2000(card 758), Z2001-4000(card 923), & Z4001- 6000(card 766)",
+        "cardNo": "2200"
+      },
+      {
+        "yearStart": 2015,
+        "yearEnd": 2020,
+        "lockApps": "All",
+        "codeRange": "V0001-V5573",
+        "keyBlanks": [
+          "OEM# 13580802 (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "cloningMethod": null,
+        "substitutes": "Emergency Key B122",
+        "notes": null,
+        "cardNo": "3647"
+      }
+    ],
+    "SUBURBAN": [
+      {
+        "yearStart": 2015,
+        "yearEnd": 2024,
+        "lockApps": "All",
+        "codeRange": "V0001-V5573",
+        "keyBlanks": [
+          "B119-PT"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program M or R, Smart Pro/TCP/MVPP/ TKO/SDD",
+        "cloningMethod": null,
+        "substitutes": "P1116/B119",
+        "notes": null,
+        "cardNo": "3647"
+      },
+      {
+        "yearStart": 2007,
+        "yearEnd": 2014,
+        "lockApps": "All",
+        "codeRange": "G0000-G3631",
+        "keyBlanks": [
+          "B111-PT"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips (46) Encrypted System",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program A or G, Smart Pro/TCP/MVPP/ TKO/SDD",
+        "cloningMethod": null,
+        "substitutes": "Service Key B106-P",
+        "notes": "Circle +, Philips (46) Encrypted System",
+        "cardNo": "2020"
+      },
+      {
+        "yearStart": 2000,
+        "yearEnd": 2006,
+        "lockApps": "All",
+        "codeRange": "S000A-S999K",
+        "keyBlanks": [
+          "P1113/B102 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "567"
+      },
+      {
+        "yearStart": 1999,
+        "yearEnd": 1999,
+        "lockApps": "All",
+        "codeRange": "AA00-7T51",
+        "keyBlanks": [
+          "P1113/B102 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "P1106/B86",
+        "notes": null,
+        "cardNo": "567"
+      },
+      {
+        "yearStart": 1995,
+        "yearEnd": 1998,
+        "lockApps": "All",
+        "codeRange": "AA00-7T51",
+        "keyBlanks": [
+          "P1107/B89 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "P1106/B86",
+        "notes": null,
+        "cardNo": "567"
+      },
+      {
+        "yearStart": 2015,
+        "yearEnd": 2015,
+        "lockApps": "EB3-V-HU100",
+        "codeRange": null,
+        "keyBlanks": [
+          "HU100-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "HU100-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      },
+      {
+        "yearStart": 2007,
+        "yearEnd": 2007,
+        "lockApps": "EB3-R-B111",
+        "codeRange": null,
+        "keyBlanks": [
+          "B111-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "B111-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "TAHOE W/ PROX": [
+      {
+        "yearStart": 2021,
+        "yearEnd": 2022,
+        "lockApps": "All",
+        "codeRange": "Z0001-Z6000",
+        "keyBlanks": [
+          "OEM# 13537962"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "P1116/B119",
+        "notes": "Z1-2000(card 758), Z2001-4000(card 923), & Z4001- 6000(card 766)",
+        "cardNo": "2200"
+      },
+      {
+        "yearStart": 2015,
+        "yearEnd": 2020,
+        "lockApps": "All",
+        "codeRange": "V0001-V5573",
+        "keyBlanks": [
+          "OEM# 13580802 (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "cloningMethod": null,
+        "substitutes": "Emergency Key B122",
+        "notes": null,
+        "cardNo": "3647"
+      }
+    ],
+    "TAHOE": [
+      {
+        "yearStart": 2015,
+        "yearEnd": 2025,
+        "lockApps": "All",
+        "codeRange": "V0001-V5573",
+        "keyBlanks": [
+          "B119-PT"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program M or R, Smart Pro/TCP/MVPP/ TKO/SDD",
+        "cloningMethod": null,
+        "substitutes": "P1116/B119",
+        "notes": null,
+        "cardNo": "3647"
+      },
+      {
+        "yearStart": 2007,
+        "yearEnd": 2014,
+        "lockApps": "All",
+        "codeRange": "G0000-G3631",
+        "keyBlanks": [
+          "B111-PT"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips (46) Encrypted System",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program A or G, Smart Pro/TCP/MVPP/ TKO/SDD",
+        "cloningMethod": null,
+        "substitutes": "Service Key B106-P",
+        "notes": "Circle +, Philips (46) Encrypted System",
+        "cardNo": "2020"
+      },
+      {
+        "yearStart": 2015,
+        "yearEnd": 2015,
+        "lockApps": "EB3-V-HU100",
+        "codeRange": null,
+        "keyBlanks": [
+          "HU100-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "HU100-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      },
+      {
+        "yearStart": 2007,
+        "yearEnd": 2007,
+        "lockApps": "EB3-R-B111",
+        "codeRange": null,
+        "keyBlanks": [
+          "B111-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "B111-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "TAHOE, G VAN": [
+      {
+        "yearStart": 2000,
+        "yearEnd": 2006,
+        "lockApps": "All",
+        "codeRange": "S000A-S999K",
+        "keyBlanks": [
+          "P1107/B89 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "P1106/B86",
+        "notes": null,
+        "cardNo": "567"
+      }
+    ],
+    "TRACKER": [
+      {
+        "yearStart": 1998,
+        "yearEnd": 2004,
+        "lockApps": "All",
+        "codeRange": "18100-19299",
+        "keyBlanks": [
+          "X180/B69"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "X186/SUZ17",
+        "notes": null,
+        "cardNo": "288"
+      }
+    ],
+    "TRAILBLAZER W/ PROX": [
+      {
+        "yearStart": 2021,
+        "yearEnd": 2023,
+        "lockApps": "All",
+        "codeRange": "Z0001-Z6000",
+        "keyBlanks": [
+          "OEM# 13530711 /13585728/13530713"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "cloningMethod": null,
+        "substitutes": "P1116/B119",
+        "notes": "Z1-2000(card 758), Z2001-4000(card 923), & Z4001- 6000(card 766)",
+        "cardNo": "2200"
+      }
+    ],
+    "TRAILBLAZER W/ REGULAR IGNITION": [
+      {
+        "yearStart": 2021,
+        "yearEnd": 2023,
+        "lockApps": "All",
+        "codeRange": "Z0001-Z6000",
+        "keyBlanks": [
+          "B119-PT"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "cloningMethod": null,
+        "substitutes": "P1116/B119",
+        "notes": "Z1-2000(card 758), Z2001-4000(card 923), & Z4001- 6000(card 766)",
+        "cardNo": "2200"
+      },
+      {
+        "yearStart": 2002,
+        "yearEnd": 2009,
+        "lockApps": "All",
+        "codeRange": "S000A-S999K",
+        "keyBlanks": [
+          "P1113/B102 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "567"
+      }
+    ],
+    "TRAX (CANADA)": [
+      {
+        "yearStart": 2013,
+        "yearEnd": 2021,
+        "lockApps": "All",
+        "codeRange": "Z0001-Z6000",
+        "keyBlanks": [
+          "B119-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "cloningMethod": null,
+        "substitutes": "P1116/B119",
+        "notes": "Z1-2000(card 758), Z2001-4000(card 923), & Z4001- 6000(card 766)",
+        "cardNo": "2200"
+      },
+      {
+        "yearStart": 2013,
+        "yearEnd": 2013,
+        "lockApps": "EB3-V-HU100",
+        "codeRange": null,
+        "keyBlanks": [
+          "HU100-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "HU100-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "UPLANDER MINI VAN": [
+      {
+        "yearStart": 2007,
+        "yearEnd": 2009,
+        "lockApps": "All",
+        "codeRange": "S000A-S999K",
+        "keyBlanks": [
+          "B99-PT"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Megamos Fixed Code System",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program A or G, Smart Pro/TCP/MVPP/ TKO/SDD",
+        "cloningMethod": null,
+        "substitutes": "Service Key P1106/B86",
+        "notes": "Megamos Fixed Code System",
+        "cardNo": "567"
+      },
+      {
+        "yearStart": 2005,
+        "yearEnd": 2006,
+        "lockApps": "All",
+        "codeRange": "Y170-PT S000A-S999K",
+        "keyBlanks": [
+          "B97-PT"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Megamos Fixed Code System",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program A or G, Smart Pro/TCP/MVPP/ TKO/SDD",
+        "cloningMethod": null,
+        "substitutes": "Service Key P1106/B86",
+        "notes": "Megamos Fixed Code System",
+        "cardNo": "567"
+      },
+      {
+        "yearStart": 2007,
+        "yearEnd": 2007,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "B99-PT5"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "RW5, SA+, RW4 Plus, RW4, RW3, RW2,EZ Clone Plus, EZ Clone",
+        "cardNo": null
+      },
+      {
+        "yearStart": 2007,
+        "yearEnd": 2007,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "B100-PT5"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "RW5, SA+, RW4 Plus, RW4, RW3, RW2,EZ Clone Plus, EZ Clone",
+        "cardNo": null
+      },
+      {
+        "yearStart": 2005,
+        "yearEnd": 2005,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "B97-PT5"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "RW5, SA+, RW4 Plus, RW4, RW3, RW2,EZ Clone Plus, EZ Clone",
+        "cardNo": null
+      }
+    ],
+    "VENTURE VAN": [
+      {
+        "yearStart": 2003,
+        "yearEnd": 2005,
+        "lockApps": "All",
+        "codeRange": "S000A-S999K",
+        "keyBlanks": [
+          "B97-PT"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Megamos Fixed Code System",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program G, Smart Pro/TCP/MVPP/TKO/ SDD",
+        "cloningMethod": null,
+        "substitutes": "Service Key P1106/B86",
+        "notes": "Megamos Fixed Code System",
+        "cardNo": "567"
+      },
+      {
+        "yearStart": 2000,
+        "yearEnd": 2000,
+        "lockApps": "S000A-S999K",
+        "codeRange": "B97-PT B97-PT5",
+        "keyBlanks": [
+          "OBP Program A, Smart Pro/TCP/MVPP/TKO/ SDD"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Service Key P1106/B86",
+        "cloningMethod": null,
+        "substitutes": "Megamos Fixed Code System",
+        "notes": "567",
+        "cardNo": null
+      },
+      {
+        "yearStart": 1999,
+        "yearEnd": 1999,
+        "lockApps": "AA00-7T51",
+        "codeRange": "B97-PT B97-PT5",
+        "keyBlanks": [
+          "OBP Program A, Smart Pro/TCP/MVPP/TKO/ SDD"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Service Key P1106/B86",
+        "cloningMethod": null,
+        "substitutes": "Megamos Fixed Code System",
+        "notes": "567",
+        "cardNo": null
+      },
+      {
+        "yearStart": 1997,
+        "yearEnd": 1997,
+        "lockApps": "AA00-7T51",
+        "codeRange": "P1107/B89 [-P]",
+        "keyBlanks": [],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "P1106/B86",
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "567",
+        "cardNo": null
+      },
+      {
+        "yearStart": 2003,
+        "yearEnd": 2003,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "B97-PT5"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "RW5, SA+, RW4 Plus, RW4, RW3, RW2,EZ Clone Plus, EZ Clone",
+        "cardNo": null
+      },
+      {
+        "yearStart": 2000,
+        "yearEnd": 2000,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "B97-PT5"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "RW5, SA+, RW4 Plus, RW4, RW3, RW2,EZ Clone Plus, EZ Clone",
+        "cardNo": null
+      },
+      {
+        "yearStart": 1999,
+        "yearEnd": 1999,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "B97-PT5"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "RW5, SA+, RW4 Plus, RW4, RW3, RW2,EZ Clone Plus, EZ Clone",
+        "cardNo": null
+      }
+    ],
+    "W4 & W5, KODIAK TRUCKS, C4500-C8500": [
+      {
+        "yearStart": 2003,
+        "yearEnd": 2003,
+        "lockApps": "S000A-S999K",
+        "codeRange": "P1113/B102 [-P]",
+        "keyBlanks": [],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "567",
+        "cardNo": null
+      },
+      {
+        "yearStart": 1991,
+        "yearEnd": 1991,
+        "lockApps": "L, M",
+        "codeRange": "S1098H/B45 [-P, -PC]",
+        "keyBlanks": [],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "S1098WH/B79",
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "14",
+        "cardNo": null
+      }
+    ],
+    "COLORADO (CANADA)": [
+      {
+        "yearStart": 2008,
+        "yearEnd": 2008,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "TOY43R-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "T48",
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, M-Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "TRAILBLAZER": [
+      {
+        "yearStart": 2021,
+        "yearEnd": 2021,
+        "lockApps": "EB3-V-HU100",
+        "codeRange": null,
+        "keyBlanks": [
+          "HU100-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "HU100-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      }
+    ]
+  }
+}

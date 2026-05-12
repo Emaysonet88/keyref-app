@@ -1,0 +1,634 @@
+{
+  "Oldsmobile": {
+    "ACHIEVA": [
+      {
+        "yearStart": 1995,
+        "yearEnd": 1998,
+        "lockApps": "All",
+        "codeRange": "AA00-7T51",
+        "keyBlanks": [
+          "P1107/B89 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "P1106/B86",
+        "notes": null,
+        "cardNo": "567"
+      },
+      {
+        "yearStart": 1994,
+        "yearEnd": 1994,
+        "lockApps": "Door/ Trunk/ GB",
+        "codeRange": "L, M",
+        "keyBlanks": [
+          "S1098H/B45 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "P1106/B86",
+        "notes": null,
+        "cardNo": "14"
+      },
+      {
+        "yearStart": 1993,
+        "yearEnd": 1993,
+        "lockApps": "Door/ Trunk/ GB",
+        "codeRange": "L, M",
+        "keyBlanks": [
+          "S1098H/B45 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "S1098WH/B79",
+        "notes": null,
+        "cardNo": "14"
+      },
+      {
+        "yearStart": 1992,
+        "yearEnd": 1992,
+        "lockApps": "Door/ Trunk/ GB",
+        "codeRange": "L, M",
+        "keyBlanks": [
+          "S1098H/B45 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "S1098WH/B79",
+        "notes": null,
+        "cardNo": "14"
+      }
+    ],
+    "ALERO": [
+      {
+        "yearStart": 2000,
+        "yearEnd": 2004,
+        "lockApps": "All",
+        "codeRange": "S000A-S999K",
+        "keyBlanks": [
+          "P1112/B93 [-P] (LAL)"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "B89, B85, B86",
+        "notes": null,
+        "cardNo": "567"
+      },
+      {
+        "yearStart": 1999,
+        "yearEnd": 1999,
+        "lockApps": "All",
+        "codeRange": "AA00-7T51",
+        "keyBlanks": [
+          "P1112/B93 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "B89, B85, B86",
+        "notes": null,
+        "cardNo": "567"
+      }
+    ],
+    "AURORA": [
+      {
+        "yearStart": 2001,
+        "yearEnd": 2003,
+        "lockApps": "All",
+        "codeRange": "O5000-O6999",
+        "keyBlanks": [
+          "B99-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Megamos (13)Fixed Code System",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program A, Smart Pro/TCP/MVPP/TKO/ SDD",
+        "cloningMethod": null,
+        "substitutes": "Service Key P1106/B86",
+        "notes": "Megamos (13)Fixed Code System",
+        "cardNo": "567"
+      },
+      {
+        "yearStart": 1995,
+        "yearEnd": 2000,
+        "lockApps": "Doors/ Trunk/ GB",
+        "codeRange": "AA00-7T51",
+        "keyBlanks": [
+          "S1105 /B85"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "567"
+      },
+      {
+        "yearStart": 2001,
+        "yearEnd": 2001,
+        "lockApps": null,
+        "codeRange": "B99-PT5",
+        "keyBlanks": [],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, RW3, RW2,EZ Clone Plus, EZ Clone",
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 2001,
+        "yearEnd": 2001,
+        "lockApps": null,
+        "codeRange": "B100-PT5",
+        "keyBlanks": [],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, RW3, RW2,EZ Clone Plus, EZ Clone",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "BRAVADA": [
+      {
+        "yearStart": 2000,
+        "yearEnd": 2004,
+        "lockApps": "All",
+        "codeRange": "S000A-S999K",
+        "keyBlanks": [
+          "P1113/B102 [-P] (LAL)"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "567"
+      },
+      {
+        "yearStart": 1999,
+        "yearEnd": 1999,
+        "lockApps": "All",
+        "codeRange": "AA00-7T51",
+        "keyBlanks": [
+          "P1113/B102 [-P] (LAL)"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "P1106/B86",
+        "notes": null,
+        "cardNo": "567"
+      },
+      {
+        "yearStart": 1996,
+        "yearEnd": 1998,
+        "lockApps": "All",
+        "codeRange": "AA00-7T51",
+        "keyBlanks": [
+          "P1107/B89 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "P1106/B86",
+        "notes": null,
+        "cardNo": "567"
+      },
+      {
+        "yearStart": 1991,
+        "yearEnd": 1994,
+        "lockApps": "Door/ Other",
+        "codeRange": "L, M",
+        "keyBlanks": [
+          "S1098H/B45 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "14"
+      }
+    ],
+    "CUTLASS": [
+      {
+        "yearStart": 2000,
+        "yearEnd": 2000,
+        "lockApps": "All",
+        "codeRange": "S000A-S999K",
+        "keyBlanks": [
+          "P1111/B91 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "567"
+      },
+      {
+        "yearStart": 1997,
+        "yearEnd": 1999,
+        "lockApps": "All",
+        "codeRange": "AA00-7T51",
+        "keyBlanks": [
+          "P1111/B91 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "567"
+      }
+    ],
+    "CUTLASS SUPREME": [
+      {
+        "yearStart": 1994,
+        "yearEnd": 1998,
+        "lockApps": "Door/ Trunk/ GB",
+        "codeRange": "L, M",
+        "keyBlanks": [
+          "S1098H/B45 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "S1098WH/B79",
+        "notes": null,
+        "cardNo": "14"
+      },
+      {
+        "yearStart": 1991,
+        "yearEnd": 1993,
+        "lockApps": "Door/ Trunk/ GB",
+        "codeRange": "L, M",
+        "keyBlanks": [
+          "S1098WH/B79"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "14"
+      },
+      {
+        "yearStart": 1988,
+        "yearEnd": 1990,
+        "lockApps": "Door/ Trunk/ GB",
+        "codeRange": "ABNP",
+        "keyBlanks": [
+          "S1098WD/B67]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "S1098D/B51",
+        "notes": null,
+        "cardNo": "14"
+      }
+    ],
+    "EIGHTY-EIGHT": [
+      {
+        "yearStart": 1992,
+        "yearEnd": 1999,
+        "lockApps": "Door/ Trunk/ GB",
+        "codeRange": "L, M",
+        "keyBlanks": [
+          "S1098H/B45 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "S1098WH/B79",
+        "notes": null,
+        "cardNo": "14"
+      }
+    ],
+    "INTRIGUE": [
+      {
+        "yearStart": 2000,
+        "yearEnd": 2003,
+        "lockApps": "All",
+        "codeRange": "S000A-S999K",
+        "keyBlanks": [
+          "P1112/B93 [-P] (LAL)"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "B89, B85, B86",
+        "notes": null,
+        "cardNo": "567"
+      },
+      {
+        "yearStart": 1997,
+        "yearEnd": 1999,
+        "lockApps": "All",
+        "codeRange": "AA00-7T51",
+        "keyBlanks": [
+          "P1112/B93 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "B89, B85, B86",
+        "notes": null,
+        "cardNo": "567"
+      }
+    ],
+    "LSS": [
+      {
+        "yearStart": 1999,
+        "yearEnd": 1999,
+        "lockApps": "Door/ Trunk/ GB",
+        "codeRange": "L, M",
+        "keyBlanks": [
+          "S1098H/B45 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "S1098WH/B79",
+        "cardNo": null
+      }
+    ],
+    "MODELS AND YEARS NOT REFERENCED ELSEWHERE": [
+      {
+        "yearStart": 1991,
+        "yearEnd": 1996,
+        "lockApps": "Door/ Trunk/ GB",
+        "codeRange": "L, M",
+        "keyBlanks": [
+          "S1098H/B45 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "S1098WH/B79",
+        "cardNo": null
+      },
+      {
+        "yearStart": 1987,
+        "yearEnd": 1990,
+        "lockApps": "Door/ Trunk/ GB",
+        "codeRange": "NPSU",
+        "keyBlanks": [
+          "S1098D/B51 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "S1098WD/B67",
+        "cardNo": null
+      },
+      {
+        "yearStart": 1983,
+        "yearEnd": 1986,
+        "lockApps": "Door/ Trunk/ GB",
+        "codeRange": "VWXY",
+        "keyBlanks": [
+          "S1098B/B49 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "-",
+        "cardNo": null
+      },
+      {
+        "yearStart": 1982,
+        "yearEnd": 1982,
+        "lockApps": "Door/ Trunk/ GB",
+        "codeRange": "EFGH",
+        "keyBlanks": [
+          "S1098K/B47"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "-",
+        "cardNo": null
+      }
+    ],
+    "REGENCY 98": [
+      {
+        "yearStart": 1991,
+        "yearEnd": 1998,
+        "lockApps": "Door/ Trunk/ GB",
+        "codeRange": "L, M",
+        "keyBlanks": [
+          "S1098H/B45 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "S1098WH/B79",
+        "cardNo": null
+      }
+    ],
+    "SILHOUETTE": [
+      {
+        "yearStart": 1999,
+        "yearEnd": 2004,
+        "lockApps": "All",
+        "codeRange": "S000A-S999K",
+        "keyBlanks": [
+          "B97-PT (LAL)"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "OBP Program A, Smart Pro/TCP/MVPP/TKO/ SDD",
+        "notes": "Service Key P1106/B86",
+        "cardNo": "Megamos (13)Fixed Code System"
+      },
+      {
+        "yearStart": 1997,
+        "yearEnd": 1998,
+        "lockApps": "All",
+        "codeRange": "AA00-7T51",
+        "keyBlanks": [
+          "P1107/B89 [-P] (LAL)"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "P1106/B86",
+        "cardNo": null
+      },
+      {
+        "yearStart": 1991,
+        "yearEnd": 1996,
+        "lockApps": "Door/ Other",
+        "codeRange": "L, M",
+        "keyBlanks": [
+          "S1098H/B45 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "S1098WH/B79",
+        "cardNo": null
+      },
+      {
+        "yearStart": 1988,
+        "yearEnd": 1990,
+        "lockApps": "Door/ Other",
+        "codeRange": "NP",
+        "keyBlanks": [
+          "S1098D/B51 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "-",
+        "cardNo": null
+      },
+      {
+        "yearStart": 1999,
+        "yearEnd": 1999,
+        "lockApps": null,
+        "codeRange": "B97-PT5",
+        "keyBlanks": [],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, RW3, RW2,EZ Clone Plus, EZ Clone",
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 1999,
+        "yearEnd": 1999,
+        "lockApps": null,
+        "codeRange": "B98-PT5",
+        "keyBlanks": [],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, RW3, RW2,EZ Clone Plus, EZ Clone",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "TORONADO": [
+      {
+        "yearStart": 1991,
+        "yearEnd": 1993,
+        "lockApps": "Door/ Trunk/ GB",
+        "codeRange": "L, M",
+        "keyBlanks": [
+          "S1098H/B45 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "S1098WH/B79",
+        "cardNo": null
+      },
+      {
+        "yearStart": 1990,
+        "yearEnd": 1990,
+        "lockApps": "Door/ Trunk/ GB",
+        "codeRange": "ABNP",
+        "keyBlanks": [
+          "S1098D/B51 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "-",
+        "cardNo": null
+      }
+    ]
+  }
+}

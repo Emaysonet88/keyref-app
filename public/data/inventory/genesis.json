@@ -1,0 +1,99 @@
+{
+  "Genesis": {
+    "G70": [
+      {
+        "yearStart": 2019,
+        "yearEnd": 2020,
+        "lockApps": "All",
+        "codeRange": "K1-K2500",
+        "keyBlanks": [
+          "OEM# 95440-G9000"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "cloningMethod": null,
+        "substitutes": "KK12-P",
+        "notes": null,
+        "cardNo": "2372"
+      }
+    ],
+    "G80": [
+      {
+        "yearStart": 2017,
+        "yearEnd": 2020,
+        "lockApps": "All",
+        "codeRange": "B0001-B3000",
+        "keyBlanks": [
+          "OEM# 95440-D2000"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "cloningMethod": null,
+        "substitutes": "KK12-P",
+        "notes": null,
+        "cardNo": "4129"
+      }
+    ],
+    "G90": [
+      {
+        "yearStart": 2019,
+        "yearEnd": 2020,
+        "lockApps": "All",
+        "codeRange": "I001-2608",
+        "keyBlanks": [
+          "OEM# 95440-G9000"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "cloningMethod": null,
+        "substitutes": "LXP90-P",
+        "notes": null,
+        "cardNo": "3742"
+      }
+    ],
+    "GV70": [
+      {
+        "yearStart": 2022,
+        "yearEnd": 2022,
+        "lockApps": "All",
+        "codeRange": "I001-2608",
+        "keyBlanks": [
+          "OEM# 95440-AR000 or 95440-AR010"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "KK12-P",
+        "notes": null,
+        "cardNo": "3742"
+      }
+    ],
+    "GV80": [
+      {
+        "yearStart": 2021,
+        "yearEnd": 2021,
+        "lockApps": "All",
+        "codeRange": "I001-2608",
+        "keyBlanks": [
+          "OEM# 95440-T6011 or 95440- T6100"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "cloningMethod": null,
+        "substitutes": "KK12-P",
+        "notes": null,
+        "cardNo": "3742"
+      }
+    ]
+  }
+}

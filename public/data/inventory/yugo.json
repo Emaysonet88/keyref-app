@@ -1,0 +1,23 @@
+{
+  "Yugo": {
+    "GV": [
+      {
+        "yearStart": 1986,
+        "yearEnd": 1987,
+        "lockApps": "Door/ Hatch",
+        "codeRange": "1501-2000",
+        "keyBlanks": [
+          "FT37"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "4"
+      }
+    ]
+  }
+}

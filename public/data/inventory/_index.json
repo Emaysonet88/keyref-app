@@ -1,160 +1,1922 @@
 {
   "Acura": {
-    "filename": "acura.json",
+    "file": "acura.json",
     "models": [
       "CL",
-      "CSX",
+      "CSX (CANADA)",
+      "EL (CANADA)",
       "ILX",
+      "ILX BASE",
+      "ILX PREM/TECHPLUS",
+      "INTEGRA",
+      "LEGEND",
       "MDX",
       "NSX",
       "RDX",
+      "RL",
+      "RLX",
+      "RLX ADV",
+      "RLX TECH",
+      "RSX",
       "TL",
-      "TLX"
-    ]
+      "TL W/ PROX",
+      "TLX",
+      "TLX ADV",
+      "TLX BASE",
+      "TLX TECH",
+      "TSX",
+      "VIGOR",
+      "ZDX W/ PROX",
+      "ZDX W/ REGULAR IGNITION"
+    ],
+    "modelCount": 26
+  },
+  "Alfa Romeo": {
+    "file": "alfaromeo.json",
+    "models": [
+      "164",
+      "GTV/6",
+      "MILANO",
+      "SPIDER, GRADUATE"
+    ],
+    "modelCount": 4
+  },
+  "Amc": {
+    "file": "amc.json",
+    "models": [
+      "ALLIANCE GTA",
+      "EAGLE",
+      "ENCORE"
+    ],
+    "modelCount": 3
+  },
+  "Aprilia Motorcycle": {
+    "file": "apriliamotorcycle.json",
+    "models": [
+      "ATLANTIC 500",
+      "CARONORD 1200",
+      "DORSODURO 1200",
+      "DORSODURO 750",
+      "RSV 1000",
+      "RSV4",
+      "SCARABEO 500",
+      "SHIVER",
+      "TUONO 1000R",
+      "TUONO V4"
+    ],
+    "modelCount": 10
   },
   "Audi": {
-    "filename": "audi.json",
+    "file": "audi.json",
     "models": [
-      "A4"
-    ]
+      "100, 200",
+      "4000",
+      "5000 SEDAN WAGON",
+      "80 SEDAN, 90",
+      "A3",
+      "A4 AVANT/ CABRIOLET,",
+      "A4 AVANT/CABRIOLET",
+      "A4, S4",
+      "A4, S4, T T, ALLROAD, QUATTRO",
+      "A4/S4",
+      "A5, S5",
+      "A6, S6",
+      "A6, S6 ALLROAD QUATTRO",
+      "A6, S6, ALLROAD QUATTRO",
+      "A6/S6",
+      "A8",
+      "A8, S8",
+      "ALLROAD QUATTRO",
+      "Q5, Q7 3.6, 4.2",
+      "Q5, Q7 3.6,4.2",
+      "RS4 SEDAN",
+      "RS6 S4, AVANT",
+      "S4 - AVANT, CABRIOLET, SEDAN",
+      "S6, S8 SEDAN",
+      "TT COUPE, ROADSTER"
+    ],
+    "modelCount": 25
   },
-  "BMW": {
-    "filename": "bmw.json",
+  "Bmw": {
+    "file": "bmw.json",
     "models": [
-      "1 Series",
-      "3 Series",
-      "5 Series",
-      "7 Series"
-    ]
+      "1 SERIES",
+      "1 SERIES W/ PROX",
+      "1 SERIES- 128I, 135I",
+      "3 SERIES",
+      "3 SERIES W/ PROX",
+      "3 SERIES- 318i, 323i,323iC,323iS, 335i",
+      "3 SERIES- 328i, 328Xi, 335i, 335XI",
+      "5 SERIES",
+      "5 SERIES - 524TD, 525i,525Xi, 528E, 530Xi, 533i, 535i, 550i, M5",
+      "5 SERIES - 528i, 528Xi, 535i, 535Xi, 550i",
+      "5 SERIES W/ PROX",
+      "6 SERIES",
+      "6 SERIES - 630I, 633I, 633CSI,635I, 635CSI, 645CSI, 650I",
+      "6 SERIES - 650i",
+      "7 SERIES",
+      "7 SERIES - 733i, 735i, 735Li, 740i, 760i, 760Li",
+      "7 SERIES - 750i, 750Li, 760Li",
+      "8 SERIES - 840Ci",
+      "M3 & M5 SERIES",
+      "M5, M6 SEDAN, CONVERTIBLE",
+      "X3 - 3.0Si",
+      "X3 2.5i/3.0i",
+      "X3, X5, X6",
+      "X5 - 3.0Si, 4.8i",
+      "X5 3.0i. 4.4i, 4.8iS",
+      "X5 W/ PROX",
+      "X6 W/ PROX",
+      "Z3,Z3 COUPE",
+      "Z4",
+      "Z4 2.5I, 3.0I",
+      "Z4 W/ PROX",
+      "Z4, M ROADSTER, M COUPE"
+    ],
+    "modelCount": 32
+  },
+  "Bmw Motorcycle": {
+    "file": "bmwmotorcycle.json",
+    "models": [
+      "C600 SPORT",
+      "C650 GT",
+      "F650/G650",
+      "F800",
+      "G650",
+      "K1200",
+      "K1300",
+      "K1600",
+      "R1200"
+    ],
+    "modelCount": 9
+  },
+  "Broadway Truck": {
+    "file": "broadwaytruck.json",
+    "models": [
+      "ALL"
+    ],
+    "modelCount": 1
   },
   "Buick": {
-    "filename": "buick.json",
+    "file": "buick.json",
     "models": [
-      "Enclave",
-      "LaCrosse"
-    ]
+      "ALLURE (CANADA)",
+      "CASCADA",
+      "CENTURY",
+      "ENCLAVE",
+      "ENCORE",
+      "ENVISION",
+      "LACROSSE",
+      "LACROSSE/ALLURE (CANADA)",
+      "LESABRE",
+      "LUCERNE - CX, CXL V6, CXL V8, CXS",
+      "MODELS AND YEARS NOT REFERENCED ELSEWHERE",
+      "PARK AVENUE",
+      "RAINIER",
+      "REATTA, RIVIERA",
+      "REGAL",
+      "REGAL W/ PEPS",
+      "REGAL W/O PEPS",
+      "REGAL W/PROX",
+      "RENDEZVOUS, RENDEZVOUS ULTRA",
+      "RIVIERA",
+      "ROADMASTER",
+      "SIGNIA",
+      "SKYLARK",
+      "TERRAZA",
+      "VERANO",
+      "VERANO W/ PEPS"
+    ],
+    "modelCount": 26
   },
   "Cadillac": {
-    "filename": "cadillac.json",
+    "file": "cadillac.json",
     "models": [
-      "CTS",
-      "DeVille",
-      "Escalade"
-    ]
+      "ATS",
+      "BROUGHAM, FLEETWOOD",
+      "CATERA",
+      "CIMARRON",
+      "CONCOURS",
+      "CT4/CT5",
+      "CT6",
+      "CTS W/ PROX",
+      "CTS/CTS-V",
+      "CTS/CTS-V W/ PROX",
+      "CTS/CTS-V W/O PROX",
+      "DEVILLE",
+      "DTS (REPLACES DIS- CONTINUED DEVILLE)",
+      "DTS (REPLACES DISCONTINUED DEVILLE)",
+      "ELDORADO",
+      "ELR",
+      "ESCALADE",
+      "ESCALADE, ESV W/ PROX",
+      "ESCALADE, ESV, EXT",
+      "ESCALADE, EXT",
+      "LYRIQ",
+      "MODELS AND YEARS NOT REFERENCED ELSEWHERE",
+      "SEVILLE",
+      "SRX",
+      "STS, STS V",
+      "STS, STS V W/ PROX",
+      "XLR, XLR V",
+      "XT3",
+      "XT4",
+      "XT5",
+      "XT6",
+      "XTS"
+    ],
+    "modelCount": 32
+  },
+  "Can-am": {
+    "file": "canam.json",
+    "models": [
+      "SPYDER"
+    ],
+    "modelCount": 1
   },
   "Chevrolet": {
-    "filename": "chevrolet.json",
+    "file": "chevrolet.json",
     "models": [
-      "Malibu",
-      "Silverado"
-    ]
+      "AVEO, AVEO 5",
+      "BERETTA, CORSICA W/O TILT WHEEL",
+      "BERETTA, CORSICA W/TILT WHEEL",
+      "CAMARO",
+      "CAMARO W/ PROX",
+      "CAMARO, Z28",
+      "CAPRICE PPV (POLICE & DETECTIVE)",
+      "CAVALIER",
+      "COBALT",
+      "CORVETTE",
+      "CRUZE",
+      "CRUZE W/ PROX",
+      "EPICA",
+      "IMPALA",
+      "IMPALA W/ PROX",
+      "IMPALA, CAPRICE",
+      "LUMINA",
+      "MALIBU",
+      "MALIBU / MALIBU MAX",
+      "MALIBU CLASSIC",
+      "MALIBU W/ PROX",
+      "METRO",
+      "MONTE CARLO",
+      "NOVA",
+      "OPTRA",
+      "ORLANDO (CANADA)",
+      "PRIZM",
+      "SONIC",
+      "SPARK",
+      "SPECTRUM",
+      "SPRINT",
+      "TRAVERSE",
+      "VIVANT",
+      "VOLT"
+    ],
+    "modelCount": 34
+  },
+  "Chevrolet Trucks, Vans, Suvs": {
+    "file": "chevrolettrucksvanssuvs.json",
+    "models": [
+      "ASTRO VAN",
+      "AVALANCHE",
+      "BLAZER",
+      "C/K PICK UP, SILVERADO, TYPHOON",
+      "CAPTIVA SPORT",
+      "CITY EXPRESS",
+      "COLORADO (CANADA)",
+      "COLORADO - CREW, EXTENDED, REGULAR CABS",
+      "COLORADO - CREW, EXTENDED, REGULAR CABS (CANADA)",
+      "EQUINOX",
+      "EQUINOX W/ PROX",
+      "EXPRESS",
+      "FSR, FRR, FTR",
+      "HHR",
+      "LUMINA APV",
+      "MODELS AND YEARS NOT REFERENCED ELSEWHERE",
+      "NPR, NRR, W4, W5",
+      "NQR",
+      "ORLANDO (CANADA)",
+      "S-10 PICK-UP",
+      "SILVERADO - 1500 CREW, EXTENDED CABS, SILVERADO HYBRID, SSR",
+      "SILVERADO - CLASSIC SS",
+      "SILVERADO 1500/HD/ SS, 2500/HD/3500",
+      "SUBURBAN",
+      "SUBURBAN W/ PROX",
+      "TAHOE",
+      "TAHOE W/ PROX",
+      "TAHOE, G VAN",
+      "TRACKER",
+      "TRAILBLAZER",
+      "TRAILBLAZER W/ PROX",
+      "TRAILBLAZER W/ REGULAR IGNITION",
+      "TRAX (CANADA)",
+      "UPLANDER MINI VAN",
+      "VENTURE VAN",
+      "W4 & W5, KODIAK TRUCKS, C4500-C8500"
+    ],
+    "modelCount": 36
   },
   "Chrysler": {
-    "filename": "chrysler.json",
+    "file": "chrysler.json",
     "models": [
+      "200",
       "300",
-      "Pacifica"
-    ]
+      "300, 300C",
+      "300M",
+      "ASPEN",
+      "CIRRUS",
+      "CONCORDE",
+      "CROSSFIRE",
+      "LHS",
+      "MODELS AND YEARS NOT REFERENCED ELSEWHERE",
+      "NEW YORKER",
+      "PACIFICA",
+      "PROWLER",
+      "PT CRUISER",
+      "SEBRING CONVERTIBLE",
+      "SEBRING COUPE",
+      "SEBRING SEDAN (4-DOOR)",
+      "TOWN & COUNTRY VAN",
+      "VOYAGER"
+    ],
+    "modelCount": 19
+  },
+  "Daewoo": {
+    "file": "daewoo.json",
+    "models": [
+      "DAKOTA",
+      "LANOS",
+      "LEGANZA",
+      "NUBIRA"
+    ],
+    "modelCount": 4
+  },
+  "Daihatsu": {
+    "file": "daihatsu.json",
+    "models": [
+      "CHARADE, ROCKY"
+    ],
+    "modelCount": 1
+  },
+  "De Lorean": {
+    "file": "delorean.json",
+    "models": [
+      "DE LOREAN"
+    ],
+    "modelCount": 1
+  },
+  "Derbi Motorcycle": {
+    "file": "derbimotorcycle.json",
+    "models": [
+      "BOULEVARD 150"
+    ],
+    "modelCount": 1
   },
   "Dodge": {
-    "filename": "dodge.json",
+    "file": "dodge.json",
     "models": [
-      "Caravan",
-      "Ram 1500"
-    ]
+      "2 DOOR & 4 DOOR MODELS AND YEARS NOT REFERENCED ELSEWHERE",
+      "3 DOOR & 5 DOOR MODELS AND YEARS NOT REFERENCED ELSEWHERE",
+      "AVENGER",
+      "CALIBER",
+      "CHALLENGER",
+      "CHARGER",
+      "CHARGER, CHARGER DAYTONA R/T",
+      "COLT, COLT VISTA",
+      "DART",
+      "DART W/ PROX",
+      "HORNET",
+      "INTREPID",
+      "JOURNEY",
+      "MAGNUM",
+      "MONACO",
+      "NEON, SRT",
+      "NITRO - SLT, SXT",
+      "PROMASTER",
+      "PROMASTER CITY",
+      "SPIRIT",
+      "SPRINTER",
+      "STEALTH",
+      "STRATUS COUPE",
+      "STRATUS SEDAN",
+      "VIPER"
+    ],
+    "modelCount": 25
+  },
+  "Dodge Trucks, Vans, Suvs": {
+    "file": "dodgetrucksvanssuvs.json",
+    "models": [
+      "CARAVAN & GRAND CARAVAN",
+      "DAKOTA",
+      "DAKOTA CLUB/QUAD CABS SLT, ST, LARAMIE",
+      "DURANGO",
+      "PICKUP TRUCKS, RAM & DAKOTA (U.S. MADE)",
+      "RAM 1500",
+      "RAM 1500 SPORT, TRX4,ST, LARAMIE",
+      "RAM 2500",
+      "RAM 2500 ST, SPORT, LARAMIE, POWER WAGON, SLT, TRX4",
+      "RAM 3500",
+      "RAM 3500 SPORT, LARAMIE, ST, SLT",
+      "RAM/QUAD CAB, SRT 10"
+    ],
+    "modelCount": 12
+  },
+  "Dodge Trucks, Vans,suvs": {
+    "file": "dodgetrucksvanssuvs.json",
+    "models": [
+      "CARAVAN & GRAND CARAVAN",
+      "DAKOTA",
+      "DAKOTA CLUB/ QUAD CABS SLT, ST, LARAMIE",
+      "DURANGO",
+      "PICKUP TRUCKS, RAM & DAKOTA (U.S. MADE)",
+      "PROMASTER",
+      "PROMASTER CITY",
+      "RAIDER",
+      "RAM 1500",
+      "RAM 1500 SPORT, TRX4,ST, LARAMIE",
+      "RAM 1500/2500/3500",
+      "RAM 2500",
+      "RAM 2500 ST, SPORT, LARAMIE, POWER WAGON, SLT, TRX4",
+      "RAM 3500",
+      "RAM 3500 SPORT, LARAMIE, ST, SLT",
+      "RAM CHARGER",
+      "RAM/QUAD CAB",
+      "RAM/QUAD CAB, SRT 10",
+      "VANS (FULL SIZE)"
+    ],
+    "modelCount": 19
+  },
+  "Ducati Motorcycle": {
+    "file": "ducatimotorcycle.json",
+    "models": [
+      "1000R",
+      "1000S",
+      "1100S",
+      "1198",
+      "620",
+      "749R",
+      "749S",
+      "848",
+      "900 S4",
+      "999R",
+      "999S",
+      "HYPERMOTARD",
+      "MONSTER 1000",
+      "MONSTER 620",
+      "MONSTER 695",
+      "MONSTER 750",
+      "MONSTER 800",
+      "MONSTER 900",
+      "MONSTER S2R",
+      "MONSTER S4",
+      "MONSTER S4R",
+      "SPORTCLASSIC 1000",
+      "ST3",
+      "ST4",
+      "ST4S",
+      "SUPERSPORT 1000",
+      "SUPERSPORT 620",
+      "SUPERSPORT 800"
+    ],
+    "modelCount": 28
+  },
+  "Eagle": {
+    "file": "eagle.json",
+    "models": [
+      "620",
+      "MEDALLION SEDAN",
+      "MEDALLION WAGON",
+      "PREMIER",
+      "SUMMIT",
+      "TALON",
+      "VISION"
+    ],
+    "modelCount": 7
+  },
+  "Ferrari": {
+    "file": "ferrari.json",
+    "models": [
+      "348, 328, 308",
+      "512TR",
+      "599",
+      "612 SCAGLIETTI",
+      "CALIFORNIA",
+      "MODELS AND YEARS NOT REFERENCED ELSEWHERE",
+      "TESTAROSSA"
+    ],
+    "modelCount": 7
+  },
+  "Fiat": {
+    "file": "fiat.json",
+    "models": [
+      "124 SPIDER",
+      "500",
+      "MODELS AND YEARS NOT REFERENCED ELSEWHERE"
+    ],
+    "modelCount": 3
   },
   "Ford": {
-    "filename": "ford.json",
+    "file": "ford.json",
     "models": [
-      "F-150",
-      "Fusion",
-      "Mustang"
-    ]
+      "CMAX W/ REGULAR IGNITION",
+      "COBRA",
+      "CONTOUR (EXCEPT \u201898-00 V6 LX)",
+      "CONTOUR 2.51 V6",
+      "CONTOUR V6 LX3",
+      "CROWN VICTORIA",
+      "E",
+      "ECOSPORT W/ PROX",
+      "ECOSPORT W/ REG IGNITION",
+      "EDGE - SE, SEL, SEL PLUS",
+      "EDGE W/ POWER LIFTGATE",
+      "EDGE W/ PROX",
+      "EDGE W/ REG IGNITION",
+      "EDGE W/O POWER LIFTGATE",
+      "ESCAPE",
+      "ESCAPE HYBRID",
+      "ESCAPE W/ PROX",
+      "ESCAPE W/ REGULAR IGNITION",
+      "ESCORT",
+      "FESTIVA",
+      "FIESTA",
+      "FIVE HUNDRED",
+      "FIVE HUNDRED/ TAURUS",
+      "FIVE HUNDRED/TAURUS",
+      "FLEX",
+      "FLEX W/ POWER LIFTGATE",
+      "FLEX W/ PROX",
+      "FLEX W/O POWER LIFTGATE",
+      "FOCUS",
+      "FOCUS W/ PROX",
+      "FORD GT",
+      "FREESTYLE",
+      "FUSION",
+      "FUSION W/ PROX",
+      "FUSION W/ REGULAR IGNITION",
+      "LTD",
+      "MACH E",
+      "MUSTANG",
+      "MUSTANG COBRA W/ PROX",
+      "MUSTANG COBRA W/ REGULAR IGNITION",
+      "MUSTANG GT",
+      "MUSTANG W/ PROX",
+      "MUSTANG W/ REGULAR IGNITION",
+      "PROBE",
+      "TAURUS",
+      "TAURUS LX",
+      "TAURUS SHO & LS",
+      "TAURUS W/ PROX",
+      "TAURUS W/ REGULAR IGNITION",
+      "TAURUS X, FREESTYLE",
+      "TEMPO",
+      "THUNDERBIRD",
+      "THUNDERBIRD (NON- TURBO)",
+      "THUNDERBIRD (TURBO)",
+      "UR (EXCEPT V6 LX)",
+      "W/ PROX",
+      "W/ REGULAR ON",
+      "ZX2"
+    ],
+    "modelCount": 58
   },
-  "GMC": {
-    "filename": "gmc.json",
+  "Ford Trucks, Vans, Suvs": {
+    "file": "fordtrucksvanssuvs.json",
     "models": [
-      "Sierra",
-      "Yukon"
-    ]
+      "E-SERIES",
+      "EXCURSION",
+      "EXPEDITION",
+      "EXPLORER",
+      "EXPLORER SPORT",
+      "EXPLORER SPORT TRAC",
+      "F-150 HERITAGE",
+      "F-150, F-250 SERIES LIGHT DUTY",
+      "F-150, F-250, & F-350 SERIES",
+      "F-250, 350, 450 SUPER DUTY SERIES",
+      "FREESTAR",
+      "RANGER PICKUP",
+      "TRANSFER HEAVY TRUCKS 6000, 9000, CF7000",
+      "TRANSIT",
+      "TRANSIT CONNECT",
+      "WINDSTAR"
+    ],
+    "modelCount": 16
+  },
+  "Ford Trucks, Vans,suvs": {
+    "file": "fordtrucksvanssuvs.json",
+    "models": [
+      "AEROSTAR",
+      "BRONCO SPORT W/ PROX",
+      "BRONCO SPORT W/ REGULAR IGNITION",
+      "BRONCO W/ PROX",
+      "BRONCO W/ REG IGNITION",
+      "BRONCO, BRONCO II",
+      "CARGO TRUCK",
+      "E-SERIES",
+      "ECONOLINE VAN, CLUB WAGON",
+      "EXCURSION",
+      "EXPEDITION",
+      "EXPEDITION W/ PROX",
+      "EXPEDITION W/ REGULAR IGNITION",
+      "EXPLORER",
+      "EXPLORER & EXPLORER SPORT",
+      "EXPLORER SPORT",
+      "EXPLORER SPORT TRAC",
+      "EXPLORER W/ PROX",
+      "EXPLORER W/ REGULAR IGNITION",
+      "F-150",
+      "F-150 HERITAGE",
+      "F-150 W/ PROX",
+      "F-150 W/ REGULAR IGNITION",
+      "F-150, F-250 SERIES LIGHT DUTY",
+      "F-250, 350, 450 , 550 SUPER DUTY SERIES W/ PROX",
+      "F-250, 350, 450 SUPER DUTY SERIES",
+      "F-250, 350, 450, 550 SUPER DUTY SERIES",
+      "FREESTAR",
+      "LIGHTNING W/ PROX",
+      "LIGHTNING W/ REGULAR IGNITION",
+      "MAVERICK W/ PROX",
+      "MAVERICK W/ REGULAR IGNITION",
+      "RANGER PICKUP",
+      "RANGER PICKUP W/ PROX",
+      "SUPER DUTY SERIES",
+      "TRANSFER HEAVY TRUCKS 6000, 9000, CF7000",
+      "TRANSFER HEAVY TRUCKS CF7000",
+      "TRANSIT",
+      "TRANSIT CONNECT",
+      "TRANSIT CONNECT W/ PROX",
+      "TRANSIT CONNECT W/ REG IGNITION",
+      "WINDSTAR"
+    ],
+    "modelCount": 42
+  },
+  "Freightliner": {
+    "file": "freightliner.json",
+    "models": [
+      "CENTURY CLASS",
+      "COLUMBIA",
+      "M/D",
+      "M/D 6/7",
+      "MODELS AND YEARS NOT REFERENCED ELSEWHERE",
+      "SPRINTER"
+    ],
+    "modelCount": 6
+  },
+  "Genesis": {
+    "file": "genesis.json",
+    "models": [
+      "G70",
+      "G80",
+      "G90",
+      "GV70",
+      "GV80"
+    ],
+    "modelCount": 5
+  },
+  "Geo": {
+    "file": "geo.json",
+    "models": [
+      "PRIZM",
+      "SPECTRUM",
+      "STORM",
+      "TRACKER"
+    ],
+    "modelCount": 4
+  },
+  "Gmc": {
+    "file": "gmc.json",
+    "models": [
+      "ACADIA",
+      "ACADIA W/ PROX",
+      "CANYON PICKUP",
+      "CANYON PICKUP (CANADA)",
+      "DENALI",
+      "ENVOY",
+      "FSR,FRR,FTR, W4, W5",
+      "JIMMY",
+      "MODELS AND YEARS NOT REFERENCED ELSEWHERE",
+      "NPR, NRR, W4,W5",
+      "NQR",
+      "SAFARI, SAVANA",
+      "SAVANA",
+      "SAVANA, PASSENGER, CARGO",
+      "SIERRA",
+      "SIERRA, SIERRA DENALI, YUKON",
+      "SIERRA, SONOMA, YUKON",
+      "TERRAIN",
+      "TILTMASTER NQR",
+      "TILTMASTER W4",
+      "TILTMASTER W5",
+      "TILTMASTER W6",
+      "TILTMASTER W7",
+      "TOPKICK, C4500",
+      "YUKON W/ PROX",
+      "YUKON, DENALI"
+    ],
+    "modelCount": 26
+  },
+  "Hino Truck": {
+    "file": "hinotruck.json",
+    "models": [
+      "ALL MODELS",
+      "HEAVY DUTY"
+    ],
+    "modelCount": 2
   },
   "Honda": {
-    "filename": "honda.json",
+    "file": "honda.json",
     "models": [
-      "Accord",
+      "ACCORD HYBRID W/ PROX",
+      "ACCORD SEDAN, COUPE",
+      "ACCORD STATION WAGON, LX, EX",
+      "ACCORD W/ PROX",
+      "ACCORD W/ REGULAR IGNITION",
+      "CIVIC",
+      "CIVIC / HYBRID",
+      "CIVIC / HYBRID W/ PROX",
+      "CIVIC / HYBRID W/ REGULAR IGNITION",
+      "CIVIC HATCHBACK",
+      "CIVIC SI",
       "CR-V",
-      "Civic"
-    ]
+      "CR-V W/ PROX",
+      "CR-Z",
+      "CROSSTOUR",
+      "CROSSTOUR W/ PROX",
+      "CROSSTOUR W/ REGULAR IGNITION",
+      "CRX",
+      "DEL SOL",
+      "ELEMENT",
+      "FIT",
+      "FIT W/ PROX",
+      "FIT W/ REGULAR IGNITION",
+      "HR-V",
+      "HR-V W/ PROX",
+      "HR-V W/ REGULAR IGNITION",
+      "INSIGHT",
+      "INSIGHT HYBRID",
+      "ODYSSEY",
+      "ODYSSEY W/ PROX",
+      "PASSPORT",
+      "PASSPORT W/ PROX",
+      "PASSPORT W/ REGULAR IGNITION",
+      "PILOT",
+      "PILOT W/ PROX",
+      "PRELUDE",
+      "RIDGELINE",
+      "RIDGELINE W/ PROX",
+      "S2000"
+    ],
+    "modelCount": 39
+  },
+  "Honda Motorcycle": {
+    "file": "hondamotorcycle.json",
+    "models": [
+      "BLACK SPIRIT",
+      "CBR 1000",
+      "CBR 1100F",
+      "CBR 1100XX",
+      "CBR 600F",
+      "CBR 600RR",
+      "CBR 900",
+      "CTX1300",
+      "CTX700",
+      "GOLD WING 1800",
+      "NC700 S",
+      "NC700 X",
+      "NC750 X",
+      "NT 650V",
+      "NT 700V",
+      "SH 300",
+      "SHADOW 750",
+      "SILVER WING",
+      "VARADERO",
+      "VT 750 C4",
+      "VTX 1800",
+      "X 11"
+    ],
+    "modelCount": 22
+  },
+  "Hummer": {
+    "file": "hummer.json",
+    "models": [
+      "H2",
+      "H3",
+      "H3 (TRANSPONDER OPTIONAL)"
+    ],
+    "modelCount": 3
   },
   "Hyundai": {
-    "filename": "hyundai.json",
+    "file": "hyundai.json",
     "models": [
-      "Elantra",
-      "Sonata"
-    ]
+      "ACCENT",
+      "ACCENT (CANADA)",
+      "AZERA (REPLACES THE \u201805 XG350)",
+      "AZERA W/ PROX",
+      "ELANTRA",
+      "ELANTRA (CANADA)",
+      "ELANTRA GT",
+      "ELANTRA GT W/ PROX",
+      "ELANTRA GT(CANADA)",
+      "ELANTRA TOURING",
+      "ELANTRA TOURING (CANADA)",
+      "ELANTRA W/ PROX",
+      "ENTOURAGE",
+      "ENTOURAGE (CANADA)",
+      "EQUUS",
+      "EXCEL",
+      "GENESIS COUPE W/ PROX",
+      "GENESIS COUPE W/O PROX",
+      "GENESIS W/ PROX (4 DR.)",
+      "GENESIS W/O PROX (4 DR.)",
+      "IONIQ",
+      "IONIQ 5",
+      "KONA W/ PROX",
+      "KONA W/ REGULAR KEY",
+      "NEXO (CANADA)",
+      "PALISADE W/ PROX",
+      "PALISADE W/ REGULAR IGNITION",
+      "PONY",
+      "SANTA CRUZ",
+      "SANTA FE SPORT",
+      "SANTA FE SPORT W/ PROX",
+      "SANTA FE SPORT(CANADA)",
+      "SANTA FE W/ PROX",
+      "SANTE FE",
+      "SANTE FE (CANADA)",
+      "SCOUPE",
+      "SONATA",
+      "SONATA (CANADA)",
+      "SONATA HYBRID W/ PROX",
+      "SONATA W/ PROX",
+      "SONATA W/ REGULAR KEY",
+      "TIBURON",
+      "TIBURON (CANADA)",
+      "TUCSON",
+      "TUCSON (CANADA)",
+      "TUCSON W/ PROX",
+      "VELOSTER",
+      "VELOSTER W/ PROX",
+      "VELOSTER(CANADA)",
+      "VENUE W/ PROX",
+      "VEOLSTER (CANADA)",
+      "VERACRUZ (CANADA)",
+      "VERACRUZ W/ PROX SYSTEM",
+      "VERACRUZ W/ REGULAR IGNITION",
+      "XG300"
+    ],
+    "modelCount": 55
+  },
+  "Infiniti": {
+    "file": "infiniti.json",
+    "models": [
+      "EX37",
+      "FX35/FX45 W/ REGULAR IGNITION",
+      "FX35/FX45 W/ TWIST KNOB IGNITION",
+      "FX35/FX50",
+      "FX50",
+      "G20",
+      "G25",
+      "G35",
+      "G35 W/ PUSH BUTTON START",
+      "G35 W/ REGULAR IGNITION",
+      "G35 W/ TWIST KNOB IGNITION",
+      "G37 COUPE",
+      "G37 SEDAN",
+      "I30, I35",
+      "IPL G COUPE",
+      "J30",
+      "JX35",
+      "M30",
+      "M35",
+      "M37",
+      "M45",
+      "M56",
+      "Q40",
+      "Q45",
+      "Q50",
+      "Q60",
+      "Q70",
+      "Q70L",
+      "QX30",
+      "QX4",
+      "QX50",
+      "QX55",
+      "QX56",
+      "QX60",
+      "QX70",
+      "QX80"
+    ],
+    "modelCount": 36
+  },
+  "International": {
+    "file": "international.json",
+    "models": [
+      "CV4500/5500/6500"
+    ],
+    "modelCount": 1
+  },
+  "Isuzu": {
+    "file": "isuzu.json",
+    "models": [
+      "AMIGO",
+      "AMIGO VIN #4S1",
+      "AMIGO VIN #JAA",
+      "ASCENDER",
+      "AXIOM",
+      "FTR DIESEL TRUCK, TILTMASTER, I MARK",
+      "HOMBRE PICK UP",
+      "IMPULSE",
+      "NPR",
+      "NPR, NRR, NQR, DIESEL TRUCK, FSR",
+      "NRR",
+      "OASIS",
+      "PICKUP -P\u2019UP",
+      "PICKUP -P\u2019UP VIN #4S1",
+      "PICKUP -P\u2019UP VIN #JAA",
+      "RODEO",
+      "RODEO SPORT",
+      "STYLUS",
+      "TROOPER, TROOPER II",
+      "VEHICROSS",
+      "i-280 EXT. CAB (REBADGED CANYON/COLORADO PICKUP)",
+      "i-290 - S, LS",
+      "i-350 EXT. CAB (REBADGED CANYON/COLORADO PICKUP)"
+    ],
+    "modelCount": 23
+  },
+  "Iveco Truck": {
+    "file": "ivecotruck.json",
+    "models": [
+      "ALL"
+    ],
+    "modelCount": 1
+  },
+  "Jaguar": {
+    "file": "jaguar.json",
+    "models": [
+      "S-TYPE",
+      "X-TYPE",
+      "XF",
+      "XJ",
+      "XJ, XK , XK8, XKR",
+      "XJ, XK, XK8, XKR",
+      "XJ6, XJ12, SOVERIEGN, VANDEN PLAS, XJR",
+      "XJ8, XJR",
+      "XJ8, XJR, VANDEN PLAS",
+      "XK8, XKR"
+    ],
+    "modelCount": 10
   },
   "Jeep": {
-    "filename": "jeep.json",
+    "file": "jeep.json",
     "models": [
-      "Grand Cherokee",
-      "Wrangler"
-    ]
+      "CHEROKEE",
+      "CHEROKEE W/ FOBIK",
+      "CHEROKEE W/ PROX",
+      "COMMANDER",
+      "COMPASS",
+      "COMPASS W/ PROX",
+      "GLADIATOR",
+      "GRAND CHEROKEE",
+      "GRAND CHEROKEE W/ PROX",
+      "GRAND WAGONEER",
+      "LIBERTY",
+      "PATRIOT",
+      "RENEGADE",
+      "WAGONEER",
+      "WRANGLER"
+    ],
+    "modelCount": 15
+  },
+  "Kawasaki Motorcycle": {
+    "file": "kawasakimotorcycle.json",
+    "models": [
+      "ER-6",
+      "NINJA 1000",
+      "NINJA 650",
+      "NINJA ZX-10R",
+      "NINJA ZX-12R",
+      "NINJA ZX-14",
+      "NINJA ZX-6R",
+      "Z1000",
+      "Z750S",
+      "ZZR 1200",
+      "ZZR 1400"
+    ],
+    "modelCount": 11
+  },
+  "Kenworth": {
+    "file": "kenworth.json",
+    "models": [
+      "ALL US MODELS",
+      "MIDRANGER"
+    ],
+    "modelCount": 2
   },
   "Kia": {
-    "filename": "kia.json",
+    "file": "kia.json",
     "models": [
-      "Forte",
-      "Sportage"
-    ]
+      "AMANTI",
+      "BORREGO W/ PROX",
+      "BORREGO W/ REGULAR IGNITION",
+      "CADENZA W/ PROX",
+      "CARNIVAL",
+      "EV6",
+      "FORTE",
+      "FORTE (CANADA)",
+      "FORTE KOUP",
+      "FORTE W/ PROX",
+      "K5 W/ PROX",
+      "K5 W/ REGULAR IGNITION",
+      "K900",
+      "K900 (CANADA)",
+      "MAGENTIS (CANADA)",
+      "NIRO",
+      "OPTIMA",
+      "OPTIMA (CANADA)",
+      "OPTIMA W/ PROX",
+      "OPTIMA W/ REGULAR IGNITION",
+      "RIO",
+      "RIO (CANADA)",
+      "RIO W/ PROX",
+      "RONDO",
+      "RONDO (CANADA)",
+      "SEDONA",
+      "SEDONA (CANADA)",
+      "SEDONA EX W/ OPTIONAL TRANSPONDER",
+      "SEDONA W/ PROX",
+      "SELTOS W/ PROX",
+      "SELTOS W/ REGULAR IGNITION",
+      "SEPHIA",
+      "SEPHIA (CANADA)",
+      "SORENTO",
+      "SORENTO (CANADA)",
+      "SORENTO SUV",
+      "SORENTO W/ PROX",
+      "SOUL (CANADA)",
+      "SOUL W/ PROX",
+      "SOUL W/ REGULAR IGNITION",
+      "SPECTRA",
+      "SPORTAGE",
+      "SPORTAGE (CANADA)",
+      "SPORTAGE CONV.",
+      "SPORTAGE W/ PROX",
+      "SPORTAGE W/AUTO. TRANSMISSION",
+      "SPORTAGE W/MANUAL TRANSMISSION",
+      "STINGER",
+      "TELLURIDE"
+    ],
+    "modelCount": 49
+  },
+  "Lamborghini": {
+    "file": "lamborghini.json",
+    "models": [
+      "CONTACH"
+    ],
+    "modelCount": 1
+  },
+  "Land Rover": {
+    "file": "landrover.json",
+    "models": [
+      "DISCOVERY",
+      "EVOQUE",
+      "FREELANDER",
+      "LR2",
+      "LR3",
+      "LR4",
+      "RANGE ROVER",
+      "RANGE ROVER SPORT"
+    ],
+    "modelCount": 8
+  },
+  "Lexus": {
+    "file": "lexus.json",
+    "models": [
+      "CT200H",
+      "ES250",
+      "ES300",
+      "ES300H",
+      "ES330",
+      "ES350",
+      "GS300, GS400",
+      "GS350",
+      "GS430",
+      "GS450H",
+      "GS470",
+      "GX460",
+      "GX470",
+      "HS250H",
+      "IS250, IS250C, IS350, IS350C",
+      "IS250, IS350",
+      "IS300",
+      "IS300, IS350",
+      "ISF",
+      "LS 600H L",
+      "LS400, LS430",
+      "LS460",
+      "LS500",
+      "LX450",
+      "LX460",
+      "LX470",
+      "LX570",
+      "LX600",
+      "NX200T",
+      "NX300",
+      "NX300H",
+      "RC-F",
+      "RC300, RC350",
+      "RX300",
+      "RX330",
+      "RX350",
+      "RX350 W/ PROX",
+      "RX400H",
+      "RX450H",
+      "RX450L W/ PROX",
+      "SC300, SC400",
+      "SC300, SC400, SC430",
+      "SC430",
+      "UX200",
+      "UX250H"
+    ],
+    "modelCount": 45
+  },
+  "Lincoln": {
+    "file": "lincoln.json",
+    "models": [
+      "AVIATOR",
+      "BLACKWOOD",
+      "CONTINENTAL",
+      "CONTINENTAL W/ PROX",
+      "CONTINENTAL W/ REGULAR IGNITION",
+      "CORSAIR W/ PROX",
+      "CORSAIR W/ REGULAR IGNITION",
+      "LS6, LS8",
+      "MARK LT (TRUCK)",
+      "MARK SERIES",
+      "MKC",
+      "MKS",
+      "MKT",
+      "MKX",
+      "MKX W/ POWER LIFTGATE",
+      "MKX W/ PROX",
+      "MKX W/O POWER LIFTGATE",
+      "MKZ",
+      "MKZ W/ PROX",
+      "NAUTILUS W/ PROX",
+      "NAUTILUS W/ REGULAR IGNITION",
+      "NAVIGATOR",
+      "NAVIGATOR W/ PROX",
+      "NAVIGATOR W/ REGULAR IGNITION",
+      "TOWN CAR",
+      "ZEPHYR (SISTER MODEL TO FORD FUSION)"
+    ],
+    "modelCount": 26
+  },
+  "Mack Truck": {
+    "file": "macktruck.json",
+    "models": [
+      "MIDLINER",
+      "US DESIGNED"
+    ],
+    "modelCount": 2
+  },
+  "Magirus-deutz": {
+    "file": "magirusdeutz.json",
+    "models": [
+      "ALL"
+    ],
+    "modelCount": 1
+  },
+  "Maserati": {
+    "file": "maserati.json",
+    "models": [
+      "GHIBLI",
+      "GRANSPORT",
+      "GRANTURISMO",
+      "LEVANTE",
+      "QUATTROPORTE"
+    ],
+    "modelCount": 5
   },
   "Mazda": {
-    "filename": "mazda.json",
+    "file": "mazda.json",
     "models": [
+      "626ES - V6, 626LX - V6, 626 W/ LUXURY PKG",
+      "626ES - V6, 626LX - V6, 626 W/LUXURY PKG",
+      "626ES, LX - 4CYL., 626 STD., 626, MX6",
+      "929",
+      "B SERIES",
+      "CX-3",
+      "CX-30 W/ PROX",
       "CX-5",
-      "Mazda3"
-    ]
+      "CX-5 W/ PROX",
+      "CX-50 W/ PROX",
+      "CX-7",
+      "CX-7 W/ PROX",
+      "CX-9",
+      "CX-9 W/ PROX",
+      "CX-90 W/ PROX",
+      "MAZDA 2",
+      "MAZDA 3",
+      "MAZDA 3 W/ PROX",
+      "MAZDA 5",
+      "MAZDA 6",
+      "MAZDA 6 W/ PROX",
+      "MAZDA SPEED 6",
+      "MIATA",
+      "MILLENIA",
+      "MX3",
+      "MX5 MIATA",
+      "MX5 MIATA W/ PROX",
+      "MX5, MIATA",
+      "PROTEG\u00c9",
+      "PROTEG\u00c9, 323",
+      "RX7",
+      "RX8",
+      "TRIBUTE"
+    ],
+    "modelCount": 33
+  },
+  "Mazda Trucks, Vans, Suvs": {
+    "file": "mazdatrucksvanssuvs.json",
+    "models": [
+      "B SERIES",
+      "B25000 P\u2019UP",
+      "MP3",
+      "MPV VAN",
+      "NAVAJO"
+    ],
+    "modelCount": 5
+  },
+  "Mercedes Benz": {
+    "file": "mercedesbenz.json",
+    "models": [
+      "190 CLASS, D, E W/O ALARM",
+      "190 CLASS, D, E WITH ALARM",
+      "300 SERIES",
+      "C CLASS - C220, C230, C280, C43",
+      "CL CLASS - CL500, CL600, CL55, CL65",
+      "CLK CLASS - CLK320, CLK430, CABRIOLET",
+      "CLS CLASS - CLS500, CLS555",
+      "E CLASS - E55, E350, E500, E300D, E320, E430",
+      "G CLASS - G55, G500",
+      "M CLASS",
+      "ML320, ML430",
+      "R CLASS - R350, R500",
+      "S CLASS - S320, S450, S500",
+      "SL CLASS - SL320, SL500, SL600, 380SL, 420SL, 450SL",
+      "SLK 55, SLK230, SLK280, SLK350",
+      "SLR MC LAREN",
+      "SPRINTER"
+    ],
+    "modelCount": 17
+  },
+  "Mercury": {
+    "file": "mercury.json",
+    "models": [
+      "CAPRI",
+      "COUGAR",
+      "GRAND MARQUIS",
+      "LYNX",
+      "MARAUDER",
+      "MARINER (SISTER TO FORD ESCAPE)",
+      "MILAN (SISTER MODEL TO \u201806 FORD FUSION)",
+      "MODELS AND YEARS NOT REFERENCED ELSEWHERE",
+      "MONTEGO",
+      "MYSTIQUE GL & LS",
+      "MYSTIQUE GS",
+      "MYSTIQUE LS",
+      "SABLE (SISTER TO FORD TAURUS)",
+      "SABLE GS",
+      "SABLE GS & LS",
+      "SABLE LS, SE, SHO",
+      "TOPAZ",
+      "TRACER"
+    ],
+    "modelCount": 18
+  },
+  "Mercury Trucks, Vans, Suv": {
+    "file": "mercurytrucksvanssuv.json",
+    "models": [
+      "MONTEREY",
+      "MOUNTAINEER"
+    ],
+    "modelCount": 2
+  },
+  "Mercury Trucks, Vans, Suvs": {
+    "file": "mercurytrucksvanssuvs.json",
+    "models": [
+      "MONTEREY",
+      "MOUNTAINEER",
+      "VILLAGER"
+    ],
+    "modelCount": 3
+  },
+  "Merkur": {
+    "file": "merkur.json",
+    "models": [
+      "SCORPIO",
+      "XR4TI"
+    ],
+    "modelCount": 2
+  },
+  "Mg": {
+    "file": "mg.json",
+    "models": [
+      "ALL"
+    ],
+    "modelCount": 1
+  },
+  "Mini": {
+    "file": "mini.json",
+    "models": [
+      "COOPER",
+      "COOPER, COOPER S"
+    ],
+    "modelCount": 2
+  },
+  "Mitsubishi": {
+    "file": "mitsubishi.json",
+    "models": [
+      "DIAMANTE",
+      "ECLIPSE",
+      "ECLIPSE CROSS",
+      "ECLIPSE CROSS W/ PROX",
+      "ECLIPSE CROSS W/ REG IGNITION",
+      "ENDEAVOR",
+      "ENDEAVOR (WITH \"A\" ON BLADE)",
+      "ENDEAVOR (WITH \"N\" ON BLADE)",
+      "EXPO",
+      "FUSO TRUCK",
+      "GALANT",
+      "I-MIEV",
+      "LANCER",
+      "LANCER EVO",
+      "LANCER W/ PROX SYSTEM",
+      "LANCER W/ REGULAR IGNITION",
+      "MIRAGE",
+      "MIRAGE G4",
+      "MIRAGE W/ PROX",
+      "MONTERO",
+      "MONTERO SPORT",
+      "OUTLANDER",
+      "OUTLANDER SPORT W/ PROX SYSTEM",
+      "OUTLANDER SPORT W/ REGULAR IGNITION",
+      "OUTLANDER W/ PROX SYSTEM",
+      "OUTLANDER W/ PROX SYSTEM (DIFFERENT PROX FROM 2007)",
+      "OUTLANDER W/ REGULAR IGNITION",
+      "PICKUP TRUCK",
+      "PRECIS",
+      "RAIDER",
+      "RVR (CANADA)",
+      "SIGMA, CORDIA, STARION, TREDIA",
+      "VAN WAGON"
+    ],
+    "modelCount": 33
+  },
+  "Moto Guzzi": {
+    "file": "motoguzzi.json",
+    "models": [
+      "CALIFORNIA 1400",
+      "STELVIO"
+    ],
+    "modelCount": 2
+  },
+  "Navistar International Harvester": {
+    "file": "navistarinternationalharvester.json",
+    "models": [
+      "ALL"
+    ],
+    "modelCount": 1
   },
   "Nissan": {
-    "filename": "nissan.json",
+    "file": "nissan.json",
     "models": [
-      "Altima",
-      "Maxima",
-      "Rogue"
-    ]
+      "350Z ROADSTER",
+      "ALTIMA",
+      "ARMADA W/ REGULAR IGNITION",
+      "CUBE W/ REGULAR IGNITION",
+      "FRONTIER",
+      "JUKE W/O PROX",
+      "MAXIMA",
+      "MAXIMA, 810",
+      "MICRA W/ REGULAR IGNITION (CANADA)",
+      "MURANO W/ REGULAR IGNITION",
+      "NV 1500/2500/3500",
+      "NV 200",
+      "PATHFINDER",
+      "PATHFINDER W/ REGULAR IGNITION",
+      "QUEST",
+      "ROGUE W/ REGULAR IGNITION",
+      "SENTRA W/ REGULAR IGNITION",
+      "SENTRA, SE-R, 200SX, 240SX",
+      "TITAN",
+      "VERSA W/ REGULAR IGNITION",
+      "X-TRAIL (CANADA)",
+      "XTERRA"
+    ],
+    "modelCount": 22
+  },
+  "Nissan / Datsun": {
+    "file": "nissandatsun.json",
+    "models": [
+      "300ZX, 280ZX",
+      "350Z ROADSTER",
+      "370Z COUPE",
+      "ALL MODELS EXCEPT 280ZX & 810",
+      "ALTIMA",
+      "ARIYA",
+      "ARMADA W/ PROX",
+      "ARMADA W/ REGULAR IGNITION",
+      "AXXES, NX, STANZA",
+      "CUBE W/ PROX",
+      "CUBE W/ REGULAR IGNITION",
+      "FRONTIER",
+      "FRONTIER W/ PROX",
+      "GT-R",
+      "JUKE W/ PROX",
+      "JUKE W/O PROX",
+      "KICKS W/ PROX",
+      "KICKS W/ REGULAR IGNITION",
+      "LEAF",
+      "MAXIMA",
+      "MAXIMA, 810",
+      "MICRA W/ PROX (CANADA)",
+      "MICRA W/ REGULAR IGNITION (CANADA)",
+      "MURANO W/ PROX",
+      "MURANO W/ REGULAR IGNITION",
+      "NV 1500/2500/3500",
+      "NV 200",
+      "PATHFINDER",
+      "PATHFINDER W/ PROX",
+      "PATHFINDER W/ REGULAR IGNITION",
+      "PICKUP",
+      "QUEST",
+      "QUEST W/ PROX",
+      "ROGUE W/ PROX",
+      "ROGUE W/ REGULAR IGNITION",
+      "SENTRA W/ PROX",
+      "SENTRA W/ REGULAR IGNITION",
+      "SENTRA, SE-R, 200SX, 240SX",
+      "TITAN",
+      "TITAN W/ PROX",
+      "VERSA W/ PROX",
+      "VERSA W/ REGULAR IGNITION",
+      "X-TRAIL (CANADA)",
+      "XTERRA",
+      "XTERRA W/O TRANSPONDER"
+    ],
+    "modelCount": 45
+  },
+  "Oldsmobile": {
+    "file": "oldsmobile.json",
+    "models": [
+      "ACHIEVA",
+      "ALERO",
+      "AURORA",
+      "BRAVADA",
+      "CUTLASS",
+      "CUTLASS SUPREME",
+      "EIGHTY-EIGHT",
+      "INTRIGUE",
+      "LSS",
+      "MODELS AND YEARS NOT REFERENCED ELSEWHERE",
+      "REGENCY 98",
+      "SILHOUETTE",
+      "TORONADO"
+    ],
+    "modelCount": 13
+  },
+  "Panoz": {
+    "file": "panoz.json",
+    "models": [
+      "ESPERANTE"
+    ],
+    "modelCount": 1
+  },
+  "Peterbilt": {
+    "file": "peterbilt.json",
+    "models": [
+      "MIDRANGER",
+      "US DESIGNED"
+    ],
+    "modelCount": 2
+  },
+  "Peugeot": {
+    "file": "peugeot.json",
+    "models": [
+      "405",
+      "505"
+    ],
+    "modelCount": 2
+  },
+  "Piaggio Motorcycle": {
+    "file": "piaggiomotorcycle.json",
+    "models": [
+      "BV200",
+      "BV250",
+      "BV350",
+      "BV500",
+      "FLY150",
+      "X9 500",
+      "X9 500 EVOLUTION"
+    ],
+    "modelCount": 7
+  },
+  "Plymouth": {
+    "file": "plymouth.json",
+    "models": [
+      "3 AND 5 DOOR HATCHBACK",
+      "4 DR. STATION WAGON",
+      "ACCLAIM",
+      "BREEZE",
+      "COLT, COLT VISTA",
+      "CONQUEST",
+      "GRAND VOYAGER, VOYAGER",
+      "LASER",
+      "MODELS AND YEARS NOT REFERENCED ELSEWHERE",
+      "NEON",
+      "PROWLER"
+    ],
+    "modelCount": 11
+  },
+  "Pontiac": {
+    "file": "pontiac.json",
+    "models": [
+      "AZTEK",
+      "BONNEVILLE",
+      "FIREBIRD",
+      "FORMULA",
+      "G3",
+      "G5",
+      "G6",
+      "G8",
+      "GRAND AM",
+      "GRAND PRIX",
+      "GTA",
+      "GTO",
+      "LEMANS",
+      "MODELS AND YEARS NOT REFERENCED ELSEWHERE",
+      "MONTANA",
+      "MONTANA SV6",
+      "MONTANA SV6 (CANADA)",
+      "MONTANA, MONTANA SV6",
+      "PURSUIT",
+      "SOLSTICE",
+      "SUNFIRE",
+      "TORRENT (SIS- TER MODEL TO CHEVROLET EQUINOX)",
+      "TORRENT (SISTER MODEL TO CHEVROLET EQUINOX)",
+      "TRANS AM, GTA",
+      "TRANS SPORT",
+      "VIBE",
+      "WAVE (CANADA)"
+    ],
+    "modelCount": 27
+  },
+  "Porsche": {
+    "file": "porsche.json",
+    "models": [
+      "911",
+      "911 TURBO CABRIOLET",
+      "911, 912",
+      "928 WITH ALARM",
+      "928 WITHOUT ALARM",
+      "944",
+      "944, 924",
+      "968",
+      "BOXSTER",
+      "CARRERA",
+      "CAYENNE",
+      "CAYMAN",
+      "GT3"
+    ],
+    "modelCount": 13
+  },
+  "Puegeot Motorcycle": {
+    "file": "puegeotmotorcycle.json",
+    "models": [
+      "ALISE",
+      "BV 200",
+      "BV 250",
+      "BV 500",
+      "ELISEO",
+      "FLY 150",
+      "SPEEDFIGHT",
+      "X9 500",
+      "X9 EVOLUTION 500"
+    ],
+    "modelCount": 9
+  },
+  "Renault": {
+    "file": "renault.json",
+    "models": [
+      "ALLIANCE ENCORE",
+      "FUEGO"
+    ],
+    "modelCount": 2
+  },
+  "Rolls Royce (bentley)": {
+    "file": "rollsroycebentley.json",
+    "models": [
+      "PHANTOM",
+      "SILVER SPIRIT",
+      "SILVER SPUR"
+    ],
+    "modelCount": 3
+  },
+  "Saab": {
+    "file": "saab.json",
+    "models": [
+      "9-2X",
+      "9-3",
+      "9-3, 9-5",
+      "9-4X",
+      "9-5",
+      "9-7,",
+      "900, 99",
+      "9000"
+    ],
+    "modelCount": 8
+  },
+  "Saturn": {
+    "file": "saturn.json",
+    "models": [
+      "ASTRA",
+      "AURA",
+      "ION",
+      "L SERIES",
+      "L300",
+      "OUTLOOK",
+      "RELAY",
+      "SC & SL",
+      "SKY",
+      "SW",
+      "VUE"
+    ],
+    "modelCount": 11
+  },
+  "Scion": {
+    "file": "scion.json",
+    "models": [
+      "FR-S",
+      "IA",
+      "IM",
+      "IQ",
+      "IQ (CANADA)",
+      "TC",
+      "XA",
+      "XB",
+      "XB (CANADA)",
+      "XD",
+      "XD (CANADA)"
+    ],
+    "modelCount": 11
+  },
+  "Smart": {
+    "file": "smart.json",
+    "models": [
+      "FORTWO"
+    ],
+    "modelCount": 1
+  },
+  "Sterling": {
+    "file": "sterling.json",
+    "models": [
+      "1987 1991 All E8000-E8999 X170/NE48 - Door/ AK1-AK1000 X86/FC7 [-P] STERLING, 3500S Trunk 1981 1986 RO1001- Ignition X157/LF17 - RO2000",
+      "AKTERA",
+      "ALL OTHERS",
+      "BULLET",
+      "CARGO"
+    ],
+    "modelCount": 5
   },
   "Subaru": {
-    "filename": "subaru.json",
+    "file": "subaru.json",
     "models": [
-      "Legacy"
-    ]
+      "ASCENT W/PROX",
+      "B9 TRIBECA",
+      "BAJA",
+      "BRAT",
+      "BRZ W/ PROX",
+      "BRZ W/ REGULAR IGNITION",
+      "DL, GL, STD",
+      "FORESTER",
+      "FORESTER W/ PROX",
+      "FORESTER W/ REGULAR IGNITION",
+      "IMPREZA",
+      "IMPREZA W/ PROX",
+      "IMPREZA WRX",
+      "LEGACY",
+      "LEGACY (CANADA)",
+      "LEGACY W/ PROX",
+      "LEGACY, OUTBACK",
+      "LOYALE & JUSTY",
+      "OUTBACK",
+      "OUTBACK (CANADA)",
+      "OUTBACK W/ PROX",
+      "SVX",
+      "WRX",
+      "WRX W/ PROX",
+      "XT-6",
+      "XV CROSSTREK",
+      "XV CROSSTREK (CANADA)",
+      "XV CROSSTREK W/ PROX"
+    ],
+    "modelCount": 28
   },
-  "Tesla": {
-    "filename": "tesla.json",
+  "Suzuki": {
+    "file": "suzuki.json",
     "models": [
-      "Model 3",
-      "Model S"
-    ]
+      "EQUATOR",
+      "ESTEEM",
+      "FORENZA",
+      "KIZASHI",
+      "RENO",
+      "SAMURAI",
+      "SIDEKICK",
+      "SWIFT",
+      "SX4",
+      "SX4 W/ PROX (CANADA)",
+      "VERONA",
+      "VITARA, GRAND VITARA",
+      "VITARA, GRAND VITARA W/ SMART PASS",
+      "X90",
+      "XL-7"
+    ],
+    "modelCount": 15
   },
   "Toyota": {
-    "filename": "toyota.json",
+    "file": "toyota.json",
     "models": [
-      "Camry",
-      "Corolla",
-      "RAV4"
-    ]
+      "AVALON W/ PROX",
+      "AVALON W/ REGULAR IGNITION",
+      "AVALON XLS, XL",
+      "BZ4X",
+      "C-HR W/ PROX",
+      "C-HR W/ REGULAR IGNITION",
+      "CAMRY CE & LE",
+      "CAMRY CE & LE (TYPE 1 SYSTEM)",
+      "CAMRY CE & LE (TYPE 2 SYSTEM)",
+      "CAMRY HYBRID",
+      "CAMRY W/ PROX",
+      "CAMRY W/ REGULAR IGNITION",
+      "CAMRY XLE",
+      "CAMRY, CAMRY LE",
+      "CELICA CONVERTIBLE",
+      "CELICA COUPE",
+      "CELICA LIFTBACK",
+      "COROLLA",
+      "COROLLA CROSS W/ PROX",
+      "COROLLA CROSS W/ REGULAR IGNITION",
+      "COROLLA LIFTBACK",
+      "COROLLA SEDAN, COUPE, HARDTOP",
+      "COROLLA W/ PROX",
+      "COROLLA WAGON, COROLLA STATION WAGON 2WD",
+      "COROLLA iM",
+      "COROLLA, FX, FX16",
+      "CORONA",
+      "CRESSIDA",
+      "CRESSIDA SEDAN",
+      "CROWN",
+      "ECHO",
+      "FJ CRUSIER",
+      "MATRIX",
+      "MODELS AND YEARS NOT REFERENCED ELSEWHERE",
+      "MR2",
+      "MR2 SPYDER",
+      "PASEO",
+      "PRIUS",
+      "PRIUS C W/ PROX",
+      "PRIUS C W/ REGULAR IGNITION",
+      "SOLARA",
+      "SOLARA SE",
+      "SOLARA SLE",
+      "SUPRA",
+      "TERCEL LIFTBACK",
+      "TERCEL, TERCEL SEDAN, STATION WAGON",
+      "VENZA W/ PROX",
+      "VENZA W/ REGULAR IGNITION",
+      "YARIS",
+      "YARIS IA",
+      "YARIS W/ PROX"
+    ],
+    "modelCount": 51
+  },
+  "Toyota Trucks, Vans, Suvs": {
+    "file": "toyotatrucksvanssuvs.json",
+    "models": [
+      "4 RUNNER",
+      "4 RUNNER LTD.",
+      "4 RUNNER W/ PROX",
+      "4 RUNNER W/ REGULAR IGNITION",
+      "HIGHLANDER",
+      "HIGHLANDER W/ PROX",
+      "HIGHLANDER W/ REGULAR IGNITION",
+      "LAND CRUISER",
+      "PREVIA VAN",
+      "RAV 4",
+      "RAV 4 W/ PROX",
+      "RAV 4 W/ REGULAR IGNITION",
+      "SEQUOIA",
+      "SEQUOIA W/ PROX",
+      "SIENNA VAN, CE",
+      "SIENNA VAN, XLE-LE",
+      "SIENNA VAN, XLE-LE- LIMITED",
+      "SIENNA W/ PROX",
+      "SIENNA W/ REGULAR IGNITION",
+      "SMALL PICKUP",
+      "T100 PICKUP",
+      "TACOMA",
+      "TACOMA W/ PROX",
+      "TUNDRA",
+      "TUNDRA W/ PROX"
+    ],
+    "modelCount": 25
+  },
+  "Triumph": {
+    "file": "triumph.json",
+    "models": [
+      "TR6, STAG, GT6, SPITFIRE",
+      "TR8, TR7"
+    ],
+    "modelCount": 2
   },
   "Volkswagen": {
-    "filename": "volkswagen.json",
+    "file": "volkswagen.json",
     "models": [
-      "Jetta",
-      "Passat"
-    ]
+      "ATLAS",
+      "BEETLE",
+      "CABRIO, EUROVAN",
+      "CC",
+      "EOS",
+      "FOX",
+      "GLI",
+      "GLOVE BOX IF NOT REFERENCED ELSE- WHERE",
+      "GOLF",
+      "GOLF, GTI, RABBIT",
+      "GOLF, JETTA, CABRIO, CORRADO",
+      "GTI",
+      "JETTA",
+      "PASSAT",
+      "PASSAT (SEDAN)",
+      "PASSAT (WAGON)",
+      "PHAETON",
+      "R32 VR6",
+      "RABBIT",
+      "ROUTAN",
+      "SCIROCCO",
+      "TIGUAN",
+      "TOUAREG",
+      "VANAGON"
+    ],
+    "modelCount": 24
   },
   "Volvo": {
-    "filename": "volvo.json",
+    "file": "volvo.json",
     "models": [
-      "S90",
-      "XC90"
-    ]
+      "240 SERIES, DL, GL",
+      "740",
+      "760, 780",
+      "850GLT",
+      "900 SERIES",
+      "C30, S40",
+      "C70, S80",
+      "S40, V40",
+      "S60",
+      "S60R/V70R, S60, XC70",
+      "S70, V70",
+      "S80",
+      "S90, V90",
+      "V50",
+      "V60",
+      "V70",
+      "XC60",
+      "XC70",
+      "XC70/90 SUV"
+    ],
+    "modelCount": 19
+  },
+  "Vpg": {
+    "file": "vpg.json",
+    "models": [
+      "MV-1"
+    ],
+    "modelCount": 1
+  },
+  "White-gmc-volvo": {
+    "file": "whitegmcvolvo.json",
+    "models": [
+      "ALL",
+      "SEMI",
+      "US DESIGNED",
+      "VOLVO LOADER"
+    ],
+    "modelCount": 4
+  },
+  "Yugo": {
+    "file": "yugo.json",
+    "models": [
+      "GV"
+    ],
+    "modelCount": 1
   }
 }

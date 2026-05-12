@@ -191,16 +191,16 @@ async function searchDatabase(year, make, model, currentMakeData) {
     return {
       keyBlanks: matching.keyBlanks,
       keyType: matching.keyType,
-      codeRange: matching.codeRange,
-      transponderChip: matching.transponderChip,
-      programmingRequired: matching.programmingRequired,
-      programmingMethod: matching.programmingMethod,
-      cloningMethod: matching.cloningMethod,
-      substitutes: matching.substitutes,
-      notes: matching.notes,
-      cardNo: matching.cardNo,
-      lockApps: matching.lockApps,
-      dataSource: matching.dataSource || '2025 Ilco Reference Guide',
+      codeRange: matching.codeRange ?? null,
+      transponderChip: matching.transponderChip ?? null,
+      programmingRequired: matching.programmingRequired ?? false,
+      programmingMethod: matching.programmingMethod ?? null,
+      cloningMethod: matching.cloningMethod ?? null,
+      substitutes: matching.substitutes ?? null,
+      notes: matching.notes ?? null,
+      cardNo: matching.cardNo ?? null,
+      lockApps: matching.lockApps ?? null,
+      dataSource: '2025 Ilco Reference Guide',
     };
   }
   return null;
@@ -269,6 +269,14 @@ export default function KeyRefPro() {
     setError('');
     setResult(null);
     
+    // Validate year is a 4-digit number in range
+    const yearNum = parseInt(year);
+    if (isNaN(yearNum) || yearNum < 1980 || yearNum > 2025) {
+      setError('Year must be between 1980 and 2025.');
+      setLoading(false);
+      return;
+    }
+    
     try {
       // Lazy load make data if not already loaded
       let makeData = currentMakeData;
@@ -289,7 +297,7 @@ export default function KeyRefPro() {
       }
       
       // Search current make data where yearStart ≤ year ≤ yearEnd
-      const dbResult = await searchDatabase(parseInt(year), make, model, makeData);
+      const dbResult = await searchDatabase(yearNum, make, model, makeData);
       if (dbResult) {
         setResult(dbResult);
         setVehicle({ year, make, model });
@@ -476,8 +484,7 @@ export default function KeyRefPro() {
                       onClick={() => copyToClipboard(b)}
                       title="Click to copy"
                     >
-                      {b}
-                      {copiedBlank === b && <span style={{position: 'absolute', top: '-20px', left: '50%', transform: 'translateX(-50%)', background: '#52e0a0', color: '#000', fontSize: '10px', padding: '2px 4px', borderRadius: '2px', whiteSpace: 'nowrap'}}>Copied!</span>}
+                      {copiedBlank === b ? 'Copied!' : b}
                     </span>
                   ))}</div>
                 </div>

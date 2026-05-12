@@ -1,10 +1,1243 @@
 {
   "Chrysler": {
-    "300": [
-      { "yearStart": 2005, "yearEnd": 2025, "keyBlanks": ["C-DAM"], "keyType": "Laser Cut", "transponderChip": null, "programmingRequired": false, "programmingMethod": "Smart Pro", "notes": "Chrysler laser cut key" }
+    "200": [
+      {
+        "yearStart": 2011,
+        "yearEnd": 2011,
+        "lockApps": "OBP Program F, Smart Pro/TCP/MVPP/TKO/ Y164-PT (LAL) Service Key Y159 Philips (46) Encrypted System 745 SDD M1-M2618 EK3P-Y164/EK3LB-Y160*/ RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Service Key Y159 Philips (46) Encrypted System 745 Y160-GTK# Plus, Plus Box",
+        "codeRange": null,
+        "keyBlanks": [],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 2011,
+        "yearEnd": 2011,
+        "lockApps": "EB3-A-Y160",
+        "codeRange": null,
+        "keyBlanks": [
+          "Y160-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Y164-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      }
     ],
-    "Pacifica": [
-      { "yearStart": 2017, "yearEnd": 2025, "keyBlanks": ["C-DAM"], "keyType": "Laser Cut", "transponderChip": null, "programmingRequired": false, "programmingMethod": "Smart Pro", "notes": "Chrysler laser cut key" }
+    "300": [
+      {
+        "yearStart": 2019,
+        "yearEnd": 2019,
+        "lockApps": "M1-M2618",
+        "codeRange": "OEM# 68394190AA or 68394191AA",
+        "keyBlanks": [
+          "Smart Pro (thru 2022)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Service Key Y159",
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "745",
+        "cardNo": null
+      },
+      {
+        "yearStart": 2015,
+        "yearEnd": 2015,
+        "lockApps": "M1-M2618",
+        "codeRange": "OEM# 68155686AB or 68155687AB (LAL)",
+        "keyBlanks": [
+          "Smart Pro"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Emergency Key Y172",
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "745",
+        "cardNo": null
+      },
+      {
+        "yearStart": 2008,
+        "yearEnd": 2008,
+        "lockApps": "M1-M2618",
+        "codeRange": "Dealer FOB/Y170-PT (LAL) EK3P-Y170/EK3LB-Y170*/ Y170-GTK#",
+        "keyBlanks": [
+          "OBP Program F, Smart Pro/TCP/MVPP/TKO/ SDD"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Service Key Y159/ Emerg. Key Y171-P",
+        "cloningMethod": null,
+        "substitutes": "Philips (46) Encrypted System",
+        "notes": "745",
+        "cardNo": null
+      },
+      {
+        "yearStart": 2008,
+        "yearEnd": 2008,
+        "lockApps": "EB3-T-Y170",
+        "codeRange": null,
+        "keyBlanks": [
+          "Y170-GTK or Y170MHK"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "300, 300C": [
+      {
+        "yearStart": 2005,
+        "yearEnd": 2005,
+        "lockApps": "M1-M2618",
+        "codeRange": "Y164-PT (LAL) EK3P-Y164 or EK3LB-Y160",
+        "keyBlanks": [
+          "OBP Program F, Smart Pro/TCP/MVPP/TKO/ SDD"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Service Key Y159",
+        "cloningMethod": null,
+        "substitutes": "Philips (46) Encrypted System",
+        "notes": "745",
+        "cardNo": null
+      },
+      {
+        "yearStart": 2005,
+        "yearEnd": 2005,
+        "lockApps": "EB3-A-Y160",
+        "codeRange": null,
+        "keyBlanks": [
+          "Y160-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Y164-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "300M": [
+      {
+        "yearStart": 1999,
+        "yearEnd": 1999,
+        "lockApps": "M1-M2618",
+        "codeRange": "EK3-Y160/EK3LB-Y160*/ Y160-GTK# Y160-PT",
+        "keyBlanks": [
+          "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Service Key Y159",
+        "cloningMethod": null,
+        "substitutes": "Texas Instruments (4D64) Encrypted System",
+        "notes": "745",
+        "cardNo": null
+      },
+      {
+        "yearStart": 1999,
+        "yearEnd": 1999,
+        "lockApps": "EB3-A-Y160",
+        "codeRange": null,
+        "keyBlanks": [
+          "Y160-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Y160-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "ASPEN": [
+      {
+        "yearStart": 2007,
+        "yearEnd": 2009,
+        "lockApps": "All",
+        "codeRange": "M1-M2618",
+        "keyBlanks": [
+          "Y164-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips (46) Encrypted System",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program F, Smart Pro/TCP/MVPP/TKO/ SDD",
+        "cloningMethod": null,
+        "substitutes": "Service Key Y159",
+        "notes": "Philips (46) Encrypted System",
+        "cardNo": "745"
+      },
+      {
+        "yearStart": 2007,
+        "yearEnd": 2007,
+        "lockApps": "EB3-A-Y160",
+        "codeRange": null,
+        "keyBlanks": [
+          "Y160-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Y164-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "CIRRUS": [
+      {
+        "yearStart": 1999,
+        "yearEnd": 2000,
+        "lockApps": "All",
+        "codeRange": "M1-M2618",
+        "keyBlanks": [
+          "P1795/Y159 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "Y157",
+        "notes": null,
+        "cardNo": "745"
+      },
+      {
+        "yearStart": 1995,
+        "yearEnd": 1998,
+        "lockApps": "All",
+        "codeRange": "L1-L3580",
+        "keyBlanks": [
+          "P1794/Y157 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "P1795/Y159",
+        "notes": null,
+        "cardNo": "537"
+      },
+      {
+        "yearStart": 1999,
+        "yearEnd": 1999,
+        "lockApps": "EB3-A-Y160",
+        "codeRange": null,
+        "keyBlanks": [
+          "Y160-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Y160-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "CONCORDE": [
+      {
+        "yearStart": 1998,
+        "yearEnd": 2004,
+        "lockApps": "All",
+        "codeRange": "M1-M2618",
+        "keyBlanks": [
+          "P1795/Y159 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "Y157",
+        "notes": null,
+        "cardNo": "745"
+      },
+      {
+        "yearStart": 1994,
+        "yearEnd": 1997,
+        "lockApps": "All",
+        "codeRange": "L1-L3580",
+        "keyBlanks": [
+          "P1794/Y157 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "P1795/Y159",
+        "notes": null,
+        "cardNo": "537"
+      },
+      {
+        "yearStart": 1993,
+        "yearEnd": 1993,
+        "lockApps": "All",
+        "codeRange": "J1-J3580",
+        "keyBlanks": [
+          "P1793/Y155 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "537"
+      },
+      {
+        "yearStart": 1998,
+        "yearEnd": 1998,
+        "lockApps": "EB3-A-Y160",
+        "codeRange": null,
+        "keyBlanks": [
+          "Y160-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Y160-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "CROSSFIRE": [
+      {
+        "yearStart": 2003,
+        "yearEnd": 2008,
+        "lockApps": "All",
+        "codeRange": "1-6700",
+        "keyBlanks": [
+          "Dealer Key"
+        ],
+        "keyType": "High Security",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HU64-P",
+        "notes": "High Security Key, Ordered by VIN",
+        "cardNo": "913"
+      }
+    ],
+    "LHS": [
+      {
+        "yearStart": 1999,
+        "yearEnd": 2001,
+        "lockApps": "All",
+        "codeRange": "M1-M2618",
+        "keyBlanks": [
+          "EK3-Y160/EK3LB-Y160*/ Y160-GTK#"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D64) Encrypted System",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "substitutes": "Service Key Y159",
+        "notes": "Texas Instruments (4D64) Encrypted System",
+        "cardNo": "745"
+      },
+      {
+        "yearStart": 1999,
+        "yearEnd": 1999,
+        "lockApps": "EB3-A-Y160",
+        "codeRange": null,
+        "keyBlanks": [
+          "Y160-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Y160-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "MODELS AND YEARS NOT REFERENCED ELSEWHERE": [
+      {
+        "yearStart": 1995,
+        "yearEnd": 1996,
+        "lockApps": "All",
+        "codeRange": "L1-L3580",
+        "keyBlanks": [
+          "P1794/Y157 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "P1795/Y159",
+        "notes": null,
+        "cardNo": "537"
+      },
+      {
+        "yearStart": 1994,
+        "yearEnd": 1994,
+        "lockApps": "All",
+        "codeRange": "L1-L3580",
+        "keyBlanks": [
+          "P1794/Y157 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "P1795/Y159",
+        "notes": null,
+        "cardNo": "537"
+      },
+      {
+        "yearStart": 1993,
+        "yearEnd": 1993,
+        "lockApps": "All",
+        "codeRange": "J1-J3580",
+        "keyBlanks": [
+          "P1793/Y155 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "537"
+      },
+      {
+        "yearStart": 1992,
+        "yearEnd": 1992,
+        "lockApps": "All",
+        "codeRange": "G1-G1394",
+        "keyBlanks": [
+          "P1789/Y154 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "287"
+      },
+      {
+        "yearStart": 1990,
+        "yearEnd": 1991,
+        "lockApps": "All",
+        "codeRange": "G1-G1394",
+        "keyBlanks": [
+          "P1789/Y154 [-P, -PC"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "287"
+      },
+      {
+        "yearStart": 1986,
+        "yearEnd": 1989,
+        "lockApps": "Ignition/ Door",
+        "codeRange": "EP1-EP3000",
+        "keyBlanks": [
+          "P1786/Y153 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "P1770U/Y152",
+        "notes": null,
+        "cardNo": "139"
+      },
+      {
+        "yearStart": 1981,
+        "yearEnd": 1985,
+        "lockApps": "Ignition/ Door",
+        "codeRange": "EP1-EP3000",
+        "keyBlanks": [
+          "P1770U/Y152 [-PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "139"
+      }
+    ],
+    "NEW YORKER": [
+      {
+        "yearStart": 1998,
+        "yearEnd": 2001,
+        "lockApps": "All",
+        "codeRange": "M1-M2618",
+        "keyBlanks": [
+          "EK3-Y160/EK3LB-Y160*/ Y160-GTK#"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D64) Encrypted System",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "substitutes": "Service Key Y159",
+        "notes": "Texas Instruments (4D64) Encrypted System",
+        "cardNo": "745"
+      },
+      {
+        "yearStart": 1994,
+        "yearEnd": 1997,
+        "lockApps": "All",
+        "codeRange": "L1-L3580",
+        "keyBlanks": [
+          "P1794/Y157 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "P1795/Y159",
+        "notes": null,
+        "cardNo": "537"
+      },
+      {
+        "yearStart": 1998,
+        "yearEnd": 1998,
+        "lockApps": "EB3-A-Y160",
+        "codeRange": null,
+        "keyBlanks": [
+          "Y160-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Y160-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "PACIFICA": [
+      {
+        "yearStart": 2017,
+        "yearEnd": 2024,
+        "lockApps": "All",
+        "codeRange": "M1-M2618",
+        "keyBlanks": [
+          "OEM# 68217827 / 68238686 / 68241531 / 68241533/68217829 / 68238688 / 38541532 / 68241534 / 68217832 / 68238689 (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "745"
+      },
+      {
+        "yearStart": 2004,
+        "yearEnd": 2008,
+        "lockApps": "All",
+        "codeRange": "M1-M2618",
+        "keyBlanks": [
+          "Y164-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips (46) Encrypted System",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program F, Smart Pro/TCP/MVPP/TKO/ SDD",
+        "cloningMethod": null,
+        "substitutes": "Service Key Y159",
+        "notes": "Philips (46) Encrypted System",
+        "cardNo": "745"
+      },
+      {
+        "yearStart": 2004,
+        "yearEnd": 2004,
+        "lockApps": "EB3-A-Y160",
+        "codeRange": null,
+        "keyBlanks": [
+          "Y160-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Y164-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "PROWLER": [
+      {
+        "yearStart": 2001,
+        "yearEnd": 2002,
+        "lockApps": "All",
+        "codeRange": "M1-M2618",
+        "keyBlanks": [
+          "P1794/Y157 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "P1795/Y159",
+        "notes": null,
+        "cardNo": "745"
+      }
+    ],
+    "PT CRUISER": [
+      {
+        "yearStart": 2006,
+        "yearEnd": 2011,
+        "lockApps": "All",
+        "codeRange": "M1-M2618",
+        "keyBlanks": [
+          "Y164-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips (46) Encrypted System",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program F, Smart Pro/TCP/MVPP/TKO/ SDD",
+        "cloningMethod": null,
+        "substitutes": "Service Key Y159",
+        "notes": "Philips (46) Encrypted System",
+        "cardNo": "745"
+      },
+      {
+        "yearStart": 2001,
+        "yearEnd": 2005,
+        "lockApps": "All",
+        "codeRange": "M1-M2618",
+        "keyBlanks": [
+          "P1795/Y159 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "Y157",
+        "notes": null,
+        "cardNo": "745"
+      },
+      {
+        "yearStart": 2006,
+        "yearEnd": 2006,
+        "lockApps": "EB3-A-Y160",
+        "codeRange": null,
+        "keyBlanks": [
+          "Y160-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Y164-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      },
+      {
+        "yearStart": 2001,
+        "yearEnd": 2001,
+        "lockApps": "EB3-A-Y160",
+        "codeRange": null,
+        "keyBlanks": [
+          "Y160-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Y160-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "SEBRING CONVERTIBLE": [
+      {
+        "yearStart": 2007,
+        "yearEnd": 2011,
+        "lockApps": "All",
+        "codeRange": "M1-M2618",
+        "keyBlanks": [
+          "Y164-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips (46) Encrypted System",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program F, Smart Pro/TCP/MVPP/TKO/ SDD",
+        "cloningMethod": null,
+        "substitutes": "Service Key Y159",
+        "notes": "Philips (46) Encrypted System",
+        "cardNo": "745"
+      },
+      {
+        "yearStart": 1998,
+        "yearEnd": 2006,
+        "lockApps": "All",
+        "codeRange": "M1-M2618",
+        "keyBlanks": [
+          "P1795/Y159 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "Y157",
+        "notes": null,
+        "cardNo": "745"
+      },
+      {
+        "yearStart": 1996,
+        "yearEnd": 1997,
+        "lockApps": "All",
+        "codeRange": "L1-L3580",
+        "keyBlanks": [
+          "P1794/Y157 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "P1795/Y159",
+        "notes": null,
+        "cardNo": "537"
+      },
+      {
+        "yearStart": 2007,
+        "yearEnd": 2007,
+        "lockApps": "EB3-A-Y160",
+        "codeRange": "Y160-GTK",
+        "keyBlanks": [
+          "Y164-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 1998,
+        "yearEnd": 1998,
+        "lockApps": "EB3-A-Y160",
+        "codeRange": "Y160-GTK",
+        "keyBlanks": [
+          "Y160-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "SEBRING COUPE": [
+      {
+        "yearStart": 2001,
+        "yearEnd": 2006,
+        "lockApps": "All",
+        "codeRange": "F1-F1571",
+        "keyBlanks": [
+          "Y165-PT"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D61) Encrypted System",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "cloningMethod": null,
+        "substitutes": "Service Key MIT6",
+        "notes": "Texas Instruments (4D61) Encrypted System",
+        "cardNo": "9709"
+      },
+      {
+        "yearStart": 2001,
+        "yearEnd": 2001,
+        "lockApps": "All",
+        "codeRange": "F1-F1571",
+        "keyBlanks": [
+          "Y162-PT"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D61) Encrypted System",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "cloningMethod": null,
+        "substitutes": "Service Key MIT6",
+        "notes": "Texas Instruments (4D61) Encrypted System",
+        "cardNo": "9709"
+      },
+      {
+        "yearStart": 1998,
+        "yearEnd": 2000,
+        "lockApps": "All",
+        "codeRange": "E5001-E7679",
+        "keyBlanks": [
+          "X245/MIT4 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "X176/MIT1",
+        "notes": null,
+        "cardNo": "264"
+      },
+      {
+        "yearStart": 1996,
+        "yearEnd": 1997,
+        "lockApps": "All",
+        "codeRange": "E5001-E7679",
+        "keyBlanks": [
+          "X245/MIT4 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "X176/MIT1",
+        "notes": null,
+        "cardNo": "264"
+      },
+      {
+        "yearStart": 1995,
+        "yearEnd": 1995,
+        "lockApps": "All",
+        "codeRange": "E5001-E7679",
+        "keyBlanks": [
+          "X176/MIT1 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key X176/MIT1, MIT4 [-P, -PC]",
+        "notes": null,
+        "cardNo": "264"
+      },
+      {
+        "yearStart": 2001,
+        "yearEnd": 2001,
+        "lockApps": "EB3-L-MIT9",
+        "codeRange": "MIT9-GTK",
+        "keyBlanks": [],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "SEBRING SEDAN (4-DOOR)": [
+      {
+        "yearStart": 2007,
+        "yearEnd": 2011,
+        "lockApps": "All",
+        "codeRange": "M1-M2618",
+        "keyBlanks": [
+          "Y164-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips (46) Encrypted System",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program F, Smart Pro/TCP/MVPP/TKO/ SDD",
+        "cloningMethod": null,
+        "substitutes": "Service Key Y159",
+        "notes": "Philips (46) Encrypted System",
+        "cardNo": "745"
+      },
+      {
+        "yearStart": 2001,
+        "yearEnd": 2006,
+        "lockApps": "All",
+        "codeRange": "M1-M2618",
+        "keyBlanks": [
+          "P1795/Y159 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "Y157",
+        "notes": null,
+        "cardNo": "745"
+      },
+      {
+        "yearStart": 2007,
+        "yearEnd": 2007,
+        "lockApps": "EB3-A-Y160",
+        "codeRange": "Y160-GTK",
+        "keyBlanks": [
+          "Y164-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 2001,
+        "yearEnd": 2001,
+        "lockApps": "EB3-A-Y160",
+        "codeRange": "Y160-GTK",
+        "keyBlanks": [
+          "Y160-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "TOWN & COUNTRY VAN": [
+      {
+        "yearStart": 2008,
+        "yearEnd": 2016,
+        "lockApps": "All",
+        "codeRange": "M1-M2618",
+        "keyBlanks": [
+          "Dealer FOB/Y170-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips (46) Encrypted System",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program F, Smart Pro/TCP/MVPP/TKO/ SDD",
+        "cloningMethod": null,
+        "substitutes": "Service Key Y159/ Emerg. Key Y171-P",
+        "notes": "Philips (46) Encrypted System",
+        "cardNo": "745"
+      },
+      {
+        "yearStart": 2004,
+        "yearEnd": 2007,
+        "lockApps": "All",
+        "codeRange": "M1-M2618",
+        "keyBlanks": [
+          "Y164-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips (46) Encrypted System",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program F, Smart Pro/TCP/MVPP/TKO/ SDD",
+        "cloningMethod": null,
+        "substitutes": "Service Key Y159",
+        "notes": "Philips (46) Encrypted System",
+        "cardNo": "745"
+      },
+      {
+        "yearStart": 2001,
+        "yearEnd": 2003,
+        "lockApps": "All",
+        "codeRange": "M1-M2618",
+        "keyBlanks": [
+          "P1795/Y159 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": "Texas Instruments Read",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "Y157",
+        "notes": "Optional Texas Instruments Read/Write system",
+        "cardNo": "745"
+      },
+      {
+        "yearStart": 1998,
+        "yearEnd": 2000,
+        "lockApps": "All",
+        "codeRange": "M1-M2618",
+        "keyBlanks": [
+          "P1795/Y159 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "Y157",
+        "notes": null,
+        "cardNo": "745"
+      },
+      {
+        "yearStart": 1996,
+        "yearEnd": 1997,
+        "lockApps": "All",
+        "codeRange": "L1-L3580",
+        "keyBlanks": [
+          "P1795/Y159 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "P1794/Y157",
+        "notes": null,
+        "cardNo": "537"
+      },
+      {
+        "yearStart": 1994,
+        "yearEnd": 1995,
+        "lockApps": "All",
+        "codeRange": "L1-L3580",
+        "keyBlanks": [
+          "P1794/Y157 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "P1795/Y159",
+        "notes": null,
+        "cardNo": "537"
+      },
+      {
+        "yearStart": 1993,
+        "yearEnd": 1993,
+        "lockApps": "All",
+        "codeRange": "J1-J3580",
+        "keyBlanks": [
+          "P1793/Y155 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "537"
+      },
+      {
+        "yearStart": 1992,
+        "yearEnd": 1992,
+        "lockApps": "All",
+        "codeRange": "G1-G1394",
+        "keyBlanks": [
+          "P1789/Y154 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "287"
+      },
+      {
+        "yearStart": 1991,
+        "yearEnd": 1991,
+        "lockApps": "All",
+        "codeRange": "G1-G1394",
+        "keyBlanks": [
+          "P1789/Y154 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "287"
+      },
+      {
+        "yearStart": 1990,
+        "yearEnd": 1990,
+        "lockApps": "All",
+        "codeRange": "EP1-EP3000",
+        "keyBlanks": [
+          "P1786/Y153 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "P1770U/Y152",
+        "notes": null,
+        "cardNo": "139"
+      },
+      {
+        "yearStart": 2008,
+        "yearEnd": 2008,
+        "lockApps": "EB3-T-Y170",
+        "codeRange": "Y170-GTK or Y170MHK",
+        "keyBlanks": [],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 2004,
+        "yearEnd": 2004,
+        "lockApps": "EB3-A-Y160",
+        "codeRange": "Y160-GTK",
+        "keyBlanks": [
+          "Y164-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 2001,
+        "yearEnd": 2001,
+        "lockApps": "EB3-A-Y160",
+        "codeRange": "Y160-GTK",
+        "keyBlanks": [
+          "Y160-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "VOYAGER": [
+      {
+        "yearStart": 2020,
+        "yearEnd": 2024,
+        "lockApps": "All",
+        "codeRange": "M1-M2618",
+        "keyBlanks": [
+          "OEM# 68217827/68241531/ 68217829/68241532/682178 32 (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "745"
+      },
+      {
+        "yearStart": 2001,
+        "yearEnd": 2003,
+        "lockApps": "All",
+        "codeRange": "M1-M2618",
+        "keyBlanks": [
+          "P1795/Y159 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": "Texas Instruments Read",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "Y157",
+        "notes": "Optional Texas Instruments Read/Write system",
+        "cardNo": "745"
+      },
+      {
+        "yearStart": 2001,
+        "yearEnd": 2001,
+        "lockApps": "EB3-A-Y160",
+        "codeRange": "Y160-GTK",
+        "keyBlanks": [
+          "Y160-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
     ]
   }
 }

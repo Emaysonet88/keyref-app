@@ -1,0 +1,97 @@
+{
+  "Geo": {
+    "PRIZM": [
+      {
+        "yearStart": 1993,
+        "yearEnd": 1997,
+        "lockApps": "All",
+        "codeRange": "10001-15000",
+        "keyBlanks": [
+          "X225/B80 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "X217/TR47",
+        "notes": null,
+        "cardNo": "514"
+      },
+      {
+        "yearStart": 1989,
+        "yearEnd": 1992,
+        "lockApps": "All",
+        "codeRange": "G001-G7NP",
+        "keyBlanks": [
+          "X192/B72 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "264"
+      }
+    ],
+    "SPECTRUM": [
+      {
+        "yearStart": 1985,
+        "yearEnd": 1989,
+        "lockApps": "All",
+        "codeRange": "A8001-A9400",
+        "keyBlanks": [
+          "X143/B53"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "B57",
+        "notes": null,
+        "cardNo": "156"
+      }
+    ],
+    "STORM": [
+      {
+        "yearStart": 1990,
+        "yearEnd": 1993,
+        "lockApps": "All",
+        "codeRange": "N5001-N7000",
+        "keyBlanks": [
+          "X184/B65 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "X185/SUZ15",
+        "notes": null,
+        "cardNo": "264"
+      }
+    ],
+    "TRACKER": [
+      {
+        "yearStart": 1989,
+        "yearEnd": 1997,
+        "lockApps": "All",
+        "codeRange": "18100-19617",
+        "keyBlanks": [
+          "X180/B69"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "X186/SUZ17",
+        "notes": null,
+        "cardNo": "288"
+      }
+    ]
+  }
+}
