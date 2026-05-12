@@ -1,179 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
 
-// Placeholder - not used, kept for reference
-const KEY_DATABASE_2025_BACKUP = {
-  'Acura': {
-    'CL': [
-      { yearStart: 1998, yearEnd: 2003, keyBlanks: ['HD106-PT', 'HD107-PT'], keyType: 'Mechanical', transponderChip: 'Megamos (13)', programmingRequired: true, programmingMethod: 'Smart Pro/TCP/MVPP/SDD/TKO', notes: 'Fixed Code System' },
-    ],
-    'CSX': [
-      { yearStart: 2006, yearEnd: 2011, keyBlanks: ['HO03-PT(V)'], keyType: 'High Security', transponderChip: 'Philips (46)', programmingRequired: true, programmingMethod: 'Smart Pro/TCP/MVPP', notes: 'Encrypted System' },
-    ],
-    'ILX': [
-      { yearStart: 2016, yearEnd: 2022, keyBlanks: ['K001-N718'], keyType: 'Smart Key', transponderChip: null, programmingRequired: false, programmingMethod: null, notes: 'Smart Pro/TCP/MVPP compatible' },
-    ],
-    'MDX': [
-      { yearStart: 2007, yearEnd: 2013, keyBlanks: ['HO03-PT(V)', 'HO03-GTK'], keyType: 'High Security', transponderChip: 'Philips (46)', programmingRequired: true, programmingMethod: 'Smart Pro/TCP/MVPP/SDD/TKO', notes: 'Encrypted System' },
-      { yearStart: 2001, yearEnd: 2006, keyBlanks: ['HD106-PT', 'HD107-PT'], keyType: 'Mechanical', transponderChip: 'Megamos (13)', programmingRequired: true, programmingMethod: 'Smart Pro/TCP/MVPP/SDD/TKO', notes: 'Fixed Code System' },
-    ],
-    'NSX': [
-      { yearStart: 1997, yearEnd: 2005, keyBlanks: ['HD106-PT', 'HD107-PT'], keyType: 'Mechanical', transponderChip: 'Megamos (13)', programmingRequired: true, programmingMethod: 'Smart Pro/TCP/MVPP/SDD/TKO', notes: 'Fixed Code System' },
-    ],
-    'RDX': [
-      { yearStart: 2019, yearEnd: 2025, keyBlanks: ['K001-N718'], keyType: 'Smart Key', transponderChip: null, programmingRequired: false, programmingMethod: null, notes: '2025 Database' },
-    ],
-    'TL': [
-      { yearStart: 2007, yearEnd: 2014, keyBlanks: ['HO03-PT(V)', 'HO03-GTK'], keyType: 'High Security', transponderChip: 'Philips (46)', programmingRequired: true, programmingMethod: 'Smart Pro/TCP/MVPP/SDD/TKO', notes: 'Encrypted System' },
-      { yearStart: 1999, yearEnd: 2003, keyBlanks: ['HD106-PT', 'HD107-PT'], keyType: 'Mechanical', transponderChip: 'Megamos (13)', programmingRequired: true, programmingMethod: 'Smart Pro/TCP/MVPP/SDD/TKO', notes: 'Fixed Code System' },
-    ],
-    'TLX': [
-      { yearStart: 2021, yearEnd: 2025, keyBlanks: ['K001-N718'], keyType: 'Smart Key', transponderChip: null, programmingRequired: false, programmingMethod: null, notes: '2025 Database' },
-    ],
-  },
-  'BMW': {
-    '1 Series': [
-      { yearStart: 2008, yearEnd: 2011, keyBlanks: ['HU92RP'], keyType: 'Smart Key', transponderChip: null, programmingRequired: false, programmingMethod: 'Smart Pro', notes: 'Dealer FOB, Rolling Code System' },
-    ],
-    '3 Series': [
-      { yearStart: 2012, yearEnd: 2025, keyBlanks: ['HU92RP'], keyType: 'Smart Key', transponderChip: null, programmingRequired: false, programmingMethod: 'Smart Pro RW5', notes: 'High Security, Rolling Code' },
-    ],
-    '5 Series': [
-      { yearStart: 1995, yearEnd: 1996, keyBlanks: ['S7BW-P', 'S6BW'], keyType: 'Mechanical', transponderChip: null, programmingRequired: false, programmingMethod: null, notes: 'High Security Key' },
-      { yearStart: 2002, yearEnd: 2008, keyBlanks: ['HU92RMH'], keyType: 'Smart Key', transponderChip: null, programmingRequired: false, programmingMethod: 'Smart Pro', notes: 'Philips (46) Encrypted System' },
-    ],
-    '7 Series': [
-      { yearStart: 2008, yearEnd: 2009, keyBlanks: ['HU92RP'], keyType: 'Smart Key', transponderChip: null, programmingRequired: false, programmingMethod: 'Smart Pro RW5', notes: 'Dealer FOB, Phillips Rolling Code' },
-    ],
-  },
-  'Honda': {
-    'Accord': [
-      { yearStart: 2013, yearEnd: 2025, keyBlanks: ['HON66'], keyType: 'Smart Key', transponderChip: null, programmingRequired: false, programmingMethod: 'Smart Pro', notes: 'Honda keyway profile HON66' },
-    ],
-    'Civic': [
-      { yearStart: 2012, yearEnd: 2025, keyBlanks: ['HON66'], keyType: 'Smart Key', transponderChip: null, programmingRequired: false, programmingMethod: 'Smart Pro', notes: 'Honda keyway profile HON66' },
-    ],
-    'CR-V': [
-      { yearStart: 2012, yearEnd: 2025, keyBlanks: ['HON66'], keyType: 'Smart Key', transponderChip: null, programmingRequired: false, programmingMethod: 'Smart Pro', notes: 'Honda keyway profile HON66' },
-    ],
-  },
-  'Ford': {
-    'F-150': [
-      { yearStart: 2015, yearEnd: 2025, keyBlanks: ['FO38'], keyType: 'Smart Key', transponderChip: null, programmingRequired: false, programmingMethod: 'Ford IDS', notes: 'Ford laser cut key' },
-    ],
-    'Fusion': [
-      { yearStart: 2013, yearEnd: 2025, keyBlanks: ['FO38'], keyType: 'Smart Key', transponderChip: null, programmingRequired: false, programmingMethod: 'Ford IDS', notes: 'Ford laser cut key' },
-    ],
-    'Mustang': [
-      { yearStart: 2015, yearEnd: 2025, keyBlanks: ['FO38'], keyType: 'Smart Key', transponderChip: null, programmingRequired: false, programmingMethod: 'Ford IDS', notes: 'Ford laser cut key' },
-    ],
-  },
-  'Toyota': {
-    'Camry': [
-      { yearStart: 2012, yearEnd: 2025, keyBlanks: ['TOY143'], keyType: 'Smart Key', transponderChip: null, programmingRequired: false, programmingMethod: 'Smart Pro', notes: 'Toyota laser cut key' },
-    ],
-    'Corolla': [
-      { yearStart: 2014, yearEnd: 2025, keyBlanks: ['TOY143'], keyType: 'Smart Key', transponderChip: null, programmingRequired: false, programmingMethod: 'Smart Pro', notes: 'Toyota laser cut key' },
-    ],
-    'RAV4': [
-      { yearStart: 2013, yearEnd: 2025, keyBlanks: ['TOY143'], keyType: 'Smart Key', transponderChip: null, programmingRequired: false, programmingMethod: 'Smart Pro', notes: 'Toyota laser cut key' },
-    ],
-  },
-  'Chevrolet': {
-    'Silverado': [
-      { yearStart: 2014, yearEnd: 2025, keyBlanks: ['B111-PT'], keyType: 'Laser Cut', transponderChip: 'Philips PCF7937E', programmingRequired: true, programmingMethod: 'Smart Pro/TCP/MVPP', notes: 'GM laser cut key, Encrypted System' },
-    ],
-    'Malibu': [
-      { yearStart: 2013, yearEnd: 2025, keyBlanks: ['B111-PT'], keyType: 'Laser Cut', transponderChip: 'Philips PCF7937E', programmingRequired: true, programmingMethod: 'Smart Pro/TCP/MVPP', notes: 'GM laser cut key' },
-    ],
-  },
-  'Dodge': {
-    'Ram 1500': [
-      { yearStart: 2014, yearEnd: 2025, keyBlanks: ['C-DAM'], keyType: 'Laser Cut', transponderChip: null, programmingRequired: false, programmingMethod: 'Smart Pro', notes: 'Chrysler laser cut key' },
-    ],
-    'Caravan': [
-      { yearStart: 2001, yearEnd: 2007, keyBlanks: ['CH690-CH'], keyType: 'Mechanical', transponderChip: 'Megamos', programmingRequired: true, programmingMethod: 'Smart Pro/TCP/MVPP', notes: 'Chrysler key' },
-    ],
-  },
-  'Cadillac': {
-    'Escalade': [
-      { yearStart: 2015, yearEnd: 2025, keyBlanks: ['B111-PT'], keyType: 'Laser Cut', transponderChip: 'Philips PCF7937E', programmingRequired: true, programmingMethod: 'Smart Pro/TCP/MVPP', notes: 'GM laser cut key, Encrypted System' },
-    ],
-    'DeVille': [
-      { yearStart: 2000, yearEnd: 2005, keyBlanks: ['B99-PT', 'B100-PT'], keyType: 'Mechanical', transponderChip: 'Megamos', programmingRequired: true, programmingMethod: 'Smart Pro/TCP/MVPP', notes: 'Fixed Code System' },
-    ],
-    'CTS': [
-      { yearStart: 2003, yearEnd: 2007, keyBlanks: ['B111-PT'], keyType: 'High Security', transponderChip: 'Philips (46)', programmingRequired: true, programmingMethod: 'Smart Pro/TCP/MVPP', notes: 'Encrypted System' },
-    ],
-  },
-  'Buick': {
-    'LaCrosse': [
-      { yearStart: 2005, yearEnd: 2025, keyBlanks: ['B111-PT'], keyType: 'High Security', transponderChip: 'Philips (46)', programmingRequired: true, programmingMethod: 'Smart Pro/TCP/MVPP', notes: 'Encrypted System' },
-    ],
-    'Enclave': [
-      { yearStart: 2007, yearEnd: 2017, keyBlanks: ['B111-PT'], keyType: 'High Security', transponderChip: 'Philips (46)', programmingRequired: true, programmingMethod: 'Smart Pro/TCP/MVPP', notes: 'Encrypted System' },
-    ],
-  },
-  'GMC': {
-    'Sierra': [
-      { yearStart: 2014, yearEnd: 2025, keyBlanks: ['B111-PT'], keyType: 'Laser Cut', transponderChip: 'Philips PCF7937E', programmingRequired: true, programmingMethod: 'Smart Pro/TCP/MVPP', notes: 'GM laser cut key' },
-    ],
-    'Yukon': [
-      { yearStart: 2015, yearEnd: 2025, keyBlanks: ['B111-PT'], keyType: 'Laser Cut', transponderChip: 'Philips PCF7937E', programmingRequired: true, programmingMethod: 'Smart Pro/TCP/MVPP', notes: 'GM laser cut key' },
-    ],
-  },
-  'Nissan': {
-    'Altima': [
-      { yearStart: 2013, yearEnd: 2025, keyBlanks: ['NS-DAM'], keyType: 'Smart Key', transponderChip: null, programmingRequired: false, programmingMethod: 'Nissan Consult', notes: 'Nissan smart key' },
-    ],
-    'Maxima': [
-      { yearStart: 2009, yearEnd: 2025, keyBlanks: ['NS-DAM'], keyType: 'Smart Key', transponderChip: null, programmingRequired: false, programmingMethod: 'Nissan Consult', notes: 'Nissan smart key' },
-    ],
-    'Rogue': [
-      { yearStart: 2014, yearEnd: 2025, keyBlanks: ['NS-DAM'], keyType: 'Smart Key', transponderChip: null, programmingRequired: false, programmingMethod: 'Nissan Consult', notes: 'Nissan smart key' },
-    ],
-  },
-  'Hyundai': {
-    'Elantra': [
-      { yearStart: 2011, yearEnd: 2025, keyBlanks: ['HY24'], keyType: 'Laser Cut', transponderChip: 'ID46', programmingRequired: true, programmingMethod: 'Smart Pro/TCP', notes: 'Hyundai laser cut key' },
-    ],
-    'Sonata': [
-      { yearStart: 2011, yearEnd: 2025, keyBlanks: ['HY24'], keyType: 'Laser Cut', transponderChip: 'ID46', programmingRequired: true, programmingMethod: 'Smart Pro/TCP', notes: 'Hyundai laser cut key' },
-    ],
-  },
-  'Kia': {
-    'Forte': [
-      { yearStart: 2010, yearEnd: 2025, keyBlanks: ['KIA-DAM'], keyType: 'Laser Cut', transponderChip: 'ID46', programmingRequired: true, programmingMethod: 'Smart Pro/TCP', notes: 'Kia laser cut key' },
-    ],
-    'Sportage': [
-      { yearStart: 2011, yearEnd: 2025, keyBlanks: ['KIA-DAM'], keyType: 'Laser Cut', transponderChip: 'ID46', programmingRequired: true, programmingMethod: 'Smart Pro/TCP', notes: 'Kia laser cut key' },
-    ],
-  },
-  'Jeep': {
-    'Wrangler': [
-      { yearStart: 2007, yearEnd: 2025, keyBlanks: ['J-DAM'], keyType: 'Laser Cut', transponderChip: 'PCF7937E', programmingRequired: true, programmingMethod: 'Smart Pro', notes: 'Jeep laser cut key' },
-    ],
-    'Grand Cherokee': [
-      { yearStart: 2011, yearEnd: 2025, keyBlanks: ['J-DAM'], keyType: 'Laser Cut', transponderChip: 'PCF7937E', programmingRequired: true, programmingMethod: 'Smart Pro', notes: 'Jeep laser cut key' },
-    ],
-  },
-  'Mazda': {
-    'CX-5': [
-      { yearStart: 2013, yearEnd: 2025, keyBlanks: ['MAZ24'], keyType: 'Laser Cut', transponderChip: 'ID51', programmingRequired: true, programmingMethod: 'Smart Pro/TCP', notes: 'Mazda laser cut key' },
-    ],
-    'Mazda3': [
-      { yearStart: 2014, yearEnd: 2025, keyBlanks: ['MAZ24'], keyType: 'Laser Cut', transponderChip: 'ID51', programmingRequired: true, programmingMethod: 'Smart Pro/TCP', notes: 'Mazda laser cut key' },
-    ],
-  },
-  'Volkswagen': {
-    'Passat': [
-      { yearStart: 2012, yearEnd: 2025, keyBlanks: ['HU66'], keyType: 'Laser Cut', transponderChip: 'ID48', programmingRequired: true, programmingMethod: 'Smart Pro/TCP', notes: 'VW laser cut key, High Security' },
-    ],
-    'Jetta': [
-      { yearStart: 2011, yearEnd: 2025, keyBlanks: ['HU66'], keyType: 'Laser Cut', transponderChip: 'ID48', programmingRequired: true, programmingMethod: 'Smart Pro/TCP', notes: 'VW laser cut key' },
-    ],
-  },
-};
 const currentYear = new Date().getFullYear();
 
 function getSaved() { try { return JSON.parse(localStorage.getItem('keyref_saved') || '[]'); } catch { return []; } }
@@ -181,7 +8,10 @@ function setSaved(arr) { try { localStorage.setItem('keyref_saved', JSON.stringi
 
 async function searchDatabase(year, make, model, currentMakeData) {
   if (!make || !model || !currentMakeData) return null;
-  const makeData = currentMakeData[make];
+  
+  // Extract outer key (make name) from fetched JSON structure: { "Make": { "Model": [...] } }
+  const outerKey = Object.keys(currentMakeData)[0];
+  const makeData = currentMakeData[outerKey];
   if (!makeData || !makeData[model]) return null;
   
   const entries = makeData[model];
@@ -246,19 +76,44 @@ export default function KeyRefPro() {
       return; 
     }
     
-    // Populate models from index
-    const makeInfo = makesIndex[make];
-    if (makeInfo && makeInfo.models) {
-      setModels(makeInfo.models);
-      setModel('');
-      setCurrentMakeData(null);
-      setError('');
-    } else {
-      setModels([]);
-      setModel('');
-      setCurrentMakeData(null);
-      setError(`No data available for ${make} yet.`);
-    }
+    // Lazy load make data from JSON file
+    (async () => {
+      try {
+        const makeInfo = makesIndex[make];
+        if (!makeInfo) {
+          setModels([]);
+          setModel('');
+          setCurrentMakeData(null);
+          setError(`No data available for ${make} yet.`);
+          return;
+        }
+        
+        const url = `/data/inventory/${makeInfo.filename}`;
+        const response = await fetch(url);
+        if (!response.ok) {
+          if (response.status === 404) {
+            throw new Error(`No data available for ${make} yet.`);
+          }
+          throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+        }
+        
+        const makeData = await response.json();
+        setCurrentMakeData(makeData);
+        
+        // Extract models from fetched JSON structure: { "Make": { "Model": [...] } }
+        const outerKey = Object.keys(makeData)[0];
+        const models = Object.keys(makeData[outerKey] || {}).sort();
+        setModels(models);
+        setModel('');
+        setError('');
+      } catch (e) {
+        console.error('Failed to load make data:', e);
+        setModels([]);
+        setModel('');
+        setCurrentMakeData(null);
+        setError(e.message || `No data available for ${make} yet.`);
+      }
+    })();
   }, [make, makesIndex]);
 
   const canLookup = year && make && model && !loading && makesIndex;
@@ -270,7 +125,7 @@ export default function KeyRefPro() {
     setResult(null);
     
     // Validate year is a 4-digit number in range
-    const yearNum = parseInt(year);
+    const yearNum = parseInt(year, 10);
     if (isNaN(yearNum) || yearNum < 1980 || yearNum > 2025) {
       setError('Year must be between 1980 and 2025.');
       setLoading(false);
@@ -278,26 +133,13 @@ export default function KeyRefPro() {
     }
     
     try {
-      // Lazy load make data if not already loaded
-      let makeData = currentMakeData;
-      if (!makeData) {
-        const makeInfo = makesIndex[make];
-        if (!makeInfo) throw new Error(`No data available for ${make} yet.`);
-        
-        const url = `/data/inventory/${makeInfo.filename}`;
-        const response = await fetch(url);
-        if (!response.ok) {
-          if (response.status === 404) {
-            throw new Error(`No data available for ${make} yet.`);
-          }
-          throw new Error(`HTTP ${response.status}: ${response.statusText}`);
-        }
-        makeData = await response.json();
-        setCurrentMakeData(makeData);
+      // Use currentMakeData (already fetched and loaded by useEffect)
+      if (!currentMakeData) {
+        throw new Error(`No data available for ${make}.`);
       }
       
       // Search current make data where yearStart ≤ year ≤ yearEnd
-      const dbResult = await searchDatabase(yearNum, make, model, makeData);
+      const dbResult = await searchDatabase(yearNum, make, model, currentMakeData);
       if (dbResult) {
         setResult(dbResult);
         setVehicle({ year, make, model });
