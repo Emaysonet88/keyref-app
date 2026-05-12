@@ -189,8 +189,18 @@ async function searchDatabase(year, make, model, currentMakeData) {
   
   if (matching) {
     return {
-      ...matching,
-      dataSource: '2025 Auto Truck Key Blank Reference Guide',
+      keyBlanks: matching.keyBlanks,
+      keyType: matching.keyType,
+      codeRange: matching.codeRange,
+      transponderChip: matching.transponderChip,
+      programmingRequired: matching.programmingRequired,
+      programmingMethod: matching.programmingMethod,
+      cloningMethod: matching.cloningMethod,
+      substitutes: matching.substitutes,
+      notes: matching.notes,
+      cardNo: matching.cardNo,
+      lockApps: matching.lockApps,
+      dataSource: matching.dataSource || '2025 Ilco Reference Guide',
     };
   }
   return null;
@@ -518,20 +528,20 @@ export default function KeyRefPro() {
               )}
               {result.substitutes && (
                 <div style={S.dataRow}>
-                  <div style={S.dataKey}>Substitutes / Service Key</div>
+                  <div style={S.dataKey}>Substitutes</div>
                   <div style={S.dataVal}>{result.substitutes}</div>
-                </div>
-              )}
-              {result.cardNo && (
-                <div style={S.dataRow}>
-                  <div style={S.dataKey}>Card No.</div>
-                  <div style={S.dataVal}>{result.cardNo}</div>
                 </div>
               )}
               {result.lockApps && (
                 <div style={S.dataRow}>
                   <div style={S.dataKey}>Lock Apps</div>
                   <div style={S.dataVal}>{result.lockApps}</div>
+                </div>
+              )}
+              {result.cardNo && (
+                <div style={S.dataRow}>
+                  <div style={S.dataKey}>Card No.</div>
+                  <div style={S.dataVal}>{result.cardNo}</div>
                 </div>
               )}
               {result.notes && (
