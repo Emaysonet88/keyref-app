@@ -1,0 +1,679 @@
+{
+  "Isuzu": {
+    "AMIGO": [
+      {
+        "yearStart": 1998,
+        "yearEnd": 2000,
+        "lockApps": "All",
+        "codeRange": "N5001-N7000",
+        "keyBlanks": [
+          "X184/B65 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "X185/SUZ15",
+        "notes": null,
+        "cardNo": "264"
+      },
+      {
+        "yearStart": 1985,
+        "yearEnd": 1987,
+        "lockApps": "All",
+        "codeRange": "C6001-C7042",
+        "keyBlanks": [
+          "X121/DC3 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "89"
+      }
+    ],
+    "AMIGO VIN #4S1": [
+      {
+        "yearStart": 1990,
+        "yearEnd": 1993,
+        "lockApps": "All",
+        "codeRange": "D4001-D6000",
+        "keyBlanks": [
+          "X198/B74 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "288"
+      }
+    ],
+    "AMIGO VIN #JAA": [
+      {
+        "yearStart": 1988,
+        "yearEnd": 1993,
+        "lockApps": "All",
+        "codeRange": "N5001-N7000",
+        "keyBlanks": [
+          "X184/B65 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "X185/SUZ15",
+        "notes": null,
+        "cardNo": "264"
+      }
+    ],
+    "ASCENDER": [
+      {
+        "yearStart": 2003,
+        "yearEnd": 2006,
+        "lockApps": "All",
+        "codeRange": "S000A-S999K",
+        "keyBlanks": [
+          "P1113/B102 [-P] (LAL)"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "P1106/B86",
+        "notes": null,
+        "cardNo": "567"
+      }
+    ],
+    "AXIOM": [
+      {
+        "yearStart": 2003,
+        "yearEnd": 2004,
+        "lockApps": "All",
+        "codeRange": "5001-8442",
+        "keyBlanks": [
+          "OEM # 8-97319-522-0"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVP",
+        "cloningMethod": null,
+        "substitutes": "X214/HD103",
+        "notes": null,
+        "cardNo": "262"
+      },
+      {
+        "yearStart": 2002,
+        "yearEnd": 2002,
+        "lockApps": "All",
+        "codeRange": "5001-8442",
+        "keyBlanks": [
+          "X250/B101 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "X214/HD103",
+        "notes": null,
+        "cardNo": "262"
+      },
+      {
+        "yearStart": 2003,
+        "yearEnd": 2003,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "HD106-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "T48",
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, M-Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "FTR DIESEL TRUCK, TILTMASTER, I MARK": [
+      {
+        "yearStart": 1985,
+        "yearEnd": 1990,
+        "lockApps": "All",
+        "codeRange": "A8001-A9400",
+        "keyBlanks": [
+          "X143/B53"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "B57",
+        "notes": null,
+        "cardNo": "156"
+      },
+      {
+        "yearStart": 1984,
+        "yearEnd": 2002,
+        "lockApps": "All",
+        "codeRange": "S8001-S9000",
+        "keyBlanks": [
+          "X154/B54"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "145"
+      }
+    ],
+    "HOMBRE PICK UP": [
+      {
+        "yearStart": 2000,
+        "yearEnd": 2001,
+        "lockApps": "All",
+        "codeRange": "S000A-S999K",
+        "keyBlanks": [
+          "P1113/B102 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "P1106/B86",
+        "notes": null,
+        "cardNo": "567"
+      },
+      {
+        "yearStart": 1999,
+        "yearEnd": 1999,
+        "lockApps": "All",
+        "codeRange": "AA00-7T51",
+        "keyBlanks": [
+          "P1113/B102 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "P1106/B86",
+        "notes": null,
+        "cardNo": "567"
+      },
+      {
+        "yearStart": 1996,
+        "yearEnd": 1998,
+        "lockApps": "All",
+        "codeRange": "AA00-7T51",
+        "keyBlanks": [
+          "P1107/B89 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "P1106/B86",
+        "notes": null,
+        "cardNo": "567"
+      }
+    ],
+    "i-280 EXT. CAB (REBADGED CANYON/COLORADO PICKUP)": [
+      {
+        "yearStart": 2006,
+        "yearEnd": 2007,
+        "lockApps": "All",
+        "codeRange": "70000-75928",
+        "keyBlanks": [
+          "P1114/B110 [-P] (LAL)"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "P1114",
+        "notes": null,
+        "cardNo": "1420"
+      }
+    ],
+    "i-290 - S, LS": [
+      {
+        "yearStart": 2007,
+        "yearEnd": 2007,
+        "lockApps": "All",
+        "codeRange": "70000-75928",
+        "keyBlanks": [
+          "P1114/B110 [-P] (LAL)"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "1420"
+      }
+    ],
+    "i-350 EXT. CAB (REBADGED CANYON/COLORADO PICKUP)": [
+      {
+        "yearStart": 2006,
+        "yearEnd": 2007,
+        "lockApps": "All",
+        "codeRange": "70000-75928",
+        "keyBlanks": [
+          "P1114/B110 [-P] (LAL)"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "P1114",
+        "notes": null,
+        "cardNo": "1420"
+      }
+    ],
+    "IMPULSE": [
+      {
+        "yearStart": 1990,
+        "yearEnd": 1993,
+        "lockApps": "All",
+        "codeRange": "N5001-N7000",
+        "keyBlanks": [
+          "X184/B65 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "X185/SUZ15",
+        "notes": null,
+        "cardNo": "264"
+      },
+      {
+        "yearStart": 1983,
+        "yearEnd": 1989,
+        "lockApps": "All",
+        "codeRange": "H0001-H5143",
+        "keyBlanks": [
+          "X121/DC3 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "89"
+      }
+    ],
+    "NPR": [
+      {
+        "yearStart": 2008,
+        "yearEnd": 2014,
+        "lockApps": "All",
+        "codeRange": "N5001-N7000",
+        "keyBlanks": [
+          "X275/B113"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "X185/SUZ15",
+        "notes": null,
+        "cardNo": "264"
+      }
+    ],
+    "NRR": [
+      {
+        "yearStart": 2008,
+        "yearEnd": 2022,
+        "lockApps": "All",
+        "codeRange": "N5001-N7000",
+        "keyBlanks": [
+          "X275/B113"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "X185/SUZ15",
+        "notes": null,
+        "cardNo": "264"
+      }
+    ],
+    "NPR, NRR, NQR, DIESEL TRUCK, FSR": [
+      {
+        "yearStart": 1989,
+        "yearEnd": 2004,
+        "lockApps": "All",
+        "codeRange": "N5001-N7000",
+        "keyBlanks": [
+          "X184/B65 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "X185/SUZ15",
+        "notes": null,
+        "cardNo": "264"
+      },
+      {
+        "yearStart": 1986,
+        "yearEnd": 1988,
+        "lockApps": "All",
+        "codeRange": "A8001-9400",
+        "keyBlanks": [
+          "X158/B57"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "B53",
+        "notes": null,
+        "cardNo": "156"
+      }
+    ],
+    "OASIS": [
+      {
+        "yearStart": 1996,
+        "yearEnd": 2001,
+        "lockApps": "All",
+        "codeRange": "5001-8442",
+        "keyBlanks": [
+          "X250/B101 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "X214/HD103",
+        "notes": null,
+        "cardNo": "262"
+      }
+    ],
+    "PICKUP -P’UP": [
+      {
+        "yearStart": 1985,
+        "yearEnd": 1987,
+        "lockApps": "All",
+        "codeRange": "C6001-C7042",
+        "keyBlanks": [
+          "X121/DC3 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "89"
+      }
+    ],
+    "PICKUP -P’UP VIN #4S1": [
+      {
+        "yearStart": 1990,
+        "yearEnd": 1995,
+        "lockApps": "All",
+        "codeRange": "D4001-D6000",
+        "keyBlanks": [
+          "X198/B74 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "288"
+      }
+    ],
+    "PICKUP -P’UP VIN #JAA": [
+      {
+        "yearStart": 1988,
+        "yearEnd": 1995,
+        "lockApps": "All",
+        "codeRange": "N5001-N7000",
+        "keyBlanks": [
+          "X184/B65 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "X185/SUZ15",
+        "notes": null,
+        "cardNo": "264"
+      }
+    ],
+    "RODEO": [
+      {
+        "yearStart": 2003,
+        "yearEnd": 2004,
+        "lockApps": "All",
+        "codeRange": "5001-8442",
+        "keyBlanks": [
+          "OEM # 8-97319-522-0"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVP",
+        "cloningMethod": null,
+        "substitutes": "X214/HD103",
+        "notes": null,
+        "cardNo": "262"
+      },
+      {
+        "yearStart": 1998,
+        "yearEnd": 2003,
+        "lockApps": "All",
+        "codeRange": "5001-8442",
+        "keyBlanks": [
+          "X250/B101 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "X214/HD103",
+        "notes": null,
+        "cardNo": "262"
+      },
+      {
+        "yearStart": 1996,
+        "yearEnd": 1997,
+        "lockApps": "All",
+        "codeRange": "N5001-N7000",
+        "keyBlanks": [
+          "X184/B65 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "X185/SUZ15",
+        "notes": null,
+        "cardNo": "264"
+      },
+      {
+        "yearStart": 1995,
+        "yearEnd": 1995,
+        "lockApps": "All",
+        "codeRange": "N5001-N7000",
+        "keyBlanks": [
+          "X184/B65 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "X185/SUZ15",
+        "notes": null,
+        "cardNo": "264"
+      },
+      {
+        "yearStart": 1991,
+        "yearEnd": 1994,
+        "lockApps": "All",
+        "codeRange": "D4001-D6000",
+        "keyBlanks": [
+          "X198/B74 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 2003,
+        "yearEnd": 2003,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "HD106-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "T48",
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, M-Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "RODEO SPORT": [
+      {
+        "yearStart": 2001,
+        "yearEnd": 2003,
+        "lockApps": "All",
+        "codeRange": "5001-8442",
+        "keyBlanks": [
+          "X250/B101 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "262"
+      }
+    ],
+    "STYLUS": [
+      {
+        "yearStart": 1990,
+        "yearEnd": 1993,
+        "lockApps": "All",
+        "codeRange": "N5001-N7000",
+        "keyBlanks": [
+          "X184/B65 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "X185/SUZ15",
+        "notes": null,
+        "cardNo": "264"
+      }
+    ],
+    "TROOPER, TROOPER II": [
+      {
+        "yearStart": 1991,
+        "yearEnd": 2003,
+        "lockApps": "All",
+        "codeRange": "N5001-N7000",
+        "keyBlanks": [
+          "X184/B65 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "X185/SUZ15",
+        "notes": null,
+        "cardNo": "264"
+      },
+      {
+        "yearStart": 1984,
+        "yearEnd": 1990,
+        "lockApps": "All",
+        "codeRange": "C6001-7042",
+        "keyBlanks": [
+          "X121/DC3 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "89"
+      }
+    ],
+    "VEHICROSS": [
+      {
+        "yearStart": 2000,
+        "yearEnd": 2002,
+        "lockApps": "All",
+        "codeRange": "N5001-N7000",
+        "keyBlanks": [
+          "X184/B65 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "X185/SUZ15",
+        "notes": null,
+        "cardNo": "264"
+      }
+    ]
+  }
+}

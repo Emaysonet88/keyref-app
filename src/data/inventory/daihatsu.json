@@ -1,0 +1,23 @@
+{
+  "Daihatsu": {
+    "CHARADE, ROCKY": [
+      {
+        "yearStart": 1988,
+        "yearEnd": 1992,
+        "lockApps": "All",
+        "codeRange": "D0001-D3000",
+        "keyBlanks": [
+          "X174/TR40 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "264"
+      }
+    ]
+  }
+}

@@ -1,10 +1,1341 @@
 {
   "Mazda": {
-    "CX-5": [
-      { "yearStart": 2013, "yearEnd": 2025, "keyBlanks": ["MAZ24"], "keyType": "Laser Cut", "transponderChip": "ID51", "programmingRequired": true, "programmingMethod": "Smart Pro/TCP", "notes": "Mazda laser cut key" }
+    "626ES - V6, 626LX - V6, 626 W/LUXURY PKG": [
+      {
+        "yearStart": 2000,
+        "yearEnd": 2000,
+        "lockApps": "All 10100-12283 OEM # BJYV-76-2GX",
+        "codeRange": null,
+        "keyBlanks": [],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP Service Key X222-MZ27 Temic Transponder System 288",
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 1998,
+        "yearEnd": 1999,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "MAZ24RT5"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, RW3, RW2,EZ Clone Plus, EZ Clone",
+        "substitutes": "Service Key X222-MZ27",
+        "notes": "Philips Transponder System",
+        "cardNo": "288"
+      }
     ],
-    "Mazda3": [
-      { "yearStart": 2014, "yearEnd": 2025, "keyBlanks": ["MAZ24"], "keyType": "Laser Cut", "transponderChip": "ID51", "programmingRequired": true, "programmingMethod": "Smart Pro/TCP", "notes": "Mazda laser cut key" }
+    "626ES, LX - 4CYL., 626 STD., 626, MX6": [
+      {
+        "yearStart": 1998,
+        "yearEnd": 2000,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "X249/MZ31"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key X249/MZ31",
+        "notes": null,
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 1996,
+        "yearEnd": 1997,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "X222/MZ27 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "H65",
+        "notes": null,
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 1993,
+        "yearEnd": 1995,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "X222/MZ27 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "H65",
+        "notes": null,
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 1988,
+        "yearEnd": 1992,
+        "lockApps": "All",
+        "codeRange": "6500-7733",
+        "keyBlanks": [
+          "X178/MZ16 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "X131/MZ13",
+        "notes": null,
+        "cardNo": "157"
+      },
+      {
+        "yearStart": 1983,
+        "yearEnd": 1987,
+        "lockApps": "All",
+        "codeRange": "6500-7733",
+        "keyBlanks": [
+          "X131/MZ13 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "157"
+      }
+    ],
+    "929": [
+      {
+        "yearStart": 1992,
+        "yearEnd": 1995,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "X201/MZ19 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 1988,
+        "yearEnd": 1991,
+        "lockApps": "All",
+        "codeRange": "6500-7733",
+        "keyBlanks": [
+          "X178/MZ16 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "X131/MZ13",
+        "notes": null,
+        "cardNo": "157"
+      }
+    ],
+    "CX-3": [
+      {
+        "yearStart": 2021,
+        "yearEnd": 2021,
+        "lockApps": "All",
+        "codeRange": "20100-22283",
+        "keyBlanks": [
+          "OEM# TAYA-67-5DYB"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key X222-MZ27",
+        "notes": null,
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 2016,
+        "yearEnd": 2020,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "OEM# KDY3-67-5DY"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Philips (47) Encrypted System",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "cloningMethod": null,
+        "substitutes": "Service Key X222-MZ27",
+        "notes": "Philips (47) Encrypted System",
+        "cardNo": "288"
+      }
+    ],
+    "CX-5": [
+      {
+        "yearStart": 2013,
+        "yearEnd": 2014,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "MAZ24R-PT"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D63) Encrypted System",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "cloningMethod": null,
+        "substitutes": "Service Key X222-MZ27",
+        "notes": "Texas Instruments (4D63) Encrypted System",
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 2013,
+        "yearEnd": 2013,
+        "lockApps": "EB3-J-MAZ24",
+        "codeRange": null,
+        "keyBlanks": [
+          "MAZ24-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "MAZ24-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "CX-5 W/ PROX": [
+      {
+        "yearStart": 2019,
+        "yearEnd": 2023,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "OEM# TAYA-67-5DY/TAYA-67- 5DYB/TAYB-67-5DYB"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 2013,
+        "yearEnd": 2019,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "OEM# KDY3-67-5DY"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Philips (47) Encrypted System",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "cloningMethod": null,
+        "substitutes": "Service Key X222-MZ27",
+        "notes": "Philips (47) Encrypted System",
+        "cardNo": "288"
+      }
+    ],
+    "CX-7": [
+      {
+        "yearStart": 2007,
+        "yearEnd": 2014,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "EK3-MAZ24/EK3LB-MAZ24*/ MAZ24-GTK#"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D63) Encrypted System",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "substitutes": "Service Key X222-MZ27",
+        "notes": "Texas Instruments (4D63) Encrypted System",
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 2007,
+        "yearEnd": 2007,
+        "lockApps": "EB3-J-MAZ24",
+        "codeRange": null,
+        "keyBlanks": [
+          "MAZ24-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "MAZ24-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "CX-7 W/ PROX": [
+      {
+        "yearStart": 2010,
+        "yearEnd": 2014,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "OEM# TEY1-67-EHY5 or TEY1-67-5RYA"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Texas Instruments Encrypted Code System",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "cloningMethod": null,
+        "substitutes": "Service Key X222-MZ27",
+        "notes": "Texas Instruments Encrypted Code System",
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 2007,
+        "yearEnd": 2009,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "OEM# TDY2-67-5RYA"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Texas Instruments Encrypted Code System",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "cloningMethod": null,
+        "substitutes": "Service Key X222-MZ27",
+        "notes": "Texas Instruments Encrypted Code System",
+        "cardNo": "288"
+      }
+    ],
+    "CX-9": [
+      {
+        "yearStart": 2007,
+        "yearEnd": 2016,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "EK3-MAZ24/EK3LB-MAZ24*/ MAZ24-GTK#"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D63) Encrypted System",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "substitutes": "Service Key X222-MZ27",
+        "notes": "Texas Instruments (4D63) Encrypted System",
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 2007,
+        "yearEnd": 2007,
+        "lockApps": "EB3-J-MAZ24",
+        "codeRange": null,
+        "keyBlanks": [
+          "MAZ24-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "MAZ24-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "CX-9 W/ PROX": [
+      {
+        "yearStart": 2019,
+        "yearEnd": 2023,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "OEM# TAYA-67-5DY/TAYA-67- 5DYB/TAYB-67-5DYB"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 2016,
+        "yearEnd": 2019,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "OEM# KDY3-67-5DY"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "cloningMethod": null,
+        "substitutes": "Service Key X222-MZ27",
+        "notes": null,
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 2010,
+        "yearEnd": 2015,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "OEM# TEY1-67-EHY5 or TEY1-67-5RYA"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Texas Instruments Encrypted Code System",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "cloningMethod": null,
+        "substitutes": "Service Key X222-MZ27",
+        "notes": "Texas Instruments Encrypted Code System",
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 2007,
+        "yearEnd": 2009,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "OEM# TDY1-67-5RYA"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Texas Instruments Encrypted Code System",
+        "programmingRequired": true,
+        "programmingMethod": "TCP/MVPP",
+        "cloningMethod": null,
+        "substitutes": "Service Key X222-MZ27",
+        "notes": "Texas Instruments Encrypted Code System",
+        "cardNo": "288"
+      }
+    ],
+    "CX-30 W/ PROX": [
+      {
+        "yearStart": 2020,
+        "yearEnd": 2022,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "OEM# BCYN-67-5DY/BCYN- 67-5RY/DGY2-67-5DYA"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "cloningMethod": null,
+        "substitutes": "Service Key X222-MZ27",
+        "notes": null,
+        "cardNo": "288"
+      }
+    ],
+    "CX-50 W/ PROX": [
+      {
+        "yearStart": 2023,
+        "yearEnd": 2023,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "OEM# BCYN-67-5DYB or DGY2-67-5DYB"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "cloningMethod": null,
+        "substitutes": "Service Key X222-MZ27",
+        "notes": null,
+        "cardNo": "288"
+      }
+    ],
+    "CX-90 W/ PROX": [
+      {
+        "yearStart": 2024,
+        "yearEnd": 2024,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "OEM# BCYN-67-5DYB or DGY2-67-5DYB"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key X222-MZ27",
+        "notes": null,
+        "cardNo": "288"
+      }
+    ],
+    "MAZDA 2": [
+      {
+        "yearStart": 2011,
+        "yearEnd": 2015,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "MAZ24R-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D63) Encrypted System",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "cloningMethod": null,
+        "substitutes": "Service Key X222-MZ27",
+        "notes": "Texas Instruments (4D63) Encrypted System",
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 2011,
+        "yearEnd": 2011,
+        "lockApps": "EB3-J-MAZ24",
+        "codeRange": null,
+        "keyBlanks": [
+          "MAZ24-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "MAZ24-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "MAZDA 3": [
+      {
+        "yearStart": 2004,
+        "yearEnd": 2013,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "EK3-MAZ24/EK3LB-MAZ24*/ MAZ24-GTK#"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D63) Encrypted System",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "substitutes": "Service Key X222-MZ27",
+        "notes": "Texas Instruments (4D63) Encrypted System",
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 2004,
+        "yearEnd": 2004,
+        "lockApps": "EB3-J-MAZ24",
+        "codeRange": null,
+        "keyBlanks": [
+          "MAZ24-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "MAZ24-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "MAZDA 3 W/ PROX": [
+      {
+        "yearStart": 2019,
+        "yearEnd": 2023,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "OEM# BCYA-67-5DY/BCYN- 67-5DY/BCYA-67-5DYB"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 2014,
+        "yearEnd": 2018,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "OEM# GJY9-67-5DY"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Philips (47) Encrypted System",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "cloningMethod": null,
+        "substitutes": "Service Key X222-MZ27",
+        "notes": "Philips (47) Encrypted System",
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 2010,
+        "yearEnd": 2013,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "OEM# BBY2-67-5RY"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Texas Instruments Encrypted Code System",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "cloningMethod": null,
+        "substitutes": "Service Key X222-MZ27",
+        "notes": "Texas Instruments Encrypted Code System",
+        "cardNo": "288"
+      }
+    ],
+    "MAZDA 5": [
+      {
+        "yearStart": 2006,
+        "yearEnd": 2015,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "EK3-MAZ24/EK3LB-MAZ24*/ MAZ24-GTK#"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D63) Encrypted System",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "substitutes": "Service Key X222-MZ27",
+        "notes": "Texas Instruments (4D63) Encrypted System",
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 2006,
+        "yearEnd": 2006,
+        "lockApps": "EB3-J-MAZ24",
+        "codeRange": null,
+        "keyBlanks": [
+          "MAZ24-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "MAZ24-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "MAZDA 6": [
+      {
+        "yearStart": 2003,
+        "yearEnd": 2013,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "EK3-MAZ24/EK3LB-MAZ24*/ MAZ24-GTK#"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D63) Encrypted System",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "substitutes": "Service Key X222-MZ27",
+        "notes": "Texas Instruments (4D63) Encrypted System",
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 2003,
+        "yearEnd": 2003,
+        "lockApps": "EB3-J-MAZ24",
+        "codeRange": null,
+        "keyBlanks": [
+          "MAZ24-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "MAZ24-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "MAZDA 6 W/ PROX": [
+      {
+        "yearStart": 2019,
+        "yearEnd": 2021,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "OEM# NFYR-67-5DYB"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 2014,
+        "yearEnd": 2018,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "OEM# GJY9-67-5DY"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Philips (47) Encrypted System",
+        "programmingRequired": true,
+        "programmingMethod": "SDD/TKO/TCP/MVPP (thru 2016)",
+        "cloningMethod": null,
+        "substitutes": "Service Key X222-MZ27",
+        "notes": "Philips (47) Encrypted System",
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 2009,
+        "yearEnd": 2013,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "OEM# GSYL-67-5RY"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Texas Instruments Encrypted Code System",
+        "programmingRequired": true,
+        "programmingMethod": "SDD/TKO/TCP/MVPP",
+        "cloningMethod": null,
+        "substitutes": "Service Key X222-MZ27",
+        "notes": "Texas Instruments Encrypted Code System",
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 2006,
+        "yearEnd": 2008,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "OEM# GPYA-67-5RYC"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Texas Instruments Encrypted Code System",
+        "programmingRequired": true,
+        "programmingMethod": "TCP/MVPP",
+        "cloningMethod": null,
+        "substitutes": "Service Key X222-MZ27",
+        "notes": "Texas Instruments Encrypted Code System",
+        "cardNo": "288"
+      }
+    ],
+    "MAZDA SPEED 6": [
+      {
+        "yearStart": 2006,
+        "yearEnd": 2008,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "EK3-MAZ24/EK3LB-MAZ24*/ MAZ24-GTK#"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D63) Encrypted System",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "substitutes": "Service Key X222-MZ27",
+        "notes": "Texas Instruments (4D63) Encrypted System",
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 2006,
+        "yearEnd": 2006,
+        "lockApps": "EB3-J-MAZ24",
+        "codeRange": null,
+        "keyBlanks": [
+          "MAZ24-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "MAZ24-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "MIATA": [
+      {
+        "yearStart": 2001,
+        "yearEnd": 2005,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "OEM# BJYV-76-2GX"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Texas Instruments Encrypted Code System",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "cloningMethod": null,
+        "substitutes": "Service Key X222-MZ27",
+        "notes": "Texas Instruments Encrypted Code System",
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 2001,
+        "yearEnd": 2001,
+        "lockApps": "EB3-J-MAZ24",
+        "codeRange": null,
+        "keyBlanks": [
+          "MAZ24-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "MAZ24-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "MILLENIA": [
+      {
+        "yearStart": 1995,
+        "yearEnd": 2002,
+        "lockApps": "All",
+        "codeRange": "20,001-21,200",
+        "keyBlanks": [
+          "LXP90-P"
+        ],
+        "keyType": "High Security",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "High Security Key",
+        "cardNo": "112"
+      }
+    ],
+    "MX3": [
+      {
+        "yearStart": 1992,
+        "yearEnd": 1995,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "X201/MZ19 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key X222-MZ27",
+        "notes": null,
+        "cardNo": "288"
+      }
+    ],
+    "MX5 MIATA": [
+      {
+        "yearStart": 2014,
+        "yearEnd": 2016,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "MAZ24-GTS/T80+ or EB3-J- MAZ24/GTHT80+"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (80 Bit) Encrypted Code System",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus/EZ Clone Plus w/ M-Box",
+        "substitutes": "Service Key X222-MZ27",
+        "notes": "Texas Instruments (80 Bit) Encrypted Code System",
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 2006,
+        "yearEnd": 2013,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "EK3-MAZ24/EK3LB-MAZ24*/ MAZ24-GTK#"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D63) Encrypted System",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "substitutes": "Service Key X222-MZ27",
+        "notes": "Texas Instruments (4D63) Encrypted System",
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 2014,
+        "yearEnd": 2014,
+        "lockApps": "EB3-J-MAZ24",
+        "codeRange": null,
+        "keyBlanks": [],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "MAZ24-GTS",
+        "cloningMethod": null,
+        "substitutes": "T80 Plus/GTI-Pro",
+        "notes": "RW5, SA+, M-Box",
+        "cardNo": null
+      },
+      {
+        "yearStart": 2006,
+        "yearEnd": 2006,
+        "lockApps": "EB3-J-MAZ24",
+        "codeRange": null,
+        "keyBlanks": [
+          "MAZ24-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "MAZ24-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "MX5 MIATA W/ PROX": [
+      {
+        "yearStart": 2020,
+        "yearEnd": 2023,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "OEM# NFYR-67-5DYB"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 2016,
+        "yearEnd": 2019,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "OEM# GJY9-67-5DFY"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Philips (47) Encrypted System",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "cloningMethod": null,
+        "substitutes": "Service Key X222-MZ27",
+        "notes": "Philips (47) Encrypted System",
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 2009,
+        "yearEnd": 2015,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "OEM# NHY8-67-5RYA or NHY3-67-5RYA"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Texas Instruments Encrypted Code System",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "cloningMethod": null,
+        "substitutes": "Service Key X222-MZ27",
+        "notes": "Texas Instruments Encrypted Code System",
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 2006,
+        "yearEnd": 2008,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "Dealer Prox Card"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments Encrypted Code System",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "cloningMethod": null,
+        "substitutes": "Service Key X222-MZ27",
+        "notes": "Texas Instruments Encrypted Code System",
+        "cardNo": "288"
+      }
+    ],
+    "MX5, MIATA": [
+      {
+        "yearStart": 1998,
+        "yearEnd": 1999,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "X249/MZ31"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key X249/MZ31",
+        "notes": null,
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 1996,
+        "yearEnd": 1997,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "X222/MZ27 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "H65",
+        "notes": null,
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 1991,
+        "yearEnd": 1995,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "X201/MZ19 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "288"
+      }
+    ],
+    "PROTEGÉ": [
+      {
+        "yearStart": 2002,
+        "yearEnd": 2003,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "X249/MZ31"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key X249/MZ31",
+        "notes": null,
+        "cardNo": "288"
+      }
+    ],
+    "PROTEGÉ, 323": [
+      {
+        "yearStart": 1997,
+        "yearEnd": 2003,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "X249/MZ31"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key X249/MZ31",
+        "notes": null,
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 1990,
+        "yearEnd": 1996,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "X201/MZ19 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "288"
+      }
+    ],
+    "RX7": [
+      {
+        "yearStart": 1993,
+        "yearEnd": 1995,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "X222/MZ27 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "H65",
+        "notes": null,
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 1988,
+        "yearEnd": 1992,
+        "lockApps": "All",
+        "codeRange": "6500-7733",
+        "keyBlanks": [
+          "X178/MZ16 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "X131/MZ13",
+        "notes": null,
+        "cardNo": "157"
+      },
+      {
+        "yearStart": 1983,
+        "yearEnd": 1987,
+        "lockApps": "All",
+        "codeRange": "6500-7733",
+        "keyBlanks": [
+          "X131/MZ13 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "157"
+      }
+    ],
+    "RX8": [
+      {
+        "yearStart": 2004,
+        "yearEnd": 2011,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "EK3-MAZ24/EK3LB-MAZ24*/ MAZ24-GTK#"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D63) Encrypted System",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "substitutes": "Service Key X222-MZ27",
+        "notes": "Texas Instruments (4D63) Encrypted System",
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 2004,
+        "yearEnd": 2004,
+        "lockApps": "EB3-J-MAZ24",
+        "codeRange": null,
+        "keyBlanks": [
+          "MAZ24-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "MAZ24-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "TRIBUTE": [
+      {
+        "yearStart": 2005,
+        "yearEnd": 2011,
+        "lockApps": "All",
+        "codeRange": "1X-1706X",
+        "keyBlanks": [
+          "H92-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D63) Encrypted System",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program H, Smart Pro/TCP/MVPP/TKO/ SDD",
+        "cloningMethod": null,
+        "substitutes": "Service Key H86",
+        "notes": "Texas Instruments (4D63) Encrypted System",
+        "cardNo": "612"
+      },
+      {
+        "yearStart": 2001,
+        "yearEnd": 2004,
+        "lockApps": "All",
+        "codeRange": "1X-1706X",
+        "keyBlanks": [
+          "EK3-H84/EK3LB-H84*/H84- GTK#"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D60) Encrypted System",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "substitutes": "Service Key H86",
+        "notes": "Texas Instruments (4D60) Encrypted System",
+        "cardNo": "612"
+      },
+      {
+        "yearStart": 2005,
+        "yearEnd": 2005,
+        "lockApps": "EB3-D-H84",
+        "codeRange": null,
+        "keyBlanks": [
+          "H84-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "H84-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "cardNo": null
+      },
+      {
+        "yearStart": 2001,
+        "yearEnd": 2001,
+        "lockApps": "EB3-D-H84",
+        "codeRange": null,
+        "keyBlanks": [
+          "H84-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "H84-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "626ES - V6, 626LX - V6, 626 W/ LUXURY PKG": [
+      {
+        "yearStart": 1998,
+        "yearEnd": 1998,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "MAZ24RT5"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "RW5, SA+, RW4 Plus, RW4, RW3, RW2,EZ Clone Plus, EZ Clone",
+        "cardNo": null
+      }
+    ],
+    "B SERIES": [
+      {
+        "yearStart": 2001,
+        "yearEnd": 2001,
+        "lockApps": "EB3-D-H84",
+        "codeRange": null,
+        "keyBlanks": [
+          "H84-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "H84-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "cardNo": null
+      },
+      {
+        "yearStart": 1999,
+        "yearEnd": 1999,
+        "lockApps": "EB3-B-H72",
+        "codeRange": null,
+        "keyBlanks": [
+          "H72-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "H72-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "cardNo": null
+      }
     ]
   }
 }

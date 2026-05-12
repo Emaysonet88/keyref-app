@@ -1,0 +1,78 @@
+{
+  "Fiat": {
+    "124 SPIDER": [
+      {
+        "yearStart": 2017,
+        "yearEnd": 2020,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "OEM# 68314449AA or 68458550AA"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Philips (47) Encrypted System",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "cloningMethod": null,
+        "substitutes": "SIP22KP",
+        "notes": "Philips (47) Encrypted System",
+        "cardNo": "288"
+      }
+    ],
+    "500": [
+      {
+        "yearStart": 2012,
+        "yearEnd": 2018,
+        "lockApps": "All",
+        "codeRange": "DE1-DE11210",
+        "keyBlanks": [
+          "OEM# 68334510AA or 68269686AA (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Philips (46) Encrypted System",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "cloningMethod": null,
+        "substitutes": "SIP22KP",
+        "notes": "High Security Key, Philips (46) Encrypted System",
+        "cardNo": "1627"
+      },
+      {
+        "yearStart": 2012,
+        "yearEnd": 2012,
+        "lockApps": null,
+        "codeRange": "SIP22MH",
+        "keyBlanks": [
+          "SIP22-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW4 Plus, RW4, Ilco EZ-Clone Plus, Ilco EZ-Clone",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "MODELS AND YEARS NOT REFERENCED ELSEWHERE": [
+      {
+        "yearStart": 1981,
+        "yearEnd": 1983,
+        "lockApps": "Door/ Trunk",
+        "codeRange": "4100-4309",
+        "keyBlanks": [
+          "F91C"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "3"
+      }
+    ]
+  }
+}

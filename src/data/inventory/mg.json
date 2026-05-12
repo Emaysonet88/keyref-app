@@ -1,0 +1,23 @@
+{
+  "Mg": {
+    "ALL": [
+      {
+        "yearStart": 1981,
+        "yearEnd": 1981,
+        "lockApps": "Door/ Trunk",
+        "codeRange": "FS, FK",
+        "keyBlanks": [
+          "62FS"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "73"
+      }
+    ]
+  }
+}

@@ -1,0 +1,286 @@
+{
+  "Mazda Trucks, Vans, Suvs": {
+    "B SERIES": [
+      {
+        "yearStart": 2001,
+        "yearEnd": 2009,
+        "lockApps": "All",
+        "codeRange": "1X-1706X",
+        "keyBlanks": [
+          "H92-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D63) Encrypted System",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program C, Smart Pro/TCP/MVPP/TKO/ SDD",
+        "cloningMethod": null,
+        "substitutes": "Service Key H86",
+        "notes": "Texas Instruments (4D63) Encrypted System",
+        "cardNo": "612"
+      },
+      {
+        "yearStart": 1999,
+        "yearEnd": 2000,
+        "lockApps": "All",
+        "codeRange": "1X-1706X",
+        "keyBlanks": [
+          "EK3-H72/EK3LB-H72*/H72- GTK#"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4C) Encrypted System",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "substitutes": "Service Key H86",
+        "notes": "Texas Instruments (4C) Encrypted System",
+        "cardNo": "612"
+      },
+      {
+        "yearStart": 1998,
+        "yearEnd": 1998,
+        "lockApps": "All",
+        "codeRange": "1X-1706X",
+        "keyBlanks": [
+          "X247/MZ30 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "1196FD/H75",
+        "notes": null,
+        "cardNo": "612"
+      },
+      {
+        "yearStart": 1996,
+        "yearEnd": 1997,
+        "lockApps": "All",
+        "codeRange": "1X-1706X",
+        "keyBlanks": [
+          "1196FD/H75 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "612"
+      },
+      {
+        "yearStart": 1994,
+        "yearEnd": 1995,
+        "lockApps": "GB",
+        "codeRange": "FB0-FB1863",
+        "keyBlanks": [
+          "S1167FD/H50 [-PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "S1181FD/H52",
+        "notes": null,
+        "cardNo": "140"
+      },
+      {
+        "yearStart": 1983,
+        "yearEnd": 1993,
+        "lockApps": "All",
+        "codeRange": "6500-7733",
+        "keyBlanks": [
+          "X131/MZ13 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "157"
+      }
+    ],
+    "B25000 P’UP": [
+      {
+        "yearStart": 1999,
+        "yearEnd": 1999,
+        "lockApps": "All",
+        "codeRange": "1X-1706X",
+        "keyBlanks": [
+          "X247/MZ30 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "1196FD/H75",
+        "notes": null,
+        "cardNo": "612"
+      }
+    ],
+    "MP3": [
+      {
+        "yearStart": 2002,
+        "yearEnd": 2002,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "X249/MZ31"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key X249/MZ31",
+        "notes": null,
+        "cardNo": "288"
+      }
+    ],
+    "MPV VAN": [
+      {
+        "yearStart": 2005,
+        "yearEnd": 2007,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "Dealer Key"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": "Texas Instruments Encrypted Code System",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key X222-MZ27",
+        "notes": "Texas Instruments Encrypted Code System",
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 2000,
+        "yearEnd": 2004,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "OEM # BJYV-76-2GX"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "cloningMethod": null,
+        "substitutes": "Service Key X222-MZ27",
+        "notes": "Temic Transponder System",
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 1998,
+        "yearEnd": 1999,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "X249/MZ31"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key X249/MZ31",
+        "notes": null,
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 1996,
+        "yearEnd": 1997,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "X222/MZ27 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "H65",
+        "notes": null,
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 1990,
+        "yearEnd": 1995,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "X201/MZ19 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 1983,
+        "yearEnd": 1989,
+        "lockApps": "All",
+        "codeRange": "6500-7733",
+        "keyBlanks": [
+          "X131/MZ13 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "157"
+      }
+    ],
+    "NAVAJO": [
+      {
+        "yearStart": 1991,
+        "yearEnd": 1995,
+        "lockApps": "Tailgate/ GB",
+        "codeRange": "FB0-FB1863",
+        "keyBlanks": [
+          "S1167FD/H50 [-PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "S1181FD/H52",
+        "notes": null,
+        "cardNo": "140"
+      },
+      {
+        "yearStart": 1991,
+        "yearEnd": 1994,
+        "lockApps": "Ignition/ Door",
+        "codeRange": "A-B-C-D-E",
+        "keyBlanks": [
+          "1184FD/H54 [-PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "1190LN/H60",
+        "notes": null,
+        "cardNo": "194"
+      }
+    ]
+  }
+}

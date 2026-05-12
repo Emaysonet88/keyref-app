@@ -1,0 +1,61 @@
+{
+  "Rolls Royce (bentley)": {
+    "PHANTOM": [
+      {
+        "yearStart": 2004,
+        "yearEnd": 2007,
+        "lockApps": "All",
+        "codeRange": "NRRM1001- 2000",
+        "keyBlanks": [
+          "Dealer Key"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "Dealer Tool Only",
+        "notes": "Service Key 62HF",
+        "cardNo": null
+      }
+    ],
+    "SILVER SPIRIT": [
+      {
+        "yearStart": 1981,
+        "yearEnd": 1991,
+        "lockApps": "All",
+        "codeRange": "NRRM1001- 2000",
+        "keyBlanks": [
+          "62HF"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "-",
+        "cardNo": null
+      }
+    ],
+    "SILVER SPUR": [
+      {
+        "yearStart": 1981,
+        "yearEnd": 1991,
+        "lockApps": "Valet",
+        "codeRange": "NRRL1001-2000",
+        "keyBlanks": [
+          "62HG"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "Service Key RR8R",
+        "cardNo": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "Hino Truck": {
+    "ALL MODELS": [
+      {
+        "yearStart": 2005,
+        "yearEnd": 2005,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 1989,
+        "yearEnd": 1989,
+        "lockApps": "X174/TR40 [-P, -PC]",
+        "codeRange": null,
+        "keyBlanks": [
+          "X211/TR44"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "264",
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 1980,
+        "yearEnd": 1980,
+        "lockApps": "X137/TR33 [-P, -PC]",
+        "codeRange": null,
+        "keyBlanks": [
+          "-"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "89",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "HEAVY DUTY": [
+      {
+        "yearStart": 2005,
+        "yearEnd": 2005,
+        "lockApps": "X274/HN3",
+        "codeRange": null,
+        "keyBlanks": [],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "N/A",
+        "notes": null,
+        "cardNo": null
+      }
+    ]
+  }
+}

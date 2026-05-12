@@ -1,7 +1,666 @@
 {
   "Audi": {
-    "A4": [
-      { "yearStart": 2012, "yearEnd": 2025, "keyBlanks": ["HU66"], "keyType": "Laser Cut", "transponderChip": "ID48", "programmingRequired": true, "programmingMethod": "Smart Pro/TCP", "notes": "Audi laser cut key" }
+    "4000": [
+      {
+        "yearStart": 1985,
+        "yearEnd": 1987,
+        "lockApps": "All",
+        "codeRange": "AH1-AH9282",
+        "keyBlanks": [
+          "X139/V35 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "X203/V37",
+        "notes": null,
+        "cardNo": "50"
+      }
+    ],
+    "100, 200": [
+      {
+        "yearStart": 1989,
+        "yearEnd": 1994,
+        "lockApps": "All",
+        "codeRange": "AH1-AH9282",
+        "keyBlanks": [
+          "X139/V35 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "X203/V37",
+        "notes": null,
+        "cardNo": "50"
+      }
+    ],
+    "5000 SEDAN WAGON": [
+      {
+        "yearStart": 1985,
+        "yearEnd": 1988,
+        "lockApps": "All",
+        "codeRange": "AH1-AH9282",
+        "keyBlanks": [
+          "X139/V35 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "X203/V37",
+        "notes": null,
+        "cardNo": "50"
+      }
+    ],
+    "80 SEDAN, 90": [
+      {
+        "yearStart": 1988,
+        "yearEnd": 1995,
+        "lockApps": "All",
+        "codeRange": "AH1-AH9282",
+        "keyBlanks": [
+          "X139/V35 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "X203/V37",
+        "notes": null,
+        "cardNo": "50"
+      }
+    ],
+    "A3": [
+      {
+        "yearStart": 2006,
+        "yearEnd": 2015,
+        "lockApps": "All",
+        "codeRange": "0001-6000",
+        "keyBlanks": [
+          "Dealer Key"
+        ],
+        "keyType": "High Security",
+        "transponderChip": "Megamos Transponder System",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HU66P",
+        "notes": "High Security Key. Encrypted Megamos Transponder System, Ordered by VIN",
+        "cardNo": "970"
+      },
+      {
+        "yearStart": 2006,
+        "yearEnd": 2006,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "HU66-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "T48",
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, RW5, SA+, M-Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "A4 AVANT/ CABRIOLET,": [
+      {
+        "yearStart": 2002,
+        "yearEnd": 2007,
+        "lockApps": "All",
+        "codeRange": "0001-6000",
+        "keyBlanks": [
+          "HU66AT6"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/SDD/TKO",
+        "cloningMethod": null,
+        "substitutes": "Service Key HU66P",
+        "notes": "High Security Key",
+        "cardNo": "970"
+      }
+    ],
+    "A4, S4": [
+      {
+        "yearStart": 2006,
+        "yearEnd": 2015,
+        "lockApps": "All",
+        "codeRange": "0001-6000",
+        "keyBlanks": [
+          "Dealer Key/FOB"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Megamos Transponder System",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP (thru 2008)",
+        "cloningMethod": null,
+        "substitutes": "Service Key HU66P",
+        "notes": "High Security Key. Encrypted Megamos Transponder System, Ordered by VIN",
+        "cardNo": "970"
+      }
+    ],
+    "A4, S4, T T, ALLROAD, QUATTRO": [
+      {
+        "yearStart": 2002,
+        "yearEnd": 2005,
+        "lockApps": "All",
+        "codeRange": "0001-6000 EXT",
+        "keyBlanks": [
+          "HU66AT6"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "cloningMethod": null,
+        "substitutes": "Service Key HU66P",
+        "notes": "High Security Key",
+        "cardNo": "2399"
+      },
+      {
+        "yearStart": 2000,
+        "yearEnd": 2001,
+        "lockApps": "All",
+        "codeRange": "0001-6000 EXT",
+        "keyBlanks": [
+          "HU66A-P"
+        ],
+        "keyType": "High Security",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HU66P",
+        "notes": "High Security Key",
+        "cardNo": "2399"
+      },
+      {
+        "yearStart": 1996,
+        "yearEnd": 1999,
+        "lockApps": "All",
+        "codeRange": "0001-6000 EXT",
+        "keyBlanks": [
+          "HU66A-P"
+        ],
+        "keyType": "High Security",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HU66P",
+        "notes": "High Security Key",
+        "cardNo": "2399"
+      },
+      {
+        "yearStart": 1995,
+        "yearEnd": 1995,
+        "lockApps": "All",
+        "codeRange": "AH1-AH9282",
+        "keyBlanks": [
+          "X139/V35 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "X203/V37",
+        "notes": null,
+        "cardNo": "50"
+      }
+    ],
+    "A5, S5": [
+      {
+        "yearStart": 2008,
+        "yearEnd": 2015,
+        "lockApps": "All",
+        "codeRange": "0001-6000",
+        "keyBlanks": [
+          "Dealer Key/FOB"
+        ],
+        "keyType": "High Security",
+        "transponderChip": "Megamos Transponder System",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HU66P",
+        "notes": "High Security Key. Encrypted Megamos Transponder System, Ordered by VIN",
+        "cardNo": "970"
+      },
+      {
+        "yearStart": 2001,
+        "yearEnd": 2005,
+        "lockApps": "All",
+        "codeRange": "0001-6000",
+        "keyBlanks": [
+          "HU66AT6"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Megamos Transponder System",
+        "programmingRequired": true,
+        "programmingMethod": "TCP/MVPP",
+        "cloningMethod": null,
+        "substitutes": "Service Key HU66P",
+        "notes": "High Security Key, Encrypted Megamos Transponder System",
+        "cardNo": "970"
+      }
+    ],
+    "A6, S6": [
+      {
+        "yearStart": 2001,
+        "yearEnd": 2005,
+        "lockApps": "All",
+        "codeRange": "0001-6000",
+        "keyBlanks": [
+          "HU66AT6"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Megamos Transponder System",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "cloningMethod": null,
+        "substitutes": "Service Key HU66P",
+        "notes": "High Security Key, Encrypted Megamos Transponder System",
+        "cardNo": "970"
+      }
+    ],
+    "A6, S6, ALLROAD QUATTRO": [
+      {
+        "yearStart": 2006,
+        "yearEnd": 2015,
+        "lockApps": "All",
+        "codeRange": "0001-6000",
+        "keyBlanks": [
+          "Dealer Key/FOB"
+        ],
+        "keyType": "High Security",
+        "transponderChip": "Megamos Transponder System",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HU66P",
+        "notes": "High Security Key. Encrypted Megamos Transponder System, Ordered by VIN",
+        "cardNo": "970"
+      }
+    ],
+    "A8": [
+      {
+        "yearStart": 1997,
+        "yearEnd": 2000,
+        "lockApps": "All",
+        "codeRange": "0001-6000",
+        "keyBlanks": [
+          "HU66AT6"
+        ],
+        "keyType": "High Security",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HU66P",
+        "notes": "High Security Key.",
+        "cardNo": "970"
+      },
+      {
+        "yearStart": 1997,
+        "yearEnd": 1997,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "HU66-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "T48",
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, RW5, SA+, M-Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "A8, S8": [
+      {
+        "yearStart": 2008,
+        "yearEnd": 2015,
+        "lockApps": "All",
+        "codeRange": "0001-6000 EXT",
+        "keyBlanks": [
+          "Dealer FOB"
+        ],
+        "keyType": "High Security",
+        "transponderChip": "Megamos Transponder System",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HU66-P",
+        "notes": "High Security Key. Encrypted Megamos Transponder System, Ordered by VIN",
+        "cardNo": "2399"
+      },
+      {
+        "yearStart": 2001,
+        "yearEnd": 2007,
+        "lockApps": "All",
+        "codeRange": "0001-6000",
+        "keyBlanks": [
+          "Dealer Key"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Megamos Transponder System",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP (01-02)",
+        "cloningMethod": null,
+        "substitutes": "Service Key HU66-P",
+        "notes": "High Security Key. Encrypted Megamos Transponder System, Ordered by VIN",
+        "cardNo": "970"
+      }
+    ],
+    "ALLROAD QUATTRO": [
+      {
+        "yearStart": 1999,
+        "yearEnd": 2005,
+        "lockApps": "All",
+        "codeRange": "0001-6000",
+        "keyBlanks": [
+          "HU66AT6"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/SDD/TKO",
+        "cloningMethod": null,
+        "substitutes": "Service Key HU66P",
+        "notes": "High Security Key.",
+        "cardNo": "970"
+      },
+      {
+        "yearStart": 1999,
+        "yearEnd": 1999,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "HU66-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "T48",
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, RW5, SA+, M-Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "Q5, Q7 3.6, 4.2": [
+      {
+        "yearStart": 2007,
+        "yearEnd": 2015,
+        "lockApps": "All",
+        "codeRange": "0001-6000",
+        "keyBlanks": [
+          "Dealer Key/FOB"
+        ],
+        "keyType": "High Security",
+        "transponderChip": "Megamos Transponder System",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HU66A-P",
+        "notes": "High Security Key. Encrypted Megamos Transponder System, Ordered by VIN",
+        "cardNo": "970"
+      }
+    ],
+    "RS4 SEDAN": [
+      {
+        "yearStart": 2006,
+        "yearEnd": 2008,
+        "lockApps": "All",
+        "codeRange": "0001-6000",
+        "keyBlanks": [
+          "Dealer Key"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HU66A-P",
+        "notes": null,
+        "cardNo": "970"
+      }
+    ],
+    "RS6 S4, AVANT": [
+      {
+        "yearStart": 2004,
+        "yearEnd": 2007,
+        "lockApps": "All",
+        "codeRange": "Mfg. Restricted Code Series",
+        "keyBlanks": [
+          "Dealer Key"
+        ],
+        "keyType": "High Security",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HU66-SVC",
+        "notes": "High Security Key",
+        "cardNo": "N/A"
+      }
+    ],
+    "S4 - AVANT, CABRIOLET, SEDAN": [
+      {
+        "yearStart": 2006,
+        "yearEnd": 2007,
+        "lockApps": "All",
+        "codeRange": "6001-8100",
+        "keyBlanks": [
+          "HU66AT6"
+        ],
+        "keyType": "High Security",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HU66P",
+        "notes": "High Security Key",
+        "cardNo": "970"
+      }
+    ],
+    "S6, S8 SEDAN": [
+      {
+        "yearStart": 2005,
+        "yearEnd": 2007,
+        "lockApps": "All",
+        "codeRange": "6001-8100",
+        "keyBlanks": [
+          "HU66AT6"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "SDD/TKO (2005)",
+        "cloningMethod": null,
+        "substitutes": "Service Key HU66P",
+        "notes": "High Security Key",
+        "cardNo": "970"
+      }
+    ],
+    "TT COUPE, ROADSTER": [
+      {
+        "yearStart": 2005,
+        "yearEnd": 2015,
+        "lockApps": "All",
+        "codeRange": "0001-6000",
+        "keyBlanks": [
+          "Dealer Key"
+        ],
+        "keyType": "High Security",
+        "transponderChip": "Megamos Transponder System",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HU66P",
+        "notes": "High Security Key. Encrypted Megamos Transponder System, Ordered by VIN",
+        "cardNo": "970"
+      },
+      {
+        "yearStart": 2000,
+        "yearEnd": 2004,
+        "lockApps": "All",
+        "codeRange": "0001-6000",
+        "keyBlanks": [
+          "HU66AT6"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Megamos Transponder System",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP TKO/SDD (2001-06)",
+        "cloningMethod": null,
+        "substitutes": "Service Key HU66P",
+        "notes": "High Security Key, Encrypted Megamos Transponder System",
+        "cardNo": "970"
+      },
+      {
+        "yearStart": 2000,
+        "yearEnd": 2000,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "HU66-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "T48",
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, RW5, SA+, M-Box",
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 2005,
+        "yearEnd": 2005,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "HU66-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "T48",
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, RW5, SA+, M-Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "A4 AVANT/CABRIOLET": [
+      {
+        "yearStart": 2002,
+        "yearEnd": 2002,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "HU66-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "T48",
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, RW5, SA+, M-Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "A4/S4": [
+      {
+        "yearStart": 2006,
+        "yearEnd": 2006,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "HU66-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "T48",
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, RW5, SA+, M-Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "A6/S6": [
+      {
+        "yearStart": 2001,
+        "yearEnd": 2001,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "HU66-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "T48",
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, RW5, SA+, M-Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "A6, S6 ALLROAD QUATTRO": [
+      {
+        "yearStart": 2006,
+        "yearEnd": 2006,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "HU66-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "T48",
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, RW5, SA+, M-Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "Q5, Q7 3.6,4.2": [
+      {
+        "yearStart": 2007,
+        "yearEnd": 2007,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "HU66-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "T48",
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, RW5, SA+, M-Box",
+        "notes": null,
+        "cardNo": null
+      }
     ]
   }
 }

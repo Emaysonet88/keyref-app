@@ -1,13 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
 
-// Hardcoded make list for 2025 Auto Truck Key Blank Reference Guide
-const MAKES = [
-  'Acura', 'Audi', 'BMW', 'Buick', 'Cadillac', 'Chevrolet', 'Chrysler', 'Dodge',
-  'Ford', 'GMC', 'Honda', 'Hyundai', 'Jeep', 'Kia', 'Mazda', 'Nissan', 'Subaru',
-  'Tesla', 'Toyota', 'Volkswagen', 'Volvo'
-].sort();
-
 // Placeholder - not used, kept for reference
 const KEY_DATABASE_2025_BACKUP = {
   'Acura': {
@@ -182,7 +175,6 @@ const KEY_DATABASE_2025_BACKUP = {
   },
 };
 const currentYear = new Date().getFullYear();
-const years = Array.from({ length: currentYear - 1980 }, (_, i) => currentYear - i);
 
 function getSaved() { try { return JSON.parse(localStorage.getItem('keyref_saved') || '[]'); } catch { return []; } }
 function setSaved(arr) { try { localStorage.setItem('keyref_saved', JSON.stringify(arr.slice(0, 30))); } catch {} }
@@ -197,12 +189,7 @@ async function searchDatabase(year, make, model, currentMakeData) {
   
   if (matching) {
     return {
-      keyBlanks: matching.keyBlanks,
-      keyType: matching.keyType,
-      transponderChip: matching.transponderChip,
-      programmingRequired: matching.programmingRequired,
-      programmingMethod: matching.programmingMethod,
-      notes: matching.notes,
+      ...matching,
       dataSource: '2025 Auto Truck Key Blank Reference Guide',
     };
   }
@@ -214,16 +201,34 @@ export default function KeyRefPro() {
   const [make, setMake]            = useState('');
   const [model, setModel]          = useState('');
   const [models, setModels]        = useState([]);
-  const [modelsLoading, setModelsLoading] = useState(false);
   const [loading, setLoading]      = useState(false);
   const [result, setResult]        = useState(null);
   const [vehicle, setVehicle]      = useState(null);
   const [error, setError]          = useState('');
   const [saved, setSavedState]     = useState(getSaved);
   const [currentMakeData, setCurrentMakeData] = useState(null);
+  const [makesIndex, setMakesIndex] = useState(null);
+  const [makes, setMakes] = useState([]);
+  const [copiedBlank, setCopiedBlank] = useState(null);
 
   useEffect(() => {
-    if (!make) { 
+    // Load makes index on mount
+    (async () => {
+      try {
+        const response = await fetch('/data/inventory/_index.json');
+        if (!response.ok) throw new Error('Failed to load makes index');
+        const index = await response.json();
+        setMakesIndex(index);
+        setMakes(Object.keys(index).sort());
+      } catch (e) {
+        console.error('Failed to load makes index:', e);
+        setError('Failed to load makes data. Please refresh the page.');
+      }
+    })();
+  }, []);
+
+  useEffect(() => {
+    if (!make || !makesIndex) { 
       setModels([]); 
       setModel(''); 
       setCurrentMakeData(null);
@@ -231,51 +236,22 @@ export default function KeyRefPro() {
       return; 
     }
     
-    setModelsLoading(true);
-    setModel('');
-    setModels([]);
-    setCurrentMakeData(null);
-    setError('');
-    
-    (async () => {
-      try {
-        // Lazy load JSON from public folder for selected make
-        const url = `/data/inventory/${make.toLowerCase()}.json`;
-        console.log('Fetching:', url);
-        
-        const response = await fetch(url);
-        console.log('Response status:', response.status, response.ok);
-        
-        if (!response.ok) throw new Error(`HTTP ${response.status}: ${response.statusText}`);
-        
-        const makeData = await response.json();
-        console.log('Loaded data for make:', make, makeData);
-        
-        setCurrentMakeData(makeData);
-        
-        if (makeData && typeof makeData === 'object' && makeData[make]) {
-          const modelList = Object.keys(makeData[make]).sort();
-          console.log('Models found:', modelList);
-          setModels(modelList);
-        } else if (makeData && typeof makeData === 'object') {
-          // Handle alternate structure
-          const modelList = Object.keys(makeData).sort();
-          console.log('Models (alt structure):', modelList);
-          setModels(modelList);
-        } else {
-          throw new Error('Unexpected data structure');
-        }
-      } catch (e) {
-        console.error(`Failed to load data for make: ${make}`, e);
-        setModels([]);
-        setError(`Data unavailable for ${make}: ${e.message}`);
-      } finally {
-        setModelsLoading(false);
-      }
-    })();
-  }, [make]);
+    // Populate models from index
+    const makeInfo = makesIndex[make];
+    if (makeInfo && makeInfo.models) {
+      setModels(makeInfo.models);
+      setModel('');
+      setCurrentMakeData(null);
+      setError('');
+    } else {
+      setModels([]);
+      setModel('');
+      setCurrentMakeData(null);
+      setError(`No data available for ${make} yet.`);
+    }
+  }, [make, makesIndex]);
 
-  const canLookup = year && make && model && !loading && currentMakeData;
+  const canLookup = year && make && model && !loading && makesIndex;
 
   async function runLookup() {
     if (!canLookup) return;
@@ -284,8 +260,26 @@ export default function KeyRefPro() {
     setResult(null);
     
     try {
+      // Lazy load make data if not already loaded
+      let makeData = currentMakeData;
+      if (!makeData) {
+        const makeInfo = makesIndex[make];
+        if (!makeInfo) throw new Error(`No data available for ${make} yet.`);
+        
+        const url = `/data/inventory/${makeInfo.filename}`;
+        const response = await fetch(url);
+        if (!response.ok) {
+          if (response.status === 404) {
+            throw new Error(`No data available for ${make} yet.`);
+          }
+          throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+        }
+        makeData = await response.json();
+        setCurrentMakeData(makeData);
+      }
+      
       // Search current make data where yearStart ≤ year ≤ yearEnd
-      const dbResult = await searchDatabase(parseInt(year), make, model, currentMakeData);
+      const dbResult = await searchDatabase(parseInt(year), make, model, makeData);
       if (dbResult) {
         setResult(dbResult);
         setVehicle({ year, make, model });
@@ -294,7 +288,7 @@ export default function KeyRefPro() {
       }
     } catch (e) {
       console.error('Lookup error:', e);
-      setError('Data unavailable. ' + (e.message || 'Please try again.'));
+      setError(e.message || 'Data unavailable. Please try again.');
     } finally {
       setLoading(false);
     }
@@ -315,6 +309,29 @@ export default function KeyRefPro() {
   function loadSaved(e) {
     setResult(e.result); setVehicle({ year: e.year, make: e.make, model: e.model });
     setYear(e.year); setMake(e.make); setModel(e.model);
+  }
+
+  async function copyToClipboard(text) {
+    try {
+      await navigator.clipboard.writeText(text);
+      setCopiedBlank(text);
+      setTimeout(() => setCopiedBlank(null), 1500);
+    } catch (err) {
+      console.error('Failed to copy:', err);
+    }
+  }
+
+  function formatRelativeTime(ts) {
+    const now = Date.now();
+    const diff = now - ts;
+    const minutes = Math.floor(diff / 60000);
+    const hours = Math.floor(diff / 3600000);
+    const days = Math.floor(diff / 86400000);
+    
+    if (minutes < 1) return 'Just now';
+    if (minutes < 60) return `${minutes} minute${minutes > 1 ? 's' : ''} ago`;
+    if (hours < 24) return `${hours} hour${hours > 1 ? 's' : ''} ago`;
+    return `${days} day${days > 1 ? 's' : ''} ago`;
   }
 
   const isSaved = vehicle && saved.some(s => s.year===vehicle.year && s.make===vehicle.make && s.model===vehicle.model);
@@ -352,7 +369,7 @@ export default function KeyRefPro() {
     dataValHi: { fontFamily: 'monospace', fontSize: 15, color: '#f5a623', fontWeight: 600, lineHeight: 1.5 },
     dataValYes: { fontFamily: 'monospace', fontSize: 13, color: '#52e0a0', lineHeight: 1.5 },
     dataValMuted: { fontFamily: 'monospace', fontSize: 13, color: '#4a4a4a', lineHeight: 1.5 },
-    tag: { display: 'inline-block', background: 'rgba(245,166,35,0.12)', border: '1px solid #c47d0e', color: '#f5a623', fontFamily: 'monospace', fontSize: 12, padding: '2px 8px', margin: '2px 4px 2px 0' },
+    tag: { display: 'inline-block', background: 'rgba(245,166,35,0.12)', border: '1px solid #c47d0e', color: '#f5a623', fontFamily: 'monospace', fontSize: 12, padding: '2px 8px', margin: '2px 4px 2px 0', cursor: 'pointer', position: 'relative' },
     notesBox: { background: '#0d0d0d', borderLeft: '2px solid #c47d0e', padding: '9px 13px', fontFamily: 'monospace', fontSize: 12, color: '#787878', lineHeight: 1.6 },
     savedList: { display: 'flex', flexDirection: 'column', gap: 7, marginTop: 12 },
     savedItem: { display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '9px 13px', background: '#0d0d0d', border: '1px solid #2a2a2a', cursor: 'pointer', gap: 10 },
@@ -385,20 +402,22 @@ export default function KeyRefPro() {
           <div style={S.formRow}>
             <div style={S.field}>
               <div style={S.fieldLabel}>Year</div>
-              <div style={S.selWrap}>
-                <select style={S.select} value={year} onChange={e => setYear(e.target.value)}>
-                  <option value="">—</option>
-                  {years.map(y => <option key={y} value={y}>{y}</option>)}
-                </select>
-                <span style={S.selArrow}>▾</span>
-              </div>
+              <input 
+                type="number" 
+                min="1980" 
+                max="2025" 
+                value={year} 
+                onChange={e => setYear(e.target.value)} 
+                style={{...S.select, padding: '9px 10px', appearance: 'none', WebkitAppearance: 'none'}}
+                placeholder="e.g. 2020"
+              />
             </div>
             <div style={S.field}>
               <div style={S.fieldLabel}>Make</div>
               <div style={S.selWrap}>
                 <select style={S.select} value={make} onChange={e => setMake(e.target.value)}>
                   <option value="">— Select —</option>
-                  {MAKES.map(m => <option key={m} value={m}>{m}</option>)}
+                  {makes.map(m => <option key={m} value={m}>{m}</option>)}
                 </select>
                 <span style={S.selArrow}>▾</span>
               </div>
@@ -406,8 +425,8 @@ export default function KeyRefPro() {
             <div style={S.field}>
               <div style={S.fieldLabel}>Model</div>
               <div style={S.selWrap}>
-                <select style={{...S.select, opacity: (!make || modelsLoading) ? 0.4 : 1}} value={model} onChange={e => setModel(e.target.value)} disabled={!make || modelsLoading}>
-                  <option value="">{modelsLoading ? 'Loading...' : '— Select —'}</option>
+                <select style={S.select} value={model} onChange={e => setModel(e.target.value)} disabled={!make}>
+                  <option value="">{!make ? 'Select make first' : '— Select —'}</option>
                   {models.map(m => <option key={m} value={m}>{m}</option>)}
                 </select>
                 <span style={S.selArrow}>▾</span>
@@ -440,7 +459,17 @@ export default function KeyRefPro() {
               {blanks.length > 0 && (
                 <div style={S.dataRow}>
                   <div style={S.dataKey}>Key Blank(s)</div>
-                  <div style={S.dataValHi}>{blanks.map(b => <span key={b} style={S.tag}>{b}</span>)}</div>
+                  <div style={S.dataValHi}>{blanks.map(b => (
+                    <span 
+                      key={b} 
+                      style={S.tag} 
+                      onClick={() => copyToClipboard(b)}
+                      title="Click to copy"
+                    >
+                      {b}
+                      {copiedBlank === b && <span style={{position: 'absolute', top: '-20px', left: '50%', transform: 'translateX(-50%)', background: '#52e0a0', color: '#000', fontSize: '10px', padding: '2px 4px', borderRadius: '2px', whiteSpace: 'nowrap'}}>Copied!</span>}
+                    </span>
+                  ))}</div>
                 </div>
               )}
               <div style={S.dataRow}>
@@ -475,6 +504,36 @@ export default function KeyRefPro() {
                   <div style={S.dataVal}>{fobs.map(f => <span key={f} style={S.tag}>{f}</span>)}</div>
                 </div>
               )}
+              {result.codeRange && (
+                <div style={S.dataRow}>
+                  <div style={S.dataKey}>Code Range</div>
+                  <div style={S.dataVal}>{result.codeRange}</div>
+                </div>
+              )}
+              {result.cloningMethod && (
+                <div style={S.dataRow}>
+                  <div style={S.dataKey}>Cloning Method</div>
+                  <div style={S.dataVal}>{result.cloningMethod}</div>
+                </div>
+              )}
+              {result.substitutes && (
+                <div style={S.dataRow}>
+                  <div style={S.dataKey}>Substitutes / Service Key</div>
+                  <div style={S.dataVal}>{result.substitutes}</div>
+                </div>
+              )}
+              {result.cardNo && (
+                <div style={S.dataRow}>
+                  <div style={S.dataKey}>Card No.</div>
+                  <div style={S.dataVal}>{result.cardNo}</div>
+                </div>
+              )}
+              {result.lockApps && (
+                <div style={S.dataRow}>
+                  <div style={S.dataKey}>Lock Apps</div>
+                  <div style={S.dataVal}>{result.lockApps}</div>
+                </div>
+              )}
               {result.notes && (
                 <div style={S.dataRowLast}>
                   <div style={S.dataKey}>Notes</div>
@@ -492,11 +551,14 @@ export default function KeyRefPro() {
             {saved.length === 0
               ? <div style={S.empty}>No saved lookups yet.</div>
               : saved.map(s => {
-                  const bl = Array.isArray(s.result.keyBlanks) ? s.result.keyBlanks.join(', ') : (s.result.keyBlanks || '');
+                  const bl = Array.isArray(s.result.keyBlanks) ? s.result.keyBlanks[0] : (s.result.keyBlanks || '');
+                  const keyType = s.result.keyType || '';
+                  const displayText = keyType ? `${bl} (${keyType})` : bl;
                   return (
                     <div key={`${s.year}-${s.make}-${s.model}`} style={S.savedItem} onClick={() => loadSaved(s)}>
                       <div style={S.savedVehicle}>{s.year} {s.make} {s.model}</div>
-                      <div style={S.savedBlank}>{bl}</div>
+                      <div style={{...S.savedBlank, flex: 1, textAlign: 'center'}}>{displayText}</div>
+                      <div style={{fontFamily: 'monospace', fontSize: '10px', color: '#787878', marginRight: '8px'}}>{formatRelativeTime(s.ts)}</div>
                       <button style={S.btnDel} onClick={e => { e.stopPropagation(); deleteSaved(s.year, s.make, s.model); }}>×</button>
                     </div>
                   );

@@ -1,0 +1,377 @@
+{
+  "Jaguar": {
+    "XF": [
+      {
+        "yearStart": 2008,
+        "yearEnd": 2014,
+        "lockApps": "All",
+        "codeRange": "4000-9000",
+        "keyBlanks": [
+          "OEM # C2P-17155"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVP",
+        "cloningMethod": null,
+        "substitutes": "HU101",
+        "notes": null,
+        "cardNo": "N/A"
+      }
+    ],
+    "XJ": [
+      {
+        "yearStart": 2010,
+        "yearEnd": 2014,
+        "lockApps": "All",
+        "codeRange": "4000-9000",
+        "keyBlanks": [
+          "OEM # C2P-17155"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVP",
+        "cloningMethod": null,
+        "substitutes": "HU101",
+        "notes": null,
+        "cardNo": "N/A"
+      }
+    ],
+    "XJ, XK , XK8, XKR": [
+      {
+        "yearStart": 2000,
+        "yearEnd": 2008,
+        "lockApps": "All",
+        "codeRange": "T111111-T444444",
+        "keyBlanks": [
+          "OEM # XR8-1611"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Texas Instruments Encrypted System",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVP",
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": "High Security Key. Texas Instruments Encrypted System",
+        "cardNo": "2240"
+      },
+      {
+        "yearStart": 1998,
+        "yearEnd": 1999,
+        "lockApps": "All",
+        "codeRange": "T11111111-T33333333",
+        "keyBlanks": [
+          "TBE1T5"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Megamos Fixed Code System",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, RW3, RW2,EZ Clone Plus, EZ Clone",
+        "substitutes": "-",
+        "notes": "Tibbe Key. Megamos Fixed Code System",
+        "cardNo": "386"
+      }
+    ],
+    "XJ6, XJ12, SOVERIEGN, VANDEN PLAS, XJR": [
+      {
+        "yearStart": 1992,
+        "yearEnd": 1996,
+        "lockApps": "All",
+        "codeRange": "T11111111-T33333333",
+        "keyBlanks": [
+          "S32FJ-P"
+        ],
+        "keyType": "High Security",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": "High Security Key",
+        "cardNo": "386"
+      },
+      {
+        "yearStart": 1990,
+        "yearEnd": 1997,
+        "lockApps": "All",
+        "codeRange": "T11111111-T33333333",
+        "keyBlanks": [
+          "S32FJ-P"
+        ],
+        "keyType": "High Security",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": "High Security Key",
+        "cardNo": "386"
+      },
+      {
+        "yearStart": 1990,
+        "yearEnd": 1991,
+        "lockApps": "Door/ Trunk/ GB",
+        "codeRange": "WR1001- WR2999",
+        "keyBlanks": [
+          "X86/FC7 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "X20/FC2",
+        "notes": null,
+        "cardNo": "213"
+      },
+      {
+        "yearStart": 1988,
+        "yearEnd": 1989,
+        "lockApps": "Ignition Door",
+        "codeRange": "/ K0000-K1005",
+        "keyBlanks": [
+          "X177/JA2"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "217"
+      },
+      {
+        "yearStart": 1986,
+        "yearEnd": 1989,
+        "lockApps": "Door/ Trunk",
+        "codeRange": "AK1-AK1000",
+        "keyBlanks": [
+          "X86/FC7 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "X20/FC2",
+        "notes": null,
+        "cardNo": "13"
+      },
+      {
+        "yearStart": 1981,
+        "yearEnd": 1987,
+        "lockApps": "Door/ Trunk",
+        "codeRange": "JC1-JC854",
+        "keyBlanks": [
+          "BL6"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "13"
+      },
+      {
+        "yearStart": 1981,
+        "yearEnd": 1985,
+        "lockApps": "Door",
+        "codeRange": "WR1001- WR2999",
+        "keyBlanks": [
+          "WB2"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "213"
+      }
+    ],
+    "XJ8, XJR, VANDEN PLAS": [
+      {
+        "yearStart": 2004,
+        "yearEnd": 2009,
+        "lockApps": "All",
+        "codeRange": "T111111-T444444",
+        "keyBlanks": [
+          "FO21T7 (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D60) Encrypted System",
+        "programmingRequired": true,
+        "programmingMethod": "Dealer Tool",
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": "Tibbe Key. Texas Instruments (4D60) Encrypted System",
+        "cardNo": "2240"
+      }
+    ],
+    "XJ8, XJR": [
+      {
+        "yearStart": 2000,
+        "yearEnd": 2003,
+        "lockApps": "All",
+        "codeRange": "T11111111-T33333333",
+        "keyBlanks": [
+          "OEM # HJD-7230AA1"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Megamos Fixed Code System",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "High Security Key. Megamos Fixed Code System",
+        "cardNo": "386"
+      },
+      {
+        "yearStart": 1998,
+        "yearEnd": 1999,
+        "lockApps": "All",
+        "codeRange": "T11111111-T33333333",
+        "keyBlanks": [
+          "TBE1T5"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Megamos Fixed Code System",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, RW3, RW2,EZ Clone Plus, EZ Clone",
+        "substitutes": "-",
+        "notes": "Tibbe Key. Megamos Fixed Code System",
+        "cardNo": "386"
+      },
+      {
+        "yearStart": 2004,
+        "yearEnd": 2004,
+        "lockApps": null,
+        "codeRange": "FO21MH",
+        "keyBlanks": [
+          "FO21-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 1998,
+        "yearEnd": 1998,
+        "lockApps": null,
+        "codeRange": "TBE1T5",
+        "keyBlanks": [],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, RW3, RW2,EZ Clone Plus, EZ Clone",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "XK8, XKR": [
+      {
+        "yearStart": 2007,
+        "yearEnd": 2014,
+        "lockApps": "All",
+        "codeRange": "4000-9000",
+        "keyBlanks": [
+          "OEM # C2P-17152"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "HU101",
+        "notes": null,
+        "cardNo": "N/A"
+      }
+    ],
+    "X-TYPE": [
+      {
+        "yearStart": 2002,
+        "yearEnd": 2008,
+        "lockApps": "All",
+        "codeRange": "T111111-T444444",
+        "keyBlanks": [
+          "FO21T7 (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D60) Encrypted System",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVP",
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": "Tibbe Key. Texas Instruments (4D60) Encrypted System",
+        "cardNo": "2240"
+      },
+      {
+        "yearStart": 2002,
+        "yearEnd": 2002,
+        "lockApps": null,
+        "codeRange": "FO21MH",
+        "keyBlanks": [
+          "FO21-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "S-TYPE": [
+      {
+        "yearStart": 2000,
+        "yearEnd": 2000,
+        "lockApps": null,
+        "codeRange": "FO21MH",
+        "keyBlanks": [
+          "FO21-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "XJ, XK, XK8, XKR": [
+      {
+        "yearStart": 1998,
+        "yearEnd": 1998,
+        "lockApps": null,
+        "codeRange": "TBE1T5",
+        "keyBlanks": [],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, RW3, RW2,EZ Clone Plus, EZ Clone",
+        "notes": null,
+        "cardNo": null
+      }
+    ]
+  }
+}

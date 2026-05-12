@@ -1,0 +1,110 @@
+{
+  "Maserati": {
+    "GHIBLI": [
+      {
+        "yearStart": 2014,
+        "yearEnd": 2022,
+        "lockApps": "All",
+        "codeRange": "M1-M2618",
+        "keyBlanks": [
+          "OEM# A2-C739-349 or 350 or 351-0-00"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "cloningMethod": null,
+        "substitutes": "Service Key Y159",
+        "notes": "Philips PCF7945A",
+        "cardNo": "745"
+      }
+    ],
+    "LEVANTE": [
+      {
+        "yearStart": 2017,
+        "yearEnd": 2022,
+        "lockApps": "All",
+        "codeRange": "M1-M2618",
+        "keyBlanks": [
+          "OEM# A2-C739-349 or 350 or 351-0-00"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "cloningMethod": null,
+        "substitutes": "Service Key Y159",
+        "notes": "Philips PCF7945A",
+        "cardNo": "745"
+      }
+    ],
+    "QUATTROPORTE": [
+      {
+        "yearStart": 2014,
+        "yearEnd": 2020,
+        "lockApps": "All",
+        "codeRange": "M1-M2618",
+        "keyBlanks": [
+          "OEM# A2-C739-349 or 350 or 351-0-00"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "cloningMethod": null,
+        "substitutes": "Service Key Y159",
+        "notes": null,
+        "cardNo": "745"
+      },
+      {
+        "yearStart": 2004,
+        "yearEnd": 2004,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "SIP22-GTS",
+        "cloningMethod": null,
+        "substitutes": "T48",
+        "notes": "RW5, SA+, M-Box",
+        "cardNo": null
+      }
+    ],
+    "GRANSPORT": [
+      {
+        "yearStart": 2004,
+        "yearEnd": 2004,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "SIP22-GTS",
+        "cloningMethod": null,
+        "substitutes": "T48",
+        "notes": "RW5, SA+, M-Box",
+        "cardNo": null
+      }
+    ],
+    "GRANTURISMO": [
+      {
+        "yearStart": 2007,
+        "yearEnd": 2007,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "SIP22-GTS",
+        "cloningMethod": null,
+        "substitutes": "T48",
+        "notes": "RW5, SA+, M-Box",
+        "cardNo": null
+      }
+    ]
+  }
+}

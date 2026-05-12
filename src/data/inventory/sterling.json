@@ -1,0 +1,116 @@
+{
+  "Sterling": {
+    "1987 1991 All E8000-E8999 X170/NE48 - Door/ AK1-AK1000 X86/FC7 [-P] STERLING, 3500S Trunk 1981 1986 RO1001- Ignition X157/LF17 - RO2000": [
+      {
+        "yearStart": 1981,
+        "yearEnd": 1986,
+        "lockApps": "Door/ Trunk",
+        "codeRange": "AK1-AK1000",
+        "keyBlanks": [
+          "X86/FC7 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "X20/FC2",
+        "notes": null,
+        "cardNo": "13"
+      }
+    ],
+    "AKTERA": [
+      {
+        "yearStart": 2004,
+        "yearEnd": 2007,
+        "lockApps": "All",
+        "codeRange": "Ford 10-cut",
+        "keyBlanks": [
+          "1630-P"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "-",
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "194"
+      },
+      {
+        "yearStart": 2000,
+        "yearEnd": 2003,
+        "lockApps": "All",
+        "codeRange": "A-B-C-D-E",
+        "keyBlanks": [
+          "1193FD/H67 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "1184FD/H54, 1193MU/ H66",
+        "notes": null,
+        "cardNo": "194"
+      }
+    ],
+    "ALL OTHERS": [
+      {
+        "yearStart": 1998,
+        "yearEnd": 2004,
+        "lockApps": "Door",
+        "codeRange": "FB0-FB1863",
+        "keyBlanks": [
+          "S1167FD/H50 [-PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "H56",
+        "notes": null,
+        "cardNo": "140"
+      }
+    ],
+    "BULLET": [
+      {
+        "yearStart": 2008,
+        "yearEnd": 2009,
+        "lockApps": "All",
+        "codeRange": "M1-M2618",
+        "keyBlanks": [
+          "Y164-PT (LAL)"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": "Philips (46) Encrypted System",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key Y159",
+        "notes": "Philips (46) Encrypted System",
+        "cardNo": "745"
+      }
+    ],
+    "CARGO": [
+      {
+        "yearStart": 2000,
+        "yearEnd": 2004,
+        "lockApps": "Door/ GB",
+        "codeRange": "FT101-FT225",
+        "keyBlanks": [
+          "62FT"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "-",
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "72"
+      }
+    ]
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "Acura": {
+    "filename": "acura.json",
+    "models": [
+      "CL",
+      "CSX",
+      "ILX",
+      "MDX",
+      "NSX",
+      "RDX",
+      "TL",
+      "TLX"
+    ]
+  },
+  "Audi": {
+    "filename": "audi.json",
+    "models": [
+      "A4"
+    ]
+  },
+  "BMW": {
+    "filename": "bmw.json",
+    "models": [
+      "1 Series",
+      "3 Series",
+      "5 Series",
+      "7 Series"
+    ]
+  },
+  "Buick": {
+    "filename": "buick.json",
+    "models": [
+      "Enclave",
+      "LaCrosse"
+    ]
+  },
+  "Cadillac": {
+    "filename": "cadillac.json",
+    "models": [
+      "CTS",
+      "DeVille",
+      "Escalade"
+    ]
+  },
+  "Chevrolet": {
+    "filename": "chevrolet.json",
+    "models": [
+      "Malibu",
+      "Silverado"
+    ]
+  },
+  "Chrysler": {
+    "filename": "chrysler.json",
+    "models": [
+      "300",
+      "Pacifica"
+    ]
+  },
+  "Dodge": {
+    "filename": "dodge.json",
+    "models": [
+      "Caravan",
+      "Ram 1500"
+    ]
+  },
+  "Ford": {
+    "filename": "ford.json",
+    "models": [
+      "F-150",
+      "Fusion",
+      "Mustang"
+    ]
+  },
+  "GMC": {
+    "filename": "gmc.json",
+    "models": [
+      "Sierra",
+      "Yukon"
+    ]
+  },
+  "Honda": {
+    "filename": "honda.json",
+    "models": [
+      "Accord",
+      "CR-V",
+      "Civic"
+    ]
+  },
+  "Hyundai": {
+    "filename": "hyundai.json",
+    "models": [
+      "Elantra",
+      "Sonata"
+    ]
+  },
+  "Jeep": {
+    "filename": "jeep.json",
+    "models": [
+      "Grand Cherokee",
+      "Wrangler"
+    ]
+  },
+  "Kia": {
+    "filename": "kia.json",
+    "models": [
+      "Forte",
+      "Sportage"
+    ]
+  },
+  "Mazda": {
+    "filename": "mazda.json",
+    "models": [
+      "CX-5",
+      "Mazda3"
+    ]
+  },
+  "Nissan": {
+    "filename": "nissan.json",
+    "models": [
+      "Altima",
+      "Maxima",
+      "Rogue"
+    ]
+  },
+  "Subaru": {
+    "filename": "subaru.json",
+    "models": [
+      "Legacy"
+    ]
+  },
+  "Tesla": {
+    "filename": "tesla.json",
+    "models": [
+      "Model 3",
+      "Model S"
+    ]
+  },
+  "Toyota": {
+    "filename": "toyota.json",
+    "models": [
+      "Camry",
+      "Corolla",
+      "RAV4"
+    ]
+  },
+  "Volkswagen": {
+    "filename": "volkswagen.json",
+    "models": [
+      "Jetta",
+      "Passat"
+    ]
+  },
+  "Volvo": {
+    "filename": "volvo.json",
+    "models": [
+      "S90",
+      "XC90"
+    ]
+  }
+}
