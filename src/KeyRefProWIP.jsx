@@ -11,10 +11,10 @@ async function searchDatabase(year, make, model, currentMakeData) {
   
   // Extract outer key (make name) from fetched JSON structure: { "Make": { "Model": [...] } }
   const outerKey = Object.keys(currentMakeData)[0];
-  const makeData = currentMakeData[outerKey];
-  if (!makeData || !makeData[model]) return null;
+  const modelEntries = currentMakeData[outerKey]?.[model];
+  if (!modelEntries) return null;
   
-  const entries = makeData[model];
+  const entries = modelEntries;
   const matching = entries.find(e => year >= e.yearStart && year <= e.yearEnd);
   
   if (matching) {
@@ -79,17 +79,7 @@ export default function KeyRefPro() {
     // Lazy load make data from JSON file
     (async () => {
       try {
-        const makeInfo = makesIndex[make];
-        if (!makeInfo) {
-          setModels([]);
-          setModel('');
-          setCurrentMakeData(null);
-          setError(`No data available for ${make} yet.`);
-          return;
-        }
-        
-        const url = `/data/inventory/${makeInfo.filename}`;
-        const response = await fetch(url);
+        const response = await fetch(`/data/inventory/${make.toLowerCase()}.json`);
         if (!response.ok) {
           if (response.status === 404) {
             throw new Error(`No data available for ${make} yet.`);
@@ -98,12 +88,10 @@ export default function KeyRefPro() {
         }
         
         const makeData = await response.json();
-        setCurrentMakeData(makeData);
-        
-        // Extract models from fetched JSON structure: { "Make": { "Model": [...] } }
         const outerKey = Object.keys(makeData)[0];
-        const models = Object.keys(makeData[outerKey] || {}).sort();
-        setModels(models);
+        const modelList = Object.keys(makeData[outerKey]).sort();
+        setModels(modelList);
+        setCurrentMakeData(makeData);
         setModel('');
         setError('');
       } catch (e) {
