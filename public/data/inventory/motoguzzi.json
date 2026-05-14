@@ -1,0 +1,44 @@
+{
+  "Moto Guzzi": {
+    "CALIFORNIA 1400": [
+      {
+        "yearStart": 2013,
+        "yearEnd": 2013,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "ZD23RT5"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "STELVIO": [
+      {
+        "yearStart": 2008,
+        "yearEnd": 2008,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "ZD30T5"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "cardNo": null
+      }
+    ]
+  }
+}

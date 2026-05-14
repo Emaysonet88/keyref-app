@@ -1,0 +1,214 @@
+{
+  "Eagle": {
+    "MEDALLION SEDAN": [
+      {
+        "yearStart": 1988,
+        "yearEnd": 1989,
+        "lockApps": "Door/ Trunk",
+        "codeRange": "2700-4816 X",
+        "keyBlanks": [
+          "122/RN29 -"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "74"
+      }
+    ],
+    "MEDALLION WAGON": [
+      {
+        "yearStart": 1988,
+        "yearEnd": 1989,
+        "lockApps": "Door/ Trunk",
+        "codeRange": "M-N-P-R-S X",
+        "keyBlanks": [
+          "171/RN31"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "NE63",
+        "notes": null,
+        "cardNo": "122"
+      }
+    ],
+    "PREMIER": [
+      {
+        "yearStart": 1988,
+        "yearEnd": 1992,
+        "lockApps": "Door",
+        "codeRange": "2700-4816 X",
+        "keyBlanks": [
+          "122/RN29"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "74"
+      }
+    ],
+    "SUMMIT": [
+      {
+        "yearStart": 1993,
+        "yearEnd": 1996,
+        "lockApps": "All",
+        "codeRange": "30010-32009",
+        "keyBlanks": [
+          "X224/MIT3"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "MIT5",
+        "notes": null,
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 1989,
+        "yearEnd": 1992,
+        "lockApps": "All",
+        "codeRange": "E5001-E7679",
+        "keyBlanks": [
+          "X176/MIT1 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key X176/MIT1, MIT4 [-P, -PC]",
+        "notes": null,
+        "cardNo": "264"
+      }
+    ],
+    "TALON": [
+      {
+        "yearStart": 1996,
+        "yearEnd": 1998,
+        "lockApps": "All",
+        "codeRange": "E5001-E7679",
+        "keyBlanks": [
+          "X245/MIT4 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "X176/MIT1",
+        "notes": null,
+        "cardNo": "264"
+      },
+      {
+        "yearStart": 1990,
+        "yearEnd": 1995,
+        "lockApps": "All",
+        "codeRange": "E5001-E7679",
+        "keyBlanks": [
+          "X176/MIT1 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key X176/MIT1, MIT4 [-P, -PC]",
+        "notes": null,
+        "cardNo": "264"
+      }
+    ],
+    "VISION": [
+      {
+        "yearStart": 1998,
+        "yearEnd": 1998,
+        "lockApps": "All",
+        "codeRange": "M1-M2618",
+        "keyBlanks": [
+          "P1794/Y157 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "P1795/Y159",
+        "notes": null,
+        "cardNo": "745"
+      },
+      {
+        "yearStart": 1995,
+        "yearEnd": 1997,
+        "lockApps": "All",
+        "codeRange": "L1-L3580",
+        "keyBlanks": [
+          "P1794/Y157 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "P1795/Y159",
+        "notes": null,
+        "cardNo": "537"
+      },
+      {
+        "yearStart": 1994,
+        "yearEnd": 1994,
+        "lockApps": "All",
+        "codeRange": "L1-L3580",
+        "keyBlanks": [
+          "P1794/Y157 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "P1795/Y159",
+        "notes": null,
+        "cardNo": "537"
+      },
+      {
+        "yearStart": 1993,
+        "yearEnd": 1993,
+        "lockApps": null,
+        "codeRange": "J1-J3580",
+        "keyBlanks": [
+          "P1793/Y155 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "537"
+      }
+    ]
+  }
+}

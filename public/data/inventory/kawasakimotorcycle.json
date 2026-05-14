@@ -1,0 +1,224 @@
+{
+  "Kawasaki Motorcycle": {
+    "ER-6": [
+      {
+        "yearStart": 2012,
+        "yearEnd": 2012,
+        "lockApps": null,
+        "codeRange": "KW16MH",
+        "keyBlanks": [
+          "KW16-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "NINJA 650": [
+      {
+        "yearStart": 2012,
+        "yearEnd": 2012,
+        "lockApps": null,
+        "codeRange": "KW16MH",
+        "keyBlanks": [
+          "KW16-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "NINJA 1000": [
+      {
+        "yearStart": 2011,
+        "yearEnd": 2011,
+        "lockApps": null,
+        "codeRange": "KW16MH",
+        "keyBlanks": [
+          "KW16-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "NINJA ZX-6R": [
+      {
+        "yearStart": 2006,
+        "yearEnd": 2006,
+        "lockApps": null,
+        "codeRange": "KW16MH",
+        "keyBlanks": [
+          "KW16-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "NINJA ZX-10R": [
+      {
+        "yearStart": 2004,
+        "yearEnd": 2004,
+        "lockApps": null,
+        "codeRange": "KW16MH",
+        "keyBlanks": [
+          "KW16-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "NINJA ZX-12R": [
+      {
+        "yearStart": 2002,
+        "yearEnd": 2002,
+        "lockApps": null,
+        "codeRange": "KW16MH",
+        "keyBlanks": [
+          "KW16-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "NINJA ZX-14": [
+      {
+        "yearStart": 2006,
+        "yearEnd": 2006,
+        "lockApps": null,
+        "codeRange": "KW16MH",
+        "keyBlanks": [
+          "KW16-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "Z750S": [
+      {
+        "yearStart": 2006,
+        "yearEnd": 2006,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "KW16MH"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "KW16-GTS",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "Z1000": [
+      {
+        "yearStart": 2004,
+        "yearEnd": 2004,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "KW16MH"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "KW16-GTS",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "ZZR 1200": [
+      {
+        "yearStart": 2002,
+        "yearEnd": 2002,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "KW16MH"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "KW16-GTS",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "ZZR 1400": [
+      {
+        "yearStart": 2007,
+        "yearEnd": 2007,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "KW16MH"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "KW16-GTS",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      }
+    ]
+  }
+}

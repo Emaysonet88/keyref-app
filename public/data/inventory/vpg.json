@@ -1,0 +1,24 @@
+{
+  "Vpg": {
+    "MV-1": [
+      {
+        "yearStart": 2012,
+        "yearEnd": 2014,
+        "lockApps": "All",
+        "codeRange": "1X-1706X",
+        "keyBlanks": [
+          "H84-GTS/T80+ or EB3-D-H84/ GTHT80+"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments ()",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus/EZ Clone Plus w/ M-Box",
+        "substitutes": "Service Key H86",
+        "notes": "Texas Instruments (80 Bit) Encrypted Code System",
+        "cardNo": "612"
+      }
+    ]
+  }
+}

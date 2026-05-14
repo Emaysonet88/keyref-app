@@ -1,0 +1,160 @@
+{
+  "Ferrari": {
+    "512TR": [
+      {
+        "yearStart": 1992,
+        "yearEnd": 1995,
+        "lockApps": "All",
+        "codeRange": "K3301-K4886",
+        "keyBlanks": [
+          "X152/FT46"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "63"
+      }
+    ],
+    "CALIFORNIA": [
+      {
+        "yearStart": 2011,
+        "yearEnd": 2015,
+        "lockApps": "All",
+        "codeRange": null,
+        "keyBlanks": [
+          "SIP22-GTS w/ T48 Transponder"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Megamos (48)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus/EZ Clone Plus w/ M-Box",
+        "substitutes": null,
+        "notes": "Megamos (48) Encrypted System",
+        "cardNo": null
+      },
+      {
+        "yearStart": 2008,
+        "yearEnd": 2008,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "SIP22-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "T48",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, M-Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "MODELS AND YEARS NOT REFERENCED ELSEWHERE": [
+      {
+        "yearStart": 1986,
+        "yearEnd": 1988,
+        "lockApps": "All",
+        "codeRange": "A1-2-3-4-5",
+        "keyBlanks": [
+          "H61VR"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "117"
+      },
+      {
+        "yearStart": 1981,
+        "yearEnd": 1995,
+        "lockApps": "Door/ Trunk",
+        "codeRange": "4100-4309",
+        "keyBlanks": [
+          "F91C"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "3"
+      }
+    ],
+    "TESTAROSSA": [
+      {
+        "yearStart": 1984,
+        "yearEnd": 1991,
+        "lockApps": "All",
+        "codeRange": "K3301-K4886",
+        "keyBlanks": [
+          "X152/FT46"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "63"
+      }
+    ],
+    "599": [
+      {
+        "yearStart": 2007,
+        "yearEnd": 2007,
+        "lockApps": null,
+        "codeRange": "SIP22MH",
+        "keyBlanks": [
+          "SIP22-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "612 SCAGLIETTI": [
+      {
+        "yearStart": 2004,
+        "yearEnd": 2004,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "SIP22-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "T48",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, M-Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ]
+  }
+}

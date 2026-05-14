@@ -1,0 +1,1512 @@
+{
+  "Mitsubishi": {
+    "DIAMANTE": [
+      {
+        "yearStart": 2001,
+        "yearEnd": 2006,
+        "lockApps": "All",
+        "codeRange": "E5001-E7679",
+        "keyBlanks": [
+          "MIT12-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D61)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD (2001-04)",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key X176/MIT1, MIT4 [-P, -PC]",
+        "notes": "Texas Instruments (4D61) Encrypted System",
+        "cardNo": "264"
+      },
+      {
+        "yearStart": 2000,
+        "yearEnd": 2000,
+        "lockApps": "All",
+        "codeRange": "E5001-E7679",
+        "keyBlanks": [
+          "EK3-MIT8/EK3LB-MIT8*/ MIT8-GTK#"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D61)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "substitutes": "Service Key X176/MIT1, MIT4 [-P, -PC]",
+        "notes": "Texas Instruments (4D61) Encrypted System",
+        "cardNo": "264"
+      },
+      {
+        "yearStart": 1997,
+        "yearEnd": 1999,
+        "lockApps": "All",
+        "codeRange": "E5001-E7679",
+        "keyBlanks": [
+          "X245/MIT4 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key X176/MIT1, MIT4 [-P, -PC]",
+        "notes": null,
+        "cardNo": "264"
+      },
+      {
+        "yearStart": 1992,
+        "yearEnd": 1996,
+        "lockApps": "All",
+        "codeRange": "E5001-E7679",
+        "keyBlanks": [
+          "X176/MIT1 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key X176/MIT1, MIT4 [-P, -PC]",
+        "notes": null,
+        "cardNo": "264"
+      },
+      {
+        "yearStart": 2000,
+        "yearEnd": 2000,
+        "lockApps": "EB3-K-MIT8",
+        "codeRange": "MIT8-GTK",
+        "keyBlanks": [
+          "MIT8TE-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "ECLIPSE": [
+      {
+        "yearStart": 2008,
+        "yearEnd": 2012,
+        "lockApps": "All",
+        "codeRange": "30010-32009",
+        "keyBlanks": [
+          "MIT17A-PT(A) (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key X224/MIT3",
+        "notes": "Philips Encrypted (46) System",
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 2006,
+        "yearEnd": 2007,
+        "lockApps": "All",
+        "codeRange": "F1-F1571",
+        "keyBlanks": [
+          "MIT16A-PT(A) (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key MIT6",
+        "notes": "Philips Encrypted (46) System",
+        "cardNo": "1029"
+      },
+      {
+        "yearStart": 2001,
+        "yearEnd": 2005,
+        "lockApps": "All",
+        "codeRange": "F1-F1571",
+        "keyBlanks": [
+          "MIT13-PT(N) (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D61)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key MIT6",
+        "notes": "Texas Instruments (4D61) Encrypted System",
+        "cardNo": "1029"
+      },
+      {
+        "yearStart": 2000,
+        "yearEnd": 2000,
+        "lockApps": "All",
+        "codeRange": "F1-F1571",
+        "keyBlanks": [
+          "MIT9-PT[R]"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D60)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key MIT6",
+        "notes": "Texas Instruments (4D60) Encrypted System",
+        "cardNo": "1029"
+      },
+      {
+        "yearStart": 1990,
+        "yearEnd": 1999,
+        "lockApps": "All",
+        "codeRange": "E5001-E7679",
+        "keyBlanks": [
+          "X176/MIT1 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key X176/MIT1, MIT4 [-P, -PC]",
+        "notes": null,
+        "cardNo": "264"
+      },
+      {
+        "yearStart": 2008,
+        "yearEnd": 2008,
+        "lockApps": "EB3-M-MIT14",
+        "codeRange": "MIT14-GTK",
+        "keyBlanks": [
+          "MIT11RTE-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "ECLIPSE CROSS W/ REG IGNITION": [
+      {
+        "yearStart": 2018,
+        "yearEnd": 2022,
+        "lockApps": "All",
+        "codeRange": "30010-32009",
+        "keyBlanks": [
+          "OEM# 6370C135"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "ID47",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key X224/MIT3",
+        "notes": "NXP Encrypted (ID47) System",
+        "cardNo": "288"
+      }
+    ],
+    "ECLIPSE CROSS W/ PROX": [
+      {
+        "yearStart": 2018,
+        "yearEnd": 2022,
+        "lockApps": "All",
+        "codeRange": "30010-32009",
+        "keyBlanks": [
+          "OEM# 8637B639"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key X224/MIT4",
+        "notes": null,
+        "cardNo": "288"
+      }
+    ],
+    "ENDEAVOR": [
+      {
+        "yearStart": 2007,
+        "yearEnd": 2011,
+        "lockApps": "All",
+        "codeRange": "30010-32009",
+        "keyBlanks": [
+          "MIT17A-PT(A) (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key X224/MIT3",
+        "notes": "Philips Encrypted (46) System",
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 2001,
+        "yearEnd": 2006,
+        "lockApps": "All",
+        "codeRange": "F1-F1571",
+        "keyBlanks": [
+          "MIT13-PT(N) or MIT16A-PT(A) (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments(4D61)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD (2004-2006)",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key MIT6",
+        "notes": "Texas Instruments(4D61) or Philips(46) Encrypted Code System",
+        "cardNo": "1029"
+      },
+      {
+        "yearStart": 2007,
+        "yearEnd": 2007,
+        "lockApps": "EB3-M-MIT14",
+        "codeRange": "MIT14-GTK",
+        "keyBlanks": [
+          "MIT11RTE-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "ENDEAVOR (WITH \"N\" ON BLADE)": [
+      {
+        "yearStart": 2004,
+        "yearEnd": 2006,
+        "lockApps": "All",
+        "codeRange": "F1-F1571",
+        "keyBlanks": [
+          "EK3-MIT9/EK3LB-MIT9*/ MIT9-GTK#"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D61)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "substitutes": "Service Key MIT6",
+        "notes": "Texas Instruments (4D61) Encrypted System",
+        "cardNo": "1029"
+      }
+    ],
+    "ENDEAVOR (WITH \"A\" ON BLADE)": [
+      {
+        "yearStart": 2001,
+        "yearEnd": 2006,
+        "lockApps": "All",
+        "codeRange": "F1-F1571",
+        "keyBlanks": [
+          "EK3P-MIT16/EK3LB-MIT9*/ MIT9-GTK#"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "substitutes": "Service Key MIT6",
+        "notes": "Philips Encrypted (46) System",
+        "cardNo": "1029"
+      }
+    ],
+    "EXPO": [
+      {
+        "yearStart": 1992,
+        "yearEnd": 1994,
+        "lockApps": "All",
+        "codeRange": "E5001-E7679",
+        "keyBlanks": [
+          "X176/MIT1 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key X176/MIT1, MIT4 [-P, -PC]",
+        "notes": null,
+        "cardNo": "264"
+      }
+    ],
+    "FUSO TRUCK": [
+      {
+        "yearStart": 1989,
+        "yearEnd": 1989,
+        "lockApps": "All",
+        "codeRange": "H0001-H5143",
+        "keyBlanks": [
+          "X121/DC3 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "89"
+      },
+      {
+        "yearStart": 1989,
+        "yearEnd": 1996,
+        "lockApps": "All",
+        "codeRange": "8100-9113",
+        "keyBlanks": [
+          "FU2"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "263"
+      }
+    ],
+    "GALANT": [
+      {
+        "yearStart": 2008,
+        "yearEnd": 2012,
+        "lockApps": "All",
+        "codeRange": "30010-32009",
+        "keyBlanks": [
+          "MIT17A-PT(A) (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key X224/MIT3",
+        "notes": "Philips Encrypted (46) System",
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 2004,
+        "yearEnd": 2007,
+        "lockApps": "All",
+        "codeRange": "F1-F1571",
+        "keyBlanks": [
+          "MIT16A-PT(A) (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key MIT6",
+        "notes": "Philips Encrypted (46) System",
+        "cardNo": "1029"
+      },
+      {
+        "yearStart": 2002,
+        "yearEnd": 2003,
+        "lockApps": "All",
+        "codeRange": "F1-F1571",
+        "keyBlanks": [
+          "MIT13-PT(N)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D61)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key MIT6",
+        "notes": "Texas Instruments (4D61) Encrypted System",
+        "cardNo": "1029"
+      },
+      {
+        "yearStart": 2000,
+        "yearEnd": 2001,
+        "lockApps": "All",
+        "codeRange": "F1-F1571",
+        "keyBlanks": [
+          "MIT9-PT[R] (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D60)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key MIT6",
+        "notes": "Texas Instruments (4D60) Encrypted System",
+        "cardNo": "1029"
+      },
+      {
+        "yearStart": 1999,
+        "yearEnd": 1999,
+        "lockApps": "All",
+        "codeRange": "F1-F1571",
+        "keyBlanks": [
+          "X263/MIT6 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "X263/MIT6 [-P]",
+        "notes": null,
+        "cardNo": "1029"
+      },
+      {
+        "yearStart": 1997,
+        "yearEnd": 1998,
+        "lockApps": "All",
+        "codeRange": "E5001-E7679",
+        "keyBlanks": [
+          "X245/MIT4 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key X176/MIT1, MIT4 [-P, -PC]",
+        "notes": null,
+        "cardNo": "264"
+      },
+      {
+        "yearStart": 1989,
+        "yearEnd": 1996,
+        "lockApps": "All",
+        "codeRange": "E5001-E7679",
+        "keyBlanks": [
+          "X176/MIT1 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key X176/MIT1, MIT4 [-P, -PC]",
+        "notes": null,
+        "cardNo": "264"
+      },
+      {
+        "yearStart": 2008,
+        "yearEnd": 2008,
+        "lockApps": "EB3-M-MIT14",
+        "codeRange": "MIT14-GTK",
+        "keyBlanks": [
+          "MIT11RTE-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "I-MIEV": [
+      {
+        "yearStart": 2012,
+        "yearEnd": 2017,
+        "lockApps": "All",
+        "codeRange": "30010-32009",
+        "keyBlanks": [
+          "MIT17A-PT(A) (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key X224/MIT3",
+        "notes": "Philips Encrypted (46) System",
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 2012,
+        "yearEnd": 2012,
+        "lockApps": "EB3-M-MIT14",
+        "codeRange": "MIT14-GTK",
+        "keyBlanks": [
+          "MIT11RTE-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "LANCER": [
+      {
+        "yearStart": 2002,
+        "yearEnd": 2006,
+        "lockApps": "All",
+        "codeRange": "30010-32009",
+        "keyBlanks": [
+          "X224/MIT3"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "MIT5",
+        "notes": null,
+        "cardNo": "288"
+      }
+    ],
+    "LANCER EVO": [
+      {
+        "yearStart": 2008,
+        "yearEnd": 2009,
+        "lockApps": "All",
+        "codeRange": "30010-32009",
+        "keyBlanks": [
+          "Dealer FOB"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key X224/MIT3",
+        "notes": "FOB Only",
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 2007,
+        "yearEnd": 2008,
+        "lockApps": "All",
+        "codeRange": "30010-32009",
+        "keyBlanks": [
+          "Dealer Key"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key X224/MIT3",
+        "notes": "2008 Optional FOB",
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 2003,
+        "yearEnd": 2006,
+        "lockApps": "All",
+        "codeRange": "30010-32009",
+        "keyBlanks": [
+          "EK3-MIT14/EK3LB-MIT14*/ MIT14-GTK#"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D61)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "substitutes": "Service Key X224/MIT3",
+        "notes": "Texas Instruments (4D61) Encrypted System",
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 2003,
+        "yearEnd": 2003,
+        "lockApps": "EB3-M-MIT14",
+        "codeRange": "MIT14-GTK",
+        "keyBlanks": [
+          "MIT11RTE-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "LANCER W/ PROX SYSTEM": [
+      {
+        "yearStart": 2008,
+        "yearEnd": 2016,
+        "lockApps": "All",
+        "codeRange": "30010-32009",
+        "keyBlanks": [
+          "OEM# 8637A228"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key X224/MIT3",
+        "notes": null,
+        "cardNo": "288"
+      }
+    ],
+    "LANCER W/ REGULAR IGNITION": [
+      {
+        "yearStart": 2007,
+        "yearEnd": 2017,
+        "lockApps": "All",
+        "codeRange": "30010-32009",
+        "keyBlanks": [
+          "MIT17A-PT(A) (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key X224/MIT3",
+        "notes": "Philips Encrypted (46) System",
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 2007,
+        "yearEnd": 2007,
+        "lockApps": "EB3-M-MIT14",
+        "codeRange": "MIT14-GTK",
+        "keyBlanks": [
+          "MIT11RTE-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "MIRAGE G4": [
+      {
+        "yearStart": 2017,
+        "yearEnd": 2019,
+        "lockApps": "All",
+        "codeRange": "30010-32009",
+        "keyBlanks": [
+          "MIT17A-PT(A) (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key X224/MIT3",
+        "notes": "Philips Encrypted (46) System",
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 2017,
+        "yearEnd": 2017,
+        "lockApps": "EB3-M-MIT14",
+        "codeRange": "MIT14-GTK",
+        "keyBlanks": [
+          "MIT11RTE-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "MIRAGE W/ PROX": [
+      {
+        "yearStart": 2014,
+        "yearEnd": 2021,
+        "lockApps": "All",
+        "codeRange": "30010-32009",
+        "keyBlanks": [
+          "OEM# 6370B711"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key X224/MIT3",
+        "notes": null,
+        "cardNo": "288"
+      }
+    ],
+    "MIRAGE": [
+      {
+        "yearStart": 2014,
+        "yearEnd": 2022,
+        "lockApps": "All",
+        "codeRange": "30010-32009",
+        "keyBlanks": [
+          "MIT17A-PT(A) (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key X224/MIT3",
+        "notes": "Philips Encrypted (46) System",
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 1993,
+        "yearEnd": 2002,
+        "lockApps": "All",
+        "codeRange": "30010-32009",
+        "keyBlanks": [
+          "X224/MIT3"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "MIT5",
+        "notes": null,
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 1989,
+        "yearEnd": 1992,
+        "lockApps": "All",
+        "codeRange": "E5001-E7679",
+        "keyBlanks": [
+          "X176/MIT1 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key X176/MIT1, MIT4 [-P, -PC]",
+        "notes": null,
+        "cardNo": "264"
+      },
+      {
+        "yearStart": 1985,
+        "yearEnd": 1988,
+        "lockApps": "All",
+        "codeRange": "H0001-H5143",
+        "keyBlanks": [
+          "X121/DC3 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "89"
+      },
+      {
+        "yearStart": 2014,
+        "yearEnd": 2014,
+        "lockApps": "EB3-M-MIT14",
+        "codeRange": "MIT14-GTK",
+        "keyBlanks": [
+          "MIT11RTE-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "MONTERO": [
+      {
+        "yearStart": 2001,
+        "yearEnd": 2006,
+        "lockApps": "All",
+        "codeRange": "E5001-E7679",
+        "keyBlanks": [
+          "MIT12-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D61)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "MIT1, MIT4",
+        "notes": "Texas Instruments (4D61) Encrypted System",
+        "cardNo": "264"
+      },
+      {
+        "yearStart": 1997,
+        "yearEnd": 2000,
+        "lockApps": "All",
+        "codeRange": "E5001-E7679",
+        "keyBlanks": [
+          "X245/MIT4 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "X176/MIT1",
+        "notes": null,
+        "cardNo": "264"
+      },
+      {
+        "yearStart": 1992,
+        "yearEnd": 1996,
+        "lockApps": "All",
+        "codeRange": "E5001-E7679",
+        "keyBlanks": [
+          "X176/MIT1 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key X176/MIT1, MIT4 [-P, -PC]",
+        "notes": null,
+        "cardNo": "264"
+      },
+      {
+        "yearStart": 1983,
+        "yearEnd": 1991,
+        "lockApps": "All",
+        "codeRange": "H0001-H5143",
+        "keyBlanks": [
+          "X121/DC3 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "89"
+      }
+    ],
+    "MONTERO SPORT": [
+      {
+        "yearStart": 2007,
+        "yearEnd": 2008,
+        "lockApps": "All",
+        "codeRange": "E5001-E7679",
+        "keyBlanks": [
+          "Dealer Key (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "MIT1, MIT4",
+        "notes": "Texas Instruments Encrypted Code System",
+        "cardNo": "264"
+      },
+      {
+        "yearStart": 2001,
+        "yearEnd": 2006,
+        "lockApps": "All",
+        "codeRange": "E5001-E7679",
+        "keyBlanks": [
+          "MIT12-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D61)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "MIT1, MIT4",
+        "notes": "Texas Instruments (4D61) Encrypted System",
+        "cardNo": "264"
+      },
+      {
+        "yearStart": 2000,
+        "yearEnd": 2000,
+        "lockApps": "All",
+        "codeRange": "E5001-E7679",
+        "keyBlanks": [
+          "MIT8-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "Texas Instruments Encrypted Code System",
+        "cardNo": "264"
+      }
+    ],
+    "OUTLANDER": [
+      {
+        "yearStart": 2004,
+        "yearEnd": 2008,
+        "lockApps": "All",
+        "codeRange": "30010-32009",
+        "keyBlanks": [
+          "EK3-MIT14/EK3LB-MIT14*/ MIT14-GTK#"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "substitutes": "Service Key X224/MIT3",
+        "notes": "Texas Instruments Plastic Wedge Encrypted System",
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 2004,
+        "yearEnd": 2006,
+        "lockApps": "All",
+        "codeRange": "30010-32009",
+        "keyBlanks": [
+          "OEM# MN141307"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key X224/MIT3",
+        "notes": "Optional Fastkey system",
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 2003,
+        "yearEnd": 2003,
+        "lockApps": "All",
+        "codeRange": "30010-32009",
+        "keyBlanks": [
+          "X224/MIT3"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "MIT5",
+        "notes": null,
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 2004,
+        "yearEnd": 2004,
+        "lockApps": "EB3-M-MIT14",
+        "codeRange": "MIT14-GTK",
+        "keyBlanks": [
+          "MIT11RTE-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "OUTLANDER W/ PROX SYSTEM": [
+      {
+        "yearStart": 2021,
+        "yearEnd": 2022,
+        "lockApps": "All",
+        "codeRange": "30010-32009",
+        "keyBlanks": [
+          "OEM# 8637C253 or 8637C254"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key X224/MIT3",
+        "notes": null,
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 2007,
+        "yearEnd": 2007,
+        "lockApps": "All",
+        "codeRange": "30010-32009",
+        "keyBlanks": [
+          "OEM# 8637A025"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key X224/MIT3",
+        "notes": null,
+        "cardNo": "288"
+      }
+    ],
+    "OUTLANDER W/ PROX SYSTEM (DIFFERENT PROX FROM 2007)": [
+      {
+        "yearStart": 2008,
+        "yearEnd": 2020,
+        "lockApps": "All",
+        "codeRange": "30010-32009",
+        "keyBlanks": [
+          "OEM# 8637A316"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP (08-14)",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key X224/MIT3",
+        "notes": null,
+        "cardNo": "288"
+      }
+    ],
+    "OUTLANDER W/ REGULAR IGNITION": [
+      {
+        "yearStart": 2007,
+        "yearEnd": 2021,
+        "lockApps": "All",
+        "codeRange": "30010-32009",
+        "keyBlanks": [
+          "MIT17A-PT(A) (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP (thru 2016)SDD/TKO (thru 2010)",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key X224/MIT3",
+        "notes": "Philips Encrypted (46) System",
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 2007,
+        "yearEnd": 2007,
+        "lockApps": "EB3-M-MIT14",
+        "codeRange": "MIT14-GTK",
+        "keyBlanks": [
+          "MIT11RTE-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "OUTLANDER SPORT W/ PROX SYSTEM": [
+      {
+        "yearStart": 2011,
+        "yearEnd": 2021,
+        "lockApps": "All",
+        "codeRange": "30010-32009",
+        "keyBlanks": [
+          "OEM# 8637A316"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP (11-14)",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key X224/MIT3",
+        "notes": "Philips Encrypted System",
+        "cardNo": "288"
+      }
+    ],
+    "OUTLANDER SPORT W/ REGULAR IGNITION": [
+      {
+        "yearStart": 2011,
+        "yearEnd": 2019,
+        "lockApps": "All",
+        "codeRange": "30010-32009",
+        "keyBlanks": [
+          "MIT17A-PT(A) (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key X224/MIT3",
+        "notes": "Philips Encrypted (46) System",
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 2011,
+        "yearEnd": 2011,
+        "lockApps": "EB3-M-MIT14",
+        "codeRange": null,
+        "keyBlanks": [
+          "MIT14-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "MIT11RTE-GTS",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "PICKUP TRUCK": [
+      {
+        "yearStart": 1997,
+        "yearEnd": 1999,
+        "lockApps": "All",
+        "codeRange": "E5001-E7679",
+        "keyBlanks": [
+          "X176/MIT1 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key X176/MIT1, MIT4 [-P, -PC]",
+        "notes": null,
+        "cardNo": "264"
+      },
+      {
+        "yearStart": 1993,
+        "yearEnd": 1996,
+        "lockApps": "All",
+        "codeRange": "H0001-H5143",
+        "keyBlanks": [
+          "X121/DC3 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "89"
+      },
+      {
+        "yearStart": 1983,
+        "yearEnd": 1992,
+        "lockApps": "All",
+        "codeRange": "H0001-H5143",
+        "keyBlanks": [
+          "X121/DC3 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "89"
+      }
+    ],
+    "PRECIS": [
+      {
+        "yearStart": 1990,
+        "yearEnd": 1994,
+        "lockApps": "All",
+        "codeRange": "X1001-X2000",
+        "keyBlanks": [
+          "X196/HY5 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "221"
+      },
+      {
+        "yearStart": 1987,
+        "yearEnd": 1989,
+        "lockApps": "All",
+        "codeRange": "X1-X1000",
+        "keyBlanks": [
+          "X160/HY2 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "221"
+      }
+    ],
+    "RAIDER": [
+      {
+        "yearStart": 2006,
+        "yearEnd": 2010,
+        "lockApps": "All",
+        "codeRange": "M1-M2618",
+        "keyBlanks": [
+          "Y164-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program F, Smart Pro/TCP/MVPP/TKO/ SDD",
+        "programmingProcedure": [
+          "F"
+        ],
+        "cloningMethod": null,
+        "substitutes": "Service Key Y159",
+        "notes": "Philips Encrypted (46) System",
+        "cardNo": "745"
+      },
+      {
+        "yearStart": 1990,
+        "yearEnd": 1991,
+        "lockApps": "All",
+        "codeRange": "X1001-X2000",
+        "keyBlanks": [
+          "X196/HY5"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "221"
+      },
+      {
+        "yearStart": 1987,
+        "yearEnd": 1989,
+        "lockApps": "All",
+        "codeRange": "X1-X1000",
+        "keyBlanks": [
+          "X160/HY2"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "221"
+      },
+      {
+        "yearStart": 2006,
+        "yearEnd": 2006,
+        "lockApps": "EB3-A-Y160",
+        "codeRange": null,
+        "keyBlanks": [
+          "Y160-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Y164-GTS",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "RVR (CANADA)": [
+      {
+        "yearStart": 2011,
+        "yearEnd": 2018,
+        "lockApps": "All",
+        "codeRange": "30010-32009",
+        "keyBlanks": [
+          "MIT17A-PT(A) (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key X224/MIT3",
+        "notes": "Philips Encypted (46) System",
+        "cardNo": "288"
+      },
+      {
+        "yearStart": 2011,
+        "yearEnd": 2011,
+        "lockApps": "EB3-M-MIT14",
+        "codeRange": null,
+        "keyBlanks": [
+          "MIT14-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "MIT11RTE-GTS",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "SIGMA, CORDIA, STARION, TREDIA": [
+      {
+        "yearStart": 1983,
+        "yearEnd": 1989,
+        "lockApps": "All",
+        "codeRange": "H0001-H5143",
+        "keyBlanks": [
+          "X121/DC3 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "89"
+      }
+    ],
+    "VAN WAGON": [
+      {
+        "yearStart": 1995,
+        "yearEnd": 2001,
+        "lockApps": "All",
+        "codeRange": "E5001-E7679",
+        "keyBlanks": [
+          "X245/MIT4 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "X176/MIT1",
+        "notes": null,
+        "cardNo": "264"
+      }
+    ],
+    "ECLIPSE CROSS": [
+      {
+        "yearStart": 2018,
+        "yearEnd": 2018,
+        "lockApps": "EB3-M-MIT14",
+        "codeRange": "MIT14-GTK",
+        "keyBlanks": [
+          "MIT11RTE-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ]
+  }
+}

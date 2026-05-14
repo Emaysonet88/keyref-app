@@ -1,0 +1,1112 @@
+{
+  "Bmw": {
+    "1 SERIES- 128I, 135I": [
+      {
+        "yearStart": 2008,
+        "yearEnd": 2011,
+        "lockApps": "All",
+        "codeRange": "1-8100",
+        "keyBlanks": [
+          "Dealer FOB"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "HU92RP",
+        "notes": null,
+        "cardNo": "1842"
+      }
+    ],
+    "1 SERIES": [
+      {
+        "yearStart": 2004,
+        "yearEnd": 2011,
+        "lockApps": "All",
+        "codeRange": "1-8100",
+        "keyBlanks": [
+          "HU92RMH#"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Philips (46)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "substitutes": "HU92RP",
+        "notes": "High Security Key, Philips (46) Encrypted System",
+        "cardNo": "1842"
+      },
+      {
+        "yearStart": 2004,
+        "yearEnd": 2004,
+        "lockApps": null,
+        "codeRange": "HU92RMH",
+        "keyBlanks": [
+          "HU92R-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "1 SERIES W/ PROX": [
+      {
+        "yearStart": 2008,
+        "yearEnd": 2014,
+        "lockApps": "All",
+        "codeRange": "1-8100",
+        "keyBlanks": [
+          "HU92RMHK#"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Philips (46)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "substitutes": "HU92RP",
+        "notes": "High Security Key, Philips (46) Encrypted System",
+        "cardNo": "1842"
+      }
+    ],
+    "3 SERIES- 318i, 323i,323iC,323iS, 335i": [
+      {
+        "yearStart": 1999,
+        "yearEnd": 2007,
+        "lockApps": "All",
+        "codeRange": "1-8100",
+        "keyBlanks": [
+          "Dealer Key (LAL)"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Philips",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "HU92RP",
+        "notes": "High Security Key. Philips Rolling Code System",
+        "cardNo": "1842"
+      },
+      {
+        "yearStart": 1995,
+        "yearEnd": 1998,
+        "lockApps": "All",
+        "codeRange": "51.00001- 51.60000",
+        "keyBlanks": [
+          "Dealer Key"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Philips",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": "High Security Key. Philips Rolling Code System",
+        "cardNo": "N/A"
+      },
+      {
+        "yearStart": 1993,
+        "yearEnd": 1994,
+        "lockApps": "All",
+        "codeRange": "BH010001- BH241009",
+        "keyBlanks": [
+          "S7BW-P"
+        ],
+        "keyType": "High Security",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": "High Security Key",
+        "cardNo": "875"
+      },
+      {
+        "yearStart": 1992,
+        "yearEnd": 1992,
+        "lockApps": "All",
+        "codeRange": "BH010001- BH241009",
+        "keyBlanks": [
+          "S7BW-P"
+        ],
+        "keyType": "High Security",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": "High Security Key",
+        "cardNo": "875"
+      },
+      {
+        "yearStart": 1985,
+        "yearEnd": 1991,
+        "lockApps": "All",
+        "codeRange": "HB10001- HB49999",
+        "keyBlanks": [
+          "X144/BMW3 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "184"
+      },
+      {
+        "yearStart": 1981,
+        "yearEnd": 1984,
+        "lockApps": "All",
+        "codeRange": "HB0001-HB5000",
+        "keyBlanks": [
+          "X59/BMW2 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "10"
+      }
+    ],
+    "3 SERIES- 328i, 328Xi, 335i, 335XI": [
+      {
+        "yearStart": 2008,
+        "yearEnd": 2011,
+        "lockApps": "All",
+        "codeRange": "1-8100",
+        "keyBlanks": [
+          "Dealer FOB"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "HU92RP",
+        "notes": "High Security Key. Philips Rolling Code System",
+        "cardNo": "1842"
+      }
+    ],
+    "3 SERIES": [
+      {
+        "yearStart": 2005,
+        "yearEnd": 2011,
+        "lockApps": "All",
+        "codeRange": "1-8100",
+        "keyBlanks": [
+          "HU92RMH#"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Philips (46)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "substitutes": "HU92RP",
+        "notes": "High Security Key, Philips (46) Encrypted System",
+        "cardNo": "1842"
+      },
+      {
+        "yearStart": 2005,
+        "yearEnd": 2005,
+        "lockApps": null,
+        "codeRange": "HU92RMH",
+        "keyBlanks": [
+          "HU92R-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "3 SERIES W/ PROX": [
+      {
+        "yearStart": 2006,
+        "yearEnd": 2011,
+        "lockApps": "All",
+        "codeRange": "1-8100",
+        "keyBlanks": [
+          "HU92RMHK# (LAL)"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Philips (46)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "substitutes": "HU92RP",
+        "notes": "High Security Key, Philips (46) Encrypted System",
+        "cardNo": "1842"
+      }
+    ],
+    "5 SERIES - 524TD, 525i,525Xi, 528E, 530Xi, 533i, 535i, 550i, M5": [
+      {
+        "yearStart": 2004,
+        "yearEnd": 2007,
+        "lockApps": "All",
+        "codeRange": "1-8100",
+        "keyBlanks": [
+          "Dealer Key (LAL)"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Philips",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "HU92RP",
+        "notes": "High Security Key. Philips Rolling Code System",
+        "cardNo": "1842"
+      },
+      {
+        "yearStart": 1997,
+        "yearEnd": 2003,
+        "lockApps": "All",
+        "codeRange": "51.00001- 51.60000",
+        "keyBlanks": [
+          "Dealer Key (LAL)"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Philips",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "HU58AP",
+        "notes": "High Security Key. Philips Rolling Code System",
+        "cardNo": "N/A"
+      },
+      {
+        "yearStart": 1995,
+        "yearEnd": 1996,
+        "lockApps": "All",
+        "codeRange": "BH010001- BH241450",
+        "keyBlanks": [
+          "Dealer Key"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Philips",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": "High Security Key. Philips Rolling Code System",
+        "cardNo": "875"
+      },
+      {
+        "yearStart": 1988,
+        "yearEnd": 1994,
+        "lockApps": "All",
+        "codeRange": "BH010001- BH241450",
+        "keyBlanks": [
+          "S7BW-P"
+        ],
+        "keyType": "High Security",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": "High Security Key",
+        "cardNo": "875"
+      },
+      {
+        "yearStart": 1985,
+        "yearEnd": 1987,
+        "lockApps": "All",
+        "codeRange": "HB10001- HB20000",
+        "keyBlanks": [
+          "X144/BMW3 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "184"
+      },
+      {
+        "yearStart": 1981,
+        "yearEnd": 1984,
+        "lockApps": "All",
+        "codeRange": "HB0001-HB5000",
+        "keyBlanks": [
+          "X59/BMW2 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "10"
+      }
+    ],
+    "5 SERIES - 528i, 528Xi, 535i, 535Xi, 550i": [
+      {
+        "yearStart": 2008,
+        "yearEnd": 2011,
+        "lockApps": "All",
+        "codeRange": "1-8100",
+        "keyBlanks": [
+          "Dealer FOB"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "HU92RP",
+        "notes": "High Security Key. Philips Rolling Code System",
+        "cardNo": "1842"
+      }
+    ],
+    "5 SERIES": [
+      {
+        "yearStart": 2003,
+        "yearEnd": 2010,
+        "lockApps": "All",
+        "codeRange": "1-8100",
+        "keyBlanks": [
+          "HU92RMH#"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Philips (46)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "substitutes": "HU92RP",
+        "notes": "High Security Key, Philips (46) Encrypted System",
+        "cardNo": "1842"
+      },
+      {
+        "yearStart": 2003,
+        "yearEnd": 2003,
+        "lockApps": null,
+        "codeRange": "HU92RMH",
+        "keyBlanks": [
+          "HU92R-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "5 SERIES W/ PROX": [
+      {
+        "yearStart": 2006,
+        "yearEnd": 2011,
+        "lockApps": "All",
+        "codeRange": "1-8100",
+        "keyBlanks": [
+          "HU92RMHK# (LAL)"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Philips (46)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "substitutes": "HU92RP",
+        "notes": "High Security Key, Philips (46) Encrypted System",
+        "cardNo": "1842"
+      }
+    ],
+    "6 SERIES - 630I, 633I, 633CSI,635I, 635CSI, 645CSI, 650I": [
+      {
+        "yearStart": 2005,
+        "yearEnd": 2007,
+        "lockApps": "All",
+        "codeRange": "1-8100",
+        "keyBlanks": [
+          "Dealer Key (LAL)"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Philips",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "HU92RP",
+        "notes": "High Security Key. Philips Rolling Code System",
+        "cardNo": "1842"
+      },
+      {
+        "yearStart": 1985,
+        "yearEnd": 1989,
+        "lockApps": "All",
+        "codeRange": "HB10001- HB20000",
+        "keyBlanks": [
+          "X144/BMW3 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "184"
+      },
+      {
+        "yearStart": 1981,
+        "yearEnd": 1984,
+        "lockApps": "All",
+        "codeRange": "HB0001-HB5000",
+        "keyBlanks": [
+          "X59/BMW2 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "10"
+      }
+    ],
+    "6 SERIES - 650i": [
+      {
+        "yearStart": 2008,
+        "yearEnd": 2009,
+        "lockApps": "All",
+        "codeRange": "1-8100",
+        "keyBlanks": [
+          "Dealer FOB"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Philips",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "HU92RP",
+        "notes": "High Security Key. Philips Rolling Code System",
+        "cardNo": "1842"
+      }
+    ],
+    "6 SERIES": [
+      {
+        "yearStart": 2004,
+        "yearEnd": 2011,
+        "lockApps": "All",
+        "codeRange": "1-8100",
+        "keyBlanks": [
+          "HU92RMH#"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Philips (46)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "substitutes": "HU92RP",
+        "notes": "High Security Key, Philips (46) Encrypted System",
+        "cardNo": "1842"
+      },
+      {
+        "yearStart": 2004,
+        "yearEnd": 2004,
+        "lockApps": null,
+        "codeRange": "HU92RMH",
+        "keyBlanks": [
+          "HU92R-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "7 SERIES - 733i, 735i, 735Li, 740i, 760i, 760Li": [
+      {
+        "yearStart": 2003,
+        "yearEnd": 2007,
+        "lockApps": "All",
+        "codeRange": "1-8100",
+        "keyBlanks": [
+          "Dealer Key"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Philips",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "HU92RP",
+        "notes": "High Security Key. Philips Rolling Code System",
+        "cardNo": "1842"
+      },
+      {
+        "yearStart": 1997,
+        "yearEnd": 2002,
+        "lockApps": "All",
+        "codeRange": "51.00001- 51.60000",
+        "keyBlanks": [
+          "Dealer Key (LAL)"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Philips",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "HU58AP",
+        "notes": "High Security Key. Philips Rolling Code System",
+        "cardNo": "N/A"
+      },
+      {
+        "yearStart": 1995,
+        "yearEnd": 1996,
+        "lockApps": "All",
+        "codeRange": "BH010001- BH241450",
+        "keyBlanks": [
+          "Dealer Key"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Philips",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "HU58AP",
+        "notes": "High Security Key. Philips Rolling Code System",
+        "cardNo": "875"
+      },
+      {
+        "yearStart": 1988,
+        "yearEnd": 1994,
+        "lockApps": "All",
+        "codeRange": "BH010001- BH241450",
+        "keyBlanks": [
+          "S7BW-P"
+        ],
+        "keyType": "High Security",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": "High Security Key",
+        "cardNo": "875"
+      },
+      {
+        "yearStart": 1985,
+        "yearEnd": 1987,
+        "lockApps": "All",
+        "codeRange": "HB10001- HB20000",
+        "keyBlanks": [
+          "X144/BMW3 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "184"
+      },
+      {
+        "yearStart": 1981,
+        "yearEnd": 1984,
+        "lockApps": "All",
+        "codeRange": "HB0001-HB5000",
+        "keyBlanks": [
+          "X59/BMW2 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "10"
+      }
+    ],
+    "7 SERIES - 750i, 750Li, 760Li": [
+      {
+        "yearStart": 2008,
+        "yearEnd": 2009,
+        "lockApps": "All",
+        "codeRange": "1-8100",
+        "keyBlanks": [
+          "Dealer FOB"
+        ],
+        "keyType": "High Security",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "HU92RP",
+        "notes": "High Security Key. Phillips Rolling Code System",
+        "cardNo": "1842"
+      }
+    ],
+    "7 SERIES": [
+      {
+        "yearStart": 2002,
+        "yearEnd": 2008,
+        "lockApps": "All",
+        "codeRange": "1-8100",
+        "keyBlanks": [
+          "HU92RMH#"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Philips (46)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "substitutes": "HU92RP",
+        "notes": "High Security Key, Philips (46) Encrypted System",
+        "cardNo": "1842"
+      },
+      {
+        "yearStart": 2002,
+        "yearEnd": 2002,
+        "lockApps": null,
+        "codeRange": "HU92RMH",
+        "keyBlanks": [
+          "HU92R-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "8 SERIES - 840Ci": [
+      {
+        "yearStart": 1996,
+        "yearEnd": 1997,
+        "lockApps": "All",
+        "codeRange": "Mfg. Restricted",
+        "keyBlanks": [
+          "Dealer Key"
+        ],
+        "keyType": "High Security",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": "High Security Key. Phillips Rolling Code System",
+        "cardNo": "N/A"
+      },
+      {
+        "yearStart": 1995,
+        "yearEnd": 1995,
+        "lockApps": "All",
+        "codeRange": "BH010001- BH241450",
+        "keyBlanks": [
+          "Dealer Key"
+        ],
+        "keyType": "High Security",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "HU58AP",
+        "notes": "High Security Key. Phillips Rolling Code System",
+        "cardNo": "3"
+      },
+      {
+        "yearStart": 1990,
+        "yearEnd": 1994,
+        "lockApps": "All",
+        "codeRange": "BH010001- BH241450",
+        "keyBlanks": [
+          "S7BW-P"
+        ],
+        "keyType": "High Security",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": "High Security Key",
+        "cardNo": "3"
+      },
+      {
+        "yearStart": 1990,
+        "yearEnd": 1994,
+        "lockApps": "Valet",
+        "codeRange": "BH010001- BH241450",
+        "keyBlanks": [
+          "S6BW"
+        ],
+        "keyType": "High Security",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": "High Security Key",
+        "cardNo": "3"
+      }
+    ],
+    "M3 & M5 SERIES": [
+      {
+        "yearStart": 2000,
+        "yearEnd": 2007,
+        "lockApps": "All",
+        "codeRange": "1-8100",
+        "keyBlanks": [
+          "Dealer Key"
+        ],
+        "keyType": "High Security",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "HU92RP",
+        "notes": "High Security Key. Phillips Rolling Code System",
+        "cardNo": "1842"
+      }
+    ],
+    "M5, M6 SEDAN, CONVERTIBLE": [
+      {
+        "yearStart": 2008,
+        "yearEnd": 2008,
+        "lockApps": "All",
+        "codeRange": "1-8100",
+        "keyBlanks": [
+          "Dealer FOB"
+        ],
+        "keyType": "High Security",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "HU92RP",
+        "notes": "High Security Key. Phillips Rolling Code System",
+        "cardNo": "1842"
+      }
+    ],
+    "X3 - 3.0Si": [
+      {
+        "yearStart": 2007,
+        "yearEnd": 2007,
+        "lockApps": "All",
+        "codeRange": "1-8100",
+        "keyBlanks": [
+          "Dealer Key (LAL)"
+        ],
+        "keyType": "High Security",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "HU92RP",
+        "notes": "High Security Key. Phillips Rolling Code System",
+        "cardNo": "1842"
+      }
+    ],
+    "X3 2.5i/3.0i": [
+      {
+        "yearStart": 2004,
+        "yearEnd": 2007,
+        "lockApps": "All",
+        "codeRange": "1-8100",
+        "keyBlanks": [
+          "Dealer Key (LAL)"
+        ],
+        "keyType": "High Security",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "HU92RP",
+        "notes": "High Security Key. Phillips Rolling Code System",
+        "cardNo": "1842"
+      }
+    ],
+    "X3, X5, X6": [
+      {
+        "yearStart": 2008,
+        "yearEnd": 2009,
+        "lockApps": "All",
+        "codeRange": "1-8100",
+        "keyBlanks": [
+          "Dealer Key (LAL)"
+        ],
+        "keyType": "High Security",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "HU92RP",
+        "notes": "High Security Key. Phillips Rolling Code System",
+        "cardNo": "1842"
+      }
+    ],
+    "X5 W/ PROX": [
+      {
+        "yearStart": 2007,
+        "yearEnd": 2011,
+        "lockApps": "All",
+        "codeRange": "1-8100",
+        "keyBlanks": [
+          "HU92RMHK#"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Philips (46)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "substitutes": "HU92RP",
+        "notes": "High Security Key, Philips (46) Encrypted System",
+        "cardNo": "1842"
+      }
+    ],
+    "X5 - 3.0Si, 4.8i": [
+      {
+        "yearStart": 2007,
+        "yearEnd": 2007,
+        "lockApps": "All",
+        "codeRange": "1-8100",
+        "keyBlanks": [
+          "Dealer Key"
+        ],
+        "keyType": "High Security",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "HU92RP",
+        "notes": "High Security Key. Phillips Rolling Code System",
+        "cardNo": "1842"
+      }
+    ],
+    "X5 3.0i. 4.4i, 4.8iS": [
+      {
+        "yearStart": 2000,
+        "yearEnd": 2007,
+        "lockApps": "All",
+        "codeRange": "1-8100",
+        "keyBlanks": [
+          "Dealer Key (LAL)"
+        ],
+        "keyType": "High Security",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "HU92RP",
+        "notes": "High Security Key. Phillips Rolling Code System",
+        "cardNo": "1842"
+      }
+    ],
+    "X6 W/ PROX": [
+      {
+        "yearStart": 2008,
+        "yearEnd": 2013,
+        "lockApps": "All",
+        "codeRange": "1-8100",
+        "keyBlanks": [
+          "HU92RMHK#"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Philips (46)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "substitutes": "HU92RP",
+        "notes": "High Security Key, Philips (46) Encrypted System",
+        "cardNo": "1842"
+      }
+    ],
+    "Z3,Z3 COUPE": [
+      {
+        "yearStart": 1995,
+        "yearEnd": 2002,
+        "lockApps": "All",
+        "codeRange": "51.00001- 51.60000",
+        "keyBlanks": [
+          "Dealer Key (LAL)"
+        ],
+        "keyType": "High Security",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "HU58AP",
+        "notes": "High Security Key. Phillips Rolling Code System",
+        "cardNo": "N/A"
+      }
+    ],
+    "Z4 2.5I, 3.0I": [
+      {
+        "yearStart": 2003,
+        "yearEnd": 2011,
+        "lockApps": "All",
+        "codeRange": "1-8100",
+        "keyBlanks": [
+          "Dealer Key (LAL)"
+        ],
+        "keyType": "High Security",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "HU92RP",
+        "notes": "High Security Key. Phillips Rolling Code System",
+        "cardNo": "1842"
+      }
+    ],
+    "Z4 W/ PROX": [
+      {
+        "yearStart": 2008,
+        "yearEnd": 2013,
+        "lockApps": "All",
+        "codeRange": "1-8100",
+        "keyBlanks": [
+          "HU92RMHK#"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Philips (46)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "substitutes": "HU92RP",
+        "notes": "High Security Key, Philips (46) Encrypted System",
+        "cardNo": "1842"
+      }
+    ],
+    "Z4": [
+      {
+        "yearStart": 2003,
+        "yearEnd": 2011,
+        "lockApps": "All",
+        "codeRange": "1-8100",
+        "keyBlanks": [
+          "HU92RMH#"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Philips (46)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "substitutes": "HU92RP",
+        "notes": "High Security Key, Philips (46) Encrypted System",
+        "cardNo": "1842"
+      },
+      {
+        "yearStart": 2003,
+        "yearEnd": 2003,
+        "lockApps": null,
+        "codeRange": "HU92RMH",
+        "keyBlanks": [
+          "HU92R-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "Z4, M ROADSTER, M COUPE": [
+      {
+        "yearStart": 2008,
+        "yearEnd": 2008,
+        "lockApps": "All",
+        "codeRange": "1-8100",
+        "keyBlanks": [
+          "Dealer FOB"
+        ],
+        "keyType": "High Security",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "HU92RP",
+        "notes": "High Security Key. Phillips Rolling Code System",
+        "cardNo": "1842"
+      }
+    ]
+  }
+}

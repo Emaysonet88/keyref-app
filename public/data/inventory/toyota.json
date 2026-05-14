@@ -1,0 +1,2234 @@
+{
+  "Toyota": {
+    "AVALON W/ PROX": [
+      {
+        "yearStart": 2013,
+        "yearEnd": 2018,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 89904-06140 (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emerg. Key TOY48EMER",
+        "notes": null,
+        "cardNo": "3102"
+      },
+      {
+        "yearStart": 2005,
+        "yearEnd": 2012,
+        "lockApps": "All",
+        "codeRange": "40000-49999",
+        "keyBlanks": [
+          "Optional Prox FOB (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emerg. Key TOY51-P",
+        "notes": null,
+        "cardNo": "950"
+      }
+    ],
+    "AVALON W/ REGULAR IGNITION": [
+      {
+        "yearStart": 2012,
+        "yearEnd": 2012,
+        "lockApps": "All",
+        "codeRange": "50000-69999",
+        "keyBlanks": [
+          "TOY44G-PT"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key TR47",
+        "notes": "Texas Instruments 80 Bit Encrypted System",
+        "cardNo": "1420"
+      },
+      {
+        "yearStart": 2005,
+        "yearEnd": 2011,
+        "lockApps": "All",
+        "codeRange": "50000-69999",
+        "keyBlanks": [
+          "EK3-TOY43/EK3LB-TOY43*/ TOY43-GTK#"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D67)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "substitutes": "Service key LXP90-P",
+        "notes": "Texas Instruments (4D67) Encrypted System",
+        "cardNo": "1420"
+      }
+    ],
+    "AVALON XLS, XL": [
+      {
+        "yearStart": 2002,
+        "yearEnd": 2005,
+        "lockApps": "All",
+        "codeRange": "10001-15000",
+        "keyBlanks": [
+          "TOY43AT4 (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4C)",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program E",
+        "programmingProcedure": [
+          "E"
+        ],
+        "cloningMethod": null,
+        "substitutes": "Service Key TR47",
+        "notes": "Texas Instruments (4C) Encrypted System",
+        "cardNo": "514"
+      },
+      {
+        "yearStart": 1998,
+        "yearEnd": 2004,
+        "lockApps": "All",
+        "codeRange": "10001-15000",
+        "keyBlanks": [
+          "TOY43AT4 (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4C)",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program E",
+        "programmingProcedure": [
+          "E"
+        ],
+        "cloningMethod": null,
+        "substitutes": "Service Key TR47",
+        "notes": "Texas Instruments (4C) Encrypted System",
+        "cardNo": "514"
+      },
+      {
+        "yearStart": 1995,
+        "yearEnd": 1997,
+        "lockApps": "All",
+        "codeRange": "10001-15000",
+        "keyBlanks": [
+          "X217/TR47 [-P, -PC] (LAL)"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "X225/B80",
+        "notes": null,
+        "cardNo": "514"
+      }
+    ],
+    "BZ4X": [
+      {
+        "yearStart": 2023,
+        "yearEnd": 2023,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "TOY43AT4 (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4C)",
+        "programmingRequired": true,
+        "programmingMethod": "OEM# 8990H-42510 or 8990H-42520",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "Texas Instruments (4C) Encrypted System",
+        "cardNo": "3102"
+      }
+    ],
+    "C-HR W/ REGULAR IGNITION": [
+      {
+        "yearStart": 2018,
+        "yearEnd": 2022,
+        "lockApps": "All",
+        "codeRange": "40000-49999",
+        "keyBlanks": [
+          "TOY48H-PT"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D74)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key TR47",
+        "notes": "Texas Instruments (4D74) 128 bit System",
+        "cardNo": "950"
+      }
+    ],
+    "C-HR W/ PROX": [
+      {
+        "yearStart": 2018,
+        "yearEnd": 2022,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 89904-F4020/89904- 10050/89904-10051 (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Smart Pro/TCP/MVPP",
+        "notes": "Emerg. Key TOY48EMER",
+        "cardNo": null
+      }
+    ],
+    "CAMRY CE & LE": [
+      {
+        "yearStart": 2003,
+        "yearEnd": 2009,
+        "lockApps": "All",
+        "codeRange": "50000-69999",
+        "keyBlanks": [
+          "EK3-TOY43/EK3LB-TOY43*/ TOY43-GTK#"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "notes": "Service Key TR47",
+        "cardNo": "Texas Instruments (4C) Encrypted System"
+      }
+    ],
+    "CAMRY CE & LE (TYPE 1 SYSTEM)": [
+      {
+        "yearStart": 2003,
+        "yearEnd": 2006,
+        "lockApps": "All",
+        "codeRange": "50000-69999",
+        "keyBlanks": [
+          "TOY43AT4"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "OBP Program E or I, Smart Pro/TCP/MVPP/ TKO/SDD",
+        "notes": "Service Key TR47",
+        "cardNo": "Texas Instruments (4C) Encrypted System"
+      }
+    ],
+    "CAMRY CE & LE (TYPE 2 SYSTEM)": [
+      {
+        "yearStart": 2003,
+        "yearEnd": 2006,
+        "lockApps": "All",
+        "codeRange": "50000-69999",
+        "keyBlanks": [
+          "TOY44D-PT"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "OBP Program E or I, Smart Pro/TCP/MVPP/ TKO/SDD",
+        "notes": null,
+        "cardNo": "Texas Instruments (4D67) Encrypted System"
+      }
+    ],
+    "CAMRY HYBRID": [
+      {
+        "yearStart": 2007,
+        "yearEnd": 2007,
+        "lockApps": "All",
+        "codeRange": "40000-49999",
+        "keyBlanks": [
+          "TOY44D-PT"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "Service Key TR47",
+        "cardNo": "Texas Instruments (4D67) Encrypted System"
+      }
+    ],
+    "CAMRY W/ PROX": [
+      {
+        "yearStart": 2018,
+        "yearEnd": 2022,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 89904-06220/89904- 06240/89904-33550 (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Smart Pro/TCP/MVPP (Thru 2018)",
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 2012,
+        "yearEnd": 2017,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 89904-06140 (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "notes": null,
+        "cardNo": "Emerg. Key TOY48EMER"
+      },
+      {
+        "yearStart": 2007,
+        "yearEnd": 2011,
+        "lockApps": "All",
+        "codeRange": "40000-49999",
+        "keyBlanks": [
+          "OEM# 89904-06041 or 89904- 33181 (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "notes": "Emerg. Key TOY51-P",
+        "cardNo": null
+      }
+    ],
+    "CAMRY W/ REGULAR IGNITION": [
+      {
+        "yearStart": 2018,
+        "yearEnd": 2024,
+        "lockApps": "All",
+        "codeRange": "40000-49999",
+        "keyBlanks": [
+          "TOY48H-PT (LAL)"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Smart Pro/TCP/MVPP/TKO/SDD (Thru 2019)",
+        "notes": "Service key LXP90-P",
+        "cardNo": "Texas Instruments (4D74) 128 bit System"
+      },
+      {
+        "yearStart": 2015,
+        "yearEnd": 2017,
+        "lockApps": "All",
+        "codeRange": "50000-69999",
+        "keyBlanks": [
+          "TOY44H-PT (LAL)"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "notes": "Service Key TR47",
+        "cardNo": "Texas Instruments (4D74) 128 bit System"
+      },
+      {
+        "yearStart": 2015,
+        "yearEnd": 2017,
+        "lockApps": "All",
+        "codeRange": "50000-69999",
+        "keyBlanks": [
+          "TOY43-GTS w/ T128C Transponder (GTHT128C)"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, RW4 Plus, EZ Clone Plus",
+        "notes": "Service Key TR47",
+        "cardNo": "Texas Instruments (4D74) 128 bit System"
+      },
+      {
+        "yearStart": 2012,
+        "yearEnd": 2014,
+        "lockApps": "All",
+        "codeRange": "50000-69999",
+        "keyBlanks": [
+          "TOY44G-PT (LAL)"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "notes": "Service Key TR47",
+        "cardNo": "Texas Instruments 80 Bit Encrypted System"
+      },
+      {
+        "yearStart": 2012,
+        "yearEnd": 2014,
+        "lockApps": "All",
+        "codeRange": "50000-69999",
+        "keyBlanks": [
+          "TOY43-GTS w/ T80 Transponder (GTHT80)"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, RW4 Plus, EZ Clone Plus",
+        "notes": "Service Key TR47",
+        "cardNo": "Texas Instruments 80 Bit Encrypted System"
+      },
+      {
+        "yearStart": 2007,
+        "yearEnd": 2011,
+        "lockApps": "All",
+        "codeRange": "50000-69999",
+        "keyBlanks": [
+          "EK3-TOY43/EK3LB-TOY43*/ TOY43-GTK#"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "notes": "Service Key TR47",
+        "cardNo": "Texas Instruments (4D67) Encrypted System"
+      }
+    ],
+    "CAMRY XLE": [
+      {
+        "yearStart": 2002,
+        "yearEnd": 2003,
+        "lockApps": "All",
+        "codeRange": "50000-69999",
+        "keyBlanks": [
+          "TOY43AT4 (LAL)"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "OBP Program E or I, Smart Pro/TCP/MVPP/ TKO/SDD",
+        "notes": "Service Key TR47",
+        "cardNo": "Texas Instruments (4C) Encrypted System"
+      },
+      {
+        "yearStart": 1998,
+        "yearEnd": 2001,
+        "lockApps": "All",
+        "codeRange": "10001-15000",
+        "keyBlanks": [
+          "TOY43AT4 (LAL)"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "OBP Program E or I, Smart Pro/TCP/MVPP/ TKO/SDD",
+        "notes": "Service Key TR47",
+        "cardNo": "Texas Instruments (4C) Encrypted System"
+      }
+    ],
+    "CAMRY, CAMRY LE": [
+      {
+        "yearStart": 1998,
+        "yearEnd": 2002,
+        "lockApps": "All",
+        "codeRange": "10001-15000",
+        "keyBlanks": [
+          "TOY43AT4"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "OBP Program E or I, Smart Pro/TCP/MVPP/ TKO/SDD",
+        "notes": "Service Key TR47",
+        "cardNo": "Texas Instruments (4C) Encrypted System"
+      },
+      {
+        "yearStart": 1992,
+        "yearEnd": 1997,
+        "lockApps": "All",
+        "codeRange": "10001-15000",
+        "keyBlanks": [
+          "X217/TR47 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "X225/B80",
+        "cardNo": null
+      },
+      {
+        "yearStart": 1983,
+        "yearEnd": 1991,
+        "lockApps": "All",
+        "codeRange": "F5951-F9710",
+        "keyBlanks": [
+          "X159/TR37 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "-",
+        "cardNo": null
+      }
+    ],
+    "CELICA CONVERTIBLE": [
+      {
+        "yearStart": 1994,
+        "yearEnd": 1999,
+        "lockApps": "All",
+        "codeRange": "10001-15000",
+        "keyBlanks": [
+          "X217/TR47 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "X225/B80",
+        "cardNo": null
+      },
+      {
+        "yearStart": 1990,
+        "yearEnd": 1993,
+        "lockApps": "All",
+        "codeRange": "P1-P2000",
+        "keyBlanks": [
+          "X211/TR44 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "X174/TR40",
+        "cardNo": null
+      },
+      {
+        "yearStart": 1984,
+        "yearEnd": 1989,
+        "lockApps": "All",
+        "codeRange": "R5001-R6924",
+        "keyBlanks": [
+          "X137/TR33 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "-",
+        "cardNo": null
+      },
+      {
+        "yearStart": 1981,
+        "yearEnd": 1983,
+        "lockApps": "All",
+        "codeRange": "K1-K4570",
+        "keyBlanks": [
+          "T61C/T61C [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "X137/TR33",
+        "cardNo": null
+      }
+    ],
+    "CELICA COUPE": [
+      {
+        "yearStart": 1994,
+        "yearEnd": 2005,
+        "lockApps": "All",
+        "codeRange": "10001-15000",
+        "keyBlanks": [
+          "X217/TR47 [-P, -PC] (LAL)"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "-",
+        "cardNo": null
+      },
+      {
+        "yearStart": 1990,
+        "yearEnd": 1994,
+        "lockApps": "All",
+        "codeRange": "10001-15000",
+        "keyBlanks": [
+          "X217/TR47 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "X225/B80",
+        "cardNo": null
+      }
+    ],
+    "CELICA LIFTBACK": [
+      {
+        "yearStart": 1991,
+        "yearEnd": 1993,
+        "lockApps": "All",
+        "codeRange": "S1-S2878",
+        "keyBlanks": [
+          "X212/TR46 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "X151/TR39",
+        "cardNo": null
+      },
+      {
+        "yearStart": 1987,
+        "yearEnd": 1990,
+        "lockApps": "All",
+        "codeRange": "S1-S2878",
+        "keyBlanks": [
+          "X151/TR39"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "X212/TR46",
+        "cardNo": null
+      },
+      {
+        "yearStart": 1984,
+        "yearEnd": 1986,
+        "lockApps": "All",
+        "codeRange": "R5001-R6924",
+        "keyBlanks": [
+          "X137/TR33 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "-",
+        "cardNo": null
+      },
+      {
+        "yearStart": 1981,
+        "yearEnd": 1983,
+        "lockApps": "All",
+        "codeRange": "K1-K4570",
+        "keyBlanks": [
+          "T61C/T61C [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "X137/TR33",
+        "cardNo": null
+      }
+    ],
+    "COROLLA W/ PROX": [
+      {
+        "yearStart": 2023,
+        "yearEnd": 2023,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 8990H-02470"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "3102"
+      },
+      {
+        "yearStart": 2019,
+        "yearEnd": 2022,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 8990H-12180 or 8990H-02030"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "3102"
+      },
+      {
+        "yearStart": 2014,
+        "yearEnd": 2020,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 89904-06140 (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emerg. Key TOY48EMER",
+        "notes": null,
+        "cardNo": "3102"
+      },
+      {
+        "yearStart": 2009,
+        "yearEnd": 2011,
+        "lockApps": "All",
+        "codeRange": "40000-49999",
+        "keyBlanks": [
+          "OEM# 89904-33181"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key TR47",
+        "notes": null,
+        "cardNo": "950"
+      }
+    ],
+    "COROLLA": [
+      {
+        "yearStart": 2020,
+        "yearEnd": 2024,
+        "lockApps": "All",
+        "codeRange": "40000-49999",
+        "keyBlanks": [
+          "TOY48H-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D74)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service key LXP90-P",
+        "notes": "Texas Instruments (4D74) 128 bit System",
+        "cardNo": "950"
+      },
+      {
+        "yearStart": 2014,
+        "yearEnd": 2019,
+        "lockApps": "All",
+        "codeRange": "50000-69999",
+        "keyBlanks": [
+          "TOY44H-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D74)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key TR47",
+        "notes": "Texas Instruments (4D74) 128 bit System",
+        "cardNo": "1420"
+      },
+      {
+        "yearStart": 2014,
+        "yearEnd": 2019,
+        "lockApps": "All",
+        "codeRange": "50000-69999",
+        "keyBlanks": [
+          "TOY43-GTS w/ T128C Transponder (GTHT128C)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D74)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, EZ Clone Plus",
+        "substitutes": "Service Key TR47",
+        "notes": "Texas Instruments (4D74) 128 bit System",
+        "cardNo": "1420"
+      },
+      {
+        "yearStart": 2010,
+        "yearEnd": 2013,
+        "lockApps": "All",
+        "codeRange": "50000-69999",
+        "keyBlanks": [
+          "TOY44G-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key TR47",
+        "notes": "Texas Instruments 80 Bit Encrypted System",
+        "cardNo": "1420"
+      },
+      {
+        "yearStart": 2005,
+        "yearEnd": 2010,
+        "lockApps": "All",
+        "codeRange": "50000-69999",
+        "keyBlanks": [
+          "EK3-TOY43/EK3LB-TOY43*/ TOY43-GTK#"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D67)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "substitutes": "Service Key TR47",
+        "notes": "Texas Instruments (4D67) Encrypted System",
+        "cardNo": "1420"
+      },
+      {
+        "yearStart": 2002,
+        "yearEnd": 2004,
+        "lockApps": "All",
+        "codeRange": "50000-69999",
+        "keyBlanks": [
+          "X217/TR47 [-P, -PC] (LAL)"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "1420"
+      },
+      {
+        "yearStart": 1993,
+        "yearEnd": 2001,
+        "lockApps": "All",
+        "codeRange": "10001-15000",
+        "keyBlanks": [
+          "X217/TR47 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "X225/B80",
+        "notes": null,
+        "cardNo": "514"
+      }
+    ],
+    "COROLLA CROSS W/ PROX": [
+      {
+        "yearStart": 2022,
+        "yearEnd": 2025,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 8990H-0A010 or 8990H-0A020"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service key LXP90-P",
+        "notes": null,
+        "cardNo": "3102"
+      }
+    ],
+    "COROLLA CROSS W/ REGULAR IGNITION": [
+      {
+        "yearStart": 2022,
+        "yearEnd": 2025,
+        "lockApps": "All",
+        "codeRange": "50000-69999",
+        "keyBlanks": [
+          "TOY44H-PT"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D74)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key TR47",
+        "notes": "Texas Instruments (4D74) 128 bit System",
+        "cardNo": "1420"
+      },
+      {
+        "yearStart": 2022,
+        "yearEnd": 2025,
+        "lockApps": "All",
+        "codeRange": "50000-69999",
+        "keyBlanks": [
+          "TOY43-GTS w/ GTI-Pro"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D74)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, EZ Clone Plus",
+        "substitutes": "Service Key TR47",
+        "notes": "Texas Instruments (4D74) 128 bit System",
+        "cardNo": "1420"
+      }
+    ],
+    "COROLLA iM": [
+      {
+        "yearStart": 2017,
+        "yearEnd": 2019,
+        "lockApps": "All",
+        "codeRange": "40000-49999",
+        "keyBlanks": [
+          "TOY48H-PT"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D74)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service key LXP90-P",
+        "notes": "Texas Instruments (4D74) 128 bit System",
+        "cardNo": "950"
+      },
+      {
+        "yearStart": 2017,
+        "yearEnd": 2019,
+        "lockApps": "All",
+        "codeRange": "40000-49999",
+        "keyBlanks": [
+          "TOY40B-GTS w/ T128C Transponder (GTHT128C)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D74)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, EZ Clone Plus",
+        "substitutes": "Service key LXP90-P",
+        "notes": "Texas Instruments (4D74) 128 bit System",
+        "cardNo": "950"
+      }
+    ],
+    "COROLLA LIFTBACK": [
+      {
+        "yearStart": 1984,
+        "yearEnd": 1989,
+        "lockApps": "All",
+        "codeRange": "K1-K4570",
+        "keyBlanks": [
+          "X137/TR33 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "89"
+      }
+    ],
+    "COROLLA SEDAN, COUPE, HARDTOP": [
+      {
+        "yearStart": 1991,
+        "yearEnd": 1992,
+        "lockApps": "All",
+        "codeRange": "G1-G2377",
+        "keyBlanks": [
+          "X211/TR44 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "X174/TR40",
+        "notes": null,
+        "cardNo": "264"
+      },
+      {
+        "yearStart": 1988,
+        "yearEnd": 1990,
+        "lockApps": "All",
+        "codeRange": "G1-G2377",
+        "keyBlanks": [
+          "X174/TR40 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "X211/TR44",
+        "notes": null,
+        "cardNo": "264"
+      },
+      {
+        "yearStart": 1983,
+        "yearEnd": 1987,
+        "lockApps": "All",
+        "codeRange": "K1-K4570",
+        "keyBlanks": [
+          "X137/TR33 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "89"
+      },
+      {
+        "yearStart": 1981,
+        "yearEnd": 1982,
+        "lockApps": "All",
+        "codeRange": "K1-K4570",
+        "keyBlanks": [
+          "T61C/T61C [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "X137/TR33",
+        "notes": null,
+        "cardNo": "89"
+      }
+    ],
+    "COROLLA WAGON, COROLLA STATION WAGON 2WD": [
+      {
+        "yearStart": 1993,
+        "yearEnd": 1995,
+        "lockApps": "All",
+        "codeRange": "N1-N2000",
+        "keyBlanks": [
+          "X223/TR53 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "551"
+      },
+      {
+        "yearStart": 1988,
+        "yearEnd": 1992,
+        "lockApps": "All",
+        "codeRange": "S1-S2878",
+        "keyBlanks": [
+          "X151/TR39"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "X212/TR46",
+        "notes": null,
+        "cardNo": "197"
+      },
+      {
+        "yearStart": 1981,
+        "yearEnd": 1987,
+        "lockApps": "All",
+        "codeRange": "1001-2500",
+        "keyBlanks": [
+          "TR25/TR25"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "196"
+      }
+    ],
+    "COROLLA, FX, FX16": [
+      {
+        "yearStart": 1987,
+        "yearEnd": 1988,
+        "lockApps": "All",
+        "codeRange": "S1-S699",
+        "keyBlanks": [
+          "X146/B56"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "X137/TR33",
+        "notes": null,
+        "cardNo": "532"
+      }
+    ],
+    "CORONA": [
+      {
+        "yearStart": 1981,
+        "yearEnd": 1982,
+        "lockApps": "All",
+        "codeRange": "P7001-P8500",
+        "keyBlanks": [
+          "X37/TR28 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "X159/TR37",
+        "notes": null,
+        "cardNo": "89"
+      }
+    ],
+    "CRESSIDA": [
+      {
+        "yearStart": 1981,
+        "yearEnd": 1987,
+        "lockApps": "All",
+        "codeRange": "5001-6500",
+        "keyBlanks": [
+          "TR25/TR25"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "TR26",
+        "notes": null,
+        "cardNo": "196"
+      }
+    ],
+    "CRESSIDA SEDAN": [
+      {
+        "yearStart": 1989,
+        "yearEnd": 1992,
+        "lockApps": "All",
+        "codeRange": "X1-X2248",
+        "keyBlanks": [
+          "X174/TR40 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "X211/TR44",
+        "notes": null,
+        "cardNo": "264"
+      },
+      {
+        "yearStart": 1981,
+        "yearEnd": 1988,
+        "lockApps": "All",
+        "codeRange": "F5951-F9710",
+        "keyBlanks": [
+          "X159/TR37 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "TR28",
+        "notes": null,
+        "cardNo": "89"
+      }
+    ],
+    "CROWN": [
+      {
+        "yearStart": 2023,
+        "yearEnd": 2023,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 8990H-30190"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key TR47",
+        "notes": null,
+        "cardNo": "3102"
+      }
+    ],
+    "ECHO": [
+      {
+        "yearStart": 2003,
+        "yearEnd": 2005,
+        "lockApps": "All",
+        "codeRange": "50000-69999",
+        "keyBlanks": [
+          "X217-TR47 (LAL)"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key TR47",
+        "notes": null,
+        "cardNo": "1420"
+      },
+      {
+        "yearStart": 2000,
+        "yearEnd": 2002,
+        "lockApps": "All",
+        "codeRange": "P1-P2390",
+        "keyBlanks": [
+          "X174/TR40 [-P, -PC] (LAL)"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "264"
+      }
+    ],
+    "FJ CRUSIER": [
+      {
+        "yearStart": 2011,
+        "yearEnd": 2015,
+        "lockApps": "All",
+        "codeRange": "50000-69999",
+        "keyBlanks": [
+          "TOY44G-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key TR47",
+        "notes": "Texas Instruments 80 Bit Encrypted System",
+        "cardNo": "1420"
+      },
+      {
+        "yearStart": 2006,
+        "yearEnd": 2010,
+        "lockApps": "All",
+        "codeRange": "50000-69999",
+        "keyBlanks": [
+          "EK3-TOY43/EK3LB-TOY43*/ TOY43-GTK#"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D67)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "substitutes": "Service Key TR47",
+        "notes": "Texas Instruments (4D67) Encrypted System",
+        "cardNo": "1420"
+      }
+    ],
+    "MATRIX": [
+      {
+        "yearStart": 2011,
+        "yearEnd": 2014,
+        "lockApps": "All",
+        "codeRange": "50000-69999",
+        "keyBlanks": [
+          "TOY44G-PT (LAL)"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "notes": "Service Key TR47",
+        "cardNo": "Texas Instruments 80 Bit Encrypted System"
+      },
+      {
+        "yearStart": 2005,
+        "yearEnd": 2010,
+        "lockApps": "All",
+        "codeRange": "50000-69999",
+        "keyBlanks": [
+          "EK3-TOY43/EK3LB-TOY43*/ TOY43-GTK#"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "notes": "Service Key TR47",
+        "cardNo": "Texas Instruments (4D67) Encrypted System"
+      },
+      {
+        "yearStart": 2003,
+        "yearEnd": 2004,
+        "lockApps": "All",
+        "codeRange": "50000-69999",
+        "keyBlanks": [
+          "X217/TR47 [-P, -PC] (LAL)"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "MODELS AND YEARS NOT REFERENCED ELSEWHERE": [
+      {
+        "yearStart": 1981,
+        "yearEnd": 1982,
+        "lockApps": "All",
+        "codeRange": "3001-4500",
+        "keyBlanks": [
+          "TR25/TR25"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "TR26",
+        "cardNo": null
+      }
+    ],
+    "MR2": [
+      {
+        "yearStart": 1991,
+        "yearEnd": 1995,
+        "lockApps": "All",
+        "codeRange": "P1-P2390",
+        "keyBlanks": [
+          "X174/TR40 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "X211/TR44",
+        "cardNo": null
+      },
+      {
+        "yearStart": 1985,
+        "yearEnd": 1990,
+        "lockApps": "All",
+        "codeRange": "K1-K4570",
+        "keyBlanks": [
+          "X137/TR33 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "-",
+        "cardNo": null
+      }
+    ],
+    "MR2 SPYDER": [
+      {
+        "yearStart": 2001,
+        "yearEnd": 2005,
+        "lockApps": "All",
+        "codeRange": "P1-P2390",
+        "keyBlanks": [
+          "TOY57-PT (LAL)"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "OBP Program E or I, Smart Pro/TCP/MVPP/ TKO/SDD",
+        "notes": "Service Key TR44",
+        "cardNo": "Texas Instruments (4C) Encrypted System"
+      }
+    ],
+    "PASEO": [
+      {
+        "yearStart": 1992,
+        "yearEnd": 1998,
+        "lockApps": "All",
+        "codeRange": "S1-S2878",
+        "keyBlanks": [
+          "X212/TR46 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "X151/TR39",
+        "cardNo": null
+      }
+    ],
+    "PRIUS": [
+      {
+        "yearStart": 2023,
+        "yearEnd": 2025,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 8990H-47120"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 2021,
+        "yearEnd": 2022,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 89904-47710"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Smart Pro",
+        "notes": "Service key LXP90-P",
+        "cardNo": null
+      },
+      {
+        "yearStart": 2016,
+        "yearEnd": 2021,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 89904-47530"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Smart Pro/TCP/MVPP",
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 2009,
+        "yearEnd": 2011,
+        "lockApps": "All",
+        "codeRange": "40000-49999",
+        "keyBlanks": [
+          "OEM# 89904-47230 or 89904- 47150 (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Smart Pro",
+        "notes": "Emerg. Key TOY51-P",
+        "cardNo": null
+      },
+      {
+        "yearStart": 2004,
+        "yearEnd": 2008,
+        "lockApps": "All",
+        "codeRange": "50000-69999",
+        "keyBlanks": [
+          "EK3-TOY43/EK3LB-TOY43*/ TOY43-GTK#"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "notes": "Service Key TR47",
+        "cardNo": "Texas Instruments (4D67) Encrypted System"
+      },
+      {
+        "yearStart": 2001,
+        "yearEnd": 2003,
+        "lockApps": "All",
+        "codeRange": "10001-15000",
+        "keyBlanks": [
+          "TOY43AT4 (LAL)"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "OBP Program E or I",
+        "notes": "Service Key TR47",
+        "cardNo": "Texas Instruments (4C) Encrypted System"
+      }
+    ],
+    "PRIUS C W/ PROX": [
+      {
+        "yearStart": 2012,
+        "yearEnd": 2018,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 89904-52290 (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Smart Pro/TCP/MVPP",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "PRIUS C W/ REGULAR IGNITION": [
+      {
+        "yearStart": 2015,
+        "yearEnd": 2019,
+        "lockApps": "All",
+        "codeRange": "50000-69999",
+        "keyBlanks": [
+          "TOY44H-PT (LAL)"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Smart Pro/TCP/MVPP",
+        "notes": "Service Key TR47",
+        "cardNo": "Texas Instruments (4D74) 128 Bit Encrypted System"
+      },
+      {
+        "yearStart": 2015,
+        "yearEnd": 2019,
+        "lockApps": "All",
+        "codeRange": "50000-69999",
+        "keyBlanks": [
+          "TOY43-GTS w/ T128C Transponder (GTHT128C)"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, RW4 Plus, EZ Clone Plus",
+        "notes": "Service Key TR47",
+        "cardNo": "Texas Instruments (4D74) 128 bit System"
+      },
+      {
+        "yearStart": 2012,
+        "yearEnd": 2014,
+        "lockApps": "All",
+        "codeRange": "50000-69999",
+        "keyBlanks": [
+          "TOY44G-PT (LAL)"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "notes": "Service Key TR47",
+        "cardNo": "Texas Instruments 80 Bit Encrypted System"
+      }
+    ],
+    "SOLARA": [
+      {
+        "yearStart": 2004,
+        "yearEnd": 2010,
+        "lockApps": "All",
+        "codeRange": "50000-69999",
+        "keyBlanks": [
+          "EK3-TOY43/EK3LB-TOY43*/ TOY43-GTK#"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "notes": "Service Key TR47",
+        "cardNo": "Texas Instruments (4D67) Encrypted System"
+      }
+    ],
+    "SOLARA SE": [
+      {
+        "yearStart": 2002,
+        "yearEnd": 2003,
+        "lockApps": "All",
+        "codeRange": "50000-69999",
+        "keyBlanks": [
+          "TOY43AT4"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "OBP Program E, Smart Pro/TCP/MVPP/TKO/ SDD",
+        "notes": "Service Key TR47",
+        "cardNo": "Texas Instruments (4C) Encrypted System"
+      },
+      {
+        "yearStart": 1999,
+        "yearEnd": 2001,
+        "lockApps": "All",
+        "codeRange": "10001-15000",
+        "keyBlanks": [
+          "X217/TR47 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "-",
+        "cardNo": null
+      }
+    ],
+    "SOLARA SLE": [
+      {
+        "yearStart": 2004,
+        "yearEnd": 2008,
+        "lockApps": "All",
+        "codeRange": "50000-69999",
+        "keyBlanks": [
+          "EK3-TOY43/EK3LB-TOY43*/ TOY43-GTK#"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D67)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "substitutes": "Service Key TR47",
+        "notes": "Texas Instruments (4D67) Encrypted System",
+        "cardNo": "1420"
+      },
+      {
+        "yearStart": 1999,
+        "yearEnd": 2003,
+        "lockApps": "All",
+        "codeRange": "10001-15000",
+        "keyBlanks": [
+          "EK3-TOY43/EK3LB-TOY43*/ TOY43-GTK#"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4C)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "substitutes": "Service Key TR47",
+        "notes": "Texas Instruments (4C) Encrypted System",
+        "cardNo": "514"
+      }
+    ],
+    "SUPRA": [
+      {
+        "yearStart": 1993,
+        "yearEnd": 1999,
+        "lockApps": "All",
+        "codeRange": "10001-15000",
+        "keyBlanks": [
+          "X217/TR47 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "X225/B80",
+        "notes": null,
+        "cardNo": "514"
+      },
+      {
+        "yearStart": 1990,
+        "yearEnd": 1992,
+        "lockApps": "All",
+        "codeRange": "X1-X2248",
+        "keyBlanks": [
+          "X211/TR44 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "X174/TR40",
+        "notes": null,
+        "cardNo": "264"
+      },
+      {
+        "yearStart": 1985,
+        "yearEnd": 1989,
+        "lockApps": "All",
+        "codeRange": "R5001-R6924",
+        "keyBlanks": [
+          "X137/TR33 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "89"
+      }
+    ],
+    "TERCEL LIFTBACK": [
+      {
+        "yearStart": 1988,
+        "yearEnd": 1990,
+        "lockApps": "All",
+        "codeRange": "S1-S2878",
+        "keyBlanks": [
+          "X151/TR39"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "X212/TR46",
+        "notes": null,
+        "cardNo": "197"
+      },
+      {
+        "yearStart": 1983,
+        "yearEnd": 1987,
+        "lockApps": "All",
+        "codeRange": "R5001-R6924",
+        "keyBlanks": [
+          "X137/TR33 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "89"
+      },
+      {
+        "yearStart": 1981,
+        "yearEnd": 1982,
+        "lockApps": "All",
+        "codeRange": "R5001-R6924",
+        "keyBlanks": [
+          "T61C/T61C [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "X137/TR33",
+        "notes": null,
+        "cardNo": "89"
+      }
+    ],
+    "TERCEL, TERCEL SEDAN, STATION WAGON": [
+      {
+        "yearStart": 1991,
+        "yearEnd": 1998,
+        "lockApps": "All",
+        "codeRange": "S1-S2878",
+        "keyBlanks": [
+          "X212/TR46 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "X151/TR39",
+        "notes": null,
+        "cardNo": "264"
+      },
+      {
+        "yearStart": 1983,
+        "yearEnd": 1990,
+        "lockApps": "All",
+        "codeRange": "R5001-R6924",
+        "keyBlanks": [
+          "X137/TR33 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "89"
+      },
+      {
+        "yearStart": 1981,
+        "yearEnd": 1982,
+        "lockApps": "All",
+        "codeRange": "R5001-R6924",
+        "keyBlanks": [
+          "T61C/T61C [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "X137/TR33",
+        "notes": null,
+        "cardNo": "89"
+      }
+    ],
+    "VENZA W/ PROX": [
+      {
+        "yearStart": 2021,
+        "yearEnd": 2023,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 8990H-48050"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "3102"
+      },
+      {
+        "yearStart": 2010,
+        "yearEnd": 2015,
+        "lockApps": "All",
+        "codeRange": "40000-49999",
+        "keyBlanks": [
+          "OEM# 89904-0T050 or 89904- 0T060 (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emerg. Key TOY51-P",
+        "notes": null,
+        "cardNo": "950"
+      },
+      {
+        "yearStart": 2009,
+        "yearEnd": 2010,
+        "lockApps": "All",
+        "codeRange": "40000-49999",
+        "keyBlanks": [
+          "OEM# 89904-0T010 or 89904- 0T020"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emerg. Key TOY51-P",
+        "notes": null,
+        "cardNo": "950"
+      }
+    ],
+    "VENZA W/ REGULAR IGNITION": [
+      {
+        "yearStart": 2010,
+        "yearEnd": 2015,
+        "lockApps": "All",
+        "codeRange": "50000-69999",
+        "keyBlanks": [
+          "TOY44G-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key TR47",
+        "notes": "Texas Instruments 80 Bit Encrypted System",
+        "cardNo": "1420"
+      },
+      {
+        "yearStart": 2010,
+        "yearEnd": 2015,
+        "lockApps": "All",
+        "codeRange": "50000-69999",
+        "keyBlanks": [
+          "TOY43-GTS w/ T80 Transponder (GTHT80)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, EZ Clone Plus",
+        "substitutes": "Service Key TR47",
+        "notes": "Texas Instruments 80 Bit Encrypted System",
+        "cardNo": "1420"
+      },
+      {
+        "yearStart": 2009,
+        "yearEnd": 2010,
+        "lockApps": "All",
+        "codeRange": "50000-69999",
+        "keyBlanks": [
+          "EK3-TOY43/EK3LB-TOY43*/ TOY43-GTK#"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D67)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "substitutes": "Service Key TR47",
+        "notes": "Texas Instruments (4D67) Encrypted System",
+        "cardNo": "1420"
+      }
+    ],
+    "YARIS W/ PROX": [
+      {
+        "yearStart": 2017,
+        "yearEnd": 2020,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "OEM# 89904-WB001"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key X249/MZ31",
+        "notes": null,
+        "cardNo": "288"
+      }
+    ],
+    "YARIS": [
+      {
+        "yearStart": 2015,
+        "yearEnd": 2018,
+        "lockApps": "All",
+        "codeRange": "50000-69999",
+        "keyBlanks": [
+          "TOY44H-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D74)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key TR47",
+        "notes": "Texas Instruments (4D74) 128 bit System",
+        "cardNo": "1420"
+      },
+      {
+        "yearStart": 2015,
+        "yearEnd": 2018,
+        "lockApps": "All",
+        "codeRange": "50000-69999",
+        "keyBlanks": [
+          "TOY43-GTS w/ T128C Transponder (GTHT128C)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D74)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, EZ Clone Plus",
+        "substitutes": "Service Key TR47",
+        "notes": "Texas Instruments (4D74) 128 bit System",
+        "cardNo": "1420"
+      },
+      {
+        "yearStart": 2012,
+        "yearEnd": 2014,
+        "lockApps": "All",
+        "codeRange": "50000-69999",
+        "keyBlanks": [
+          "TOY44G-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key TR47",
+        "notes": "Texas Instruments 80 Bit Encrypted System",
+        "cardNo": "1420"
+      },
+      {
+        "yearStart": 2012,
+        "yearEnd": 2014,
+        "lockApps": "All",
+        "codeRange": "50000-69999",
+        "keyBlanks": [
+          "TOY43-GTS w/ T80 Transponder (GTHT80)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, EZ Clone Plus",
+        "substitutes": "Service Key TR47",
+        "notes": "Texas Instruments 80 Bit Encrypted System",
+        "cardNo": "1420"
+      },
+      {
+        "yearStart": 2007,
+        "yearEnd": 2011,
+        "lockApps": "All",
+        "codeRange": "50000-69999",
+        "keyBlanks": [
+          "EK3-TOY43/EK3LB-TOY43*/ TOY43-GTK#"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D67)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "substitutes": "Service Key TR47",
+        "notes": "Texas Instruments (4D67) Encrypted System",
+        "cardNo": "1420"
+      },
+      {
+        "yearStart": 2007,
+        "yearEnd": 2018,
+        "lockApps": "All",
+        "codeRange": "50000-69999",
+        "keyBlanks": [
+          "X217/TR47 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "1420"
+      }
+    ],
+    "YARIS IA": [
+      {
+        "yearStart": 2017,
+        "yearEnd": 2018,
+        "lockApps": "All",
+        "codeRange": "10100-12283",
+        "keyBlanks": [
+          "OEM# DD1B-67-5RY or 89904-WB003"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "288"
+      }
+    ]
+  }
+}

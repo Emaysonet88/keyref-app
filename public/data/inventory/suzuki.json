@@ -1,0 +1,361 @@
+{
+  "Suzuki": {
+    "EQUATOR": [
+      {
+        "yearStart": 2009,
+        "yearEnd": 2012,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "NI04T (LAL)"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "notes": "Service Key DA34",
+        "cardNo": "Philips (46) Encrypted System"
+      }
+    ],
+    "ESTEEM": [
+      {
+        "yearStart": 1995,
+        "yearEnd": 2002,
+        "lockApps": "All",
+        "codeRange": "U1-U2000",
+        "keyBlanks": [
+          "X185/SUZ15 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "X184/B65",
+        "cardNo": null
+      }
+    ],
+    "FORENZA": [
+      {
+        "yearStart": 2004,
+        "yearEnd": 2008,
+        "lockApps": "All",
+        "codeRange": "J1-J1200",
+        "keyBlanks": [
+          "DW04RAP"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "-",
+        "cardNo": null
+      }
+    ],
+    "KIZASHI": [
+      {
+        "yearStart": 2011,
+        "yearEnd": 2013,
+        "lockApps": "All",
+        "codeRange": "50001-51308",
+        "keyBlanks": [
+          "Smart Pass Prox 37172-57L20"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Smart Pro/TCP/MVPP",
+        "notes": "SUZ20-P",
+        "cardNo": "Philips Crypto Transponder key"
+      }
+    ],
+    "RENO": [
+      {
+        "yearStart": 2005,
+        "yearEnd": 2008,
+        "lockApps": "All",
+        "codeRange": "J1-J1200",
+        "keyBlanks": [
+          "DW04RAP"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "-",
+        "cardNo": null
+      }
+    ],
+    "SAMURAI": [
+      {
+        "yearStart": 1986,
+        "yearEnd": 1995,
+        "lockApps": "All",
+        "codeRange": "U3001-U4000",
+        "keyBlanks": [
+          "X121/DC3 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "-",
+        "cardNo": null
+      }
+    ],
+    "SIDEKICK": [
+      {
+        "yearStart": 1989,
+        "yearEnd": 2002,
+        "lockApps": "All",
+        "codeRange": "18100-19299",
+        "keyBlanks": [
+          "X186/SUZ17 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "X180/B69",
+        "cardNo": null
+      }
+    ],
+    "SWIFT": [
+      {
+        "yearStart": 1998,
+        "yearEnd": 2002,
+        "lockApps": "All",
+        "codeRange": "18100-19299",
+        "keyBlanks": [
+          "X186/SUZ17 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "X180/B69",
+        "cardNo": null
+      },
+      {
+        "yearStart": 1989,
+        "yearEnd": 1997,
+        "lockApps": "All",
+        "codeRange": "U1-U2000",
+        "keyBlanks": [
+          "X185/SUZ15 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "X184/B65",
+        "cardNo": null
+      }
+    ],
+    "SX4": [
+      {
+        "yearStart": 2006,
+        "yearEnd": 2013,
+        "lockApps": "All",
+        "codeRange": "18100-19299",
+        "keyBlanks": [
+          "SUZ20-P"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "SX4 W/ PROX (CANADA)": [
+      {
+        "yearStart": 2007,
+        "yearEnd": 2011,
+        "lockApps": "All",
+        "codeRange": "50001-51308",
+        "keyBlanks": [
+          "OEM# 37145-57J10"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Smart Pro/TCP/MVPP (07-09)",
+        "notes": null,
+        "cardNo": "Philips (46) Encrypted System"
+      }
+    ],
+    "VERONA": [
+      {
+        "yearStart": 2004,
+        "yearEnd": 2007,
+        "lockApps": "All",
+        "codeRange": "V2200-V4000",
+        "keyBlanks": [
+          "DW05AP"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "-",
+        "cardNo": null
+      }
+    ],
+    "VITARA, GRAND VITARA W/ SMART PASS": [
+      {
+        "yearStart": 2010,
+        "yearEnd": 2013,
+        "lockApps": "All",
+        "codeRange": "50001-51308",
+        "keyBlanks": [
+          "Smart Pass Prox FOB"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "SUZ20-P",
+        "notes": null,
+        "cardNo": "1411"
+      }
+    ],
+    "VITARA, GRAND VITARA": [
+      {
+        "yearStart": 1999,
+        "yearEnd": 2010,
+        "lockApps": "All",
+        "codeRange": "18100-19299",
+        "keyBlanks": [
+          "SUZ20-P"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "X180/B69",
+        "notes": null,
+        "cardNo": "288"
+      }
+    ],
+    "X90": [
+      {
+        "yearStart": 1996,
+        "yearEnd": 1998,
+        "lockApps": "All",
+        "codeRange": "18100-19299",
+        "keyBlanks": [
+          "X186/SUZ17 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "X180/B69",
+        "notes": null,
+        "cardNo": "288"
+      }
+    ],
+    "XL-7": [
+      {
+        "yearStart": 2007,
+        "yearEnd": 2009,
+        "lockApps": "All",
+        "codeRange": "G0000-G3631",
+        "keyBlanks": [
+          "B111-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips (46)",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program A or G, Smart Pro/TCP/MVPP/ TKO/SDD",
+        "programmingProcedure": [
+          "A",
+          "G"
+        ],
+        "cloningMethod": null,
+        "substitutes": "Service Key B106-P",
+        "notes": "Circle +, Philips (46) Encrypted System",
+        "cardNo": "2020"
+      },
+      {
+        "yearStart": 2003,
+        "yearEnd": 2006,
+        "lockApps": "All",
+        "codeRange": "25001-26200",
+        "keyBlanks": [
+          "X225/B80 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "X217/TR47 [-P, -PC]",
+        "notes": "Card 514 is the reverse bitting of Card 1552",
+        "cardNo": "1552/514"
+      },
+      {
+        "yearStart": 2001,
+        "yearEnd": 2002,
+        "lockApps": "All",
+        "codeRange": "18100-19299",
+        "keyBlanks": [
+          "X186/SUZ17 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "X180/B69",
+        "notes": null,
+        "cardNo": "288"
+      }
+    ]
+  }
+}

@@ -1,0 +1,87 @@
+/* KeyRef Pro — global styles + theme tokens
+   App still uses inline-style objects for layout (it's a single-screen tool
+   with a lot of conditional rendering), but all *theme tokens* now live as
+   CSS variables. Switching themes flips a single attribute on <html>, and
+   future @media print rules can override any token without !important. */
+
+/* ── Theme tokens ─────────────────────────────────────────────────────────── */
+:root,
+:root[data-theme="dark"] {
+  --bg:           #0d0d0d;
+  --panel:        #161616;
+  --border:       #2a2a2a;
+  --border-strong:#3a3a3a;
+  --text:         #e8e8e8;
+  --mute:         #787878;
+  --input:        #0d0d0d;
+  --mute-val:     #4a4a4a;
+  --notes-bg:     #0d0d0d;
+  --header-bg:    #1e1e1e;
+  --logo:         #e8e8e8;
+}
+
+:root[data-theme="light"] {
+  --bg:           #f5f0e8;
+  --panel:        #ffffff;
+  --border:       #ddd;
+  --border-strong:#bbb;
+  --text:         #1a1a1a;
+  --mute:         #555;
+  --input:        #ffffff;
+  --mute-val:     #888;
+  --notes-bg:     #f5f0e8;
+  --header-bg:    #f5f0e8;
+  --logo:         #1a1a1a;
+}
+
+/* Accent + semantic colors don't change between themes. */
+:root {
+  --accent:       #f5a623;
+  --accent-rim:   #c47d0e;
+  --accent-tint:  rgba(245, 166, 35, 0.12);
+  --accent-tint2: rgba(245, 166, 35, 0.30);
+  --accent-tint3: rgba(245, 166, 35, 0.08);
+  --ok:           #52e0a0;
+  --ok-tint:      rgba(82, 224, 160, 0.08);
+  --err:          #e05252;
+  --err-tint:     rgba(224, 82, 82, 0.08);
+  --warn:         #e0a052;
+}
+
+/* ── Reset ────────────────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  min-height: 100vh;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+}
+#root { min-height: 100vh; }
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] { -moz-appearance: textfield; }
+
+select { background-image: none; }
+
+button:focus-visible,
+select:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+html { scroll-behavior: smooth; }
+
+/* ── Animations ───────────────────────────────────────────────────────────── */
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

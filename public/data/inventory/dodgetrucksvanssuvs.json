@@ -1,0 +1,1108 @@
+{
+  "Dodge Trucks, Vans,suvs": {
+    "CARAVAN & GRAND CARAVAN": [
+      {
+        "yearStart": 2008,
+        "yearEnd": 2020,
+        "lockApps": "All",
+        "codeRange": "M1-M2618",
+        "keyBlanks": [
+          "Dealer FOB/Y170-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips (46)",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program F, Smart Pro/TCP/MVPP/TKO/ SDD",
+        "programmingProcedure": [
+          "F"
+        ],
+        "cloningMethod": null,
+        "substitutes": "Service Key Y159/ Emerg. Key Y171-P",
+        "notes": "Philips (46) Encrypted System",
+        "cardNo": "745"
+      },
+      {
+        "yearStart": 2004,
+        "yearEnd": 2007,
+        "lockApps": "All",
+        "codeRange": "M1-M2618",
+        "keyBlanks": [
+          "Y164-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips (46)",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program F, Smart Pro/TCP/MVPP/TKO/ SDD",
+        "programmingProcedure": [
+          "F"
+        ],
+        "cloningMethod": null,
+        "substitutes": "Service Key Y159",
+        "notes": "Philips (46) Encrypted System",
+        "cardNo": "745"
+      },
+      {
+        "yearStart": 2001,
+        "yearEnd": 2003,
+        "lockApps": "All",
+        "codeRange": "M1-M2618",
+        "keyBlanks": [
+          "P1795/Y159 [-P]"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Y155/Y157",
+        "notes": "Optional Texas Instruments Read/Write system",
+        "cardNo": "745"
+      },
+      {
+        "yearStart": 1998,
+        "yearEnd": 2000,
+        "lockApps": "All",
+        "codeRange": "M1-M2618",
+        "keyBlanks": [
+          "P1795/Y159 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Y157",
+        "notes": null,
+        "cardNo": "745"
+      },
+      {
+        "yearStart": 1996,
+        "yearEnd": 1997,
+        "lockApps": "All",
+        "codeRange": "L1-L3580",
+        "keyBlanks": [
+          "P1795/Y159 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Y157",
+        "notes": null,
+        "cardNo": "537"
+      },
+      {
+        "yearStart": 1995,
+        "yearEnd": 1995,
+        "lockApps": "All",
+        "codeRange": "L1-L3580",
+        "keyBlanks": [
+          "P1794/Y157 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "P1795/Y159",
+        "notes": null,
+        "cardNo": "537"
+      },
+      {
+        "yearStart": 1994,
+        "yearEnd": 1994,
+        "lockApps": "All",
+        "codeRange": "L1-L3580",
+        "keyBlanks": [
+          "P1794/Y157 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "P1795/Y159",
+        "notes": null,
+        "cardNo": "537"
+      },
+      {
+        "yearStart": 1993,
+        "yearEnd": 1993,
+        "lockApps": "All",
+        "codeRange": "J1-J3580",
+        "keyBlanks": [
+          "P1793/Y155 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "537"
+      },
+      {
+        "yearStart": 1991,
+        "yearEnd": 1991,
+        "lockApps": "All",
+        "codeRange": "G1-G1394",
+        "keyBlanks": [
+          "P1789/Y154 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "287"
+      },
+      {
+        "yearStart": 1987,
+        "yearEnd": 1990,
+        "lockApps": "GB",
+        "codeRange": "ES1-ES3000",
+        "keyBlanks": [
+          "S1770U/Y149"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "139"
+      },
+      {
+        "yearStart": 1984,
+        "yearEnd": 1986,
+        "lockApps": "GB",
+        "codeRange": "ES1-ES3000",
+        "keyBlanks": [
+          "S1770U/Y149"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "139"
+      }
+    ],
+    "DAKOTA": [
+      {
+        "yearStart": 2001,
+        "yearEnd": 2004,
+        "lockApps": "All",
+        "codeRange": "M1-M2618",
+        "keyBlanks": [
+          "P1795/Y159 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "745"
+      },
+      {
+        "yearStart": 2001,
+        "yearEnd": 2004,
+        "lockApps": "ALL",
+        "codeRange": "M1-M2618",
+        "keyBlanks": [
+          "EK3-Y160/EK3LB-Y160*/ Y160-GTK#"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D64)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "substitutes": "Service Key Y159",
+        "notes": "Texas Instruments (4D64) Encrypted System",
+        "cardNo": "745"
+      }
+    ],
+    "DAKOTA CLUB/ QUAD CABS SLT, ST, LARAMIE": [
+      {
+        "yearStart": 2005,
+        "yearEnd": 2012,
+        "lockApps": "All",
+        "codeRange": "M1-M2618",
+        "keyBlanks": [
+          "Y164-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips (46)",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program F, Smart Pro/TCP/MVPP/TKO/ SDD",
+        "programmingProcedure": [
+          "F"
+        ],
+        "cloningMethod": null,
+        "substitutes": "Service Key Y159",
+        "notes": "Philips (46) Encrypted System",
+        "cardNo": "745"
+      }
+    ],
+    "DURANGO": [
+      {
+        "yearStart": 2015,
+        "yearEnd": 2024,
+        "lockApps": "All",
+        "codeRange": "M1-M2618",
+        "keyBlanks": [
+          "OEM# 68066349AG / 68066350AG / 68150061AC (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "PCF7945A",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emerg. Key Y172",
+        "notes": "Philips PCF7945A",
+        "cardNo": null
+      },
+      {
+        "yearStart": 2011,
+        "yearEnd": 2015,
+        "lockApps": "All",
+        "codeRange": "M1-M2618",
+        "keyBlanks": [
+          "Dealer FOB/Y170-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips (46)",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program F, Smart Pro/TCP/MVPP/TKO/ SDD",
+        "programmingProcedure": [
+          "F"
+        ],
+        "cloningMethod": null,
+        "substitutes": "Service Key Y159/ Emerg. Key Y171-P",
+        "notes": "Philips (46) Encrypted System",
+        "cardNo": null
+      },
+      {
+        "yearStart": 2005,
+        "yearEnd": 2008,
+        "lockApps": "All",
+        "codeRange": "M1-M2618",
+        "keyBlanks": [
+          "Y164-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips (46)",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program F, Smart Pro/TCP/MVPP/TKO/ SDD",
+        "programmingProcedure": [
+          "F"
+        ],
+        "cloningMethod": null,
+        "substitutes": "Service Key Y159",
+        "notes": "Philips (46) Encrypted System",
+        "cardNo": null
+      },
+      {
+        "yearStart": 2004,
+        "yearEnd": 2004,
+        "lockApps": "All",
+        "codeRange": "M1-M2618",
+        "keyBlanks": [
+          "OEM # 05175786AA (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program F, Smart Pro/TCP/MVPP/TKO/ SDD",
+        "programmingProcedure": [
+          "F"
+        ],
+        "cloningMethod": null,
+        "substitutes": "Service Key Y159",
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 2001,
+        "yearEnd": 2006,
+        "lockApps": "All",
+        "codeRange": "M1-M2618",
+        "keyBlanks": [
+          "P1795/Y159 [-P]"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": "Optional Texas Instruments Read/Write system",
+        "cardNo": null
+      },
+      {
+        "yearStart": 1998,
+        "yearEnd": 2000,
+        "lockApps": "All",
+        "codeRange": "M1-M2618",
+        "keyBlanks": [
+          "P1794/Y157 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "P1795/Y159",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "PICKUP TRUCKS, RAM & DAKOTA (U.S. MADE)": [
+      {
+        "yearStart": 2006,
+        "yearEnd": 2008,
+        "lockApps": "All",
+        "codeRange": "M1-M2618",
+        "keyBlanks": [
+          "Y164-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips (46)",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program F, Smart Pro/TCP/MVPP/TKO/ SDD",
+        "programmingProcedure": [
+          "F"
+        ],
+        "cloningMethod": null,
+        "substitutes": "Service Key Y159",
+        "notes": "Philips (46) Encrypted System",
+        "cardNo": null
+      },
+      {
+        "yearStart": 1998,
+        "yearEnd": 2005,
+        "lockApps": "All",
+        "codeRange": "M1-M2618",
+        "keyBlanks": [
+          "P1794/Y157 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "P1795/Y159",
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 1995,
+        "yearEnd": 1997,
+        "lockApps": "All",
+        "codeRange": "L1-L3580",
+        "keyBlanks": [
+          "P1794/Y157 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "P1795/Y159",
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 1994,
+        "yearEnd": 1994,
+        "lockApps": "All",
+        "codeRange": "L1-L3580",
+        "keyBlanks": [
+          "P1794/Y157 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "P1795/Y159",
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 1993,
+        "yearEnd": 1993,
+        "lockApps": "All",
+        "codeRange": "J1-J3580",
+        "keyBlanks": [
+          "P1793/Y155 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 1992,
+        "yearEnd": 1992,
+        "lockApps": "All",
+        "codeRange": "G1-G1394",
+        "keyBlanks": [
+          "P1789/Y154 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 1990,
+        "yearEnd": 1991,
+        "lockApps": "All",
+        "codeRange": "G1-G1394",
+        "keyBlanks": [
+          "P1789/Y154 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 1986,
+        "yearEnd": 1989,
+        "lockApps": "GB",
+        "codeRange": "ES1-ES3000",
+        "keyBlanks": [
+          "S1770U/Y149"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "PROMASTER": [
+      {
+        "yearStart": 2014,
+        "yearEnd": 2021,
+        "lockApps": "All",
+        "codeRange": "DE1-DE11210",
+        "keyBlanks": [
+          "OEM# 68224014AA or 68224015AA (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Philips (46)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "SIP22KP",
+        "notes": "Philips (46) Encrypted System",
+        "cardNo": null
+      }
+    ],
+    "PROMASTER CITY": [
+      {
+        "yearStart": 2015,
+        "yearEnd": 2021,
+        "lockApps": "All",
+        "codeRange": "DE1-DE11210",
+        "keyBlanks": [
+          "SIP22MH (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips (46)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "substitutes": "SIP22KP",
+        "notes": "Philips (46) Encrypted System",
+        "cardNo": null
+      }
+    ],
+    "RAIDER": [
+      {
+        "yearStart": 1987,
+        "yearEnd": 1990,
+        "lockApps": "All",
+        "codeRange": "H0001-H5143",
+        "keyBlanks": [
+          "X121/DC3 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "RAM 1500/2500/3500": [
+      {
+        "yearStart": 2009,
+        "yearEnd": 2018,
+        "lockApps": "All",
+        "codeRange": "M1-M2618",
+        "keyBlanks": [
+          "Dealer FOB/Y170-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips (46)",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program F, Smart Pro/TCP/MVPP/TKO/ SDD",
+        "programmingProcedure": [
+          "F"
+        ],
+        "cloningMethod": null,
+        "substitutes": "Service Key Y159/ Emerg. Key Y171-P",
+        "notes": "Philips (46) Encrypted System",
+        "cardNo": null
+      }
+    ],
+    "RAM 1500": [
+      {
+        "yearStart": 2019,
+        "yearEnd": 2024,
+        "lockApps": "All",
+        "codeRange": "M1-M2618",
+        "keyBlanks": [
+          "OEM# 68584152AA/68584153 AA/68584154AA/68584163AA"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key Y159",
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 2019,
+        "yearEnd": 2021,
+        "lockApps": "All",
+        "codeRange": "M1-M2618",
+        "keyBlanks": [
+          "OEM# 68291689AD/68442906 AB/68442907AB (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 2002,
+        "yearEnd": 2005,
+        "lockApps": "All",
+        "codeRange": "M1-M2618",
+        "keyBlanks": [
+          "EK3-Y160/EK3LB-Y160*/ Y160-GTK#"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D64)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "substitutes": "Service Key Y159",
+        "notes": "Texas Instruments (4D64) Encrypted System",
+        "cardNo": null
+      }
+    ],
+    "RAM 1500 SPORT, TRX4,ST, LARAMIE": [
+      {
+        "yearStart": 2006,
+        "yearEnd": 2008,
+        "lockApps": "All",
+        "codeRange": "M1-M2618",
+        "keyBlanks": [
+          "P1795/Y159 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Y157",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "RAM 2500": [
+      {
+        "yearStart": 2002,
+        "yearEnd": 2005,
+        "lockApps": "All",
+        "codeRange": "M1-M2618",
+        "keyBlanks": [
+          "EK3-Y160/EK3LB-Y160*/ Y160-GTK#"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D64)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "substitutes": "Service Key Y159",
+        "notes": "Texas Instruments (4D64) Encrypted System",
+        "cardNo": null
+      }
+    ],
+    "RAM 2500 ST, SPORT, LARAMIE, POWER WAGON, SLT, TRX4": [
+      {
+        "yearStart": 2006,
+        "yearEnd": 2010,
+        "lockApps": "All",
+        "codeRange": "M1-M2618",
+        "keyBlanks": [
+          "Y164-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips (46)",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program F, Smart Pro/TCP/MVPP/TKO/ SDD",
+        "programmingProcedure": [
+          "F"
+        ],
+        "cloningMethod": null,
+        "substitutes": "Service Key Y159",
+        "notes": "Philips (46) Encrypted System",
+        "cardNo": null
+      },
+      {
+        "yearStart": 2006,
+        "yearEnd": 2008,
+        "lockApps": "All",
+        "codeRange": "M1-M2618",
+        "keyBlanks": [
+          "P1795/Y159 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Y157",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "RAM 3500": [
+      {
+        "yearStart": 2002,
+        "yearEnd": 2005,
+        "lockApps": "All",
+        "codeRange": "M1-M2618",
+        "keyBlanks": [
+          "EK3-Y160/EK3LB-Y160*/ Y160-GTK#"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D64)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "substitutes": "Service Key Y159",
+        "notes": "Texas Instruments (4D64) Encrypted System",
+        "cardNo": null
+      }
+    ],
+    "RAM 3500 SPORT, LARAMIE, ST, SLT": [
+      {
+        "yearStart": 2006,
+        "yearEnd": 2010,
+        "lockApps": "All",
+        "codeRange": "M1-M2618",
+        "keyBlanks": [
+          "Y164-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips (46)",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program F, Smart Pro/TCP/MVPP/TKO/ SDD",
+        "programmingProcedure": [
+          "F"
+        ],
+        "cloningMethod": null,
+        "substitutes": "Service Key Y159",
+        "notes": "Philips (46) Encrypted System",
+        "cardNo": null
+      }
+    ],
+    "RAM CHARGER": [
+      {
+        "yearStart": 1993,
+        "yearEnd": 1993,
+        "lockApps": "All",
+        "codeRange": "J1-J3580",
+        "keyBlanks": [
+          "P1793/Y155 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 1992,
+        "yearEnd": 1992,
+        "lockApps": "All",
+        "codeRange": "G1-G1394",
+        "keyBlanks": [
+          "P1789/Y154 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 1991,
+        "yearEnd": 1991,
+        "lockApps": "All",
+        "codeRange": "G1-G1394",
+        "keyBlanks": [
+          "P1789/Y154 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 1990,
+        "yearEnd": 1990,
+        "lockApps": "Ignition/ Door",
+        "codeRange": "G1-G1394",
+        "keyBlanks": [
+          "P1789/Y154 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 1986,
+        "yearEnd": 1989,
+        "lockApps": "Ignition/ Door",
+        "codeRange": "EP1-EP3000",
+        "keyBlanks": [
+          "P1786/Y153 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Y152",
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 1981,
+        "yearEnd": 1985,
+        "lockApps": "Ignition/ Door",
+        "codeRange": "EP1-EP3000",
+        "keyBlanks": [
+          "P1770U/Y152 [-PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "RAM/QUAD CAB": [
+      {
+        "yearStart": 2001,
+        "yearEnd": 2005,
+        "lockApps": "All",
+        "codeRange": "M1-M2618",
+        "keyBlanks": [
+          "P1795/Y159 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "RAM/QUAD CAB, SRT 10": [
+      {
+        "yearStart": 2006,
+        "yearEnd": 2008,
+        "lockApps": "All",
+        "codeRange": "M1-M2618",
+        "keyBlanks": [
+          "Y164-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips (46)",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program F, Smart Pro/TCP/MVPP/TKO/ SDD",
+        "programmingProcedure": [
+          "F"
+        ],
+        "cloningMethod": null,
+        "substitutes": "Service Key Y159",
+        "notes": "Philips (46) Encrypted System",
+        "cardNo": null
+      }
+    ],
+    "VANS (FULL SIZE)": [
+      {
+        "yearStart": 2001,
+        "yearEnd": 2004,
+        "lockApps": "All",
+        "codeRange": "M1-M2618 P",
+        "keyBlanks": [
+          "1795/Y159 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Y157",
+        "notes": null,
+        "cardNo": "745"
+      },
+      {
+        "yearStart": 1998,
+        "yearEnd": 2000,
+        "lockApps": "All",
+        "codeRange": "M1-M2618 P",
+        "keyBlanks": [
+          "1794/Y157 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "P1795/Y159",
+        "notes": null,
+        "cardNo": "745"
+      },
+      {
+        "yearStart": 1995,
+        "yearEnd": 1997,
+        "lockApps": "All",
+        "codeRange": "L1-L3580 P",
+        "keyBlanks": [
+          "1794/Y157 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "P1795/Y159",
+        "notes": null,
+        "cardNo": "537"
+      },
+      {
+        "yearStart": 1994,
+        "yearEnd": 1994,
+        "lockApps": "All",
+        "codeRange": "L1-L3580 P",
+        "keyBlanks": [
+          "1794/Y157 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "P1795/Y159",
+        "notes": null,
+        "cardNo": "537"
+      },
+      {
+        "yearStart": 1993,
+        "yearEnd": 1993,
+        "lockApps": "All",
+        "codeRange": "J1-J3580 P",
+        "keyBlanks": [
+          "1793/Y155 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "537"
+      },
+      {
+        "yearStart": 1992,
+        "yearEnd": 1992,
+        "lockApps": "All",
+        "codeRange": "G1-G1394 P",
+        "keyBlanks": [
+          "1789/Y154 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "287"
+      },
+      {
+        "yearStart": 1990,
+        "yearEnd": 1991,
+        "lockApps": "All",
+        "codeRange": "G1-G1394 P",
+        "keyBlanks": [
+          "1789/Y154 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "287"
+      },
+      {
+        "yearStart": 1987,
+        "yearEnd": 1989,
+        "lockApps": "GB",
+        "codeRange": "ES1-ES3000 S",
+        "keyBlanks": [
+          "1770U/Y149"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "139"
+      },
+      {
+        "yearStart": 1981,
+        "yearEnd": 1986,
+        "lockApps": "GB",
+        "codeRange": "ES1-ES3000 S",
+        "keyBlanks": [
+          "1770U/Y149"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "139"
+      }
+    ]
+  }
+}

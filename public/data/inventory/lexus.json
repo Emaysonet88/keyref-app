@@ -1,0 +1,2148 @@
+{
+  "Lexus": {
+    "ES250": [
+      {
+        "yearStart": 2021,
+        "yearEnd": 2023,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 8990H-06020 / 8990H- 06021"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": "High Security Key",
+        "cardNo": "3102"
+      },
+      {
+        "yearStart": 1990,
+        "yearEnd": 1993,
+        "lockApps": "All",
+        "codeRange": "O0001-O5000",
+        "keyBlanks": [
+          "LXP90-P"
+        ],
+        "keyType": "High Security",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": "High Security Key",
+        "cardNo": "24"
+      }
+    ],
+    "ES300H": [
+      {
+        "yearStart": 2019,
+        "yearEnd": 2021,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 8990H-06010/8990H- 06020/8990H-06021"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "3102"
+      },
+      {
+        "yearStart": 2017,
+        "yearEnd": 2018,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 89904-30K20 or 89904- 30G90 (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Texas Instruments",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "High Security Key Texas Instruments 128 bit (4D 74) System",
+        "cardNo": "3102"
+      },
+      {
+        "yearStart": 2013,
+        "yearEnd": 2016,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 89904-30A91 (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Texas Instruments",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "High Security Key. Texas Instruments Encrypted System",
+        "cardNo": "3102"
+      }
+    ],
+    "ES300": [
+      {
+        "yearStart": 2002,
+        "yearEnd": 2003,
+        "lockApps": "All",
+        "codeRange": "40000-49999",
+        "keyBlanks": [
+          "TOY48BT4 (LAL)"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Texas Instruments (4C)",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program I, Smart Pro/TCP/MVPP/TKO/ SDD",
+        "programmingProcedure": [
+          "I"
+        ],
+        "cloningMethod": null,
+        "substitutes": "Service key LXP90-P",
+        "notes": "High Security Key. Texas Instruments (4C) System",
+        "cardNo": "950"
+      },
+      {
+        "yearStart": 1998,
+        "yearEnd": 2001,
+        "lockApps": "All",
+        "codeRange": "O0001-O5000",
+        "keyBlanks": [
+          "TOY40BT4 (LAL)"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Texas Instruments (4C)",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program E",
+        "programmingProcedure": [
+          "E"
+        ],
+        "cloningMethod": null,
+        "substitutes": "Service key LXP90-P",
+        "notes": "High Security Key. Texas Instruments (4C) System",
+        "cardNo": "24"
+      },
+      {
+        "yearStart": 1992,
+        "yearEnd": 1997,
+        "lockApps": "All",
+        "codeRange": "O0001-O5000",
+        "keyBlanks": [
+          "LXP90-P"
+        ],
+        "keyType": "High Security",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": "High Security Key",
+        "cardNo": "24"
+      },
+      {
+        "yearStart": 2002,
+        "yearEnd": 2002,
+        "lockApps": "EB3-F-TOY48",
+        "codeRange": "TOY48-GTK",
+        "keyBlanks": [
+          "TOY48-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 1998,
+        "yearEnd": 1998,
+        "lockApps": "EB3-G-TOY40",
+        "codeRange": "TOY40-GTK",
+        "keyBlanks": [
+          "TOY40-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "ES330": [
+      {
+        "yearStart": 2004,
+        "yearEnd": 2006,
+        "lockApps": "All",
+        "codeRange": "40000-49999",
+        "keyBlanks": [
+          "EK3-TOY48/EK3LB-TOY48*/ TOY48-GTK#"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Texas Instruments",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "substitutes": "Service key LXP90-P",
+        "notes": "High Security Key. Texas Instruments fixed code system",
+        "cardNo": "950"
+      },
+      {
+        "yearStart": 2004,
+        "yearEnd": 2004,
+        "lockApps": "EB3-F-TOY48",
+        "codeRange": "TOY48-GTK",
+        "keyBlanks": [
+          "TOY48-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "ES350": [
+      {
+        "yearStart": 2018,
+        "yearEnd": 2023,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 8990H-06010/8990H- 06020/8990H-06021"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "3102"
+      },
+      {
+        "yearStart": 2017,
+        "yearEnd": 2018,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 89904-30G90 or 89904- 30K20"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Texas Instruments",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "High Security Key Texas Instruments 128 bit (4D 74) System",
+        "cardNo": "3102"
+      },
+      {
+        "yearStart": 2009,
+        "yearEnd": 2016,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 899004-30A30 (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key LX80",
+        "notes": "High Security Key",
+        "cardNo": "3102"
+      },
+      {
+        "yearStart": 2007,
+        "yearEnd": 2008,
+        "lockApps": "All",
+        "codeRange": "40000-49999",
+        "keyBlanks": [
+          "Dealer Key (LAL)"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "SDD/TKO",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key LX40",
+        "notes": "High Security Key",
+        "cardNo": "950"
+      }
+    ],
+    "GS300, GS400": [
+      {
+        "yearStart": 2006,
+        "yearEnd": 2008,
+        "lockApps": "All",
+        "codeRange": "40000-49999",
+        "keyBlanks": [
+          "Dealer Prox FOB (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Texas Instruments",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key LX40",
+        "notes": "High Security Key. Texas Instruments fixed code system",
+        "cardNo": "950"
+      },
+      {
+        "yearStart": 1998,
+        "yearEnd": 2005,
+        "lockApps": "All",
+        "codeRange": "40000-49999",
+        "keyBlanks": [
+          "TOY48BT4 (LAL)"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Texas Instruments (4C)",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program I, Smart Pro/TCP/MVPP TKO/ SDD (02-05)",
+        "programmingProcedure": [
+          "I"
+        ],
+        "cloningMethod": null,
+        "substitutes": "Service key LXP90-P",
+        "notes": "High Security Key. Texas Instruments (4C) System",
+        "cardNo": "24"
+      },
+      {
+        "yearStart": 1993,
+        "yearEnd": 1997,
+        "lockApps": "All",
+        "codeRange": "O0001-O5000",
+        "keyBlanks": [
+          "LXP90-P"
+        ],
+        "keyType": "High Security",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": "High Security Key",
+        "cardNo": "24"
+      },
+      {
+        "yearStart": 1998,
+        "yearEnd": 1998,
+        "lockApps": "EB3-F-TOY48",
+        "codeRange": "TOY48-GTK",
+        "keyBlanks": [
+          "TOY48-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "GS350": [
+      {
+        "yearStart": 2018,
+        "yearEnd": 2020,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 89904-06170 or 89904- 30A31"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "3102"
+      },
+      {
+        "yearStart": 2017,
+        "yearEnd": 2018,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 89904-30G90 or 89904- 30K20"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Texas Instruments",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "High Security Key Texas Instruments 128 bit (4D 74) System",
+        "cardNo": "3102"
+      },
+      {
+        "yearStart": 2008,
+        "yearEnd": 2018,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 89904-30A30 (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key LX80",
+        "notes": "High Security Key",
+        "cardNo": "3102"
+      },
+      {
+        "yearStart": 2006,
+        "yearEnd": 2007,
+        "lockApps": "All",
+        "codeRange": "40000-49999",
+        "keyBlanks": [
+          "Dealer Prox FOB (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key LX40",
+        "notes": "High Security Key",
+        "cardNo": "950"
+      }
+    ],
+    "GS430": [
+      {
+        "yearStart": 2006,
+        "yearEnd": 2008,
+        "lockApps": "All",
+        "codeRange": "40000-49999",
+        "keyBlanks": [
+          "OEM# 89904-30270 (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key LX40",
+        "notes": "High Security Key.",
+        "cardNo": "950"
+      },
+      {
+        "yearStart": 2001,
+        "yearEnd": 2005,
+        "lockApps": "All",
+        "codeRange": "40000-49999",
+        "keyBlanks": [
+          "TOY48BT4 (LAL)"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Texas Instruments (4C)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key LXP90-P",
+        "notes": "High Security Key. Texas Instruments (4C) System",
+        "cardNo": "950"
+      },
+      {
+        "yearStart": 2001,
+        "yearEnd": 2001,
+        "lockApps": "EB3-F-TOY48",
+        "codeRange": "TOY48-GTK",
+        "keyBlanks": [
+          "TOY48-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "GS450H": [
+      {
+        "yearStart": 2013,
+        "yearEnd": 2017,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 89904-30A91 (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "3102"
+      },
+      {
+        "yearStart": 2008,
+        "yearEnd": 2012,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 89904-50D40 (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key LX80",
+        "notes": "High Security Key",
+        "cardNo": "3102"
+      },
+      {
+        "yearStart": 2006,
+        "yearEnd": 2007,
+        "lockApps": "All",
+        "codeRange": "40000-49999",
+        "keyBlanks": [
+          "OEM# 89904-30270 (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "SDD/TKO",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key LX40",
+        "notes": "High Security Key",
+        "cardNo": "950"
+      }
+    ],
+    "GX460": [
+      {
+        "yearStart": 2019,
+        "yearEnd": 2022,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 89904-60U80"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "3102"
+      },
+      {
+        "yearStart": 2008,
+        "yearEnd": 2019,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 89904-60590"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key LX80",
+        "notes": "High Security Key",
+        "cardNo": "3102"
+      }
+    ],
+    "GS470": [
+      {
+        "yearStart": 2002,
+        "yearEnd": 2007,
+        "lockApps": "All",
+        "codeRange": "40000-49999",
+        "keyBlanks": [
+          "EK3-TOY48/EK3LB-TOY48*/ TOY48-GTK#"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Texas Instruments",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "substitutes": "Service Key LXP90-P",
+        "notes": "High Security Key. Texas Instruments Fixed Code System",
+        "cardNo": "950"
+      },
+      {
+        "yearStart": 2002,
+        "yearEnd": 2002,
+        "lockApps": "EB3-F-TOY48",
+        "codeRange": "TOY48-GTK",
+        "keyBlanks": [
+          "TOY48-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "GX470": [
+      {
+        "yearStart": 2003,
+        "yearEnd": 2010,
+        "lockApps": "All",
+        "codeRange": "40000-49999",
+        "keyBlanks": [
+          "TOY50-PT (LAL)"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Texas Instruments (4D68)",
+        "programmingRequired": true,
+        "programmingMethod": "SP/TCP/MVPP/SDD/TKO (2004-07), OBP Program E",
+        "programmingProcedure": [
+          "E"
+        ],
+        "cloningMethod": null,
+        "substitutes": "Service Key LXP90-P",
+        "notes": "High Security Key, Texas Instruments (4D68) Encrypted System",
+        "cardNo": "950"
+      }
+    ],
+    "HS250H": [
+      {
+        "yearStart": 2010,
+        "yearEnd": 2013,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 89904-75030 (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key LX80",
+        "notes": "High Security Key",
+        "cardNo": "3102"
+      }
+    ],
+    "IS250, IS250C, IS350, IS350C": [
+      {
+        "yearStart": 2013,
+        "yearEnd": 2017,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 89904-53650 (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key LX80",
+        "notes": "High Security Key",
+        "cardNo": "3102"
+      },
+      {
+        "yearStart": 2012,
+        "yearEnd": 2012,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 89904-30C60"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key LX80",
+        "notes": "High Security Key",
+        "cardNo": "3102"
+      },
+      {
+        "yearStart": 2009,
+        "yearEnd": 2011,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 89904-50380 (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key LX80",
+        "notes": "High Security Key",
+        "cardNo": "3102"
+      }
+    ],
+    "IS250, IS350": [
+      {
+        "yearStart": 2006,
+        "yearEnd": 2008,
+        "lockApps": "All",
+        "codeRange": "40000-49999",
+        "keyBlanks": [
+          "OEM# 89904-30270 (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key LX40",
+        "notes": "High Security Key",
+        "cardNo": "950"
+      }
+    ],
+    "IS300, IS350": [
+      {
+        "yearStart": 2021,
+        "yearEnd": 2022,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 89904-53E70 or 89904- 24340"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service key LXP90-P",
+        "notes": "High Security Key",
+        "cardNo": "3102"
+      }
+    ],
+    "IS300": [
+      {
+        "yearStart": 2017,
+        "yearEnd": 2019,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 89904-53650 or 89904- 53651 (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key LX80",
+        "notes": "High Security Key",
+        "cardNo": "3102"
+      },
+      {
+        "yearStart": 2002,
+        "yearEnd": 2005,
+        "lockApps": "All",
+        "codeRange": "40000-49999",
+        "keyBlanks": [
+          "TOY48BT4 (LAL)"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Texas Instruments (4C)",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program E or I, Smart Pro/TCP/MVPP/ TKO/SDD",
+        "programmingProcedure": [
+          "E",
+          "I"
+        ],
+        "cloningMethod": null,
+        "substitutes": "Service key LXP90-P",
+        "notes": "High Security Key. Texas Instruments (4C) System",
+        "cardNo": "950"
+      },
+      {
+        "yearStart": 2001,
+        "yearEnd": 2001,
+        "lockApps": "All",
+        "codeRange": "40000-49999",
+        "keyBlanks": [
+          "TOY48BT4"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Texas Instruments (4C)",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program E or I, Smart Pro/TCP/MVPP/ TKO/SDD",
+        "programmingProcedure": [
+          "E",
+          "I"
+        ],
+        "cloningMethod": null,
+        "substitutes": "Service key LXP90-P",
+        "notes": "High Security Key. Texas Instruments (4C) System",
+        "cardNo": "950"
+      },
+      {
+        "yearStart": 2002,
+        "yearEnd": 2002,
+        "lockApps": "EB3-F-TOY48",
+        "codeRange": "TOY48-GTK",
+        "keyBlanks": [
+          "TOY48-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 2001,
+        "yearEnd": 2001,
+        "lockApps": "EB3-F-TOY48",
+        "codeRange": "TOY48-GTK",
+        "keyBlanks": [
+          "TOY48-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "ISF": [
+      {
+        "yearStart": 2013,
+        "yearEnd": 2015,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 89904-53650"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key LX80",
+        "notes": "High Security Key",
+        "cardNo": "3102"
+      },
+      {
+        "yearStart": 2012,
+        "yearEnd": 2012,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 89904-53430"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key LX80",
+        "notes": "High Security Key",
+        "cardNo": "3102"
+      },
+      {
+        "yearStart": 2009,
+        "yearEnd": 2011,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 89904-53190"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key LX80",
+        "notes": "High Security Key",
+        "cardNo": "3102"
+      }
+    ],
+    "LS 600H L": [
+      {
+        "yearStart": 2010,
+        "yearEnd": 2013,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 89904-50D40"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key LX80",
+        "notes": "High Security Key",
+        "cardNo": "3102"
+      }
+    ],
+    "LS400, LS430": [
+      {
+        "yearStart": 2001,
+        "yearEnd": 2006,
+        "lockApps": "All",
+        "codeRange": "40000-49999",
+        "keyBlanks": [
+          "EK3-TOY48/EK3LB-TOY48*/ TOY48-GTK#"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Texas Instruments",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "substitutes": "Service Key LXP90-P",
+        "notes": "High Security Key. Texas Instruments Fixed Code System",
+        "cardNo": "950"
+      },
+      {
+        "yearStart": 1998,
+        "yearEnd": 2000,
+        "lockApps": "All",
+        "codeRange": "40000-49999",
+        "keyBlanks": [
+          "TOY48BT4 (LAL)"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Texas Instruments (4C)",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program E, Smart Pro/TCP/MVPP/TKO/ SDD",
+        "programmingProcedure": [
+          "E"
+        ],
+        "cloningMethod": null,
+        "substitutes": "Service key LXP90-P",
+        "notes": "High Security Key. Texas Instruments (4C) System",
+        "cardNo": "950"
+      },
+      {
+        "yearStart": 1997,
+        "yearEnd": 1997,
+        "lockApps": "All",
+        "codeRange": "O0001-O5000",
+        "keyBlanks": [
+          "TOY40BT4"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Texas Instruments (4C)",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program E, Smart Pro/TCP/MVPP/TKO/ SDD",
+        "programmingProcedure": [
+          "E"
+        ],
+        "cloningMethod": null,
+        "substitutes": "Service key LXP90-P",
+        "notes": "High Security Key. Texas Instruments (4C) System",
+        "cardNo": "24"
+      },
+      {
+        "yearStart": 1990,
+        "yearEnd": 1996,
+        "lockApps": "All",
+        "codeRange": "O0001-O5000",
+        "keyBlanks": [
+          "LXP90-P"
+        ],
+        "keyType": "High Security",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": "High Security Key",
+        "cardNo": "24"
+      },
+      {
+        "yearStart": 2001,
+        "yearEnd": 2001,
+        "lockApps": "EB3-F-TOY48",
+        "codeRange": "TOY48-GTK",
+        "keyBlanks": [
+          "TOY48-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 1998,
+        "yearEnd": 1998,
+        "lockApps": "EB3-F-TOY48",
+        "codeRange": "TOY48-GTK",
+        "keyBlanks": [
+          "TOY48-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 1997,
+        "yearEnd": 1997,
+        "lockApps": "EB3-G-TOY40",
+        "codeRange": "TOY40-GTK",
+        "keyBlanks": [
+          "TOY40-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "LS460": [
+      {
+        "yearStart": 2013,
+        "yearEnd": 2017,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 89904-50K80 (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key LX80",
+        "notes": "High Security Key",
+        "cardNo": "3102"
+      },
+      {
+        "yearStart": 2010,
+        "yearEnd": 2012,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 89904-50F90 (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key LX80",
+        "notes": "High Security Key",
+        "cardNo": "3102"
+      },
+      {
+        "yearStart": 2009,
+        "yearEnd": 2009,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 89904-50380 (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key LX80",
+        "notes": "High Security Key",
+        "cardNo": "3102"
+      },
+      {
+        "yearStart": 2007,
+        "yearEnd": 2008,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 89904-30270 (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key LX80",
+        "notes": "High Security Key",
+        "cardNo": "3102"
+      }
+    ],
+    "LS500": [
+      {
+        "yearStart": 2019,
+        "yearEnd": 2023,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 8990H-06010/8990H- 50010/8990H-50020/8990H- 50A81"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "3102"
+      }
+    ],
+    "LX450": [
+      {
+        "yearStart": 1998,
+        "yearEnd": 1998,
+        "lockApps": "All",
+        "codeRange": "O0001-O5000",
+        "keyBlanks": [
+          "TOY40BT4"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Texas Instruments (4C)",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program E, Smart Pro/TCP/MVPP/TKO/ SDD",
+        "programmingProcedure": [
+          "E"
+        ],
+        "cloningMethod": null,
+        "substitutes": "Service key LXP90-P",
+        "notes": "High Security Key. Texas Instruments (4C) System",
+        "cardNo": "24"
+      },
+      {
+        "yearStart": 1990,
+        "yearEnd": 1997,
+        "lockApps": "All",
+        "codeRange": "O0001-O5000",
+        "keyBlanks": [
+          "LXP90-P"
+        ],
+        "keyType": "High Security",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": "High Security Key",
+        "cardNo": "24"
+      },
+      {
+        "yearStart": 1998,
+        "yearEnd": 1998,
+        "lockApps": "EB3-G-TOY40",
+        "codeRange": "TOY40-GTK",
+        "keyBlanks": [
+          "TOY40-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "LX460": [
+      {
+        "yearStart": 2007,
+        "yearEnd": 2008,
+        "lockApps": "All",
+        "codeRange": "40000-49999",
+        "keyBlanks": [
+          "Dealer Key"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "SDD/TKO",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "950"
+      }
+    ],
+    "LX470": [
+      {
+        "yearStart": 2003,
+        "yearEnd": 2008,
+        "lockApps": "All",
+        "codeRange": "O0001-O5000",
+        "keyBlanks": [
+          "EK3-TOY48/EK3LB-TOY48*/ TOY48-GTK#"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Texas Instruments",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "substitutes": "Service key LXP90-P",
+        "notes": "High Security Key. Texas Instruments Fixed Code System",
+        "cardNo": "24"
+      },
+      {
+        "yearStart": 2001,
+        "yearEnd": 2002,
+        "lockApps": "All",
+        "codeRange": "O0001-O5000",
+        "keyBlanks": [
+          "TOY48BT4 (LAL)"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Texas Instruments (4C)",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program E or I, Smart Pro/TCP/MVPP/ TKO/SDD",
+        "programmingProcedure": [
+          "E",
+          "I"
+        ],
+        "cloningMethod": null,
+        "substitutes": "Service key LXP90-P",
+        "notes": "High Security Key. Texas Instruments (4C) System",
+        "cardNo": "24"
+      },
+      {
+        "yearStart": 1998,
+        "yearEnd": 2000,
+        "lockApps": "All",
+        "codeRange": "O0001-O5000",
+        "keyBlanks": [
+          "TOY40BT4 (LAL)"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Texas Instruments (4C)",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program E or I, Smart Pro/TCP/MVPP/ TKO/SDD",
+        "programmingProcedure": [
+          "E",
+          "I"
+        ],
+        "cloningMethod": null,
+        "substitutes": "Service key LXP90-P",
+        "notes": "High Security Key. Texas Instruments (4C) System",
+        "cardNo": "24"
+      },
+      {
+        "yearStart": 2003,
+        "yearEnd": 2003,
+        "lockApps": "EB3-F-TOY48",
+        "codeRange": "TOY48-GTK",
+        "keyBlanks": [
+          "TOY48-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 2001,
+        "yearEnd": 2001,
+        "lockApps": "EB3-F-TOY48",
+        "codeRange": "TOY48-GTK",
+        "keyBlanks": [
+          "TOY48-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 1998,
+        "yearEnd": 1998,
+        "lockApps": "EB3-G-TOY40",
+        "codeRange": "TOY40-GTK",
+        "keyBlanks": [
+          "TOY40-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 1998,
+        "yearEnd": 1998,
+        "lockApps": "EB3-F-TOY48",
+        "codeRange": "TOY48-GTK",
+        "keyBlanks": [
+          "TOY48-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "LX570": [
+      {
+        "yearStart": 2020,
+        "yearEnd": 2021,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM#89904-48V80"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "3102"
+      },
+      {
+        "yearStart": 2016,
+        "yearEnd": 2020,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 89904-60A00 or 89904- 78470 (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "3102"
+      },
+      {
+        "yearStart": 2008,
+        "yearEnd": 2015,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 89904-60061 (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key LX80",
+        "notes": "High Security Key",
+        "cardNo": "3102"
+      }
+    ],
+    "LX600": [
+      {
+        "yearStart": 2022,
+        "yearEnd": 2023,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 8990H-78022 or 8990H-78491"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Texas Instruments",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "High Security Key Texas Instruments 128 bit (4D 74) System",
+        "cardNo": "3102"
+      }
+    ],
+    "NX200T": [
+      {
+        "yearStart": 2015,
+        "yearEnd": 2020,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 89904-78460 or 89904- 78470"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Texas Instruments",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "High Security Key Texas Instruments 128 bit (4D 74) System",
+        "cardNo": "3102"
+      }
+    ],
+    "NX300": [
+      {
+        "yearStart": 2016,
+        "yearEnd": 2021,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 89904-78470/89904- 78070/89904-78250/89904- 78670"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service key LXP90-P",
+        "notes": "High Security Key",
+        "cardNo": "3102"
+      }
+    ],
+    "NX300H": [
+      {
+        "yearStart": 2020,
+        "yearEnd": 2021,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM#89904-48V80"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "3102"
+      },
+      {
+        "yearStart": 2015,
+        "yearEnd": 2020,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 89904-78460 or 89904- 78470"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key LX80",
+        "notes": "High Security Key",
+        "cardNo": "3102"
+      }
+    ],
+    "RC-F": [
+      {
+        "yearStart": 2020,
+        "yearEnd": 2022,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 89904-53E70 or 89904- 24340"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service key LXP90-P",
+        "notes": "High Security Key",
+        "cardNo": "3102"
+      }
+    ],
+    "RC300, RC350": [
+      {
+        "yearStart": 2021,
+        "yearEnd": 2021,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 89904-53E70 or 89904- 24340"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service key LXP90-P",
+        "notes": "High Security Key",
+        "cardNo": "3102"
+      }
+    ],
+    "RX300": [
+      {
+        "yearStart": 1997,
+        "yearEnd": 2003,
+        "lockApps": "All",
+        "codeRange": "40000-49999",
+        "keyBlanks": [
+          "TOY48BT4 (LAL)"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Texas Instruments (4C)",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program I",
+        "programmingProcedure": [
+          "I"
+        ],
+        "cloningMethod": null,
+        "substitutes": "Service key LXP90-P",
+        "notes": "High Security Key. Texas Instruments (4C) System",
+        "cardNo": "950"
+      },
+      {
+        "yearStart": 1997,
+        "yearEnd": 1997,
+        "lockApps": "EB3-F-TOY48",
+        "codeRange": "TOY48-GTK",
+        "keyBlanks": [
+          "TOY48-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "RX330": [
+      {
+        "yearStart": 2004,
+        "yearEnd": 2009,
+        "lockApps": "All",
+        "codeRange": "40000-49999",
+        "keyBlanks": [
+          "TOY50-PT (LAL)"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Texas Instruments (4D68)",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program E, Smart Pro/TCP/MVPP TKO/ SDD (04-07)",
+        "programmingProcedure": [
+          "E"
+        ],
+        "cloningMethod": null,
+        "substitutes": "Service Key LXP90-P",
+        "notes": "High Security Key, Texas Instruments (4D68) Encrypted System",
+        "cardNo": "950"
+      },
+      {
+        "yearStart": 2004,
+        "yearEnd": 2004,
+        "lockApps": "EB3-F-TOY48",
+        "codeRange": "TOY48-GTK",
+        "keyBlanks": [
+          "TOY48-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "RX350": [
+      {
+        "yearStart": 2004,
+        "yearEnd": 2011,
+        "lockApps": "All",
+        "codeRange": "40000-49999",
+        "keyBlanks": [
+          "TOY50-PT (LAL)"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Texas Instruments (4D68)",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program E or I, Smart Pro/TCP/MVPP/ TKO/SDD",
+        "programmingProcedure": [
+          "E",
+          "I"
+        ],
+        "cloningMethod": null,
+        "substitutes": "Service Key LXP90-P",
+        "notes": "High Security Key, Texas Instruments (4D68) Encrypted System",
+        "cardNo": "950"
+      },
+      {
+        "yearStart": 2004,
+        "yearEnd": 2011,
+        "lockApps": "All",
+        "codeRange": "40000-49999",
+        "keyBlanks": [
+          "EK3-TOY48/EK3LB-TOY48*/ TOY48-GTK#"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Texas Instruments",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "substitutes": "Service Key LXP90-P",
+        "notes": "High Security Key. Texas Instruments Fixed Code System",
+        "cardNo": "950"
+      },
+      {
+        "yearStart": 2004,
+        "yearEnd": 2004,
+        "lockApps": "EB3-F-TOY48",
+        "codeRange": "TOY48-GTK",
+        "keyBlanks": [
+          "TOY48-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "RX350 W/ PROX": [
+      {
+        "yearStart": 2020,
+        "yearEnd": 2021,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM#89904-48V80"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "3102"
+      },
+      {
+        "yearStart": 2016,
+        "yearEnd": 2020,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 89904-0E160 (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "3102"
+      },
+      {
+        "yearStart": 2010,
+        "yearEnd": 2015,
+        "lockApps": "All",
+        "codeRange": "40000-49999",
+        "keyBlanks": [
+          "Dealer Prox FOB (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key LX40",
+        "notes": "High Security Key",
+        "cardNo": "950"
+      }
+    ],
+    "RX400H": [
+      {
+        "yearStart": 2010,
+        "yearEnd": 2010,
+        "lockApps": "All",
+        "codeRange": "40000-49999",
+        "keyBlanks": [
+          "Dealer Prox FOB (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "High Security Key",
+        "cardNo": "950"
+      },
+      {
+        "yearStart": 2004,
+        "yearEnd": 2009,
+        "lockApps": "All",
+        "codeRange": "40000-49999",
+        "keyBlanks": [
+          "EK3-TOY48/EK3LB-TOY48*/ TOY48-GTK#"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Texas Instruments",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "substitutes": "Service Key LXP90-P",
+        "notes": "High Security Key. Texas Instruments Fixed Code System",
+        "cardNo": "950"
+      },
+      {
+        "yearStart": 2004,
+        "yearEnd": 2004,
+        "lockApps": "EB3-F-TOY48",
+        "codeRange": "TOY48-GTK",
+        "keyBlanks": [
+          "TOY48-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "RX450H": [
+      {
+        "yearStart": 2016,
+        "yearEnd": 2020,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 89904-0E160 (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Texas Instruments",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service key LXP90-P",
+        "notes": "High Security Key, Texas Instruments 128 Bit Encrypted System",
+        "cardNo": "950"
+      },
+      {
+        "yearStart": 2011,
+        "yearEnd": 2015,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 89904-48491 (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key LX80",
+        "notes": "High Security Key",
+        "cardNo": "950"
+      },
+      {
+        "yearStart": 2010,
+        "yearEnd": 2010,
+        "lockApps": "All",
+        "codeRange": "40000-49999",
+        "keyBlanks": [
+          "TOY50-PT (LAL)"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Texas Instruments (4D68)",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program E or I, Smart Pro/TCP/MVPP/ TKO/SDD",
+        "programmingProcedure": [
+          "E",
+          "I"
+        ],
+        "cloningMethod": null,
+        "substitutes": "Service Key LXP90-P",
+        "notes": "High Security Key, Texas Instruments (4D68) Encrypted System",
+        "cardNo": "950"
+      },
+      {
+        "yearStart": 2010,
+        "yearEnd": 2010,
+        "lockApps": "EB3-F-TOY48",
+        "codeRange": "TOY48-GTK",
+        "keyBlanks": [
+          "TOY48-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "RX450L W/ PROX": [
+      {
+        "yearStart": 2020,
+        "yearEnd": 2022,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM#89904-48V80"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "3102"
+      }
+    ],
+    "SC300, SC400": [
+      {
+        "yearStart": 2002,
+        "yearEnd": 2006,
+        "lockApps": "All",
+        "codeRange": "40000-49999",
+        "keyBlanks": [
+          "Dealer Key"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Texas Instruments",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP TKO/SDD (2004-06)",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key LXP90-P",
+        "notes": "High Security Key. Texas Instruments fixed code system",
+        "cardNo": "950"
+      },
+      {
+        "yearStart": 2002,
+        "yearEnd": 2002,
+        "lockApps": "EB3-F-TOY48",
+        "codeRange": "TOY48-GTK",
+        "keyBlanks": [
+          "TOY48-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "SC300, SC400, SC430": [
+      {
+        "yearStart": 1998,
+        "yearEnd": 2001,
+        "lockApps": "All",
+        "codeRange": "40000-49999",
+        "keyBlanks": [
+          "TOY40BT4 (LAL)"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Texas Instruments (4C)",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program I, Smart Pro/TCP/MVPP/TKO/ SDD",
+        "programmingProcedure": [
+          "I"
+        ],
+        "cloningMethod": null,
+        "substitutes": "Service key LXP90-P",
+        "notes": "High Security Key. Texas Instruments (4C) System",
+        "cardNo": "950"
+      },
+      {
+        "yearStart": 1998,
+        "yearEnd": 2000,
+        "lockApps": "All",
+        "codeRange": "40000-49999",
+        "keyBlanks": [
+          "TOY48BT4"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Texas Instruments (4C)",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program I, Smart Pro/TCP/MVPP/TKO/ SDD",
+        "programmingProcedure": [
+          "I"
+        ],
+        "cloningMethod": null,
+        "substitutes": "Service Key LXP90-P",
+        "notes": "High Security Key. Texas Instruments (4C) System",
+        "cardNo": "950"
+      },
+      {
+        "yearStart": 1990,
+        "yearEnd": 1997,
+        "lockApps": "All",
+        "codeRange": "O0001-O5000",
+        "keyBlanks": [
+          "LXP90-P"
+        ],
+        "keyType": "High Security",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": "High Security Key",
+        "cardNo": "24"
+      },
+      {
+        "yearStart": 1998,
+        "yearEnd": 1998,
+        "lockApps": "EB3-G-TOY40",
+        "codeRange": "TOY40-GTK",
+        "keyBlanks": [
+          "TOY40-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "SC430": [
+      {
+        "yearStart": 2002,
+        "yearEnd": 2011,
+        "lockApps": "All",
+        "codeRange": "40000-49999",
+        "keyBlanks": [
+          "TOY50-PT"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Texas Instruments (4D68)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key LXP90-P",
+        "notes": "High Security Key, Texas Instruments (4D68) Encrypted System",
+        "cardNo": "950"
+      },
+      {
+        "yearStart": 2002,
+        "yearEnd": 2002,
+        "lockApps": "EB3-F-TOY48",
+        "codeRange": "TOY48-GTK",
+        "keyBlanks": [
+          "TOY48-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "UX200": [
+      {
+        "yearStart": 2019,
+        "yearEnd": 2021,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 8990H-76010/8990H- 76030/8990H- 76020/8990H-76040"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service key LXP90-P",
+        "notes": null,
+        "cardNo": "950"
+      }
+    ],
+    "UX250H": [
+      {
+        "yearStart": 2023,
+        "yearEnd": 2024,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 8990H-33261/8990H- 76101/8990H-76591"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "950"
+      },
+      {
+        "yearStart": 2019,
+        "yearEnd": 2022,
+        "lockApps": "All",
+        "codeRange": "80000-89999",
+        "keyBlanks": [
+          "OEM# 8990H-76010/8990H- 76030/8990H- 76020/8990H-76040"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service key LXP90-P",
+        "notes": null,
+        "cardNo": "950"
+      }
+    ]
+  }
+}

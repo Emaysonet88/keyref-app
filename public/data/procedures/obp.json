@@ -1,0 +1,199 @@
+{
+  "A": {
+    "vehicles": "Buick & Cadillac",
+    "title": "Buick & Cadillac On-Board Programming",
+    "steps_originate": [
+      "Insert new key into ignition cylinder and turn it to the ON (RUN) position. The security light on the dash will illuminate and stay on for ten minutes.",
+      "When the security light goes out, you have one minute to start the next step. Turn the ignition cylinder to OFF and then back to the ON (RUN) position. The security light will illuminate and stay on for ten more minutes.",
+      "When the security light goes out, you have one minute to start the next step. Turn the ignition cylinder to OFF and then back to the ON (RUN) position.",
+      "When the security light goes out, the vehicle is ready to start. Turn the ignition cylinder to OFF and remove the key. Total time required: approximately 30 minutes."
+    ],
+    "steps_add": [
+      "Insert an existing key into the ignition cylinder.",
+      "Turn the ignition cylinder to ON (RUN) and back to OFF.",
+      "Remove the existing key and, within fifteen seconds, insert the new key and turn it to ON (RUN).",
+      "The security light will light up for two seconds to indicate success in programming the key into the vehicle."
+    ]
+  },
+  "D": {
+    "vehicles": "1998 Mazda 626",
+    "title": "1998 Mazda 626 On-Board Programming",
+    "notes": "The on-board programming procedures for the Mazda 626 should be used only if the preferred methods are unavailable. Dealers use a New Generation Star Tester to originate and add new duplicate keys.",
+    "steps_add": [
+      "Turn the ignition lock to OFF (LOCK).",
+      "Insert the master key into the ignition lock and turn it to ON (RUN).",
+      "Within ten seconds, push the door lock control switch to the UNLOCK position five times.",
+      "Turn the ignition lock to OFF (LOCK) and remove the master key.",
+      "Insert the new key into the ignition lock and turn it to ON (RUN).",
+      "Within thirty seconds, turn the ignition lock back to ON (RUN) and count until the number of flashes matches the value of the second digit of the password. Turn the ignition lock back to LOCK."
+    ]
+  },
+  "E": {
+    "vehicles": "1998+ Toyota, Lexus",
+    "title": "1998+ Toyota / Lexus On-Board Programming",
+    "notes": "The Toyota Electronic Control Module does not have programming modes without a pre-programmed key. If no key is available that is already programmed into the module, the module must be replaced.",
+    "steps_add": [
+      "Insert Master key into the ignition cylinder.",
+      "Within five seconds, depress and release the accelerator pedal five times.",
+      "Within ten seconds, depress and release the brake pedal six times.",
+      "Remove the master key, and within ten seconds, insert the new key.",
+      "Within ten seconds, depress and release the accelerator pedal one time.",
+      "Wait approximately sixty seconds while the security light flashes. The light should then go out, indicating the key has been programmed."
+    ]
+  },
+  "F": {
+    "vehicles": "1998+ Chrysler, Dodge / 1999+ Chrysler, Jeep",
+    "title": "1998+ Chrysler/Dodge/Jeep On-Board Programming",
+    "steps_originate": [
+      "This requires the vehicle to be connected to special dealer diagnostic equipment.",
+      "Enter Customer Programming Mode by inserting a valid programmed key and turning to ON.",
+      "A theft alarm light should illuminate after ten seconds and a single chime sound will indicate entry into Customer Programming Mode.",
+      "Turn the key to the OFF position within 60 seconds and remove the valid key.",
+      "Insert the new key within 60 seconds and turn it to the ON position.",
+      "Within ten seconds, a single chime should indicate that the key has been programmed."
+    ]
+  },
+  "G": {
+    "vehicles": "GM High Security Key",
+    "title": "GM High Security Key On-Board Programming",
+    "steps_add": [
+      "Insert the existing master key into the ignition and turn to ON (RUN). Leave on for 10 minutes until the security light turns off.",
+      "Turn the ignition OFF, then immediately back to ON. Leave on for another 10 minutes.",
+      "Turn the ignition OFF, then immediately back to ON. Leave on for another 10 minutes.",
+      "Turn the ignition OFF. The system is now in programming mode.",
+      "Within one minute, insert the new key and turn to ON. The security light should turn off, indicating the key is programmed.",
+      "Total time required: approximately 30 minutes."
+    ]
+  },
+  "I": {
+    "vehicles": "2002+ Toyota, Lexus",
+    "title": "2002+ Toyota / Lexus On-Board Programming",
+    "notes": "The Toyota Electronic Control Module does not have programming modes without a pre-programmed key. If no key is available that is already programmed into the module, the module must be replaced.",
+    "steps_add": [
+      "Make sure all doors and windows are closed.",
+      "Insert Master key into the ignition cylinder.",
+      "Within fifteen seconds, depress and release the accelerator pedal five times.",
+      "Within twenty seconds, depress and release the brake pedal six times.",
+      "Remove the master key, and within twenty seconds, insert the new key.",
+      "Within ten seconds, depress and release the accelerator pedal one time.",
+      "Wait approximately sixty seconds while the security light flashes. The light should then go out, indicating the key has been programmed."
+    ]
+  },
+  "J": {
+    "vehicles": "Ford / Lincoln / Mercury IKT",
+    "title": "Ford/Lincoln/Mercury IKT On-Board Programming",
+    "requirement": "Requires two working keys.",
+    "steps_add": [
+      "Insert an existing key into the ignition cylinder.",
+      "Turn the ignition cylinder to ON (RUN) for approximately 3 seconds and then back to OFF.",
+      "Remove the first key and insert the second existing key into the ignition cylinder within 10 seconds.",
+      "Turn the ignition cylinder to ON (RUN) for approximately 3 seconds and then back to OFF.",
+      "Remove the second key and insert the new key into the ignition cylinder within 10 seconds.",
+      "Turn the new key to ON (RUN) for at least 6 seconds and then turn back to OFF.",
+      "The security light will illuminate for up to 3 seconds to indicate that the new key has been programmed."
+    ]
+  },
+  "K": {
+    "vehicles": "2011 Ford Fiesta",
+    "title": "2011 Ford Fiesta On-Board Programming",
+    "requirement": "Requires two working keys.",
+    "steps_add": [
+      "Insert an existing key into the ignition cylinder.",
+      "Turn the ignition cylinder to ON (RUN) for approximately 3 seconds and then back to OFF.",
+      "Remove the first key and insert the second existing key into the ignition cylinder within 10 seconds.",
+      "Turn the ignition cylinder to ON (RUN) for approximately 3 seconds and then back to OFF.",
+      "Remove the second key and insert the new key into the ignition cylinder within 10 seconds.",
+      "Turn the new key to ON (RUN) for at least 6 seconds and then turn back to OFF.",
+      "The security light will illuminate to indicate success."
+    ],
+    "steps_rke": [
+      "Unlock the door locks using the door lock control switch on the driver's door.",
+      "Close all doors.",
+      "Turn the ignition cylinder from OFF to ON (RUN) eight times within 10 seconds, with the eighth turn ending in the ON position. The door locks will cycle to confirm programming mode.",
+      "Press any button on the new remote within 20 seconds. The door locks will cycle to confirm.",
+      "Turn the ignition OFF to exit programming mode."
+    ]
+  },
+  "L": {
+    "vehicles": "2010-2011 Ford Transit Connect",
+    "title": "2010-2011 Ford Transit Connect On-Board Programming",
+    "requirement": "Requires two working keys.",
+    "steps_add": [
+      "Insert an existing key into the ignition cylinder.",
+      "Turn the ignition cylinder to ON (RUN) for approximately 3 seconds and then back to OFF.",
+      "Remove the first key and insert the second existing key into the ignition cylinder within 10 seconds.",
+      "Turn the ignition cylinder to ON (RUN) for approximately 3 seconds and then back to OFF.",
+      "Remove the second key and insert the new key into the ignition cylinder within 10 seconds.",
+      "Turn the new key to ON (RUN) for at least 6 seconds and then turn back to OFF.",
+      "The security light will indicate success."
+    ],
+    "steps_rke": [
+      "The front doors must be closed and unlocked before proceeding.",
+      "Within 6 seconds, turn the ignition cylinder from OFF to ON four times, with the fourth turn ending in ON.",
+      "Press any button on the new remote within 10 seconds.",
+      "Turn the ignition OFF to exit programming mode."
+    ]
+  },
+  "M": {
+    "vehicles": "GM High Security Key (North America, except Canada)",
+    "title": "GM High Security Key On-Board Programming",
+    "steps_add": [
+      "Insert an existing master key into the ignition cylinder.",
+      "Turn the ignition cylinder to ON (RUN) and back to OFF.",
+      "Remove the existing key, and within 10 seconds insert the new key and turn it to ON (RUN).",
+      "The security light will illuminate briefly to indicate that the new key has been programmed into the vehicle's memory."
+    ]
+  },
+  "N": {
+    "vehicles": "GM High Security Key \u2014 PEPS (Passive Entry Passive Start)",
+    "title": "GM PEPS Transmitter Programming",
+    "requirement": "Requires one working transmitter.",
+    "steps_add": [
+      "Insert an existing transmitter into the cupholder.",
+      "Wait ten minutes until the Driver Information Center displays 'Press Engine Start Button.'",
+      "Press and hold the Engine Start Button while pressing the brake pedal.",
+      "Once the message clears, place the new transmitter in the cupholder.",
+      "Press the Engine Start Button. The system will recognize and program the new transmitter.",
+      "Repeat as needed for additional transmitters within the same session."
+    ]
+  },
+  "P": {
+    "vehicles": "2012 Ford Escape / Focus",
+    "title": "2012 Ford Escape / Focus On-Board Programming",
+    "requirement": "Requires two working keys.",
+    "steps_add": [
+      "Insert an existing key into the ignition cylinder.",
+      "Turn the ignition cylinder to ON (RUN) for at least 3 seconds, but no more than 10 seconds, successively.",
+      "Remove the first key and insert the second existing key within 10 seconds.",
+      "Turn the ignition cylinder to ON (RUN) for at least 3 seconds, but no more than 10 seconds.",
+      "Remove the second key and insert the new key within 10 seconds.",
+      "Turn the new key to ON (RUN) for at least 6 seconds and then turn back to OFF.",
+      "The security light will illuminate for up to 3 seconds to indicate that the new key has been programmed."
+    ]
+  },
+  "Q": {
+    "vehicles": "Various \u2014 see specific vehicle reference",
+    "title": "Procedure Q \u2014 Vehicle-Specific",
+    "notes": "Procedure Q applies to specific vehicles listed in the application chart. Consult the 2025 Ilco Auto/Truck Key Blank Reference Guide (pages 164-169) for the exact step-by-step procedure for your vehicle."
+  },
+  "B": {
+    "vehicles": "Various GM models \u2014 see vehicle-specific reference",
+    "title": "Procedure B \u2014 GM Variant",
+    "notes": "Procedure B applies to specific GM models. Refer to the 2025 Ilco Reference Guide for the exact procedure."
+  },
+  "C": {
+    "vehicles": "Various \u2014 see specific vehicle reference",
+    "title": "Procedure C \u2014 Vehicle-Specific",
+    "notes": "Procedure C applies to specific vehicles. Refer to the 2025 Ilco Reference Guide pages 164-169."
+  },
+  "H": {
+    "vehicles": "Various \u2014 see specific vehicle reference",
+    "title": "Procedure H \u2014 Vehicle-Specific",
+    "notes": "Procedure H applies to specific vehicles. Refer to the 2025 Ilco Reference Guide pages 164-169."
+  },
+  "R": {
+    "vehicles": "Various \u2014 see specific vehicle reference",
+    "title": "Procedure R \u2014 Vehicle-Specific",
+    "notes": "Procedure R applies to specific vehicles. Refer to the 2025 Ilco Reference Guide pages 164-169."
+  }
+}

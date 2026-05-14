@@ -1,0 +1,62 @@
+{
+  "Kenworth": {
+    "ALL US MODELS": [
+      {
+        "yearStart": 1994,
+        "yearEnd": 2004,
+        "lockApps": "All",
+        "codeRange": "G101-G598",
+        "keyBlanks": [
+          "K1994"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "P1108/B88",
+        "notes": null,
+        "cardNo": "636"
+      },
+      {
+        "yearStart": 1978,
+        "yearEnd": 1993,
+        "lockApps": "All",
+        "codeRange": "C250-C2200",
+        "keyBlanks": [
+          "1098DB/B5"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "H1098DB/B16",
+        "notes": null,
+        "cardNo": "142"
+      }
+    ],
+    "MIDRANGER": [
+      {
+        "yearStart": 1988,
+        "yearEnd": 1990,
+        "lockApps": "Door",
+        "codeRange": "FB001-FB210",
+        "keyBlanks": [
+          "X53/V32"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "59"
+      }
+    ]
+  }
+}

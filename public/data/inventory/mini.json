@@ -1,0 +1,44 @@
+{
+  "Mini": {
+    "COOPER": [
+      {
+        "yearStart": 2007,
+        "yearEnd": 2010,
+        "lockApps": "All",
+        "codeRange": "0001-6000",
+        "keyBlanks": [
+          "Dealer Prox FOB"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HU92RP",
+        "notes": "High Security Key, Crypto Transponder",
+        "cardNo": "1842"
+      }
+    ],
+    "COOPER, COOPER S": [
+      {
+        "yearStart": 2004,
+        "yearEnd": 2007,
+        "lockApps": "All",
+        "codeRange": "0001-6000",
+        "keyBlanks": [
+          "Dealer Key"
+        ],
+        "keyType": "High Security",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HU92RP",
+        "notes": "High Security Key, Crypto Transponder, Ordered by VIN",
+        "cardNo": "1842"
+      }
+    ]
+  }
+}

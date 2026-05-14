@@ -1,0 +1,808 @@
+{
+  "Volkswagen": {
+    "ATLAS": [
+      {
+        "yearStart": 2018,
+        "yearEnd": 2020,
+        "lockApps": "All",
+        "codeRange": "0001-6000",
+        "keyBlanks": [
+          "OEM# 5G6959752BM"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HU66P",
+        "notes": null,
+        "cardNo": "970"
+      }
+    ],
+    "BEETLE": [
+      {
+        "yearStart": 2017,
+        "yearEnd": 2019,
+        "lockApps": "All",
+        "codeRange": "0001-6000",
+        "keyBlanks": [
+          "OEM# 5K0 959 753 BG"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Megamos (88)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HU66P",
+        "notes": "High Security Key. Megamos (88) Crypto2 System",
+        "cardNo": "970"
+      },
+      {
+        "yearStart": 2006,
+        "yearEnd": 2016,
+        "lockApps": "All",
+        "codeRange": "0001-6000",
+        "keyBlanks": [
+          "HU66T24"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Megamos",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP (thru 2014)",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HU66P",
+        "notes": "High Security Key. Encrypted Megamos Transponder System, Ordered by VIN",
+        "cardNo": "970"
+      },
+      {
+        "yearStart": 2000,
+        "yearEnd": 2005,
+        "lockApps": "All",
+        "codeRange": "0001-6000 EXT.",
+        "keyBlanks": [
+          "HU66T6 (or dealer FOB) (LAL)"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Megamos (48)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HU66P",
+        "notes": "High Security Key. Megamos (48) Encrypted System",
+        "cardNo": "832"
+      },
+      {
+        "yearStart": 1998,
+        "yearEnd": 1999,
+        "lockApps": "All",
+        "codeRange": "0001-6000",
+        "keyBlanks": [
+          "HU66P"
+        ],
+        "keyType": "High Security",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "High Security Key",
+        "cardNo": "970"
+      }
+    ],
+    "CC": [
+      {
+        "yearStart": 2009,
+        "yearEnd": 2014,
+        "lockApps": "All",
+        "codeRange": "0001-6000",
+        "keyBlanks": [
+          "HU66T24 (LAL)"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Megamos (48 CAN)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HU66P",
+        "notes": "High Security Key, Megamos (48 CAN) Encrypted System, Ordered by VIN",
+        "cardNo": "970"
+      }
+    ],
+    "CABRIO, EUROVAN": [
+      {
+        "yearStart": 2000,
+        "yearEnd": 2004,
+        "lockApps": "All",
+        "codeRange": "Mfg. Restricted Code Series",
+        "keyBlanks": [
+          "Dealer Key"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Megamos",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": "High Security Key. Encrypted Megamos Transponder System",
+        "cardNo": "N/A"
+      },
+      {
+        "yearStart": 1998,
+        "yearEnd": 1999,
+        "lockApps": "All",
+        "codeRange": "0001-6000",
+        "keyBlanks": [
+          "HU66-P"
+        ],
+        "keyType": "High Security",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": "High Security Key.",
+        "cardNo": "970"
+      },
+      {
+        "yearStart": 1990,
+        "yearEnd": 1997,
+        "lockApps": "All",
+        "codeRange": "AH1-AH9282",
+        "keyBlanks": [
+          "X203/V37 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "X139/V35",
+        "notes": null,
+        "cardNo": "49/50"
+      }
+    ],
+    "EOS": [
+      {
+        "yearStart": 2007,
+        "yearEnd": 2015,
+        "lockApps": "All",
+        "codeRange": "0001-6000",
+        "keyBlanks": [
+          "HU66T24"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Megamos (48)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP (07-08)",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HU66P",
+        "notes": "High Security Key. Megamos (48) Encrypted System",
+        "cardNo": "970"
+      }
+    ],
+    "FOX": [
+      {
+        "yearStart": 1997,
+        "yearEnd": 1998,
+        "lockApps": "All",
+        "codeRange": "AH1-AH9282",
+        "keyBlanks": [
+          "X203/V37 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "X139/V35",
+        "notes": null,
+        "cardNo": "49/50"
+      },
+      {
+        "yearStart": 1993,
+        "yearEnd": 1996,
+        "lockApps": "All",
+        "codeRange": "AH1-AH9282",
+        "keyBlanks": [
+          "X203/V37 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "X139/V35",
+        "notes": null,
+        "cardNo": "49/50"
+      },
+      {
+        "yearStart": 1988,
+        "yearEnd": 1992,
+        "lockApps": "All",
+        "codeRange": "HV1-HV9282",
+        "keyBlanks": [
+          "X88/PA8 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "X203/V37",
+        "notes": null,
+        "cardNo": "49/50"
+      }
+    ],
+    "GLOVE BOX IF NOT REFERENCED ELSE- WHERE": [
+      {
+        "yearStart": 1980,
+        "yearEnd": 2007,
+        "lockApps": "GB",
+        "codeRange": "SC1-SC240",
+        "keyBlanks": [
+          "61VW"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "62VW",
+        "notes": null,
+        "cardNo": "109"
+      }
+    ],
+    "GOLF": [
+      {
+        "yearStart": 2018,
+        "yearEnd": 2020,
+        "lockApps": "All",
+        "codeRange": "0001-6000",
+        "keyBlanks": [
+          "OEM# 5G6959752BG or 5G6959752BM"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HU66P",
+        "notes": null,
+        "cardNo": "970"
+      },
+      {
+        "yearStart": 2010,
+        "yearEnd": 2016,
+        "lockApps": "All",
+        "codeRange": "0001-6000",
+        "keyBlanks": [
+          "HU66T24"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Megamos (48)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP (thru 2012)",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HU66P",
+        "notes": "High Security Key. Megamos (48) Encrypted System",
+        "cardNo": "970"
+      },
+      {
+        "yearStart": 2000,
+        "yearEnd": 2006,
+        "lockApps": "All",
+        "codeRange": "0001-6000",
+        "keyBlanks": [
+          "HU66T6 (or dealer FOB) (LAL)"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Megamos (48)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HU66P",
+        "notes": "High Security Key. Megamos (48) Encrypted System",
+        "cardNo": "970"
+      }
+    ],
+    "GOLF, GTI, RABBIT": [
+      {
+        "yearStart": 1985,
+        "yearEnd": 1987,
+        "lockApps": "All",
+        "codeRange": "HV1-HV9282",
+        "keyBlanks": [
+          "X88/PA8 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "49/50"
+      }
+    ],
+    "GOLF, JETTA, CABRIO, CORRADO": [
+      {
+        "yearStart": 1999,
+        "yearEnd": 1999,
+        "lockApps": "ALL",
+        "codeRange": "0001-6000",
+        "keyBlanks": [
+          "X9/73VB [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "970"
+      },
+      {
+        "yearStart": 1988,
+        "yearEnd": 1998,
+        "lockApps": "All",
+        "codeRange": "AH1-AH9282",
+        "keyBlanks": [
+          "X203/V37 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "X139/V35",
+        "notes": null,
+        "cardNo": "49/50"
+      }
+    ],
+    "GLI": [
+      {
+        "yearStart": 2008,
+        "yearEnd": 2010,
+        "lockApps": "All",
+        "codeRange": "0001-6000",
+        "keyBlanks": [
+          "HU66T24"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Megamos (48)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HU66P",
+        "notes": "High Security Key. Megamos (48) Encrypted System",
+        "cardNo": "970"
+      }
+    ],
+    "GTI": [
+      {
+        "yearStart": 2007,
+        "yearEnd": 2016,
+        "lockApps": "All",
+        "codeRange": "0001-6000",
+        "keyBlanks": [
+          "HU66T24"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Megamos (48)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP (thru 2012)",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HU66P",
+        "notes": "High Security Key. Megamos (48) Encrypted System",
+        "cardNo": "970"
+      },
+      {
+        "yearStart": 2000,
+        "yearEnd": 2006,
+        "lockApps": "All",
+        "codeRange": "0001-6000",
+        "keyBlanks": [
+          "HU66T6 (or dealer FOB)"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Megamos (48)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HU66P",
+        "notes": "High Security Key. Megamos (48) Encrypted System",
+        "cardNo": "970"
+      }
+    ],
+    "JETTA": [
+      {
+        "yearStart": 2017,
+        "yearEnd": 2019,
+        "lockApps": "All",
+        "codeRange": "0001-6000",
+        "keyBlanks": [
+          "OEM# 5K0 959 753 BM"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Megamos (88)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HU66P",
+        "notes": "High Security Key. Megamos (88) Crypto2 System",
+        "cardNo": "970"
+      },
+      {
+        "yearStart": 2007,
+        "yearEnd": 2016,
+        "lockApps": "All",
+        "codeRange": "0001-6000",
+        "keyBlanks": [
+          "HU66T24"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Megamos (48)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP (thru 2012)",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "High Security Key. Megamos (48) Encrypted System",
+        "cardNo": "970"
+      },
+      {
+        "yearStart": 2006,
+        "yearEnd": 2006,
+        "lockApps": "All",
+        "codeRange": "0001-6000",
+        "keyBlanks": [
+          "HU66T6 (or dealer FOB) (LAL)"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Megamos (48 CAN)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HU66P",
+        "notes": "High Security Key. Megamos (48 CAN) Encrypted System",
+        "cardNo": "970"
+      },
+      {
+        "yearStart": 2000,
+        "yearEnd": 2005,
+        "lockApps": "All",
+        "codeRange": "0001-6000",
+        "keyBlanks": [
+          "HU66T6 (or dealer FOB)"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Megamos (48)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HU66P",
+        "notes": "High Security Key. Megamos (48) Encrypted System",
+        "cardNo": "970"
+      }
+    ],
+    "PASSAT": [
+      {
+        "yearStart": 2009,
+        "yearEnd": 2019,
+        "lockApps": "All",
+        "codeRange": "0001-6000",
+        "keyBlanks": [
+          "Dealer FOB (LAL)"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Megamos",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP (thru 2012)",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HU66P",
+        "notes": "High Security Key. Encrypted Megamos Transponder System, Ordered by VIN",
+        "cardNo": "970"
+      }
+    ],
+    "PASSAT (SEDAN)": [
+      {
+        "yearStart": 2006,
+        "yearEnd": 2008,
+        "lockApps": "All",
+        "codeRange": "0001-6000",
+        "keyBlanks": [
+          "HU66T24 or FOB"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Megamos",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HU66P",
+        "notes": "High Security Key. Encrypted Megamos Transponder System",
+        "cardNo": "970"
+      },
+      {
+        "yearStart": 2001,
+        "yearEnd": 2005,
+        "lockApps": "All",
+        "codeRange": "0001-6000",
+        "keyBlanks": [
+          "HU66T6 (or dealer FOB) (LAL)"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Megamos (48)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HU66P",
+        "notes": "High Security Key. Megamos (48) Encrypted System",
+        "cardNo": "970"
+      }
+    ],
+    "PASSAT (WAGON)": [
+      {
+        "yearStart": 2006,
+        "yearEnd": 2008,
+        "lockApps": "All",
+        "codeRange": "0001-6000",
+        "keyBlanks": [
+          "Dealer Key or FOB"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Megamos",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HU66P",
+        "notes": "High Security Key. Encrypted Megamos Transponder System",
+        "cardNo": "970"
+      },
+      {
+        "yearStart": 2003,
+        "yearEnd": 2005,
+        "lockApps": "All",
+        "codeRange": "0001-6000",
+        "keyBlanks": [
+          "HU66T6 (or dealer FOB)"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Megamos (48)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HU66P",
+        "notes": "High Security Key. Megamos (48) Encrypted System",
+        "cardNo": "970"
+      }
+    ],
+    "PHAETON": [
+      {
+        "yearStart": 2006,
+        "yearEnd": 2008,
+        "lockApps": "All",
+        "codeRange": "0001-6000 EXT.",
+        "keyBlanks": [
+          "Dealer Key or FOB"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HU66P",
+        "notes": null,
+        "cardNo": "832"
+      },
+      {
+        "yearStart": 2004,
+        "yearEnd": 2007,
+        "lockApps": "All",
+        "codeRange": "0001-6000",
+        "keyBlanks": [
+          "HU66T6 (or dealer FOB)"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Megamos (48)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HU66P",
+        "notes": "High Security Key. Megamos (48) Encrypted System",
+        "cardNo": "970"
+      }
+    ],
+    "R32 VR6": [
+      {
+        "yearStart": 2004,
+        "yearEnd": 2007,
+        "lockApps": "All",
+        "codeRange": "0001-6000",
+        "keyBlanks": [
+          "HU66T6"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Megamos (48)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HU66P",
+        "notes": "High Security Key. Megamos (48) Encrypted System",
+        "cardNo": "970"
+      }
+    ],
+    "RABBIT": [
+      {
+        "yearStart": 2009,
+        "yearEnd": 2011,
+        "lockApps": "All",
+        "codeRange": "0001-6000",
+        "keyBlanks": [
+          "HU66T24"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Megamos",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HU66P",
+        "notes": "High Security Key. Encrypted Megamos Transponder System, Ordered by VIN",
+        "cardNo": "970"
+      }
+    ],
+    "ROUTAN": [
+      {
+        "yearStart": 2009,
+        "yearEnd": 2015,
+        "lockApps": "All",
+        "codeRange": "M1-M2618 HV1-HV9282",
+        "keyBlanks": [
+          "Dealer FOB/Y170-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key Y159/ Emerg. Key Y171-P",
+        "notes": "Philips Crypto (46) Transponder",
+        "cardNo": "745"
+      }
+    ],
+    "SCIROCCO": [
+      {
+        "yearStart": 1984,
+        "yearEnd": 1987,
+        "lockApps": "All",
+        "codeRange": null,
+        "keyBlanks": [
+          "X88/PA8 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "49/50"
+      }
+    ],
+    "TIGUAN": [
+      {
+        "yearStart": 2017,
+        "yearEnd": 2019,
+        "lockApps": "All",
+        "codeRange": "0001-6000",
+        "keyBlanks": [
+          "OEM# 5K0 959 753 BM"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Megamos (88)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HU66P",
+        "notes": "High Security Key. Megamos (88) Crypto2 System",
+        "cardNo": "970"
+      },
+      {
+        "yearStart": 2009,
+        "yearEnd": 2016,
+        "lockApps": "All",
+        "codeRange": "0001-6000",
+        "keyBlanks": [
+          "HU66T24"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Megamos (48)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "High Security Key. Megamos (48) Encrypted System",
+        "cardNo": "970"
+      }
+    ],
+    "TOUAREG": [
+      {
+        "yearStart": 2004,
+        "yearEnd": 2016,
+        "lockApps": "All",
+        "codeRange": "0001-6000",
+        "keyBlanks": [
+          "Dealer FOB"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Megamos",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP (04-06)",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HU66P",
+        "notes": "High Security Key. Encrypted Megamos Transponder System, Ordered by VIN",
+        "cardNo": "970"
+      }
+    ],
+    "VANAGON": [
+      {
+        "yearStart": 1981,
+        "yearEnd": 1990,
+        "lockApps": "All",
+        "codeRange": "N1-N9282",
+        "keyBlanks": [
+          "X110/V33"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "49/50"
+      }
+    ]
+  }
+}

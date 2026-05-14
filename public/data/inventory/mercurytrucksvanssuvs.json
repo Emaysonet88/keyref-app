@@ -1,0 +1,118 @@
+{
+  "Mercury Trucks, Vans, Suvs": {
+    "MONTEREY": [
+      {
+        "yearStart": 2004,
+        "yearEnd": 2007,
+        "lockApps": "All",
+        "codeRange": "1X-1706X",
+        "keyBlanks": [
+          "EK3-H84/EK3LB-H84*/H84- GTK#"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D63)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "substitutes": "Service Key H86",
+        "notes": "Texas Instruments (4D63) Encrypted System",
+        "cardNo": "612"
+      }
+    ],
+    "MOUNTAINEER": [
+      {
+        "yearStart": 2002,
+        "yearEnd": 2011,
+        "lockApps": "All",
+        "codeRange": "1X-1706X",
+        "keyBlanks": [
+          "EK3-H84/EK3LB-H84*/H84- GTK#"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D63)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "substitutes": "Service Key H86",
+        "notes": "Texas Instruments (4D63) Encrypted System",
+        "cardNo": "612"
+      },
+      {
+        "yearStart": 1998,
+        "yearEnd": 2001,
+        "lockApps": "All",
+        "codeRange": "1X-1706X",
+        "keyBlanks": [
+          "EK3-H72/EK3LB-H72*/H72- GTK#"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4C)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "substitutes": "Service Key H86",
+        "notes": "Texas Instruments (4C) System",
+        "cardNo": "612"
+      },
+      {
+        "yearStart": 1997,
+        "yearEnd": 1997,
+        "lockApps": "All",
+        "codeRange": "1X-1706X",
+        "keyBlanks": [
+          "1196FD/H75 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "612"
+      }
+    ],
+    "VILLAGER": [
+      {
+        "yearStart": 1996,
+        "yearEnd": 2002,
+        "lockApps": "All",
+        "codeRange": "1X-1706X",
+        "keyBlanks": [
+          "1196FD/H75 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "612"
+      },
+      {
+        "yearStart": 1993,
+        "yearEnd": 1995,
+        "lockApps": "GB",
+        "codeRange": "FB1-FB1863",
+        "keyBlanks": [
+          "S1167FD/H50 [-PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "S1181FD/H52",
+        "notes": null,
+        "cardNo": "140"
+      }
+    ]
+  }
+}

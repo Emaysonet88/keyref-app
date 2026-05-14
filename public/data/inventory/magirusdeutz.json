@@ -1,0 +1,60 @@
+{
+  "Magirus-deutz": {
+    "ALL": [
+      {
+        "yearStart": 1989,
+        "yearEnd": 1990,
+        "lockApps": "Door",
+        "codeRange": "A4AA-A4JZ",
+        "keyBlanks": [
+          "R62UC"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "36"
+      },
+      {
+        "yearStart": 1989,
+        "yearEnd": 1990,
+        "lockApps": "Ignition",
+        "codeRange": "Precut",
+        "keyBlanks": [
+          "DAV10"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "N/A"
+      },
+      {
+        "yearStart": 1983,
+        "yearEnd": 1988,
+        "lockApps": "Door",
+        "codeRange": "A4AA-A4JZ",
+        "keyBlanks": [
+          "R62UC"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "36"
+      }
+    ]
+  }
+}

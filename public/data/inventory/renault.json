@@ -1,0 +1,44 @@
+{
+  "Renault": {
+    "ALLIANCE ENCORE": [
+      {
+        "yearStart": 1986,
+        "yearEnd": 1988,
+        "lockApps": "Door/ Trunk",
+        "codeRange": "K1-K1000",
+        "keyBlanks": [
+          "X150/RN27"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "S1970AM/RA3",
+        "cardNo": null
+      }
+    ],
+    "FUEGO": [
+      {
+        "yearStart": 1986,
+        "yearEnd": 1986,
+        "lockApps": "Door/ Hatch",
+        "codeRange": "K1-K1000",
+        "keyBlanks": [
+          "X150/RN27"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "S1970AM/RA3",
+        "cardNo": null
+      }
+    ]
+  }
+}

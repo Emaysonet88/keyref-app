@@ -1,0 +1,24 @@
+{
+  "Broadway Truck": {
+    "ALL": [
+      {
+        "yearStart": 1996,
+        "yearEnd": 2002,
+        "lockApps": "All",
+        "codeRange": "CH680-CH1175",
+        "keyBlanks": [
+          "01122A/Y12"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "138"
+      }
+    ]
+  }
+}

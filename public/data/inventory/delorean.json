@@ -1,0 +1,24 @@
+{
+  "De Lorean": {
+    "DE LOREAN": [
+      {
+        "yearStart": 1981,
+        "yearEnd": 1981,
+        "lockApps": "Door",
+        "codeRange": "X1-X1000",
+        "keyBlanks": [
+          "X169/WB3"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "221"
+      }
+    ]
+  }
+}

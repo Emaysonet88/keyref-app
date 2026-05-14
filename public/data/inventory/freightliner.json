@@ -1,0 +1,178 @@
+{
+  "Freightliner": {
+    "CENTURY CLASS": [
+      {
+        "yearStart": 1996,
+        "yearEnd": 2003,
+        "lockApps": "All",
+        "codeRange": "FL001-FL262",
+        "keyBlanks": [
+          "1588"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "P1794/Y157 [-P, -PC]",
+        "notes": null,
+        "cardNo": "537"
+      },
+      {
+        "yearStart": 2004,
+        "yearEnd": 2013,
+        "lockApps": null,
+        "codeRange": "FT1001-FT3000",
+        "keyBlanks": [
+          "1588"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "P1794/Y157 [-P, -PC]",
+        "notes": null,
+        "cardNo": "537"
+      }
+    ],
+    "COLUMBIA": [
+      {
+        "yearStart": 2004,
+        "yearEnd": 2013,
+        "lockApps": "All",
+        "codeRange": "FT1001-FT3000",
+        "keyBlanks": [
+          "1588"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "P1794/Y157 [-P, -PC]",
+        "notes": null,
+        "cardNo": "537"
+      }
+    ],
+    "M/D": [
+      {
+        "yearStart": 2004,
+        "yearEnd": 2004,
+        "lockApps": "All",
+        "codeRange": "Z001-Z262",
+        "keyBlanks": [
+          "1629-P"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "537"
+      }
+    ],
+    "M/D 6/7": [
+      {
+        "yearStart": 2004,
+        "yearEnd": 2004,
+        "lockApps": "All",
+        "codeRange": "FL001-FL262",
+        "keyBlanks": [
+          "1628-P"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "537"
+      }
+    ],
+    "MODELS AND YEARS NOT REFERENCED ELSEWHERE": [
+      {
+        "yearStart": 1994,
+        "yearEnd": 2004,
+        "lockApps": "Ignition/ Door",
+        "codeRange": "N225-N814",
+        "keyBlanks": [
+          "1584"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "1970AM/RA4",
+        "notes": null,
+        "cardNo": "144"
+      },
+      {
+        "yearStart": 1981,
+        "yearEnd": 1993,
+        "lockApps": "Ignition/ Door",
+        "codeRange": "FL201-FL240",
+        "keyBlanks": [
+          "1041T/CG16"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "561"
+      }
+    ],
+    "SPRINTER": [
+      {
+        "yearStart": 2007,
+        "yearEnd": 2011,
+        "lockApps": null,
+        "codeRange": "1-6700",
+        "keyBlanks": [
+          "HU64-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW4 Plus/ EZ-Clone Plus/ Plus Box",
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "913"
+      },
+      {
+        "yearStart": 2002,
+        "yearEnd": 2006,
+        "lockApps": null,
+        "codeRange": "HM6001- HM7110",
+        "keyBlanks": [
+          "MB17"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW4 Plus/ EZ-Clone Plus/ Plus Box",
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "15"
+      }
+    ]
+  }
+}

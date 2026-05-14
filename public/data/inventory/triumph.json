@@ -1,0 +1,44 @@
+{
+  "Triumph": {
+    "TR6, STAG, GT6, SPITFIRE": [
+      {
+        "yearStart": 1981,
+        "yearEnd": 1981,
+        "lockApps": "Door/ Trunk",
+        "codeRange": "FS001-FS955",
+        "keyBlanks": [
+          "62FS"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "73"
+      }
+    ],
+    "TR8, TR7": [
+      {
+        "yearStart": 1981,
+        "yearEnd": 1981,
+        "lockApps": "Ignition",
+        "codeRange": "NH2001- NH3000",
+        "keyBlanks": [
+          "MG1"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "175"
+      }
+    ]
+  }
+}

@@ -1,0 +1,2186 @@
+{
+  "Honda": {
+    "ACCORD W/ PROX": [
+      {
+        "yearStart": 2023,
+        "yearEnd": 2024,
+        "lockApps": "All",
+        "codeRange": null,
+        "keyBlanks": [
+          "OEM# 72147-T20-A11"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 2021,
+        "yearEnd": 2022,
+        "lockApps": "All",
+        "codeRange": "K001-N718",
+        "keyBlanks": [
+          "OEM# 72147-TVA-A02/72147- TVA-A12/72147-TVA- A22/72147-TVA-A32"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key HO01- EMER",
+        "notes": null,
+        "cardNo": "2354"
+      },
+      {
+        "yearStart": 2018,
+        "yearEnd": 2022,
+        "lockApps": "All",
+        "codeRange": "K001-N718",
+        "keyBlanks": [
+          "OEM# 72147-TVA-A11/72147- TVA-A21/72147/TVA-A31 (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key HO01- EMER",
+        "notes": null,
+        "cardNo": "2354"
+      },
+      {
+        "yearStart": 2016,
+        "yearEnd": 2017,
+        "lockApps": "All",
+        "codeRange": "K001-N718",
+        "keyBlanks": [
+          "OEM# 72147-T2G-A61"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key HO01- EMER",
+        "notes": null,
+        "cardNo": "2354"
+      },
+      {
+        "yearStart": 2013,
+        "yearEnd": 2015,
+        "lockApps": "All",
+        "codeRange": "K001-N718",
+        "keyBlanks": [
+          "OEM# 72147-T2A-A11 or 72147-T2A-A21"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key HO01- EMER",
+        "notes": null,
+        "cardNo": "2354"
+      }
+    ],
+    "ACCORD W/ REGULAR IGNITION": [
+      {
+        "yearStart": 2013,
+        "yearEnd": 2019,
+        "lockApps": "All",
+        "codeRange": "K001-N718",
+        "keyBlanks": [
+          "HO05-PT(G) (LAL)"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Philips (49-1C)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HO01-SVC",
+        "notes": "High Security Key, Philips (49-1C) Encrypted System",
+        "cardNo": "2354"
+      },
+      {
+        "yearStart": 2013,
+        "yearEnd": 2019,
+        "lockApps": "All",
+        "codeRange": "K001-N718",
+        "keyBlanks": [
+          "HO03-GTS w/ T49C Transponder (GTHT49C)"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Philips (49-1C)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, EZ Clone Plus",
+        "substitutes": "Service Key HO01-SVC",
+        "notes": "High Security Key, Philips (49-1C) Encrypted System",
+        "cardNo": "2354"
+      }
+    ],
+    "ACCORD HYBRID W/ PROX": [
+      {
+        "yearStart": 2023,
+        "yearEnd": 2024,
+        "lockApps": "All",
+        "codeRange": "V001-W100",
+        "keyBlanks": [
+          "OEM# 72147-30A-A01 or 72147-30A-A11"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Philips (49-1C)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HO01-SVC",
+        "notes": "High Security Key, Philips (49-1C) Encrypted System",
+        "cardNo": "4517"
+      }
+    ],
+    "ACCORD SEDAN, COUPE": [
+      {
+        "yearStart": 2003,
+        "yearEnd": 2012,
+        "lockApps": "All",
+        "codeRange": "K001-N718",
+        "keyBlanks": [
+          "HO03-PT(V) (LAL)"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Philips (46)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HO01-SVC",
+        "notes": "High Security Key, Philips (46) Encrypted System",
+        "cardNo": "2354"
+      },
+      {
+        "yearStart": 1998,
+        "yearEnd": 2002,
+        "lockApps": "All",
+        "codeRange": "5001-8442",
+        "keyBlanks": [
+          "HD106-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Megamos (13)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HD103-NP",
+        "notes": "Megamos (13) Fixed Code System",
+        "cardNo": "262"
+      },
+      {
+        "yearStart": 1998,
+        "yearEnd": 2002,
+        "lockApps": "Valet",
+        "codeRange": "5001-8442",
+        "keyBlanks": [
+          "HD107-PT"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Megamos (13)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HD103-NP",
+        "notes": "Megamos (13) Fixed Code System",
+        "cardNo": "262"
+      },
+      {
+        "yearStart": 1993,
+        "yearEnd": 1997,
+        "lockApps": "All",
+        "codeRange": "5001-8442",
+        "keyBlanks": [
+          "X214/HD103 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "262"
+      },
+      {
+        "yearStart": 1990,
+        "yearEnd": 1992,
+        "lockApps": "All",
+        "codeRange": "5001-8442",
+        "keyBlanks": [
+          "X195/HD98 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "X182/HD91, X214/ HD103",
+        "notes": null,
+        "cardNo": "262"
+      },
+      {
+        "yearStart": 1982,
+        "yearEnd": 1989,
+        "lockApps": "All",
+        "codeRange": "3001-4481",
+        "keyBlanks": [
+          "X181/HD90 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "X183/HD92",
+        "notes": null,
+        "cardNo": "148"
+      },
+      {
+        "yearStart": 2003,
+        "yearEnd": 2003,
+        "lockApps": "EB3-S-HO03",
+        "codeRange": null,
+        "keyBlanks": [
+          "HO03-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "HO03-GTS",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      },
+      {
+        "yearStart": 1998,
+        "yearEnd": 1998,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "HD106-PT5"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "RW5, SA+, RW4 Plus, RW4, RW3, RW2,EZ Clone Plus, EZ Clone",
+        "cardNo": null
+      },
+      {
+        "yearStart": 1998,
+        "yearEnd": 1998,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "HD107-PT5"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "RW5, SA+, RW4 Plus, RW4, RW3, RW2,EZ Clone Plus, EZ Clone",
+        "cardNo": null
+      }
+    ],
+    "ACCORD STATION WAGON, LX, EX": [
+      {
+        "yearStart": 1991,
+        "yearEnd": 1997,
+        "lockApps": "All",
+        "codeRange": "5001-8442",
+        "keyBlanks": [
+          "X214/HD103 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "262"
+      }
+    ],
+    "CIVIC": [
+      {
+        "yearStart": 2001,
+        "yearEnd": 2002,
+        "lockApps": "All",
+        "codeRange": "5001-8442",
+        "keyBlanks": [
+          "HD106-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Megamos (13)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HD103-NP",
+        "notes": "Megamos (13) Fixed Code System",
+        "cardNo": "262"
+      },
+      {
+        "yearStart": 1994,
+        "yearEnd": 2000,
+        "lockApps": "All",
+        "codeRange": "5001-8442",
+        "keyBlanks": [
+          "X214/HD103 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "262"
+      },
+      {
+        "yearStart": 1988,
+        "yearEnd": 1994,
+        "lockApps": "All",
+        "codeRange": "5001-8442",
+        "keyBlanks": [
+          "X182/HD91 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "X214/HD103",
+        "notes": null,
+        "cardNo": "262"
+      },
+      {
+        "yearStart": 1984,
+        "yearEnd": 1987,
+        "lockApps": "All",
+        "codeRange": "3001-4481",
+        "keyBlanks": [
+          "X181/HD90 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "X183/HD92",
+        "notes": null,
+        "cardNo": "148"
+      },
+      {
+        "yearStart": 2001,
+        "yearEnd": 2001,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "HD106-PT5"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "RW5, SA+, RW4 Plus, RW4, RW3, RW2,EZ Clone Plus, EZ Clone",
+        "cardNo": null
+      },
+      {
+        "yearStart": 2001,
+        "yearEnd": 2001,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "HD107-PT5"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "RW5, SA+, RW4 Plus, RW4, RW3, RW2,EZ Clone Plus, EZ Clone",
+        "cardNo": null
+      }
+    ],
+    "CIVIC / HYBRID W/ REGULAR IGNITION": [
+      {
+        "yearStart": 2014,
+        "yearEnd": 2021,
+        "lockApps": "All",
+        "codeRange": "K001-N718",
+        "keyBlanks": [
+          "HO05-PT(G) (LAL)"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Philips (49-1C)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HO01-SVC",
+        "notes": "High Security Key, Philips (49-1C) Encrypted System",
+        "cardNo": "2354"
+      }
+    ],
+    "CIVIC / HYBRID W/ PROX": [
+      {
+        "yearStart": 2022,
+        "yearEnd": 2024,
+        "lockApps": "All",
+        "codeRange": "V001-W100",
+        "keyBlanks": [
+          "OEM# 72147-T20-A11"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "4517"
+      },
+      {
+        "yearStart": 2020,
+        "yearEnd": 2021,
+        "lockApps": "All",
+        "codeRange": "K001-N718",
+        "keyBlanks": [
+          "OEM# 72147-TBA-A12/72147- TGG-A02/72147-TGG- A12/72147-TGG-A22 (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP (2020)",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key HO01- EMER.",
+        "notes": null,
+        "cardNo": "2354"
+      },
+      {
+        "yearStart": 2014,
+        "yearEnd": 2019,
+        "lockApps": "All",
+        "codeRange": "K001-N718",
+        "keyBlanks": [
+          "OEM# 72147-T2A-A01"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key HO01- EMER.",
+        "notes": null,
+        "cardNo": "2354"
+      }
+    ],
+    "CIVIC / HYBRID": [
+      {
+        "yearStart": 2006,
+        "yearEnd": 2013,
+        "lockApps": "All",
+        "codeRange": "K001-N718",
+        "keyBlanks": [
+          "HO03-PT(V) (LAL)"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Philips (46)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HO01-SVC",
+        "notes": "High Security Key, Philips (46) Encrypted System",
+        "cardNo": "2354"
+      },
+      {
+        "yearStart": 2003,
+        "yearEnd": 2005,
+        "lockApps": "All",
+        "codeRange": "K001-N718",
+        "keyBlanks": [
+          "HO01-PT"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Megamos (13)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HO01-SVC",
+        "notes": "Megamos (13) Fixed Code System",
+        "cardNo": "2354"
+      },
+      {
+        "yearStart": 2006,
+        "yearEnd": 2006,
+        "lockApps": "EB3-S-HO03",
+        "codeRange": null,
+        "keyBlanks": [
+          "HO03-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "HO03-GTS",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      },
+      {
+        "yearStart": 2003,
+        "yearEnd": 2003,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "HO01T5"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "RW5, SA+, RW4 Plus, RW4, RW3, RW2,EZ Clone Plus, EZ Clone",
+        "cardNo": null
+      },
+      {
+        "yearStart": 2003,
+        "yearEnd": 2003,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "HOV01T5"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "RW5, SA+, RW4 Plus, RW4, RW3, RW2,EZ Clone Plus, EZ Clone",
+        "cardNo": null
+      }
+    ],
+    "CIVIC HATCHBACK": [
+      {
+        "yearStart": 2022,
+        "yearEnd": 2024,
+        "lockApps": "All",
+        "codeRange": "V001-W100",
+        "keyBlanks": [
+          "OEM# 72147-T43-A01 or 72147-T43-A11"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HO01-SVC",
+        "notes": null,
+        "cardNo": "4517"
+      }
+    ],
+    "CIVIC SI": [
+      {
+        "yearStart": 2023,
+        "yearEnd": 2024,
+        "lockApps": "All",
+        "codeRange": "V001-W100",
+        "keyBlanks": [
+          "OEM# 72147-T20-A01"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HO01-SVC",
+        "notes": null,
+        "cardNo": "4517"
+      }
+    ],
+    "CROSSTOUR W/ PROX": [
+      {
+        "yearStart": 2013,
+        "yearEnd": 2016,
+        "lockApps": "All",
+        "codeRange": "K001-N718",
+        "keyBlanks": [
+          "OEM# 72147-TP6-A61 or 72147-TP6-A71"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HO01-SVC",
+        "notes": null,
+        "cardNo": "2354"
+      }
+    ],
+    "CROSSTOUR W/ REGULAR IGNITION": [
+      {
+        "yearStart": 2013,
+        "yearEnd": 2016,
+        "lockApps": "All",
+        "codeRange": "K001-N718",
+        "keyBlanks": [
+          "HO05-PT(G) (LAL)"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Philips (49-1C)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HO01-SVC",
+        "notes": "High Security Key, Philips (49-1C) Encrypted System",
+        "cardNo": "2354"
+      }
+    ],
+    "CROSSTOUR": [
+      {
+        "yearStart": 2010,
+        "yearEnd": 2012,
+        "lockApps": "All",
+        "codeRange": "K001-N718",
+        "keyBlanks": [
+          "HO03-PT(V) (LAL)"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Philips (46)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HO01-SVC",
+        "notes": "High Security Key, Philips (46) Encrypted System",
+        "cardNo": "2354"
+      },
+      {
+        "yearStart": 2010,
+        "yearEnd": 2010,
+        "lockApps": "EB3-S-HO03",
+        "codeRange": null,
+        "keyBlanks": [
+          "HO03-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "HO03-GTS",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "CR-V W/ PROX": [
+      {
+        "yearStart": 2023,
+        "yearEnd": 2024,
+        "lockApps": "All",
+        "codeRange": "V001-W100",
+        "keyBlanks": [
+          "OEM# 72147-3A0-A01/72147- TA0-A11/72147-T43- A01/72147-T43-A11"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro (thru 2023)",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "4517"
+      },
+      {
+        "yearStart": 2021,
+        "yearEnd": 2022,
+        "lockApps": "All",
+        "codeRange": "K001-N718",
+        "keyBlanks": [
+          "OEM# 72147-TLA-A02/72147- TLA-A12/72147-TLA-A22"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro (2021)",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key HO01- EMER.",
+        "notes": null,
+        "cardNo": "2354"
+      },
+      {
+        "yearStart": 2017,
+        "yearEnd": 2020,
+        "lockApps": "All",
+        "codeRange": "K001-N718",
+        "keyBlanks": [
+          "OEM# 72147-TG7-A11 OEM#72147-TG7-A31 OEM#72147-TG7-A41"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key HO01- EMER.",
+        "notes": null,
+        "cardNo": "2354"
+      },
+      {
+        "yearStart": 2015,
+        "yearEnd": 2016,
+        "lockApps": "All",
+        "codeRange": "K001-N718",
+        "keyBlanks": [
+          "OEM# 72147-T0A-A21 or 72147-T0A-31"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key HO01- EMER.",
+        "notes": null,
+        "cardNo": "2354"
+      }
+    ],
+    "CR-V": [
+      {
+        "yearStart": 2014,
+        "yearEnd": 2022,
+        "lockApps": "All",
+        "codeRange": "K001-N718",
+        "keyBlanks": [
+          "HO05-PT(G) (LAL)"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Philips (49-1C)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HO01-SVC",
+        "notes": "High Security Key, Philips (49-1C) Encrypted System",
+        "cardNo": "2354"
+      },
+      {
+        "yearStart": 2007,
+        "yearEnd": 2013,
+        "lockApps": "All",
+        "codeRange": "K001-N718",
+        "keyBlanks": [
+          "HO03-PT(V) (LAL)"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Philips (46)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HO01-SVC",
+        "notes": "High Security Key, Philips (46) Encrypted System",
+        "cardNo": "2354"
+      },
+      {
+        "yearStart": 2002,
+        "yearEnd": 2006,
+        "lockApps": "All",
+        "codeRange": "K001-N718",
+        "keyBlanks": [
+          "HO01-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Megamos (13)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HO01-SVC",
+        "notes": "Megamos (13) Fixed Code System",
+        "cardNo": "2354"
+      },
+      {
+        "yearStart": 1997,
+        "yearEnd": 2001,
+        "lockApps": "All",
+        "codeRange": "5001-8442",
+        "keyBlanks": [
+          "X214/HD103 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "262"
+      },
+      {
+        "yearStart": 2007,
+        "yearEnd": 2007,
+        "lockApps": "EB3-S-HO03",
+        "codeRange": null,
+        "keyBlanks": [
+          "HO03-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "HO03-GTS",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      },
+      {
+        "yearStart": 2002,
+        "yearEnd": 2002,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "HO01T5"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "RW5, SA+, RW4 Plus, RW4, RW3, RW2,EZ Clone Plus, EZ Clone",
+        "cardNo": null
+      },
+      {
+        "yearStart": 2002,
+        "yearEnd": 2002,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "HOV01T5"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "RW5, SA+, RW4 Plus, RW4, RW3, RW2,EZ Clone Plus, EZ Clone",
+        "cardNo": null
+      }
+    ],
+    "CRX": [
+      {
+        "yearStart": 1988,
+        "yearEnd": 1991,
+        "lockApps": "All",
+        "codeRange": "5001-8442",
+        "keyBlanks": [
+          "X182/HD91 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "X214/HD103",
+        "notes": null,
+        "cardNo": "262"
+      },
+      {
+        "yearStart": 1985,
+        "yearEnd": 1987,
+        "lockApps": "All",
+        "codeRange": "3001-4481",
+        "keyBlanks": [
+          "X181/HD90 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "X183/HD92",
+        "notes": null,
+        "cardNo": "148"
+      }
+    ],
+    "CR-Z": [
+      {
+        "yearStart": 2011,
+        "yearEnd": 2014,
+        "lockApps": "All",
+        "codeRange": "K001-N718",
+        "keyBlanks": [
+          "HO03-PT(V) (LAL)"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Philips (46)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HO01-SVC",
+        "notes": "High Security Key, Philips (46) Encrypted System",
+        "cardNo": "2354"
+      },
+      {
+        "yearStart": 2011,
+        "yearEnd": 2011,
+        "lockApps": "EB3-S-HO03",
+        "codeRange": null,
+        "keyBlanks": [
+          "HO03-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "HO03-GTS",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "DEL SOL": [
+      {
+        "yearStart": 1993,
+        "yearEnd": 1997,
+        "lockApps": "All",
+        "codeRange": "5001-8442",
+        "keyBlanks": [
+          "X214/HD103 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "262"
+      }
+    ],
+    "ELEMENT": [
+      {
+        "yearStart": 2006,
+        "yearEnd": 2011,
+        "lockApps": "All",
+        "codeRange": "K001-N718",
+        "keyBlanks": [
+          "HO03-PT(V) (LAL)"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Philips (46)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HO01-SVC",
+        "notes": "High Security Key, Philips (46) Encrypted System",
+        "cardNo": "2354"
+      },
+      {
+        "yearStart": 2003,
+        "yearEnd": 2005,
+        "lockApps": "All",
+        "codeRange": "K001-N718",
+        "keyBlanks": [
+          "HO01-PT"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Megamos (13)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HO01-SVC",
+        "notes": "Megamos (13) Fixed Code System",
+        "cardNo": "2354"
+      },
+      {
+        "yearStart": 2006,
+        "yearEnd": 2006,
+        "lockApps": "EB3-S-HO03",
+        "codeRange": null,
+        "keyBlanks": [
+          "HO03-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "HO03-GTS",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      },
+      {
+        "yearStart": 2003,
+        "yearEnd": 2003,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "HO01T5"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "RW5, SA+, RW4 Plus, RW4, RW3, RW2,EZ Clone Plus, EZ Clone",
+        "cardNo": null
+      },
+      {
+        "yearStart": 2003,
+        "yearEnd": 2003,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "HOV01T5"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "RW5, SA+, RW4 Plus, RW4, RW3, RW2,EZ Clone Plus, EZ Clone",
+        "cardNo": null
+      }
+    ],
+    "FIT W/ PROX": [
+      {
+        "yearStart": 2015,
+        "yearEnd": 2019,
+        "lockApps": "All",
+        "codeRange": "K001-N718",
+        "keyBlanks": [
+          "OEM# 72147-T5A-A01 (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key HO01- EMER.",
+        "notes": null,
+        "cardNo": "2354"
+      }
+    ],
+    "FIT W/ REGULAR IGNITION": [
+      {
+        "yearStart": 2015,
+        "yearEnd": 2021,
+        "lockApps": "All",
+        "codeRange": "K001-N718",
+        "keyBlanks": [
+          "HO05-PT(G) (LAL)"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Philips (49-1C)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HO01-SVC",
+        "notes": "High Security Key, Philips (49-1C) Encrypted System",
+        "cardNo": "2354"
+      }
+    ],
+    "FIT": [
+      {
+        "yearStart": 2009,
+        "yearEnd": 2014,
+        "lockApps": "All",
+        "codeRange": "K001-N718",
+        "keyBlanks": [
+          "HO03-PT(V) (LAL)"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Philips (46)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HO01-SVC",
+        "notes": "High Security Key, Philips (46) Encrypted System",
+        "cardNo": "2354"
+      },
+      {
+        "yearStart": 2007,
+        "yearEnd": 2008,
+        "lockApps": "All",
+        "codeRange": "K001-N718",
+        "keyBlanks": [
+          "HD113-PT(H) (LAL)"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Megamos",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HO01-SVC",
+        "notes": "High Security Key. Megamos Encrypted System",
+        "cardNo": "2354"
+      },
+      {
+        "yearStart": 2009,
+        "yearEnd": 2009,
+        "lockApps": "EB3-S-HO03",
+        "codeRange": null,
+        "keyBlanks": [
+          "HO03-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "HO03-GTS",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "HR-V W/ PROX": [
+      {
+        "yearStart": 2023,
+        "yearEnd": 2024,
+        "lockApps": "All",
+        "codeRange": "V001-W100",
+        "keyBlanks": [
+          "OEM# 72147-T43-A01 or 72147-T43-A11"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "4517"
+      },
+      {
+        "yearStart": 2016,
+        "yearEnd": 2022,
+        "lockApps": "All",
+        "codeRange": "K001-N718",
+        "keyBlanks": [
+          "OEM# 72147-T7S-A01 (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Philips (47)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key HO01- EMER.",
+        "notes": "Philips (47) Encrypted System",
+        "cardNo": "2354"
+      }
+    ],
+    "HR-V W/ REGULAR IGNITION": [
+      {
+        "yearStart": 2016,
+        "yearEnd": 2022,
+        "lockApps": "All",
+        "codeRange": "K001-N718",
+        "keyBlanks": [
+          "HO05-PT(G) (LAL)"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Philips (49-1C)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HO01-SVC",
+        "notes": "High Security Key, Philips (49-1C) Encrypted System",
+        "cardNo": "2354"
+      }
+    ],
+    "INSIGHT": [
+      {
+        "yearStart": 2019,
+        "yearEnd": 2022,
+        "lockApps": "All",
+        "codeRange": "K001-N718",
+        "keyBlanks": [
+          "OEM# 72147-TXM-A01 or 72147-TWA-A11"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key HO01- EMER.",
+        "notes": null,
+        "cardNo": "2354"
+      },
+      {
+        "yearStart": 2010,
+        "yearEnd": 2014,
+        "lockApps": "All",
+        "codeRange": "K001-N718",
+        "keyBlanks": [
+          "HO03-PT(V) (LAL)"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Philips (46)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HO01-SVC",
+        "notes": "High Security Key, Philips (46) Encrypted System",
+        "cardNo": "2354"
+      },
+      {
+        "yearStart": 2000,
+        "yearEnd": 2004,
+        "lockApps": "All",
+        "codeRange": "5001-8442",
+        "keyBlanks": [
+          "HD106-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Megamos (13)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HD103-NP",
+        "notes": "Megamos (13) Fixed Code System",
+        "cardNo": "262"
+      },
+      {
+        "yearStart": 2010,
+        "yearEnd": 2010,
+        "lockApps": "EB3-S-HO03",
+        "codeRange": null,
+        "keyBlanks": [
+          "HO03-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "HO03-GTS",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      },
+      {
+        "yearStart": 2000,
+        "yearEnd": 2000,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "HD106-PT5"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "RW5, SA+, RW4 Plus, RW4, RW3, RW2,EZ Clone Plus, EZ Clone",
+        "cardNo": null
+      }
+    ],
+    "INSIGHT HYBRID": [
+      {
+        "yearStart": 2005,
+        "yearEnd": 2006,
+        "lockApps": "All",
+        "codeRange": "5001-8442",
+        "keyBlanks": [
+          "HD106-PT"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Megamos (13)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HD103-NP",
+        "notes": "Megamos (13) Fixed Code System",
+        "cardNo": "262"
+      },
+      {
+        "yearStart": 2005,
+        "yearEnd": 2005,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "HD106-PT5"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "RW5, SA+, RW4 Plus, RW4, RW3, RW2,EZ Clone Plus, EZ Clone",
+        "cardNo": null
+      }
+    ],
+    "ODYSSEY W/ PROX": [
+      {
+        "yearStart": 2021,
+        "yearEnd": 2025,
+        "lockApps": "All",
+        "codeRange": "K001-N718",
+        "keyBlanks": [
+          "OEM# 72147-THR-A41/A51/ A61/A72"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro (thru 2023)",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key HO01- EMER.",
+        "notes": null,
+        "cardNo": "2354"
+      },
+      {
+        "yearStart": 2018,
+        "yearEnd": 2020,
+        "lockApps": "All",
+        "codeRange": "K001-N718",
+        "keyBlanks": [
+          "OEM# 72147-THR-A01/A11/ A21/A31"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key HO01- EMER.",
+        "notes": null,
+        "cardNo": "2354"
+      },
+      {
+        "yearStart": 2014,
+        "yearEnd": 2017,
+        "lockApps": "All",
+        "codeRange": "K001-N718",
+        "keyBlanks": [
+          "OEM# 72147-TK8-A51 or 72147-TK8-A81 (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key HO01- EMER.",
+        "notes": null,
+        "cardNo": "2354"
+      }
+    ],
+    "ODYSSEY": [
+      {
+        "yearStart": 2005,
+        "yearEnd": 2016,
+        "lockApps": "All",
+        "codeRange": "K001-N718",
+        "keyBlanks": [
+          "HO03-PT(V) (LAL)"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Philips (46)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HO01-SVC",
+        "notes": "High Security Key, Philips (46) Encrypted System",
+        "cardNo": "2354"
+      },
+      {
+        "yearStart": 2005,
+        "yearEnd": 2016,
+        "lockApps": "All",
+        "codeRange": "K001-N718",
+        "keyBlanks": [
+          "EK3P-HO03/EK3LB-HO03*/ HO03-GTK#"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Philips (46)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "substitutes": "Service Key HO01-SVC",
+        "notes": "High Security Key, Philips (46) Encrypted System",
+        "cardNo": "2354"
+      },
+      {
+        "yearStart": 2003,
+        "yearEnd": 2004,
+        "lockApps": "All",
+        "codeRange": "K001-N718",
+        "keyBlanks": [
+          "HO01-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Megamos (13)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HO01-SVC",
+        "notes": "Megamos (13) Fixed Code System",
+        "cardNo": "2354"
+      },
+      {
+        "yearStart": 1998,
+        "yearEnd": 2002,
+        "lockApps": "All",
+        "codeRange": "5001-8442",
+        "keyBlanks": [
+          "HD106-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Megamos (13)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HD103-NP",
+        "notes": "Megamos (13) Fixed Code System",
+        "cardNo": "262"
+      },
+      {
+        "yearStart": 1995,
+        "yearEnd": 1997,
+        "lockApps": "All",
+        "codeRange": "5001-8442",
+        "keyBlanks": [
+          "X214/HD103 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "262"
+      },
+      {
+        "yearStart": 2005,
+        "yearEnd": 2005,
+        "lockApps": "EB3-S-HO03",
+        "codeRange": null,
+        "keyBlanks": [
+          "HO03-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "HO03-GTS",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      },
+      {
+        "yearStart": 2003,
+        "yearEnd": 2003,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "HO01T5"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "RW5, SA+, RW4 Plus, RW4, RW3, RW2,EZ Clone Plus, EZ Clone",
+        "cardNo": null
+      },
+      {
+        "yearStart": 2003,
+        "yearEnd": 2003,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "HOV01T5"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "RW5, SA+, RW4 Plus, RW4, RW3, RW2,EZ Clone Plus, EZ Clone",
+        "cardNo": null
+      },
+      {
+        "yearStart": 1998,
+        "yearEnd": 1998,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "HD106-PT5"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "RW5, SA+, RW4 Plus, RW4, RW3, RW2,EZ Clone Plus, EZ Clone",
+        "cardNo": null
+      },
+      {
+        "yearStart": 1998,
+        "yearEnd": 1998,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "HD107-PT5"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "RW5, SA+, RW4 Plus, RW4, RW3, RW2,EZ Clone Plus, EZ Clone",
+        "cardNo": null
+      }
+    ],
+    "PASSPORT W/ PROX": [
+      {
+        "yearStart": 2020,
+        "yearEnd": 2024,
+        "lockApps": "All",
+        "codeRange": "K001-N718",
+        "keyBlanks": [
+          "OEM# 72147-TG7-AA1/72147- TG7-AB1/72147-TG7-A61"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP (2020-2022)",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key HO01- EMER.",
+        "notes": null,
+        "cardNo": "2354"
+      }
+    ],
+    "PASSPORT W/ REGULAR IGNITION": [
+      {
+        "yearStart": 2019,
+        "yearEnd": 2020,
+        "lockApps": "All",
+        "codeRange": "K001-N718",
+        "keyBlanks": [
+          "HO05-PT(G)"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Philips (49-1C)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HO01-SVC",
+        "notes": "High Security Key, Philips (49-1C) Encrypted System",
+        "cardNo": "2354"
+      }
+    ],
+    "PASSPORT": [
+      {
+        "yearStart": 1998,
+        "yearEnd": 2002,
+        "lockApps": "All",
+        "codeRange": "5001-8442",
+        "keyBlanks": [
+          "X214/HD103 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "262"
+      },
+      {
+        "yearStart": 1996,
+        "yearEnd": 1997,
+        "lockApps": "All",
+        "codeRange": "N5001-N7000",
+        "keyBlanks": [
+          "X184/B65 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "X185/SUZ15",
+        "notes": null,
+        "cardNo": "264"
+      },
+      {
+        "yearStart": 1995,
+        "yearEnd": 1995,
+        "lockApps": "All",
+        "codeRange": "N5001-N7000",
+        "keyBlanks": [
+          "X184/B65 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "X185/SUZ15",
+        "notes": null,
+        "cardNo": "264"
+      },
+      {
+        "yearStart": 1994,
+        "yearEnd": 1994,
+        "lockApps": "All",
+        "codeRange": "D4001-D6000",
+        "keyBlanks": [
+          "X198/B74 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "288"
+      }
+    ],
+    "PILOT W/ PROX": [
+      {
+        "yearStart": 2023,
+        "yearEnd": 2025,
+        "lockApps": "All",
+        "codeRange": "V001-W100",
+        "keyBlanks": [
+          "OEM# 72147-T43-A11/72147- T90-A21/72147-T90-A31"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "4517"
+      },
+      {
+        "yearStart": 2021,
+        "yearEnd": 2022,
+        "lockApps": "All",
+        "codeRange": "K001-N718",
+        "keyBlanks": [
+          "OEM#72147-TG7-AA1/AB1/ A52/A61"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key HO01- EMER.",
+        "notes": null,
+        "cardNo": "2354"
+      },
+      {
+        "yearStart": 2019,
+        "yearEnd": 2020,
+        "lockApps": "All",
+        "codeRange": "K001-N718",
+        "keyBlanks": [
+          "OEM# 72147-TG7-A61/A81/ A91"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key HO01- EMER.",
+        "notes": null,
+        "cardNo": "2354"
+      },
+      {
+        "yearStart": 2016,
+        "yearEnd": 2018,
+        "lockApps": "All",
+        "codeRange": "K001-N718",
+        "keyBlanks": [
+          "OEM# 72147-TG7-A01/A11/ A31/A41"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Philips (46)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key HO01- EMER.",
+        "notes": "Philips (46) Encrypted System",
+        "cardNo": "2354"
+      }
+    ],
+    "PILOT": [
+      {
+        "yearStart": 2006,
+        "yearEnd": 2015,
+        "lockApps": "All",
+        "codeRange": "K001-N718",
+        "keyBlanks": [
+          "HO03-PT(V) (LAL)"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Philips (46)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HO01-SVC",
+        "notes": "High Security Key, Philips (46) Encrypted System",
+        "cardNo": "2354"
+      },
+      {
+        "yearStart": 2003,
+        "yearEnd": 2005,
+        "lockApps": "All",
+        "codeRange": "K001-N718",
+        "keyBlanks": [
+          "HO01-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Megamos (13)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HO01-SVC",
+        "notes": "Megamos (13) Fixed Code System",
+        "cardNo": "2354"
+      },
+      {
+        "yearStart": 2003,
+        "yearEnd": 2005,
+        "lockApps": "All",
+        "codeRange": "K001-N718",
+        "keyBlanks": [
+          "HO01T5"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Megamos (13)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, RW3, RW2,EZ Clone Plus, EZ Clone",
+        "substitutes": "Service Key HO01-SVC",
+        "notes": "Megamos (13) Fixed Code System",
+        "cardNo": "2354"
+      },
+      {
+        "yearStart": 2006,
+        "yearEnd": 2006,
+        "lockApps": "EB3-S-HO03",
+        "codeRange": "HO03-GTK",
+        "keyBlanks": [
+          "HO03-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "PRELUDE": [
+      {
+        "yearStart": 1997,
+        "yearEnd": 2002,
+        "lockApps": "All",
+        "codeRange": "5001-8442",
+        "keyBlanks": [
+          "HD106-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Megamos (13)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HD103-NP",
+        "notes": "Megamos (13) Fixed Code System",
+        "cardNo": "262"
+      },
+      {
+        "yearStart": 1992,
+        "yearEnd": 1996,
+        "lockApps": "All",
+        "codeRange": "5001-8442",
+        "keyBlanks": [
+          "X214/HD103 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "262"
+      },
+      {
+        "yearStart": 1991,
+        "yearEnd": 1991,
+        "lockApps": "All",
+        "codeRange": "5001-8442",
+        "keyBlanks": [
+          "X195/HD98 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "X182/HD91, X214/ HD103",
+        "notes": null,
+        "cardNo": "262"
+      },
+      {
+        "yearStart": 1983,
+        "yearEnd": 1990,
+        "lockApps": "All",
+        "codeRange": "3001-4481",
+        "keyBlanks": [
+          "X181/HD90 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "X183/HD92",
+        "notes": null,
+        "cardNo": "148"
+      }
+    ],
+    "RIDGELINE W/ PROX": [
+      {
+        "yearStart": 2020,
+        "yearEnd": 2023,
+        "lockApps": "All",
+        "codeRange": "K001-N718",
+        "keyBlanks": [
+          "OEM# 72147-T6Z-A51 or 72147-T6Z-A61"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro (2021-2022)",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key HO01- EMER.",
+        "notes": null,
+        "cardNo": "2354"
+      },
+      {
+        "yearStart": 2017,
+        "yearEnd": 2021,
+        "lockApps": "All",
+        "codeRange": "K001-N718",
+        "keyBlanks": [
+          "OEM# 72147-T6Z-A01/A11/ A21/A31"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key HO01- EMER.",
+        "notes": null,
+        "cardNo": "2354"
+      }
+    ],
+    "RIDGELINE": [
+      {
+        "yearStart": 2006,
+        "yearEnd": 2014,
+        "lockApps": "All",
+        "codeRange": "K001-N718",
+        "keyBlanks": [
+          "HO03-PT(V) (LAL)"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Philips (46)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HO01-SVC",
+        "notes": "High Security Key, Philips (46) Encrypted System",
+        "cardNo": "2354"
+      },
+      {
+        "yearStart": 2006,
+        "yearEnd": 2006,
+        "lockApps": "EB3-S-HO03",
+        "codeRange": "HO03-GTK",
+        "keyBlanks": [
+          "HO03-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "S2000": [
+      {
+        "yearStart": 2008,
+        "yearEnd": 2009,
+        "lockApps": "All",
+        "codeRange": "K001-N718",
+        "keyBlanks": [
+          "HO03-PT(V)"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Philips (46)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HO01-SVC",
+        "notes": "High Security Key, Philips (46) Encrypted System",
+        "cardNo": "2354"
+      },
+      {
+        "yearStart": 2006,
+        "yearEnd": 2007,
+        "lockApps": "All",
+        "codeRange": "K001-N718",
+        "keyBlanks": [
+          "HD113-PT(H) (LAL)"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Megamos",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HO01-SVC",
+        "notes": "High Security Key. Megamos Encrypted System",
+        "cardNo": "2354"
+      },
+      {
+        "yearStart": 2004,
+        "yearEnd": 2005,
+        "lockApps": "All",
+        "codeRange": "K001-N718",
+        "keyBlanks": [
+          "HO01-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Megamos (13)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HO01-SVC",
+        "notes": "Megamos (13) Fixed Code System",
+        "cardNo": "2354"
+      },
+      {
+        "yearStart": 2000,
+        "yearEnd": 2003,
+        "lockApps": "All",
+        "codeRange": "5001-8442",
+        "keyBlanks": [
+          "HD106-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Megamos (13)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HD103-NP",
+        "notes": "Megamos (13) Fixed Code System",
+        "cardNo": "262"
+      },
+      {
+        "yearStart": 2000,
+        "yearEnd": 2003,
+        "lockApps": "All",
+        "codeRange": "5001-8442",
+        "keyBlanks": [
+          "HD106-PT5"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Megamos (13)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, RW3, RW2,EZ Clone Plus, EZ Clone",
+        "substitutes": "Service Key HD103-NP",
+        "notes": "Megamos (13) Fixed Code System",
+        "cardNo": "262"
+      },
+      {
+        "yearStart": 2008,
+        "yearEnd": 2008,
+        "lockApps": "EB3-S-HO03",
+        "codeRange": "HO03-GTK",
+        "keyBlanks": [
+          "HO03-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 2006,
+        "yearEnd": 2006,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "HO03-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "T48",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": null
+      }
+    ]
+  }
+}

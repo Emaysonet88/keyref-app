@@ -1,0 +1,1930 @@
+{
+  "Nissan / Datsun": {
+    "300ZX, 280ZX": [
+      {
+        "yearStart": 1984,
+        "yearEnd": 1996,
+        "lockApps": "All",
+        "codeRange": "X1-X8000",
+        "keyBlanks": [
+          "X197/DA30 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "145"
+      },
+      {
+        "yearStart": 1981,
+        "yearEnd": 1983,
+        "lockApps": "All",
+        "codeRange": "M6001-M7000",
+        "keyBlanks": [
+          "X115/DA23 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "80"
+      }
+    ],
+    "350Z ROADSTER": [
+      {
+        "yearStart": 2003,
+        "yearEnd": 2009,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "NI04T (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key DA34",
+        "notes": "Philips Crypto (46) Transponder key",
+        "cardNo": "607"
+      }
+    ],
+    "370Z COUPE": [
+      {
+        "yearStart": 2019,
+        "yearEnd": 2022,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "OEM# 285E3-1ET5D"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emerg. Key NI06-P",
+        "notes": null,
+        "cardNo": "607"
+      },
+      {
+        "yearStart": 2009,
+        "yearEnd": 2019,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "OEM# 285E3-1ET5A"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emerg. Key NI06-P",
+        "notes": null,
+        "cardNo": "607"
+      }
+    ],
+    "ALL MODELS EXCEPT 280ZX & 810": [
+      {
+        "yearStart": 1981,
+        "yearEnd": 1981,
+        "lockApps": "All",
+        "codeRange": "M4001-M5000",
+        "keyBlanks": [
+          "X6/62DT"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "80"
+      }
+    ],
+    "ALTIMA": [
+      {
+        "yearStart": 2023,
+        "yearEnd": 2024,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "OEM# 285E3-6LS5A"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emerg. Key NI06-P",
+        "notes": null,
+        "cardNo": "607"
+      },
+      {
+        "yearStart": 2019,
+        "yearEnd": 2022,
+        "lockApps": "All",
+        "codeRange": "40,000-41,520",
+        "keyBlanks": [
+          "OEM# 285E3-6CA1A or 285E3-6CA6A (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emerg. Key NI06-P",
+        "notes": null,
+        "cardNo": "607"
+      },
+      {
+        "yearStart": 2016,
+        "yearEnd": 2018,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "OEM# 285E3-9H54A or 285E3-4RA0B (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emerg. Key NI06-P",
+        "notes": "Philips Crypto (47) Hitag3",
+        "cardNo": "607"
+      },
+      {
+        "yearStart": 2013,
+        "yearEnd": 2015,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "OEM# 285E3-3TP5A (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emerg. Key NI06-P",
+        "notes": null,
+        "cardNo": "607"
+      },
+      {
+        "yearStart": 2007,
+        "yearEnd": 2012,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "OEM# 285E3-JA02A or 285E3-JA05A (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emerg. Key NI06-P",
+        "notes": null,
+        "cardNo": "607"
+      },
+      {
+        "yearStart": 2005,
+        "yearEnd": 2006,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "NI04T (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key DA34",
+        "notes": "Philips Crypto (46) Transponder key",
+        "cardNo": "607"
+      },
+      {
+        "yearStart": 2000,
+        "yearEnd": 2004,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "NI01T or NI02T (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D60)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key DA34",
+        "notes": "Texas Instruments (4D60) Encrypted System",
+        "cardNo": "607"
+      },
+      {
+        "yearStart": 1998,
+        "yearEnd": 1999,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "X237/DA34 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "DA35",
+        "notes": null,
+        "cardNo": "607"
+      },
+      {
+        "yearStart": 1993,
+        "yearEnd": 1997,
+        "lockApps": "All",
+        "codeRange": "X1-X8000",
+        "keyBlanks": [
+          "X210/DA31 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "DA25",
+        "notes": null,
+        "cardNo": "145"
+      }
+    ],
+    "ARIYA": [
+      {
+        "yearStart": 2023,
+        "yearEnd": 2023,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "OEM# 285E3-5MR3B or 285E3-5MR1B"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "ARMADA W/ PROX": [
+      {
+        "yearStart": 2023,
+        "yearEnd": 2024,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "OEM# 285E3-6JU4A"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro (Thru 2023)",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key NI06-P",
+        "notes": "Philips Crypto (46) Transponder key",
+        "cardNo": "607"
+      },
+      {
+        "yearStart": 2017,
+        "yearEnd": 2022,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "OEM# 285E3-1LK0D/285E3- 1LP0C/285E3-1LB5A"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key NI06-P",
+        "notes": "Philips Crypto (46) Transponder key",
+        "cardNo": "607"
+      },
+      {
+        "yearStart": 2014,
+        "yearEnd": 2016,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "OEM# 285E3-3NF4A"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "Philips Crypto (46) Transponder key",
+        "cardNo": "607"
+      },
+      {
+        "yearStart": 2008,
+        "yearEnd": 2013,
+        "lockApps": "All",
+        "codeRange": "40,000-41,520",
+        "keyBlanks": [
+          "OEM# 285E3-ZQ30A or 285E3-ZQ31A"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key NI05T",
+        "notes": "Philips Crypto (46) Transponder key",
+        "cardNo": "607"
+      }
+    ],
+    "ARMADA W/ REGULAR IGNITION": [
+      {
+        "yearStart": 2004,
+        "yearEnd": 2014,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "NI04T (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key DA34",
+        "notes": "Philips Crypto (46) Transponder key",
+        "cardNo": "607"
+      }
+    ],
+    "AXXES, NX, STANZA": [
+      {
+        "yearStart": 1982,
+        "yearEnd": 1993,
+        "lockApps": "All",
+        "codeRange": "X1-X8000",
+        "keyBlanks": [
+          "X123/DA25 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "X210/DA31",
+        "notes": null,
+        "cardNo": "145"
+      }
+    ],
+    "CUBE W/ PROX": [
+      {
+        "yearStart": 2009,
+        "yearEnd": 2015,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "OEM# 285E3-1HJ2A (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key NI06-P",
+        "notes": "Philips Crypto (46) Transponder key",
+        "cardNo": "607"
+      }
+    ],
+    "CUBE W/ REGULAR IGNITION": [
+      {
+        "yearStart": 2009,
+        "yearEnd": 2015,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "NI04T (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key DA34",
+        "notes": "Philips Crypto (46) Transponder key",
+        "cardNo": "607"
+      }
+    ],
+    "FRONTIER W/ PROX": [
+      {
+        "yearStart": 2021,
+        "yearEnd": 2024,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "OEM# 285E3-9BU5A"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emerg. Key NI06-P",
+        "notes": null,
+        "cardNo": "607"
+      },
+      {
+        "yearStart": 2020,
+        "yearEnd": 2022,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "OEM# 285E3-9UF1A or 285E3-9UF1B (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emerg. Key NI06-P",
+        "notes": null,
+        "cardNo": "607"
+      }
+    ],
+    "FRONTIER": [
+      {
+        "yearStart": 2006,
+        "yearEnd": 2024,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "NI04T (LAL) (Optional)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key DA34",
+        "notes": "Philips Crypto (46) Transponder key",
+        "cardNo": "607"
+      },
+      {
+        "yearStart": 2002,
+        "yearEnd": 2005,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "NI01T or NI02T (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D60)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key DA34",
+        "notes": "Texas Instruments (4D60) Encrypted System",
+        "cardNo": "607"
+      },
+      {
+        "yearStart": 1998,
+        "yearEnd": 2001,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "X237/DA34 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key DA34",
+        "notes": null,
+        "cardNo": "607"
+      }
+    ],
+    "GT-R": [
+      {
+        "yearStart": 2019,
+        "yearEnd": 2024,
+        "lockApps": "All",
+        "codeRange": "Emergency Key by VIN #",
+        "keyBlanks": [
+          "OEM# 285E3-JF87D"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro (thru 2020)",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "N/A"
+      },
+      {
+        "yearStart": 2013,
+        "yearEnd": 2021,
+        "lockApps": "All",
+        "codeRange": "Emergency Key by VIN #",
+        "keyBlanks": [
+          "OEM# 285E3-JF30A/285E3- JF80A/285E3-JF87A"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro (thru 2020)",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "N/A"
+      }
+    ],
+    "JUKE W/ PROX": [
+      {
+        "yearStart": 2011,
+        "yearEnd": 2017,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "OEM# 285E3-1KM0D or 285E3-1KM0A (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key DA34/ Emerg. Key NI06-P",
+        "notes": null,
+        "cardNo": "607"
+      }
+    ],
+    "JUKE W/O PROX": [
+      {
+        "yearStart": 2011,
+        "yearEnd": 2015,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "NI04T (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key DA34",
+        "notes": "Philips Crypto (46) Transponder key",
+        "cardNo": "607"
+      }
+    ],
+    "KICKS W/ PROX": [
+      {
+        "yearStart": 2023,
+        "yearEnd": 2023,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "OEM# 285E3-6RA5A"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key NI06-P",
+        "notes": null,
+        "cardNo": "607"
+      },
+      {
+        "yearStart": 2018,
+        "yearEnd": 2022,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "OEM# 285E3-5RA0A/285E3- 6TA1A/285E3-6TA5B"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key NI06-P",
+        "notes": null,
+        "cardNo": "607"
+      }
+    ],
+    "KICKS W/ REGULAR IGNITION": [
+      {
+        "yearStart": 2018,
+        "yearEnd": 2024,
+        "lockApps": "All",
+        "codeRange": "1-221855",
+        "keyBlanks": [
+          "NI07T"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key DA34",
+        "notes": "Philips Crypto (47) Hitag3",
+        "cardNo": "607"
+      }
+    ],
+    "LEAF": [
+      {
+        "yearStart": 2018,
+        "yearEnd": 2023,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "OEM# 285E3-5SA1A or 285E3-5SA1B"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro (thru 2020)",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key NI06-P",
+        "notes": null,
+        "cardNo": "607"
+      },
+      {
+        "yearStart": 2013,
+        "yearEnd": 2017,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "OEM# 285E3-3NF4A"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key NI06-P",
+        "notes": "Philips Crypto (46) Transponder key",
+        "cardNo": "607"
+      },
+      {
+        "yearStart": 2011,
+        "yearEnd": 2012,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "OEM# 285E3-1KM0A or 285E3-1KM0D"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emerg. Key NI06-P",
+        "notes": "Philips Crypto (46) Transponder key",
+        "cardNo": "607"
+      }
+    ],
+    "MAXIMA": [
+      {
+        "yearStart": 2023,
+        "yearEnd": 2023,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "OEM# 285E3-9DL5A"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emerg. Key NI06-P",
+        "notes": null,
+        "cardNo": "607"
+      },
+      {
+        "yearStart": 2019,
+        "yearEnd": 2021,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "OEM# 185E3-9DJ3A or 285E3-9DJ3B (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emerg. Key NI06-P",
+        "notes": null,
+        "cardNo": "607"
+      },
+      {
+        "yearStart": 2016,
+        "yearEnd": 2018,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "OEM# 285E3-9HS4A or 285E3-JA02A (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Philips (47)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emerg. Key NI06-P",
+        "notes": "Philips (47) Hitag3 System",
+        "cardNo": "607"
+      },
+      {
+        "yearStart": 2008,
+        "yearEnd": 2015,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "OEM# 285E3-JA000 or 285E3-4RA0B (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emerg. Key NI06-P",
+        "notes": "Philips Crypto (46) Transponder key",
+        "cardNo": "607"
+      },
+      {
+        "yearStart": 2004,
+        "yearEnd": 2007,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "NI04T (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key DA34",
+        "notes": "Philips Crypto (46) Transponder key",
+        "cardNo": "607"
+      }
+    ],
+    "MAXIMA, 810": [
+      {
+        "yearStart": 2000,
+        "yearEnd": 2003,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "NI01T or NI02T (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D60)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key DA34",
+        "notes": "Texas Instruments (4D60) Encrypted System",
+        "cardNo": "607"
+      },
+      {
+        "yearStart": 1999,
+        "yearEnd": 1999,
+        "lockApps": "All",
+        "codeRange": "X1-X8000",
+        "keyBlanks": [
+          "NSN11T2"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Megamos",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "SDD/TKO, RW2/3/4 with existing key",
+        "substitutes": "Service Key DA31",
+        "notes": "Megamos Fixed Code System",
+        "cardNo": "145"
+      },
+      {
+        "yearStart": 1995,
+        "yearEnd": 1998,
+        "lockApps": "All",
+        "codeRange": "X1-X8000",
+        "keyBlanks": [
+          "X210/DA31 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "DA25",
+        "notes": null,
+        "cardNo": "145"
+      },
+      {
+        "yearStart": 1983,
+        "yearEnd": 1994,
+        "lockApps": "All",
+        "codeRange": "X1-X8000",
+        "keyBlanks": [
+          "X123/DA25 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "X210/DA31",
+        "notes": null,
+        "cardNo": "145"
+      },
+      {
+        "yearStart": 1981,
+        "yearEnd": 1982,
+        "lockApps": "All",
+        "codeRange": "M6001-M7000",
+        "keyBlanks": [
+          "X115/DA23 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "80"
+      }
+    ],
+    "MICRA W/ PROX (CANADA)": [
+      {
+        "yearStart": 2015,
+        "yearEnd": 2017,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "OEM# H0561-C992A or H0561-C993A"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key DA34",
+        "notes": null,
+        "cardNo": "607"
+      }
+    ],
+    "MICRA W/ REGULAR IGNITION (CANADA)": [
+      {
+        "yearStart": 2015,
+        "yearEnd": 2017,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "NI04T (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key DA34",
+        "notes": "Philips Crypto (46) Transponder Key",
+        "cardNo": "607"
+      }
+    ],
+    "MURANO W/ PROX": [
+      {
+        "yearStart": 2022,
+        "yearEnd": 2025,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "OEM# 285E3-9BU5A or 285E3-9UH7A"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key NI06-P",
+        "notes": null,
+        "cardNo": "607"
+      },
+      {
+        "yearStart": 2019,
+        "yearEnd": 2022,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "OEM# 285E3-9UF1B/285E3- 9UF5B/285E3-9UF7B (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key NI06-P",
+        "notes": null,
+        "cardNo": "607"
+      },
+      {
+        "yearStart": 2015,
+        "yearEnd": 2018,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "OEM# 285E3-5AA5A (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emerg. Key NI06-P",
+        "notes": "Philips Crypto (47) Hitag3",
+        "cardNo": "607"
+      },
+      {
+        "yearStart": 2009,
+        "yearEnd": 2014,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "OEM# 285E3-1AA0B or 285E3-1AA0A"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key NI06-P",
+        "notes": "Philips Crypto (46) Transponder Key",
+        "cardNo": "607"
+      },
+      {
+        "yearStart": 2005,
+        "yearEnd": 2008,
+        "lockApps": "All",
+        "codeRange": "40,000-41,520",
+        "keyBlanks": [
+          "Dealer Key Prox FOB/NI05T"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key DA34",
+        "notes": "Philips Crypto (46) Transponder key",
+        "cardNo": "607"
+      }
+    ],
+    "MURANO W/ REGULAR IGNITION": [
+      {
+        "yearStart": 2009,
+        "yearEnd": 2013,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "OEM# 285E3-1AA0A or 285E3-1AA0B"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key DA34",
+        "notes": "Philips Crypto (46) Transponder Key",
+        "cardNo": "607"
+      },
+      {
+        "yearStart": 2003,
+        "yearEnd": 2008,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "NI04T (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key DA34",
+        "notes": "Philips Crypto (46) Transponder key",
+        "cardNo": "607"
+      }
+    ],
+    "NV 200": [
+      {
+        "yearStart": 2013,
+        "yearEnd": 2021,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "NI04T (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key DA34",
+        "notes": "Philips Crypto (46) Transponder Key",
+        "cardNo": "607"
+      }
+    ],
+    "NV 1500/2500/3500": [
+      {
+        "yearStart": 2012,
+        "yearEnd": 2021,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "NI04T (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key DA34",
+        "notes": "Philips Crypto (46) Transponder key",
+        "cardNo": "607"
+      }
+    ],
+    "PATHFINDER": [
+      {
+        "yearStart": 1999,
+        "yearEnd": 2004,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "NI01T or NI02T"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D60)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key DA34",
+        "notes": "Texas Instruments (4D60) Encrypted System",
+        "cardNo": "607"
+      },
+      {
+        "yearStart": 1999,
+        "yearEnd": 1999,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "X237/DA34 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "DA35",
+        "notes": null,
+        "cardNo": "607"
+      },
+      {
+        "yearStart": 1996,
+        "yearEnd": 1998,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "X237/DA34 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "DA35",
+        "notes": null,
+        "cardNo": "607"
+      },
+      {
+        "yearStart": 1987,
+        "yearEnd": 1995,
+        "lockApps": "All",
+        "codeRange": "X1-X8000",
+        "keyBlanks": [
+          "X123/DA25 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "X210/DA31",
+        "notes": null,
+        "cardNo": "145"
+      }
+    ],
+    "PATHFINDER W/ PROX": [
+      {
+        "yearStart": 2022,
+        "yearEnd": 2024,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "OEM# 285E3-7LA7A or 285E3-5MR1B"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro (2022-2023)",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "607"
+      },
+      {
+        "yearStart": 2019,
+        "yearEnd": 2021,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "OEM# 285E3-9UF1B/285E3- 9UF5B/285E3-9UF7B (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key NI06-P",
+        "notes": null,
+        "cardNo": "607"
+      },
+      {
+        "yearStart": 2016,
+        "yearEnd": 2018,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "OEM# 285E3-5AA1C or 285E3-5AA3C (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key NI06-P",
+        "notes": "Philips Crypto (47) Hitag3",
+        "cardNo": "607"
+      },
+      {
+        "yearStart": 2013,
+        "yearEnd": 2015,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "OEM# 285E3-3KL4A or 285E3-3KL8A (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key NI06-P",
+        "notes": null,
+        "cardNo": "607"
+      },
+      {
+        "yearStart": 2007,
+        "yearEnd": 2012,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "OEM# 285E3-EM30D or 285E3-EM31D (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key NI05T",
+        "notes": "Philips Crypto (46) Transponder key",
+        "cardNo": "607"
+      }
+    ],
+    "PATHFINDER W/ REGULAR IGNITION": [
+      {
+        "yearStart": 2005,
+        "yearEnd": 2014,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "NI04T (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key DA34",
+        "notes": "Philips Crypto (46) Transponder key",
+        "cardNo": "607"
+      }
+    ],
+    "PICKUP": [
+      {
+        "yearStart": 1982,
+        "yearEnd": 1997,
+        "lockApps": "All",
+        "codeRange": "X1-X8000",
+        "keyBlanks": [
+          "X123/DA25 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "X210/DA31",
+        "notes": null,
+        "cardNo": "145"
+      }
+    ],
+    "QUEST W/ PROX": [
+      {
+        "yearStart": 2011,
+        "yearEnd": 2017,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "OEM# 285E3-1KM0D, 285E3- 1JA1A, or 285E3-1JA2A (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emerg. Key NI05T",
+        "notes": "Philips Crypto Transponder key",
+        "cardNo": "607"
+      }
+    ],
+    "QUEST": [
+      {
+        "yearStart": 2004,
+        "yearEnd": 2010,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "NI04T (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key DA34",
+        "notes": "Philips Crypto (46) Transponder key",
+        "cardNo": "607"
+      },
+      {
+        "yearStart": 1996,
+        "yearEnd": 2003,
+        "lockApps": "All",
+        "codeRange": "1X-1706X",
+        "keyBlanks": [
+          "X242/DA37 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "612"
+      },
+      {
+        "yearStart": 1993,
+        "yearEnd": 1995,
+        "lockApps": "All",
+        "codeRange": "A-B-C-D-E",
+        "keyBlanks": [
+          "X227/DA32 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "DA33",
+        "notes": null,
+        "cardNo": "194"
+      }
+    ],
+    "ROGUE W/ PROX": [
+      {
+        "yearStart": 2023,
+        "yearEnd": 2024,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "OEM# 285E3-5MR1B/285E3- 6RA5A/285E3-7LA7A"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key NI06-P",
+        "notes": null,
+        "cardNo": "607"
+      },
+      {
+        "yearStart": 2019,
+        "yearEnd": 2022,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "OEM# 285E3-5RA0A/285E3- 6TA5B/285E3-6RR7A (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key NI06-P",
+        "notes": null,
+        "cardNo": "607"
+      },
+      {
+        "yearStart": 2014,
+        "yearEnd": 2018,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "OEM# 285E3-4CB1A or 285E3-3NF4A (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "Philips Crypto (46) Transponder key",
+        "cardNo": "607"
+      },
+      {
+        "yearStart": 2008,
+        "yearEnd": 2013,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "OEM# 285E3-EM30D or 285E3-EM31D (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key NI05T",
+        "notes": "Philips Crypto (46) Transponder key",
+        "cardNo": "607"
+      }
+    ],
+    "ROGUE W/ REGULAR IGNITION": [
+      {
+        "yearStart": 2016,
+        "yearEnd": 2021,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "NI07T (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key DA34",
+        "notes": "Philips Crypto (47) Hitag3",
+        "cardNo": "607"
+      },
+      {
+        "yearStart": 2008,
+        "yearEnd": 2015,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "NI04T (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key DA34",
+        "notes": "Philips Crypto (46) Transponder key",
+        "cardNo": "607"
+      },
+      {
+        "yearStart": 2008,
+        "yearEnd": 2016,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "EK3P-NI04/EK3LB-NI02*/ NI02-GTK#"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "substitutes": "Service Key DA34",
+        "notes": "Philips Crypto (46) Transponder key",
+        "cardNo": "607"
+      }
+    ],
+    "SENTRA W/ PROX": [
+      {
+        "yearStart": 2019,
+        "yearEnd": 2024,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "OEM# 285E3-6LA6A (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emerg. Key NI06-P",
+        "notes": null,
+        "cardNo": "607"
+      },
+      {
+        "yearStart": 2013,
+        "yearEnd": 2019,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "OEM# 285E3-3SG0D (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emerg. Key NI06-P",
+        "notes": "Philips Crypto (46) Transponder key",
+        "cardNo": "607"
+      },
+      {
+        "yearStart": 2007,
+        "yearEnd": 2012,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "OEM# 285E3-EW81D (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key NI05T",
+        "notes": "Philips Crypto (46) Transponder key",
+        "cardNo": "607"
+      }
+    ],
+    "SENTRA W/ REGULAR IGNITION": [
+      {
+        "yearStart": 2007,
+        "yearEnd": 2021,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "NI04T (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key DA34",
+        "notes": "Philips Crypto (46) Transponder key",
+        "cardNo": "607"
+      }
+    ],
+    "SENTRA, SE-R, 200SX, 240SX": [
+      {
+        "yearStart": 2000,
+        "yearEnd": 2007,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "X237/DA34 (-P)"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key DA35",
+        "notes": null,
+        "cardNo": "607"
+      },
+      {
+        "yearStart": 2000,
+        "yearEnd": 2006,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "NI01T or NI02T"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D60)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key DA34",
+        "notes": "Texas Instruments (4D60) Encrypted System",
+        "cardNo": "607"
+      },
+      {
+        "yearStart": 1995,
+        "yearEnd": 1999,
+        "lockApps": "All",
+        "codeRange": "X1-X8000",
+        "keyBlanks": [
+          "X210/DA31 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "DA25",
+        "notes": null,
+        "cardNo": "145"
+      },
+      {
+        "yearStart": 1982,
+        "yearEnd": 1994,
+        "lockApps": "All",
+        "codeRange": "X1-X8000",
+        "keyBlanks": [
+          "X123/DA25 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "X210/DA31",
+        "notes": null,
+        "cardNo": "145"
+      }
+    ],
+    "TITAN W/ PROX": [
+      {
+        "yearStart": 2022,
+        "yearEnd": 2024,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "OEM# 285E3-9BU5A/285E3- 9UF5B/285E3-9UF1B"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro (2022)",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emerg. Key NI06-P",
+        "notes": null,
+        "cardNo": "607"
+      },
+      {
+        "yearStart": 2019,
+        "yearEnd": 2022,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "OEM# 285E3-9UF1A/285E3- 9UF1B/285E3-9UF5B (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emerg. Key NI06-P",
+        "notes": null,
+        "cardNo": "607"
+      },
+      {
+        "yearStart": 2016,
+        "yearEnd": 2018,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "OEM# 285E3-5AA1C or 285E3-5AA3C (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emerg. Key NI06-P",
+        "notes": "Philips Crypto (47) Hitag3",
+        "cardNo": "607"
+      }
+    ],
+    "TITAN": [
+      {
+        "yearStart": 2004,
+        "yearEnd": 2021,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "NI04T (LAL) (Optional)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key DA34",
+        "notes": "Philips Crypto (46) Transponder key",
+        "cardNo": "607"
+      }
+    ],
+    "VERSA W/ PROX": [
+      {
+        "yearStart": 2020,
+        "yearEnd": 2023,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "OEM# 285E3-6CA1A or 285E3-6CA6A (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emerg. Key NI06-P",
+        "notes": null,
+        "cardNo": "607"
+      },
+      {
+        "yearStart": 2017,
+        "yearEnd": 2019,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "OEM# 285E3-3SG0D (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emerg. Key NI06-P",
+        "notes": null,
+        "cardNo": "607"
+      },
+      {
+        "yearStart": 2007,
+        "yearEnd": 2016,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "OEM# 285E3-EM30D or 285E3-EM31D (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key NI05T",
+        "notes": "Philips Crypto (46) Transponder key",
+        "cardNo": "607"
+      }
+    ],
+    "VERSA W/ REGULAR IGNITION": [
+      {
+        "yearStart": 2007,
+        "yearEnd": 2018,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "NI04T (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key DA34",
+        "notes": "Philips Crypto (46) Transponder key",
+        "cardNo": "607"
+      }
+    ],
+    "XTERRA": [
+      {
+        "yearStart": 2005,
+        "yearEnd": 2015,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "NI04T (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key DA34",
+        "notes": "Philips Crypto (46) Transponder key",
+        "cardNo": "607"
+      },
+      {
+        "yearStart": 2002,
+        "yearEnd": 2004,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "NI01T or NI02T"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D60)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key DA34",
+        "notes": "Texas Instruments (4D60) Encrypted System",
+        "cardNo": "607"
+      }
+    ],
+    "XTERRA W/O TRANSPONDER": [
+      {
+        "yearStart": 2000,
+        "yearEnd": 2004,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "X237/DA34 (-P)"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "DA35",
+        "notes": null,
+        "cardNo": "607"
+      }
+    ],
+    "X-TRAIL (CANADA)": [
+      {
+        "yearStart": 2005,
+        "yearEnd": 2006,
+        "lockApps": "All",
+        "codeRange": "1-22185",
+        "keyBlanks": [
+          "NI02T"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D60)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key DA34",
+        "notes": "Texas Instruments (4D60) Encrypted System",
+        "cardNo": "607"
+      }
+    ]
+  }
+}

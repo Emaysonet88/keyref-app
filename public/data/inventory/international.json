@@ -1,0 +1,60 @@
+{
+  "International": {
+    "CV4500/5500/6500": [
+      {
+        "yearStart": 2019,
+        "yearEnd": 2022,
+        "lockApps": "All",
+        "codeRange": "V0001-V5573",
+        "keyBlanks": [
+          "B119-PT"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "P1116/B119",
+        "notes": null,
+        "cardNo": "3647"
+      },
+      {
+        "yearStart": 2019,
+        "yearEnd": 2022,
+        "lockApps": "All",
+        "codeRange": "V0001-V5573",
+        "keyBlanks": [
+          "EK3P-HU100/EK3LB-HU100*/ HU100-GTK#"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5.Smart Aerial Plus, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "substitutes": "P1116/B119",
+        "notes": null,
+        "cardNo": "3647"
+      },
+      {
+        "yearStart": 2019,
+        "yearEnd": 2019,
+        "lockApps": "EB3-V-HU100",
+        "codeRange": "HU100-GTK",
+        "keyBlanks": [
+          "HU101-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ]
+  }
+}

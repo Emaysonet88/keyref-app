@@ -1,0 +1,1338 @@
+{
+  "Subaru": {
+    "ASCENT W/PROX": [
+      {
+        "yearStart": 2023,
+        "yearEnd": 2024,
+        "lockApps": "All",
+        "codeRange": "90000-99,999",
+        "keyBlanks": [
+          "OEM# 88835-XC00A"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Smart Pro (2023)",
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 2019,
+        "yearEnd": 2022,
+        "lockApps": "All",
+        "codeRange": "90000-99,999",
+        "keyBlanks": [
+          "OEM# 88835-FL03A or 88835-FL03C (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Smart Pro/TCP/MVPP",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "B9 TRIBECA": [
+      {
+        "yearStart": 2006,
+        "yearEnd": 2013,
+        "lockApps": "All",
+        "codeRange": "30001-37850",
+        "keyBlanks": [
+          "EK3-SUB4/EK3LB-SUB4*/ SUB4-GTK#"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "notes": "X251/SUB1[-P]",
+        "cardNo": "Texas instruments (4D62) Encrypted System"
+      }
+    ],
+    "BAJA": [
+      {
+        "yearStart": 2003,
+        "yearEnd": 2006,
+        "lockApps": "All",
+        "codeRange": "30001-37850",
+        "keyBlanks": [
+          "X251/SUB1 [-P] (LAL)"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "-",
+        "cardNo": null
+      }
+    ],
+    "BRAT": [
+      {
+        "yearStart": 1985,
+        "yearEnd": 1987,
+        "lockApps": "All",
+        "codeRange": "X8001-X9000",
+        "keyBlanks": [
+          "X123/DA25 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "X210/DA31",
+        "cardNo": null
+      }
+    ],
+    "BRZ W/ PROX": [
+      {
+        "yearStart": 2022,
+        "yearEnd": 2023,
+        "lockApps": "All",
+        "codeRange": "90,000-99,999",
+        "keyBlanks": [
+          "OEM# 88835-FL032"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Smart Pro (thru 2022)",
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 2015,
+        "yearEnd": 2020,
+        "lockApps": "All",
+        "codeRange": "90,000-99,999",
+        "keyBlanks": [
+          "OEM# 88835-CA310 (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Smart Pro/TCP/MVPP",
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 2012,
+        "yearEnd": 2014,
+        "lockApps": "All",
+        "codeRange": "40000-49999",
+        "keyBlanks": [
+          "OEM# 882264-CA060"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Smart Pro/TCP/MVPP",
+        "notes": "Emergency Key TOY51-P",
+        "cardNo": null
+      }
+    ],
+    "BRZ W/ REGULAR IGNITION": [
+      {
+        "yearStart": 2012,
+        "yearEnd": 2018,
+        "lockApps": "All",
+        "codeRange": "40000-49999",
+        "keyBlanks": [
+          "OEM# 57497-CA110 or 57497- CA310"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Smart Pro/TCP/MVPP",
+        "notes": "Service Key TR47",
+        "cardNo": null
+      }
+    ],
+    "DL, GL, STD": [
+      {
+        "yearStart": 1985,
+        "yearEnd": 1990,
+        "lockApps": "All",
+        "codeRange": "X8001-X9000",
+        "keyBlanks": [
+          "X123/DA25 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "X210/DA31",
+        "cardNo": null
+      }
+    ],
+    "FORESTER W/ PROX": [
+      {
+        "yearStart": 2019,
+        "yearEnd": 2024,
+        "lockApps": "All",
+        "codeRange": "90,000-99,999",
+        "keyBlanks": [
+          "OEM# 88835-FL030/88835- FL031/88835-FL032 (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Smart Pro (Thru 2023)",
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 2016,
+        "yearEnd": 2018,
+        "lockApps": "All",
+        "codeRange": "90,000-99,999",
+        "keyBlanks": [
+          "OEM# 88835-CA310 (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Smart Pro/TCP/MVPP (thru 2017)",
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 2014,
+        "yearEnd": 2015,
+        "lockApps": "All",
+        "codeRange": "40000-49999",
+        "keyBlanks": [
+          "OEM# 882264-SG040"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Smart Pro/TCP/MVPP",
+        "notes": "Emergency Key TOY51-P",
+        "cardNo": null
+      }
+    ],
+    "FORESTER W/ REGULAR IGNITION": [
+      {
+        "yearStart": 2019,
+        "yearEnd": 2022,
+        "lockApps": "All",
+        "codeRange": "70000-79999",
+        "keyBlanks": [
+          "TOY43RH-PT"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Smart Pro/TCP/MVPP",
+        "notes": "Service Key P1114/ B110[-P]",
+        "cardNo": "\"H\" Chip"
+      },
+      {
+        "yearStart": 2016,
+        "yearEnd": 2018,
+        "lockApps": "All",
+        "codeRange": "32000-39999",
+        "keyBlanks": [
+          "OEM# 184297-SG000"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Smart Pro/TCP/MVPP",
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 2014,
+        "yearEnd": 2015,
+        "lockApps": "All",
+        "codeRange": "32000-39999",
+        "keyBlanks": [
+          "TOY43RT45 (LAL)"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Smart Pro/TCP/MVPP",
+        "notes": "Service Key P1114/ B110[-P]",
+        "cardNo": "Texas Instruments (82) Encrypted System"
+      }
+    ],
+    "FORESTER": [
+      {
+        "yearStart": 2011,
+        "yearEnd": 2013,
+        "lockApps": "All",
+        "codeRange": "T001-3000",
+        "keyBlanks": [
+          "DAT17T42 (LAL)"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Smart Pro/TCP/MVPP",
+        "notes": "Service Key LXP90-P",
+        "cardNo": null
+      },
+      {
+        "yearStart": 2009,
+        "yearEnd": 2010,
+        "lockApps": "All",
+        "codeRange": "T001-3000",
+        "keyBlanks": [
+          "DAT17T13 (LAL)"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Smart Pro/TCP/MVPP",
+        "notes": "Service Key LXP90-P",
+        "cardNo": "High Security Key, Texas (4D62) Encrypted System"
+      },
+      {
+        "yearStart": 2005,
+        "yearEnd": 2008,
+        "lockApps": "All",
+        "codeRange": "30001-37850",
+        "keyBlanks": [
+          "EK3-SUB4/EK3LB-SUB4*/ SUB4-GTK#"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "notes": "X251/SUB1[-P]",
+        "cardNo": "Texas instruments (4D62) Encrypted System"
+      },
+      {
+        "yearStart": 1998,
+        "yearEnd": 2004,
+        "lockApps": "All",
+        "codeRange": "30001-37850",
+        "keyBlanks": [
+          "X251/SUB1 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "-",
+        "cardNo": null
+      }
+    ],
+    "IMPREZA W/ PROX": [
+      {
+        "yearStart": 2024,
+        "yearEnd": 2024,
+        "lockApps": "All",
+        "codeRange": "90,000-99,999",
+        "keyBlanks": [
+          "OEM# 88835-XC00A"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 2017,
+        "yearEnd": 2023,
+        "lockApps": "All",
+        "codeRange": "90,000-99,999",
+        "keyBlanks": [
+          "OEM# 88835-FL03A or 88835-FL03C (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Smart Pro (Thru 2022)",
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 2015,
+        "yearEnd": 2016,
+        "lockApps": "All",
+        "codeRange": "90,000-99999",
+        "keyBlanks": [
+          "OEM# 88835-CA310 (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Smart Pro/TCP/MVPP",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "IMPREZA": [
+      {
+        "yearStart": 2019,
+        "yearEnd": 2023,
+        "lockApps": "All",
+        "codeRange": "32000-39999",
+        "keyBlanks": [
+          "TOY43RH-PT"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key P1114/ B110[-P]",
+        "notes": null,
+        "cardNo": "3646"
+      },
+      {
+        "yearStart": 2017,
+        "yearEnd": 2019,
+        "lockApps": "All",
+        "codeRange": "32000-39999",
+        "keyBlanks": [
+          "OEM# 57497-FL08A"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Texas Instruments (H)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP (thru 2018)",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "Texas Instruments (H) 128 Bit System",
+        "cardNo": "3646"
+      },
+      {
+        "yearStart": 2012,
+        "yearEnd": 2016,
+        "lockApps": "All",
+        "codeRange": "32000-39999",
+        "keyBlanks": [
+          "TOY43RT45 (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (82)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key P1114/ B110[-P]",
+        "notes": "Texas Instruments (82) Encrypted System",
+        "cardNo": "3646"
+      },
+      {
+        "yearStart": 2011,
+        "yearEnd": 2011,
+        "lockApps": "All",
+        "codeRange": "T001-3000",
+        "keyBlanks": [
+          "DAT17T42 (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key LXP90-P",
+        "notes": null,
+        "cardNo": "702"
+      },
+      {
+        "yearStart": 2011,
+        "yearEnd": 2011,
+        "lockApps": "All",
+        "codeRange": "T001-3000",
+        "keyBlanks": [
+          "EK3-SUB1/EK3LB-SUB1*/ SUB1-GTK#"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "4D62",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "substitutes": "Service Key LXP90-P",
+        "notes": "High Security Key, Texas (4D62) Encrypted System",
+        "cardNo": "702"
+      },
+      {
+        "yearStart": 2008,
+        "yearEnd": 2010,
+        "lockApps": "All",
+        "codeRange": "T001-3000",
+        "keyBlanks": [
+          "DAT17T13"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "4D62",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP TKO/SDD 2008-2009",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key LXP90-P",
+        "notes": "High Security Key, Texas (4D62) Encrypted System",
+        "cardNo": "702"
+      },
+      {
+        "yearStart": 2005,
+        "yearEnd": 2007,
+        "lockApps": "All",
+        "codeRange": "30001-37850",
+        "keyBlanks": [
+          "EK3-SUB4/EK3LB-SUB4*/ SUB4-GTK#"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas instruments (4D62)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "substitutes": "X251/SUB1[-P]",
+        "notes": "Texas instruments (4D62) Encrypted System",
+        "cardNo": "607"
+      },
+      {
+        "yearStart": 1993,
+        "yearEnd": 2004,
+        "lockApps": "All",
+        "codeRange": "X8001-X9000",
+        "keyBlanks": [
+          "X123/DA25 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "X210/DA31",
+        "notes": null,
+        "cardNo": "145"
+      }
+    ],
+    "IMPREZA WRX": [
+      {
+        "yearStart": 2015,
+        "yearEnd": 2015,
+        "lockApps": "All",
+        "codeRange": "32000-39999",
+        "keyBlanks": [
+          "OEM# 184297-FJ021"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key P1114/ B110[-P]",
+        "notes": null,
+        "cardNo": "3646"
+      },
+      {
+        "yearStart": 2008,
+        "yearEnd": 2014,
+        "lockApps": "All",
+        "codeRange": "T001-3000",
+        "keyBlanks": [
+          "DAT17T13"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "4D62",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP TKO/SDD 2008-2009",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key LXP90-P",
+        "notes": "High Security Key, Texas (4D62) Encrypted System",
+        "cardNo": "702"
+      }
+    ],
+    "LEGACY (CANADA)": [
+      {
+        "yearStart": 2015,
+        "yearEnd": 2015,
+        "lockApps": "All",
+        "codeRange": "32000-39999",
+        "keyBlanks": [
+          "OEM# 57497-FJ030"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Texas Instruments (82)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key P1114/ B110[-P]",
+        "notes": "Texas Instruments (82) Encrypted System",
+        "cardNo": "3646"
+      }
+    ],
+    "LEGACY W/ PROX": [
+      {
+        "yearStart": 2024,
+        "yearEnd": 2024,
+        "lockApps": "All",
+        "codeRange": "90,000-99,999",
+        "keyBlanks": [
+          "OEM# 88835-AN10A"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "3964"
+      },
+      {
+        "yearStart": 2020,
+        "yearEnd": 2023,
+        "lockApps": "All",
+        "codeRange": "90,000-99,999",
+        "keyBlanks": [
+          "OEM# 88835-AN00B or 88835-AN00C"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro (Thru 2022)",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "3964"
+      },
+      {
+        "yearStart": 2018,
+        "yearEnd": 2019,
+        "lockApps": "All",
+        "codeRange": "90,000-99,999",
+        "keyBlanks": [
+          "OEM# 88835-FL03A (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "3964"
+      },
+      {
+        "yearStart": 2015,
+        "yearEnd": 2017,
+        "lockApps": "All",
+        "codeRange": "90,000-99,999",
+        "keyBlanks": [
+          "OEM# 882264-AL04A (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "3964"
+      }
+    ],
+    "LEGACY": [
+      {
+        "yearStart": 2020,
+        "yearEnd": 2022,
+        "lockApps": "All",
+        "codeRange": "32000-39999",
+        "keyBlanks": [
+          "TOY43RH-PT (LAL)"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "3646"
+      },
+      {
+        "yearStart": 2015,
+        "yearEnd": 2019,
+        "lockApps": "All",
+        "codeRange": "32000-39999",
+        "keyBlanks": [
+          "OEM# 57497-AL01A"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Texas Instruments (82)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key P1114/ B110[-P]",
+        "notes": "Texas Instruments (82) Encrypted System",
+        "cardNo": "3646"
+      },
+      {
+        "yearStart": 2010,
+        "yearEnd": 2014,
+        "lockApps": "All",
+        "codeRange": "T001-3000",
+        "keyBlanks": [
+          "DAT17T42 (LAL)"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "4D62",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key LXP90-P",
+        "notes": "High Security Key, Texas (4D62) Encrypted System",
+        "cardNo": "702"
+      },
+      {
+        "yearStart": 2005,
+        "yearEnd": 2009,
+        "lockApps": "All",
+        "codeRange": "30001-37850",
+        "keyBlanks": [
+          "SUB4-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas instruments (4D62)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "X251/SUB1[-P]",
+        "notes": "Texas instruments (4D62) Encrypted System",
+        "cardNo": "607"
+      },
+      {
+        "yearStart": 2005,
+        "yearEnd": 2008,
+        "lockApps": "All",
+        "codeRange": "30001-37850",
+        "keyBlanks": [
+          "EK3-SUB4/EK3LB-SUB4*/ SUB4-GTK#"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas instruments (4D62)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "substitutes": "X251/SUB1[-P]",
+        "notes": "Texas instruments (4D62) Encrypted System",
+        "cardNo": "607"
+      },
+      {
+        "yearStart": 1991,
+        "yearEnd": 1999,
+        "lockApps": "All",
+        "codeRange": "X8001-X9000",
+        "keyBlanks": [
+          "X123/DA25 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "X210/DA31",
+        "notes": null,
+        "cardNo": "145"
+      }
+    ],
+    "LEGACY, OUTBACK": [
+      {
+        "yearStart": 2005,
+        "yearEnd": 2009,
+        "lockApps": "All",
+        "codeRange": "30001-37850",
+        "keyBlanks": [
+          "SUB4-PT"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas instruments (4D62)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "X251/SUB1[-P]",
+        "notes": "Texas instruments (4D62) Encrypted System",
+        "cardNo": "607"
+      },
+      {
+        "yearStart": 2000,
+        "yearEnd": 2004,
+        "lockApps": "All",
+        "codeRange": "30001-37850",
+        "keyBlanks": [
+          "X251/SUB1 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "607"
+      },
+      {
+        "yearStart": 1995,
+        "yearEnd": 1999,
+        "lockApps": "All",
+        "codeRange": "X8001-X9000",
+        "keyBlanks": [
+          "X123/DA25 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "X210/DA31",
+        "notes": null,
+        "cardNo": "145"
+      }
+    ],
+    "LOYALE & JUSTY": [
+      {
+        "yearStart": 1991,
+        "yearEnd": 1994,
+        "lockApps": "All",
+        "codeRange": "X8001-X9000",
+        "keyBlanks": [
+          "X123/DA25 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "X210/DA31",
+        "notes": null,
+        "cardNo": "145"
+      }
+    ],
+    "OUTBACK W/ PROX": [
+      {
+        "yearStart": 2024,
+        "yearEnd": 2025,
+        "lockApps": "All",
+        "codeRange": "90,000-99,999",
+        "keyBlanks": [
+          "OEM# 88835-XC00A"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "3964"
+      },
+      {
+        "yearStart": 2018,
+        "yearEnd": 2023,
+        "lockApps": "All",
+        "codeRange": "90,000-99,999",
+        "keyBlanks": [
+          "OEM# 88835-FL03A or 88835-FL03C (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "3964"
+      },
+      {
+        "yearStart": 2015,
+        "yearEnd": 2017,
+        "lockApps": "All",
+        "codeRange": "90,000-99,999",
+        "keyBlanks": [
+          "OEM# 882264-AL04A (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "3964"
+      },
+      {
+        "yearStart": 2013,
+        "yearEnd": 2014,
+        "lockApps": "All",
+        "codeRange": "T001-3000",
+        "keyBlanks": [
+          "OEM# 882264-AJ00A"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "702"
+      }
+    ],
+    "OUTBACK (CANADA)": [
+      {
+        "yearStart": 2015,
+        "yearEnd": 2015,
+        "lockApps": "All",
+        "codeRange": "32000-39999",
+        "keyBlanks": [
+          "OEM# 57497-FJ030"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Texas Instruments (82)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key P1114/ B110[-P]",
+        "notes": "Texas Instruments (82) Encrypted System",
+        "cardNo": "3646"
+      }
+    ],
+    "OUTBACK": [
+      {
+        "yearStart": 2020,
+        "yearEnd": 2022,
+        "lockApps": "All",
+        "codeRange": "32000-39999",
+        "keyBlanks": [
+          "TOY43RH-PT"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "3646"
+      },
+      {
+        "yearStart": 2015,
+        "yearEnd": 2019,
+        "lockApps": "All",
+        "codeRange": "32000-39999",
+        "keyBlanks": [
+          "OEM# 57497-AL01A (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Texas Instruments (82)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key P1114/ B110[-P]",
+        "notes": "Texas Instruments (82) Encrypted System",
+        "cardNo": "3646"
+      },
+      {
+        "yearStart": 2010,
+        "yearEnd": 2014,
+        "lockApps": "All",
+        "codeRange": "T001-3000",
+        "keyBlanks": [
+          "DAT17T42 (LAL)"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "notes": "Service Key LXP90-P",
+        "cardNo": "High Security Key, Texas (4D60) Encrypted System"
+      }
+    ],
+    "SVX": [
+      {
+        "yearStart": 1992,
+        "yearEnd": 1997,
+        "lockApps": "All",
+        "codeRange": "X8001-X9000",
+        "keyBlanks": [
+          "X123/DA25 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "X210/DA31",
+        "cardNo": null
+      }
+    ],
+    "WRX W/ PROX": [
+      {
+        "yearStart": 2023,
+        "yearEnd": 2023,
+        "lockApps": "All",
+        "codeRange": "90,000-99,999",
+        "keyBlanks": [
+          "OEM# 88835-XC00A"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Smart Pro",
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 2019,
+        "yearEnd": 2022,
+        "lockApps": "All",
+        "codeRange": "90,000-99,999",
+        "keyBlanks": [
+          "OEM# 88835-FL030/88835- FL031/88835-FL032 (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Smart Pro",
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 2016,
+        "yearEnd": 2018,
+        "lockApps": "All",
+        "codeRange": "90,000-99,999",
+        "keyBlanks": [
+          "OEM# 88835-CA310 (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "WRX": [
+      {
+        "yearStart": 2011,
+        "yearEnd": 2014,
+        "lockApps": "All",
+        "codeRange": "T001-3000",
+        "keyBlanks": [
+          "DAT17T42 (LAL)"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Smart Pro/TCP/MVPP",
+        "notes": "Service Key LXP90-P",
+        "cardNo": null
+      },
+      {
+        "yearStart": 2002,
+        "yearEnd": 2003,
+        "lockApps": "All",
+        "codeRange": "X8001-X9000",
+        "keyBlanks": [
+          "X123/DA25 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "X210/DA31",
+        "cardNo": null
+      }
+    ],
+    "XT-6": [
+      {
+        "yearStart": 1991,
+        "yearEnd": 1991,
+        "lockApps": "All",
+        "codeRange": "X8001-X9000",
+        "keyBlanks": [
+          "X123/DA25 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "X210/DA31",
+        "cardNo": null
+      }
+    ],
+    "XV CROSSTREK (CANADA)": [
+      {
+        "yearStart": 2013,
+        "yearEnd": 2015,
+        "lockApps": "All",
+        "codeRange": "32000-39999",
+        "keyBlanks": [
+          "OEM# 57497-FJ030"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "Service Key P1114/ B110[-P]",
+        "cardNo": "Texas Instruments (82) Encrypted System"
+      }
+    ],
+    "XV CROSSTREK W/ PROX": [
+      {
+        "yearStart": 2024,
+        "yearEnd": 2024,
+        "lockApps": "All",
+        "codeRange": "90,000-99,999",
+        "keyBlanks": [
+          "OEM# 88835-XC00A"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 2018,
+        "yearEnd": 2023,
+        "lockApps": "All",
+        "codeRange": "90,000-99,999",
+        "keyBlanks": [
+          "OEM# 88835-FL032 or 88835- FL042"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Smart Pro",
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 2015,
+        "yearEnd": 2017,
+        "lockApps": "All",
+        "codeRange": "90,000-99,999",
+        "keyBlanks": [
+          "OEM# 882264-CA310"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Smart Pro/TCP/MVPP",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "XV CROSSTREK": [
+      {
+        "yearStart": 2019,
+        "yearEnd": 2023,
+        "lockApps": "All",
+        "codeRange": "32000-39999",
+        "keyBlanks": [
+          "TOY43RH-PT"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Smart Pro",
+        "notes": "Service Key P1114/ B110[-P]",
+        "cardNo": null
+      },
+      {
+        "yearStart": 2018,
+        "yearEnd": 2019,
+        "lockApps": "All",
+        "codeRange": "32000-39999",
+        "keyBlanks": [
+          "OEM# 57497-FL080"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 2015,
+        "yearEnd": 2017,
+        "lockApps": "All",
+        "codeRange": "32000-39999",
+        "keyBlanks": [
+          "OEM# 184297-FJ021 (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Smart Pro/TCP/MVPP",
+        "notes": "Service Key P1114/ B110[-P]",
+        "cardNo": "Texas Instruments (82) Encrypted System"
+      },
+      {
+        "yearStart": 2013,
+        "yearEnd": 2014,
+        "lockApps": "All",
+        "codeRange": "32000-39999",
+        "keyBlanks": [
+          "TOY43RT45 (LAL)"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Smart Pro/TCP/MVPP",
+        "notes": "Service Key P1114/ B110[-P]",
+        "cardNo": null
+      }
+    ]
+  }
+}

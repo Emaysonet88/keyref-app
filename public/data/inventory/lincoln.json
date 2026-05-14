@@ -1,0 +1,1500 @@
+{
+  "Lincoln": {
+    "BLACKWOOD": [
+      {
+        "yearStart": 2002,
+        "yearEnd": 2002,
+        "lockApps": "All",
+        "codeRange": "1X-1706X",
+        "keyBlanks": [
+          "EK3-H72/EK3LB-H72*/H72- GTK#"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4C)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "substitutes": "Service Key H86",
+        "notes": "Texas Instruments (4C) System",
+        "cardNo": "612"
+      },
+      {
+        "yearStart": 2002,
+        "yearEnd": 2002,
+        "lockApps": "EB3-B-H72",
+        "codeRange": "H72-GTK",
+        "keyBlanks": [
+          "H72-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "CONTINENTAL W/ REGULAR IGNITION": [
+      {
+        "yearStart": 2017,
+        "yearEnd": 2020,
+        "lockApps": "All",
+        "codeRange": "10,001-11,500",
+        "keyBlanks": [
+          "H128-PT"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips (46)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "P1117/HU101",
+        "notes": "Philips (46) PCF7939PA",
+        "cardNo": "1838"
+      }
+    ],
+    "CONTINENTAL W/ PROX": [
+      {
+        "yearStart": 2020,
+        "yearEnd": 2023,
+        "lockApps": "All",
+        "codeRange": "10,001-11,500",
+        "keyBlanks": [
+          "OEM# 164-R8275 or 164- R8276"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "P1117/HU101",
+        "notes": null,
+        "cardNo": "4320"
+      },
+      {
+        "yearStart": 2017,
+        "yearEnd": 2020,
+        "lockApps": "All",
+        "codeRange": "10,001-11,500",
+        "keyBlanks": [
+          "OEM# 164-R8154, 164- R8155, 164-R8156"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "P1117/HU101",
+        "notes": null,
+        "cardNo": "1838"
+      }
+    ],
+    "CONTINENTAL": [
+      {
+        "yearStart": 1998,
+        "yearEnd": 2002,
+        "lockApps": "All",
+        "codeRange": "1X-1706X",
+        "keyBlanks": [
+          "EK3-H72/EK3LB-H72*/H72- GTK#"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4C)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "substitutes": "Service Key H86",
+        "notes": "Texas Instruments (4C) System",
+        "cardNo": "612"
+      },
+      {
+        "yearStart": 1998,
+        "yearEnd": 2002,
+        "lockApps": "Valet",
+        "codeRange": "1X-1706X",
+        "keyBlanks": [
+          "H82-PT"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4C)",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program C, Smart Pro/TCP/MVPP/TKO/ SDD",
+        "programmingProcedure": [
+          "C"
+        ],
+        "cloningMethod": null,
+        "substitutes": "Service Key H86",
+        "notes": "Texas Instruments (4C) System",
+        "cardNo": "612"
+      },
+      {
+        "yearStart": 1997,
+        "yearEnd": 1997,
+        "lockApps": "All",
+        "codeRange": "1X-1706X",
+        "keyBlanks": [
+          "1196FD/H75 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "612"
+      },
+      {
+        "yearStart": 1989,
+        "yearEnd": 1996,
+        "lockApps": "Ignition/ Door",
+        "codeRange": "A-B-C-D-E",
+        "keyBlanks": [
+          "1188LN-P"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "1190LN/H60, 1184FD/ H54",
+        "notes": null,
+        "cardNo": "194"
+      },
+      {
+        "yearStart": 1985,
+        "yearEnd": 1988,
+        "lockApps": "Ignition/ Door",
+        "codeRange": "A-B-C-D-E",
+        "keyBlanks": [
+          "1190LN/H60"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "1188LN-P, 1184FD/H54",
+        "notes": null,
+        "cardNo": "194"
+      },
+      {
+        "yearStart": 1998,
+        "yearEnd": 1998,
+        "lockApps": "EB3-B-H72",
+        "codeRange": "H72-GTK",
+        "keyBlanks": [
+          "H72-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "CORSAIR W/ REGULAR IGNITION": [
+      {
+        "yearStart": 2020,
+        "yearEnd": 2020,
+        "lockApps": "All",
+        "codeRange": "10,001-11,500",
+        "keyBlanks": [
+          "H128-PT"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips (46)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "P1117/HU101",
+        "notes": "Philips (46) PCF7939PA",
+        "cardNo": "4320-"
+      }
+    ],
+    "CORSAIR W/ PROX": [
+      {
+        "yearStart": 2020,
+        "yearEnd": 2022,
+        "lockApps": "All",
+        "codeRange": "30,001-31,544",
+        "keyBlanks": [
+          "OEM# 164-R8278 or 164- R8279"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HU198T",
+        "notes": null,
+        "cardNo": "4320"
+      }
+    ],
+    "LS6, LS8": [
+      {
+        "yearStart": 2003,
+        "yearEnd": 2006,
+        "lockApps": "All",
+        "codeRange": "1X-1706X",
+        "keyBlanks": [
+          "H92-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program C, Smart Pro/TCP/MVPP/TKO/ SDD",
+        "programmingProcedure": [
+          "C"
+        ],
+        "cloningMethod": null,
+        "substitutes": "Service Key H86",
+        "notes": null,
+        "cardNo": "612"
+      },
+      {
+        "yearStart": 2000,
+        "yearEnd": 2006,
+        "lockApps": "All",
+        "codeRange": "1X-1706X",
+        "keyBlanks": [
+          "EK3-H84/EK3LB-H84*/H84- GTK#"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "substitutes": "Service Key H86",
+        "notes": "Texas Instruments Encrypted Code System",
+        "cardNo": "612"
+      },
+      {
+        "yearStart": 2000,
+        "yearEnd": 2002,
+        "lockApps": "All",
+        "codeRange": "1X-1706X",
+        "keyBlanks": [
+          "H74-PT"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D60)",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program C, Smart Pro/TCP/MVPP/TKO/ SDD",
+        "programmingProcedure": [
+          "C"
+        ],
+        "cloningMethod": null,
+        "substitutes": "Service Key H86",
+        "notes": "Texas Instruments (4D60) Encrypted System",
+        "cardNo": "612"
+      },
+      {
+        "yearStart": 2000,
+        "yearEnd": 2000,
+        "lockApps": "EB3-D-H84",
+        "codeRange": "H84-GTK",
+        "keyBlanks": [
+          "H84-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "MARK LT (TRUCK)": [
+      {
+        "yearStart": 2011,
+        "yearEnd": 2014,
+        "lockApps": "All",
+        "codeRange": "1X-1706X",
+        "keyBlanks": [
+          "H92-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program J, Smart Pro/TCP/MVPP/TKO/ SDD",
+        "programmingProcedure": [
+          "J"
+        ],
+        "cloningMethod": null,
+        "substitutes": "Service Key H86",
+        "notes": "Texas Instruments 80 Bit Encrypted System",
+        "cardNo": "612"
+      },
+      {
+        "yearStart": 2006,
+        "yearEnd": 2008,
+        "lockApps": "All",
+        "codeRange": "1X-1706X",
+        "keyBlanks": [
+          "EK3-H84/EK3LB-H84*/H84- GTK#"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D63)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "substitutes": "Service Key H86",
+        "notes": "Texas Instruments (4D63) Encrypted System",
+        "cardNo": "612"
+      },
+      {
+        "yearStart": 2006,
+        "yearEnd": 2006,
+        "lockApps": "EB3-D-H84",
+        "codeRange": "H84-GTK",
+        "keyBlanks": [
+          "H84-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "MARK SERIES": [
+      {
+        "yearStart": 1997,
+        "yearEnd": 1998,
+        "lockApps": "All",
+        "codeRange": "1X-1706X",
+        "keyBlanks": [
+          "OEM # 164-R0467"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program B, Smart Pro/TCP/MVPP/TKO/ SDD",
+        "programmingProcedure": [
+          "B"
+        ],
+        "cloningMethod": null,
+        "substitutes": "Service Key H86",
+        "notes": "Motorola Inpala Fixed Code system",
+        "cardNo": "612"
+      },
+      {
+        "yearStart": 1993,
+        "yearEnd": 1996,
+        "lockApps": "Ignition/ Door",
+        "codeRange": "A-B-C-D-E",
+        "keyBlanks": [
+          "1188LN-P"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "1190LN/H60, 1184FD/ H54",
+        "notes": null,
+        "cardNo": "194"
+      },
+      {
+        "yearStart": 1985,
+        "yearEnd": 1992,
+        "lockApps": "Ignition/ Door",
+        "codeRange": "A-B-C-D-E",
+        "keyBlanks": [
+          "1190LN/H60"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "1184FD/H54",
+        "notes": null,
+        "cardNo": "194"
+      },
+      {
+        "yearStart": 1967,
+        "yearEnd": 1984,
+        "lockApps": "Door/ Trunk/ GB",
+        "codeRange": "FB0-FB1863",
+        "keyBlanks": [
+          "S1167FD/H50 [-PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "S1170LN",
+        "notes": null,
+        "cardNo": "140"
+      }
+    ],
+    "MKC": [
+      {
+        "yearStart": 2017,
+        "yearEnd": 2023,
+        "lockApps": "All",
+        "codeRange": "10,001-11,500",
+        "keyBlanks": [
+          "OEM# 164-R8154, 164- R8155, 164-R8156, 164- R8226"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "P1117/HU101",
+        "notes": null,
+        "cardNo": "1838"
+      },
+      {
+        "yearStart": 2014,
+        "yearEnd": 2016,
+        "lockApps": "All",
+        "codeRange": "10,001-11,500",
+        "keyBlanks": [
+          "OEM# 164-R8105, 164- R8106, 164-R8107"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "P1117/HU101",
+        "notes": null,
+        "cardNo": "1838"
+      }
+    ],
+    "MKS": [
+      {
+        "yearStart": 2013,
+        "yearEnd": 2016,
+        "lockApps": "All",
+        "codeRange": "1X-1706X",
+        "keyBlanks": [
+          "OEM# 164-R8094 (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program Q, Smart Pro/TCP/MVPP",
+        "programmingProcedure": [
+          "Q"
+        ],
+        "cloningMethod": null,
+        "substitutes": "Service Key H86",
+        "notes": null,
+        "cardNo": "612"
+      },
+      {
+        "yearStart": 2009,
+        "yearEnd": 2012,
+        "lockApps": "All",
+        "codeRange": "1X-1706X",
+        "keyBlanks": [
+          "OEM# 164-R7028"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program Q, Smart Pro/TCP/MVPP/TKO/ SDD",
+        "programmingProcedure": [
+          "Q"
+        ],
+        "cloningMethod": null,
+        "substitutes": "Service Key H86",
+        "notes": null,
+        "cardNo": "612"
+      }
+    ],
+    "MKT": [
+      {
+        "yearStart": 2013,
+        "yearEnd": 2020,
+        "lockApps": "All",
+        "codeRange": "1X-1706X",
+        "keyBlanks": [
+          "OEM# 164-R8094 (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program Q",
+        "programmingProcedure": [
+          "Q"
+        ],
+        "cloningMethod": null,
+        "substitutes": "Service Key H86",
+        "notes": null,
+        "cardNo": "612"
+      },
+      {
+        "yearStart": 2012,
+        "yearEnd": 2012,
+        "lockApps": "All",
+        "codeRange": "1X-1706X",
+        "keyBlanks": [
+          "OEM# 164-R7028"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program Q, Smart Pro/TCP/MVPP",
+        "programmingProcedure": [
+          "Q"
+        ],
+        "cloningMethod": null,
+        "substitutes": "Service Key H86",
+        "notes": null,
+        "cardNo": "612"
+      },
+      {
+        "yearStart": 2010,
+        "yearEnd": 2011,
+        "lockApps": "All",
+        "codeRange": "1X-1706X",
+        "keyBlanks": [
+          "H92-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D63)",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program J, Smart Pro/TCP/MVPP/TKO/ SDD",
+        "programmingProcedure": [
+          "J"
+        ],
+        "cloningMethod": null,
+        "substitutes": "Service Key H86",
+        "notes": "Texas Instruments (4D63) Encrypted System",
+        "cardNo": "612"
+      }
+    ],
+    "MKX W/ PROX": [
+      {
+        "yearStart": 2016,
+        "yearEnd": 2019,
+        "lockApps": "All",
+        "codeRange": "10,001-11,500",
+        "keyBlanks": [
+          "OEM# 164-R8106"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "P1117/HU101",
+        "notes": null,
+        "cardNo": "1838"
+      },
+      {
+        "yearStart": 2012,
+        "yearEnd": 2015,
+        "lockApps": "All",
+        "codeRange": "1X-1706X",
+        "keyBlanks": [
+          "OEM# 164-R8094"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program Q, Smart Pro/TCP/MVPP",
+        "programmingProcedure": [
+          "Q"
+        ],
+        "cloningMethod": null,
+        "substitutes": "Service Key H86",
+        "notes": null,
+        "cardNo": "612"
+      }
+    ],
+    "MKX": [
+      {
+        "yearStart": 2007,
+        "yearEnd": 2011,
+        "lockApps": "All",
+        "codeRange": "1X-1706X",
+        "keyBlanks": [
+          "EK3-H84/EK3LB-H84*/H84- GTK#"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D63)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "substitutes": "Service Key H86",
+        "notes": "Texas Instruments (4D63) Encrypted System",
+        "cardNo": "612"
+      },
+      {
+        "yearStart": 2012,
+        "yearEnd": 2012,
+        "lockApps": "EB3-D-H84",
+        "codeRange": null,
+        "keyBlanks": [
+          "H84-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "T80 Plus/GTI-Pro",
+        "substitutes": "RW5, SA+, M-Box",
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 2007,
+        "yearEnd": 2007,
+        "lockApps": "EB3-D-H84",
+        "codeRange": "H84-GTK",
+        "keyBlanks": [
+          "H84-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "MKX W/ POWER LIFTGATE": [
+      {
+        "yearStart": 2012,
+        "yearEnd": 2013,
+        "lockApps": "All",
+        "codeRange": "1X-1706X",
+        "keyBlanks": [
+          "H84-GTS/T80+ or EB3-D-H84/ GTHT80+"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments ()",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus/EZ Clone Plus w/ M-Box",
+        "substitutes": "Service Key H86",
+        "notes": "Texas Instruments (80 Bit) Encrypted Code System",
+        "cardNo": "612"
+      },
+      {
+        "yearStart": 2007,
+        "yearEnd": 2013,
+        "lockApps": "All",
+        "codeRange": "1X-1706X",
+        "keyBlanks": [
+          "H92-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program J, Smart Pro/TCP/MVPP/TKO/ SDD",
+        "programmingProcedure": [
+          "J"
+        ],
+        "cloningMethod": null,
+        "substitutes": "Service Key H86",
+        "notes": "Texas Instruments 80 Bit Encrypted System",
+        "cardNo": "612"
+      }
+    ],
+    "MKX W/O POWER LIFTGATE": [
+      {
+        "yearStart": 2012,
+        "yearEnd": 2013,
+        "lockApps": "All",
+        "codeRange": "1X-1706X",
+        "keyBlanks": [
+          "H84-GTS/T80+ or EB3-D-H84/ GTHT80+"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments ()",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus/EZ Clone Plus w/ M-Box",
+        "substitutes": "Service Key H86",
+        "notes": "Texas Instruments (80 Bit) Encrypted Code System",
+        "cardNo": "612"
+      },
+      {
+        "yearStart": 2007,
+        "yearEnd": 2013,
+        "lockApps": "All",
+        "codeRange": "1X-1706X",
+        "keyBlanks": [
+          "H92-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program J, Smart Pro/TCP/MVPP/TKO/ SDD",
+        "programmingProcedure": [
+          "J"
+        ],
+        "cloningMethod": null,
+        "substitutes": "Service Key H86",
+        "notes": "Texas Instruments 80 Bit Encrypted System",
+        "cardNo": "612"
+      }
+    ],
+    "MKZ W/ PROX": [
+      {
+        "yearStart": 2017,
+        "yearEnd": 2020,
+        "lockApps": "All",
+        "codeRange": "10,001-11,500",
+        "keyBlanks": [
+          "OEM# 164-R8154"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Philips (46)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "P1117/HU101",
+        "notes": "Philips (46) PCF7939PA",
+        "cardNo": "1838"
+      },
+      {
+        "yearStart": 2013,
+        "yearEnd": 2016,
+        "lockApps": "All",
+        "codeRange": "10,001-11,500",
+        "keyBlanks": [
+          "OEM# 164-R7990 or 164- R7991"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "P1117/HU101",
+        "notes": null,
+        "cardNo": "1838"
+      }
+    ],
+    "MKZ": [
+      {
+        "yearStart": 2018,
+        "yearEnd": 2020,
+        "lockApps": "All",
+        "codeRange": "10,001-11,500",
+        "keyBlanks": [
+          "H128-PT"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips (46)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "P1117/HU101",
+        "notes": "Philips (46) PCF7939PA",
+        "cardNo": "1838"
+      },
+      {
+        "yearStart": 2012,
+        "yearEnd": 2017,
+        "lockApps": "All",
+        "codeRange": "1X-1706X",
+        "keyBlanks": [
+          "H84-GTS/T80+ or EB3-D-H84/ GTHT80+"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments ()",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus/EZ Clone Plus w/ M-Box",
+        "substitutes": "Service Key H86",
+        "notes": "Texas Instruments (80 Bit) Encrypted Code System",
+        "cardNo": "612"
+      },
+      {
+        "yearStart": 2007,
+        "yearEnd": 2017,
+        "lockApps": "All",
+        "codeRange": "1X-1706X",
+        "keyBlanks": [
+          "H92-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program J, Smart Pro/TCP/MVPP/TKO/ SDD",
+        "programmingProcedure": [
+          "J"
+        ],
+        "cloningMethod": null,
+        "substitutes": "Service Key H86",
+        "notes": "Texas Instruments 80 Bit Encrypted System",
+        "cardNo": "612"
+      },
+      {
+        "yearStart": 2007,
+        "yearEnd": 2011,
+        "lockApps": "All",
+        "codeRange": "1X-1706X",
+        "keyBlanks": [
+          "EK3-H84/EK3LB-H84*/H84- GTK#"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D63)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "substitutes": "Service Key H86",
+        "notes": "Texas Instruments (4D63) Encrypted System",
+        "cardNo": "612"
+      },
+      {
+        "yearStart": 2012,
+        "yearEnd": 2012,
+        "lockApps": "EB3-D-H84",
+        "codeRange": null,
+        "keyBlanks": [
+          "H84-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "T80 Plus/GTI-Pro",
+        "substitutes": "RW5, SA+, M-Box",
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 2007,
+        "yearEnd": 2007,
+        "lockApps": "EB3-D-H84",
+        "codeRange": "H84-GTK",
+        "keyBlanks": [
+          "H84-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ],
+    "NAUTILUS W/ PROX": [
+      {
+        "yearStart": 2022,
+        "yearEnd": 2023,
+        "lockApps": "All",
+        "codeRange": "10,001-11,500",
+        "keyBlanks": [
+          "OEM# 164-R8321"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "P1117/HU101",
+        "notes": null,
+        "cardNo": "1838"
+      },
+      {
+        "yearStart": 2020,
+        "yearEnd": 2022,
+        "lockApps": "All",
+        "codeRange": "10,001-11,500",
+        "keyBlanks": [
+          "OEM# 164-R8278 or 164- R8279"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "P1117/HU101",
+        "notes": null,
+        "cardNo": "1838"
+      },
+      {
+        "yearStart": 2019,
+        "yearEnd": 2019,
+        "lockApps": "All",
+        "codeRange": "10,001-11,500",
+        "keyBlanks": [
+          "OEM# 164-R8106"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "P1117/HU101",
+        "notes": null,
+        "cardNo": "1838"
+      }
+    ],
+    "NAUTILUS W/ REGULAR IGNITION": [
+      {
+        "yearStart": 2019,
+        "yearEnd": 2021,
+        "lockApps": "All",
+        "codeRange": "10,001-11,500",
+        "keyBlanks": [
+          "H128-PT"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips (46)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "P1117/HU101",
+        "notes": "Philips (46) PCF7939PA",
+        "cardNo": "1838"
+      }
+    ],
+    "NAVIGATOR W/ PROX": [
+      {
+        "yearStart": 2022,
+        "yearEnd": 2023,
+        "lockApps": "All",
+        "codeRange": "10,001-11,500",
+        "keyBlanks": [
+          "OEM# 164-R8321"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "P1117/HU101",
+        "notes": null,
+        "cardNo": "1838"
+      },
+      {
+        "yearStart": 2020,
+        "yearEnd": 2022,
+        "lockApps": "All",
+        "codeRange": "10,001-11,500",
+        "keyBlanks": [
+          "OEM# 164-R8278 or 164- R8279 (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "P1117/HU101",
+        "notes": null,
+        "cardNo": "1838"
+      },
+      {
+        "yearStart": 2018,
+        "yearEnd": 2019,
+        "lockApps": "All",
+        "codeRange": "10,001-11,500",
+        "keyBlanks": [
+          "OEM# 164-R8226"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Philips (46)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP (Thru 2019)",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "P1117/HU101",
+        "notes": "Philips (46) PCF7939PA",
+        "cardNo": "1838"
+      }
+    ],
+    "NAVIGATOR W/ REGULAR IGNITION": [
+      {
+        "yearStart": 2018,
+        "yearEnd": 2021,
+        "lockApps": "All",
+        "codeRange": "10,001-11,500",
+        "keyBlanks": [
+          "H128-PT"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips (46)",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "P1117/HU101",
+        "notes": "Philips (46) PCF7939PA",
+        "cardNo": "1838"
+      }
+    ],
+    "NAVIGATOR": [
+      {
+        "yearStart": 2018,
+        "yearEnd": 2019,
+        "lockApps": "All",
+        "codeRange": "10,001-11,500",
+        "keyBlanks": [
+          "OEM# 164-R8226"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Philips (46)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "P1117/HU101",
+        "notes": "Philips (46) PCF7939PA",
+        "cardNo": "1838"
+      },
+      {
+        "yearStart": 2012,
+        "yearEnd": 2017,
+        "lockApps": "All",
+        "codeRange": "1X-1706X",
+        "keyBlanks": [
+          "H84-GTS/T80+ or EB3-D-H84/ GTHT80+"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments ()",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus/EZ Clone Plus w/ M-Box",
+        "substitutes": "Service Key H86",
+        "notes": "Texas Instruments (80 Bit) Encrypted Code System",
+        "cardNo": "612"
+      },
+      {
+        "yearStart": 2009,
+        "yearEnd": 2017,
+        "lockApps": "All",
+        "codeRange": "1X-1706X",
+        "keyBlanks": [
+          "H92-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program J, Smart Pro/TCP/MVPP/TKO/ SDD",
+        "programmingProcedure": [
+          "J"
+        ],
+        "cloningMethod": null,
+        "substitutes": "Service Key H86",
+        "notes": "Texas Instruments 80 Bit Encrypted System",
+        "cardNo": "612"
+      },
+      {
+        "yearStart": 2009,
+        "yearEnd": 2011,
+        "lockApps": "All",
+        "codeRange": "1X-1706X",
+        "keyBlanks": [
+          "H92-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D63)",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program J, Smart Pro/TCP/MVPP/TKO/ SDD",
+        "programmingProcedure": [
+          "J"
+        ],
+        "cloningMethod": null,
+        "substitutes": "Service Key H86",
+        "notes": "Texas Instruments (4D63) Encrypted System",
+        "cardNo": "612"
+      },
+      {
+        "yearStart": 2009,
+        "yearEnd": 2010,
+        "lockApps": "All",
+        "codeRange": "1X-1706X",
+        "keyBlanks": [
+          "H92-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D63)",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program C, Smart Pro/TCP/MVPP/TKO/ SDD",
+        "programmingProcedure": [
+          "C"
+        ],
+        "cloningMethod": null,
+        "substitutes": "Service Key H86",
+        "notes": "Texas Instruments (4D63) Encrypted System",
+        "cardNo": "612"
+      },
+      {
+        "yearStart": 2003,
+        "yearEnd": 2011,
+        "lockApps": "All",
+        "codeRange": "1X-1706X",
+        "keyBlanks": [
+          "EK3-H84/EK3LB-H84*/H84- GTK#"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D63)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "substitutes": "Service Key H86",
+        "notes": "Texas Instruments (4D63) Encrypted System",
+        "cardNo": "612"
+      },
+      {
+        "yearStart": 2003,
+        "yearEnd": 2008,
+        "lockApps": "All",
+        "codeRange": "1X-1706X",
+        "keyBlanks": [
+          "H92-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D63)",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program C, Smart Pro/TCP/MVPP/TKO/ SDD",
+        "programmingProcedure": [
+          "C"
+        ],
+        "cloningMethod": null,
+        "substitutes": "Service Key H86",
+        "notes": "Texas Instruments (4D63) Encrypted System",
+        "cardNo": "612"
+      },
+      {
+        "yearStart": 1998,
+        "yearEnd": 2002,
+        "lockApps": "All",
+        "codeRange": "1X-1706X",
+        "keyBlanks": [
+          "EK3-H72/EK3LB-H72*/H72- GTK#"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4C)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "substitutes": "Service Key H86",
+        "notes": "Texas Instruments (4C) System",
+        "cardNo": "612"
+      },
+      {
+        "yearStart": 2003,
+        "yearEnd": 2003,
+        "lockApps": "EB3-D-H84",
+        "codeRange": null,
+        "keyBlanks": [
+          "H84-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "H84-GTS",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "cardNo": null
+      },
+      {
+        "yearStart": 1998,
+        "yearEnd": 1998,
+        "lockApps": "EB3-B-H72",
+        "codeRange": null,
+        "keyBlanks": [
+          "H72-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "H72-GTS",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "TOWN CAR": [
+      {
+        "yearStart": 2003,
+        "yearEnd": 2012,
+        "lockApps": "All",
+        "codeRange": "1X-1706X",
+        "keyBlanks": [
+          "H92-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D63)",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program J, Smart Pro/TCP/MVPP/TKO/ SDD",
+        "programmingProcedure": [
+          "J"
+        ],
+        "cloningMethod": null,
+        "substitutes": "Service Key H86",
+        "notes": "Texas Instruments (4D63) Encrypted System",
+        "cardNo": "612"
+      },
+      {
+        "yearStart": 2003,
+        "yearEnd": 2010,
+        "lockApps": "All",
+        "codeRange": "1X-1706X",
+        "keyBlanks": [
+          "H92-PT (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D63)",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program C, Smart Pro/TCP/MVPP/TKO/ SDD",
+        "programmingProcedure": [
+          "C"
+        ],
+        "cloningMethod": null,
+        "substitutes": "Service Key H86",
+        "notes": "Texas Instruments (4D63) Encrypted System",
+        "cardNo": "612"
+      },
+      {
+        "yearStart": 2003,
+        "yearEnd": 2012,
+        "lockApps": "All",
+        "codeRange": "1X-1706X",
+        "keyBlanks": [
+          "EK3-H84/EK3LB-H84*/H84- GTK#"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D63)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "substitutes": "Service Key H86",
+        "notes": "Texas Instruments (4D63) Encrypted System",
+        "cardNo": "612"
+      },
+      {
+        "yearStart": 1998,
+        "yearEnd": 2002,
+        "lockApps": "All",
+        "codeRange": "1X-1706X",
+        "keyBlanks": [
+          "EK3-H72/EK3LB-H72*/H72- GTK#"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4C)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "substitutes": "Service Key H86",
+        "notes": "Texas Instruments (4C) System",
+        "cardNo": "612"
+      },
+      {
+        "yearStart": 1997,
+        "yearEnd": 1997,
+        "lockApps": "All",
+        "codeRange": "1X-1706X",
+        "keyBlanks": [
+          "1196FD/H75 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "612"
+      },
+      {
+        "yearStart": 1993,
+        "yearEnd": 1996,
+        "lockApps": "Ignition/ Door",
+        "codeRange": "A-B-C-D-E",
+        "keyBlanks": [
+          "1188LN-P"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "1190LN/H60, 1184FD/ H54",
+        "notes": null,
+        "cardNo": "194"
+      },
+      {
+        "yearStart": 1985,
+        "yearEnd": 1992,
+        "lockApps": "Ignition/ Door",
+        "codeRange": "A-B-C-D-E",
+        "keyBlanks": [
+          "1190LN/H60"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "1184FD/H54",
+        "notes": null,
+        "cardNo": "194"
+      },
+      {
+        "yearStart": 2003,
+        "yearEnd": 2003,
+        "lockApps": "EB3-D-H84",
+        "codeRange": null,
+        "keyBlanks": [
+          "H84-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "H84-GTS",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "cardNo": null
+      },
+      {
+        "yearStart": 1998,
+        "yearEnd": 1998,
+        "lockApps": "EB3-B-H72",
+        "codeRange": null,
+        "keyBlanks": [
+          "H72-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "H72-GTS",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "ZEPHYR (SISTER MODEL TO FORD FUSION)": [
+      {
+        "yearStart": 2006,
+        "yearEnd": 2009,
+        "lockApps": "All",
+        "codeRange": "1X-1706X",
+        "keyBlanks": [
+          "EK3-H84/EK3LB-H84*/H84- GTK#"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D63)",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "substitutes": "Service Key H86",
+        "notes": "Texas Instruments (4D63) Encrypted System",
+        "cardNo": "612"
+      },
+      {
+        "yearStart": 2006,
+        "yearEnd": 2006,
+        "lockApps": "EB3-D-H84",
+        "codeRange": null,
+        "keyBlanks": [
+          "H84-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "H84-GTS",
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "AVIATOR": [
+      {
+        "yearStart": 2003,
+        "yearEnd": 2003,
+        "lockApps": "EB3-D-H84",
+        "codeRange": "H84-GTK",
+        "keyBlanks": [
+          "H84-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ]
+  }
+}

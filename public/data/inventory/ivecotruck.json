@@ -1,0 +1,42 @@
+{
+  "Iveco Truck": {
+    "ALL": [
+      {
+        "yearStart": 1983,
+        "yearEnd": 1988,
+        "lockApps": "Doors",
+        "codeRange": "1501-2000",
+        "keyBlanks": [
+          "FT37"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "4"
+      },
+      {
+        "yearStart": 1981,
+        "yearEnd": 1982,
+        "lockApps": "Doors",
+        "codeRange": "1501-2000",
+        "keyBlanks": [
+          "FT37"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "programmingProcedure": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "4"
+      }
+    ]
+  }
+}
