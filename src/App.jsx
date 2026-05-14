@@ -1,14 +1,10 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ErrorBoundary from './ErrorBoundary';
 import KeyRefPro from './KeyRefProWIP';
 
-function App() {
+export default function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<KeyRefPro />} />
-      </Routes>
-    </Router>
+    <ErrorBoundary>
+      <KeyRefPro />
+    </ErrorBoundary>
   );
 }
-
-export default App;
