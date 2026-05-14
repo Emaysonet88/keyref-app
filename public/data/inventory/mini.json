@@ -9,10 +9,11 @@
         "keyBlanks": [
           "Dealer Prox FOB"
         ],
-        "keyType": "High Security",
+        "keyType": "Smart Key / Proximity",
         "transponderChip": null,
         "programmingRequired": false,
         "programmingMethod": null,
+        "programmingProcedure": null,
         "cloningMethod": null,
         "substitutes": "Service Key HU92RP",
         "notes": "High Security Key, Crypto Transponder",
@@ -32,6 +33,7 @@
         "transponderChip": null,
         "programmingRequired": false,
         "programmingMethod": null,
+        "programmingProcedure": null,
         "cloningMethod": null,
         "substitutes": "Service Key HU92RP",
         "notes": "High Security Key, Crypto Transponder, Ordered by VIN",

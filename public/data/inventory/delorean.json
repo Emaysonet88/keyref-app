@@ -13,6 +13,7 @@
         "transponderChip": null,
         "programmingRequired": false,
         "programmingMethod": null,
+        "programmingProcedure": null,
         "cloningMethod": null,
         "substitutes": null,
         "notes": null,

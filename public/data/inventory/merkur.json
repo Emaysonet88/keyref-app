@@ -2,21 +2,6 @@
   "Merkur": {
     "SCORPIO": [
       {
-        "yearStart": 1988,
-        "yearEnd": 1988,
-        "lockApps": "High Security- All S30FD-P - High Security Key 220 Tibbe",
-        "codeRange": null,
-        "keyBlanks": [],
-        "keyType": "Mechanical",
-        "transponderChip": null,
-        "programmingRequired": false,
-        "programmingMethod": null,
-        "cloningMethod": null,
-        "substitutes": null,
-        "notes": null,
-        "cardNo": null
-      },
-      {
         "yearStart": 1987,
         "yearEnd": 1988,
         "lockApps": "All",
@@ -28,6 +13,7 @@
         "transponderChip": null,
         "programmingRequired": false,
         "programmingMethod": null,
+        "programmingProcedure": null,
         "cloningMethod": null,
         "substitutes": "-",
         "notes": "High Security Key",
@@ -47,6 +33,7 @@
         "transponderChip": null,
         "programmingRequired": false,
         "programmingMethod": null,
+        "programmingProcedure": null,
         "cloningMethod": null,
         "substitutes": "X20/FC2",
         "notes": null,

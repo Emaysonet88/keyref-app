@@ -1,22 +1,5 @@
 {
   "Ferrari": {
-    "348, 328, 308": [
-      {
-        "yearStart": 1989,
-        "yearEnd": 1989,
-        "lockApps": "All K3301-K4886 X152/FT46 - 63",
-        "codeRange": null,
-        "keyBlanks": [],
-        "keyType": "Mechanical",
-        "transponderChip": null,
-        "programmingRequired": false,
-        "programmingMethod": null,
-        "cloningMethod": null,
-        "substitutes": null,
-        "notes": null,
-        "cardNo": null
-      }
-    ],
     "512TR": [
       {
         "yearStart": 1992,
@@ -30,6 +13,7 @@
         "transponderChip": null,
         "programmingRequired": false,
         "programmingMethod": null,
+        "programmingProcedure": null,
         "cloningMethod": null,
         "substitutes": "-",
         "notes": null,
@@ -46,9 +30,10 @@
           "SIP22-GTS w/ T48 Transponder"
         ],
         "keyType": "Transponder",
-        "transponderChip": "Megamos (48) Encrypted System",
+        "transponderChip": "Megamos (48)",
         "programmingRequired": false,
         "programmingMethod": null,
+        "programmingProcedure": null,
         "cloningMethod": "RW5, SA+, RW4 Plus/EZ Clone Plus w/ M-Box",
         "substitutes": null,
         "notes": "Megamos (48) Encrypted System",
@@ -66,6 +51,7 @@
         "transponderChip": null,
         "programmingRequired": true,
         "programmingMethod": "T48",
+        "programmingProcedure": null,
         "cloningMethod": null,
         "substitutes": "RW5, SA+, M-Box",
         "notes": null,
@@ -85,6 +71,7 @@
         "transponderChip": null,
         "programmingRequired": false,
         "programmingMethod": null,
+        "programmingProcedure": null,
         "cloningMethod": null,
         "substitutes": "-",
         "notes": null,
@@ -102,6 +89,7 @@
         "transponderChip": null,
         "programmingRequired": false,
         "programmingMethod": null,
+        "programmingProcedure": null,
         "cloningMethod": null,
         "substitutes": "-",
         "notes": null,
@@ -121,6 +109,7 @@
         "transponderChip": null,
         "programmingRequired": false,
         "programmingMethod": null,
+        "programmingProcedure": null,
         "cloningMethod": null,
         "substitutes": "-",
         "notes": null,
@@ -140,6 +129,7 @@
         "transponderChip": null,
         "programmingRequired": false,
         "programmingMethod": null,
+        "programmingProcedure": null,
         "cloningMethod": "GTI/GTI-Pro",
         "substitutes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
         "notes": null,
@@ -159,6 +149,7 @@
         "transponderChip": null,
         "programmingRequired": true,
         "programmingMethod": "T48",
+        "programmingProcedure": null,
         "cloningMethod": null,
         "substitutes": "RW5, SA+, M-Box",
         "notes": null,

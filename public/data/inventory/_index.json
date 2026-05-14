@@ -50,22 +50,6 @@
     ],
     "modelCount": 3
   },
-  "Aprilia Motorcycle": {
-    "file": "apriliamotorcycle.json",
-    "models": [
-      "ATLANTIC 500",
-      "CARONORD 1200",
-      "DORSODURO 1200",
-      "DORSODURO 750",
-      "RSV 1000",
-      "RSV4",
-      "SCARABEO 500",
-      "SHIVER",
-      "TUONO 1000R",
-      "TUONO V4"
-    ],
-    "modelCount": 10
-  },
   "Audi": {
     "file": "audi.json",
     "models": [
@@ -135,21 +119,6 @@
     ],
     "modelCount": 32
   },
-  "Bmw Motorcycle": {
-    "file": "bmwmotorcycle.json",
-    "models": [
-      "C600 SPORT",
-      "C650 GT",
-      "F650/G650",
-      "F800",
-      "G650",
-      "K1200",
-      "K1300",
-      "K1600",
-      "R1200"
-    ],
-    "modelCount": 9
-  },
   "Broadway Truck": {
     "file": "broadwaytruck.json",
     "models": [
@@ -212,27 +181,18 @@
       "ESCALADE, ESV W/ PROX",
       "ESCALADE, ESV, EXT",
       "ESCALADE, EXT",
-      "LYRIQ",
       "MODELS AND YEARS NOT REFERENCED ELSEWHERE",
       "SEVILLE",
       "SRX",
       "STS, STS V",
       "STS, STS V W/ PROX",
       "XLR, XLR V",
-      "XT3",
       "XT4",
       "XT5",
       "XT6",
       "XTS"
     ],
-    "modelCount": 32
-  },
-  "Can-am": {
-    "file": "canam.json",
-    "models": [
-      "SPYDER"
-    ],
-    "modelCount": 1
+    "modelCount": 30
   },
   "Chevrolet": {
     "file": "chevrolet.json",
@@ -311,10 +271,9 @@
       "TRAILBLAZER W/ REGULAR IGNITION",
       "TRAX (CANADA)",
       "UPLANDER MINI VAN",
-      "VENTURE VAN",
-      "W4 & W5, KODIAK TRUCKS, C4500-C8500"
+      "VENTURE VAN"
     ],
-    "modelCount": 36
+    "modelCount": 35
   },
   "Chrysler": {
     "file": "chrysler.json",
@@ -344,12 +303,11 @@
   "Daewoo": {
     "file": "daewoo.json",
     "models": [
-      "DAKOTA",
       "LANOS",
       "LEGANZA",
       "NUBIRA"
     ],
-    "modelCount": 4
+    "modelCount": 3
   },
   "Daihatsu": {
     "file": "daihatsu.json",
@@ -362,13 +320,6 @@
     "file": "delorean.json",
     "models": [
       "DE LOREAN"
-    ],
-    "modelCount": 1
-  },
-  "Derbi Motorcycle": {
-    "file": "derbimotorcycle.json",
-    "models": [
-      "BOULEVARD 150"
     ],
     "modelCount": 1
   },
@@ -393,7 +344,6 @@
       "NEON, SRT",
       "NITRO - SLT, SXT",
       "PROMASTER",
-      "PROMASTER CITY",
       "SPIRIT",
       "SPRINTER",
       "STEALTH",
@@ -401,7 +351,7 @@
       "STRATUS SEDAN",
       "VIPER"
     ],
-    "modelCount": 25
+    "modelCount": 24
   },
   "Dodge Trucks, Vans, Suvs": {
     "file": "dodgetrucksvanssuvs.json",
@@ -462,28 +412,13 @@
       "999S",
       "HYPERMOTARD",
       "MONSTER 1000",
-      "MONSTER 620",
-      "MONSTER 695",
-      "MONSTER 750",
-      "MONSTER 800",
-      "MONSTER 900",
-      "MONSTER S2R",
-      "MONSTER S4",
-      "MONSTER S4R",
-      "SPORTCLASSIC 1000",
-      "ST3",
-      "ST4",
-      "ST4S",
-      "SUPERSPORT 1000",
-      "SUPERSPORT 620",
-      "SUPERSPORT 800"
+      "MONSTER 620"
     ],
-    "modelCount": 28
+    "modelCount": 14
   },
   "Eagle": {
     "file": "eagle.json",
     "models": [
-      "620",
       "MEDALLION SEDAN",
       "MEDALLION WAGON",
       "PREMIER",
@@ -491,12 +426,11 @@
       "TALON",
       "VISION"
     ],
-    "modelCount": 7
+    "modelCount": 6
   },
   "Ferrari": {
     "file": "ferrari.json",
     "models": [
-      "348, 328, 308",
       "512TR",
       "599",
       "612 SCAGLIETTI",
@@ -504,7 +438,7 @@
       "MODELS AND YEARS NOT REFERENCED ELSEWHERE",
       "TESTAROSSA"
     ],
-    "modelCount": 7
+    "modelCount": 6
   },
   "Fiat": {
     "file": "fiat.json",
@@ -524,7 +458,6 @@
       "CONTOUR 2.51 V6",
       "CONTOUR V6 LX3",
       "CROWN VICTORIA",
-      "E",
       "ECOSPORT W/ PROX",
       "ECOSPORT W/ REG IGNITION",
       "EDGE - SE, SEL, SEL PLUS",
@@ -572,12 +505,11 @@
       "THUNDERBIRD",
       "THUNDERBIRD (NON- TURBO)",
       "THUNDERBIRD (TURBO)",
-      "UR (EXCEPT V6 LX)",
       "W/ PROX",
       "W/ REGULAR ON",
       "ZX2"
     ],
-    "modelCount": 58
+    "modelCount": 56
   },
   "Ford Trucks, Vans, Suvs": {
     "file": "fordtrucksvanssuvs.json",
@@ -717,10 +649,9 @@
   "Hino Truck": {
     "file": "hinotruck.json",
     "models": [
-      "ALL MODELS",
-      "HEAVY DUTY"
+      "ALL MODELS"
     ],
-    "modelCount": 2
+    "modelCount": 1
   },
   "Honda": {
     "file": "honda.json",
@@ -748,7 +679,6 @@
       "FIT",
       "FIT W/ PROX",
       "FIT W/ REGULAR IGNITION",
-      "HR-V",
       "HR-V W/ PROX",
       "HR-V W/ REGULAR IGNITION",
       "INSIGHT",
@@ -765,35 +695,7 @@
       "RIDGELINE W/ PROX",
       "S2000"
     ],
-    "modelCount": 39
-  },
-  "Honda Motorcycle": {
-    "file": "hondamotorcycle.json",
-    "models": [
-      "BLACK SPIRIT",
-      "CBR 1000",
-      "CBR 1100F",
-      "CBR 1100XX",
-      "CBR 600F",
-      "CBR 600RR",
-      "CBR 900",
-      "CTX1300",
-      "CTX700",
-      "GOLD WING 1800",
-      "NC700 S",
-      "NC700 X",
-      "NC750 X",
-      "NT 650V",
-      "NT 700V",
-      "SH 300",
-      "SHADOW 750",
-      "SILVER WING",
-      "VARADERO",
-      "VT 750 C4",
-      "VTX 1800",
-      "X 11"
-    ],
-    "modelCount": 22
+    "modelCount": 38
   },
   "Hummer": {
     "file": "hummer.json",
@@ -857,13 +759,12 @@
       "VELOSTER W/ PROX",
       "VELOSTER(CANADA)",
       "VENUE W/ PROX",
-      "VEOLSTER (CANADA)",
       "VERACRUZ (CANADA)",
       "VERACRUZ W/ PROX SYSTEM",
       "VERACRUZ W/ REGULAR IGNITION",
       "XG300"
     ],
-    "modelCount": 55
+    "modelCount": 54
   },
   "Infiniti": {
     "file": "infiniti.json",
@@ -958,13 +859,12 @@
       "XF",
       "XJ",
       "XJ, XK , XK8, XKR",
-      "XJ, XK, XK8, XKR",
       "XJ6, XJ12, SOVERIEGN, VANDEN PLAS, XJR",
       "XJ8, XJR",
       "XJ8, XJR, VANDEN PLAS",
       "XK8, XKR"
     ],
-    "modelCount": 10
+    "modelCount": 9
   },
   "Jeep": {
     "file": "jeep.json",
@@ -1091,7 +991,6 @@
   "Lexus": {
     "file": "lexus.json",
     "models": [
-      "CT200H",
       "ES250",
       "ES300",
       "ES300H",
@@ -1137,7 +1036,7 @@
       "UX200",
       "UX250H"
     ],
-    "modelCount": 45
+    "modelCount": 44
   },
   "Lincoln": {
     "file": "lincoln.json",
@@ -1190,12 +1089,10 @@
     "file": "maserati.json",
     "models": [
       "GHIBLI",
-      "GRANSPORT",
-      "GRANTURISMO",
       "LEVANTE",
       "QUATTROPORTE"
     ],
-    "modelCount": 5
+    "modelCount": 3
   },
   "Mazda": {
     "file": "mazda.json",
@@ -1509,19 +1406,6 @@
     ],
     "modelCount": 2
   },
-  "Piaggio Motorcycle": {
-    "file": "piaggiomotorcycle.json",
-    "models": [
-      "BV200",
-      "BV250",
-      "BV350",
-      "BV500",
-      "FLY150",
-      "X9 500",
-      "X9 500 EVOLUTION"
-    ],
-    "modelCount": 7
-  },
   "Plymouth": {
     "file": "plymouth.json",
     "models": [
@@ -1542,7 +1426,6 @@
   "Pontiac": {
     "file": "pontiac.json",
     "models": [
-      "AZTEK",
       "BONNEVILLE",
       "FIREBIRD",
       "FORMULA",
@@ -1570,12 +1453,11 @@
       "VIBE",
       "WAVE (CANADA)"
     ],
-    "modelCount": 27
+    "modelCount": 26
   },
   "Porsche": {
     "file": "porsche.json",
     "models": [
-      "911",
       "911 TURBO CABRIOLET",
       "911, 912",
       "928 WITH ALARM",
@@ -1584,27 +1466,11 @@
       "944, 924",
       "968",
       "BOXSTER",
-      "CARRERA",
       "CAYENNE",
       "CAYMAN",
       "GT3"
     ],
-    "modelCount": 13
-  },
-  "Puegeot Motorcycle": {
-    "file": "puegeotmotorcycle.json",
-    "models": [
-      "ALISE",
-      "BV 200",
-      "BV 250",
-      "BV 500",
-      "ELISEO",
-      "FLY 150",
-      "SPEEDFIGHT",
-      "X9 500",
-      "X9 EVOLUTION 500"
-    ],
-    "modelCount": 9
+    "modelCount": 11
   },
   "Renault": {
     "file": "renault.json",
@@ -1657,7 +1523,6 @@
   "Scion": {
     "file": "scion.json",
     "models": [
-      "FR-S",
       "IA",
       "IM",
       "IQ",
@@ -1669,7 +1534,7 @@
       "XD",
       "XD (CANADA)"
     ],
-    "modelCount": 11
+    "modelCount": 10
   },
   "Smart": {
     "file": "smart.json",

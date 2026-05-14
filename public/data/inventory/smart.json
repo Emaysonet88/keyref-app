@@ -10,9 +10,10 @@
           "OEM# A4518203797"
         ],
         "keyType": "Smart Key / Proximity",
-        "transponderChip": "Philips (46) Encrypted System",
+        "transponderChip": "Philips (46)",
         "programmingRequired": true,
         "programmingMethod": "Smart Pro/TCP/MVPP",
+        "programmingProcedure": null,
         "cloningMethod": null,
         "substitutes": null,
         "notes": "Philips (46) Encrypted System",

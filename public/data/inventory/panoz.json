@@ -9,10 +9,11 @@
         "keyBlanks": [
           "H72-PT"
         ],
-        "keyType": "Mechanical",
-        "transponderChip": "Texas Instruments (4C) Encrypted System",
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4C)",
         "programmingRequired": false,
         "programmingMethod": null,
+        "programmingProcedure": null,
         "cloningMethod": null,
         "substitutes": "Service Key H86",
         "notes": "Texas Instruments (4C) Encrypted System",
@@ -26,10 +27,11 @@
         "keyBlanks": [
           "H92-PT (LAL)"
         ],
-        "keyType": "Mechanical",
-        "transponderChip": "Texas Instruments (4D63) Encrypted Code System",
+        "keyType": "Transponder",
+        "transponderChip": "Texas Instruments (4D63)",
         "programmingRequired": false,
         "programmingMethod": null,
+        "programmingProcedure": null,
         "cloningMethod": null,
         "substitutes": "Service Key H86",
         "notes": "Texas Instruments (4D63) Encrypted Code System",
@@ -47,6 +49,7 @@
         "transponderChip": null,
         "programmingRequired": false,
         "programmingMethod": null,
+        "programmingProcedure": null,
         "cloningMethod": "GTI/GTI-Pro",
         "substitutes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
         "notes": null,
@@ -64,6 +67,7 @@
         "transponderChip": null,
         "programmingRequired": false,
         "programmingMethod": null,
+        "programmingProcedure": null,
         "cloningMethod": "GTI/GTI-Pro",
         "substitutes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
         "notes": null,

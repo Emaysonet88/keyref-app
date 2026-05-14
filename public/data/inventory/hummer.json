@@ -9,10 +9,11 @@
         "keyBlanks": [
           "B111-PT"
         ],
-        "keyType": "Mechanical",
-        "transponderChip": "Philips (46) Encrypted System",
+        "keyType": "Transponder",
+        "transponderChip": "Philips (46)",
         "programmingRequired": false,
         "programmingMethod": null,
+        "programmingProcedure": null,
         "cloningMethod": null,
         "substitutes": "Service Key B106-P",
         "notes": "Circle +, Philips (46) Encrypted System",
@@ -30,6 +31,7 @@
         "transponderChip": null,
         "programmingRequired": false,
         "programmingMethod": null,
+        "programmingProcedure": null,
         "cloningMethod": null,
         "substitutes": "P1106/B86",
         "notes": null,
@@ -47,6 +49,7 @@
         "transponderChip": null,
         "programmingRequired": true,
         "programmingMethod": "B111-GTS",
+        "programmingProcedure": null,
         "cloningMethod": null,
         "substitutes": "GTI/GTI-Pro",
         "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
@@ -63,9 +66,13 @@
           "P1113/B102 [-P] (LAL)"
         ],
         "keyType": "Transponder",
-        "transponderChip": "Philips (46) Encrypted System",
+        "transponderChip": "Philips (46)",
         "programmingRequired": true,
         "programmingMethod": "OBP Program A or G",
+        "programmingProcedure": [
+          "A",
+          "G"
+        ],
         "cloningMethod": null,
         "substitutes": null,
         "notes": "Circle +, Philips (46) Encrypted System (Optional)",
@@ -85,6 +92,7 @@
         "transponderChip": null,
         "programmingRequired": false,
         "programmingMethod": null,
+        "programmingProcedure": null,
         "cloningMethod": null,
         "substitutes": "P1106/B86",
         "notes": null,

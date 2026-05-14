@@ -10,9 +10,10 @@
           "H84-GTS/T80+ or EB3-D-H84/ GTHT80+"
         ],
         "keyType": "Transponder",
-        "transponderChip": "Texas Instruments (80 Bit) Encrypted Code System",
+        "transponderChip": "Texas Instruments ()",
         "programmingRequired": false,
         "programmingMethod": null,
+        "programmingProcedure": null,
         "cloningMethod": "RW5, SA+, RW4 Plus/EZ Clone Plus w/ M-Box",
         "substitutes": "Service Key H86",
         "notes": "Texas Instruments (80 Bit) Encrypted Code System",
