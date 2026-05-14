@@ -1,0 +1,42 @@
+{
+  "Peugeot": {
+    "405": [
+      {
+        "yearStart": 1989,
+        "yearEnd": 1991,
+        "lockApps": "Ignition/ Door",
+        "codeRange": "M-N-P-R-S",
+        "keyBlanks": [
+          "X147/RN30"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "122"
+      }
+    ],
+    "505": [
+      {
+        "yearStart": 1985,
+        "yearEnd": 1991,
+        "lockApps": "Ignition/ Door",
+        "codeRange": "M-N-P-R-S",
+        "keyBlanks": [
+          "X147/RN30"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "122"
+      }
+    ]
+  }
+}

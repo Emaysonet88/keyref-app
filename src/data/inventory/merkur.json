@@ -1,0 +1,57 @@
+{
+  "Merkur": {
+    "SCORPIO": [
+      {
+        "yearStart": 1988,
+        "yearEnd": 1988,
+        "lockApps": "High Security- All S30FD-P - High Security Key 220 Tibbe",
+        "codeRange": null,
+        "keyBlanks": [],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 1987,
+        "yearEnd": 1988,
+        "lockApps": "All",
+        "codeRange": "High Security- Tibbe",
+        "keyBlanks": [
+          "S33FD-P"
+        ],
+        "keyType": "High Security",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": "High Security Key",
+        "cardNo": "220"
+      }
+    ],
+    "XR4TI": [
+      {
+        "yearStart": 1985,
+        "yearEnd": 1989,
+        "lockApps": "All",
+        "codeRange": "TX001-TX1859",
+        "keyBlanks": [
+          "X86/FC7 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "X20/FC2",
+        "notes": null,
+        "cardNo": "57"
+      }
+    ]
+  }
+}

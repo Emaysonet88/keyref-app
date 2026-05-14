@@ -1,0 +1,95 @@
+{
+  "Hummer": {
+    "H2": [
+      {
+        "yearStart": 2008,
+        "yearEnd": 2009,
+        "lockApps": "All",
+        "codeRange": "S000A-S999K",
+        "keyBlanks": [
+          "B111-PT"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": "Philips (46) Encrypted System",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key B106-P",
+        "notes": "Circle +, Philips (46) Encrypted System",
+        "cardNo": "567"
+      },
+      {
+        "yearStart": 2003,
+        "yearEnd": 2007,
+        "lockApps": "All",
+        "codeRange": "S000A-S999K",
+        "keyBlanks": [
+          "P1113/B102 [-P] (LAL)"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "P1106/B86",
+        "notes": null,
+        "cardNo": "567"
+      },
+      {
+        "yearStart": 2008,
+        "yearEnd": 2008,
+        "lockApps": "EB3-R-B111",
+        "codeRange": null,
+        "keyBlanks": [
+          "B111-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "B111-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "H3 (TRANSPONDER OPTIONAL)": [
+      {
+        "yearStart": 2006,
+        "yearEnd": 2009,
+        "lockApps": "All",
+        "codeRange": "70000-75928",
+        "keyBlanks": [
+          "P1113/B102 [-P] (LAL)"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips (46) Encrypted System",
+        "programmingRequired": true,
+        "programmingMethod": "OBP Program A or G",
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "Circle +, Philips (46) Encrypted System (Optional)",
+        "cardNo": "1420"
+      }
+    ],
+    "H3": [
+      {
+        "yearStart": 2003,
+        "yearEnd": 2005,
+        "lockApps": "All",
+        "codeRange": "S000A-S999K",
+        "keyBlanks": [
+          "P1113/B102 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "P1106/B86",
+        "notes": null,
+        "cardNo": "567"
+      }
+    ]
+  }
+}

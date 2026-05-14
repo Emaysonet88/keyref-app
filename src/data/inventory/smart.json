@@ -1,0 +1,23 @@
+{
+  "Smart": {
+    "FORTWO": [
+      {
+        "yearStart": 2008,
+        "yearEnd": 2016,
+        "lockApps": "All",
+        "codeRange": "93000-95999",
+        "keyBlanks": [
+          "OEM# A4518203797"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Philips (46) Encrypted System",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "Philips (46) Encrypted System",
+        "cardNo": "2552"
+      }
+    ]
+  }
+}

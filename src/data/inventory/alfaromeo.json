@@ -1,0 +1,80 @@
+{
+  "Alfa Romeo": {
+    "164": [
+      {
+        "yearStart": 1990,
+        "yearEnd": 1995,
+        "lockApps": "All",
+        "codeRange": "K7001-K8092",
+        "keyBlanks": [
+          "SP25A-P"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "63"
+      }
+    ],
+    "GTV/6": [
+      {
+        "yearStart": 1981,
+        "yearEnd": 1989,
+        "lockApps": "Door & Trunk",
+        "codeRange": "1531-3030",
+        "keyBlanks": [
+          "S10LAA-P"
+        ],
+        "keyType": "High Security",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": "High Security Key",
+        "cardNo": "N/A"
+      }
+    ],
+    "MILANO": [
+      {
+        "yearStart": 1986,
+        "yearEnd": 1989,
+        "lockApps": "All",
+        "codeRange": "AL1-AL1274",
+        "keyBlanks": [
+          "X166/FT48"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "185"
+      }
+    ],
+    "SPIDER, GRADUATE": [
+      {
+        "yearStart": 1981,
+        "yearEnd": 1994,
+        "lockApps": "Door/ Trunk",
+        "codeRange": "4100-4309",
+        "keyBlanks": [
+          "F91C/F91C"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "875"
+      }
+    ]
+  }
+}

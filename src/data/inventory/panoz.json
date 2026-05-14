@@ -1,0 +1,74 @@
+{
+  "Panoz": {
+    "ESPERANTE": [
+      {
+        "yearStart": 2001,
+        "yearEnd": 2006,
+        "lockApps": "All",
+        "codeRange": "1X-1706X",
+        "keyBlanks": [
+          "H72-PT"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": "Texas Instruments (4C) Encrypted System",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key H86",
+        "notes": "Texas Instruments (4C) Encrypted System",
+        "cardNo": "612"
+      },
+      {
+        "yearStart": 2007,
+        "yearEnd": 2010,
+        "lockApps": "All",
+        "codeRange": "1X-1706X",
+        "keyBlanks": [
+          "H92-PT (LAL)"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": "Texas Instruments (4D63) Encrypted Code System",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key H86",
+        "notes": "Texas Instruments (4D63) Encrypted Code System",
+        "cardNo": "612"
+      },
+      {
+        "yearStart": 2007,
+        "yearEnd": 2007,
+        "lockApps": "EB3-D-H84",
+        "codeRange": "H84-GTK",
+        "keyBlanks": [
+          "H84-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 2001,
+        "yearEnd": 2001,
+        "lockApps": "EB3-B-H72",
+        "codeRange": "H72-GTK",
+        "keyBlanks": [
+          "H72-GTS"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": "GTI/GTI-Pro",
+        "substitutes": "RW5, SA+, RW4 Plus, RW4, EZ Clone Plus, EZ Clone, Plus Box",
+        "notes": null,
+        "cardNo": null
+      }
+    ]
+  }
+}

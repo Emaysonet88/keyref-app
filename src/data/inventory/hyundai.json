@@ -1,0 +1,2361 @@
+{
+  "Hyundai": {
+    "ACCENT": [
+      {
+        "yearStart": 2018,
+        "yearEnd": 2018,
+        "lockApps": "All H1-H2500 KK12-P",
+        "codeRange": null,
+        "keyBlanks": [],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "4362",
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 2012,
+        "yearEnd": 2017,
+        "lockApps": "All",
+        "codeRange": "T1001-T3500",
+        "keyBlanks": [
+          "HY18-P (LAL)"
+        ],
+        "keyType": "High Security",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "High Security Key",
+        "cardNo": "3336"
+      },
+      {
+        "yearStart": 2006,
+        "yearEnd": 2011,
+        "lockApps": "All",
+        "codeRange": "V1-V1200 (8 cut)",
+        "keyBlanks": [
+          "HY16-P"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "2454/ 2281"
+      },
+      {
+        "yearStart": 2000,
+        "yearEnd": 2005,
+        "lockApps": "All",
+        "codeRange": "T1-T1000",
+        "keyBlanks": [
+          "X236/HY14 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "487"
+      },
+      {
+        "yearStart": 1995,
+        "yearEnd": 1999,
+        "lockApps": "All",
+        "codeRange": "R0001-R1000",
+        "keyBlanks": [
+          "X235/HY13 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "487"
+      }
+    ],
+    "ACCENT (CANADA)": [
+      {
+        "yearStart": 2017,
+        "yearEnd": 2017,
+        "lockApps": "All",
+        "codeRange": "T1001-T3500",
+        "keyBlanks": [
+          "HY18-GTS/T80+"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus/EZ Clone Plus w/ M-Box",
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "3336"
+      },
+      {
+        "yearStart": 2012,
+        "yearEnd": 2016,
+        "lockApps": "All",
+        "codeRange": "T1001-T3500",
+        "keyBlanks": [
+          "OEM# 81996-1R010"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "cloningMethod": null,
+        "substitutes": "HY18-P",
+        "notes": "High Security Key",
+        "cardNo": "3336"
+      },
+      {
+        "yearStart": 1999,
+        "yearEnd": 2010,
+        "lockApps": "All",
+        "codeRange": "T1-T1000 or V1-V1200",
+        "keyBlanks": [
+          "HYN6MH#"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips (46) Encrypted System",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "substitutes": "-",
+        "notes": "Philips (46) Encrypted System",
+        "cardNo": "2281/ 487"
+      },
+      {
+        "yearStart": 2017,
+        "yearEnd": 2017,
+        "lockApps": "EB3-F-TOY48",
+        "codeRange": null,
+        "keyBlanks": [],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "TOY48-GTS",
+        "cloningMethod": null,
+        "substitutes": "T80 Plus/GTI-Pro",
+        "notes": "RW5, SA+, M-Box",
+        "cardNo": null
+      },
+      {
+        "yearStart": 1999,
+        "yearEnd": 1999,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "HYN6MH"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "HYN6-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "AZERA W/ PROX": [
+      {
+        "yearStart": 2015,
+        "yearEnd": 2016,
+        "lockApps": "All",
+        "codeRange": "K1-K2500",
+        "keyBlanks": [
+          "OEM# 95440-3V022"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Philips (46) Encrypted System",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "cloningMethod": null,
+        "substitutes": "Emergency Key HY22",
+        "notes": "Philips (46) Encrypted System",
+        "cardNo": "2372"
+      },
+      {
+        "yearStart": 2012,
+        "yearEnd": 2014,
+        "lockApps": "All",
+        "codeRange": "K1-K2500",
+        "keyBlanks": [
+          "OEM# 95440-3V021"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Philips (46) Encrypted System",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "cloningMethod": null,
+        "substitutes": "Emergency Key HY22",
+        "notes": "Philips (46) Encrypted System",
+        "cardNo": "2372"
+      }
+    ],
+    "AZERA (REPLACES THE ‘05 XG350)": [
+      {
+        "yearStart": 2006,
+        "yearEnd": 2011,
+        "lockApps": "All",
+        "codeRange": "G0001-G2500",
+        "keyBlanks": [
+          "HY20-PT"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Philips (46) Encrypted System",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "cloningMethod": null,
+        "substitutes": "LXP90-P",
+        "notes": "High Security Key, Philips (46) Encrypted System",
+        "cardNo": "2372"
+      },
+      {
+        "yearStart": 2006,
+        "yearEnd": 2006,
+        "lockApps": "EB3-F-TOY48",
+        "codeRange": null,
+        "keyBlanks": [
+          "TOY48-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "TOY48-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "ELANTRA": [
+      {
+        "yearStart": 2017,
+        "yearEnd": 2022,
+        "lockApps": "All",
+        "codeRange": "B0001-B3000",
+        "keyBlanks": [
+          "KK12-P"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "4129"
+      },
+      {
+        "yearStart": 2011,
+        "yearEnd": 2020,
+        "lockApps": "All",
+        "codeRange": "M0001-M2500",
+        "keyBlanks": [
+          "HY15-P"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "2503"
+      },
+      {
+        "yearStart": 2007,
+        "yearEnd": 2010,
+        "lockApps": "All",
+        "codeRange": "T1-T2500",
+        "keyBlanks": [
+          "HY17-P (LAL)"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "2503"
+      },
+      {
+        "yearStart": 2006,
+        "yearEnd": 2006,
+        "lockApps": "All",
+        "codeRange": "T1-T1000",
+        "keyBlanks": [
+          "HY17-P (LAL)"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "487"
+      },
+      {
+        "yearStart": 1996,
+        "yearEnd": 2005,
+        "lockApps": "All",
+        "codeRange": "T1-T1000",
+        "keyBlanks": [
+          "X236/HY14 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "487"
+      },
+      {
+        "yearStart": 1992,
+        "yearEnd": 1995,
+        "lockApps": "All",
+        "codeRange": "T1-T1000",
+        "keyBlanks": [
+          "X216/HY6 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "487"
+      }
+    ],
+    "ELANTRA (CANADA)": [
+      {
+        "yearStart": 2017,
+        "yearEnd": 2019,
+        "lockApps": "All",
+        "codeRange": "M0001-M2500",
+        "keyBlanks": [
+          "HYN14R-GTS/T80+"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus/EZ Clone Plus w/ M-Box",
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "2503"
+      },
+      {
+        "yearStart": 2007,
+        "yearEnd": 2016,
+        "lockApps": "All",
+        "codeRange": "T1-T2500",
+        "keyBlanks": [
+          "HYN14RT14"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips (46) Encrypted System",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "Philips (46) Encrypted System",
+        "cardNo": "2503"
+      },
+      {
+        "yearStart": 2000,
+        "yearEnd": 2006,
+        "lockApps": "All",
+        "codeRange": "T1-T1000",
+        "keyBlanks": [
+          "HYN6T14"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": "Philips (46) Encrypted System",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "Philips (46) Encrypted System",
+        "cardNo": "487"
+      },
+      {
+        "yearStart": 2017,
+        "yearEnd": 2017,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "HYN14R-GTS",
+        "cloningMethod": null,
+        "substitutes": "T80 Plus/GTI-Pro",
+        "notes": "RW5, SA+, M-Box",
+        "cardNo": null
+      },
+      {
+        "yearStart": 2007,
+        "yearEnd": 2007,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "HYN14RMH"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "HYN14R-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      },
+      {
+        "yearStart": 2000,
+        "yearEnd": 2000,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "HYN6MH"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "HYN6-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "ELANTRA TOURING": [
+      {
+        "yearStart": 2009,
+        "yearEnd": 2012,
+        "lockApps": "All",
+        "codeRange": "K1-K2500",
+        "keyBlanks": [
+          "KK10-P"
+        ],
+        "keyType": "High Security",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "High Security Key",
+        "cardNo": "2372"
+      }
+    ],
+    "ELANTRA TOURING (CANADA)": [
+      {
+        "yearStart": 2009,
+        "yearEnd": 2012,
+        "lockApps": "All",
+        "codeRange": "K1-K2500",
+        "keyBlanks": [
+          "HY20-PT"
+        ],
+        "keyType": "High Security",
+        "transponderChip": "Philips (46) Encrypted System",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "LXP90-P",
+        "notes": "High Security Key, Philips (46) Encrypted System",
+        "cardNo": "2372"
+      },
+      {
+        "yearStart": 2009,
+        "yearEnd": 2009,
+        "lockApps": "EB3-F-TOY48",
+        "codeRange": null,
+        "keyBlanks": [
+          "TOY48-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "TOY48-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "ELANTRA GT W/ PROX": [
+      {
+        "yearStart": 2018,
+        "yearEnd": 2020,
+        "lockApps": "All",
+        "codeRange": "B0001-B3000",
+        "keyBlanks": [
+          "OEM# 95440-D2000"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "4129"
+      }
+    ],
+    "ELANTRA GT": [
+      {
+        "yearStart": 2013,
+        "yearEnd": 2017,
+        "lockApps": "All",
+        "codeRange": "T1001-T3500",
+        "keyBlanks": [
+          "HY18-P (LAL)"
+        ],
+        "keyType": "High Security",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "High Security Key",
+        "cardNo": "3336"
+      }
+    ],
+    "ELANTRA GT(CANADA)": [
+      {
+        "yearStart": 2013,
+        "yearEnd": 2017,
+        "lockApps": "All",
+        "codeRange": "T1001-T3500",
+        "keyBlanks": [
+          "EB3-F-TOY48/GTHT80+ or TOY48-GTS/T80+"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus/EZ Clone Plus w/ M-Box",
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "3336"
+      },
+      {
+        "yearStart": 2013,
+        "yearEnd": 2013,
+        "lockApps": "EB3-F-TOY48",
+        "codeRange": null,
+        "keyBlanks": [],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "TOY48-GTS",
+        "cloningMethod": null,
+        "substitutes": "T80 Plus/GTI-Pro",
+        "notes": "RW5, SA+, M-Box",
+        "cardNo": null
+      }
+    ],
+    "ELANTRA W/ PROX": [
+      {
+        "yearStart": 2024,
+        "yearEnd": 2024,
+        "lockApps": "All",
+        "codeRange": "B0001-B3000",
+        "keyBlanks": [
+          "OEM# 95440-AA500"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "KK12-P",
+        "notes": null,
+        "cardNo": "4129"
+      },
+      {
+        "yearStart": 2021,
+        "yearEnd": 2023,
+        "lockApps": "All",
+        "codeRange": null,
+        "keyBlanks": [
+          "OEM# 95440-AA000"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "cloningMethod": null,
+        "substitutes": "KK12-P",
+        "notes": null,
+        "cardNo": null
+      },
+      {
+        "yearStart": 2019,
+        "yearEnd": 2020,
+        "lockApps": "All",
+        "codeRange": "M0001-M2500",
+        "keyBlanks": [
+          "OEM# 95440-F3002"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "Emergency Key HY15-P",
+        "notes": null,
+        "cardNo": "2503"
+      },
+      {
+        "yearStart": 2018,
+        "yearEnd": 2018,
+        "lockApps": "All",
+        "codeRange": "M0001-M2500",
+        "keyBlanks": [
+          "OEM# 95440-F3000"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "2503"
+      },
+      {
+        "yearStart": 2015,
+        "yearEnd": 2017,
+        "lockApps": "All",
+        "codeRange": "M0001-M2500",
+        "keyBlanks": [
+          "OEM# 95440-3X520"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Philips (46) Encrypted System",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "cloningMethod": null,
+        "substitutes": "Emergency Key HY15-P",
+        "notes": "Philips (46) Encrypted System",
+        "cardNo": "2503"
+      },
+      {
+        "yearStart": 2011,
+        "yearEnd": 2014,
+        "lockApps": "All",
+        "codeRange": "M0001-M2500",
+        "keyBlanks": [
+          "OEM# 95440-3X200 (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Philips (46) Encrypted System",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "cloningMethod": null,
+        "substitutes": "Emergency Key HY15-P",
+        "notes": "Philips (46) Encrypted System",
+        "cardNo": "2503"
+      }
+    ],
+    "ENTOURAGE": [
+      {
+        "yearStart": 2007,
+        "yearEnd": 2008,
+        "lockApps": "All",
+        "codeRange": "M0001-M2500",
+        "keyBlanks": [
+          "HY15-P"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "2503"
+      }
+    ],
+    "ENTOURAGE (CANADA)": [
+      {
+        "yearStart": 2007,
+        "yearEnd": 2009,
+        "lockApps": "All",
+        "codeRange": "M0001-M2500",
+        "keyBlanks": [
+          "HYN14RT14"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips (46) Encrypted System",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": "Philips (46) Encrypted System",
+        "cardNo": "2503"
+      },
+      {
+        "yearStart": 2007,
+        "yearEnd": 2007,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "HYN14RMH"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "HYN14R-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "EQUUS": [
+      {
+        "yearStart": 2014,
+        "yearEnd": 2016,
+        "lockApps": "All",
+        "codeRange": "I001-2608",
+        "keyBlanks": [
+          "OEM# 95440-3N470 or 95443- 3N100"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "cloningMethod": null,
+        "substitutes": "LXP90-P",
+        "notes": null,
+        "cardNo": "3742"
+      },
+      {
+        "yearStart": 2011,
+        "yearEnd": 2013,
+        "lockApps": "All",
+        "codeRange": "J1-2500",
+        "keyBlanks": [
+          "OEM # 81999-3M020 or 95440-3N250"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "cloningMethod": null,
+        "substitutes": "Emergency Key HY22",
+        "notes": "High Security Key, Philips Encrypted System",
+        "cardNo": "2372"
+      }
+    ],
+    "EXCEL": [
+      {
+        "yearStart": 1990,
+        "yearEnd": 1994,
+        "lockApps": "All",
+        "codeRange": "X1001-X2000",
+        "keyBlanks": [
+          "X196/HY5 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "221"
+      },
+      {
+        "yearStart": 1986,
+        "yearEnd": 1989,
+        "lockApps": "All",
+        "codeRange": "X1-X1000",
+        "keyBlanks": [
+          "X160/HY2 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "X196/HY5",
+        "notes": null,
+        "cardNo": "221"
+      }
+    ],
+    "GENESIS COUPE W/ PROX": [
+      {
+        "yearStart": 2010,
+        "yearEnd": 2015,
+        "lockApps": "All",
+        "codeRange": "M0001-M2500",
+        "keyBlanks": [
+          "OEM# 95440-2M300, 2M351 or 2M420"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Philips (46) Encrypted System",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP (10-13)",
+        "cloningMethod": null,
+        "substitutes": "Emergency Key HY21",
+        "notes": "Philips (46) Encrypted System",
+        "cardNo": "2503"
+      }
+    ],
+    "GENESIS COUPE W/O PROX": [
+      {
+        "yearStart": 2010,
+        "yearEnd": 2016,
+        "lockApps": "All",
+        "codeRange": "M0001-M2500",
+        "keyBlanks": [
+          "HYN14RT14"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips (46) Encrypted System",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "cloningMethod": null,
+        "substitutes": "HY15",
+        "notes": "Philips (46) Encrypted System",
+        "cardNo": "2503"
+      },
+      {
+        "yearStart": 2010,
+        "yearEnd": 2010,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "HYN14RMH"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "HYN14R-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "GENESIS W/ PROX (4 DR.)": [
+      {
+        "yearStart": 2015,
+        "yearEnd": 2015,
+        "lockApps": "All",
+        "codeRange": "I001-2608",
+        "keyBlanks": [
+          "OEM# 95440-B1200-BLH"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "LXP90-P",
+        "notes": null,
+        "cardNo": "3742"
+      },
+      {
+        "yearStart": 2009,
+        "yearEnd": 2014,
+        "lockApps": "All",
+        "codeRange": "J1-2500",
+        "keyBlanks": [
+          "OEM # 95440-3M220"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "cloningMethod": null,
+        "substitutes": "LXP90-P",
+        "notes": null,
+        "cardNo": "2372"
+      },
+      {
+        "yearStart": 2009,
+        "yearEnd": 2010,
+        "lockApps": "All",
+        "codeRange": "J1-2500",
+        "keyBlanks": [
+          "HY20-PT"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Philips (46) Encrypted System",
+        "programmingRequired": true,
+        "programmingMethod": "SDD/TKO",
+        "cloningMethod": null,
+        "substitutes": "LXP90-P",
+        "notes": "High Security Key, Philips (46) Encrypted System",
+        "cardNo": "2372"
+      }
+    ],
+    "GENESIS W/O PROX (4 DR.)": [
+      {
+        "yearStart": 2009,
+        "yearEnd": 2010,
+        "lockApps": "All",
+        "codeRange": "J1-2500",
+        "keyBlanks": [
+          "EK3P-HY20/EK3LB-TOY48*/ TOY48-GTK#"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Philips (46) Encrypted System",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "substitutes": "LXP90-P",
+        "notes": "High Security Key, Philips (46) Encrypted System",
+        "cardNo": "2372"
+      },
+      {
+        "yearStart": 2009,
+        "yearEnd": 2009,
+        "lockApps": "EB3-F-TOY48",
+        "codeRange": null,
+        "keyBlanks": [
+          "TOY48-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "TOY48-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "IONIQ": [
+      {
+        "yearStart": 2020,
+        "yearEnd": 2022,
+        "lockApps": "All",
+        "codeRange": "B0001-B3000",
+        "keyBlanks": [
+          "OEM# 95440-G2500"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro (thru 2021)",
+        "cloningMethod": null,
+        "substitutes": "KK12-P",
+        "notes": null,
+        "cardNo": "4129"
+      },
+      {
+        "yearStart": 2019,
+        "yearEnd": 2019,
+        "lockApps": "All",
+        "codeRange": "B0001-B3000",
+        "keyBlanks": [
+          "OEM# 95440-G2010"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "KK12-P",
+        "notes": null,
+        "cardNo": "4129"
+      },
+      {
+        "yearStart": 2017,
+        "yearEnd": 2019,
+        "lockApps": "All",
+        "codeRange": "B0001-B3000",
+        "keyBlanks": [
+          "OEM# 95440-G2000"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "4129"
+      }
+    ],
+    "IONIQ 5": [
+      {
+        "yearStart": 2022,
+        "yearEnd": 2023,
+        "lockApps": "All",
+        "codeRange": "B0001-B3000",
+        "keyBlanks": [
+          "OEM# 95440-GI050"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "cloningMethod": null,
+        "substitutes": "KK12-P",
+        "notes": null,
+        "cardNo": "4129"
+      }
+    ],
+    "KONA W/ REGULAR KEY": [
+      {
+        "yearStart": 2018,
+        "yearEnd": 2023,
+        "lockApps": "All",
+        "codeRange": "B0001-B3000",
+        "keyBlanks": [
+          "KK12-P"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "4129"
+      }
+    ],
+    "KONA W/ PROX": [
+      {
+        "yearStart": 2024,
+        "yearEnd": 2025,
+        "lockApps": "All",
+        "codeRange": "X0001-X3000",
+        "keyBlanks": [
+          "OEM# 95440-BE060 or 95440- BE200"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "KK12-P",
+        "notes": null,
+        "cardNo": "4129"
+      },
+      {
+        "yearStart": 2022,
+        "yearEnd": 2023,
+        "lockApps": "All",
+        "codeRange": "B0001-B3000",
+        "keyBlanks": [
+          "OEM# 95440-J9450"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "KK12-P",
+        "notes": null,
+        "cardNo": "4129"
+      },
+      {
+        "yearStart": 2018,
+        "yearEnd": 2021,
+        "lockApps": "All",
+        "codeRange": "H1-H2500",
+        "keyBlanks": [
+          "OEM# 95440-J9000"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Texas Instruments 128 bit AES",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "Texas Instruments 128 bit AES",
+        "cardNo": "4362"
+      }
+    ],
+    "NEXO (CANADA)": [
+      {
+        "yearStart": 2019,
+        "yearEnd": 2023,
+        "lockApps": "All",
+        "codeRange": "I001-2608",
+        "keyBlanks": [
+          "OEM# 95440-M5300 or 95440-M5310"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP.MVPP",
+        "cloningMethod": null,
+        "substitutes": "LXP90-P",
+        "notes": null,
+        "cardNo": "3742"
+      }
+    ],
+    "PALISADE W/ PROX": [
+      {
+        "yearStart": 2023,
+        "yearEnd": 2025,
+        "lockApps": "All",
+        "codeRange": "S1-S2500",
+        "keyBlanks": [
+          "OEM# 95440-S8550 or 95440- S8600"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "cloningMethod": null,
+        "substitutes": "KK12-P",
+        "notes": null,
+        "cardNo": "4732"
+      },
+      {
+        "yearStart": 2020,
+        "yearEnd": 2022,
+        "lockApps": "All",
+        "codeRange": "S1-S2500",
+        "keyBlanks": [
+          "OEM# 95440-S8010 or 95440- 8310"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP.MVPP",
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "4732"
+      }
+    ],
+    "PALISADE W/ REGULAR IGNITION": [
+      {
+        "yearStart": 2020,
+        "yearEnd": 2021,
+        "lockApps": "All",
+        "codeRange": "S1-S2500",
+        "keyBlanks": [
+          "KK12-P"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "4732"
+      }
+    ],
+    "PONY": [
+      {
+        "yearStart": 1985,
+        "yearEnd": 1987,
+        "lockApps": "All",
+        "codeRange": "H0001-H5143",
+        "keyBlanks": [
+          "X121/DC3 [-P, -PC]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "89"
+      }
+    ],
+    "SANTA CRUZ": [
+      {
+        "yearStart": 2023,
+        "yearEnd": 2025,
+        "lockApps": "All",
+        "codeRange": "K1-K2500",
+        "keyBlanks": [
+          "OEM# 95440-K5002 or 95440- K5012"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-KK10-P",
+        "notes": null,
+        "cardNo": "2372"
+      }
+    ],
+    "SANTE FE": [
+      {
+        "yearStart": 2020,
+        "yearEnd": 2021,
+        "lockApps": "All",
+        "codeRange": "S1-S2500",
+        "keyBlanks": [
+          "KK12-P"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "4732"
+      },
+      {
+        "yearStart": 2013,
+        "yearEnd": 2018,
+        "lockApps": "All",
+        "codeRange": "C1001-C3500",
+        "keyBlanks": [
+          "HY18R-P"
+        ],
+        "keyType": "High Security",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "High Security Key",
+        "cardNo": "3618"
+      },
+      {
+        "yearStart": 2007,
+        "yearEnd": 2012,
+        "lockApps": "All",
+        "codeRange": "M0001-M2500",
+        "keyBlanks": [
+          "HY15-P (LAL)"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": "Cut Depths: 5 = deepest, 1 = shallowest",
+        "cardNo": "2503"
+      },
+      {
+        "yearStart": 2001,
+        "yearEnd": 2006,
+        "lockApps": "All",
+        "codeRange": "S1-S1000",
+        "keyBlanks": [
+          "X232/HY12 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "487"
+      }
+    ],
+    "SANTE FE (CANADA)": [
+      {
+        "yearStart": 2007,
+        "yearEnd": 2010,
+        "lockApps": "All",
+        "codeRange": "M0001-M2500",
+        "keyBlanks": [
+          "HYN14RT14"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips (46) Encrypted System",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "cloningMethod": null,
+        "substitutes": "HY15",
+        "notes": "Philips (46) Encrypted System",
+        "cardNo": "2503"
+      },
+      {
+        "yearStart": 2002,
+        "yearEnd": 2006,
+        "lockApps": "All",
+        "codeRange": "A1-A1000",
+        "keyBlanks": [
+          "HYN6MH#"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips (46) Encrypted System",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "substitutes": "-",
+        "notes": "Philips (46) Encrypted System",
+        "cardNo": "487"
+      },
+      {
+        "yearStart": 2007,
+        "yearEnd": 2007,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "HYN14RMH"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "HYN14R-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      },
+      {
+        "yearStart": 2002,
+        "yearEnd": 2002,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "HYN6MH"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "HYN6-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "SANTA FE W/ PROX": [
+      {
+        "yearStart": 2023,
+        "yearEnd": 2023,
+        "lockApps": "All",
+        "codeRange": "S3001-S5409",
+        "keyBlanks": [
+          "OEM# 95440-S1660 or 95440- S1670"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "cloningMethod": null,
+        "substitutes": "KK12-P",
+        "notes": null,
+        "cardNo": "5096"
+      },
+      {
+        "yearStart": 2021,
+        "yearEnd": 2022,
+        "lockApps": "All",
+        "codeRange": "S3001-S5409",
+        "keyBlanks": [
+          "OEM# 95440-S2500 or 95440- S1570"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro (thru 2021)",
+        "cloningMethod": null,
+        "substitutes": "KK12-P",
+        "notes": null,
+        "cardNo": "5096"
+      },
+      {
+        "yearStart": 2019,
+        "yearEnd": 2020,
+        "lockApps": "All",
+        "codeRange": "B0001-B3000",
+        "keyBlanks": [
+          "OEM# 95440-S2000"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "cloningMethod": null,
+        "substitutes": "KK12-P",
+        "notes": null,
+        "cardNo": "4192"
+      },
+      {
+        "yearStart": 2013,
+        "yearEnd": 2018,
+        "lockApps": "All",
+        "codeRange": "C1001-C3500",
+        "keyBlanks": [
+          "OEM# 95440-4Z200 (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "cloningMethod": null,
+        "substitutes": "HY18R-P",
+        "notes": null,
+        "cardNo": "3618"
+      }
+    ],
+    "SANTA FE SPORT": [
+      {
+        "yearStart": 2013,
+        "yearEnd": 2019,
+        "lockApps": "All",
+        "codeRange": "C1001-C3500",
+        "keyBlanks": [
+          "HY18R-P"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "3618"
+      }
+    ],
+    "SANTA FE SPORT W/ PROX": [
+      {
+        "yearStart": 2013,
+        "yearEnd": 2018,
+        "lockApps": "All",
+        "codeRange": "C1001-C3500",
+        "keyBlanks": [
+          "OEM# 95440-4Z200"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "HY18R-P",
+        "notes": null,
+        "cardNo": "3618"
+      }
+    ],
+    "SANTA FE SPORT(CANADA)": [
+      {
+        "yearStart": 2013,
+        "yearEnd": 2019,
+        "lockApps": "All",
+        "codeRange": "C1001-C3500",
+        "keyBlanks": [
+          "HY18R-GTS/T80+"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus/EZ Clone Plus w/ M-Box",
+        "substitutes": "HY18R-P",
+        "notes": null,
+        "cardNo": "3618"
+      },
+      {
+        "yearStart": 2013,
+        "yearEnd": 2013,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "HY18R-GTS",
+        "cloningMethod": null,
+        "substitutes": "T80 Plus/GTI-Pro",
+        "notes": "RW5, SA+, M-Box",
+        "cardNo": null
+      }
+    ],
+    "SCOUPE": [
+      {
+        "yearStart": 1991,
+        "yearEnd": 1994,
+        "lockApps": "All",
+        "codeRange": "X1001-X2000",
+        "keyBlanks": [
+          "X196/HY5 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "221"
+      }
+    ],
+    "SONATA": [
+      {
+        "yearStart": 2006,
+        "yearEnd": 2010,
+        "lockApps": "All",
+        "codeRange": "F0001-F2500",
+        "keyBlanks": [
+          "HY15-P (LAL)"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "2330"
+      },
+      {
+        "yearStart": 1995,
+        "yearEnd": 2006,
+        "lockApps": "All",
+        "codeRange": "S1-S1000",
+        "keyBlanks": [
+          "X232/HY12 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "487"
+      },
+      {
+        "yearStart": 1989,
+        "yearEnd": 1994,
+        "lockApps": "All",
+        "codeRange": "Y1001-Y2000",
+        "keyBlanks": [
+          "X187/HY4 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "221"
+      }
+    ],
+    "SONATA (CANADA)": [
+      {
+        "yearStart": 2011,
+        "yearEnd": 2018,
+        "lockApps": "All",
+        "codeRange": "K1-K2500",
+        "keyBlanks": [
+          "HY20-PT"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Philips (46) Encrypted System",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "cloningMethod": null,
+        "substitutes": "LXP90-P",
+        "notes": "High Security Key, Philips (46) Encrypted System",
+        "cardNo": "2372"
+      },
+      {
+        "yearStart": 2011,
+        "yearEnd": 2011,
+        "lockApps": "EB3-F-TOY48",
+        "codeRange": null,
+        "keyBlanks": [
+          "TOY48-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "TOY48-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "SONATA W/ PROX": [
+      {
+        "yearStart": 2019,
+        "yearEnd": 2023,
+        "lockApps": "All",
+        "codeRange": "K1-K2500",
+        "keyBlanks": [
+          "OEM# 95440-L1010/95440- L1060/95440-L1500"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "cloningMethod": null,
+        "substitutes": "Emergency Key KK10-P",
+        "notes": null,
+        "cardNo": "2372"
+      },
+      {
+        "yearStart": 2018,
+        "yearEnd": 2019,
+        "lockApps": "All",
+        "codeRange": "K1-K2500",
+        "keyBlanks": [
+          "OEM# 95440-C2500"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "cloningMethod": null,
+        "substitutes": "Emergency Key KK10-P",
+        "notes": null,
+        "cardNo": "2372"
+      },
+      {
+        "yearStart": 2015,
+        "yearEnd": 2017,
+        "lockApps": "All",
+        "codeRange": "K1-K2500",
+        "keyBlanks": [
+          "OEM# 95440-C1000"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "cloningMethod": null,
+        "substitutes": "Emergency Key KK10-P",
+        "notes": "High Security Key",
+        "cardNo": "2372"
+      },
+      {
+        "yearStart": 2011,
+        "yearEnd": 2014,
+        "lockApps": "All",
+        "codeRange": "K1-K2500",
+        "keyBlanks": [
+          "OEM# 95440-3Q000 (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "cloningMethod": null,
+        "substitutes": "Emergency Key KK10-P",
+        "notes": "High Security Key",
+        "cardNo": "2372"
+      }
+    ],
+    "SONATA W/ REGULAR KEY": [
+      {
+        "yearStart": 2020,
+        "yearEnd": 2022,
+        "lockApps": "All",
+        "codeRange": "D1-D3000",
+        "keyBlanks": [
+          "KK12-P"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "4129"
+      },
+      {
+        "yearStart": 2011,
+        "yearEnd": 2019,
+        "lockApps": "All",
+        "codeRange": "K1-K2500",
+        "keyBlanks": [
+          "KK10-P (LAL)"
+        ],
+        "keyType": "High Security",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "High Security Key",
+        "cardNo": "2372"
+      }
+    ],
+    "SONATA HYBRID W/ PROX": [
+      {
+        "yearStart": 2016,
+        "yearEnd": 2018,
+        "lockApps": "All",
+        "codeRange": "K1-K2500",
+        "keyBlanks": [
+          "OEM# 95440-C1001"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "2372"
+      },
+      {
+        "yearStart": 2011,
+        "yearEnd": 2015,
+        "lockApps": "All",
+        "codeRange": "K1-K2500",
+        "keyBlanks": [
+          "OEM# 95440-3Q000"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "cloningMethod": null,
+        "substitutes": "Emergency Key KK10-P",
+        "notes": "High Security Key",
+        "cardNo": "2372"
+      }
+    ],
+    "TIBURON": [
+      {
+        "yearStart": 2002,
+        "yearEnd": 2009,
+        "lockApps": "All",
+        "codeRange": "T1-T1000",
+        "keyBlanks": [
+          "X236/HY14 [-P]"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "HY022-PT (2002-05 Canada only)",
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "487"
+      },
+      {
+        "yearStart": 1996,
+        "yearEnd": 2001,
+        "lockApps": "All",
+        "codeRange": "T1-T1000",
+        "keyBlanks": [
+          "X236/HY14 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "487"
+      }
+    ],
+    "TIBURON (CANADA)": [
+      {
+        "yearStart": 2001,
+        "yearEnd": 2010,
+        "lockApps": "All",
+        "codeRange": "T1-T1000",
+        "keyBlanks": [
+          "HYN6MH#"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips (46) Encrypted System",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "substitutes": "-",
+        "notes": "Philips (46) Encrypted System",
+        "cardNo": "487"
+      },
+      {
+        "yearStart": 2001,
+        "yearEnd": 2001,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "HYN6MH"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "HYN6-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "TUCSON": [
+      {
+        "yearStart": 2021,
+        "yearEnd": 2022,
+        "lockApps": "All",
+        "codeRange": "D1-D3000",
+        "keyBlanks": [
+          "KK12-P"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "4129"
+      },
+      {
+        "yearStart": 2012,
+        "yearEnd": 2020,
+        "lockApps": "All",
+        "codeRange": "K1-K2500",
+        "keyBlanks": [
+          "KK10-P (LAL)"
+        ],
+        "keyType": "High Security",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "High Security Key",
+        "cardNo": "2372"
+      },
+      {
+        "yearStart": 2011,
+        "yearEnd": 2011,
+        "lockApps": "All",
+        "codeRange": "M0001-M2500",
+        "keyBlanks": [
+          "HY15-P (LAL)"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": "Cut Depths: 5 = deepest, 1 = shallowest",
+        "cardNo": "2503"
+      },
+      {
+        "yearStart": 2005,
+        "yearEnd": 2010,
+        "lockApps": "All",
+        "codeRange": "V1-V1200",
+        "keyBlanks": [
+          "X236/HY14 [-P] (LAL)"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "2281/487"
+      }
+    ],
+    "TUCSON W/ PROX": [
+      {
+        "yearStart": 2023,
+        "yearEnd": 2024,
+        "lockApps": "All",
+        "codeRange": "H1-H2500",
+        "keyBlanks": [
+          "OEM# 95440-N9072 or 95440- N9082"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "cloningMethod": null,
+        "substitutes": "KK10-P",
+        "notes": null,
+        "cardNo": "2372"
+      },
+      {
+        "yearStart": 2022,
+        "yearEnd": 2022,
+        "lockApps": "All",
+        "codeRange": "K1-K2500",
+        "keyBlanks": [
+          "OEM# 95440-N9050 OEM# 95440-N9070 OEM# 95440-N9080"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "cloningMethod": null,
+        "substitutes": "KK10-P",
+        "notes": null,
+        "cardNo": "2372"
+      },
+      {
+        "yearStart": 2019,
+        "yearEnd": 2021,
+        "lockApps": "All",
+        "codeRange": "K1-K2500",
+        "keyBlanks": [
+          "OEM# 95440-D3510"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "cloningMethod": null,
+        "substitutes": "KK10-P",
+        "notes": null,
+        "cardNo": "2372"
+      },
+      {
+        "yearStart": 2016,
+        "yearEnd": 2018,
+        "lockApps": "All",
+        "codeRange": "K1-K2500",
+        "keyBlanks": [
+          "OEM# 95440-D3100"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro",
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "2372"
+      }
+    ],
+    "TUCSON (CANADA)": [
+      {
+        "yearStart": 2016,
+        "yearEnd": 2019,
+        "lockApps": "All",
+        "codeRange": "K1-K2500",
+        "keyBlanks": [
+          "EB3-G-TOY40/GTHT80+ or TOY40-GTS/T80+"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus/EZ Clone Plus w/ M-Box",
+        "substitutes": "LXP90-P",
+        "notes": null,
+        "cardNo": "2372"
+      },
+      {
+        "yearStart": 2013,
+        "yearEnd": 2015,
+        "lockApps": "All",
+        "codeRange": "K1-K2500",
+        "keyBlanks": [
+          "HY20-PT"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": "Philips (46) Encrypted System",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "cloningMethod": null,
+        "substitutes": "LXP90-P",
+        "notes": "High Security Key, Philips (46) Encrypted System",
+        "cardNo": "2372"
+      },
+      {
+        "yearStart": 2010,
+        "yearEnd": 2012,
+        "lockApps": "All",
+        "codeRange": "M0001-M2500",
+        "keyBlanks": [
+          "HYN14RT14"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips (46) Encrypted System",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP/TKO/SDD",
+        "cloningMethod": null,
+        "substitutes": "HY15",
+        "notes": "Philips (46) Encrypted System",
+        "cardNo": "2503"
+      },
+      {
+        "yearStart": 2005,
+        "yearEnd": 2009,
+        "lockApps": "All",
+        "codeRange": "V1-V1200",
+        "keyBlanks": [
+          "HYN6MH#"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": "Philips (46) Encrypted System",
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "substitutes": "-",
+        "notes": "Philips (46) Encrypted System",
+        "cardNo": "2281/487"
+      },
+      {
+        "yearStart": 2016,
+        "yearEnd": 2016,
+        "lockApps": "EB3-G-TOY40",
+        "codeRange": null,
+        "keyBlanks": [],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "TOY40-GTS",
+        "cloningMethod": null,
+        "substitutes": "T80 Plus/GTI-Pro",
+        "notes": "RW5, SA+, M-Box",
+        "cardNo": null
+      },
+      {
+        "yearStart": 2013,
+        "yearEnd": 2013,
+        "lockApps": "EB3-F-TOY48",
+        "codeRange": null,
+        "keyBlanks": [
+          "TOY48-GTK"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "TOY48-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      },
+      {
+        "yearStart": 2010,
+        "yearEnd": 2010,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "HYN14RMH"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "HYN14R-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      },
+      {
+        "yearStart": 2005,
+        "yearEnd": 2005,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "HYN6MH"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "HYN6-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "VELOSTER W/ PROX": [
+      {
+        "yearStart": 2019,
+        "yearEnd": 2022,
+        "lockApps": "All",
+        "codeRange": "B0001-B3000",
+        "keyBlanks": [
+          "OEM# 95440-K9000"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro (thru 2020)",
+        "cloningMethod": null,
+        "substitutes": "KK12-P",
+        "notes": null,
+        "cardNo": "4129"
+      },
+      {
+        "yearStart": 2018,
+        "yearEnd": 2021,
+        "lockApps": "All",
+        "codeRange": "B0001-B3000",
+        "keyBlanks": [
+          "OEM# 95440-J3000"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro (thru 2020)",
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "4129"
+      },
+      {
+        "yearStart": 2013,
+        "yearEnd": 2017,
+        "lockApps": "All",
+        "codeRange": "T1001-T3500",
+        "keyBlanks": [
+          "OEM# 95440-2V100 (LAL)"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "cloningMethod": null,
+        "substitutes": "Emergency Key HY18-P",
+        "notes": null,
+        "cardNo": "3336"
+      }
+    ],
+    "VELOSTER": [
+      {
+        "yearStart": 2018,
+        "yearEnd": 2020,
+        "lockApps": "All",
+        "codeRange": "B0001-B3000",
+        "keyBlanks": [
+          "KK12-P"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "4129"
+      },
+      {
+        "yearStart": 2012,
+        "yearEnd": 2017,
+        "lockApps": "All",
+        "codeRange": "T1001-T3500",
+        "keyBlanks": [
+          "HY18-P (LAL)"
+        ],
+        "keyType": "High Security",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "High Security Key",
+        "cardNo": "3336"
+      }
+    ],
+    "VELOSTER(CANADA)": [
+      {
+        "yearStart": 2015,
+        "yearEnd": 2016,
+        "lockApps": "All",
+        "codeRange": "T1001-T3500",
+        "keyBlanks": [
+          "HY18-GTS/T80+"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": "RW5, SA+, RW4 Plus/EZ Clone Plus w/ M-Box",
+        "substitutes": "HY18-P",
+        "notes": null,
+        "cardNo": "3336"
+      }
+    ],
+    "VENUE W/ PROX": [
+      {
+        "yearStart": 2023,
+        "yearEnd": 2023,
+        "lockApps": "All",
+        "codeRange": "H1-H2500",
+        "keyBlanks": [
+          "OEM# 95440-K2410"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "cloningMethod": null,
+        "substitutes": "KK12-P",
+        "notes": null,
+        "cardNo": "4362"
+      },
+      {
+        "yearStart": 2020,
+        "yearEnd": 2022,
+        "lockApps": "All",
+        "codeRange": "H1-H2500",
+        "keyBlanks": [
+          "OEM# 95440-J9000 OEM# 95440-K2400 OEM# 95440-K2500"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": "Texas Instruments 128 bit AES",
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "cloningMethod": null,
+        "substitutes": "Emergency Key KK12-P",
+        "notes": "Texas Instruments 128 bit AES",
+        "cardNo": "4362"
+      }
+    ],
+    "VERACRUZ W/ PROX SYSTEM": [
+      {
+        "yearStart": 2008,
+        "yearEnd": 2012,
+        "lockApps": "All",
+        "codeRange": "M0001-M2500",
+        "keyBlanks": [
+          "OEM# 95440-3J600"
+        ],
+        "keyType": "Smart Key / Proximity",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "cloningMethod": null,
+        "substitutes": "Emergency Key HY15",
+        "notes": "Philips Encrypted System",
+        "cardNo": "2503"
+      }
+    ],
+    "VERACRUZ W/ REGULAR IGNITION": [
+      {
+        "yearStart": 2007,
+        "yearEnd": 2012,
+        "lockApps": "All",
+        "codeRange": "M0001-M2500",
+        "keyBlanks": [
+          "HY15-P"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": "Cut Depths: 5 = deepest, 1 = shallowest",
+        "cardNo": "2503"
+      }
+    ],
+    "VERACRUZ (CANADA)": [
+      {
+        "yearStart": 2007,
+        "yearEnd": 2010,
+        "lockApps": "All",
+        "codeRange": "M0001-M2500",
+        "keyBlanks": [
+          "HYN6MH#"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "substitutes": "-",
+        "notes": "Philips Crypto (46)Transponder key",
+        "cardNo": "2503"
+      },
+      {
+        "yearStart": 2007,
+        "yearEnd": 2007,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "HYN6MH"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "HYN6-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "XG300": [
+      {
+        "yearStart": 2001,
+        "yearEnd": 2003,
+        "lockApps": "All",
+        "codeRange": "S1-S1000",
+        "keyBlanks": [
+          "X232/HY12 [-P]"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "HY021-PT (2002-03 Canada only)",
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "487"
+      },
+      {
+        "yearStart": 2002,
+        "yearEnd": 2005,
+        "lockApps": "All",
+        "codeRange": "S1-S1000",
+        "keyBlanks": [
+          "X232/HY12 [-P]"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "HY021-PT (2002-05 Canada only)",
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "487"
+      }
+    ],
+    "VEOLSTER (CANADA)": [
+      {
+        "yearStart": 2015,
+        "yearEnd": 2015,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "HY18-GTS",
+        "cloningMethod": null,
+        "substitutes": "T80 Plus/GTI-Pro",
+        "notes": "RW5, SA+, M-Box",
+        "cardNo": null
+      }
+    ]
+  }
+}

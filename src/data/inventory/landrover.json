@@ -1,0 +1,343 @@
+{
+  "Land Rover": {
+    "DISCOVERY": [
+      {
+        "yearStart": 1994,
+        "yearEnd": 2004,
+        "lockApps": "All",
+        "codeRange": "7001-9000",
+        "keyBlanks": [
+          "X239/RV4 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "68"
+      }
+    ],
+    "EVOQUE": [
+      {
+        "yearStart": 2012,
+        "yearEnd": 2014,
+        "lockApps": "All",
+        "codeRange": "4001-9000",
+        "keyBlanks": [
+          "Dealer Key"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "cloningMethod": null,
+        "substitutes": "Service Key HU101",
+        "notes": "Ordered by VIN",
+        "cardNo": "2264"
+      }
+    ],
+    "FREELANDER": [
+      {
+        "yearStart": 2002,
+        "yearEnd": 2006,
+        "lockApps": "All",
+        "codeRange": "NSP7001-9000",
+        "keyBlanks": [
+          "Dealer Key"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key X239/RV4",
+        "notes": "Ordered by VIN",
+        "cardNo": "68"
+      },
+      {
+        "yearStart": 2002,
+        "yearEnd": 2005,
+        "lockApps": "All",
+        "codeRange": "NSP7001-9000",
+        "keyBlanks": [
+          "NE75EHP"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "substitutes": "Service Key X239/RV4",
+        "notes": "Philips Crypto Transponder",
+        "cardNo": "68"
+      }
+    ],
+    "LR2": [
+      {
+        "yearStart": 2005,
+        "yearEnd": 2009,
+        "lockApps": "All",
+        "codeRange": "0001-6000",
+        "keyBlanks": [
+          "Dealer Key"
+        ],
+        "keyType": "High Security",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "Philips Crypto Transponder, High Security Key, Ordered by VIN",
+        "cardNo": "223"
+      }
+    ],
+    "LR3": [
+      {
+        "yearStart": 2005,
+        "yearEnd": 2009,
+        "lockApps": "All",
+        "codeRange": "0001-6000",
+        "keyBlanks": [
+          "Dealer Key"
+        ],
+        "keyType": "High Security",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": "Philips Crypto Transponder, High Security Key, Ordered by VIN",
+        "cardNo": "223"
+      },
+      {
+        "yearStart": 2005,
+        "yearEnd": 2005,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "HU101MH"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "HU101-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "LR4": [
+      {
+        "yearStart": 2010,
+        "yearEnd": 2014,
+        "lockApps": "All",
+        "codeRange": "4001-9000",
+        "keyBlanks": [
+          "Dealer Key"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "Smart Pro/TCP/MVPP",
+        "cloningMethod": null,
+        "substitutes": "Service Key HU101",
+        "notes": "Ordered by VIN",
+        "cardNo": "2264"
+      }
+    ],
+    "RANGE ROVER": [
+      {
+        "yearStart": 2003,
+        "yearEnd": 2009,
+        "lockApps": "All",
+        "codeRange": "0001-6000 or 4001-9000",
+        "keyBlanks": [
+          "Dealer Key"
+        ],
+        "keyType": "High Security",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": "Philips Crypto Transponder, High Security Key, Ordered by VIN",
+        "cardNo": "223/835"
+      },
+      {
+        "yearStart": 2007,
+        "yearEnd": 2009,
+        "lockApps": "All",
+        "codeRange": "4001-9000",
+        "keyBlanks": [
+          "HU101MH#"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "substitutes": "Service Key HU101",
+        "notes": "Philips Crypto Transponder, High Security Key",
+        "cardNo": "2264"
+      },
+      {
+        "yearStart": 2003,
+        "yearEnd": 2006,
+        "lockApps": "All",
+        "codeRange": "0001-6000",
+        "keyBlanks": [
+          "HU92RMH#"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "substitutes": "Service Key HU92RP",
+        "notes": "Philips Crypto Transponder, High Security Key",
+        "cardNo": "223"
+      },
+      {
+        "yearStart": 1996,
+        "yearEnd": 2002,
+        "lockApps": "All",
+        "codeRange": "1000-2500",
+        "keyBlanks": [
+          "HU109FP"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HU74T",
+        "notes": null,
+        "cardNo": "N/A"
+      },
+      {
+        "yearStart": 1995,
+        "yearEnd": 1995,
+        "lockApps": "All",
+        "codeRange": "NSP7001-9000",
+        "keyBlanks": [
+          "X239/RV4 [-P]"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": null,
+        "notes": null,
+        "cardNo": "68"
+      },
+      {
+        "yearStart": 1989,
+        "yearEnd": 1994,
+        "lockApps": "All",
+        "codeRange": "E8000-E8999",
+        "keyBlanks": [
+          "X170/NE48"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "-",
+        "notes": null,
+        "cardNo": "68"
+      },
+      {
+        "yearStart": 2007,
+        "yearEnd": 2007,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "HU101MH"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "HU101-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      },
+      {
+        "yearStart": 2003,
+        "yearEnd": 2003,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "HU92RMH"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "HU92R-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      }
+    ],
+    "RANGE ROVER SPORT": [
+      {
+        "yearStart": 2010,
+        "yearEnd": 2014,
+        "lockApps": "All",
+        "codeRange": "4001-9000",
+        "keyBlanks": [
+          "Dealer Key"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "Service Key HU101",
+        "notes": "Ordered by VIN",
+        "cardNo": "2264"
+      },
+      {
+        "yearStart": 2006,
+        "yearEnd": 2009,
+        "lockApps": "All",
+        "codeRange": "4001-9000",
+        "keyBlanks": [
+          "HU101MH#"
+        ],
+        "keyType": "High Security Transponder",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "substitutes": "Service Key HU101",
+        "notes": "Philips Crypto Transponder, High Security Key",
+        "cardNo": "2264"
+      },
+      {
+        "yearStart": 2006,
+        "yearEnd": 2006,
+        "lockApps": null,
+        "codeRange": null,
+        "keyBlanks": [
+          "HU101MH"
+        ],
+        "keyType": "Transponder",
+        "transponderChip": null,
+        "programmingRequired": true,
+        "programmingMethod": "HU101-GTS",
+        "cloningMethod": null,
+        "substitutes": "GTI/GTI-Pro",
+        "notes": "RW5, SA+, RW5, SA+, RW4 Plus, EZ Clone Plus, Plus Box",
+        "cardNo": null
+      }
+    ]
+  }
+}

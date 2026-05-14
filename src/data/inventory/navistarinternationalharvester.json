@@ -1,0 +1,40 @@
+{
+  "Navistar International Harvester": {
+    "ALL": [
+      {
+        "yearStart": 1981,
+        "yearEnd": 2004,
+        "lockApps": "Door",
+        "codeRange": "L1-L1000",
+        "keyBlanks": [
+          "S1970AM/RA3"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "1970AM/RA4",
+        "notes": null,
+        "cardNo": "144"
+      },
+      {
+        "yearStart": 1973,
+        "yearEnd": 1980,
+        "lockApps": "Ignition",
+        "codeRange": "D225-D814",
+        "keyBlanks": [
+          "1970AM/RA4"
+        ],
+        "keyType": "Mechanical",
+        "transponderChip": null,
+        "programmingRequired": false,
+        "programmingMethod": null,
+        "cloningMethod": null,
+        "substitutes": "S1970AM/RA3",
+        "notes": null,
+        "cardNo": "144"
+      }
+    ]
+  }
+}
