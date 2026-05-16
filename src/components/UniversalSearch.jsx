@@ -1,10 +1,13 @@
 import { useState, useEffect, useRef, useMemo } from 'react';
 import { search as runSearch } from '../search-utils';
 import { useDebouncedValue } from '../hooks/useDebouncedValue';
+import { SkeletonList } from './SkeletonLoader';
 
 // ── UniversalSearch ──────────────────────────────────────────────────────────
 // Free-text search across models, chips, OBP letters, and code ranges. Query
 // is debounced (150 ms) so we don't re-scan ~5k records on every keystroke.
+// While the initial index is building, we render a skeleton list so the panel
+// has visible structure instead of a blank spinner-of-text.
 export default function UniversalSearch({
   allDataIndex, allDataLoading, searchHistory, onPushHistory, onResultClick, styles,
 }) {
@@ -51,7 +54,7 @@ export default function UniversalSearch({
         value={query}
         onChange={e => setQuery(e.target.value)}
         placeholder={allDataLoading
-          ? 'Loading database…'
+          ? 'Building search index…'
           : 'Search models, chips (Megamos), OBP letters, code ranges…'}
         style={styles.searchInput}
         disabled={allDataLoading || !allDataIndex}
@@ -60,12 +63,12 @@ export default function UniversalSearch({
       />
 
       {allDataLoading && (
-        <div style={{ fontFamily: 'monospace', fontSize: 11, color: 'var(--mute)', marginBottom: 10 }}>
-          Building search index… one-time, ~2s
+        <div style={{ marginBottom: 12 }}>
+          <SkeletonList count={6} />
         </div>
       )}
 
-      {searchHistory.length > 0 && !query && (
+      {searchHistory.length > 0 && !query && !allDataLoading && (
         <div style={{ marginBottom: 14 }}>
           <div style={{
             fontFamily: 'monospace', fontSize: 9, color: 'var(--mute)',
@@ -83,7 +86,7 @@ export default function UniversalSearch({
         </div>
       )}
 
-      {debouncedQuery && (
+      {debouncedQuery && !allDataLoading && (
         <div style={{ fontFamily: 'monospace', fontSize: 10, color: 'var(--mute)', marginBottom: 8 }}>
           {results.length === 0
             ? `No matches for "${debouncedQuery}"`
@@ -95,7 +98,10 @@ export default function UniversalSearch({
         {results.map((r, i) => (
           <div
             key={`${r.type}-${r.make}-${r.model}-${r.yearStart}-${i}`}
-            style={styles.savedItem}
+            style={{
+              ...styles.savedItem,
+              animation: `rowReveal 280ms ease ${Math.min(i, 8) * 25}ms both`,
+            }}
             onClick={() => handlePick(r)}
           >
             <div style={{ flex: 1, minWidth: 100 }}>

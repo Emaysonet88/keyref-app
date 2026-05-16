@@ -11,8 +11,10 @@ const STEP_LABELS = {
 // ── ObpProcedure ─────────────────────────────────────────────────────────────
 // Renders the bank of "View OBP X Steps" buttons for a result, plus the
 // expanded step list for whichever letter is currently active. The OBP JSON
-// is fetched on first toggle, not at render time.
-export default function ObpProcedure({ letters, styles, theme }) {
+// is fetched on first toggle, not at render time. The expanded panel uses a
+// brief slideDown animation on mount so opening feels deliberate instead of
+// snapping.
+export default function ObpProcedure({ letters, styles }) {
   const [expanded, setExpanded] = useState(null);
   const { obpData, loadObp } = useObpData();
 
@@ -37,7 +39,10 @@ export default function ObpProcedure({ letters, styles, theme }) {
       </div>
 
       {active && (
-        <div style={styles.obpPanel}>
+        <div
+          key={expanded /* remount when switching letters → animation re-runs */}
+          style={{ ...styles.obpPanel, animation: 'slideDown 260ms ease' }}
+        >
           <div style={styles.obpTitle}>{active.title || `Procedure ${expanded}`}</div>
 
           {active.vehicles && (

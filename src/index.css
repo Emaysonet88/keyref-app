@@ -1,8 +1,8 @@
 /* KeyRef Pro — global styles + theme tokens
    App still uses inline-style objects for layout (it's a single-screen tool
-   with a lot of conditional rendering), but all *theme tokens* now live as
-   CSS variables. Switching themes flips a single attribute on <html>, and
-   future @media print rules can override any token without !important. */
+   with a lot of conditional rendering), but all *theme tokens* live as CSS
+   variables, and all *animations* live here as keyframes. Components opt in
+   by setting `animation: ... ` inline. */
 
 /* ── Theme tokens ─────────────────────────────────────────────────────────── */
 :root,
@@ -18,29 +18,36 @@
   --notes-bg:     #0d0d0d;
   --header-bg:    #1e1e1e;
   --logo:         #e8e8e8;
-}
-
-:root[data-theme="light"] {
-  --bg:           #f5f0e8;
-  --panel:        #ffffff;
-  --border:       #ddd;
-  --border-strong:#bbb;
-  --text:         #1a1a1a;
-  --mute:         #555;
-  --input:        #ffffff;
-  --mute-val:     #888;
-  --notes-bg:     #f5f0e8;
-  --header-bg:    #f5f0e8;
-  --logo:         #1a1a1a;
-}
-
-/* Accent + semantic colors don't change between themes. */
-:root {
+  --shimmer:      #1f1f1f;
   --accent:       #f5a623;
   --accent-rim:   #c47d0e;
   --accent-tint:  rgba(245, 166, 35, 0.12);
   --accent-tint2: rgba(245, 166, 35, 0.30);
   --accent-tint3: rgba(245, 166, 35, 0.08);
+}
+
+:root[data-theme="light"] {
+  --bg:           #d8cdb5;
+  --panel:        #ede5d0;
+  --border:       #8a7a5e;
+  --border-strong:#5e5240;
+  --text:         #1a1a1a;
+  --mute:         #3a3428;
+  --input:        #f8f3e3;
+  --mute-val:     #524a3b;
+  --notes-bg:     #e0d6bc;
+  --header-bg:    #c9bd9f;
+  --logo:         #1a1a1a;
+  --shimmer:      #c4b894;
+  --accent:       #a8590a;
+  --accent-rim:   #804008;
+  --accent-tint:  rgba(168, 89, 10, 0.16);
+  --accent-tint2: rgba(168, 89, 10, 0.40);
+  --accent-tint3: rgba(168, 89, 10, 0.10);
+}
+
+/* Semantic colors don't change between themes. */
+:root {
   --ok:           #52e0a0;
   --ok-tint:      rgba(82, 224, 160, 0.08);
   --err:          #e05252;
@@ -79,9 +86,63 @@ input:focus-visible {
 
 html { scroll-behavior: smooth; }
 
+/* ── Tap feedback ─────────────────────────────────────────────────────────── */
+/* Subtle scale + brightness on press. Applies globally to every enabled
+   button. The transition is short enough that taps still feel snappy. */
+button:not(:disabled) {
+  transition: transform 100ms ease, filter 100ms ease, color 200ms ease,
+              background 200ms ease, border-color 200ms ease;
+}
+button:not(:disabled):active {
+  transform: scale(0.96);
+  filter: brightness(1.1);
+}
+
 /* ── Animations ───────────────────────────────────────────────────────────── */
 @keyframes spin { to { transform: rotate(360deg); } }
+
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(4px); }
   to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Used by result-card rows. With `both` fill mode, the row starts invisible
+   (matching the `from` state) before the animation runs. */
+@keyframes rowReveal {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Slide-down for OBP procedure panel. */
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Quick horizontal shake — used on validation errors to draw the eye. */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%      { transform: translateX(-6px); }
+  40%      { transform: translateX(6px); }
+  60%      { transform: translateX(-4px); }
+  80%      { transform: translateX(4px); }
+}
+
+/* Skeleton-loader shimmer. The gradient slides across at a constant rate. */
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* ── prefers-reduced-motion ───────────────────────────────────────────────── */
+/* Users who've set "Reduce Motion" in iOS / Android get the static experience.
+   We zero out all animation and transition durations rather than removing the
+   declarations, which keeps end-states intact and only kills the motion. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration:   0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration:  0.01ms !important;
+    scroll-behavior:      auto !important;
+  }
 }

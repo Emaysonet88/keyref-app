@@ -196,10 +196,19 @@ export default function VehicleLookup({
         </button>
       </div>
 
-      {displayError && <div style={styles.errMsg} role="alert">{displayError}</div>}
+      {displayError && (
+        <div
+          key={displayError /* new error → element remounts → shake re-runs */}
+          style={{ ...styles.errMsg, animation: 'shake 400ms ease' }}
+          role="alert"
+        >
+          {displayError}
+        </div>
+      )}
 
       {result && vehicle && (
         <ResultCard
+          key={`${vehicle.year}-${vehicle.make}-${vehicle.model}` /* remount per vehicle so staggered reveal re-runs */}
           vehicle={vehicle}
           result={result}
           isSaved={isSaved}

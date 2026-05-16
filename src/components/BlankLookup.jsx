@@ -1,12 +1,13 @@
 import { useState, useMemo } from 'react';
 import { useDebouncedValue } from '../hooks/useDebouncedValue';
+import { SkeletonList } from './SkeletonLoader';
 
 const MAX_RESULTS = 100;
 
 // ── BlankLookup ──────────────────────────────────────────────────────────────
 // Reverse search: type a key blank number, get the vehicles that use it.
 // Debounced so a fast-typed blank doesn't re-scan thousands of records per
-// keystroke.
+// keystroke. Renders a skeleton list while the unified index is loading.
 export default function BlankLookup({ allDataIndex, allDataLoading, onResultClick, styles }) {
   const [query, setQuery] = useState('');
   const debouncedQuery = useDebouncedValue(query, 150);
@@ -39,16 +40,11 @@ export default function BlankLookup({ allDataIndex, allDataLoading, onResultClic
           type="text"
           value={query}
           onChange={e => setQuery(e.target.value)}
-          placeholder={allDataLoading ? 'Loading database…' : 'e.g. HO03-PT, HU92RP, B111-PT'}
+          placeholder={allDataLoading ? 'Building database…' : 'e.g. HO03-PT, HU92RP, B111-PT'}
           style={styles.inputNum}
           disabled={allDataLoading || !allDataIndex}
           aria-label="Key blank number"
         />
-        {allDataLoading && (
-          <div style={{ fontFamily: 'monospace', fontSize: 11, color: 'var(--mute)', marginTop: 6 }}>
-            Loading database…
-          </div>
-        )}
         {allDataIndex && !allDataLoading && (
           <div style={{ fontFamily: 'monospace', fontSize: 10, color: 'var(--mute)', marginTop: 6 }}>
             Database ready · {allDataIndex.models.length} model-years indexed
@@ -56,15 +52,24 @@ export default function BlankLookup({ allDataIndex, allDataLoading, onResultClic
         )}
       </div>
 
+      {allDataLoading && (
+        <div style={{ marginBottom: 12 }}>
+          <SkeletonList count={6} />
+        </div>
+      )}
+
       <div style={styles.savedList}>
-        {!debouncedQuery.trim()
+        {!debouncedQuery.trim() && !allDataLoading
           ? <div style={styles.empty}>Type a blank number to see compatible vehicles.</div>
-          : results.length === 0
+          : !allDataLoading && results.length === 0 && debouncedQuery.trim()
             ? <div style={styles.empty}>No matches for "{debouncedQuery}"</div>
             : results.map((v, i) => (
                 <div
                   key={`${v.blank}-${v.make}-${v.model}-${i}`}
-                  style={styles.savedItem}
+                  style={{
+                    ...styles.savedItem,
+                    animation: `rowReveal 280ms ease ${Math.min(i, 8) * 25}ms both`,
+                  }}
                   onClick={() => onResultClick(v)}
                 >
                   <div style={{ flex: 1, minWidth: 100 }}>

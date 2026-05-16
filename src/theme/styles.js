@@ -94,12 +94,33 @@ export function makeStyles(isMobile) {
     labelBar: { width: 12, height: 2, background: 'var(--accent)', display: 'block' },
 
     // ── Mode toggle ───────────────────────────────────────────────────────
-    modeToggle: { display: 'flex', gap: 6, marginBottom: 16, flexWrap: 'wrap' },
+    // Segmented-control structure: a relative wrapper containing one
+    // absolutely-positioned indicator pill plus the buttons. The pill's
+    // `left` and `width` are set by ModeToggle.jsx based on each button's
+    // measured offsetLeft/offsetWidth, and CSS transitions handle the slide.
+    modeToggle: {
+      display: 'flex',
+      position: 'relative',
+      marginBottom: 16,
+      background: 'var(--panel)',
+      border: '1px solid var(--border)',
+      padding: 4,
+      gap: 4,
+    },
+    modeToggleIndicator: {
+      position: 'absolute',
+      top: 4,
+      bottom: 4,
+      background: 'var(--accent)',
+      transition: 'left 240ms cubic-bezier(0.4, 0, 0.2, 1), width 240ms cubic-bezier(0.4, 0, 0.2, 1), opacity 200ms ease',
+      pointerEvents: 'none',
+      zIndex: 0,
+    },
     modeBtn: (active) => ({
       flex: 1,
-      minWidth: 100,
-      background: active ? 'var(--accent)' : 'transparent',
-      border: `1px solid ${active ? 'var(--accent)' : 'var(--border)'}`,
+      minWidth: 0,
+      background: 'transparent',
+      border: 'none',
       color: active ? '#000' : 'var(--text)',
       fontFamily: 'monospace',
       fontSize: 11,
@@ -108,6 +129,8 @@ export function makeStyles(isMobile) {
       textTransform: 'uppercase',
       cursor: 'pointer',
       fontWeight: active ? 600 : 400,
+      position: 'relative',
+      zIndex: 1,
     }),
 
     // ── Form fields ───────────────────────────────────────────────────────
