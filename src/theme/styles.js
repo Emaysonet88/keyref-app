@@ -20,19 +20,21 @@ export function makeStyles(isMobile) {
     inner: { maxWidth: 1000, margin: '0 auto' },
 
     // ── Header ────────────────────────────────────────────────────────────
+    // The header is a positioning context. The right controls (status badge +
+    // theme toggle) are absolutely positioned to the top-right corner so they
+    // never wrap below the logo on narrow screens. `paddingRight` reserves
+    // enough horizontal space that the logo and subtitle don't run under the
+    // absolute-positioned controls.
     header: {
+      position: 'relative',
       padding: '24px 0 18px',
+      paddingRight: 110,
       borderBottom: '1px solid var(--border)',
       marginBottom: 24,
-      display: 'flex',
-      alignItems: 'flex-end',
-      justifyContent: 'space-between',
-      flexWrap: 'wrap',
-      gap: 12,
     },
     logo: {
       fontFamily: "'Bebas Neue', sans-serif",
-      fontSize: isMobile ? 36 : 46,
+      fontSize: isMobile ? 32 : 46,
       letterSpacing: 2,
       lineHeight: 1,
       color: 'var(--logo)',
@@ -44,24 +46,37 @@ export function makeStyles(isMobile) {
       letterSpacing: 3,
       marginTop: 3,
     },
-    headerRight: { display: 'flex', alignItems: 'center', gap: 8 },
+    headerRight: {
+      position: 'absolute',
+      top: 24,
+      right: 0,
+      display: 'flex',
+      alignItems: 'center',
+      gap: 8,
+    },
     statusBadge: (online) => ({
       fontFamily: 'monospace',
       fontSize: 9,
       letterSpacing: 1,
-      padding: '4px 8px',
-      border: `1px solid ${online ? 'var(--ok)' : 'var(--warn)'}`,
+      display: 'inline-flex',
+      alignItems: 'center',
+      gap: 6,
       color: online ? 'var(--ok)' : 'var(--warn)',
+      opacity: online ? 0.9 : 1,
       textTransform: 'uppercase',
     }),
     themeToggle: {
       background: 'transparent',
-      border: '1px solid var(--border)',
+      border: 'none',
       color: 'var(--text)',
-      fontSize: 16,
-      padding: '7px 10px',
       cursor: 'pointer',
-      fontFamily: 'monospace',
+      width: 32,
+      height: 32,
+      display: 'inline-flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      padding: 0,
+      opacity: 0.65,
     },
 
     // ── Panels ────────────────────────────────────────────────────────────

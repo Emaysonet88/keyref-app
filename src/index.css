@@ -24,6 +24,11 @@
   --accent-tint:  rgba(245, 166, 35, 0.12);
   --accent-tint2: rgba(245, 166, 35, 0.30);
   --accent-tint3: rgba(245, 166, 35, 0.08);
+  --ok:           #52e0a0;
+  --ok-tint:      rgba(82, 224, 160, 0.08);
+  --err:          #e05252;
+  --err-tint:     rgba(224, 82, 82, 0.08);
+  --warn:         #e0a052;
 }
 
 :root[data-theme="light"] {
@@ -44,15 +49,11 @@
   --accent-tint:  rgba(168, 89, 10, 0.16);
   --accent-tint2: rgba(168, 89, 10, 0.40);
   --accent-tint3: rgba(168, 89, 10, 0.10);
-}
-
-/* Semantic colors don't change between themes. */
-:root {
-  --ok:           #52e0a0;
-  --ok-tint:      rgba(82, 224, 160, 0.08);
-  --err:          #e05252;
-  --err-tint:     rgba(224, 82, 82, 0.08);
-  --warn:         #e0a052;
+  --ok:           #1e6b3c;
+  --ok-tint:      rgba(30, 107, 60, 0.12);
+  --err:          #a8281f;
+  --err-tint:     rgba(168, 40, 31, 0.10);
+  --warn:         #8a4a08;
 }
 
 /* ── Reset ────────────────────────────────────────────────────────────────── */
