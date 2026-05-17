@@ -6,21 +6,24 @@ import { useEffect, useRef, useState } from 'react';
 // LIVE SCANNING uses the native BarcodeDetector API (Chrome/Edge/Samsung
 // Internet on Android). Fast, hardware-accelerated.
 //
-// PHOTO ANALYSIS uses a TWO-TIER pipeline:
-//   1. Native BarcodeDetector on original + 90/180/270 rotations
-//   2. ZXing JS library with TRY_HARDER hint, also rotated
+// PHOTO ANALYSIS uses a multi-stage pipeline:
+//   0. (if HEIC) heic2any converts to JPEG — dynamic import, ~1.7MB
+//   1. createImageBitmap or <img> loads the file
+//   2. Auto-downsample if > 2000px on longest side
+//   3. Native BarcodeDetector across 4 rotations (0°/90°/180°/270°)
+//   4. ZXing TRY_HARDER fallback, also across 4 rotations
 //
-// IMAGE LOADING (v6) uses createImageBitmap with EXIF-respecting orientation
-// and auto-downsamples images > 2000px on the longest side.
+// CAMERA STARTUP (v7) drops the explicit resolution constraint so the
+// browser picks the fastest available default. Capability detection
+// (torch, autofocus) deferred until after the camera UI is showing.
+// 8-second startup timeout with helpful error if camera hangs.
 //
-// CAMERA STARTUP (v7) is now optimized for speed:
-//   - No explicit resolution constraint — browser picks fastest default
-//     (usually 720p or 1080p) which is more than enough for barcodes
-//   - Non-critical setup (torch detection, continuous autofocus) is
-//     deferred until AFTER the camera UI is showing, so the locksmith
-//     doesn't stare at "Starting camera…" for a long time on slower phones
-//   - 8-second startup timeout — if the camera doesn't come up by then,
-//     show a helpful error instead of just hanging
+// HEIC SUPPORT (v8) — Apple's HEIC/HEIF format isn't natively decodable on
+// Android Chrome or desktop browsers. When the locksmith uploads a HEIC
+// from gallery (typical when an iPhone client AirDrops or emails a VIN
+// photo), we transparently convert it to JPEG first using heic2any.
+// Library is dynamically imported — only the locksmith who actually
+// receives a HEIC pays the ~1.7MB load cost.
 
 const SCAN_FORMATS = ['code_39', 'code_93', 'code_128', 'codabar', 'qr_code', 'data_matrix'];
 const VIN_PATTERN = /^[A-HJ-NPR-Z0-9]{17}$/;
@@ -51,10 +54,8 @@ export default function VinScannerModal({ onScan, onClose }) {
   useEffect(() => {
     cancelledRef.current = false;
 
-    // Startup timeout — protects against hanging getUserMedia on misbehaving devices
     startupTimerRef.current = setTimeout(() => {
       if (cancelledRef.current) return;
-      // Only fire if we never made it to 'scanning'
       setStatus(curr => {
         if (curr === 'starting') {
           setErrorMsg('Camera is taking longer than expected to start. Close and try again, or check if another app is using the camera.');
@@ -80,10 +81,6 @@ export default function VinScannerModal({ onScan, onClose }) {
       }
 
       try {
-        // Minimal constraints — let the browser pick the fastest available
-        // configuration. Default is usually 720p which is plenty for barcodes.
-        // Earlier versions explicitly requested 1920x1080 which made some
-        // Android devices take 5-10 seconds to renegotiate.
         const stream = await navigator.mediaDevices.getUserMedia({
           video: { facingMode: { ideal: 'environment' } },
           audio: false,
@@ -101,12 +98,8 @@ export default function VinScannerModal({ onScan, onClose }) {
         const video = videoRef.current;
         if (!video) return;
         video.srcObject = stream;
-
-        // Don't await play() — it can sometimes hang on older Android browsers.
-        // The video element has autoPlay anyway, so it'll start on its own.
         video.play().catch(() => { /* autoplay handles it */ });
 
-        // Camera is up — clear the startup timeout and show the UI immediately
         if (startupTimerRef.current) {
           clearTimeout(startupTimerRef.current);
           startupTimerRef.current = null;
@@ -114,11 +107,7 @@ export default function VinScannerModal({ onScan, onClose }) {
         setStatus('scanning');
         scanLoop();
 
-        // ── Deferred capability setup ───────────────────────────────────
-        // Apply continuous autofocus and detect torch support AFTER the UI is
-        // showing. These are non-critical, and on some devices they can take
-        // a noticeable amount of time. Doing them here means the locksmith
-        // sees the camera feed immediately.
+        // Deferred capability setup
         setTimeout(() => {
           if (cancelledRef.current || !trackRef.current) return;
           try {
@@ -166,7 +155,7 @@ export default function VinScannerModal({ onScan, onClose }) {
           onScan(vin);
           return;
         }
-      } catch { /* transient errors — keep looping */ }
+      } catch { /* transient — keep looping */ }
       rafRef.current = requestAnimationFrame(scanLoop);
     }
 
@@ -213,14 +202,30 @@ export default function VinScannerModal({ onScan, onClose }) {
     if (!file) return;
 
     setErrorMsg('');
+
+    // ── Stage 0: HEIC conversion if needed ──────────────────────────────
+    let workingFile = file;
+    if (isHeicFile(file)) {
+      setAnalyzeStage('heic');
+      try {
+        workingFile = await convertHeicToJpeg(file);
+      } catch (e) {
+        const msg = 'Could not convert HEIC photo: ' + (e.message || 'unknown error') + '. Try asking the client to re-send as JPEG.';
+        setErrorMsg(msg);
+        setTimeout(() => setErrorMsg(curr => curr === msg ? '' : curr), 9000);
+        setAnalyzeStage(null);
+        return;
+      }
+    }
+
     setAnalyzeStage('loading');
 
     let source;
     try {
-      source = await loadImageFromFile(file);
+      source = await loadImageFromFile(workingFile);
       source = await downsampleIfNeeded(source);
     } catch (e) {
-      const friendly = formatLoadError(e, file);
+      const friendly = formatLoadError(e, workingFile);
       setErrorMsg(friendly);
       setTimeout(() => setErrorMsg(curr => curr === friendly ? '' : curr), 9000);
       setAnalyzeStage(null);
@@ -276,10 +281,12 @@ export default function VinScannerModal({ onScan, onClose }) {
   }
 
   const analyzing = analyzeStage !== null;
-  const progressText = !analyzing       ? 'Aim at the VIN barcode'
-                     : analyzeStage === 'loading' ? 'Loading image…'
-                     : analyzeStage === 'native'  ? 'Analyzing image (fast decoder)…'
-                                                 : 'Trying enhanced decoder (a few seconds)…';
+  const progressText =
+    !analyzing                    ? 'Aim at the VIN barcode'
+    : analyzeStage === 'heic'     ? 'Converting HEIC photo… (first time may take a few seconds)'
+    : analyzeStage === 'loading'  ? 'Loading image…'
+    : analyzeStage === 'native'   ? 'Analyzing image (fast decoder)…'
+                                  : 'Trying enhanced decoder (a few seconds)…';
 
   return (
     <div style={overlayStyle} role="dialog" aria-modal="true" aria-label="VIN Scanner">
@@ -343,7 +350,7 @@ export default function VinScannerModal({ onScan, onClose }) {
             <input
               ref={cameraInputRef}
               type="file"
-              accept="image/*"
+              accept="image/*,.heic,.heif"
               capture="environment"
               onChange={handlePhotoSelected}
               style={{ display: 'none' }}
@@ -351,7 +358,7 @@ export default function VinScannerModal({ onScan, onClose }) {
             <input
               ref={galleryInputRef}
               type="file"
-              accept="image/*"
+              accept="image/*,.heic,.heif"
               onChange={handlePhotoSelected}
               style={{ display: 'none' }}
             />
@@ -364,6 +371,44 @@ export default function VinScannerModal({ onScan, onClose }) {
       </div>
     </div>
   );
+}
+
+// ── HEIC detection & conversion ────────────────────────────────────────────
+// HEIC files come from iPhones by default. Android Chrome (and most other
+// non-Apple browsers) can't natively decode them. heic2any is a JS library
+// that wraps libheif (compiled to WebAssembly) and converts HEIC → JPEG in
+// the browser. It's dynamic-imported so the cost is paid only by users who
+// actually need it.
+
+function isHeicFile(file) {
+  if (!file) return false;
+  const type = (file.type || '').toLowerCase();
+  const name = (file.name || '').toLowerCase();
+  return type.includes('heic') || type.includes('heif')
+      || name.endsWith('.heic') || name.endsWith('.heif');
+}
+
+async function convertHeicToJpeg(file) {
+  let mod;
+  try {
+    mod = await import('heic2any');
+  } catch (e) {
+    throw new Error('HEIC converter failed to load. Check your internet connection.');
+  }
+  const heic2any = mod.default || mod;
+
+  // Convert to JPEG. Quality 0.9 keeps barcode bars crisp without bloat.
+  const result = await heic2any({
+    blob: file,
+    toType: 'image/jpeg',
+    quality: 0.9,
+  });
+
+  // heic2any may return a single Blob or an array for multi-image HEIC.
+  // VIN photos are always single-frame, but handle both shapes.
+  const blob = Array.isArray(result) ? result[0] : result;
+  const convertedName = (file.name || 'photo').replace(/\.(heic|heif)$/i, '.jpg');
+  return new File([blob], convertedName, { type: 'image/jpeg' });
 }
 
 // ── Image loading helpers ──────────────────────────────────────────────────
@@ -399,17 +444,10 @@ async function loadImageFromFile(file) {
 
 function formatLoadError(e, file) {
   const type = (file.type || '').toLowerCase();
-  const name = (file.name || '').toLowerCase();
-  const isHeic = type.includes('heic') || type.includes('heif')
-              || name.endsWith('.heic') || name.endsWith('.heif');
-
-  if (isHeic) {
-    return 'This is a HEIC photo (Apple format). Android can\'t decode it. Ask the client to re-send as JPEG, or open the photo in Google Photos first — it will auto-convert to JPEG.';
-  }
   if (type && !type.startsWith('image/')) {
     return `That file isn\'t an image (${type}). Pick a photo of the VIN barcode.`;
   }
-  return 'Could not load the image. It may be in an unsupported format or corrupted. Try a different photo or re-save it as JPEG.';
+  return 'Could not load the image. It may be corrupted. Try a different photo or re-save it as JPEG.';
 }
 
 async function downsampleIfNeeded(source) {
@@ -502,7 +540,7 @@ async function detectVinZxingRotations(source) {
       const candidate = extractVinCandidate(text);
       if (candidate && VIN_PATTERN.test(candidate)) return candidate;
     } catch {
-      // ZXing throws when nothing's found — keep trying rotations
+      // ZXing throws when nothing's found
     } finally {
       try { reader.reset(); } catch { /* noop */ }
     }
