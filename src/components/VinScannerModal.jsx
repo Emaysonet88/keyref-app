@@ -4,37 +4,37 @@ import { useEffect, useRef, useState } from 'react';
 // Full-screen camera overlay for scanning a VIN barcode.
 // Uses the native BarcodeDetector API (Chrome/Edge/Samsung Internet on Android).
 //
-// SESSION 6 v2 IMPROVEMENTS:
-//   - Higher resolution (1920x1080 ideal) — sharper bars, easier decode
-//   - Continuous autofocus via track.applyConstraints — keeps stickers in focus
+// SESSION 6 v3 IMPROVEMENTS:
+//   - Separate "Take Photo" and "From Gallery" buttons. Take Photo uses
+//     capture="environment" to open the camera directly; From Gallery omits
+//     the capture attribute so the OS picker shows photo library / files.
+//     This lets the locksmith analyze a VIN barcode photo a client texts him.
+//   - Higher resolution (1920x1080 ideal) — sharper bars for live scanning
+//   - Continuous autofocus via track.applyConstraints
 //   - Code 93 + Codabar + ITF added to format list
 //   - Torch / flashlight toggle when device supports it
-//   - "Use Photo Instead" button — falls back to a still image from the camera
-//     or gallery, which is much more reliable than live video for problematic
-//     real-world stickers
 //
 // On a successful detection of a 17-character VIN, calls onScan(vin) and
 // closes itself. Manual close via the ✕ button or onClose handler.
 
 const SCAN_FORMATS = ['code_39', 'code_93', 'code_128', 'codabar', 'qr_code', 'data_matrix'];
-// VIN format: 17 chars, alphanumeric excluding I, O, Q (to avoid 1/0 confusion)
 const VIN_PATTERN = /^[A-HJ-NPR-Z0-9]{17}$/;
 
-/** Returns true if the current browser supports BarcodeDetector. */
 export function isScannerSupported() {
   return typeof window !== 'undefined' && 'BarcodeDetector' in window;
 }
 
 export default function VinScannerModal({ onScan, onClose }) {
-  const videoRef    = useRef(null);
-  const streamRef   = useRef(null);
-  const trackRef    = useRef(null);
-  const rafRef      = useRef(null);
-  const detectorRef = useRef(null);
-  const fileInputRef = useRef(null);
-  const cancelledRef = useRef(false);
+  const videoRef        = useRef(null);
+  const streamRef       = useRef(null);
+  const trackRef        = useRef(null);
+  const rafRef          = useRef(null);
+  const detectorRef     = useRef(null);
+  const cameraInputRef  = useRef(null);
+  const galleryInputRef = useRef(null);
+  const cancelledRef    = useRef(false);
 
-  const [status,         setStatus]         = useState('starting'); // starting | scanning | error
+  const [status,         setStatus]         = useState('starting');
   const [errorMsg,       setErrorMsg]       = useState('');
   const [torchSupported, setTorchSupported] = useState(false);
   const [torchOn,        setTorchOn]        = useState(false);
@@ -59,8 +59,6 @@ export default function VinScannerModal({ onScan, onClose }) {
       }
 
       try {
-        // Request a high-resolution rear camera stream. The browser will
-        // negotiate the closest match it can deliver.
         const stream = await navigator.mediaDevices.getUserMedia({
           video: {
             facingMode: { ideal: 'environment' },
@@ -79,16 +77,9 @@ export default function VinScannerModal({ onScan, onClose }) {
         const track = stream.getVideoTracks()[0];
         trackRef.current = track;
 
-        // Probe the track's capabilities for torch + continuous focus, then
-        // apply what's supported. Every applyConstraints call is wrapped
-        // because some Android browsers throw on unknown advanced keys.
         try {
           const caps = track.getCapabilities ? track.getCapabilities() : {};
-
-          if (caps.torch === true) {
-            setTorchSupported(true);
-          }
-
+          if (caps.torch === true) setTorchSupported(true);
           if (caps.focusMode && caps.focusMode.includes('continuous')) {
             try {
               await track.applyConstraints({ advanced: [{ focusMode: 'continuous' }] });
@@ -128,7 +119,6 @@ export default function VinScannerModal({ onScan, onClose }) {
           const raw = (c.rawValue || '').toUpperCase().trim();
           const candidate = extractVinCandidate(raw);
           if (candidate && VIN_PATTERN.test(candidate)) {
-            // Haptic confirmation
             if (typeof navigator !== 'undefined' && navigator.vibrate) {
               navigator.vibrate(80);
             }
@@ -174,18 +164,18 @@ export default function VinScannerModal({ onScan, onClose }) {
       await track.applyConstraints({ advanced: [{ torch: newState }] });
       setTorchOn(newState);
     } catch {
-      // unsupported — disable the UI for it
       setTorchSupported(false);
     }
   }
 
-  // ── Photo fallback ───────────────────────────────────────────────────────
-  // The killer feature for real-world stickers. Phone still cameras autofocus
-  // much more aggressively than live video streams, so a snapshot decodes
-  // reliably even when live scanning struggles.
+  // ── Photo analysis (camera OR gallery) ──────────────────────────────────
+  // Same handler used for both file inputs. The difference is purely in
+  // which input element the user activated:
+  //   - camera input has capture="environment" → opens camera
+  //   - gallery input has no capture attribute → opens gallery / files
   async function handlePhotoSelected(event) {
     const file = event.target.files?.[0];
-    event.target.value = ''; // reset input so same file can be selected again
+    event.target.value = '';
     if (!file) return;
 
     setAnalyzingPhoto(true);
@@ -214,12 +204,12 @@ export default function VinScannerModal({ onScan, onClose }) {
           return;
         }
       }
-      setErrorMsg('No VIN barcode found in this photo. Try a sharper, closer shot of just the barcode.');
+      setErrorMsg('No VIN barcode found in this image. Try a sharper, closer shot of just the barcode.');
       setTimeout(() => setErrorMsg(curr =>
         curr.startsWith('No VIN barcode') ? '' : curr
       ), 5000);
     } catch (e) {
-      setErrorMsg('Could not analyze photo: ' + (e.message || 'unknown error'));
+      setErrorMsg('Could not analyze image: ' + (e.message || 'unknown error'));
       setTimeout(() => setErrorMsg(curr =>
         curr.startsWith('Could not analyze') ? '' : curr
       ), 5000);
@@ -229,7 +219,6 @@ export default function VinScannerModal({ onScan, onClose }) {
     }
   }
 
-  // Used by event handlers outside the useEffect closure
   function stopAllExternal() {
     if (rafRef.current) cancelAnimationFrame(rafRef.current);
     if (streamRef.current) {
@@ -277,7 +266,7 @@ export default function VinScannerModal({ onScan, onClose }) {
         {status === 'scanning' && (
           <>
             <div style={statusTextStyle}>
-              {analyzingPhoto ? 'Analyzing photo…' : 'Aim at the VIN barcode'}
+              {analyzingPhoto ? 'Analyzing image…' : 'Aim at the VIN barcode'}
               {!analyzingPhoto && (
                 <div style={statusHintStyle}>
                   Door jamb, dashboard, or registration card
@@ -288,11 +277,19 @@ export default function VinScannerModal({ onScan, onClose }) {
             <div style={buttonRowStyle}>
               <button
                 type="button"
-                onClick={() => fileInputRef.current?.click()}
+                onClick={() => cameraInputRef.current?.click()}
                 style={secondaryBtnStyle}
                 disabled={analyzingPhoto}
               >
-                🖼️ Use Photo Instead
+                📸 Take Photo
+              </button>
+              <button
+                type="button"
+                onClick={() => galleryInputRef.current?.click()}
+                style={secondaryBtnStyle}
+                disabled={analyzingPhoto}
+              >
+                🖼️ From Gallery
               </button>
               {torchSupported && (
                 <button
@@ -310,11 +307,20 @@ export default function VinScannerModal({ onScan, onClose }) {
               )}
             </div>
 
+            {/* Camera input — capture attribute opens the camera directly */}
             <input
-              ref={fileInputRef}
+              ref={cameraInputRef}
               type="file"
               accept="image/*"
               capture="environment"
+              onChange={handlePhotoSelected}
+              style={{ display: 'none' }}
+            />
+            {/* Gallery input — no capture attribute, OS shows the photo picker */}
+            <input
+              ref={galleryInputRef}
+              type="file"
+              accept="image/*"
               onChange={handlePhotoSelected}
               style={{ display: 'none' }}
             />
@@ -333,8 +339,6 @@ export default function VinScannerModal({ onScan, onClose }) {
   );
 }
 
-// Extract a 17-char VIN candidate from a possibly-noisy barcode payload.
-// Some VIN barcodes embed prefixes like "I/" before the actual VIN.
 function extractVinCandidate(raw) {
   if (!raw) return null;
   const match = raw.match(/[A-HJ-NPR-Z0-9]{17}/);
@@ -342,8 +346,6 @@ function extractVinCandidate(raw) {
 }
 
 // ── Styles ─────────────────────────────────────────────────────────────────
-// Self-contained dark overlay. Doesn't depend on the app's theme system —
-// the scanner is always a dark, opaque, full-screen experience.
 
 const overlayStyle = {
   position: 'fixed',
@@ -438,7 +440,7 @@ const statusHintStyle = {
 
 const buttonRowStyle = {
   display: 'flex',
-  gap: 10,
+  gap: 8,
   justifyContent: 'center',
   flexWrap: 'wrap',
 };
@@ -447,7 +449,7 @@ const secondaryBtnStyle = {
   background: 'transparent',
   border: '1px solid rgba(255,255,255,0.3)',
   color: '#fff',
-  padding: '10px 16px',
+  padding: '10px 14px',
   borderRadius: 8,
   fontSize: 14,
   fontWeight: 500,

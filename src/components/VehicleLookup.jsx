@@ -5,6 +5,7 @@ import { smartDecodeVin, fuzzyMatch, findCandidates } from '../utils/vinDecode';
 import ResultCard from './ResultCard';
 import RecentList from './RecentList';
 import SavedList from './SavedList';
+import SupplementalInfo from './SupplementalInfo';
 import VinScannerModal, { isScannerSupported } from './VinScannerModal';
 
 // ── VehicleLookup ────────────────────────────────────────────────────────────
@@ -18,9 +19,11 @@ import VinScannerModal, { isScannerSupported } from './VinScannerModal';
 //   - Smart async decoder: cache → NHTSA → local fallback
 //   - Safe model auto-match: only auto-fills when exactly ONE inventory
 //     variant matches. Ambiguous matches leave the dropdown empty.
-//   - Stale-error clearing: when the user changes year/make/model, any
-//     previous lookup error is dismissed so they don't see a stale message
-//     referencing the old vehicle.
+//   - Simpler scan flash: shows just YMM (e.g. "2020 Honda Accord"), the
+//     locksmith picks the exact variant from the dropdown
+//   - Stale-error clearing: errors dismiss when the user edits the form
+//   - SupplementalInfo panel: extra data (e.g. BMW chassis/immobilizer)
+//     shown alongside the standard Ilco result
 export default function VehicleLookup({
   form, inventory, lookup, savedHook, recentHook, styles,
 }) {
@@ -42,8 +45,6 @@ export default function VehicleLookup({
   const scannerAvailable = isScannerSupported();
 
   // ── Clear stale lookup errors when form fields change ─────────────────
-  // Otherwise a previous "No data for X" error stays visible while the
-  // user is picking a different vehicle, which is confusing.
   useEffect(() => {
     if (error) setError('');
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -77,6 +78,7 @@ export default function VehicleLookup({
       }
 
       // ── Model matching: only auto-fill if EXACTLY one variant matches ──
+      // Otherwise leave the dropdown empty for the locksmith to pick.
       let matchedModel = null;
       let modelCandidates = [];
       if (decoded.model && matchedMake && makesIndex?.[matchedMake]?.models) {
@@ -104,26 +106,20 @@ export default function VehicleLookup({
         );
       }
 
-      // ── Flash message ──────────────────────────────────────────────────
+      // ── Simple flash message: just YMM ─────────────────────────────────
+      // Per locksmith feedback: show only year/make/model — not the
+      // specific inventory variant (W/ PROX, W/ REGULAR IGNITION, HYBRID).
+      // The locksmith picks the exact variant from the dropdown.
       const parts = [];
       if (decoded.year) parts.push(decoded.year);
-      if (matchedMake) parts.push(matchedMake);
-      else if (decoded.make) parts.push(`${decoded.make}?`);
-
-      let needsLongerFlash = false;
-      if (matchedModel) {
-        parts.push(matchedModel);
-      } else if (decoded.model && modelCandidates.length > 1) {
-        parts.push(`${decoded.model} — pick variant ↓`);
-        needsLongerFlash = true;
-      } else if (decoded.model) {
-        parts.push(`${decoded.model}?`);
-      }
+      if (matchedMake)       parts.push(matchedMake);
+      else if (decoded.make) parts.push(decoded.make);
+      if (decoded.model)     parts.push(decoded.model); // raw NHTSA name, no variant suffix
 
       const sourceLabel = decoded.source === 'nhtsa' ? 'NHTSA'
                         : decoded.source === 'cache' ? 'cache'
                         : 'local';
-      flash(`${parts.join(' ')} · ${sourceLabel}`, needsLongerFlash ? 8000 : 4000);
+      flash(`${parts.join(' ')} · ${sourceLabel}`, 4000);
       setVinInput('');
     } catch (e) {
       console.error('VIN decode error:', e);
@@ -183,7 +179,6 @@ export default function VehicleLookup({
     savedHook.saveEntry(vehicle, result);
   }
 
-  // Loading saved/recent → repopulate form + result.
   function loadEntry(e) {
     setResult(e.result);
     setVehicle({ year: e.year, make: e.make, model: e.model });
@@ -308,7 +303,7 @@ export default function VehicleLookup({
 
       {displayError && (
         <div
-          key={displayError /* new error → element remounts → shake re-runs */}
+          key={displayError}
           style={{ ...styles.errMsg, animation: 'shake 400ms ease' }}
           role="alert"
         >
@@ -318,13 +313,18 @@ export default function VehicleLookup({
 
       {result && vehicle && (
         <ResultCard
-          key={`${vehicle.year}-${vehicle.make}-${vehicle.model}` /* remount per vehicle so staggered reveal re-runs */}
+          key={`${vehicle.year}-${vehicle.make}-${vehicle.model}`}
           vehicle={vehicle}
           result={result}
           isSaved={isSaved}
           onSave={saveResult}
           styles={styles}
         />
+      )}
+
+      {/* ── Supplemental panel (BMW chassis/immobilizer, future others) ── */}
+      {result && vehicle && (
+        <SupplementalInfo vehicle={vehicle} styles={styles} />
       )}
 
       <RecentList

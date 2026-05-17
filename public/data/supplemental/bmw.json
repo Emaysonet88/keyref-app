@@ -1,0 +1,211 @@
+{
+  "version": 1,
+  "make": "BMW",
+  "description": "BMW chassis codes and immobilizer systems by model. Used to display extra context during vehicle lookup since immobilizer type drives keying cost.",
+  "models": {
+    "1 SERIES": [
+      { "chassis": "E81", "bodyStyle": "Hatchback",   "yearStart": 2007, "yearEnd": 2011, "immobilizer": "CAS3/CAS3+" },
+      { "chassis": "E82", "bodyStyle": "Coupe",       "yearStart": 2007, "yearEnd": 2014, "immobilizer": "CAS3/CAS3+" },
+      { "chassis": "E87", "bodyStyle": "Hatchback",   "yearStart": 2004, "yearEnd": 2011, "immobilizer": "CAS2/CAS3/CAS3+" },
+      { "chassis": "E88", "bodyStyle": "Convertible", "yearStart": 2008, "yearEnd": 2015, "immobilizer": "CAS3+" },
+      { "chassis": "F20", "bodyStyle": "Hatchback",   "yearStart": 2011, "yearEnd": 2018, "immobilizer": "FEM" },
+      { "chassis": "F21", "bodyStyle": "Hatchback",   "yearStart": 2012, "yearEnd": 2018, "immobilizer": "FEM" },
+      { "chassis": "F52", "bodyStyle": "Sedan 4",     "yearStart": 2016, "yearEnd": null, "immobilizer": "BDC" },
+      { "chassis": "F40", "bodyStyle": "Hatchback",   "yearStart": 2018, "yearEnd": null, "immobilizer": "FEM or BDC" }
+    ],
+    "2 SERIES": [
+      { "chassis": "F22", "bodyStyle": "Coupe",       "yearStart": 2014, "yearEnd": null, "immobilizer": "FEM" },
+      { "chassis": "F23", "bodyStyle": "Convertible", "yearStart": 2014, "yearEnd": null, "immobilizer": "FEM" },
+      { "chassis": "F44", "bodyStyle": "Gran Coupe",  "yearStart": 2020, "yearEnd": null, "immobilizer": "BDC" },
+      { "chassis": "F45", "bodyStyle": "Active Tourer","yearStart": 2014, "yearEnd": null, "immobilizer": "BDC" },
+      { "chassis": "F46", "bodyStyle": "Gran Tourer", "yearStart": 2015, "yearEnd": null, "immobilizer": "BDC" },
+      { "chassis": "F44", "bodyStyle": null,          "yearStart": 2022, "yearEnd": null, "immobilizer": "BDC 2" }
+    ],
+    "3 SERIES": [
+      { "chassis": "E21", "bodyStyle": null,          "yearStart": 1975, "yearEnd": 1982, "immobilizer": null },
+      { "chassis": "E30", "bodyStyle": null,          "yearStart": 1982, "yearEnd": 1990, "immobilizer": null },
+      { "chassis": "E36", "bodyStyle": null,          "yearStart": 1992, "yearEnd": 1999, "immobilizer": "EWS1/EWS2" },
+      { "chassis": "E46", "bodyStyle": null,          "yearStart": 1998, "yearEnd": 2006, "immobilizer": "EWS3" },
+      { "chassis": "E90", "bodyStyle": "Sedan",       "yearStart": 2005, "yearEnd": 2012, "immobilizer": "CAS3/CAS3+" },
+      { "chassis": "E91", "bodyStyle": "Wagon",       "yearStart": 2005, "yearEnd": 2013, "immobilizer": "CAS3/CAS3+" },
+      { "chassis": "E92", "bodyStyle": "Coupe",       "yearStart": 2006, "yearEnd": 2010, "immobilizer": "CAS3/CAS3+" },
+      { "chassis": "E93", "bodyStyle": "Convertible", "yearStart": 2007, "yearEnd": 2014, "immobilizer": "CAS3/CAS3+" },
+      { "chassis": "F30", "bodyStyle": "Sedan",       "yearStart": 2012, "yearEnd": 2018, "immobilizer": "FEM" },
+      { "chassis": "F31", "bodyStyle": "Wagon",       "yearStart": 2012, "yearEnd": 2018, "immobilizer": "FEM" },
+      { "chassis": "F34", "bodyStyle": "Gran Turismo","yearStart": 2013, "yearEnd": 2020, "immobilizer": "FEM" },
+      { "chassis": "F35", "bodyStyle": null,          "yearStart": 2015, "yearEnd": null, "immobilizer": "FEM" },
+      { "chassis": "G20", "bodyStyle": "Sedan",       "yearStart": 2018, "yearEnd": null, "immobilizer": "BDC" },
+      { "chassis": "G21", "bodyStyle": "Wagon",       "yearStart": 2018, "yearEnd": null, "immobilizer": "BDC" }
+    ],
+    "4 SERIES": [
+      { "chassis": "F32", "bodyStyle": "Coupe",       "yearStart": 2013, "yearEnd": 2020, "immobilizer": "FEM" },
+      { "chassis": "F33", "bodyStyle": "Convertible", "yearStart": 2013, "yearEnd": 2020, "immobilizer": "FEM" },
+      { "chassis": "F36", "bodyStyle": "Gran Coupe",  "yearStart": 2014, "yearEnd": null, "immobilizer": "FEM" },
+      { "chassis": "G22", "bodyStyle": null,          "yearStart": 2020, "yearEnd": null, "immobilizer": "BDC 2" }
+    ],
+    "5 SERIES": [
+      { "chassis": "E28", "bodyStyle": null,                "yearStart": 1981, "yearEnd": 1987, "immobilizer": null },
+      { "chassis": "E34", "bodyStyle": null,                "yearStart": 1988, "yearEnd": 1995, "immobilizer": "EWS" },
+      { "chassis": "E39", "bodyStyle": null,                "yearStart": 1995, "yearEnd": 2003, "immobilizer": "EWS1/EWS2/EWS3" },
+      { "chassis": "E60", "bodyStyle": "Sedan",             "yearStart": 2004, "yearEnd": 2004, "immobilizer": "CAS2" },
+      { "chassis": "E61", "bodyStyle": "Wagon",             "yearStart": 2002, "yearEnd": 2010, "immobilizer": "CAS3/CAS3+" },
+      { "chassis": "F07", "bodyStyle": "Gran Turismo",      "yearStart": 2009, "yearEnd": 2016, "immobilizer": "CAS4/CAS4+" },
+      { "chassis": "F10", "bodyStyle": "Standard Wheelbase","yearStart": 2010, "yearEnd": 2016, "immobilizer": "CAS4/CAS4+" },
+      { "chassis": "F11", "bodyStyle": "Wagon",             "yearStart": 2011, "yearEnd": 2016, "immobilizer": "CAS4/CAS4+" },
+      { "chassis": "F18", "bodyStyle": "Long Wheelbase",    "yearStart": 2010, "yearEnd": 2016, "immobilizer": "CAS4/CAS4+" },
+      { "chassis": "G30", "bodyStyle": "Standard Wheelbase","yearStart": 2016, "yearEnd": null, "immobilizer": "BDC" },
+      { "chassis": "G31", "bodyStyle": "Wagon",             "yearStart": 2017, "yearEnd": null, "immobilizer": "BDC" },
+      { "chassis": "G38", "bodyStyle": "Long Wheelbase",    "yearStart": 2017, "yearEnd": null, "immobilizer": "BDC" }
+    ],
+    "6 SERIES": [
+      { "chassis": "E24", "bodyStyle": null,          "yearStart": 1976, "yearEnd": 1982, "immobilizer": null },
+      { "chassis": "E63", "bodyStyle": "Coupe",       "yearStart": 2002, "yearEnd": 2007, "immobilizer": "CAS3/CAS3+" },
+      { "chassis": "E64", "bodyStyle": "Convertible", "yearStart": 2002, "yearEnd": 2007, "immobilizer": "CAS3/CAS3+" },
+      { "chassis": "F06", "bodyStyle": "Gran Coupe",  "yearStart": 2011, "yearEnd": null, "immobilizer": "CAS4/CAS4+" },
+      { "chassis": "F12", "bodyStyle": "Convertible", "yearStart": 2012, "yearEnd": 2019, "immobilizer": "CAS4/CAS4+" },
+      { "chassis": "F13", "bodyStyle": "Coupe",       "yearStart": 2011, "yearEnd": 2018, "immobilizer": "CAS4/CAS4+" },
+      { "chassis": "G32", "bodyStyle": "Gran Turismo","yearStart": 2017, "yearEnd": null, "immobilizer": "BDC" }
+    ],
+    "7 SERIES": [
+      { "chassis": "E23", "bodyStyle": null,                "yearStart": 1977, "yearEnd": 1979, "immobilizer": null },
+      { "chassis": "E32", "bodyStyle": null,                "yearStart": 1986, "yearEnd": 1994, "immobilizer": null },
+      { "chassis": "E38", "bodyStyle": null,                "yearStart": 1994, "yearEnd": 2001, "immobilizer": "EWS1/EWS2/EWS3" },
+      { "chassis": "E65", "bodyStyle": "Standard Wheelbase","yearStart": 2001, "yearEnd": 2008, "immobilizer": "CAS1" },
+      { "chassis": "E66", "bodyStyle": "Long Wheelbase",    "yearStart": 2001, "yearEnd": 2008, "immobilizer": "CAS2" },
+      { "chassis": "F01", "bodyStyle": "Standard Wheelbase","yearStart": 2008, "yearEnd": 2012, "immobilizer": "CAS4/CAS4+" },
+      { "chassis": "F02", "bodyStyle": "Long Wheelbase",    "yearStart": 2008, "yearEnd": 2012, "immobilizer": "CAS4/CAS4+" },
+      { "chassis": "F03", "bodyStyle": "Protection",        "yearStart": 2009, "yearEnd": 2012, "immobilizer": "CAS4/CAS4+" },
+      { "chassis": "F04", "bodyStyle": "Hybrid",            "yearStart": 2010, "yearEnd": 2012, "immobilizer": "CAS4/CAS4+" },
+      { "chassis": "G11", "bodyStyle": "Standard Wheelbase","yearStart": 2016, "yearEnd": null, "immobilizer": "BDC" },
+      { "chassis": "G12", "bodyStyle": "Long Wheelbase",    "yearStart": 2016, "yearEnd": null, "immobilizer": "BDC" }
+    ],
+    "8 SERIES": [
+      { "chassis": "E31", "bodyStyle": null,          "yearStart": 1989, "yearEnd": 1999, "immobilizer": "EWS" },
+      { "chassis": "G14", "bodyStyle": "Convertible", "yearStart": 2018, "yearEnd": null, "immobilizer": "BDC" },
+      { "chassis": "G15", "bodyStyle": "Coupe",       "yearStart": 2018, "yearEnd": null, "immobilizer": "BDC" },
+      { "chassis": "G16", "bodyStyle": "Gran Coupe",  "yearStart": 2018, "yearEnd": null, "immobilizer": "BDC" }
+    ],
+    "X1": [
+      { "chassis": "E84", "bodyStyle": null,             "yearStart": 2009, "yearEnd": 2016, "immobilizer": "CAS3/CAS3+" },
+      { "chassis": "F48", "bodyStyle": null,             "yearStart": 2015, "yearEnd": null, "immobilizer": "BDC" },
+      { "chassis": "F49", "bodyStyle": "Long Wheelbase", "yearStart": 2016, "yearEnd": null, "immobilizer": "BDC" }
+    ],
+    "X2": [
+      { "chassis": "F39", "bodyStyle": null, "yearStart": 2018, "yearEnd": null, "immobilizer": "BDC" }
+    ],
+    "X3": [
+      { "chassis": "E83", "bodyStyle": null,    "yearStart": 2003, "yearEnd": 2010, "immobilizer": "EWS4" },
+      { "chassis": "F25", "bodyStyle": null,    "yearStart": 2011, "yearEnd": 2018, "immobilizer": "CAS4/CAS4+" },
+      { "chassis": "G01", "bodyStyle": null,    "yearStart": 2017, "yearEnd": null, "immobilizer": "BDC" },
+      { "chassis": "G08", "bodyStyle": "China", "yearStart": 2018, "yearEnd": null, "immobilizer": "BDC" }
+    ],
+    "X4": [
+      { "chassis": "F26", "bodyStyle": null, "yearStart": 2014, "yearEnd": 2018, "immobilizer": "CAS4/CAS4+" },
+      { "chassis": "G02", "bodyStyle": null, "yearStart": 2018, "yearEnd": null, "immobilizer": "BDC" }
+    ],
+    "X5": [
+      { "chassis": "E53", "bodyStyle": null, "yearStart": 1999, "yearEnd": 2006, "immobilizer": "EWS2/EWS3/EWS4" },
+      { "chassis": "E70", "bodyStyle": null, "yearStart": 2006, "yearEnd": 2013, "immobilizer": "CAS3/CAS3+" },
+      { "chassis": "F15", "bodyStyle": null, "yearStart": 2013, "yearEnd": 2018, "immobilizer": "BDC" },
+      { "chassis": "G05", "bodyStyle": null, "yearStart": 2018, "yearEnd": null, "immobilizer": "BDC" }
+    ],
+    "X6": [
+      { "chassis": "E71", "bodyStyle": null,     "yearStart": 2008, "yearEnd": 2015, "immobilizer": "CAS3/CAS3+" },
+      { "chassis": "E72", "bodyStyle": "Hybrid", "yearStart": 2010, "yearEnd": 2015, "immobilizer": "CAS3/CAS3+" },
+      { "chassis": "F16", "bodyStyle": null,     "yearStart": 2014, "yearEnd": 2019, "immobilizer": "BDC" },
+      { "chassis": "G06", "bodyStyle": null,     "yearStart": 2019, "yearEnd": null, "immobilizer": "BDC" }
+    ],
+    "X7": [
+      { "chassis": "G07", "bodyStyle": null, "yearStart": 2019, "yearEnd": null, "immobilizer": "BDC" }
+    ],
+    "M2": [
+      { "chassis": "F87", "bodyStyle": null, "yearStart": 2015, "yearEnd": null, "immobilizer": "BDC" }
+    ],
+    "M3": [
+      { "chassis": "E90", "bodyStyle": "Sedan",       "yearStart": 2005, "yearEnd": 2012, "immobilizer": "CAS3/CAS3+" },
+      { "chassis": "E92", "bodyStyle": "Coupe",       "yearStart": 2006, "yearEnd": 2010, "immobilizer": "CAS3/CAS3+" },
+      { "chassis": "E93", "bodyStyle": "Convertible", "yearStart": 2007, "yearEnd": 2010, "immobilizer": "CAS3/CAS3+" },
+      { "chassis": "F80", "bodyStyle": "Sedan",       "yearStart": 2014, "yearEnd": 2018, "immobilizer": "FEM" }
+    ],
+    "M4": [
+      { "chassis": "F82", "bodyStyle": "Coupe",       "yearStart": 2014, "yearEnd": null, "immobilizer": "FEM" },
+      { "chassis": "F83", "bodyStyle": "Convertible", "yearStart": 2014, "yearEnd": null, "immobilizer": "FEM" }
+    ],
+    "M5": [
+      { "chassis": "E60", "bodyStyle": null, "yearStart": 2003, "yearEnd": 2009, "immobilizer": "CAS2/CAS3/CAS3+" },
+      { "chassis": "F10", "bodyStyle": null, "yearStart": 2010, "yearEnd": 2016, "immobilizer": "CAS4/CAS4+" },
+      { "chassis": "F90", "bodyStyle": null, "yearStart": 2018, "yearEnd": null, "immobilizer": "BDC" }
+    ],
+    "M6": [
+      { "chassis": "E63",  "bodyStyle": "Coupe",       "yearStart": 2005, "yearEnd": 2010, "immobilizer": "CAS3/CAS3+" },
+      { "chassis": "E64",  "bodyStyle": "Convertible", "yearStart": 2006, "yearEnd": 2010, "immobilizer": "CAS3/CAS3+" },
+      { "chassis": "F06",  "bodyStyle": "Gran Coupe",  "yearStart": 2012, "yearEnd": null, "immobilizer": "CAS4/CAS4+" },
+      { "chassis": "F12M", "bodyStyle": "Convertible", "yearStart": 2012, "yearEnd": null, "immobilizer": "CAS4/CAS4+" },
+      { "chassis": "F13M", "bodyStyle": "Coupe",       "yearStart": 2012, "yearEnd": null, "immobilizer": "CAS4/CAS4+" }
+    ],
+    "M8": [
+      { "chassis": "F91", "bodyStyle": "Convertible", "yearStart": 2020, "yearEnd": null, "immobilizer": "BDC" },
+      { "chassis": "F92", "bodyStyle": "Coupe",       "yearStart": 2020, "yearEnd": null, "immobilizer": "BDC" }
+    ],
+    "X3 M": [
+      { "chassis": "F97", "bodyStyle": null, "yearStart": 2020, "yearEnd": null, "immobilizer": "BDC" }
+    ],
+    "X4 M": [
+      { "chassis": "F98", "bodyStyle": null, "yearStart": 2020, "yearEnd": null, "immobilizer": "BDC" }
+    ],
+    "X5 M": [
+      { "chassis": "E70", "bodyStyle": null, "yearStart": 2006, "yearEnd": 2013, "immobilizer": "CAS3/CAS3+" },
+      { "chassis": "F85", "bodyStyle": null, "yearStart": 2014, "yearEnd": null, "immobilizer": "BDC" },
+      { "chassis": "F95", "bodyStyle": null, "yearStart": 2020, "yearEnd": null, "immobilizer": "BDC" }
+    ],
+    "X6 M": [
+      { "chassis": "E71", "bodyStyle": null, "yearStart": 2008, "yearEnd": 2015, "immobilizer": "CAS3/CAS3+" },
+      { "chassis": "F86", "bodyStyle": null, "yearStart": 2014, "yearEnd": null, "immobilizer": "BDC" }
+    ],
+    "X7 M": [
+      { "chassis": "F94", "bodyStyle": null, "yearStart": 2019, "yearEnd": null, "immobilizer": "BDC" }
+    ],
+    "I3": [
+      { "chassis": "i01", "bodyStyle": null, "yearStart": 2013, "yearEnd": null, "immobilizer": "BDC" }
+    ],
+    "I8": [
+      { "chassis": "i12", "bodyStyle": null,        "yearStart": 2014, "yearEnd": 2016, "immobilizer": "BDC" },
+      { "chassis": "i15", "bodyStyle": "Roadster",  "yearStart": 2016, "yearEnd": null, "immobilizer": "BDC" }
+    ],
+    "Z3": [
+      { "chassis": "E36", "bodyStyle": null,          "yearStart": 1992, "yearEnd": 1999, "immobilizer": "EWS2(99)" },
+      { "chassis": "E37", "bodyStyle": "Convertible", "yearStart": 1992, "yearEnd": 1999, "immobilizer": "EWS2(99)" }
+    ],
+    "Z4": [
+      { "chassis": "E85", "bodyStyle": "Roadster",    "yearStart": 2002, "yearEnd": 2009, "immobilizer": "EWS2" },
+      { "chassis": "E86", "bodyStyle": "Coupe",       "yearStart": 2006, "yearEnd": 2009, "immobilizer": "CAS2" },
+      { "chassis": "E89", "bodyStyle": "Roadster",    "yearStart": 2009, "yearEnd": 2016, "immobilizer": "CAS3/CAS3+" },
+      { "chassis": "G29", "bodyStyle": "Convertible", "yearStart": 2019, "yearEnd": null, "immobilizer": "BDC" }
+    ],
+    "Z8": [
+      { "chassis": "E52", "bodyStyle": "Roadster", "yearStart": 1999, "yearEnd": 2003, "immobilizer": "EWS2/EWS3" }
+    ]
+  },
+  "mini": {
+    "description": "MINI is published under BMW MINI in the source. Listed separately for clarity.",
+    "models": {
+      "COOPER": [
+        { "chassis": "R50", "bodyStyle": "Cooper",        "yearStart": 2000, "yearEnd": 2006, "immobilizer": "EWS" },
+        { "chassis": "R52", "bodyStyle": "Convertible",   "yearStart": 2002, "yearEnd": 2008, "immobilizer": "EWS/CAS" },
+        { "chassis": "R53", "bodyStyle": "Cooper S",      "yearStart": 2000, "yearEnd": 2006, "immobilizer": "EWS/CAS" },
+        { "chassis": "R54", "bodyStyle": "Clubman",       "yearStart": 2015, "yearEnd": null, "immobilizer": "BDC" },
+        { "chassis": "R55", "bodyStyle": "Clubman",       "yearStart": 2007, "yearEnd": 2014, "immobilizer": "CAS3/CAS3+" },
+        { "chassis": "R56", "bodyStyle": null,            "yearStart": 2005, "yearEnd": 2012, "immobilizer": "CAS3/CAS3+" },
+        { "chassis": "R57", "bodyStyle": "Convertible",   "yearStart": 2010, "yearEnd": 2015, "immobilizer": "CAS3" },
+        { "chassis": "R57", "bodyStyle": "Cabrio",        "yearStart": 2013, "yearEnd": null, "immobilizer": "CAS3" },
+        { "chassis": "R58", "bodyStyle": "Coupe/Roadster","yearStart": 2012, "yearEnd": 2019, "immobilizer": "CAS3" },
+        { "chassis": "R60", "bodyStyle": "Countryman",    "yearStart": 2010, "yearEnd": 2017, "immobilizer": "CAS3" },
+        { "chassis": "R61", "bodyStyle": "Paceman",       "yearStart": 2013, "yearEnd": null, "immobilizer": "CAS3" },
+        { "chassis": "F54", "bodyStyle": "Clubman",       "yearStart": 2013, "yearEnd": 2019, "immobilizer": "BDC" },
+        { "chassis": "F55", "bodyStyle": null,            "yearStart": 2013, "yearEnd": 2019, "immobilizer": "BDC" },
+        { "chassis": "F56", "bodyStyle": null,            "yearStart": 2013, "yearEnd": 2019, "immobilizer": "BDC" },
+        { "chassis": "F60", "bodyStyle": "Countryman",    "yearStart": 2015, "yearEnd": 2019, "immobilizer": "BDC" }
+      ]
+    }
+  }
+}
