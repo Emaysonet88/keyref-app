@@ -10,22 +10,22 @@ import { useEffect, useRef, useState } from 'react';
 //   1. Native BarcodeDetector on original + 90/180/270 rotations
 //   2. ZXing JS library with TRY_HARDER hint, also rotated
 //
-// IMAGE LOADING (Session 6 v6) uses a robust pipeline:
-//   1. createImageBitmap() — modern, handles more formats than <img>,
-//      and is what the BarcodeDetector spec recommends
-//   2. <img> element with blob URL as fallback
-//   3. Auto-downscales images larger than 2000px on the longest side,
-//      since modern phone cameras can hit 50MP and that's overkill for
-//      barcode detection — ZXing actually does better on reasonable sizes
+// IMAGE LOADING (v6) uses createImageBitmap with EXIF-respecting orientation
+// and auto-downsamples images > 2000px on the longest side.
 //
-// Known limitation: HEIC photos (from iPhone clients) only work on iOS
-// Safari, which doesn't expose BarcodeDetector anyway. On Android Chrome,
-// HEIC files will fail with a helpful error message suggesting the client
-// re-send as JPEG.
+// CAMERA STARTUP (v7) is now optimized for speed:
+//   - No explicit resolution constraint — browser picks fastest default
+//     (usually 720p or 1080p) which is more than enough for barcodes
+//   - Non-critical setup (torch detection, continuous autofocus) is
+//     deferred until AFTER the camera UI is showing, so the locksmith
+//     doesn't stare at "Starting camera…" for a long time on slower phones
+//   - 8-second startup timeout — if the camera doesn't come up by then,
+//     show a helpful error instead of just hanging
 
 const SCAN_FORMATS = ['code_39', 'code_93', 'code_128', 'codabar', 'qr_code', 'data_matrix'];
 const VIN_PATTERN = /^[A-HJ-NPR-Z0-9]{17}$/;
 const MAX_PHOTO_DIMENSION = 2000;
+const STARTUP_TIMEOUT_MS = 8000;
 
 export function isScannerSupported() {
   return typeof window !== 'undefined' && 'BarcodeDetector' in window;
@@ -40,6 +40,7 @@ export default function VinScannerModal({ onScan, onClose }) {
   const cameraInputRef  = useRef(null);
   const galleryInputRef = useRef(null);
   const cancelledRef    = useRef(false);
+  const startupTimerRef = useRef(null);
 
   const [status,         setStatus]         = useState('starting');
   const [errorMsg,       setErrorMsg]       = useState('');
@@ -49,6 +50,19 @@ export default function VinScannerModal({ onScan, onClose }) {
 
   useEffect(() => {
     cancelledRef.current = false;
+
+    // Startup timeout — protects against hanging getUserMedia on misbehaving devices
+    startupTimerRef.current = setTimeout(() => {
+      if (cancelledRef.current) return;
+      // Only fire if we never made it to 'scanning'
+      setStatus(curr => {
+        if (curr === 'starting') {
+          setErrorMsg('Camera is taking longer than expected to start. Close and try again, or check if another app is using the camera.');
+          return 'error';
+        }
+        return curr;
+      });
+    }, STARTUP_TIMEOUT_MS);
 
     async function start() {
       if (!isScannerSupported()) {
@@ -66,12 +80,12 @@ export default function VinScannerModal({ onScan, onClose }) {
       }
 
       try {
+        // Minimal constraints — let the browser pick the fastest available
+        // configuration. Default is usually 720p which is plenty for barcodes.
+        // Earlier versions explicitly requested 1920x1080 which made some
+        // Android devices take 5-10 seconds to renegotiate.
         const stream = await navigator.mediaDevices.getUserMedia({
-          video: {
-            facingMode: { ideal: 'environment' },
-            width:      { ideal: 1920 },
-            height:     { ideal: 1080 },
-          },
+          video: { facingMode: { ideal: 'environment' } },
           audio: false,
         });
 
@@ -84,23 +98,46 @@ export default function VinScannerModal({ onScan, onClose }) {
         const track = stream.getVideoTracks()[0];
         trackRef.current = track;
 
-        try {
-          const caps = track.getCapabilities ? track.getCapabilities() : {};
-          if (caps.torch === true) setTorchSupported(true);
-          if (caps.focusMode && caps.focusMode.includes('continuous')) {
-            try {
-              await track.applyConstraints({ advanced: [{ focusMode: 'continuous' }] });
-            } catch { /* not fatal */ }
-          }
-        } catch { /* getCapabilities not implemented */ }
-
         const video = videoRef.current;
         if (!video) return;
         video.srcObject = stream;
-        await video.play();
+
+        // Don't await play() — it can sometimes hang on older Android browsers.
+        // The video element has autoPlay anyway, so it'll start on its own.
+        video.play().catch(() => { /* autoplay handles it */ });
+
+        // Camera is up — clear the startup timeout and show the UI immediately
+        if (startupTimerRef.current) {
+          clearTimeout(startupTimerRef.current);
+          startupTimerRef.current = null;
+        }
         setStatus('scanning');
         scanLoop();
+
+        // ── Deferred capability setup ───────────────────────────────────
+        // Apply continuous autofocus and detect torch support AFTER the UI is
+        // showing. These are non-critical, and on some devices they can take
+        // a noticeable amount of time. Doing them here means the locksmith
+        // sees the camera feed immediately.
+        setTimeout(() => {
+          if (cancelledRef.current || !trackRef.current) return;
+          try {
+            const caps = trackRef.current.getCapabilities
+              ? trackRef.current.getCapabilities()
+              : {};
+            if (caps.torch === true) setTorchSupported(true);
+            if (caps.focusMode && caps.focusMode.includes('continuous')) {
+              trackRef.current
+                .applyConstraints({ advanced: [{ focusMode: 'continuous' }] })
+                .catch(() => { /* not fatal */ });
+            }
+          } catch { /* getCapabilities not implemented */ }
+        }, 200);
       } catch (e) {
+        if (startupTimerRef.current) {
+          clearTimeout(startupTimerRef.current);
+          startupTimerRef.current = null;
+        }
         setStatus('error');
         if (e.name === 'NotAllowedError' || e.name === 'SecurityError') {
           setErrorMsg('Camera permission denied. Enable camera access for this site in your browser settings.');
@@ -137,6 +174,10 @@ export default function VinScannerModal({ onScan, onClose }) {
       if (rafRef.current) {
         cancelAnimationFrame(rafRef.current);
         rafRef.current = null;
+      }
+      if (startupTimerRef.current) {
+        clearTimeout(startupTimerRef.current);
+        startupTimerRef.current = null;
       }
       if (streamRef.current) {
         streamRef.current.getTracks().forEach(t => t.stop());
@@ -211,7 +252,6 @@ export default function VinScannerModal({ onScan, onClose }) {
       setErrorMsg(msg);
       setTimeout(() => setErrorMsg(curr => curr === msg ? '' : curr), 5000);
     } finally {
-      // Close ImageBitmap if applicable (frees memory immediately)
       if (source && typeof source.close === 'function') {
         try { source.close(); } catch { /* noop */ }
       }
@@ -221,6 +261,7 @@ export default function VinScannerModal({ onScan, onClose }) {
 
   function stopAllExternal() {
     if (rafRef.current) cancelAnimationFrame(rafRef.current);
+    if (startupTimerRef.current) clearTimeout(startupTimerRef.current);
     if (streamRef.current) {
       streamRef.current.getTracks().forEach(t => t.stop());
       streamRef.current = null;
@@ -326,27 +367,18 @@ export default function VinScannerModal({ onScan, onClose }) {
 }
 
 // ── Image loading helpers ──────────────────────────────────────────────────
-// Robust pipeline: try createImageBitmap first (modern, broader format
-// support), fall back to <img>+blob URL for older browsers.
 
 async function loadImageFromFile(file) {
   if (typeof createImageBitmap === 'function') {
     try {
-      // imageOrientation: 'from-image' applies EXIF rotation so portrait
-      // photos come in correctly oriented (matters for VIN photos taken
-      // hand-held).
       return await createImageBitmap(file, { imageOrientation: 'from-image' });
-    } catch (e) {
-      // createImageBitmap failed — try the fallback path. Some browsers
-      // don't support the imageOrientation option, so try once more without it.
+    } catch {
       try {
         return await createImageBitmap(file);
       } catch { /* fall through to <img> */ }
     }
   }
 
-  // Fallback: standard Image element. Works on older browsers but doesn't
-  // support HEIC on Android.
   return new Promise((resolve, reject) => {
     const url = URL.createObjectURL(file);
     const img = new Image();
@@ -365,7 +397,6 @@ async function loadImageFromFile(file) {
   });
 }
 
-// Produce a helpful, locksmith-friendly error message from a load failure.
 function formatLoadError(e, file) {
   const type = (file.type || '').toLowerCase();
   const name = (file.name || '').toLowerCase();
@@ -381,9 +412,6 @@ function formatLoadError(e, file) {
   return 'Could not load the image. It may be in an unsupported format or corrupted. Try a different photo or re-save it as JPEG.';
 }
 
-// Downsample very large images to keep barcode detection fast and reliable.
-// ZXing in particular has trouble with 12MP+ images and works better on
-// reasonable sizes. The barcode itself only needs ~300px of width to decode.
 async function downsampleIfNeeded(source) {
   const w = source.naturalWidth  || source.width;
   const h = source.naturalHeight || source.height;
@@ -400,7 +428,6 @@ async function downsampleIfNeeded(source) {
   canvas.height = newH;
   canvas.getContext('2d').drawImage(source, 0, 0, newW, newH);
 
-  // Close the original ImageBitmap to free memory; the canvas is now our source
   if (typeof source.close === 'function') {
     try { source.close(); } catch { /* noop */ }
   }
@@ -486,7 +513,6 @@ async function detectVinZxingRotations(source) {
 // ── Canvas helpers ─────────────────────────────────────────────────────────
 
 function sourceToCanvas(source) {
-  // If it's already a canvas, return it as-is
   if (source instanceof HTMLCanvasElement) return source;
 
   const canvas = document.createElement('canvas');
