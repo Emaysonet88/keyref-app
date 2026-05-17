@@ -1,23 +1,16 @@
 import { useState, useMemo } from 'react';
+import { decodeVin } from '../search-utils';
 import { getIgnitionPrompt } from '../utils/ignition';
 import { searchDatabase, getAvailableYears, MIN_YEAR, MAX_YEAR } from '../utils/db';
-import { smartDecodeVin, fuzzyMatch } from '../utils/vinDecode';
 import ResultCard from './ResultCard';
 import RecentList from './RecentList';
 import SavedList from './SavedList';
-import VinScannerModal, { isScannerSupported } from './VinScannerModal';
 
 // ── VehicleLookup ────────────────────────────────────────────────────────────
 // The Year/Make/Model flow. Owns VIN decode state and the loading flag for
 // the lookup itself; everything else (form fields, inventory data, saved &
 // recent hooks) is passed in by the orchestrator so other modes can populate
 // the form when the user clicks a search result.
-//
-// SESSION 6 ADDITIONS:
-//   - Mobile camera scanner (BarcodeDetector API) — Scan VIN button
-//   - Smart async decoder: cache → NHTSA → local fallback
-//   - Model auto-match via fuzzyMatch against the inventory index
-//   - Decoded-but-not-in-DB vehicles pushed to Recents with result: null
 export default function VehicleLookup({
   form, inventory, lookup, savedHook, recentHook, styles,
 }) {
@@ -25,99 +18,40 @@ export default function VehicleLookup({
   const { makes, models, currentMakeData, makesIndex, error: inventoryError } = inventory;
   const { result, vehicle, setResult, setVehicle } = lookup;
 
-  const [vinInput,     setVinInput]     = useState('');
-  const [vinFlash,     setVinFlash]     = useState('');
-  const [error,        setError]        = useState('');
-  const [loading,      setLoading]      = useState(false);
-  const [decoding,     setDecoding]     = useState(false);
-  const [scannerOpen,  setScannerOpen]  = useState(false);
+  const [vinInput,    setVinInput]    = useState('');
+  const [vinFlash,    setVinFlash]    = useState('');
+  const [error,       setError]       = useState('');
+  const [loading,     setLoading]     = useState(false);
 
-  const displayError    = error || inventoryError;
-  const canLookup       = year && make && model && !loading && makesIndex;
-  const isSaved         = savedHook.isSaved(vehicle);
-  const ignitionPrompt  = useMemo(() => getIgnitionPrompt(models, model), [models, model]);
-  const scannerAvailable = isScannerSupported();
+  const displayError = error || inventoryError;
+  const canLookup    = year && make && model && !loading && makesIndex;
+  const isSaved      = savedHook.isSaved(vehicle);
+  const ignitionPrompt = useMemo(() => getIgnitionPrompt(models, model), [models, model]);
 
-  // ── VIN decode (async smart decoder) ────────────────────────────────────
-  async function applyVin(rawVin) {
-    const vin = (rawVin || vinInput).trim().toUpperCase();
-    if (vin.length < 10) {
-      flash('Invalid VIN — must be at least 10 chars', 2500);
+  // ── VIN decode ──────────────────────────────────────────────────────────
+  function applyVin() {
+    const decoded = decodeVin(vinInput);
+    if (!decoded) {
+      setVinFlash('Invalid VIN — must be at least 10 chars');
+      setTimeout(() => setVinFlash(''), 2500);
       return;
     }
-
-    setDecoding(true);
-    setVinFlash('Decoding…');
-
-    try {
-      const decoded = await smartDecodeVin(vin);
-      if (!decoded || (!decoded.year && !decoded.make)) {
-        flash('Could not decode this VIN', 2500);
-        return;
+    setYear(String(decoded.year));
+    let msg = `Year: ${decoded.year}`;
+    if (decoded.make) {
+      const matched = makes.find(m => m.toLowerCase() === decoded.make.toLowerCase());
+      if (matched) {
+        setMake(matched);
+        msg = `Year ${decoded.year}, Make ${matched}`;
+      } else {
+        msg = `Year ${decoded.year} (make ${decoded.make} not in DB)`;
       }
-
-      if (decoded.year) setYear(String(decoded.year));
-
-      let matchedMake = null;
-      if (decoded.make) {
-        matchedMake = fuzzyMatch(decoded.make, makes);
-        if (matchedMake) setMake(matchedMake);
-      }
-
-      let matchedModel = null;
-      if (decoded.model && matchedMake && makesIndex?.[matchedMake]?.models) {
-        matchedModel = fuzzyMatch(decoded.model, makesIndex[matchedMake].models);
-        if (matchedModel) setModel(matchedModel);
-      }
-
-      // ── Push to Recents when we got useful YMM but inventory has no match.
-      // This keeps a persistent record of "what VIN did I scan, and what was
-      // it?" — even though the locksmith couldn't run a real lookup. They
-      // can click the recent entry later to re-fill the form.
-      const hasFullMatch = matchedMake && (matchedModel || !decoded.model);
-      if (!hasFullMatch && (decoded.year || decoded.make)) {
-        recentHook.pushRecent(
-          {
-            year:  decoded.year ? String(decoded.year) : '',
-            make:  matchedMake || decoded.make  || '',
-            model: matchedModel || decoded.model || '',
-            vin,
-          },
-          null, // no key data — vehicle not in our database
-        );
-      }
-
-      // Compose flash message
-      const parts = [];
-      if (decoded.year) parts.push(decoded.year);
-      if (matchedMake) parts.push(matchedMake);
-      else if (decoded.make) parts.push(`${decoded.make}?`);
-      if (matchedModel) parts.push(matchedModel);
-      else if (decoded.model) parts.push(`${decoded.model}?`);
-
-      const sourceLabel = decoded.source === 'nhtsa' ? 'NHTSA'
-                        : decoded.source === 'cache' ? 'cache'
-                        : 'local';
-      flash(`${parts.join(' ')} · ${sourceLabel}`, 4000);
-      setVinInput('');
-    } catch (e) {
-      console.error('VIN decode error:', e);
-      flash('Decode error', 2500);
-    } finally {
-      setDecoding(false);
+    } else {
+      msg = `Year ${decoded.year} (make not detected)`;
     }
-  }
-
-  function flash(msg, ms) {
     setVinFlash(msg);
-    if (ms) setTimeout(() => setVinFlash(curr => curr === msg ? '' : curr), ms);
-  }
-
-  // ── Scanner handlers ────────────────────────────────────────────────────
-  function handleScanResult(vin) {
-    setScannerOpen(false);
-    setVinInput(vin);
-    applyVin(vin);
+    setTimeout(() => setVinFlash(''), 2500);
+    setVinInput('');
   }
 
   // ── Lookup ──────────────────────────────────────────────────────────────
@@ -172,38 +106,19 @@ export default function VehicleLookup({
           <span style={styles.labelBar} />Vehicle Lookup
         </div>
 
-        {/* ── Scan VIN button (mobile-only, feature-detected) ───────── */}
-        {scannerAvailable && (
-          <button
-            type="button"
-            style={scanButtonStyle}
-            onClick={() => setScannerOpen(true)}
-            disabled={decoding || loading}
-            aria-label="Open camera to scan VIN barcode"
-          >
-            <span aria-hidden="true" style={{ fontSize: 18, lineHeight: 1 }}>📷</span>
-            <span>Scan VIN</span>
-          </button>
-        )}
-
-        {/* ── VIN paste row ─────────────────────────────────────────── */}
+        {/* ── VIN decode row ──────────────────────────────────────────── */}
         <div style={styles.vinRow}>
           <input
             type="text"
             value={vinInput}
             onChange={e => setVinInput(e.target.value.toUpperCase().slice(0, 17))}
-            placeholder="Paste VIN to auto-fill"
+            placeholder="Paste VIN to auto-fill year + make"
             style={styles.vinInput}
             maxLength={17}
             aria-label="Vehicle identification number"
-            disabled={decoding}
           />
-          <button
-            style={styles.vinBtn}
-            onClick={() => applyVin()}
-            disabled={vinInput.length < 10 || decoding}
-          >
-            {decoding ? '…' : 'Decode'}
+          <button style={styles.vinBtn} onClick={applyVin} disabled={vinInput.length < 10}>
+            Decode
           </button>
         </div>
         {vinFlash && <div style={styles.vinFlash} role="status">✓ {vinFlash}</div>}
@@ -322,33 +237,6 @@ export default function VehicleLookup({
         onCommitNote={savedHook.commitNote}
         styles={styles}
       />
-
-      {scannerOpen && (
-        <VinScannerModal
-          onScan={handleScanResult}
-          onClose={() => setScannerOpen(false)}
-        />
-      )}
     </>
   );
 }
-
-// ── Local style for Scan VIN button ────────────────────────────────────────
-const scanButtonStyle = {
-  width: '100%',
-  padding: '14px 16px',
-  marginBottom: 10,
-  background: 'var(--accent, #2563eb)',
-  color: 'var(--accent-fg, #ffffff)',
-  border: 'none',
-  borderRadius: 'var(--radius, 8px)',
-  fontSize: 15,
-  fontWeight: 600,
-  letterSpacing: 0.3,
-  cursor: 'pointer',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  gap: 10,
-  WebkitTapHighlightColor: 'transparent',
-};
