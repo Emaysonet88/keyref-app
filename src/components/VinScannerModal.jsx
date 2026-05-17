@@ -2,18 +2,23 @@ import { useEffect, useRef, useState } from 'react';
 
 // ── VinScannerModal ────────────────────────────────────────────────────────
 // Full-screen camera overlay for scanning a VIN barcode.
-// Uses the native BarcodeDetector API (Chrome/Edge/Samsung Internet on Android).
 //
-// SESSION 6 v4 IMPROVEMENTS:
-//   - Multi-rotation detection on uploaded/photographed images. The native
-//     BarcodeDetector can't read codes rotated 90°+. We now try the original
-//     image, then rotated 90°, 180°, and 270° before giving up.
-//   - Separate "Take Photo" and "From Gallery" buttons so locksmith can
-//     analyze a client-sent VIN photo.
-//   - 1920x1080 ideal camera resolution, continuous autofocus, torch toggle.
+// LIVE SCANNING uses the native BarcodeDetector API on devices that support it
+// (Chrome/Edge/Samsung Internet on Android). It's fast and hardware-accelerated
+// but stumbles on real-world photos with slight angles or small barcodes.
 //
-// On a successful detection of a 17-character VIN, calls onScan(vin) and
-// closes itself. Manual close via the ✕ button or onClose handler.
+// PHOTO ANALYSIS (Take Photo / From Gallery) now uses a TWO-TIER pipeline:
+//   1. Native BarcodeDetector on the original + 90/180/270 rotations
+//   2. ZXing JS library with TRY_HARDER hint on the original + 90/180/270
+//
+// ZXing handles tilted, small, and slightly-damaged barcodes much better than
+// the native API. It's dynamically imported so the ~200KB cost only loads
+// when the locksmith actually tries to decode a photo.
+//
+// SESSION 6 v5 IMPROVEMENTS:
+//   - ZXing fallback for stubborn photos
+//   - Better progress text — locksmith sees which method is being tried
+//   - Same UI as before; the change is purely in detection robustness
 
 const SCAN_FORMATS = ['code_39', 'code_93', 'code_128', 'codabar', 'qr_code', 'data_matrix'];
 const VIN_PATTERN = /^[A-HJ-NPR-Z0-9]{17}$/;
@@ -36,7 +41,7 @@ export default function VinScannerModal({ onScan, onClose }) {
   const [errorMsg,       setErrorMsg]       = useState('');
   const [torchSupported, setTorchSupported] = useState(false);
   const [torchOn,        setTorchOn]        = useState(false);
-  const [analyzingPhoto, setAnalyzingPhoto] = useState(false);
+  const [analyzeStage,   setAnalyzeStage]   = useState(null);
 
   useEffect(() => {
     cancelledRef.current = false;
@@ -44,7 +49,7 @@ export default function VinScannerModal({ onScan, onClose }) {
     async function start() {
       if (!isScannerSupported()) {
         setStatus('error');
-        setErrorMsg('Your browser does not support barcode scanning. Try Chrome on Android, or paste the VIN manually.');
+        setErrorMsg('Your browser does not support live barcode scanning. Try Chrome on Android, or paste the VIN manually.');
         return;
       }
 
@@ -83,7 +88,7 @@ export default function VinScannerModal({ onScan, onClose }) {
               await track.applyConstraints({ advanced: [{ focusMode: 'continuous' }] });
             } catch { /* not fatal */ }
           }
-        } catch { /* getCapabilities not implemented — continue */ }
+        } catch { /* getCapabilities not implemented */ }
 
         const video = videoRef.current;
         if (!video) return;
@@ -112,19 +117,15 @@ export default function VinScannerModal({ onScan, onClose }) {
         return;
       }
       try {
-        const vin = await detectVinIn(video, detector);
+        const vin = await detectVinNative(video, detector);
         if (vin) {
-          if (typeof navigator !== 'undefined' && navigator.vibrate) {
-            navigator.vibrate(80);
-          }
+          if (typeof navigator !== 'undefined' && navigator.vibrate) navigator.vibrate(80);
           stopAll();
           cancelledRef.current = true;
           onScan(vin);
           return;
         }
-      } catch {
-        // detect() can throw transient errors — keep looping
-      }
+      } catch { /* transient errors — keep looping */ }
       rafRef.current = requestAnimationFrame(scanLoop);
     }
 
@@ -141,7 +142,6 @@ export default function VinScannerModal({ onScan, onClose }) {
     }
 
     start();
-
     return () => {
       cancelledRef.current = true;
       stopAll();
@@ -161,16 +161,15 @@ export default function VinScannerModal({ onScan, onClose }) {
     }
   }
 
-  // ── Photo analysis (camera OR gallery) with rotation fallback ───────────
+  // ── Photo analysis pipeline (Take Photo / From Gallery) ──────────────────
   async function handlePhotoSelected(event) {
     const file = event.target.files?.[0];
     event.target.value = '';
     if (!file) return;
 
-    setAnalyzingPhoto(true);
     setErrorMsg('');
-
     const url = URL.createObjectURL(file);
+
     try {
       const img = new Image();
       img.src = url;
@@ -179,21 +178,28 @@ export default function VinScannerModal({ onScan, onClose }) {
         img.onerror = () => reject(new Error('Could not load image'));
       });
 
-      const vin = await detectVinInImageWithRotations(img, detectorRef.current);
+      // ── Stage 1: native BarcodeDetector across rotations ───────────────
+      setAnalyzeStage('native');
+      let vin = await detectVinNativeRotations(img, detectorRef.current);
+
+      // ── Stage 2: ZXing fallback if native failed ───────────────────────
+      if (!vin) {
+        setAnalyzeStage('zxing');
+        vin = await detectVinZxingRotations(img);
+      }
+
       if (vin) {
-        if (typeof navigator !== 'undefined' && navigator.vibrate) {
-          navigator.vibrate(80);
-        }
+        if (typeof navigator !== 'undefined' && navigator.vibrate) navigator.vibrate(80);
         stopAllExternal();
         cancelledRef.current = true;
         onScan(vin);
         return;
       }
 
-      setErrorMsg('No VIN barcode found. Try: (1) a tighter shot of just the barcode, (2) better lighting, (3) less reflection. We tried multiple rotations.');
+      setErrorMsg('No VIN barcode found, even after trying both decoders and all rotations. Tips: (1) crop tight to just the barcode, (2) ensure even lighting, (3) avoid glare, (4) hold steady & in focus.');
       setTimeout(() => setErrorMsg(curr =>
         curr.startsWith('No VIN barcode') ? '' : curr
-      ), 7000);
+      ), 9000);
     } catch (e) {
       setErrorMsg('Could not analyze image: ' + (e.message || 'unknown error'));
       setTimeout(() => setErrorMsg(curr =>
@@ -201,7 +207,7 @@ export default function VinScannerModal({ onScan, onClose }) {
       ), 5000);
     } finally {
       URL.revokeObjectURL(url);
-      setAnalyzingPhoto(false);
+      setAnalyzeStage(null);
     }
   }
 
@@ -220,6 +226,8 @@ export default function VinScannerModal({ onScan, onClose }) {
     onClose();
   }
 
+  const analyzing = analyzeStage !== null;
+
   return (
     <div style={overlayStyle} role="dialog" aria-modal="true" aria-label="VIN Scanner">
       <div style={topBarStyle}>
@@ -233,15 +241,17 @@ export default function VinScannerModal({ onScan, onClose }) {
       </div>
 
       <div style={bottomBarStyle}>
-        {status === 'starting' && (
-          <div style={statusTextStyle}>Starting camera…</div>
-        )}
+        {status === 'starting' && <div style={statusTextStyle}>Starting camera…</div>}
 
         {status === 'scanning' && (
           <>
             <div style={statusTextStyle}>
-              {analyzingPhoto ? 'Analyzing image (trying rotations…)' : 'Aim at the VIN barcode'}
-              {!analyzingPhoto && (
+              {analyzing
+                ? (analyzeStage === 'native'
+                    ? 'Analyzing image (fast decoder)…'
+                    : 'Trying enhanced decoder (this may take a few seconds)…')
+                : 'Aim at the VIN barcode'}
+              {!analyzing && (
                 <div style={statusHintStyle}>
                   Door jamb, dashboard, or registration card
                 </div>
@@ -253,7 +263,7 @@ export default function VinScannerModal({ onScan, onClose }) {
                 type="button"
                 onClick={() => cameraInputRef.current?.click()}
                 style={secondaryBtnStyle}
-                disabled={analyzingPhoto}
+                disabled={analyzing}
               >
                 📸 Take Photo
               </button>
@@ -261,7 +271,7 @@ export default function VinScannerModal({ onScan, onClose }) {
                 type="button"
                 onClick={() => galleryInputRef.current?.click()}
                 style={secondaryBtnStyle}
-                disabled={analyzingPhoto}
+                disabled={analyzing}
               >
                 🖼️ From Gallery
               </button>
@@ -297,51 +307,106 @@ export default function VinScannerModal({ onScan, onClose }) {
               style={{ display: 'none' }}
             />
 
-            {errorMsg && (
-              <div style={photoErrorStyle} role="alert">{errorMsg}</div>
-            )}
+            {errorMsg && <div style={photoErrorStyle} role="alert">{errorMsg}</div>}
           </>
         )}
 
-        {status === 'error' && (
-          <div style={statusErrorStyle}>{errorMsg}</div>
-        )}
+        {status === 'error' && <div style={statusErrorStyle}>{errorMsg}</div>}
       </div>
     </div>
   );
 }
 
-// ── Detection helpers ──────────────────────────────────────────────────────
+// ── Native BarcodeDetector helpers ─────────────────────────────────────────
 
-// Used for live video frames — single pass, no rotation (rotation costs too
-// much in a 60fps loop and live video can be re-oriented by the user).
-async function detectVinIn(source, detector) {
+async function detectVinNative(source, detector) {
   try {
     const codes = await detector.detect(source);
     for (const c of codes) {
       const candidate = extractVinCandidate((c.rawValue || '').toUpperCase().trim());
       if (candidate && VIN_PATTERN.test(candidate)) return candidate;
     }
-  } catch { /* transient — caller will retry */ }
+  } catch { /* transient */ }
   return null;
 }
 
-// Used for still images (camera capture or gallery upload).
-// Tries original orientation first, then 90/180/270 rotations. Native
-// BarcodeDetector can't read codes that are rotated 90°+, so this dramatically
-// improves success rate on real-world photos where the sticker isn't aligned
-// to the camera's natural orientation.
-async function detectVinInImageWithRotations(img, detector) {
-  // Original orientation first (fastest path)
-  let vin = await detectVinIn(img, detector);
+async function detectVinNativeRotations(img, detector) {
+  let vin = await detectVinNative(img, detector);
   if (vin) return vin;
-
   for (const rotation of [90, 180, 270]) {
     const canvas = createRotatedCanvas(img, rotation);
-    vin = await detectVinIn(canvas, detector);
+    vin = await detectVinNative(canvas, detector);
     if (vin) return vin;
   }
   return null;
+}
+
+// ── ZXing fallback ─────────────────────────────────────────────────────────
+// Dynamically import @zxing/library so its ~200KB only loads when the user
+// actually triggers a photo decode. ZXing's TRY_HARDER mode does extensive
+// internal rotation, scaling, and noise reduction — it succeeds where the
+// native API gives up.
+
+async function detectVinZxingRotations(img) {
+  let mod;
+  try {
+    mod = await import('@zxing/library');
+  } catch (e) {
+    console.warn('ZXing failed to load:', e);
+    return null;
+  }
+
+  const {
+    MultiFormatReader,
+    BarcodeFormat,
+    DecodeHintType,
+    HTMLCanvasElementLuminanceSource,
+    HybridBinarizer,
+    BinaryBitmap,
+  } = mod;
+
+  const hints = new Map();
+  hints.set(DecodeHintType.TRY_HARDER, true);
+  hints.set(DecodeHintType.POSSIBLE_FORMATS, [
+    BarcodeFormat.CODE_39,
+    BarcodeFormat.CODE_93,
+    BarcodeFormat.CODE_128,
+    BarcodeFormat.CODABAR,
+    BarcodeFormat.QR_CODE,
+    BarcodeFormat.DATA_MATRIX,
+  ]);
+
+  const reader = new MultiFormatReader();
+  reader.setHints(hints);
+
+  for (const rotation of [0, 90, 180, 270]) {
+    const canvas = rotation === 0 ? imgToCanvas(img) : createRotatedCanvas(img, rotation);
+    try {
+      const luminance = new HTMLCanvasElementLuminanceSource(canvas);
+      const binary = new BinaryBitmap(new HybridBinarizer(luminance));
+      const result = reader.decode(binary);
+      const text = (result?.getText() || '').toUpperCase().trim();
+      const candidate = extractVinCandidate(text);
+      if (candidate && VIN_PATTERN.test(candidate)) return candidate;
+    } catch {
+      // ZXing throws when nothing's found — keep trying rotations
+    } finally {
+      try { reader.reset(); } catch { /* noop */ }
+    }
+  }
+  return null;
+}
+
+// ── Canvas helpers ─────────────────────────────────────────────────────────
+
+function imgToCanvas(img) {
+  const canvas = document.createElement('canvas');
+  const w = img.naturalWidth  || img.width;
+  const h = img.naturalHeight || img.height;
+  canvas.width  = w;
+  canvas.height = h;
+  canvas.getContext('2d').drawImage(img, 0, 0);
+  return canvas;
 }
 
 function createRotatedCanvas(img, degrees) {
@@ -373,21 +438,13 @@ function extractVinCandidate(raw) {
 // ── Styles ─────────────────────────────────────────────────────────────────
 
 const overlayStyle = {
-  position: 'fixed',
-  inset: 0,
-  zIndex: 9999,
-  background: '#000',
-  display: 'flex',
-  flexDirection: 'column',
-  color: '#fff',
+  position: 'fixed', inset: 0, zIndex: 9999, background: '#000',
+  display: 'flex', flexDirection: 'column', color: '#fff',
 };
 
 const topBarStyle = {
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'space-between',
-  padding: '14px 18px',
-  paddingTop: 'max(14px, env(safe-area-inset-top))',
+  display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+  padding: '14px 18px', paddingTop: 'max(14px, env(safe-area-inset-top))',
   background: 'rgba(0,0,0,0.85)',
   borderBottom: '1px solid rgba(255,255,255,0.1)',
 };
@@ -395,10 +452,9 @@ const topBarStyle = {
 const topTitleStyle = { fontSize: 16, fontWeight: 600, letterSpacing: 0.3 };
 
 const closeBtnStyle = {
-  background: 'transparent',
-  border: '1px solid rgba(255,255,255,0.3)',
-  color: '#fff',
-  width: 36, height: 36, borderRadius: 18, fontSize: 16, cursor: 'pointer',
+  background: 'transparent', border: '1px solid rgba(255,255,255,0.3)',
+  color: '#fff', width: 36, height: 36, borderRadius: 18,
+  fontSize: 16, cursor: 'pointer',
   display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 0,
 };
 
@@ -424,15 +480,13 @@ const bottomBarStyle = {
   borderTop: '1px solid rgba(255,255,255,0.1)', textAlign: 'center',
 };
 
-const statusTextStyle  = { fontSize: 15, lineHeight: 1.5, marginBottom: 12 };
-const statusHintStyle  = { opacity: 0.65, fontSize: 13, marginTop: 4 };
-const buttonRowStyle   = { display: 'flex', gap: 8, justifyContent: 'center', flexWrap: 'wrap' };
+const statusTextStyle = { fontSize: 15, lineHeight: 1.5, marginBottom: 12 };
+const statusHintStyle = { opacity: 0.65, fontSize: 13, marginTop: 4 };
+const buttonRowStyle  = { display: 'flex', gap: 8, justifyContent: 'center', flexWrap: 'wrap' };
 
 const secondaryBtnStyle = {
-  background: 'transparent',
-  border: '1px solid rgba(255,255,255,0.3)',
-  color: '#fff',
-  padding: '10px 14px', borderRadius: 8,
+  background: 'transparent', border: '1px solid rgba(255,255,255,0.3)',
+  color: '#fff', padding: '10px 14px', borderRadius: 8,
   fontSize: 14, fontWeight: 500, cursor: 'pointer',
   WebkitTapHighlightColor: 'transparent', whiteSpace: 'nowrap',
 };

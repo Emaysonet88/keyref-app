@@ -9,22 +9,16 @@ import SupplementalInfo from './SupplementalInfo';
 import VinScannerModal, { isScannerSupported } from './VinScannerModal';
 
 // ── VehicleLookup ────────────────────────────────────────────────────────────
-// The Year/Make/Model flow. Owns VIN decode state and the loading flag for
-// the lookup itself; everything else (form fields, inventory data, saved &
-// recent hooks) is passed in by the orchestrator so other modes can populate
-// the form when the user clicks a search result.
 //
 // SESSION 6 FEATURES:
-//   - Mobile camera scanner (BarcodeDetector API) — Scan VIN button
+//   - Mobile camera scanner (BarcodeDetector API) + ZXing fallback for photos
 //   - Smart async decoder: cache → NHTSA → local fallback
-//   - Safe model auto-match: only auto-fills when exactly ONE inventory
-//     variant matches. Ambiguous matches leave the dropdown empty.
-//   - PERSISTENT scanned-VIN banner: stays visible after a successful decode
-//     until manually dismissed or replaced by the next scan. Locksmith sees
-//     VIN + YMM + source at a glance while working the job.
-//   - Transient vinFlash: errors and progress messages only, auto-dismiss
-//   - Stale-error clearing: form errors dismiss when the user edits the form
-//   - SupplementalInfo panel: extra data (BMW chassis/immobilizer)
+//   - Safe model auto-match: only auto-fills when exactly ONE variant matches
+//   - PERSISTENT scanned-VIN banner stays until dismissed or replaced
+//   - SMART MODEL DROPDOWN: when VIN tells us "ACCORD", dropdown shows only
+//     Accord variants by default. "Show all" link to expand back to full list.
+//   - Stale-error clearing when form fields change
+//   - SupplementalInfo panel (BMW chassis/immobilizer)
 export default function VehicleLookup({
   form, inventory, lookup, savedHook, recentHook, styles,
 }) {
@@ -33,8 +27,10 @@ export default function VehicleLookup({
   const { result, vehicle, setResult, setVehicle } = lookup;
 
   const [vinInput,     setVinInput]     = useState('');
-  const [vinFlash,     setVinFlash]     = useState('');     // transient (errors / progress)
-  const [scannedInfo,  setScannedInfo]  = useState(null);   // persistent (last successful decode)
+  const [vinFlash,     setVinFlash]     = useState('');     // transient
+  const [scannedInfo,  setScannedInfo]  = useState(null);   // persistent
+  const [modelHint,    setModelHint]    = useState(null);   // base name from VIN, e.g. "ACCORD"
+  const [showAllModels,setShowAllModels]= useState(false);
   const [error,        setError]        = useState('');
   const [loading,      setLoading]      = useState(false);
   const [decoding,     setDecoding]     = useState(false);
@@ -46,12 +42,47 @@ export default function VehicleLookup({
   const ignitionPrompt  = useMemo(() => getIgnitionPrompt(models, model), [models, model]);
   const scannerAvailable = isScannerSupported();
 
+  // ── Filtered model list ─────────────────────────────────────────────────
+  // If we have a hint from the VIN decoder AND the locksmith hasn't tapped
+  // "Show all", filter the dropdown to variants that contain the hint string.
+  // We use the SAME normalization as findCandidates so the filter logic is
+  // consistent with the auto-match logic.
+  const filteredModels = useMemo(() => {
+    if (!modelHint || showAllModels) return models;
+
+    const norm = s => String(s).toUpperCase().replace(/[\s\-_/.]/g, '');
+    const target = norm(modelHint);
+
+    const matches = models.filter(m => {
+      const n = norm(m);
+      return n.includes(target) || target.includes(n);
+    });
+
+    // Safety: if filter would hide everything, show everything (the inventory
+    // genuinely doesn't carry this base model — show the full list so the
+    // locksmith can still find something close).
+    return matches.length > 0 ? matches : models;
+  }, [models, modelHint, showAllModels]);
+
+  const isFiltered = modelHint && !showAllModels && filteredModels.length < models.length;
+  const hiddenCount = models.length - filteredModels.length;
+
   useEffect(() => {
     if (error) setError('');
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [year, make, model]);
 
-  // ── VIN decode (async smart decoder) ────────────────────────────────────
+  // Clear the model hint if the locksmith manually changes the make — the
+  // VIN-derived hint no longer applies to a different make's model list.
+  useEffect(() => {
+    if (modelHint && scannedInfo && make.toUpperCase() !== (scannedInfo.make || '').toUpperCase()) {
+      setModelHint(null);
+      setShowAllModels(false);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [make]);
+
+  // ── VIN decode ──────────────────────────────────────────────────────────
   async function applyVin(rawVin) {
     const vin = (rawVin || vinInput).trim().toUpperCase();
     if (vin.length < 10) {
@@ -71,14 +102,12 @@ export default function VehicleLookup({
 
       if (decoded.year) setYear(String(decoded.year));
 
-      // Make matching: exact-or-unambiguous only
       let matchedMake = null;
       if (decoded.make) {
         matchedMake = fuzzyMatch(decoded.make, makes);
         if (matchedMake) setMake(matchedMake);
       }
 
-      // Model matching: only auto-fill if EXACTLY one variant matches.
       let matchedModel = null;
       let modelCandidates = [];
       if (decoded.model && matchedMake && makesIndex?.[matchedMake]?.models) {
@@ -89,7 +118,15 @@ export default function VehicleLookup({
         }
       }
 
-      // Recents push: only on GENUINE database miss
+      // Set the hint regardless of whether we auto-matched. Even if we
+      // auto-picked one, the hint lets us keep the dropdown filtered to
+      // related variants — useful if the locksmith wants to switch to
+      // "ACCORD HYBRID W/ PROX" without scrolling past every Civic.
+      if (decoded.model) {
+        setModelHint(decoded.model);
+        setShowAllModels(false);
+      }
+
       const vehicleMissing =
         !matchedMake ||
         (decoded.model && matchedMake && modelCandidates.length === 0);
@@ -106,14 +143,11 @@ export default function VehicleLookup({
         );
       }
 
-      // ── Set PERSISTENT scanned info ────────────────────────────────────
-      // This stays visible until the locksmith dismisses it or scans
-      // another VIN. Clears the transient "Decoding..." flash.
       setScannedInfo({
         vin,
         year:   decoded.year || null,
         make:   matchedMake  || decoded.make  || null,
-        model:  decoded.model || null, // raw NHTSA name — no variant suffix
+        model:  decoded.model || null,
         source: decoded.source,
       });
       setVinFlash('');
@@ -135,6 +169,12 @@ export default function VehicleLookup({
     setScannerOpen(false);
     setVinInput(vin);
     applyVin(vin);
+  }
+
+  function clearScannedInfo() {
+    setScannedInfo(null);
+    setModelHint(null);
+    setShowAllModels(false);
   }
 
   async function runLookup() {
@@ -178,6 +218,8 @@ export default function VehicleLookup({
     setResult(e.result);
     setVehicle({ year: e.year, make: e.make, model: e.model });
     setYear(e.year); setMake(e.make); setModel(e.model);
+    setModelHint(null);
+    setShowAllModels(false);
   }
 
   return (
@@ -220,10 +262,8 @@ export default function VehicleLookup({
           </button>
         </div>
 
-        {/* ── Transient flash (errors / progress) ─────────────────────── */}
         {vinFlash && <div style={styles.vinFlash} role="status">✓ {vinFlash}</div>}
 
-        {/* ── Persistent scanned-VIN banner ───────────────────────────── */}
         {scannedInfo && (
           <div style={scannedInfoStyle}>
             <div style={scannedInfoContent}>
@@ -238,7 +278,7 @@ export default function VehicleLookup({
             </div>
             <button
               type="button"
-              onClick={() => setScannedInfo(null)}
+              onClick={clearScannedInfo}
               style={scannedInfoDismiss}
               aria-label="Clear scanned VIN"
               title="Clear"
@@ -278,7 +318,14 @@ export default function VehicleLookup({
             </div>
           </div>
           <div style={styles.field}>
-            <div style={styles.fieldLabel}>Model</div>
+            <div style={styles.fieldLabel}>
+              Model
+              {isFiltered && (
+                <span style={modelFilterBadge}>
+                  · filtered to {modelHint}
+                </span>
+              )}
+            </div>
             <div style={styles.selWrap}>
               <select
                 style={styles.select}
@@ -288,10 +335,28 @@ export default function VehicleLookup({
                 aria-label="Vehicle model"
               >
                 <option value="">{!make ? 'Select make first' : '— Select —'}</option>
-                {models.map(m => <option key={m} value={m}>{m}</option>)}
+                {filteredModels.map(m => <option key={m} value={m}>{m}</option>)}
               </select>
               <span style={styles.selArrow}>▾</span>
             </div>
+            {isFiltered && (
+              <button
+                type="button"
+                onClick={() => setShowAllModels(true)}
+                style={showAllLinkStyle}
+              >
+                Show all {hiddenCount} other {make} models
+              </button>
+            )}
+            {modelHint && showAllModels && (
+              <button
+                type="button"
+                onClick={() => setShowAllModels(false)}
+                style={showAllLinkStyle}
+              >
+                ← Back to {modelHint} only
+              </button>
+            )}
           </div>
         </div>
 
@@ -376,8 +441,7 @@ export default function VehicleLookup({
 }
 
 // ── Local styles ───────────────────────────────────────────────────────────
-// Scan VIN button — placeholder accent fallback. Tracks the same accent color
-// as the rest of the app via CSS variables.
+
 const scanButtonStyle = {
   width: '100%',
   padding: '14px 16px',
@@ -397,8 +461,6 @@ const scanButtonStyle = {
   WebkitTapHighlightColor: 'transparent',
 };
 
-// Persistent scanned-VIN banner — uses the success-tint palette to match
-// the existing vinFlash style, but as a wider 2-line layout with dismiss.
 const scannedInfoStyle = {
   display: 'flex',
   alignItems: 'flex-start',
@@ -411,61 +473,61 @@ const scannedInfoStyle = {
 };
 
 const scannedInfoContent = {
-  flex: 1,
-  minWidth: 0,
-  display: 'flex',
-  flexDirection: 'column',
-  gap: 4,
+  flex: 1, minWidth: 0,
+  display: 'flex', flexDirection: 'column', gap: 4,
 };
 
 const scannedInfoYmm = {
-  display: 'flex',
-  alignItems: 'baseline',
-  flexWrap: 'wrap',
-  gap: 6,
+  display: 'flex', alignItems: 'baseline', flexWrap: 'wrap', gap: 6,
 };
 
 const scannedInfoCheck = {
-  fontFamily: 'monospace',
-  fontSize: 9,
-  color: 'var(--ok)',
-  letterSpacing: 2,
-  fontWeight: 600,
+  fontFamily: 'monospace', fontSize: 9,
+  color: 'var(--ok)', letterSpacing: 2, fontWeight: 600,
 };
 
 const scannedInfoYmmText = {
-  fontFamily: 'monospace',
-  fontSize: 12,
-  color: 'var(--text)',
-  fontWeight: 600,
+  fontFamily: 'monospace', fontSize: 12,
+  color: 'var(--text)', fontWeight: 600,
 };
 
 const scannedInfoSource = {
-  fontFamily: 'monospace',
-  fontSize: 10,
-  color: 'var(--mute)',
-  letterSpacing: 1,
-  textTransform: 'uppercase',
+  fontFamily: 'monospace', fontSize: 10,
+  color: 'var(--mute)', letterSpacing: 1, textTransform: 'uppercase',
 };
 
 const scannedInfoVin = {
-  fontFamily: 'monospace',
-  fontSize: 11,
+  fontFamily: 'monospace', fontSize: 11,
   color: 'var(--mute)',
-  wordBreak: 'break-all',
-  overflowWrap: 'anywhere',
+  wordBreak: 'break-all', overflowWrap: 'anywhere',
 };
 
 const scannedInfoDismiss = {
+  background: 'transparent', border: 'none',
+  color: 'var(--mute)', cursor: 'pointer',
+  fontSize: 20, lineHeight: 1, padding: '0 4px',
+  minWidth: 28, minHeight: 28, flexShrink: 0, marginTop: -2,
+};
+
+const modelFilterBadge = {
+  marginLeft: 6,
+  fontFamily: 'monospace',
+  fontSize: 9,
+  color: 'var(--ok)',
+  letterSpacing: 1,
+  fontWeight: 600,
+};
+
+const showAllLinkStyle = {
+  display: 'block',
+  marginTop: 6,
   background: 'transparent',
   border: 'none',
-  color: 'var(--mute)',
+  padding: 0,
+  fontFamily: 'monospace',
+  fontSize: 10,
+  color: 'var(--accent, #2563eb)',
+  textDecoration: 'underline',
   cursor: 'pointer',
-  fontSize: 20,
-  lineHeight: 1,
-  padding: '0 4px',
-  minWidth: 28,
-  minHeight: 28,
-  flexShrink: 0,
-  marginTop: -2,
+  letterSpacing: 0.5,
 };
