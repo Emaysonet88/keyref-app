@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { getIgnitionPrompt } from '../utils/ignition';
 import { searchDatabase, getAvailableYears, MIN_YEAR, MAX_YEAR } from '../utils/db';
 import { smartDecodeVin, fuzzyMatch, findCandidates } from '../utils/vinDecode';
@@ -17,11 +17,10 @@ import VinScannerModal, { isScannerSupported } from './VinScannerModal';
 //   - Mobile camera scanner (BarcodeDetector API) — Scan VIN button
 //   - Smart async decoder: cache → NHTSA → local fallback
 //   - Safe model auto-match: only auto-fills when exactly ONE inventory
-//     variant matches. If multiple variants match (e.g. NHTSA returns
-//     "Accord" and inventory has Regular / W/Prox / Hybrid), the model
-//     field is left empty for the locksmith to pick from the dropdown.
-//   - Genuinely-missing vehicles pushed to Recents with result: null,
-//     ambiguous matches are NOT (because the vehicle IS in the DB).
+//     variant matches. Ambiguous matches leave the dropdown empty.
+//   - Stale-error clearing: when the user changes year/make/model, any
+//     previous lookup error is dismissed so they don't see a stale message
+//     referencing the old vehicle.
 export default function VehicleLookup({
   form, inventory, lookup, savedHook, recentHook, styles,
 }) {
@@ -41,6 +40,14 @@ export default function VehicleLookup({
   const isSaved         = savedHook.isSaved(vehicle);
   const ignitionPrompt  = useMemo(() => getIgnitionPrompt(models, model), [models, model]);
   const scannerAvailable = isScannerSupported();
+
+  // ── Clear stale lookup errors when form fields change ─────────────────
+  // Otherwise a previous "No data for X" error stays visible while the
+  // user is picking a different vehicle, which is confusing.
+  useEffect(() => {
+    if (error) setError('');
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [year, make, model]);
 
   // ── VIN decode (async smart decoder) ────────────────────────────────────
   async function applyVin(rawVin) {
@@ -70,10 +77,6 @@ export default function VehicleLookup({
       }
 
       // ── Model matching: only auto-fill if EXACTLY one variant matches ──
-      // findCandidates returns all matches at the strongest tier. If more
-      // than one, that's an ambiguous case (e.g. multiple Accord variants)
-      // and we leave the model dropdown empty so the locksmith picks the
-      // correct variant manually. Wrong auto-pick is worse than no pick.
       let matchedModel = null;
       let modelCandidates = [];
       if (decoded.model && matchedMake && makesIndex?.[matchedMake]?.models) {
@@ -82,15 +85,9 @@ export default function VehicleLookup({
           matchedModel = modelCandidates[0];
           setModel(matchedModel);
         }
-        // length 0 (none in DB) or 2+ (ambiguous): don't auto-set
       }
 
       // ── Recents push: only on GENUINE database miss ────────────────────
-      // We push when the vehicle truly isn't in our inventory — either
-      // the make didn't match at all, or it matched but there are zero
-      // model candidates. Ambiguous matches (length 2+) are NOT pushed
-      // because the vehicle IS in our DB; the locksmith just needs to
-      // pick the variant.
       const vehicleMissing =
         !matchedMake ||
         (decoded.model && matchedMake && modelCandidates.length === 0);
@@ -108,10 +105,6 @@ export default function VehicleLookup({
       }
 
       // ── Flash message ──────────────────────────────────────────────────
-      // Three possible shapes for the model portion:
-      //   - matchedModel:                    show the matched name
-      //   - ambiguous (2+ candidates):       hint that user must pick
-      //   - decoded but no candidates:       show with ? marker
       const parts = [];
       if (decoded.year) parts.push(decoded.year);
       if (matchedMake) parts.push(matchedMake);
