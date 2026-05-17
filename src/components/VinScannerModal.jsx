@@ -3,25 +3,29 @@ import { useEffect, useRef, useState } from 'react';
 // ── VinScannerModal ────────────────────────────────────────────────────────
 // Full-screen camera overlay for scanning a VIN barcode.
 //
-// LIVE SCANNING uses the native BarcodeDetector API on devices that support it
-// (Chrome/Edge/Samsung Internet on Android). It's fast and hardware-accelerated
-// but stumbles on real-world photos with slight angles or small barcodes.
+// LIVE SCANNING uses the native BarcodeDetector API (Chrome/Edge/Samsung
+// Internet on Android). Fast, hardware-accelerated.
 //
-// PHOTO ANALYSIS (Take Photo / From Gallery) now uses a TWO-TIER pipeline:
-//   1. Native BarcodeDetector on the original + 90/180/270 rotations
-//   2. ZXing JS library with TRY_HARDER hint on the original + 90/180/270
+// PHOTO ANALYSIS uses a TWO-TIER pipeline:
+//   1. Native BarcodeDetector on original + 90/180/270 rotations
+//   2. ZXing JS library with TRY_HARDER hint, also rotated
 //
-// ZXing handles tilted, small, and slightly-damaged barcodes much better than
-// the native API. It's dynamically imported so the ~200KB cost only loads
-// when the locksmith actually tries to decode a photo.
+// IMAGE LOADING (Session 6 v6) uses a robust pipeline:
+//   1. createImageBitmap() — modern, handles more formats than <img>,
+//      and is what the BarcodeDetector spec recommends
+//   2. <img> element with blob URL as fallback
+//   3. Auto-downscales images larger than 2000px on the longest side,
+//      since modern phone cameras can hit 50MP and that's overkill for
+//      barcode detection — ZXing actually does better on reasonable sizes
 //
-// SESSION 6 v5 IMPROVEMENTS:
-//   - ZXing fallback for stubborn photos
-//   - Better progress text — locksmith sees which method is being tried
-//   - Same UI as before; the change is purely in detection robustness
+// Known limitation: HEIC photos (from iPhone clients) only work on iOS
+// Safari, which doesn't expose BarcodeDetector anyway. On Android Chrome,
+// HEIC files will fail with a helpful error message suggesting the client
+// re-send as JPEG.
 
 const SCAN_FORMATS = ['code_39', 'code_93', 'code_128', 'codabar', 'qr_code', 'data_matrix'];
 const VIN_PATTERN = /^[A-HJ-NPR-Z0-9]{17}$/;
+const MAX_PHOTO_DIMENSION = 2000;
 
 export function isScannerSupported() {
   return typeof window !== 'undefined' && 'BarcodeDetector' in window;
@@ -161,31 +165,34 @@ export default function VinScannerModal({ onScan, onClose }) {
     }
   }
 
-  // ── Photo analysis pipeline (Take Photo / From Gallery) ──────────────────
+  // ── Photo analysis pipeline ─────────────────────────────────────────────
   async function handlePhotoSelected(event) {
     const file = event.target.files?.[0];
     event.target.value = '';
     if (!file) return;
 
     setErrorMsg('');
-    const url = URL.createObjectURL(file);
+    setAnalyzeStage('loading');
+
+    let source;
+    try {
+      source = await loadImageFromFile(file);
+      source = await downsampleIfNeeded(source);
+    } catch (e) {
+      const friendly = formatLoadError(e, file);
+      setErrorMsg(friendly);
+      setTimeout(() => setErrorMsg(curr => curr === friendly ? '' : curr), 9000);
+      setAnalyzeStage(null);
+      return;
+    }
 
     try {
-      const img = new Image();
-      img.src = url;
-      await new Promise((resolve, reject) => {
-        img.onload  = resolve;
-        img.onerror = () => reject(new Error('Could not load image'));
-      });
-
-      // ── Stage 1: native BarcodeDetector across rotations ───────────────
       setAnalyzeStage('native');
-      let vin = await detectVinNativeRotations(img, detectorRef.current);
+      let vin = await detectVinNativeRotations(source, detectorRef.current);
 
-      // ── Stage 2: ZXing fallback if native failed ───────────────────────
       if (!vin) {
         setAnalyzeStage('zxing');
-        vin = await detectVinZxingRotations(img);
+        vin = await detectVinZxingRotations(source);
       }
 
       if (vin) {
@@ -196,17 +203,18 @@ export default function VinScannerModal({ onScan, onClose }) {
         return;
       }
 
-      setErrorMsg('No VIN barcode found, even after trying both decoders and all rotations. Tips: (1) crop tight to just the barcode, (2) ensure even lighting, (3) avoid glare, (4) hold steady & in focus.');
-      setTimeout(() => setErrorMsg(curr =>
-        curr.startsWith('No VIN barcode') ? '' : curr
-      ), 9000);
+      const msg = 'No VIN barcode found, even after trying both decoders and all rotations. Tips: crop tight to just the barcode, even lighting, no glare, hold steady.';
+      setErrorMsg(msg);
+      setTimeout(() => setErrorMsg(curr => curr === msg ? '' : curr), 9000);
     } catch (e) {
-      setErrorMsg('Could not analyze image: ' + (e.message || 'unknown error'));
-      setTimeout(() => setErrorMsg(curr =>
-        curr.startsWith('Could not analyze') ? '' : curr
-      ), 5000);
+      const msg = 'Could not analyze image: ' + (e.message || 'unknown error');
+      setErrorMsg(msg);
+      setTimeout(() => setErrorMsg(curr => curr === msg ? '' : curr), 5000);
     } finally {
-      URL.revokeObjectURL(url);
+      // Close ImageBitmap if applicable (frees memory immediately)
+      if (source && typeof source.close === 'function') {
+        try { source.close(); } catch { /* noop */ }
+      }
       setAnalyzeStage(null);
     }
   }
@@ -227,6 +235,10 @@ export default function VinScannerModal({ onScan, onClose }) {
   }
 
   const analyzing = analyzeStage !== null;
+  const progressText = !analyzing       ? 'Aim at the VIN barcode'
+                     : analyzeStage === 'loading' ? 'Loading image…'
+                     : analyzeStage === 'native'  ? 'Analyzing image (fast decoder)…'
+                                                 : 'Trying enhanced decoder (a few seconds)…';
 
   return (
     <div style={overlayStyle} role="dialog" aria-modal="true" aria-label="VIN Scanner">
@@ -246,11 +258,7 @@ export default function VinScannerModal({ onScan, onClose }) {
         {status === 'scanning' && (
           <>
             <div style={statusTextStyle}>
-              {analyzing
-                ? (analyzeStage === 'native'
-                    ? 'Analyzing image (fast decoder)…'
-                    : 'Trying enhanced decoder (this may take a few seconds)…')
-                : 'Aim at the VIN barcode'}
+              {progressText}
               {!analyzing && (
                 <div style={statusHintStyle}>
                   Door jamb, dashboard, or registration card
@@ -317,6 +325,88 @@ export default function VinScannerModal({ onScan, onClose }) {
   );
 }
 
+// ── Image loading helpers ──────────────────────────────────────────────────
+// Robust pipeline: try createImageBitmap first (modern, broader format
+// support), fall back to <img>+blob URL for older browsers.
+
+async function loadImageFromFile(file) {
+  if (typeof createImageBitmap === 'function') {
+    try {
+      // imageOrientation: 'from-image' applies EXIF rotation so portrait
+      // photos come in correctly oriented (matters for VIN photos taken
+      // hand-held).
+      return await createImageBitmap(file, { imageOrientation: 'from-image' });
+    } catch (e) {
+      // createImageBitmap failed — try the fallback path. Some browsers
+      // don't support the imageOrientation option, so try once more without it.
+      try {
+        return await createImageBitmap(file);
+      } catch { /* fall through to <img> */ }
+    }
+  }
+
+  // Fallback: standard Image element. Works on older browsers but doesn't
+  // support HEIC on Android.
+  return new Promise((resolve, reject) => {
+    const url = URL.createObjectURL(file);
+    const img = new Image();
+    img.onload = () => {
+      URL.revokeObjectURL(url);
+      resolve(img);
+    };
+    img.onerror = () => {
+      URL.revokeObjectURL(url);
+      const err = new Error('image-decode-failed');
+      err.fileType = file.type || 'unknown';
+      err.fileName = file.name || '';
+      reject(err);
+    };
+    img.src = url;
+  });
+}
+
+// Produce a helpful, locksmith-friendly error message from a load failure.
+function formatLoadError(e, file) {
+  const type = (file.type || '').toLowerCase();
+  const name = (file.name || '').toLowerCase();
+  const isHeic = type.includes('heic') || type.includes('heif')
+              || name.endsWith('.heic') || name.endsWith('.heif');
+
+  if (isHeic) {
+    return 'This is a HEIC photo (Apple format). Android can\'t decode it. Ask the client to re-send as JPEG, or open the photo in Google Photos first — it will auto-convert to JPEG.';
+  }
+  if (type && !type.startsWith('image/')) {
+    return `That file isn\'t an image (${type}). Pick a photo of the VIN barcode.`;
+  }
+  return 'Could not load the image. It may be in an unsupported format or corrupted. Try a different photo or re-save it as JPEG.';
+}
+
+// Downsample very large images to keep barcode detection fast and reliable.
+// ZXing in particular has trouble with 12MP+ images and works better on
+// reasonable sizes. The barcode itself only needs ~300px of width to decode.
+async function downsampleIfNeeded(source) {
+  const w = source.naturalWidth  || source.width;
+  const h = source.naturalHeight || source.height;
+  const longest = Math.max(w, h);
+
+  if (longest <= MAX_PHOTO_DIMENSION) return source;
+
+  const scale = MAX_PHOTO_DIMENSION / longest;
+  const newW = Math.round(w * scale);
+  const newH = Math.round(h * scale);
+
+  const canvas = document.createElement('canvas');
+  canvas.width  = newW;
+  canvas.height = newH;
+  canvas.getContext('2d').drawImage(source, 0, 0, newW, newH);
+
+  // Close the original ImageBitmap to free memory; the canvas is now our source
+  if (typeof source.close === 'function') {
+    try { source.close(); } catch { /* noop */ }
+  }
+  return canvas;
+}
+
 // ── Native BarcodeDetector helpers ─────────────────────────────────────────
 
 async function detectVinNative(source, detector) {
@@ -330,11 +420,11 @@ async function detectVinNative(source, detector) {
   return null;
 }
 
-async function detectVinNativeRotations(img, detector) {
-  let vin = await detectVinNative(img, detector);
+async function detectVinNativeRotations(source, detector) {
+  let vin = await detectVinNative(source, detector);
   if (vin) return vin;
   for (const rotation of [90, 180, 270]) {
-    const canvas = createRotatedCanvas(img, rotation);
+    const canvas = createRotatedCanvas(source, rotation);
     vin = await detectVinNative(canvas, detector);
     if (vin) return vin;
   }
@@ -342,12 +432,8 @@ async function detectVinNativeRotations(img, detector) {
 }
 
 // ── ZXing fallback ─────────────────────────────────────────────────────────
-// Dynamically import @zxing/library so its ~200KB only loads when the user
-// actually triggers a photo decode. ZXing's TRY_HARDER mode does extensive
-// internal rotation, scaling, and noise reduction — it succeeds where the
-// native API gives up.
 
-async function detectVinZxingRotations(img) {
+async function detectVinZxingRotations(source) {
   let mod;
   try {
     mod = await import('@zxing/library');
@@ -380,7 +466,7 @@ async function detectVinZxingRotations(img) {
   reader.setHints(hints);
 
   for (const rotation of [0, 90, 180, 270]) {
-    const canvas = rotation === 0 ? imgToCanvas(img) : createRotatedCanvas(img, rotation);
+    const canvas = rotation === 0 ? sourceToCanvas(source) : createRotatedCanvas(source, rotation);
     try {
       const luminance = new HTMLCanvasElementLuminanceSource(canvas);
       const binary = new BinaryBitmap(new HybridBinarizer(luminance));
@@ -399,21 +485,24 @@ async function detectVinZxingRotations(img) {
 
 // ── Canvas helpers ─────────────────────────────────────────────────────────
 
-function imgToCanvas(img) {
+function sourceToCanvas(source) {
+  // If it's already a canvas, return it as-is
+  if (source instanceof HTMLCanvasElement) return source;
+
   const canvas = document.createElement('canvas');
-  const w = img.naturalWidth  || img.width;
-  const h = img.naturalHeight || img.height;
+  const w = source.naturalWidth  || source.width;
+  const h = source.naturalHeight || source.height;
   canvas.width  = w;
   canvas.height = h;
-  canvas.getContext('2d').drawImage(img, 0, 0);
+  canvas.getContext('2d').drawImage(source, 0, 0);
   return canvas;
 }
 
-function createRotatedCanvas(img, degrees) {
+function createRotatedCanvas(source, degrees) {
   const canvas = document.createElement('canvas');
   const ctx = canvas.getContext('2d');
-  const w = img.naturalWidth  || img.width;
-  const h = img.naturalHeight || img.height;
+  const w = source.naturalWidth  || source.width;
+  const h = source.naturalHeight || source.height;
 
   if (degrees === 90 || degrees === 270) {
     canvas.width  = h;
@@ -425,7 +514,7 @@ function createRotatedCanvas(img, degrees) {
 
   ctx.translate(canvas.width / 2, canvas.height / 2);
   ctx.rotate((degrees * Math.PI) / 180);
-  ctx.drawImage(img, -w / 2, -h / 2);
+  ctx.drawImage(source, -w / 2, -h / 2);
   return canvas;
 }
 
@@ -494,9 +583,10 @@ const secondaryBtnStyle = {
 const statusErrorStyle = { fontSize: 14, lineHeight: 1.5, color: '#ff8a8a' };
 
 const photoErrorStyle = {
-  marginTop: 12, fontSize: 13, lineHeight: 1.4, color: '#ffb366',
-  padding: '8px 12px',
+  marginTop: 12, fontSize: 13, lineHeight: 1.45, color: '#ffb366',
+  padding: '10px 12px',
   background: 'rgba(255, 130, 0, 0.1)',
   border: '1px solid rgba(255, 130, 0, 0.3)',
   borderRadius: 6,
+  textAlign: 'left',
 };
