@@ -48,37 +48,63 @@ export async function smartDecodeVin(vin) {
   return null;
 }
 
+// ── Matching helpers ────────────────────────────────────────────────────────
+//
+// Two functions for matching loosely-named values (NHTSA returns "FORD" while
+// our inventory has "Ford"; NHTSA returns "Accord" while we have several
+// Accord variants).
+//
+// findCandidates() returns ALL matches at the strongest tier:
+//   - tier 1: exact normalized equality
+//   - tier 2: starts-with (either direction)
+//   - tier 3: contains (either direction)
+// Each tier is checked in order; the first tier with any hits is returned in
+// full. Empty array = no match anywhere.
+//
+// fuzzyMatch() is the safe single-match wrapper: returns the candidate if and
+// only if there's exactly one. Multiple candidates is treated as ambiguous
+// and returns null, so the caller can prompt the user to pick instead of
+// guessing wrong.
+
+const normalize = s => String(s).toLowerCase().replace(/[\s\-_/.]/g, '');
+
 /**
- * Fuzzy match a target string against a list of options.
- * Used to bridge NHTSA's naming ("FORD", "F-150") to inventory naming
- * ("Ford", "F150"). Case- and punctuation-insensitive.
- *
- * Matching tiers (first hit wins):
- *   1. Exact normalized equality
- *   2. Either string starts with the other (after normalization)
- *   3. Either string contains the other (after normalization)
- *
+ * Return ALL candidate options that match the target, at the strongest tier.
  * @param {string} target
  * @param {string[]} options
- * @returns {string|null} The matched option from the original list, or null.
+ * @returns {string[]} Array of matched options from the original list.
  */
-export function fuzzyMatch(target, options) {
-  if (!target || !Array.isArray(options) || options.length === 0) return null;
-  const norm = s => String(s).toLowerCase().replace(/[\s\-_/.]/g, '');
-  const t = norm(target);
+export function findCandidates(target, options) {
+  if (!target || !Array.isArray(options) || options.length === 0) return [];
+  const t = normalize(target);
 
-  let hit = options.find(o => norm(o) === t);
-  if (hit) return hit;
+  // Tier 1: exact normalized equality
+  let hits = options.filter(o => normalize(o) === t);
+  if (hits.length > 0) return hits;
 
-  hit = options.find(o => {
-    const n = norm(o);
+  // Tier 2: starts-with (either direction)
+  hits = options.filter(o => {
+    const n = normalize(o);
     return n.startsWith(t) || t.startsWith(n);
   });
-  if (hit) return hit;
+  if (hits.length > 0) return hits;
 
-  hit = options.find(o => {
-    const n = norm(o);
+  // Tier 3: contains (either direction)
+  hits = options.filter(o => {
+    const n = normalize(o);
     return n.includes(t) || t.includes(n);
   });
-  return hit || null;
+  return hits;
+}
+
+/**
+ * Safe single-match: returns the candidate only if exactly one matches.
+ * Returns null when there are zero matches OR multiple matches (ambiguous).
+ * @param {string} target
+ * @param {string[]} options
+ * @returns {string|null}
+ */
+export function fuzzyMatch(target, options) {
+  const candidates = findCandidates(target, options);
+  return candidates.length === 1 ? candidates[0] : null;
 }

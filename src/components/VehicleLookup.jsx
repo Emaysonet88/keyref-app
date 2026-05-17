@@ -1,7 +1,7 @@
 import { useState, useMemo } from 'react';
 import { getIgnitionPrompt } from '../utils/ignition';
 import { searchDatabase, getAvailableYears, MIN_YEAR, MAX_YEAR } from '../utils/db';
-import { smartDecodeVin, fuzzyMatch } from '../utils/vinDecode';
+import { smartDecodeVin, fuzzyMatch, findCandidates } from '../utils/vinDecode';
 import ResultCard from './ResultCard';
 import RecentList from './RecentList';
 import SavedList from './SavedList';
@@ -13,11 +13,15 @@ import VinScannerModal, { isScannerSupported } from './VinScannerModal';
 // recent hooks) is passed in by the orchestrator so other modes can populate
 // the form when the user clicks a search result.
 //
-// SESSION 6 ADDITIONS:
+// SESSION 6 FEATURES:
 //   - Mobile camera scanner (BarcodeDetector API) — Scan VIN button
 //   - Smart async decoder: cache → NHTSA → local fallback
-//   - Model auto-match via fuzzyMatch against the inventory index
-//   - Decoded-but-not-in-DB vehicles pushed to Recents with result: null
+//   - Safe model auto-match: only auto-fills when exactly ONE inventory
+//     variant matches. If multiple variants match (e.g. NHTSA returns
+//     "Accord" and inventory has Regular / W/Prox / Hybrid), the model
+//     field is left empty for the locksmith to pick from the dropdown.
+//   - Genuinely-missing vehicles pushed to Recents with result: null,
+//     ambiguous matches are NOT (because the vehicle IS in the DB).
 export default function VehicleLookup({
   form, inventory, lookup, savedHook, recentHook, styles,
 }) {
@@ -58,24 +62,40 @@ export default function VehicleLookup({
 
       if (decoded.year) setYear(String(decoded.year));
 
+      // ── Make matching: exact-or-unambiguous only ───────────────────────
       let matchedMake = null;
       if (decoded.make) {
         matchedMake = fuzzyMatch(decoded.make, makes);
         if (matchedMake) setMake(matchedMake);
       }
 
+      // ── Model matching: only auto-fill if EXACTLY one variant matches ──
+      // findCandidates returns all matches at the strongest tier. If more
+      // than one, that's an ambiguous case (e.g. multiple Accord variants)
+      // and we leave the model dropdown empty so the locksmith picks the
+      // correct variant manually. Wrong auto-pick is worse than no pick.
       let matchedModel = null;
+      let modelCandidates = [];
       if (decoded.model && matchedMake && makesIndex?.[matchedMake]?.models) {
-        matchedModel = fuzzyMatch(decoded.model, makesIndex[matchedMake].models);
-        if (matchedModel) setModel(matchedModel);
+        modelCandidates = findCandidates(decoded.model, makesIndex[matchedMake].models);
+        if (modelCandidates.length === 1) {
+          matchedModel = modelCandidates[0];
+          setModel(matchedModel);
+        }
+        // length 0 (none in DB) or 2+ (ambiguous): don't auto-set
       }
 
-      // ── Push to Recents when we got useful YMM but inventory has no match.
-      // This keeps a persistent record of "what VIN did I scan, and what was
-      // it?" — even though the locksmith couldn't run a real lookup. They
-      // can click the recent entry later to re-fill the form.
-      const hasFullMatch = matchedMake && (matchedModel || !decoded.model);
-      if (!hasFullMatch && (decoded.year || decoded.make)) {
+      // ── Recents push: only on GENUINE database miss ────────────────────
+      // We push when the vehicle truly isn't in our inventory — either
+      // the make didn't match at all, or it matched but there are zero
+      // model candidates. Ambiguous matches (length 2+) are NOT pushed
+      // because the vehicle IS in our DB; the locksmith just needs to
+      // pick the variant.
+      const vehicleMissing =
+        !matchedMake ||
+        (decoded.model && matchedMake && modelCandidates.length === 0);
+
+      if (vehicleMissing && (decoded.year || decoded.make)) {
         recentHook.pushRecent(
           {
             year:  decoded.year ? String(decoded.year) : '',
@@ -83,22 +103,34 @@ export default function VehicleLookup({
             model: matchedModel || decoded.model || '',
             vin,
           },
-          null, // no key data — vehicle not in our database
+          null,
         );
       }
 
-      // Compose flash message
+      // ── Flash message ──────────────────────────────────────────────────
+      // Three possible shapes for the model portion:
+      //   - matchedModel:                    show the matched name
+      //   - ambiguous (2+ candidates):       hint that user must pick
+      //   - decoded but no candidates:       show with ? marker
       const parts = [];
       if (decoded.year) parts.push(decoded.year);
       if (matchedMake) parts.push(matchedMake);
       else if (decoded.make) parts.push(`${decoded.make}?`);
-      if (matchedModel) parts.push(matchedModel);
-      else if (decoded.model) parts.push(`${decoded.model}?`);
+
+      let needsLongerFlash = false;
+      if (matchedModel) {
+        parts.push(matchedModel);
+      } else if (decoded.model && modelCandidates.length > 1) {
+        parts.push(`${decoded.model} — pick variant ↓`);
+        needsLongerFlash = true;
+      } else if (decoded.model) {
+        parts.push(`${decoded.model}?`);
+      }
 
       const sourceLabel = decoded.source === 'nhtsa' ? 'NHTSA'
                         : decoded.source === 'cache' ? 'cache'
                         : 'local';
-      flash(`${parts.join(' ')} · ${sourceLabel}`, 4000);
+      flash(`${parts.join(' ')} · ${sourceLabel}`, needsLongerFlash ? 8000 : 4000);
       setVinInput('');
     } catch (e) {
       console.error('VIN decode error:', e);
