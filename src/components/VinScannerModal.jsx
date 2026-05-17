@@ -2,17 +2,21 @@ import { useEffect, useRef, useState } from 'react';
 
 // ── VinScannerModal ────────────────────────────────────────────────────────
 // Full-screen camera overlay for scanning a VIN barcode.
-// Uses the native BarcodeDetector API (Chrome/Edge/Android, Safari iOS 17+).
+// Uses the native BarcodeDetector API (Chrome/Edge/Samsung Internet on Android).
+//
+// SESSION 6 v2 IMPROVEMENTS:
+//   - Higher resolution (1920x1080 ideal) — sharper bars, easier decode
+//   - Continuous autofocus via track.applyConstraints — keeps stickers in focus
+//   - Code 93 + Codabar + ITF added to format list
+//   - Torch / flashlight toggle when device supports it
+//   - "Use Photo Instead" button — falls back to a still image from the camera
+//     or gallery, which is much more reliable than live video for problematic
+//     real-world stickers
 //
 // On a successful detection of a 17-character VIN, calls onScan(vin) and
 // closes itself. Manual close via the ✕ button or onClose handler.
-//
-// VIN stickers on US vehicles since ~2000 use Code 39 barcodes, found on:
-//   - Driver's door jamb sticker
-//   - Dashboard near the windshield (visible from outside)
-//   - Vehicle registration card
 
-const SCAN_FORMATS = ['code_39', 'code_128', 'qr_code', 'data_matrix'];
+const SCAN_FORMATS = ['code_39', 'code_93', 'code_128', 'codabar', 'qr_code', 'data_matrix'];
 // VIN format: 17 chars, alphanumeric excluding I, O, Q (to avoid 1/0 confusion)
 const VIN_PATTERN = /^[A-HJ-NPR-Z0-9]{17}$/;
 
@@ -24,12 +28,17 @@ export function isScannerSupported() {
 export default function VinScannerModal({ onScan, onClose }) {
   const videoRef    = useRef(null);
   const streamRef   = useRef(null);
+  const trackRef    = useRef(null);
   const rafRef      = useRef(null);
   const detectorRef = useRef(null);
+  const fileInputRef = useRef(null);
   const cancelledRef = useRef(false);
 
-  const [status,   setStatus]   = useState('starting'); // starting | scanning | error
-  const [errorMsg, setErrorMsg] = useState('');
+  const [status,         setStatus]         = useState('starting'); // starting | scanning | error
+  const [errorMsg,       setErrorMsg]       = useState('');
+  const [torchSupported, setTorchSupported] = useState(false);
+  const [torchOn,        setTorchOn]        = useState(false);
+  const [analyzingPhoto, setAnalyzingPhoto] = useState(false);
 
   useEffect(() => {
     cancelledRef.current = false;
@@ -50,15 +59,43 @@ export default function VinScannerModal({ onScan, onClose }) {
       }
 
       try {
+        // Request a high-resolution rear camera stream. The browser will
+        // negotiate the closest match it can deliver.
         const stream = await navigator.mediaDevices.getUserMedia({
-          video: { facingMode: { ideal: 'environment' } },
+          video: {
+            facingMode: { ideal: 'environment' },
+            width:      { ideal: 1920 },
+            height:     { ideal: 1080 },
+          },
           audio: false,
         });
+
         if (cancelledRef.current) {
           stream.getTracks().forEach(t => t.stop());
           return;
         }
+
         streamRef.current = stream;
+        const track = stream.getVideoTracks()[0];
+        trackRef.current = track;
+
+        // Probe the track's capabilities for torch + continuous focus, then
+        // apply what's supported. Every applyConstraints call is wrapped
+        // because some Android browsers throw on unknown advanced keys.
+        try {
+          const caps = track.getCapabilities ? track.getCapabilities() : {};
+
+          if (caps.torch === true) {
+            setTorchSupported(true);
+          }
+
+          if (caps.focusMode && caps.focusMode.includes('continuous')) {
+            try {
+              await track.applyConstraints({ advanced: [{ focusMode: 'continuous' }] });
+            } catch { /* not fatal */ }
+          }
+        } catch { /* getCapabilities not implemented — continue */ }
+
         const video = videoRef.current;
         if (!video) return;
         video.srcObject = stream;
@@ -95,7 +132,7 @@ export default function VinScannerModal({ onScan, onClose }) {
             if (typeof navigator !== 'undefined' && navigator.vibrate) {
               navigator.vibrate(80);
             }
-            stopCamera();
+            stopAll();
             cancelledRef.current = true;
             onScan(candidate);
             return;
@@ -107,7 +144,7 @@ export default function VinScannerModal({ onScan, onClose }) {
       rafRef.current = requestAnimationFrame(scanLoop);
     }
 
-    function stopCamera() {
+    function stopAll() {
       if (rafRef.current) {
         cancelAnimationFrame(rafRef.current);
         rafRef.current = null;
@@ -116,24 +153,95 @@ export default function VinScannerModal({ onScan, onClose }) {
         streamRef.current.getTracks().forEach(t => t.stop());
         streamRef.current = null;
       }
+      trackRef.current = null;
     }
 
     start();
 
     return () => {
       cancelledRef.current = true;
-      stopCamera();
+      stopAll();
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  function handleClose() {
-    cancelledRef.current = true;
+  // ── Torch toggle ─────────────────────────────────────────────────────────
+  async function toggleTorch() {
+    const track = trackRef.current;
+    if (!track) return;
+    const newState = !torchOn;
+    try {
+      await track.applyConstraints({ advanced: [{ torch: newState }] });
+      setTorchOn(newState);
+    } catch {
+      // unsupported — disable the UI for it
+      setTorchSupported(false);
+    }
+  }
+
+  // ── Photo fallback ───────────────────────────────────────────────────────
+  // The killer feature for real-world stickers. Phone still cameras autofocus
+  // much more aggressively than live video streams, so a snapshot decodes
+  // reliably even when live scanning struggles.
+  async function handlePhotoSelected(event) {
+    const file = event.target.files?.[0];
+    event.target.value = ''; // reset input so same file can be selected again
+    if (!file) return;
+
+    setAnalyzingPhoto(true);
+    setErrorMsg('');
+
+    const url = URL.createObjectURL(file);
+    try {
+      const img = new Image();
+      img.src = url;
+      await new Promise((resolve, reject) => {
+        img.onload  = resolve;
+        img.onerror = () => reject(new Error('Could not load image'));
+      });
+
+      const codes = await detectorRef.current.detect(img);
+      for (const c of codes) {
+        const raw = (c.rawValue || '').toUpperCase().trim();
+        const candidate = extractVinCandidate(raw);
+        if (candidate && VIN_PATTERN.test(candidate)) {
+          if (typeof navigator !== 'undefined' && navigator.vibrate) {
+            navigator.vibrate(80);
+          }
+          stopAllExternal();
+          cancelledRef.current = true;
+          onScan(candidate);
+          return;
+        }
+      }
+      setErrorMsg('No VIN barcode found in this photo. Try a sharper, closer shot of just the barcode.');
+      setTimeout(() => setErrorMsg(curr =>
+        curr.startsWith('No VIN barcode') ? '' : curr
+      ), 5000);
+    } catch (e) {
+      setErrorMsg('Could not analyze photo: ' + (e.message || 'unknown error'));
+      setTimeout(() => setErrorMsg(curr =>
+        curr.startsWith('Could not analyze') ? '' : curr
+      ), 5000);
+    } finally {
+      URL.revokeObjectURL(url);
+      setAnalyzingPhoto(false);
+    }
+  }
+
+  // Used by event handlers outside the useEffect closure
+  function stopAllExternal() {
     if (rafRef.current) cancelAnimationFrame(rafRef.current);
     if (streamRef.current) {
       streamRef.current.getTracks().forEach(t => t.stop());
       streamRef.current = null;
     }
+    trackRef.current = null;
+  }
+
+  function handleClose() {
+    cancelledRef.current = true;
+    stopAllExternal();
     onClose();
   }
 
@@ -165,14 +273,58 @@ export default function VinScannerModal({ onScan, onClose }) {
         {status === 'starting' && (
           <div style={statusTextStyle}>Starting camera…</div>
         )}
+
         {status === 'scanning' && (
-          <div style={statusTextStyle}>
-            Aim at the VIN barcode
-            <div style={statusHintStyle}>
-              Door jamb sticker, dashboard, or registration card
+          <>
+            <div style={statusTextStyle}>
+              {analyzingPhoto ? 'Analyzing photo…' : 'Aim at the VIN barcode'}
+              {!analyzingPhoto && (
+                <div style={statusHintStyle}>
+                  Door jamb, dashboard, or registration card
+                </div>
+              )}
             </div>
-          </div>
+
+            <div style={buttonRowStyle}>
+              <button
+                type="button"
+                onClick={() => fileInputRef.current?.click()}
+                style={secondaryBtnStyle}
+                disabled={analyzingPhoto}
+              >
+                🖼️ Use Photo Instead
+              </button>
+              {torchSupported && (
+                <button
+                  type="button"
+                  onClick={toggleTorch}
+                  style={{
+                    ...secondaryBtnStyle,
+                    background: torchOn ? 'rgba(255, 200, 0, 0.25)' : 'transparent',
+                    borderColor: torchOn ? 'rgba(255, 200, 0, 0.6)' : 'rgba(255,255,255,0.3)',
+                  }}
+                  aria-pressed={torchOn}
+                >
+                  {torchOn ? '🔦 ON' : '🔦 Light'}
+                </button>
+              )}
+            </div>
+
+            <input
+              ref={fileInputRef}
+              type="file"
+              accept="image/*"
+              capture="environment"
+              onChange={handlePhotoSelected}
+              style={{ display: 'none' }}
+            />
+
+            {errorMsg && (
+              <div style={photoErrorStyle} role="alert">{errorMsg}</div>
+            )}
+          </>
         )}
+
         {status === 'error' && (
           <div style={statusErrorStyle}>{errorMsg}</div>
         )}
@@ -265,8 +417,8 @@ const reticleStyle = {
 };
 
 const bottomBarStyle = {
-  padding: '20px 18px 28px',
-  paddingBottom: 'max(28px, env(safe-area-inset-bottom))',
+  padding: '18px 18px 24px',
+  paddingBottom: 'max(24px, env(safe-area-inset-bottom))',
   background: 'rgba(0,0,0,0.85)',
   borderTop: '1px solid rgba(255,255,255,0.1)',
   textAlign: 'center',
@@ -275,6 +427,7 @@ const bottomBarStyle = {
 const statusTextStyle = {
   fontSize: 15,
   lineHeight: 1.5,
+  marginBottom: 12,
 };
 
 const statusHintStyle = {
@@ -283,8 +436,39 @@ const statusHintStyle = {
   marginTop: 4,
 };
 
+const buttonRowStyle = {
+  display: 'flex',
+  gap: 10,
+  justifyContent: 'center',
+  flexWrap: 'wrap',
+};
+
+const secondaryBtnStyle = {
+  background: 'transparent',
+  border: '1px solid rgba(255,255,255,0.3)',
+  color: '#fff',
+  padding: '10px 16px',
+  borderRadius: 8,
+  fontSize: 14,
+  fontWeight: 500,
+  cursor: 'pointer',
+  WebkitTapHighlightColor: 'transparent',
+  whiteSpace: 'nowrap',
+};
+
 const statusErrorStyle = {
   fontSize: 14,
   lineHeight: 1.5,
   color: '#ff8a8a',
+};
+
+const photoErrorStyle = {
+  marginTop: 12,
+  fontSize: 13,
+  lineHeight: 1.4,
+  color: '#ffb366',
+  padding: '8px 12px',
+  background: 'rgba(255, 130, 0, 0.1)',
+  border: '1px solid rgba(255, 130, 0, 0.3)',
+  borderRadius: 6,
 };
