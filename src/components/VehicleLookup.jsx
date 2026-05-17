@@ -19,11 +19,12 @@ import VinScannerModal, { isScannerSupported } from './VinScannerModal';
 //   - Smart async decoder: cache → NHTSA → local fallback
 //   - Safe model auto-match: only auto-fills when exactly ONE inventory
 //     variant matches. Ambiguous matches leave the dropdown empty.
-//   - Simpler scan flash: shows just YMM (e.g. "2020 Honda Accord"), the
-//     locksmith picks the exact variant from the dropdown
-//   - Stale-error clearing: errors dismiss when the user edits the form
-//   - SupplementalInfo panel: extra data (e.g. BMW chassis/immobilizer)
-//     shown alongside the standard Ilco result
+//   - PERSISTENT scanned-VIN banner: stays visible after a successful decode
+//     until manually dismissed or replaced by the next scan. Locksmith sees
+//     VIN + YMM + source at a glance while working the job.
+//   - Transient vinFlash: errors and progress messages only, auto-dismiss
+//   - Stale-error clearing: form errors dismiss when the user edits the form
+//   - SupplementalInfo panel: extra data (BMW chassis/immobilizer)
 export default function VehicleLookup({
   form, inventory, lookup, savedHook, recentHook, styles,
 }) {
@@ -32,7 +33,8 @@ export default function VehicleLookup({
   const { result, vehicle, setResult, setVehicle } = lookup;
 
   const [vinInput,     setVinInput]     = useState('');
-  const [vinFlash,     setVinFlash]     = useState('');
+  const [vinFlash,     setVinFlash]     = useState('');     // transient (errors / progress)
+  const [scannedInfo,  setScannedInfo]  = useState(null);   // persistent (last successful decode)
   const [error,        setError]        = useState('');
   const [loading,      setLoading]      = useState(false);
   const [decoding,     setDecoding]     = useState(false);
@@ -44,7 +46,6 @@ export default function VehicleLookup({
   const ignitionPrompt  = useMemo(() => getIgnitionPrompt(models, model), [models, model]);
   const scannerAvailable = isScannerSupported();
 
-  // ── Clear stale lookup errors when form fields change ─────────────────
   useEffect(() => {
     if (error) setError('');
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -70,15 +71,14 @@ export default function VehicleLookup({
 
       if (decoded.year) setYear(String(decoded.year));
 
-      // ── Make matching: exact-or-unambiguous only ───────────────────────
+      // Make matching: exact-or-unambiguous only
       let matchedMake = null;
       if (decoded.make) {
         matchedMake = fuzzyMatch(decoded.make, makes);
         if (matchedMake) setMake(matchedMake);
       }
 
-      // ── Model matching: only auto-fill if EXACTLY one variant matches ──
-      // Otherwise leave the dropdown empty for the locksmith to pick.
+      // Model matching: only auto-fill if EXACTLY one variant matches.
       let matchedModel = null;
       let modelCandidates = [];
       if (decoded.model && matchedMake && makesIndex?.[matchedMake]?.models) {
@@ -89,7 +89,7 @@ export default function VehicleLookup({
         }
       }
 
-      // ── Recents push: only on GENUINE database miss ────────────────────
+      // Recents push: only on GENUINE database miss
       const vehicleMissing =
         !matchedMake ||
         (decoded.model && matchedMake && modelCandidates.length === 0);
@@ -106,20 +106,17 @@ export default function VehicleLookup({
         );
       }
 
-      // ── Simple flash message: just YMM ─────────────────────────────────
-      // Per locksmith feedback: show only year/make/model — not the
-      // specific inventory variant (W/ PROX, W/ REGULAR IGNITION, HYBRID).
-      // The locksmith picks the exact variant from the dropdown.
-      const parts = [];
-      if (decoded.year) parts.push(decoded.year);
-      if (matchedMake)       parts.push(matchedMake);
-      else if (decoded.make) parts.push(decoded.make);
-      if (decoded.model)     parts.push(decoded.model); // raw NHTSA name, no variant suffix
-
-      const sourceLabel = decoded.source === 'nhtsa' ? 'NHTSA'
-                        : decoded.source === 'cache' ? 'cache'
-                        : 'local';
-      flash(`${parts.join(' ')} · ${sourceLabel}`, 4000);
+      // ── Set PERSISTENT scanned info ────────────────────────────────────
+      // This stays visible until the locksmith dismisses it or scans
+      // another VIN. Clears the transient "Decoding..." flash.
+      setScannedInfo({
+        vin,
+        year:   decoded.year || null,
+        make:   matchedMake  || decoded.make  || null,
+        model:  decoded.model || null, // raw NHTSA name — no variant suffix
+        source: decoded.source,
+      });
+      setVinFlash('');
       setVinInput('');
     } catch (e) {
       console.error('VIN decode error:', e);
@@ -134,14 +131,12 @@ export default function VehicleLookup({
     if (ms) setTimeout(() => setVinFlash(curr => curr === msg ? '' : curr), ms);
   }
 
-  // ── Scanner handlers ────────────────────────────────────────────────────
   function handleScanResult(vin) {
     setScannerOpen(false);
     setVinInput(vin);
     applyVin(vin);
   }
 
-  // ── Lookup ──────────────────────────────────────────────────────────────
   async function runLookup() {
     if (!year || !make || !model || loading || !makesIndex) return;
     setLoading(true); setError(''); setResult(null);
@@ -192,7 +187,6 @@ export default function VehicleLookup({
           <span style={styles.labelBar} />Vehicle Lookup
         </div>
 
-        {/* ── Scan VIN button (mobile-only, feature-detected) ───────── */}
         {scannerAvailable && (
           <button
             type="button"
@@ -206,7 +200,6 @@ export default function VehicleLookup({
           </button>
         )}
 
-        {/* ── VIN paste row ─────────────────────────────────────────── */}
         <div style={styles.vinRow}>
           <input
             type="text"
@@ -226,9 +219,35 @@ export default function VehicleLookup({
             {decoding ? '…' : 'Decode'}
           </button>
         </div>
+
+        {/* ── Transient flash (errors / progress) ─────────────────────── */}
         {vinFlash && <div style={styles.vinFlash} role="status">✓ {vinFlash}</div>}
 
-        {/* ── Year / Make / Model ─────────────────────────────────────── */}
+        {/* ── Persistent scanned-VIN banner ───────────────────────────── */}
+        {scannedInfo && (
+          <div style={scannedInfoStyle}>
+            <div style={scannedInfoContent}>
+              <div style={scannedInfoYmm}>
+                <span style={scannedInfoCheck}>✓ SCANNED</span>
+                <span style={scannedInfoYmmText}>
+                  {[scannedInfo.year, scannedInfo.make, scannedInfo.model].filter(Boolean).join(' ')}
+                </span>
+                <span style={scannedInfoSource}>· {scannedInfo.source}</span>
+              </div>
+              <div style={scannedInfoVin}>VIN: {scannedInfo.vin}</div>
+            </div>
+            <button
+              type="button"
+              onClick={() => setScannedInfo(null)}
+              style={scannedInfoDismiss}
+              aria-label="Clear scanned VIN"
+              title="Clear"
+            >
+              ×
+            </button>
+          </div>
+        )}
+
         <div style={styles.formRow}>
           <div style={styles.field}>
             <div style={styles.fieldLabel}>Year</div>
@@ -276,7 +295,6 @@ export default function VehicleLookup({
           </div>
         </div>
 
-        {/* ── Prox vs regular ignition disambiguator ───────────────── */}
         {ignitionPrompt && (
           <div style={styles.ignitionPanel}>
             <div>⚠ Multiple variants exist for this model.</div>
@@ -322,7 +340,6 @@ export default function VehicleLookup({
         />
       )}
 
-      {/* ── Supplemental panel (BMW chassis/immobilizer, future others) ── */}
       {result && vehicle && (
         <SupplementalInfo vehicle={vehicle} styles={styles} />
       )}
@@ -358,7 +375,9 @@ export default function VehicleLookup({
   );
 }
 
-// ── Local style for Scan VIN button ────────────────────────────────────────
+// ── Local styles ───────────────────────────────────────────────────────────
+// Scan VIN button — placeholder accent fallback. Tracks the same accent color
+// as the rest of the app via CSS variables.
 const scanButtonStyle = {
   width: '100%',
   padding: '14px 16px',
@@ -376,4 +395,77 @@ const scanButtonStyle = {
   justifyContent: 'center',
   gap: 10,
   WebkitTapHighlightColor: 'transparent',
+};
+
+// Persistent scanned-VIN banner — uses the success-tint palette to match
+// the existing vinFlash style, but as a wider 2-line layout with dismiss.
+const scannedInfoStyle = {
+  display: 'flex',
+  alignItems: 'flex-start',
+  justifyContent: 'space-between',
+  gap: 8,
+  marginBottom: 12,
+  padding: '9px 12px',
+  background: 'var(--ok-tint)',
+  borderLeft: '2px solid var(--ok)',
+};
+
+const scannedInfoContent = {
+  flex: 1,
+  minWidth: 0,
+  display: 'flex',
+  flexDirection: 'column',
+  gap: 4,
+};
+
+const scannedInfoYmm = {
+  display: 'flex',
+  alignItems: 'baseline',
+  flexWrap: 'wrap',
+  gap: 6,
+};
+
+const scannedInfoCheck = {
+  fontFamily: 'monospace',
+  fontSize: 9,
+  color: 'var(--ok)',
+  letterSpacing: 2,
+  fontWeight: 600,
+};
+
+const scannedInfoYmmText = {
+  fontFamily: 'monospace',
+  fontSize: 12,
+  color: 'var(--text)',
+  fontWeight: 600,
+};
+
+const scannedInfoSource = {
+  fontFamily: 'monospace',
+  fontSize: 10,
+  color: 'var(--mute)',
+  letterSpacing: 1,
+  textTransform: 'uppercase',
+};
+
+const scannedInfoVin = {
+  fontFamily: 'monospace',
+  fontSize: 11,
+  color: 'var(--mute)',
+  wordBreak: 'break-all',
+  overflowWrap: 'anywhere',
+};
+
+const scannedInfoDismiss = {
+  background: 'transparent',
+  border: 'none',
+  color: 'var(--mute)',
+  cursor: 'pointer',
+  fontSize: 20,
+  lineHeight: 1,
+  padding: '0 4px',
+  minWidth: 28,
+  minHeight: 28,
+  flexShrink: 0,
+  marginTop: -2,
 };

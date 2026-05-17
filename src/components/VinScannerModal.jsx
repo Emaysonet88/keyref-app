@@ -4,15 +4,13 @@ import { useEffect, useRef, useState } from 'react';
 // Full-screen camera overlay for scanning a VIN barcode.
 // Uses the native BarcodeDetector API (Chrome/Edge/Samsung Internet on Android).
 //
-// SESSION 6 v3 IMPROVEMENTS:
-//   - Separate "Take Photo" and "From Gallery" buttons. Take Photo uses
-//     capture="environment" to open the camera directly; From Gallery omits
-//     the capture attribute so the OS picker shows photo library / files.
-//     This lets the locksmith analyze a VIN barcode photo a client texts him.
-//   - Higher resolution (1920x1080 ideal) — sharper bars for live scanning
-//   - Continuous autofocus via track.applyConstraints
-//   - Code 93 + Codabar + ITF added to format list
-//   - Torch / flashlight toggle when device supports it
+// SESSION 6 v4 IMPROVEMENTS:
+//   - Multi-rotation detection on uploaded/photographed images. The native
+//     BarcodeDetector can't read codes rotated 90°+. We now try the original
+//     image, then rotated 90°, 180°, and 270° before giving up.
+//   - Separate "Take Photo" and "From Gallery" buttons so locksmith can
+//     analyze a client-sent VIN photo.
+//   - 1920x1080 ideal camera resolution, continuous autofocus, torch toggle.
 //
 // On a successful detection of a 17-character VIN, calls onScan(vin) and
 // closes itself. Manual close via the ✕ button or onClose handler.
@@ -114,19 +112,15 @@ export default function VinScannerModal({ onScan, onClose }) {
         return;
       }
       try {
-        const codes = await detector.detect(video);
-        for (const c of codes) {
-          const raw = (c.rawValue || '').toUpperCase().trim();
-          const candidate = extractVinCandidate(raw);
-          if (candidate && VIN_PATTERN.test(candidate)) {
-            if (typeof navigator !== 'undefined' && navigator.vibrate) {
-              navigator.vibrate(80);
-            }
-            stopAll();
-            cancelledRef.current = true;
-            onScan(candidate);
-            return;
+        const vin = await detectVinIn(video, detector);
+        if (vin) {
+          if (typeof navigator !== 'undefined' && navigator.vibrate) {
+            navigator.vibrate(80);
           }
+          stopAll();
+          cancelledRef.current = true;
+          onScan(vin);
+          return;
         }
       } catch {
         // detect() can throw transient errors — keep looping
@@ -155,7 +149,6 @@ export default function VinScannerModal({ onScan, onClose }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  // ── Torch toggle ─────────────────────────────────────────────────────────
   async function toggleTorch() {
     const track = trackRef.current;
     if (!track) return;
@@ -168,11 +161,7 @@ export default function VinScannerModal({ onScan, onClose }) {
     }
   }
 
-  // ── Photo analysis (camera OR gallery) ──────────────────────────────────
-  // Same handler used for both file inputs. The difference is purely in
-  // which input element the user activated:
-  //   - camera input has capture="environment" → opens camera
-  //   - gallery input has no capture attribute → opens gallery / files
+  // ── Photo analysis (camera OR gallery) with rotation fallback ───────────
   async function handlePhotoSelected(event) {
     const file = event.target.files?.[0];
     event.target.value = '';
@@ -190,24 +179,21 @@ export default function VinScannerModal({ onScan, onClose }) {
         img.onerror = () => reject(new Error('Could not load image'));
       });
 
-      const codes = await detectorRef.current.detect(img);
-      for (const c of codes) {
-        const raw = (c.rawValue || '').toUpperCase().trim();
-        const candidate = extractVinCandidate(raw);
-        if (candidate && VIN_PATTERN.test(candidate)) {
-          if (typeof navigator !== 'undefined' && navigator.vibrate) {
-            navigator.vibrate(80);
-          }
-          stopAllExternal();
-          cancelledRef.current = true;
-          onScan(candidate);
-          return;
+      const vin = await detectVinInImageWithRotations(img, detectorRef.current);
+      if (vin) {
+        if (typeof navigator !== 'undefined' && navigator.vibrate) {
+          navigator.vibrate(80);
         }
+        stopAllExternal();
+        cancelledRef.current = true;
+        onScan(vin);
+        return;
       }
-      setErrorMsg('No VIN barcode found in this image. Try a sharper, closer shot of just the barcode.');
+
+      setErrorMsg('No VIN barcode found. Try: (1) a tighter shot of just the barcode, (2) better lighting, (3) less reflection. We tried multiple rotations.');
       setTimeout(() => setErrorMsg(curr =>
         curr.startsWith('No VIN barcode') ? '' : curr
-      ), 5000);
+      ), 7000);
     } catch (e) {
       setErrorMsg('Could not analyze image: ' + (e.message || 'unknown error'));
       setTimeout(() => setErrorMsg(curr =>
@@ -238,23 +224,11 @@ export default function VinScannerModal({ onScan, onClose }) {
     <div style={overlayStyle} role="dialog" aria-modal="true" aria-label="VIN Scanner">
       <div style={topBarStyle}>
         <div style={topTitleStyle}>Scan VIN Barcode</div>
-        <button
-          onClick={handleClose}
-          style={closeBtnStyle}
-          aria-label="Close scanner"
-        >
-          ✕
-        </button>
+        <button onClick={handleClose} style={closeBtnStyle} aria-label="Close scanner">✕</button>
       </div>
 
       <div style={videoWrapStyle}>
-        <video
-          ref={videoRef}
-          style={videoStyle}
-          playsInline
-          muted
-          autoPlay
-        />
+        <video ref={videoRef} style={videoStyle} playsInline muted autoPlay />
         <div style={reticleStyle} aria-hidden="true" />
       </div>
 
@@ -266,7 +240,7 @@ export default function VinScannerModal({ onScan, onClose }) {
         {status === 'scanning' && (
           <>
             <div style={statusTextStyle}>
-              {analyzingPhoto ? 'Analyzing image…' : 'Aim at the VIN barcode'}
+              {analyzingPhoto ? 'Analyzing image (trying rotations…)' : 'Aim at the VIN barcode'}
               {!analyzingPhoto && (
                 <div style={statusHintStyle}>
                   Door jamb, dashboard, or registration card
@@ -307,7 +281,6 @@ export default function VinScannerModal({ onScan, onClose }) {
               )}
             </div>
 
-            {/* Camera input — capture attribute opens the camera directly */}
             <input
               ref={cameraInputRef}
               type="file"
@@ -316,7 +289,6 @@ export default function VinScannerModal({ onScan, onClose }) {
               onChange={handlePhotoSelected}
               style={{ display: 'none' }}
             />
-            {/* Gallery input — no capture attribute, OS shows the photo picker */}
             <input
               ref={galleryInputRef}
               type="file"
@@ -337,6 +309,59 @@ export default function VinScannerModal({ onScan, onClose }) {
       </div>
     </div>
   );
+}
+
+// ── Detection helpers ──────────────────────────────────────────────────────
+
+// Used for live video frames — single pass, no rotation (rotation costs too
+// much in a 60fps loop and live video can be re-oriented by the user).
+async function detectVinIn(source, detector) {
+  try {
+    const codes = await detector.detect(source);
+    for (const c of codes) {
+      const candidate = extractVinCandidate((c.rawValue || '').toUpperCase().trim());
+      if (candidate && VIN_PATTERN.test(candidate)) return candidate;
+    }
+  } catch { /* transient — caller will retry */ }
+  return null;
+}
+
+// Used for still images (camera capture or gallery upload).
+// Tries original orientation first, then 90/180/270 rotations. Native
+// BarcodeDetector can't read codes that are rotated 90°+, so this dramatically
+// improves success rate on real-world photos where the sticker isn't aligned
+// to the camera's natural orientation.
+async function detectVinInImageWithRotations(img, detector) {
+  // Original orientation first (fastest path)
+  let vin = await detectVinIn(img, detector);
+  if (vin) return vin;
+
+  for (const rotation of [90, 180, 270]) {
+    const canvas = createRotatedCanvas(img, rotation);
+    vin = await detectVinIn(canvas, detector);
+    if (vin) return vin;
+  }
+  return null;
+}
+
+function createRotatedCanvas(img, degrees) {
+  const canvas = document.createElement('canvas');
+  const ctx = canvas.getContext('2d');
+  const w = img.naturalWidth  || img.width;
+  const h = img.naturalHeight || img.height;
+
+  if (degrees === 90 || degrees === 270) {
+    canvas.width  = h;
+    canvas.height = w;
+  } else {
+    canvas.width  = w;
+    canvas.height = h;
+  }
+
+  ctx.translate(canvas.width / 2, canvas.height / 2);
+  ctx.rotate((degrees * Math.PI) / 180);
+  ctx.drawImage(img, -w / 2, -h / 2);
+  return canvas;
 }
 
 function extractVinCandidate(raw) {
@@ -367,108 +392,55 @@ const topBarStyle = {
   borderBottom: '1px solid rgba(255,255,255,0.1)',
 };
 
-const topTitleStyle = {
-  fontSize: 16,
-  fontWeight: 600,
-  letterSpacing: 0.3,
-};
+const topTitleStyle = { fontSize: 16, fontWeight: 600, letterSpacing: 0.3 };
 
 const closeBtnStyle = {
   background: 'transparent',
   border: '1px solid rgba(255,255,255,0.3)',
   color: '#fff',
-  width: 36,
-  height: 36,
-  borderRadius: 18,
-  fontSize: 16,
-  cursor: 'pointer',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  padding: 0,
+  width: 36, height: 36, borderRadius: 18, fontSize: 16, cursor: 'pointer',
+  display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 0,
 };
 
 const videoWrapStyle = {
-  flex: 1,
-  position: 'relative',
-  overflow: 'hidden',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  background: '#000',
+  flex: 1, position: 'relative', overflow: 'hidden',
+  display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#000',
 };
 
-const videoStyle = {
-  width: '100%',
-  height: '100%',
-  objectFit: 'cover',
-};
+const videoStyle = { width: '100%', height: '100%', objectFit: 'cover' };
 
 const reticleStyle = {
-  position: 'absolute',
-  top: '50%',
-  left: '50%',
+  position: 'absolute', top: '50%', left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: '85%',
-  maxWidth: 480,
-  height: 110,
-  border: '2px solid rgba(255,255,255,0.9)',
-  borderRadius: 8,
-  boxShadow: '0 0 0 9999px rgba(0,0,0,0.45)',
-  pointerEvents: 'none',
+  width: '85%', maxWidth: 480, height: 110,
+  border: '2px solid rgba(255,255,255,0.9)', borderRadius: 8,
+  boxShadow: '0 0 0 9999px rgba(0,0,0,0.45)', pointerEvents: 'none',
 };
 
 const bottomBarStyle = {
   padding: '18px 18px 24px',
   paddingBottom: 'max(24px, env(safe-area-inset-bottom))',
   background: 'rgba(0,0,0,0.85)',
-  borderTop: '1px solid rgba(255,255,255,0.1)',
-  textAlign: 'center',
+  borderTop: '1px solid rgba(255,255,255,0.1)', textAlign: 'center',
 };
 
-const statusTextStyle = {
-  fontSize: 15,
-  lineHeight: 1.5,
-  marginBottom: 12,
-};
-
-const statusHintStyle = {
-  opacity: 0.65,
-  fontSize: 13,
-  marginTop: 4,
-};
-
-const buttonRowStyle = {
-  display: 'flex',
-  gap: 8,
-  justifyContent: 'center',
-  flexWrap: 'wrap',
-};
+const statusTextStyle  = { fontSize: 15, lineHeight: 1.5, marginBottom: 12 };
+const statusHintStyle  = { opacity: 0.65, fontSize: 13, marginTop: 4 };
+const buttonRowStyle   = { display: 'flex', gap: 8, justifyContent: 'center', flexWrap: 'wrap' };
 
 const secondaryBtnStyle = {
   background: 'transparent',
   border: '1px solid rgba(255,255,255,0.3)',
   color: '#fff',
-  padding: '10px 14px',
-  borderRadius: 8,
-  fontSize: 14,
-  fontWeight: 500,
-  cursor: 'pointer',
-  WebkitTapHighlightColor: 'transparent',
-  whiteSpace: 'nowrap',
+  padding: '10px 14px', borderRadius: 8,
+  fontSize: 14, fontWeight: 500, cursor: 'pointer',
+  WebkitTapHighlightColor: 'transparent', whiteSpace: 'nowrap',
 };
 
-const statusErrorStyle = {
-  fontSize: 14,
-  lineHeight: 1.5,
-  color: '#ff8a8a',
-};
+const statusErrorStyle = { fontSize: 14, lineHeight: 1.5, color: '#ff8a8a' };
 
 const photoErrorStyle = {
-  marginTop: 12,
-  fontSize: 13,
-  lineHeight: 1.4,
-  color: '#ffb366',
+  marginTop: 12, fontSize: 13, lineHeight: 1.4, color: '#ffb366',
   padding: '8px 12px',
   background: 'rgba(255, 130, 0, 0.1)',
   border: '1px solid rgba(255, 130, 0, 0.3)',
