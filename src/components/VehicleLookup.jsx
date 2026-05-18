@@ -444,6 +444,9 @@ export default function VehicleLookup({
       <RecentList
         recent={recentHook.recent}
         onSelect={loadEntry}
+        onDelete={recentHook.deleteRecent}
+        onSave={(entry) => entry.result && savedHook.saveEntry(entry, entry.result)}
+        isSaved={(entry) => savedHook.isSaved(entry)}
         styles={styles}
       />
 
