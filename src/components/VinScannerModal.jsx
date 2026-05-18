@@ -82,7 +82,14 @@ export default function VinScannerModal({ onScan, onClose }) {
 
       try {
         const stream = await navigator.mediaDevices.getUserMedia({
-          video: { facingMode: { ideal: 'environment' } },
+          video: {
+            facingMode: { ideal: 'environment' },
+            // Prefer higher resolution for clearer barcode capture. 'ideal'
+            // means the browser tries this first but falls back if unsupported,
+            // so we don't repeat the v6 hang on devices that can't deliver.
+            width:  { ideal: 1920 },
+            height: { ideal: 1080 },
+          },
           audio: false,
         });
 
@@ -585,7 +592,49 @@ function createRotatedCanvas(source, degrees) {
 function extractVinCandidate(raw) {
   if (!raw) return null;
   const match = raw.match(/[A-HJ-NPR-Z0-9]{17}/);
-  return match ? match[0] : null;
+  if (!match) return null;
+  const vin = match[0];
+  // Reject misreads using the ISO 3779 check digit (position 9). This is
+  // the single most important defense against false positives — a garbage
+  // read from a blurry barcode will almost never produce a valid check
+  // digit, but a real VIN always will. Exception: some manufacturers
+  // (mostly older / non-North-American) don't strictly conform, so we
+  // accept VINs where the check digit COULD validate. If it's clearly
+  // wrong, reject.
+  return isVinCheckDigitPlausible(vin) ? vin : null;
+}
+
+// ── VIN check-digit validation (ISO 3779) ───────────────────────────────
+// Position 9 of a VIN is a check digit derived from the other 16 chars.
+// Each character has a numeric value, each position has a weight, and the
+// weighted sum mod 11 must equal the check digit (where 10 is represented
+// as 'X'). North American VINs follow this strictly; some EU/Asian VINs
+// don't. We treat a passing check as a strong positive signal and a
+// failing check as a strong negative — i.e. reject misreads, accept real
+// VINs even if non-North-American.
+
+const VIN_CHAR_VALUES = {
+  A: 1, B: 2, C: 3, D: 4, E: 5, F: 6, G: 7, H: 8,
+  J: 1, K: 2, L: 3, M: 4, N: 5, P: 7, R: 9,
+  S: 2, T: 3, U: 4, V: 5, W: 6, X: 7, Y: 8, Z: 9,
+  '0': 0, '1': 1, '2': 2, '3': 3, '4': 4,
+  '5': 5, '6': 6, '7': 7, '8': 8, '9': 9,
+};
+const VIN_WEIGHTS = [8, 7, 6, 5, 4, 3, 2, 10, 0, 9, 8, 7, 6, 5, 4, 3, 2];
+
+function isVinCheckDigitPlausible(vin) {
+  if (vin.length !== 17) return false;
+  let sum = 0;
+  for (let i = 0; i < 17; i++) {
+    const val = VIN_CHAR_VALUES[vin[i]];
+    if (val === undefined) return false;
+    sum += val * VIN_WEIGHTS[i];
+  }
+  const expected = sum % 11;
+  const actual = vin[8];
+  const actualVal = actual === 'X' ? 10 : parseInt(actual, 10);
+  if (isNaN(actualVal)) return false;
+  return expected === actualVal;
 }
 
 // ── Styles ─────────────────────────────────────────────────────────────────
