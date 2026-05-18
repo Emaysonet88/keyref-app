@@ -222,6 +222,25 @@ export default function VehicleLookup({
     setShowAllModels(false);
   }
 
+  // ── Clear all form state for a fresh lookup ──────────────────────────────
+  // Resets year/make/model, the result panel, scanned-VIN banner, VIN-derived
+  // model filter, any error, and the VIN paste input. Does NOT touch Recent
+  // or Saved lists — those are persistent by design.
+  function clearForm() {
+    setYear(''); setMake(''); setModel('');
+    setResult(null);
+    setVehicle(null);
+    setScannedInfo(null);
+    setModelHint(null);
+    setShowAllModels(false);
+    setVinInput('');
+    setVinFlash('');
+    setError('');
+  }
+
+  // Show the clear button when there's anything to clear
+  const hasFormState = year || make || model || result || scannedInfo || vinInput;
+
   return (
     <>
       <div style={styles.panel}>
@@ -375,13 +394,26 @@ export default function VehicleLookup({
           </div>
         )}
 
-        <button
-          style={styles.btnLookup(!canLookup)}
-          disabled={!canLookup}
-          onClick={runLookup}
-        >
-          {loading ? 'SEARCHING…' : 'RUN LOOKUP'}
-        </button>
+        <div style={lookupRowStyle}>
+          <button
+            style={styles.btnLookup(!canLookup)}
+            disabled={!canLookup}
+            onClick={runLookup}
+          >
+            {loading ? 'SEARCHING…' : 'RUN LOOKUP'}
+          </button>
+          {hasFormState && (
+            <button
+              type="button"
+              style={clearBtnStyle}
+              onClick={clearForm}
+              aria-label="Clear all fields and start a new lookup"
+              title="Clear all fields"
+            >
+              CLEAR
+            </button>
+          )}
+        </div>
       </div>
 
       {displayError && (
@@ -530,4 +562,28 @@ const showAllLinkStyle = {
   textDecoration: 'underline',
   cursor: 'pointer',
   letterSpacing: 0.5,
+};
+
+// ── RUN LOOKUP + CLEAR row ─────────────────────────────────────────────────
+// btnLookup is intentionally NOT given flex: 1 via styles.js (it's already
+// width: 100%) — so we wrap it here to share horizontal space with CLEAR.
+const lookupRowStyle = {
+  display: 'flex',
+  gap: 8,
+  alignItems: 'stretch',
+};
+
+const clearBtnStyle = {
+  background: 'transparent',
+  color: 'var(--mute)',
+  border: '1px solid var(--border)',
+  padding: '0 16px',
+  fontFamily: 'monospace',
+  fontSize: 11,
+  letterSpacing: 2,
+  fontWeight: 600,
+  cursor: 'pointer',
+  whiteSpace: 'nowrap',
+  WebkitTapHighlightColor: 'transparent',
+  flexShrink: 0,
 };
