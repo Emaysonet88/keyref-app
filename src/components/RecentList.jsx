@@ -1,32 +1,36 @@
-import { useEffect, useRef, useState, useMemo } from 'react';
+import { useRef, useState, useMemo } from 'react';
 import { timeAgo } from '../utils/time';
 
 // ── RecentList ───────────────────────────────────────────────────────────────
 // Read-only list of the last N vehicle lookups. Tapping/clicking a row loads
 // it back into the lookup form via `onSelect`.
 //
-// SESSION 6 v9:
-//   - Mobile: swipe LEFT on a row to delete, swipe RIGHT to save
-//   - Desktop: hover a row to reveal trash + bookmark icons
-//   - Touch detection via matchMedia at runtime (no hooks needed)
-//   - Rows with result: null (decoded-but-not-in-DB) cannot be saved,
-//     since there's no key data to save — only the delete action shows.
-//   - Already-saved entries don't show the save action either way.
-//
-// Entry shapes handled:
-//   1. Full lookup:   { year, make, model, result: {...}, ts }
-//   2. VIN-only:      { year, make, model, vin, result: null, ts }
+// SESSION 6 v10:
+//   - Mobile: swipe LEFT to delete, swipe RIGHT to save
+//   - Desktop: hover to reveal trash + bookmark icons
+//   - ROBUST touch detection: checks 'ontouchstart', maxTouchPoints, and
+//     pointer: coarse — any one of these → treat as touch device. (Samsung
+//     S Pen devices report hover:hover, which broke the prior matchMedia-only
+//     check.)
+//   - Touch events (not pointer events) for the swipe gesture, with refs
+//     for all gesture state so we don't hit React stale-state issues mid-drag.
 
 const SWIPE_COMMIT_PX  = 80;
 const SWIPE_MAX_PX     = 200;
-const SWIPE_DIRECTION_LOCK_PX = 10;
+const DIRECTION_LOCK_PX = 10;
 
 export default function RecentList({ recent, onSelect, onDelete, onSave, isSaved, styles }) {
-  // Touch detection at runtime. matchMedia is the modern way: "no hover
-  // capability AND coarse pointer" = touch primary device.
+  // Multi-signal touch detection. Any of these means we should use the
+  // mobile/swipe interaction model.
   const isTouch = useMemo(() => {
     if (typeof window === 'undefined') return false;
-    return window.matchMedia('(hover: none) and (pointer: coarse)').matches;
+    if ('ontouchstart' in window) return true;
+    if (navigator.maxTouchPoints > 0) return true;
+    if ((navigator.msMaxTouchPoints || 0) > 0) return true;
+    try {
+      if (window.matchMedia('(pointer: coarse)').matches) return true;
+    } catch { /* matchMedia not supported */ }
+    return false;
   }, []);
 
   return (
@@ -55,12 +59,9 @@ export default function RecentList({ recent, onSelect, onDelete, onSave, isSaved
   );
 }
 
-// ── RecentRow ──────────────────────────────────────────────────────────────
-// Renders one recent entry. Same visual on both platforms; what differs is
-// the interaction surface (swipe vs hover).
 function RecentRow({ entry, onSelect, onDelete, onSave, isSaved, isTouch, styles }) {
   const hasResult = entry.result != null;
-  const canSave   = hasResult && !isSaved && onSave;
+  const canSave   = hasResult && !isSaved && !!onSave;
   const canDelete = !!onDelete;
 
   if (isTouch) {
@@ -83,7 +84,6 @@ function RecentRow({ entry, onSelect, onDelete, onSave, isSaved, isTouch, styles
       onDelete={canDelete ? onDelete : null}
       onSave={canSave ? onSave : null}
       isSaved={isSaved}
-      hasResult={hasResult}
       styles={styles}
     >
       <RowContent entry={entry} hasResult={hasResult} styles={styles} />
@@ -91,8 +91,6 @@ function RecentRow({ entry, onSelect, onDelete, onSave, isSaved, isTouch, styles
   );
 }
 
-// ── RowContent ─────────────────────────────────────────────────────────────
-// The visual content of a row, identical across mobile and desktop.
 function RowContent({ entry, hasResult, styles }) {
   const bl = hasResult
     ? (Array.isArray(entry.result.keyBlanks)
@@ -128,37 +126,39 @@ function RowContent({ entry, hasResult, styles }) {
   );
 }
 
-// ── SwipeableContainer (mobile) ────────────────────────────────────────────
-// Captures horizontal pointer drags, reveals colored action zones, commits
-// on release if past threshold. Tap still works for un-swiped pointer-ups.
+// ── SwipeableContainer ─────────────────────────────────────────────────────
+// Uses touch events (not pointer events) for the broadest mobile browser
+// compatibility. All gesture state lives in refs, so we never hit React's
+// stale-closure problem mid-drag.
 function SwipeableContainer({ canSwipeLeft, canSwipeRight, onSwipeLeft, onSwipeRight, onTap, children }) {
   const [translate, setTranslate] = useState(0);
-  const [dragging, setDragging]   = useState(false);
+  const [animating, setAnimating] = useState(false);
 
   const startXRef     = useRef(0);
   const startYRef     = useRef(0);
+  const currentDxRef  = useRef(0);
   const directionRef  = useRef(null); // null | 'h' | 'v'
-  const movedRef      = useRef(false);
+  const justSwipedRef = useRef(false);
 
-  function handlePointerDown(e) {
-    if (!canSwipeLeft && !canSwipeRight) return;
-    startXRef.current = e.clientX;
-    startYRef.current = e.clientY;
+  function handleTouchStart(e) {
+    if (e.touches.length !== 1) return;
+    const t = e.touches[0];
+    startXRef.current = t.clientX;
+    startYRef.current = t.clientY;
+    currentDxRef.current = 0;
     directionRef.current = null;
-    movedRef.current = false;
-    setDragging(true);
-    try { e.currentTarget.setPointerCapture(e.pointerId); } catch { /* noop */ }
+    setAnimating(false);
   }
 
-  function handlePointerMove(e) {
-    if (!dragging) return;
-    const dx = e.clientX - startXRef.current;
-    const dy = e.clientY - startYRef.current;
+  function handleTouchMove(e) {
+    if (e.touches.length !== 1) return;
+    const t = e.touches[0];
+    const dx = t.clientX - startXRef.current;
+    const dy = t.clientY - startYRef.current;
 
-    if (Math.abs(dx) > 5 || Math.abs(dy) > 5) movedRef.current = true;
-
+    // Lock direction once movement exceeds threshold
     if (directionRef.current === null) {
-      if (Math.abs(dx) > SWIPE_DIRECTION_LOCK_PX || Math.abs(dy) > SWIPE_DIRECTION_LOCK_PX) {
+      if (Math.abs(dx) > DIRECTION_LOCK_PX || Math.abs(dy) > DIRECTION_LOCK_PX) {
         directionRef.current = Math.abs(dx) > Math.abs(dy) ? 'h' : 'v';
       }
     }
@@ -167,30 +167,38 @@ function SwipeableContainer({ canSwipeLeft, canSwipeRight, onSwipeLeft, onSwipeR
       let clamped = Math.max(-SWIPE_MAX_PX, Math.min(SWIPE_MAX_PX, dx));
       if (clamped < 0 && !canSwipeLeft)  clamped = 0;
       if (clamped > 0 && !canSwipeRight) clamped = 0;
+      currentDxRef.current = clamped;
       setTranslate(clamped);
     }
   }
 
-  function handlePointerUp() {
-    if (!dragging) {
-      // No drag happened — treat as a tap
-      if (!movedRef.current && onTap) onTap();
-      return;
-    }
-    setDragging(false);
+  function handleTouchEnd() {
+    setAnimating(true);
 
-    const committed = Math.abs(translate) >= SWIPE_COMMIT_PX;
-    if (committed) {
-      if (translate < 0 && canSwipeLeft  && onSwipeLeft)  onSwipeLeft();
-      if (translate > 0 && canSwipeRight && onSwipeRight) onSwipeRight();
-    } else if (!movedRef.current && onTap) {
-      // Pointer down and up without meaningful movement = tap
-      onTap();
+    if (directionRef.current === 'h') {
+      const dx = currentDxRef.current;
+      if (Math.abs(dx) >= SWIPE_COMMIT_PX) {
+        // Commit the swipe. Set flag to suppress the synthetic click
+        // that mobile browsers fire after touchend.
+        justSwipedRef.current = true;
+        setTimeout(() => { justSwipedRef.current = false; }, 300);
+
+        if (dx < 0 && canSwipeLeft  && onSwipeLeft)  onSwipeLeft();
+        if (dx > 0 && canSwipeRight && onSwipeRight) onSwipeRight();
+      }
+      setTranslate(0);
     }
-    setTranslate(0);
   }
 
-  // Visual state for action zones
+  function handleClick(e) {
+    if (justSwipedRef.current) {
+      e.preventDefault();
+      e.stopPropagation();
+      return;
+    }
+    if (onTap) onTap();
+  }
+
   const showDeleteZone = canSwipeLeft  && translate < 0;
   const showSaveZone   = canSwipeRight && translate > 0;
   const deleteOpacity  = Math.min(1, Math.abs(translate) / SWIPE_COMMIT_PX);
@@ -198,13 +206,11 @@ function SwipeableContainer({ canSwipeLeft, canSwipeRight, onSwipeLeft, onSwipeR
 
   return (
     <div style={{ position: 'relative', overflow: 'hidden' }}>
-      {/* Save zone (right side, revealed by swiping right) */}
       {showSaveZone && (
         <div style={{ ...zoneStyle, ...saveZoneStyle, opacity: saveOpacity }}>
           ★ SAVE
         </div>
       )}
-      {/* Delete zone (left side, revealed by swiping left) */}
       {showDeleteZone && (
         <div style={{ ...zoneStyle, ...deleteZoneStyle, opacity: deleteOpacity }}>
           DELETE 🗑
@@ -213,15 +219,16 @@ function SwipeableContainer({ canSwipeLeft, canSwipeRight, onSwipeLeft, onSwipeR
       <div
         style={{
           transform: `translateX(${translate}px)`,
-          transition: dragging ? 'none' : 'transform 200ms ease-out',
-          touchAction: 'pan-y',
+          transition: animating ? 'transform 200ms ease-out' : 'none',
+          touchAction: 'pan-y', // allow vertical scroll, but we'll handle horizontal
           position: 'relative',
           zIndex: 1,
         }}
-        onPointerDown={handlePointerDown}
-        onPointerMove={handlePointerMove}
-        onPointerUp={handlePointerUp}
-        onPointerCancel={handlePointerUp}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
+        onTouchCancel={handleTouchEnd}
+        onClick={handleClick}
       >
         {children}
       </div>
@@ -229,9 +236,7 @@ function SwipeableContainer({ canSwipeLeft, canSwipeRight, onSwipeLeft, onSwipeR
   );
 }
 
-// ── HoverContainer (desktop) ───────────────────────────────────────────────
-// Renders the row content with two action buttons that fade in on hover.
-function HoverContainer({ onSelect, onDelete, onSave, isSaved, hasResult, children, styles }) {
+function HoverContainer({ onSelect, onDelete, onSave, isSaved, children }) {
   const [hover, setHover] = useState(false);
 
   return (
@@ -281,8 +286,6 @@ function HoverContainer({ onSelect, onDelete, onSave, isSaved, hasResult, childr
   );
 }
 
-// ── Styles ─────────────────────────────────────────────────────────────────
-
 const leftColStyle = {
   display: 'flex',
   flexDirection: 'column',
@@ -314,7 +317,6 @@ const noDataPillStyle = {
   border: '1px solid var(--warn-border, rgba(245, 158, 11, 0.35))',
 };
 
-// Swipe action zones
 const zoneStyle = {
   position: 'absolute',
   top: 0,
@@ -345,7 +347,6 @@ const saveZoneStyle = {
   paddingLeft: 20,
 };
 
-// Hover-revealed desktop actions
 const hoverActionsStyle = {
   position: 'absolute',
   right: 8,
