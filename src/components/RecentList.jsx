@@ -349,25 +349,33 @@ const saveZoneStyle = {
 
 const hoverActionsStyle = {
   position: 'absolute',
-  right: 8,
+  right: 6,
   top: '50%',
   transform: 'translateY(-50%)',
   display: 'flex',
-  gap: 4,
+  gap: 2,
   alignItems: 'center',
-  background: 'var(--input-bg, rgba(0,0,0,0.1))',
+  // Solid background masks the timestamp underneath so icons don't
+  // visually collide with "just now" / "10h ago" text. var(--panel) is
+  // the same color as the surrounding panel surface so the actions look
+  // like they replace the time text rather than float over it.
+  background: 'var(--panel, #1a1a1a)',
+  border: '1px solid var(--border, rgba(255,255,255,0.1))',
   borderRadius: 4,
   padding: '2px 4px',
   pointerEvents: 'auto',
+  boxShadow: '0 0 0 4px var(--panel, #1a1a1a)',
 };
 
 const hoverIconBtn = {
   background: 'transparent',
   border: 'none',
-  padding: '2px 6px',
+  padding: '4px 8px',
   cursor: 'pointer',
-  fontSize: 16,
+  fontSize: 14,
   lineHeight: 1,
   color: 'var(--mute)',
   WebkitTapHighlightColor: 'transparent',
+  minWidth: 24,
+  textAlign: 'center',
 };
