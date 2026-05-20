@@ -1,37 +1,20 @@
-import { useRef, useState, useMemo } from 'react';
+import { useState, useMemo } from 'react';
 import { timeAgo } from '../utils/time';
+import SwipeableRow, { detectTouch } from './SwipeableRow';
 
 // ── RecentList ───────────────────────────────────────────────────────────────
 // Read-only list of the last N vehicle lookups. Tapping/clicking a row loads
 // it back into the lookup form via `onSelect`.
 //
-// SESSION 6 v10:
-//   - Mobile: swipe LEFT to delete, swipe RIGHT to save
-//   - Desktop: hover to reveal trash + bookmark icons
-//   - ROBUST touch detection: checks 'ontouchstart', maxTouchPoints, and
-//     pointer: coarse — any one of these → treat as touch device. (Samsung
-//     S Pen devices report hover:hover, which broke the prior matchMedia-only
-//     check.)
-//   - Touch events (not pointer events) for the swipe gesture, with refs
-//     for all gesture state so we don't hit React stale-state issues mid-drag.
-
-const SWIPE_COMMIT_PX  = 80;
-const SWIPE_MAX_PX     = 200;
-const DIRECTION_LOCK_PX = 10;
-
+// Mobile: swipe LEFT to delete, swipe RIGHT to save (when result data exists).
+// Desktop: hover to reveal trash + bookmark icons in the right column.
+// Touch detection via detectTouch() in SwipeableRow.
+//
+// Entry shapes handled:
+//   1. Full lookup:   { year, make, model, result: {...}, ts }
+//   2. VIN-only:      { year, make, model, vin, result: null, ts }
 export default function RecentList({ recent, onSelect, onDelete, onSave, isSaved, styles }) {
-  // Multi-signal touch detection. Any of these means we should use the
-  // mobile/swipe interaction model.
-  const isTouch = useMemo(() => {
-    if (typeof window === 'undefined') return false;
-    if ('ontouchstart' in window) return true;
-    if (navigator.maxTouchPoints > 0) return true;
-    if ((navigator.msMaxTouchPoints || 0) > 0) return true;
-    try {
-      if (window.matchMedia('(pointer: coarse)').matches) return true;
-    } catch { /* matchMedia not supported */ }
-    return false;
-  }, []);
+  const isTouch = useMemo(() => detectTouch(), []);
 
   return (
     <div style={styles.panel}>
@@ -66,15 +49,17 @@ function RecentRow({ entry, onSelect, onDelete, onSave, isSaved, isTouch, styles
 
   if (isTouch) {
     return (
-      <SwipeableContainer
+      <SwipeableRow
         canSwipeLeft={canDelete}
         canSwipeRight={canSave}
         onSwipeLeft={onDelete}
         onSwipeRight={onSave}
         onTap={onSelect}
+        leftZoneContent={<>★ SAVE</>}
+        rightZoneContent={<>DELETE 🗑</>}
       >
         <RowContent entry={entry} hasResult={hasResult} styles={styles} />
-      </SwipeableContainer>
+      </SwipeableRow>
     );
   }
 
@@ -119,8 +104,6 @@ function RowContent({ entry, hasResult, rightSlot, styles }) {
         )}
       </div>
 
-      {/* Right column: timestamp by default, action buttons when hovering.
-          Same column, same width — never overlaps, never floats. */}
       <div style={rightColStyle}>
         {rightSlot != null
           ? rightSlot
@@ -130,123 +113,9 @@ function RowContent({ entry, hasResult, rightSlot, styles }) {
   );
 }
 
-// ── SwipeableContainer ─────────────────────────────────────────────────────
-// Uses touch events (not pointer events) for the broadest mobile browser
-// compatibility. All gesture state lives in refs, so we never hit React's
-// stale-closure problem mid-drag.
-function SwipeableContainer({ canSwipeLeft, canSwipeRight, onSwipeLeft, onSwipeRight, onTap, children }) {
-  const [translate, setTranslate] = useState(0);
-  const [animating, setAnimating] = useState(false);
-
-  const startXRef     = useRef(0);
-  const startYRef     = useRef(0);
-  const currentDxRef  = useRef(0);
-  const directionRef  = useRef(null); // null | 'h' | 'v'
-  const justSwipedRef = useRef(false);
-
-  function handleTouchStart(e) {
-    if (e.touches.length !== 1) return;
-    const t = e.touches[0];
-    startXRef.current = t.clientX;
-    startYRef.current = t.clientY;
-    currentDxRef.current = 0;
-    directionRef.current = null;
-    setAnimating(false);
-  }
-
-  function handleTouchMove(e) {
-    if (e.touches.length !== 1) return;
-    const t = e.touches[0];
-    const dx = t.clientX - startXRef.current;
-    const dy = t.clientY - startYRef.current;
-
-    // Lock direction once movement exceeds threshold
-    if (directionRef.current === null) {
-      if (Math.abs(dx) > DIRECTION_LOCK_PX || Math.abs(dy) > DIRECTION_LOCK_PX) {
-        directionRef.current = Math.abs(dx) > Math.abs(dy) ? 'h' : 'v';
-      }
-    }
-
-    if (directionRef.current === 'h') {
-      let clamped = Math.max(-SWIPE_MAX_PX, Math.min(SWIPE_MAX_PX, dx));
-      if (clamped < 0 && !canSwipeLeft)  clamped = 0;
-      if (clamped > 0 && !canSwipeRight) clamped = 0;
-      currentDxRef.current = clamped;
-      setTranslate(clamped);
-    }
-  }
-
-  function handleTouchEnd() {
-    setAnimating(true);
-
-    if (directionRef.current === 'h') {
-      const dx = currentDxRef.current;
-      if (Math.abs(dx) >= SWIPE_COMMIT_PX) {
-        // Commit the swipe. Set flag to suppress the synthetic click
-        // that mobile browsers fire after touchend.
-        justSwipedRef.current = true;
-        setTimeout(() => { justSwipedRef.current = false; }, 300);
-
-        if (dx < 0 && canSwipeLeft  && onSwipeLeft)  onSwipeLeft();
-        if (dx > 0 && canSwipeRight && onSwipeRight) onSwipeRight();
-      }
-      setTranslate(0);
-    }
-  }
-
-  function handleClick(e) {
-    if (justSwipedRef.current) {
-      e.preventDefault();
-      e.stopPropagation();
-      return;
-    }
-    if (onTap) onTap();
-  }
-
-  const showDeleteZone = canSwipeLeft  && translate < 0;
-  const showSaveZone   = canSwipeRight && translate > 0;
-  const deleteOpacity  = Math.min(1, Math.abs(translate) / SWIPE_COMMIT_PX);
-  const saveOpacity    = Math.min(1, translate / SWIPE_COMMIT_PX);
-
-  return (
-    <div style={{ position: 'relative', overflow: 'hidden' }}>
-      {showSaveZone && (
-        <div style={{ ...zoneStyle, ...saveZoneStyle, opacity: saveOpacity }}>
-          ★ SAVE
-        </div>
-      )}
-      {showDeleteZone && (
-        <div style={{ ...zoneStyle, ...deleteZoneStyle, opacity: deleteOpacity }}>
-          DELETE 🗑
-        </div>
-      )}
-      <div
-        style={{
-          transform: `translateX(${translate}px)`,
-          transition: animating ? 'transform 200ms ease-out' : 'none',
-          touchAction: 'pan-y', // allow vertical scroll, but we'll handle horizontal
-          position: 'relative',
-          zIndex: 1,
-        }}
-        onTouchStart={handleTouchStart}
-        onTouchMove={handleTouchMove}
-        onTouchEnd={handleTouchEnd}
-        onTouchCancel={handleTouchEnd}
-        onClick={handleClick}
-      >
-        {children}
-      </div>
-    </div>
-  );
-}
-
 function HoverContainer({ entry, hasResult, onSelect, onDelete, onSave, isSaved, styles }) {
   const [hover, setHover] = useState(false);
 
-  // Build the right-slot content based on state:
-  //   - hovering: action buttons (save and/or delete)
-  //   - already saved (no hover): persistent saved badge
-  //   - otherwise: null (RowContent will show timestamp)
   let rightSlot = null;
   if (hover && (onSave || onDelete)) {
     rightSlot = (
@@ -285,8 +154,6 @@ function HoverContainer({ entry, hasResult, onSelect, onDelete, onSave, isSaved,
       </div>
     );
   } else if (isSaved) {
-    // Show a small saved indicator when not hovering, so the locksmith
-    // can see at a glance which recents are already saved
     rightSlot = (
       <span
         style={{ ...iconBtnStyle, color: 'var(--accent)', cursor: 'default', padding: '2px 4px' }}
@@ -317,7 +184,7 @@ const leftColStyle = {
 };
 
 const vinSubtitleStyle = {
-  fontFamily: 'monospace',
+  fontFamily: "'JetBrains Mono', monospace",
   fontSize: 10,
   color: 'var(--text-muted, #888)',
   letterSpacing: 0.5,
@@ -340,38 +207,6 @@ const noDataPillStyle = {
   border: '1px solid var(--warn-border, rgba(245, 158, 11, 0.35))',
 };
 
-const zoneStyle = {
-  position: 'absolute',
-  top: 0,
-  bottom: 0,
-  display: 'flex',
-  alignItems: 'center',
-  fontFamily: 'monospace',
-  fontSize: 12,
-  fontWeight: 700,
-  letterSpacing: 2,
-  color: '#fff',
-  zIndex: 0,
-};
-
-const deleteZoneStyle = {
-  right: 0,
-  width: '50%',
-  background: 'var(--bad, #d94f4f)',
-  justifyContent: 'flex-end',
-  paddingRight: 20,
-};
-
-const saveZoneStyle = {
-  left: 0,
-  width: '50%',
-  background: 'var(--ok, #4caf50)',
-  justifyContent: 'flex-start',
-  paddingLeft: 20,
-};
-
-// Right column holds either the timestamp OR the action buttons.
-// Same width whether hovering or not, so the layout never shifts.
 const rightColStyle = {
   display: 'flex',
   alignItems: 'center',
@@ -381,12 +216,11 @@ const rightColStyle = {
 };
 
 const timeStyle = {
-  fontFamily: 'monospace',
+  fontFamily: "'JetBrains Mono', monospace",
   fontSize: 10,
   color: '#787878',
 };
 
-// Inline action buttons (desktop hover state)
 const inlineActionsStyle = {
   display: 'flex',
   gap: 2,

@@ -1,9 +1,10 @@
 import { useState, useEffect, useRef } from 'react';
+import { VehicleIcon, SearchIcon, KeyIcon } from './ModeIcons';
 
 const MODES = [
-  { id: 'vehicle', label: '🚗 Vehicle' },
-  { id: 'search',  label: '🔍 Search' },
-  { id: 'blank',   label: '🔑 Blank' },
+  { id: 'vehicle', label: 'Vehicle', Icon: VehicleIcon },
+  { id: 'search',  label: 'Search',  Icon: SearchIcon },
+  { id: 'blank',   label: 'Blank',   Icon: KeyIcon },
 ];
 
 // ── ModeToggle ───────────────────────────────────────────────────────────────
@@ -11,6 +12,10 @@ const MODES = [
 // The pill's position is measured from each button's offsetLeft/offsetWidth
 // (not assumed from index/width math), so it stays accurate across font
 // rendering differences and viewport sizes. Recalculates on resize.
+//
+// PREMIUM PASS: emoji replaced with inline SVG icons that inherit currentColor
+// so they theme correctly — accent for inactive buttons, near-black for the
+// active one over the accent-colored pill.
 export default function ModeToggle({ mode, onChange, styles }) {
   const btnRefs = useRef([]);
   const [pill, setPill] = useState({ left: 0, width: 0, opacity: 0 });
@@ -34,18 +39,31 @@ export default function ModeToggle({ mode, onChange, styles }) {
   return (
     <div style={styles.modeToggle} role="tablist">
       <div style={{ ...styles.modeToggleIndicator, ...pill }} />
-      {MODES.map((m, i) => (
-        <button
-          key={m.id}
-          ref={el => { btnRefs.current[i] = el; }}
-          style={styles.modeBtn(mode === m.id)}
-          onClick={() => onChange(m.id)}
-          role="tab"
-          aria-selected={mode === m.id}
-        >
-          {m.label}
-        </button>
-      ))}
+      {MODES.map((m, i) => {
+        const active = mode === m.id;
+        const { Icon } = m;
+        return (
+          <button
+            key={m.id}
+            ref={el => { btnRefs.current[i] = el; }}
+            style={{ ...styles.modeBtn(active), ...modeBtnLayout }}
+            onClick={() => onChange(m.id)}
+            role="tab"
+            aria-selected={active}
+          >
+            <Icon size={15} />
+            <span>{m.label}</span>
+          </button>
+        );
+      })}
     </div>
   );
 }
+
+// Layout overrides so the icon sits inline with the label
+const modeBtnLayout = {
+  display: 'inline-flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  gap: 7,
+};
