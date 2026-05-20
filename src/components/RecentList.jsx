@@ -80,18 +80,18 @@ function RecentRow({ entry, onSelect, onDelete, onSave, isSaved, isTouch, styles
 
   return (
     <HoverContainer
+      entry={entry}
+      hasResult={hasResult}
       onSelect={onSelect}
       onDelete={canDelete ? onDelete : null}
       onSave={canSave ? onSave : null}
       isSaved={isSaved}
       styles={styles}
-    >
-      <RowContent entry={entry} hasResult={hasResult} styles={styles} />
-    </HoverContainer>
+    />
   );
 }
 
-function RowContent({ entry, hasResult, styles }) {
+function RowContent({ entry, hasResult, rightSlot, styles }) {
   const bl = hasResult
     ? (Array.isArray(entry.result.keyBlanks)
         ? entry.result.keyBlanks[0]
@@ -119,8 +119,12 @@ function RowContent({ entry, hasResult, styles }) {
         )}
       </div>
 
-      <div style={{ fontFamily: 'monospace', fontSize: 10, color: '#787878' }}>
-        {timeAgo(entry.ts)}
+      {/* Right column: timestamp by default, action buttons when hovering.
+          Same column, same width — never overlaps, never floats. */}
+      <div style={rightColStyle}>
+        {rightSlot != null
+          ? rightSlot
+          : <span style={timeStyle}>{timeAgo(entry.ts)}</span>}
       </div>
     </div>
   );
@@ -236,52 +240,71 @@ function SwipeableContainer({ canSwipeLeft, canSwipeRight, onSwipeLeft, onSwipeR
   );
 }
 
-function HoverContainer({ onSelect, onDelete, onSave, isSaved, children }) {
+function HoverContainer({ entry, hasResult, onSelect, onDelete, onSave, isSaved, styles }) {
   const [hover, setHover] = useState(false);
+
+  // Build the right-slot content based on state:
+  //   - hovering: action buttons (save and/or delete)
+  //   - already saved (no hover): persistent saved badge
+  //   - otherwise: null (RowContent will show timestamp)
+  let rightSlot = null;
+  if (hover && (onSave || onDelete)) {
+    rightSlot = (
+      <div style={inlineActionsStyle}>
+        {onSave && (
+          <button
+            type="button"
+            style={iconBtnStyle}
+            onClick={(e) => { e.stopPropagation(); onSave(); }}
+            title="Save lookup"
+            aria-label="Save lookup"
+          >
+            ☆
+          </button>
+        )}
+        {isSaved && (
+          <span
+            style={{ ...iconBtnStyle, color: 'var(--accent)', cursor: 'default' }}
+            title="Already saved"
+            aria-label="Already saved"
+          >
+            ★
+          </span>
+        )}
+        {onDelete && (
+          <button
+            type="button"
+            style={{ ...iconBtnStyle, color: 'var(--bad, #d94f4f)' }}
+            onClick={(e) => { e.stopPropagation(); onDelete(); }}
+            title="Delete from recent"
+            aria-label="Delete from recent"
+          >
+            ×
+          </button>
+        )}
+      </div>
+    );
+  } else if (isSaved) {
+    // Show a small saved indicator when not hovering, so the locksmith
+    // can see at a glance which recents are already saved
+    rightSlot = (
+      <span
+        style={{ ...iconBtnStyle, color: 'var(--accent)', cursor: 'default', padding: '2px 4px' }}
+        title="Saved"
+        aria-label="Saved"
+      >
+        ★
+      </span>
+    );
+  }
 
   return (
     <div
-      style={{ position: 'relative' }}
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
+      onClick={onSelect}
     >
-      <div onClick={onSelect}>{children}</div>
-
-      {(hover || isSaved) && (
-        <div style={hoverActionsStyle}>
-          {onSave && (
-            <button
-              type="button"
-              style={hoverIconBtn}
-              onClick={(e) => { e.stopPropagation(); onSave(); }}
-              title="Save lookup"
-              aria-label="Save lookup"
-            >
-              ☆
-            </button>
-          )}
-          {isSaved && (
-            <span
-              style={{ ...hoverIconBtn, color: 'var(--accent)', cursor: 'default' }}
-              title="Already saved"
-              aria-label="Already saved"
-            >
-              ★
-            </span>
-          )}
-          {onDelete && (
-            <button
-              type="button"
-              style={{ ...hoverIconBtn, color: 'var(--bad, #d94f4f)' }}
-              onClick={(e) => { e.stopPropagation(); onDelete(); }}
-              title="Delete from recent"
-              aria-label="Delete from recent"
-            >
-              ×
-            </button>
-          )}
-        </div>
-      )}
+      <RowContent entry={entry} hasResult={hasResult} rightSlot={rightSlot} styles={styles} />
     </div>
   );
 }
@@ -347,35 +370,39 @@ const saveZoneStyle = {
   paddingLeft: 20,
 };
 
-const hoverActionsStyle = {
-  position: 'absolute',
-  right: 6,
-  top: '50%',
-  transform: 'translateY(-50%)',
+// Right column holds either the timestamp OR the action buttons.
+// Same width whether hovering or not, so the layout never shifts.
+const rightColStyle = {
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'flex-end',
+  minWidth: 60,
+  flexShrink: 0,
+};
+
+const timeStyle = {
+  fontFamily: 'monospace',
+  fontSize: 10,
+  color: '#787878',
+};
+
+// Inline action buttons (desktop hover state)
+const inlineActionsStyle = {
   display: 'flex',
   gap: 2,
   alignItems: 'center',
-  // Solid background masks the timestamp underneath so icons don't
-  // visually collide with "just now" / "10h ago" text. var(--panel) is
-  // the same color as the surrounding panel surface so the actions look
-  // like they replace the time text rather than float over it.
-  background: 'var(--panel, #1a1a1a)',
-  border: '1px solid var(--border, rgba(255,255,255,0.1))',
-  borderRadius: 4,
-  padding: '2px 4px',
-  pointerEvents: 'auto',
-  boxShadow: '0 0 0 4px var(--panel, #1a1a1a)',
 };
 
-const hoverIconBtn = {
+const iconBtnStyle = {
   background: 'transparent',
   border: 'none',
-  padding: '4px 8px',
+  padding: '4px 6px',
   cursor: 'pointer',
   fontSize: 14,
   lineHeight: 1,
   color: 'var(--mute)',
   WebkitTapHighlightColor: 'transparent',
-  minWidth: 24,
+  minWidth: 22,
   textAlign: 'center',
+  borderRadius: 3,
 };
