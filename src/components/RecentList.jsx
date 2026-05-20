@@ -111,9 +111,9 @@ function RowContent({ entry, hasResult, rightSlot, styles }) {
         )}
       </div>
 
-      <div style={{ flex: 1, display: 'flex', justifyContent: 'center' }}>
+      <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-end' }}>
         {hasResult ? (
-          <div style={{ ...styles.savedBlank, textAlign: 'center' }}>{bl}</div>
+          <div style={{ ...styles.savedBlank, textAlign: 'right' }}>{bl}</div>
         ) : (
           <span style={noDataPillStyle}>Not in DB</span>
         )}
