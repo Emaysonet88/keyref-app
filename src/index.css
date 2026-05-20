@@ -2,7 +2,24 @@
    App still uses inline-style objects for layout (it's a single-screen tool
    with a lot of conditional rendering), but all *theme tokens* live as CSS
    variables, and all *animations* live here as keyframes. Components opt in
-   by setting `animation: ... ` inline. */
+   by setting `animation: ... ` inline.
+
+   PREMIUM PASS: font imports for Inter + JetBrains Mono (self-hosted, offline-
+   safe via @fontsource), refined microinteraction keyframes, and an upgraded
+   global focus/tap feedback. */
+
+/* ── Font imports ─────────────────────────────────────────────────────────── */
+/* @fontsource bundles the actual woff2 files into the build, so the PWA stays
+   fully offline-capable. We only import the weights/styles we actually use. */
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/500.css';
+@import '@fontsource/inter/600.css';
+@import '@fontsource/inter/700.css';
+
+@import '@fontsource/jetbrains-mono/400.css';
+@import '@fontsource/jetbrains-mono/500.css';
+@import '@fontsource/jetbrains-mono/600.css';
+@import '@fontsource/jetbrains-mono/700.css';
 
 /* ── Theme tokens ─────────────────────────────────────────────────────────── */
 :root,
@@ -24,11 +41,17 @@
   --accent-tint:  rgba(245, 166, 35, 0.12);
   --accent-tint2: rgba(245, 166, 35, 0.30);
   --accent-tint3: rgba(245, 166, 35, 0.08);
+  --accent-glow:  rgba(245, 166, 35, 0.25);
   --ok:           #52e0a0;
   --ok-tint:      rgba(82, 224, 160, 0.08);
   --err:          #e05252;
   --err-tint:     rgba(224, 82, 82, 0.08);
   --warn:         #e0a052;
+  --warn-bg:      rgba(245, 158, 11, 0.15);
+  --warn-fg:      #e0a052;
+  --warn-border:  rgba(245, 158, 11, 0.35);
+  --bad:          #e05252;
+  --text-muted:   #787878;
 }
 
 :root[data-theme="light"] {
@@ -49,11 +72,17 @@
   --accent-tint:  rgba(168, 89, 10, 0.16);
   --accent-tint2: rgba(168, 89, 10, 0.40);
   --accent-tint3: rgba(168, 89, 10, 0.10);
+  --accent-glow:  rgba(168, 89, 10, 0.25);
   --ok:           #1e6b3c;
   --ok-tint:      rgba(30, 107, 60, 0.12);
   --err:          #a8281f;
   --err-tint:     rgba(168, 40, 31, 0.10);
   --warn:         #8a4a08;
+  --warn-bg:      rgba(168, 89, 10, 0.12);
+  --warn-fg:      #8a4a08;
+  --warn-border:  rgba(168, 89, 10, 0.35);
+  --bad:          #a8281f;
+  --text-muted:   #524a3b;
 }
 
 /* ── Reset ────────────────────────────────────────────────────────────────── */
@@ -78,25 +107,39 @@ input[type="number"] { -moz-appearance: textfield; }
 
 select { background-image: none; }
 
+/* ── Focus rings (premium upgrade) ────────────────────────────────────────── */
+/* Soft glow instead of harsh outline. Composes with each control's own border
+   so it looks like the input is "lighting up" rather than getting bracketed
+   by a default browser ring. */
 button:focus-visible,
 select:focus-visible,
-input:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 2px;
+input:focus-visible,
+textarea:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--accent-glow);
+  border-color: var(--accent) !important;
 }
 
 html { scroll-behavior: smooth; }
 
 /* ── Tap feedback ─────────────────────────────────────────────────────────── */
-/* Subtle scale + brightness on press. Applies globally to every enabled
-   button. The transition is short enough that taps still feel snappy. */
+/* Tighter spring than before. Buttons feel responsive but not jumpy. */
 button:not(:disabled) {
-  transition: transform 100ms ease, filter 100ms ease, color 200ms ease,
-              background 200ms ease, border-color 200ms ease;
+  transition: transform 80ms cubic-bezier(0.4, 0, 0.2, 1),
+              filter 120ms ease,
+              color 180ms ease,
+              background 180ms ease,
+              border-color 180ms ease,
+              box-shadow 180ms ease;
 }
 button:not(:disabled):active {
-  transform: scale(0.96);
-  filter: brightness(1.1);
+  transform: scale(0.97);
+  filter: brightness(1.08);
+}
+
+/* Inputs and selects get a smooth color transition for focus, hover, etc. */
+input, select, textarea {
+  transition: border-color 160ms ease, box-shadow 160ms ease, background 160ms ease;
 }
 
 /* ── Animations ───────────────────────────────────────────────────────────── */
@@ -135,10 +178,29 @@ button:not(:disabled):active {
   100% { background-position: 200% 0; }
 }
 
+/* ── New premium-pass animations ──────────────────────────────────────────── */
+
+/* Subtle pulse for the RUN LOOKUP button while searching. */
+@keyframes searchPulse {
+  0%, 100% { box-shadow: 0 0 0 0 var(--accent-glow); }
+  50%      { box-shadow: 0 0 0 6px transparent; }
+}
+
+/* Brief flash for confirmation actions (copy-to-clipboard, save). */
+@keyframes flashOk {
+  0%   { background: var(--ok-tint); }
+  100% { background: transparent; }
+}
+
+/* Used on the hero "key blank" tag when it first renders — a one-time glow
+   that fades to draw the eye to the most important piece of data. */
+@keyframes heroPulse {
+  0%   { box-shadow: 0 0 0 0 var(--accent-glow); }
+  50%  { box-shadow: 0 0 0 8px transparent; }
+  100% { box-shadow: 0 0 0 0 transparent; }
+}
+
 /* ── prefers-reduced-motion ───────────────────────────────────────────────── */
-/* Users who've set "Reduce Motion" in iOS / Android get the static experience.
-   We zero out all animation and transition durations rather than removing the
-   declarations, which keeps end-states intact and only kills the motion. */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration:   0.01ms !important;

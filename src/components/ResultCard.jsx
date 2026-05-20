@@ -2,76 +2,95 @@ import { useState } from 'react';
 import ObpProcedure from './ObpProcedure';
 import { haptic } from '../utils/haptic';
 
-// ── Field configuration ──────────────────────────────────────────────────────
-// Driven by data so adding a new row is one line. `mutedIfEmpty` styles the
-// value muted when there's nothing to show but a fallback exists.
-const RESULT_FIELDS = [
-  { key: 'keyType',         label: 'Key Type',         fallback: '—' },
-  { key: 'transponderChip', label: 'Transponder Chip', fallback: 'None / Not Required', mutedIfEmpty: true },
-  { key: 'codeRange',       label: 'Code Range' },
-  { key: 'cloningMethod',   label: 'Cloning Method' },
-  { key: 'substitutes',     label: 'Substitutes' },
-  { key: 'lockApps',        label: 'Lock Apps' },
-  { key: 'cardNo',          label: 'Card No.' },
+// ── ResultCard ───────────────────────────────────────────────────────────────
+// PREMIUM PASS: visual grouping (Key Info / Programming / Cross-Reference),
+// hero treatment for the primary blank, per-field copy buttons on the values
+// the locksmith uses most. Staggered reveal animation per row preserved.
+//
+// Field layout philosophy:
+//   - Key Info: the answer to "what key do I need?" — keyBlanks (hero) +
+//     transponder chip + code range + cloning method. These are what the
+//     locksmith reads off the screen while quoting the customer.
+//   - Programming: whether/how to program. Includes the OBP procedure when
+//     applicable.
+//   - Cross-Reference: extra metadata the locksmith may need to verify or
+//     ordering — substitutes, lock apps, card no.
+//   - Notes always at the bottom, no border.
+
+// Field configuration. Each field declares which group it belongs to so we
+// can iterate once and bucket on the fly. `copyable: true` exposes a small
+// COPY button next to the value.
+const FIELDS = [
+  // — Key Info —
+  { key: 'keyType',         label: 'Key Type',         group: 'key', fallback: '—' },
+  { key: 'transponderChip', label: 'Transponder Chip', group: 'key', fallback: 'None / Not Required', mutedIfEmpty: true, copyable: true },
+  { key: 'codeRange',       label: 'Code Range',       group: 'key', copyable: true },
+  { key: 'cloningMethod',   label: 'Cloning Method',   group: 'key' },
+  // — Cross-Reference —
+  { key: 'substitutes',     label: 'Substitutes',      group: 'ref', copyable: true },
+  { key: 'lockApps',        label: 'Lock Apps',        group: 'ref' },
+  { key: 'cardNo',          label: 'Card No.',         group: 'ref', copyable: true },
 ];
 
-// Per-row reveal animation. Rows mount with opacity 0 and slide up; a small
-// per-row delay creates a "scrolling-down" effect when a result appears.
-// `both` fill mode keeps the start state before the delay elapses.
 const revealStyle = (index) => ({
   animation: `rowReveal 320ms ease ${index * 35}ms both`,
 });
 
-// ── ResultCard ───────────────────────────────────────────────────────────────
-// Self-contained result detail card. Manages its own copy-feedback state,
-// triggers haptic taps on save and blank-copy, defers OBP rendering to
-// <ObpProcedure>. Parent passes a `key` based on the vehicle so a new lookup
-// remounts the card and re-runs the staggered reveal.
 export default function ResultCard({ vehicle, result, isSaved, onSave, styles }) {
-  const [copiedBlank, setCopiedBlank] = useState(null);
+  const [copied, setCopied] = useState(null); // tracks the most recently copied value
 
   const blanks = Array.isArray(result.keyBlanks)
     ? result.keyBlanks.filter(Boolean)
     : (result.keyBlanks ? [result.keyBlanks] : []);
 
-  async function copyToClipboard(text) {
+  async function copyToClipboard(text, label) {
     try {
       await navigator.clipboard.writeText(text);
-      haptic(8); // brief tap acknowledges the copy
-      setCopiedBlank(text);
-      setTimeout(() => setCopiedBlank(null), 1500);
+      haptic(8);
+      setCopied(label);
+      setTimeout(() => setCopied(curr => curr === label ? null : curr), 1500);
     } catch (e) { console.error(e); }
   }
 
   function handleSave() {
     if (isSaved) return;
-    haptic(12); // slightly longer for a meaningful action
+    haptic(12);
     onSave();
   }
 
-  // Build the row list as data so we can assign sequential reveal delays.
-  const rows = [];
+  // Build the rows, bucketed by group
+  const groups = {
+    key:         { label: 'Key Information', rows: [] },
+    programming: { label: 'Programming',     rows: [] },
+    ref:         { label: 'Cross-Reference', rows: [] },
+    notes:       { label: 'Notes',           rows: [] },
+  };
+
+  // ── Hero blank row (Key group) ─────────────────────────────────────────
   if (blanks.length > 0) {
-    rows.push({
+    groups.key.rows.push({
       key: 'blanks',
       label: 'Key Blank(s)',
       content: (
-        <div style={styles.dataValHi}>
-          {blanks.map(b => {
+        <div>
+          {blanks.map((b, i) => {
             const isOem = b.toUpperCase().includes('OEM');
-            const isCopied = copiedBlank === b;
+            const isCopied = copied === `blank-${b}`;
+            const cleanLabel = isOem ? b.replace(/^OEM#?\s*/i, '') : b;
+            // First blank gets the hero treatment; others use the regular tag
+            const isHero = i === 0 && !isOem;
             return (
               <span
                 key={b}
                 style={{
-                  ...styles.tag,
-                  background: isCopied ? 'var(--accent-tint2)' : styles.tag.background,
-                  fontSize: isOem ? 11 : 12,
+                  ...(isHero ? styles.heroBlank : styles.tag),
+                  ...(isCopied ? { background: 'var(--accent-tint2)' } : {}),
+                  fontSize: isOem ? 12 : (isHero ? styles.heroBlank.fontSize : styles.tag.fontSize),
                 }}
-                onClick={() => copyToClipboard(b)}
+                onClick={() => copyToClipboard(b, `blank-${b}`)}
                 title="Tap to copy"
               >
-                {isCopied ? '✓ Copied' : (isOem ? `[OEM] ${b.replace(/^OEM#?\s*/i, '')}` : b)}
+                {isCopied ? '✓ Copied' : (isOem ? `[OEM] ${cleanLabel}` : cleanLabel)}
               </span>
             );
           })}
@@ -80,19 +99,43 @@ export default function ResultCard({ vehicle, result, isSaved, onSave, styles })
     });
   }
 
-  for (const f of RESULT_FIELDS) {
+  // ── Standard fields, bucketed by group ─────────────────────────────────
+  for (const f of FIELDS) {
     const val = result[f.key];
     if (!val && !f.fallback) continue;
     const display = val || f.fallback;
     const valStyle = !val && f.mutedIfEmpty ? styles.dataValMuted : styles.dataVal;
-    rows.push({
+    const copyKey = `${f.key}-${display}`;
+    const isCopied = copied === copyKey;
+    const showCopy = f.copyable && !!val;
+
+    groups[f.group].rows.push({
       key: f.key,
       label: f.label,
-      content: <div style={valStyle}>{display}</div>,
+      content: (
+        <div style={valStyle}>
+          <span style={{ verticalAlign: 'middle' }}>{display}</span>
+          {showCopy && (
+            <button
+              type="button"
+              style={{
+                ...styles.copyBtn,
+                ...(isCopied ? styles.copyBtnSuccess : {}),
+              }}
+              onClick={(e) => { e.stopPropagation(); copyToClipboard(display, copyKey); }}
+              aria-label={`Copy ${f.label}`}
+              title={`Copy ${f.label}`}
+            >
+              {isCopied ? '✓' : 'COPY'}
+            </button>
+          )}
+        </div>
+      ),
     });
   }
 
-  rows.push({
+  // ── Programming group ─────────────────────────────────────────────────
+  groups.programming.rows.push({
     key: 'programming',
     label: 'Programming',
     content: (
@@ -103,9 +146,9 @@ export default function ResultCard({ vehicle, result, isSaved, onSave, styles })
   });
 
   if (result.programmingRequired && result.programmingMethod) {
-    rows.push({
+    groups.programming.rows.push({
       key: 'programMethod',
-      label: 'Program Method',
+      label: 'Method',
       content: (
         <div style={styles.dataVal}>
           <div>{result.programmingMethod}</div>
@@ -115,16 +158,27 @@ export default function ResultCard({ vehicle, result, isSaved, onSave, styles })
     });
   }
 
+  // ── Notes group ────────────────────────────────────────────────────────
   if (result.notes) {
-    rows.push({
+    groups.notes.rows.push({
       key: 'notes',
       label: 'Notes',
       content: <div style={styles.notesBox}>{result.notes}</div>,
-      isLast: true,
     });
-  } else {
-    // Mark the last actually-rendered row so its bottom border is omitted.
-    if (rows.length) rows[rows.length - 1].isLast = true;
+  }
+
+  // Flatten for sequential reveal-delay assignment across the entire card
+  const renderedGroups = [];
+  let rowIndex = 0;
+  for (const groupKey of ['key', 'programming', 'ref', 'notes']) {
+    const g = groups[groupKey];
+    if (g.rows.length === 0) continue;
+    const rowsWithIndex = g.rows.map((r, localIdx) => ({
+      ...r,
+      idx: rowIndex++,
+      isLast: localIdx === g.rows.length - 1,
+    }));
+    renderedGroups.push({ key: groupKey, label: g.label, rows: rowsWithIndex });
   }
 
   return (
@@ -134,10 +188,10 @@ export default function ResultCard({ vehicle, result, isSaved, onSave, styles })
           <div style={styles.resultVehicle}>
             {vehicle.year} {vehicle.make} {vehicle.model}
           </div>
-          <div style={{ fontFamily: 'monospace', fontSize: 9, color: '#787878', marginTop: 4 }}>
+          <div style={metaLineStyle}>
             Source: {result.dataSource || 'Database'}
           </div>
-          <div style={{ fontFamily: 'monospace', fontSize: 9, color: '#787878', marginTop: 2 }}>
+          <div style={{ ...metaLineStyle, marginTop: 2 }}>
             Matched range: {result.yearStart}–{result.yearEnd}
           </div>
         </div>
@@ -151,13 +205,39 @@ export default function ResultCard({ vehicle, result, isSaved, onSave, styles })
       </div>
 
       <div style={styles.resultBody}>
-        {rows.map((r, i) => (
-          <div key={r.key} style={{ ...styles.dataRow(!!r.isLast), ...revealStyle(i) }}>
-            <div style={styles.dataKey}>{r.label}</div>
-            {r.content}
+        {renderedGroups.map((g, gi) => (
+          <div
+            key={g.key}
+            style={{
+              ...styles.dataGroup,
+              ...(gi > 0 ? { marginTop: 8 } : {}),
+            }}
+          >
+            {/* Group label, unless it's the only group (no need to label a single section) */}
+            {renderedGroups.length > 1 && (
+              <div style={{ ...styles.dataGroupLabel, ...revealStyle(g.rows[0].idx) }}>
+                {g.label}
+              </div>
+            )}
+            {g.rows.map(r => (
+              <div key={r.key} style={{ ...styles.dataRow(r.isLast), ...revealStyle(r.idx) }}>
+                <div style={styles.dataKey}>{r.label}</div>
+                {r.content}
+              </div>
+            ))}
           </div>
         ))}
       </div>
     </div>
   );
 }
+
+// Small style — used twice for the two meta lines below the title
+const metaLineStyle = {
+  fontFamily: "'JetBrains Mono', monospace",
+  fontSize: 9,
+  color: 'var(--mute-val)',
+  letterSpacing: 1,
+  marginTop: 4,
+  textTransform: 'uppercase',
+};

@@ -4,8 +4,53 @@
 // (we'd need a sub-600 px media-query branch on every rule), so we leave that
 // in JS. Components destructure only the styles they need.
 //
-// To re-skin the app, edit src/index.css. To restructure a layout, edit the
-// component. That's the split.
+// PREMIUM PASS — three changes, all driven from this file:
+//
+// 1. TYPOGRAPHY: Inter (UI/body) + JetBrains Mono (data/code/labels).
+//    Real type scale: 9 / 10 / 11 / 13 / 15 / 18 / 24 / 28 / 32 / 46.
+//    Letter-spacing and line-height unified for visual rhythm.
+//
+// 2. MICROINTERACTIONS: every interactive element has consistent transitions.
+//    Buttons scale 97% on press (handled globally in index.css). Inputs glow
+//    on focus. Rows shift subtly on hover. All honor prefers-reduced-motion.
+//
+// 3. RESULT CARD POLISH: dataValHi bumped, new hero-blank treatment,
+//    copyBtn for per-field copy, dataGroup/dataGroupLabel for visual
+//    grouping in ResultCard.
+//
+// Font constants up top — single source of truth.
+
+const FONT_SANS = "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif";
+const FONT_MONO = "'JetBrains Mono', 'SF Mono', 'Cascadia Code', 'Roboto Mono', ui-monospace, monospace";
+const FONT_DISPLAY = "'Bebas Neue', sans-serif";
+
+// Type scale — every fontSize in the app should pull from here.
+const SIZE = {
+  micro:  9,    // tiny uppercase labels
+  tiny:   10,   // standard caps labels
+  small:  11,   // secondary text, status badges
+  body:   13,   // standard body / data
+  bodyLg: 15,   // emphasized data
+  h3:     18,   // section headings
+  h2:     22,   // result card title (mobile)
+  h2Lg:   26,   // result card title (desktop)
+  h1:     32,   // logo / hero (mobile)
+  h1Lg:   46,   // logo / hero (desktop)
+};
+
+const TRACK = {
+  tight:   0,
+  body:    0.1,
+  label:   1,
+  caps:    2,
+  display: 3,
+};
+
+const TRANSITION = {
+  fast: '120ms ease',
+  base: '180ms cubic-bezier(0.4, 0, 0.2, 1)',
+  slow: '240ms cubic-bezier(0.4, 0, 0.2, 1)',
+};
 
 export function makeStyles(isMobile) {
   return {
@@ -13,18 +58,18 @@ export function makeStyles(isMobile) {
     app: {
       background: 'var(--bg)',
       minHeight: '100vh',
-      fontFamily: "'IBM Plex Sans', sans-serif",
+      fontFamily: FONT_SANS,
+      // Cleaner glyph rendering, especially noticeable on Inter
+      fontFeatureSettings: '"ss01", "cv11"',
       color: 'var(--text)',
       padding: '0 16px 60px',
+      WebkitFontSmoothing: 'antialiased',
+      MozOsxFontSmoothing: 'grayscale',
+      textRendering: 'optimizeLegibility',
     },
     inner: { maxWidth: 1000, margin: '0 auto' },
 
     // ── Header ────────────────────────────────────────────────────────────
-    // The header is a positioning context. The right controls (status badge +
-    // theme toggle) are absolutely positioned to the top-right corner so they
-    // never wrap below the logo on narrow screens. `paddingRight` reserves
-    // enough horizontal space that the logo and subtitle don't run under the
-    // absolute-positioned controls.
     header: {
       position: 'relative',
       padding: '24px 0 18px',
@@ -33,18 +78,19 @@ export function makeStyles(isMobile) {
       marginBottom: 24,
     },
     logo: {
-      fontFamily: "'Bebas Neue', sans-serif",
-      fontSize: isMobile ? 32 : 46,
-      letterSpacing: 2,
-      lineHeight: 1,
+      fontFamily: FONT_DISPLAY,
+      fontSize: isMobile ? SIZE.h1 : SIZE.h1Lg,
+      letterSpacing: TRACK.caps,
+      lineHeight: 1.05,
       color: 'var(--logo)',
     },
     logoSub: {
-      fontFamily: 'monospace',
-      fontSize: 9,
-      color: '#787878',
-      letterSpacing: 3,
-      marginTop: 3,
+      fontFamily: FONT_MONO,
+      fontSize: SIZE.micro,
+      color: 'var(--mute-val)',
+      letterSpacing: TRACK.display,
+      marginTop: 4,
+      textTransform: 'uppercase',
     },
     headerRight: {
       position: 'absolute',
@@ -55,9 +101,9 @@ export function makeStyles(isMobile) {
       gap: 8,
     },
     statusBadge: (online) => ({
-      fontFamily: 'monospace',
-      fontSize: 9,
-      letterSpacing: 1,
+      fontFamily: FONT_MONO,
+      fontSize: SIZE.micro,
+      letterSpacing: TRACK.label,
       display: 'inline-flex',
       alignItems: 'center',
       gap: 6,
@@ -70,13 +116,14 @@ export function makeStyles(isMobile) {
       border: 'none',
       color: 'var(--text)',
       cursor: 'pointer',
-      width: 32,
-      height: 32,
+      width: 36,
+      height: 36,
       display: 'inline-flex',
       alignItems: 'center',
       justifyContent: 'center',
       padding: 0,
       opacity: 0.65,
+      borderRadius: 6,
     },
 
     // ── Panels ────────────────────────────────────────────────────────────
@@ -87,11 +134,12 @@ export function makeStyles(isMobile) {
       marginBottom: 16,
     },
     panelLabel: {
-      fontFamily: 'monospace',
-      fontSize: 10,
-      letterSpacing: 3,
+      fontFamily: FONT_MONO,
+      fontSize: SIZE.tiny,
+      letterSpacing: TRACK.display,
       color: 'var(--accent)',
       textTransform: 'uppercase',
+      fontWeight: 600,
       marginBottom: 16,
       display: 'flex',
       alignItems: 'center',
@@ -99,20 +147,17 @@ export function makeStyles(isMobile) {
       flexWrap: 'wrap',
     },
     panelLabelHint: {
-      fontFamily: 'monospace',
-      fontSize: 9,
+      fontFamily: FONT_MONO,
+      fontSize: SIZE.micro,
       color: 'var(--mute)',
-      letterSpacing: 1,
+      letterSpacing: TRACK.label,
       textTransform: 'none',
       marginLeft: 'auto',
+      fontWeight: 400,
     },
     labelBar: { width: 12, height: 2, background: 'var(--accent)', display: 'block' },
 
     // ── Mode toggle ───────────────────────────────────────────────────────
-    // Segmented-control structure: a relative wrapper containing one
-    // absolutely-positioned indicator pill plus the buttons. The pill's
-    // `left` and `width` are set by ModeToggle.jsx based on each button's
-    // measured offsetLeft/offsetWidth, and CSS transitions handle the slide.
     modeToggle: {
       display: 'flex',
       position: 'relative',
@@ -137,13 +182,13 @@ export function makeStyles(isMobile) {
       background: 'transparent',
       border: 'none',
       color: active ? '#000' : 'var(--text)',
-      fontFamily: 'monospace',
-      fontSize: 11,
-      letterSpacing: 2,
+      fontFamily: FONT_MONO,
+      fontSize: SIZE.small,
+      letterSpacing: TRACK.caps,
       padding: '10px 12px',
       textTransform: 'uppercase',
       cursor: 'pointer',
-      fontWeight: active ? 600 : 400,
+      fontWeight: active ? 600 : 500,
       position: 'relative',
       zIndex: 1,
     }),
@@ -157,20 +202,21 @@ export function makeStyles(isMobile) {
     },
     field: { display: 'flex', flexDirection: 'column', gap: 5 },
     fieldLabel: {
-      fontFamily: 'monospace',
-      fontSize: 9,
-      letterSpacing: 2,
+      fontFamily: FONT_MONO,
+      fontSize: SIZE.micro,
+      letterSpacing: TRACK.caps,
       color: 'var(--mute)',
       textTransform: 'uppercase',
+      fontWeight: 500,
     },
     selWrap: { position: 'relative' },
     select: {
       background: 'var(--input)',
       border: '1px solid var(--border-strong)',
       color: 'var(--text)',
-      fontFamily: 'monospace',
-      fontSize: 13,
-      padding: '9px 28px 9px 10px',
+      fontFamily: FONT_MONO,
+      fontSize: SIZE.body,
+      padding: '10px 28px 10px 11px',
       width: '100%',
       appearance: 'none',
       WebkitAppearance: 'none',
@@ -182,16 +228,16 @@ export function makeStyles(isMobile) {
       top: '50%',
       transform: 'translateY(-50%)',
       color: 'var(--accent)',
-      fontSize: 11,
+      fontSize: SIZE.small,
       pointerEvents: 'none',
     },
     inputNum: {
       background: 'var(--input)',
       border: '1px solid var(--border-strong)',
       color: 'var(--text)',
-      fontFamily: 'monospace',
-      fontSize: 13,
-      padding: '9px 10px',
+      fontFamily: FONT_MONO,
+      fontSize: SIZE.body,
+      padding: '10px 11px',
       width: '100%',
       outline: 'none',
     },
@@ -203,30 +249,32 @@ export function makeStyles(isMobile) {
       background: 'var(--input)',
       border: '1px solid var(--border-strong)',
       color: 'var(--text)',
-      fontFamily: 'monospace',
-      fontSize: 11,
-      padding: '8px 10px',
+      fontFamily: FONT_MONO,
+      fontSize: SIZE.small,
+      padding: '9px 11px',
       outline: 'none',
       textTransform: 'uppercase',
+      letterSpacing: TRACK.body,
     },
     vinBtn: {
       background: 'transparent',
       border: '1px solid var(--accent)',
       color: 'var(--accent)',
-      fontFamily: 'monospace',
-      fontSize: 10,
-      padding: '8px 12px',
+      fontFamily: FONT_MONO,
+      fontSize: SIZE.tiny,
+      fontWeight: 600,
+      padding: '9px 13px',
       cursor: 'pointer',
       textTransform: 'uppercase',
-      letterSpacing: 1,
+      letterSpacing: TRACK.label,
       whiteSpace: 'nowrap',
     },
     vinFlash: {
-      fontFamily: 'monospace',
-      fontSize: 11,
+      fontFamily: FONT_MONO,
+      fontSize: SIZE.small,
       color: 'var(--ok)',
       marginBottom: 12,
-      padding: '6px 10px',
+      padding: '7px 11px',
       background: 'var(--ok-tint)',
       borderLeft: '2px solid var(--ok)',
     },
@@ -237,22 +285,23 @@ export function makeStyles(isMobile) {
       background: disabled ? '#555' : 'var(--accent)',
       border: 'none',
       color: disabled ? '#999' : '#000',
-      fontFamily: "'Bebas Neue', sans-serif",
-      fontSize: 20,
-      letterSpacing: 3,
-      padding: 13,
+      fontFamily: FONT_DISPLAY,
+      fontSize: 22,
+      letterSpacing: TRACK.display,
+      padding: 14,
       cursor: disabled ? 'not-allowed' : 'pointer',
       opacity: disabled ? 0.5 : 1,
-      minHeight: 44,
+      minHeight: 46,
     }),
     errMsg: {
       background: 'var(--err-tint)',
       borderLeft: '3px solid var(--err)',
       color: 'var(--err)',
-      fontFamily: 'monospace',
-      fontSize: 12,
-      padding: '11px 15px',
+      fontFamily: FONT_MONO,
+      fontSize: SIZE.body,
+      padding: '12px 16px',
       marginBottom: 14,
+      lineHeight: 1.5,
     },
 
     // ── Result card ───────────────────────────────────────────────────────
@@ -265,96 +314,164 @@ export function makeStyles(isMobile) {
     resultHeader: {
       background: 'var(--header-bg)',
       borderBottom: '1px solid var(--border)',
-      padding: '12px 18px',
+      padding: '14px 18px',
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'space-between',
       gap: 12,
     },
     resultVehicle: {
-      fontFamily: "'Bebas Neue', sans-serif",
-      fontSize: isMobile ? 20 : 24,
-      letterSpacing: 1,
+      fontFamily: FONT_DISPLAY,
+      fontSize: isMobile ? SIZE.h2 : SIZE.h2Lg,
+      letterSpacing: TRACK.label,
       color: 'var(--accent)',
-      lineHeight: 1,
+      lineHeight: 1.05,
     },
     btnSave: (s) => ({
       background: 'transparent',
       border: `1px solid ${s ? 'var(--ok)' : 'var(--border-strong)'}`,
       color: s ? 'var(--ok)' : 'var(--mute)',
-      fontFamily: 'monospace',
-      fontSize: 10,
-      letterSpacing: 2,
-      padding: '5px 11px',
+      fontFamily: FONT_MONO,
+      fontSize: SIZE.tiny,
+      fontWeight: 600,
+      letterSpacing: TRACK.caps,
+      padding: '6px 12px',
       cursor: s ? 'default' : 'pointer',
       textTransform: 'uppercase',
       whiteSpace: 'nowrap',
       minHeight: 44,
     }),
-    resultBody: { padding: 18, display: 'grid', gap: 10 },
+    resultBody: { padding: 18, display: 'grid', gap: 14 },
+
+    // Group container — used to visually separate Key Info / Programming /
+    // Cross-Reference in the ResultCard
+    dataGroup: {
+      display: 'grid',
+      gap: 10,
+    },
+    dataGroupLabel: {
+      fontFamily: FONT_MONO,
+      fontSize: SIZE.micro,
+      letterSpacing: TRACK.display,
+      color: 'var(--accent)',
+      textTransform: 'uppercase',
+      fontWeight: 600,
+      paddingBottom: 6,
+      borderBottom: '1px solid var(--accent-tint)',
+      display: 'flex',
+      alignItems: 'center',
+      gap: 6,
+    },
+
     dataRow: (isLast) => ({
       display: 'grid',
-      gridTemplateColumns: isMobile ? '100px 1fr' : '150px 1fr',
+      gridTemplateColumns: isMobile ? '105px 1fr' : '160px 1fr',
       gap: 10,
       alignItems: 'start',
       borderBottom: isLast ? 'none' : '1px solid var(--border)',
       paddingBottom: isLast ? 0 : 10,
     }),
     dataKey: {
-      fontFamily: 'monospace',
-      fontSize: 9,
-      letterSpacing: 2,
+      fontFamily: FONT_MONO,
+      fontSize: SIZE.micro,
+      letterSpacing: TRACK.caps,
       color: 'var(--mute)',
       textTransform: 'uppercase',
-      paddingTop: 2,
+      paddingTop: 3,
+      fontWeight: 500,
     },
     dataVal: {
-      fontFamily: 'monospace',
-      fontSize: 13,
+      fontFamily: FONT_MONO,
+      fontSize: SIZE.body,
       color: 'var(--text)',
-      lineHeight: 1.5,
+      lineHeight: 1.55,
       wordBreak: 'break-word',
     },
     dataValHi: {
-      fontFamily: 'monospace',
-      fontSize: 15,
+      fontFamily: FONT_MONO,
+      fontSize: SIZE.bodyLg,
       color: 'var(--accent)',
       fontWeight: 600,
       lineHeight: 1.5,
     },
     dataValYes: {
-      fontFamily: 'monospace',
-      fontSize: 13,
+      fontFamily: FONT_MONO,
+      fontSize: SIZE.body,
       color: 'var(--ok)',
-      lineHeight: 1.5,
+      lineHeight: 1.55,
+      fontWeight: 500,
     },
     dataValMuted: {
-      fontFamily: 'monospace',
-      fontSize: 13,
+      fontFamily: FONT_MONO,
+      fontSize: SIZE.body,
       color: 'var(--mute-val)',
-      lineHeight: 1.5,
+      lineHeight: 1.55,
     },
     tag: {
       display: 'inline-block',
       background: 'var(--accent-tint)',
       border: '1px solid var(--accent-rim)',
       color: 'var(--accent)',
-      fontFamily: 'monospace',
-      fontSize: 12,
-      padding: '4px 10px',
+      fontFamily: FONT_MONO,
+      fontSize: SIZE.body,
+      fontWeight: 500,
+      padding: '5px 11px',
       margin: '2px 4px 2px 0',
       cursor: 'pointer',
       userSelect: 'none',
-      minHeight: 28,
+      minHeight: 30,
+      letterSpacing: TRACK.body,
     },
+
+    // Hero blank — the primary answer to a lookup. Bigger, bolder, with a
+    // one-time pulse on first render to draw the eye.
+    heroBlank: {
+      display: 'inline-block',
+      background: 'var(--accent-tint)',
+      border: '1px solid var(--accent-rim)',
+      color: 'var(--accent)',
+      fontFamily: FONT_MONO,
+      fontSize: SIZE.h3,
+      fontWeight: 700,
+      letterSpacing: TRACK.label,
+      padding: '8px 16px',
+      margin: '2px 6px 2px 0',
+      cursor: 'pointer',
+      userSelect: 'none',
+      minHeight: 38,
+      animation: 'heroPulse 1200ms ease-out 200ms 1 both',
+    },
+
+    // Inline copy button used on values that the locksmith might want to
+    // grab quickly (key blank, chip, code range)
+    copyBtn: {
+      background: 'transparent',
+      border: '1px solid var(--border-strong)',
+      color: 'var(--mute)',
+      fontFamily: FONT_MONO,
+      fontSize: SIZE.micro,
+      fontWeight: 600,
+      letterSpacing: TRACK.label,
+      padding: '3px 7px',
+      cursor: 'pointer',
+      textTransform: 'uppercase',
+      marginLeft: 8,
+      verticalAlign: 'middle',
+      minHeight: 24,
+    },
+    copyBtnSuccess: {
+      borderColor: 'var(--ok)',
+      color: 'var(--ok)',
+    },
+
     notesBox: {
       background: 'var(--notes-bg)',
       borderLeft: '2px solid var(--accent-rim)',
-      padding: '9px 13px',
-      fontFamily: 'monospace',
-      fontSize: 12,
+      padding: '10px 14px',
+      fontFamily: FONT_MONO,
+      fontSize: SIZE.body,
       color: 'var(--mute)',
-      lineHeight: 1.6,
+      lineHeight: 1.65,
     },
 
     // ── OBP procedure ─────────────────────────────────────────────────────
@@ -362,13 +479,14 @@ export function makeStyles(isMobile) {
       background: 'transparent',
       border: '1px solid var(--accent)',
       color: 'var(--accent)',
-      fontFamily: 'monospace',
-      fontSize: 11,
-      padding: '6px 12px',
+      fontFamily: FONT_MONO,
+      fontSize: SIZE.small,
+      fontWeight: 600,
+      padding: '7px 13px',
       cursor: 'pointer',
       textTransform: 'uppercase',
-      marginTop: 6,
-      letterSpacing: 1,
+      marginTop: 8,
+      letterSpacing: TRACK.label,
     },
     obpPanel: {
       background: 'var(--notes-bg)',
@@ -376,17 +494,17 @@ export function makeStyles(isMobile) {
       borderLeft: '3px solid var(--accent)',
       padding: 14,
       marginTop: 8,
-      fontFamily: 'monospace',
-      fontSize: 12,
+      fontFamily: FONT_MONO,
+      fontSize: SIZE.body,
       color: 'var(--text)',
-      lineHeight: 1.6,
+      lineHeight: 1.65,
     },
     obpTitle: {
       color: 'var(--accent)',
-      fontWeight: 600,
+      fontWeight: 700,
       marginBottom: 8,
       textTransform: 'uppercase',
-      letterSpacing: 1,
+      letterSpacing: TRACK.label,
     },
 
     // ── Saved / recent list rows ──────────────────────────────────────────
@@ -395,7 +513,7 @@ export function makeStyles(isMobile) {
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'space-between',
-      padding: '9px 13px',
+      padding: '10px 13px',
       background: 'var(--input)',
       border: '1px solid var(--border)',
       cursor: 'pointer',
@@ -403,13 +521,19 @@ export function makeStyles(isMobile) {
       flexWrap: isMobile ? 'wrap' : 'nowrap',
     },
     savedVehicle: {
-      fontFamily: 'monospace',
-      fontSize: 13,
+      fontFamily: FONT_MONO,
+      fontSize: SIZE.body,
       color: 'var(--text)',
       flex: 1,
       minWidth: 100,
+      fontWeight: 500,
     },
-    savedBlank: { fontFamily: 'monospace', fontSize: 11, color: 'var(--accent)' },
+    savedBlank: {
+      fontFamily: FONT_MONO,
+      fontSize: SIZE.small,
+      color: 'var(--accent)',
+      fontWeight: 600,
+    },
     btnDel: {
       background: 'transparent',
       border: 'none',
@@ -422,19 +546,19 @@ export function makeStyles(isMobile) {
       minHeight: 28,
     },
     empty: {
-      fontFamily: 'monospace',
-      fontSize: 11,
+      fontFamily: FONT_MONO,
+      fontSize: SIZE.small,
       color: 'var(--mute-val)',
-      letterSpacing: 1,
+      letterSpacing: TRACK.label,
       padding: '6px 0',
     },
     savedSearchInput: {
       background: 'var(--input)',
       border: '1px solid var(--border-strong)',
       color: 'var(--text)',
-      fontFamily: 'monospace',
-      fontSize: 12,
-      padding: '8px 10px',
+      fontFamily: FONT_MONO,
+      fontSize: SIZE.body,
+      padding: '9px 11px',
       width: '100%',
       outline: 'none',
       marginBottom: 8,
@@ -443,17 +567,18 @@ export function makeStyles(isMobile) {
       background: 'var(--input)',
       border: '1px solid var(--border)',
       color: 'var(--text)',
-      fontFamily: 'monospace',
-      fontSize: 12,
-      padding: '8px 10px',
+      fontFamily: FONT_MONO,
+      fontSize: SIZE.body,
+      padding: '9px 11px',
       width: '100%',
       outline: 'none',
     },
     savedNoteText: {
-      fontFamily: 'monospace',
-      fontSize: 11,
-      color: '#787878',
+      fontFamily: FONT_MONO,
+      fontSize: SIZE.small,
+      color: 'var(--mute)',
       marginTop: 4,
+      lineHeight: 1.5,
     },
 
     // ── Ignition prompt ───────────────────────────────────────────────────
@@ -461,23 +586,26 @@ export function makeStyles(isMobile) {
       background: 'var(--accent-tint3)',
       borderLeft: '3px solid var(--accent)',
       color: 'var(--text)',
-      fontFamily: 'monospace',
-      fontSize: 12,
-      padding: '12px 14px',
+      fontFamily: FONT_MONO,
+      fontSize: SIZE.body,
+      padding: '13px 15px',
       marginBottom: 14,
       display: 'grid',
       gap: 8,
+      lineHeight: 1.5,
     },
     ignitionButton: {
       background: 'transparent',
       border: '1px solid var(--accent)',
       color: 'var(--accent)',
-      fontFamily: 'monospace',
-      fontSize: 11,
-      padding: '8px 12px',
+      fontFamily: FONT_MONO,
+      fontSize: SIZE.small,
+      fontWeight: 600,
+      padding: '9px 13px',
       cursor: 'pointer',
       textTransform: 'uppercase',
-      minHeight: 36,
+      letterSpacing: TRACK.label,
+      minHeight: 38,
     },
 
     // ── Universal search ──────────────────────────────────────────────────
@@ -485,9 +613,9 @@ export function makeStyles(isMobile) {
       background: 'var(--input)',
       border: '1px solid var(--border-strong)',
       color: 'var(--text)',
-      fontFamily: 'monospace',
-      fontSize: 14,
-      padding: '12px 14px',
+      fontFamily: FONT_MONO,
+      fontSize: SIZE.bodyLg,
+      padding: '13px 15px',
       width: '100%',
       outline: 'none',
       marginBottom: 10,
@@ -496,26 +624,28 @@ export function makeStyles(isMobile) {
       background: 'transparent',
       border: '1px solid var(--border)',
       color: 'var(--mute)',
-      fontFamily: 'monospace',
-      fontSize: 10,
-      padding: '4px 10px',
+      fontFamily: FONT_MONO,
+      fontSize: SIZE.tiny,
+      fontWeight: 500,
+      padding: '5px 11px',
       cursor: 'pointer',
       textTransform: 'uppercase',
-      letterSpacing: 1,
+      letterSpacing: TRACK.label,
     },
     typeBadge: (type) => {
       const c = {
-        model: 'var(--accent)',
-        chip: 'var(--ok)',
-        obp: '#a78bfa',
+        model:     'var(--accent)',
+        chip:      'var(--ok)',
+        obp:       '#a78bfa',
         codeRange: '#5fa6e0',
-        fuzzy: 'var(--mute)',
+        fuzzy:     'var(--mute)',
       }[type] || 'var(--mute)';
       return {
-        fontFamily: 'monospace',
+        fontFamily: FONT_MONO,
         fontSize: 8,
-        letterSpacing: 1,
-        padding: '2px 6px',
+        fontWeight: 700,
+        letterSpacing: TRACK.label,
+        padding: '3px 7px',
         border: `1px solid ${c}`,
         color: c,
         textTransform: 'uppercase',
@@ -528,10 +658,10 @@ export function makeStyles(isMobile) {
       marginTop: 32,
       paddingTop: 14,
       borderTop: '1px solid var(--border)',
-      fontFamily: 'monospace',
-      fontSize: 9,
+      fontFamily: FONT_MONO,
+      fontSize: SIZE.micro,
       color: 'var(--mute-val)',
-      letterSpacing: 2,
+      letterSpacing: TRACK.caps,
       textTransform: 'uppercase',
       textAlign: 'center',
     },
