@@ -12,35 +12,58 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.svg', 'data/inventory/_index.json'],
+      // All icon files plus inventory index get precached so the install
+      // experience and offline mode work on first visit.
+      includeAssets: [
+        'favicon.ico',
+        'favicon.png',
+        'apple-touch-icon.png',
+        'icon-192.png',
+        'icon-512.png',
+        'icon-maskable-512.png',
+        'data/inventory/_index.json',
+      ],
       manifest: {
         name: 'KeyRef Pro · Auto/Truck Key Reference',
         short_name: 'KeyRef Pro',
         description: 'Professional automotive key blank, transponder, and programming reference for locksmiths.',
-        theme_color: '#0d0d0d',
+        // Amber accent — drives the Android status bar color when the PWA
+        // is open standalone. Was #0d0d0d (dark) before; brand color reads
+        // more premium and matches the in-app accent.
+        theme_color: '#F5A623',
+        // Splash screen background, shown briefly on PWA launch
         background_color: '#0d0d0d',
         display: 'standalone',
         orientation: 'portrait',
         scope: '/',
         start_url: '/',
+        // Three icons total: 192 + 512 for standard "any" purpose, plus a
+        // 512 maskable variant with safe-zone bleed for Android adaptive
+        // icons (circle/squircle/rounded-square crops on different launchers).
         icons: [
           {
-            src: '/favicon.svg',
-            sizes: 'any',
-            type: 'image/svg+xml',
+            src: '/icon-192.png',
+            sizes: '192x192',
+            type: 'image/png',
             purpose: 'any',
           },
           {
-            src: '/favicon.svg',
-            sizes: 'any',
-            type: 'image/svg+xml',
+            src: '/icon-512.png',
+            sizes: '512x512',
+            type: 'image/png',
+            purpose: 'any',
+          },
+          {
+            src: '/icon-maskable-512.png',
+            sizes: '512x512',
+            type: 'image/png',
             purpose: 'maskable',
           },
         ],
         categories: ['business', 'productivity', 'utilities'],
       },
       workbox: {
-        globPatterns: ['**/*.{js,css,html,svg,json}'],
+        globPatterns: ['**/*.{js,css,html,svg,png,ico,json}'],
         // Cache strategy: data files cached aggressively (rarely change)
         runtimeCaching: [
           {
