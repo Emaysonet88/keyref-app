@@ -7,6 +7,7 @@ import RecentList from './RecentList';
 import SavedList from './SavedList';
 import SupplementalInfo from './SupplementalInfo';
 import VinScannerModal, { isScannerSupported } from './VinScannerModal';
+import { ScannerIcon } from './ModeIcons';
 
 // ── VehicleLookup ────────────────────────────────────────────────────────────
 //
@@ -256,7 +257,7 @@ export default function VehicleLookup({
             disabled={decoding || loading}
             aria-label="Open camera to scan VIN barcode"
           >
-            <span aria-hidden="true" style={{ fontSize: 18, lineHeight: 1 }}>📷</span>
+            <ScannerIcon size={17} />
             <span>Scan VIN</span>
           </button>
         )}

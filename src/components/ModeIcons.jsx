@@ -69,3 +69,23 @@ export function KeyIcon({ size = 16 }) {
     </svg>
   );
 }
+
+// ── ScannerIcon ────────────────────────────────────────────────────────────
+// Viewfinder / focus-reticle shape — four corner brackets with a central
+// horizontal scan line. This is the standard "scan barcode" icon used by
+// Stripe, Square, Apple Wallet, etc. Reads as "scan/capture" instantly
+// without being a literal camera. Pairs with the dev-tool aesthetic better
+// than 📷 ever did.
+export function ScannerIcon({ size = 16 }) {
+  return (
+    <svg {...SVG_PROPS(size)}>
+      {/* Four corner brackets — viewfinder frame */}
+      <path d="M4 8V6a2 2 0 0 1 2-2h2" />
+      <path d="M16 4h2a2 2 0 0 1 2 2v2" />
+      <path d="M20 16v2a2 2 0 0 1-2 2h-2" />
+      <path d="M8 20H6a2 2 0 0 1-2-2v-2" />
+      {/* Horizontal scan line across the middle */}
+      <line x1="7" y1="12" x2="17" y2="12" />
+    </svg>
+  );
+}
