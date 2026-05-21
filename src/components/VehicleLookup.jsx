@@ -478,26 +478,27 @@ export default function VehicleLookup({
 
 // ── Local styles ───────────────────────────────────────────────────────────
 
-// Scan VIN button — designed as a sibling of styles.btnLookup so the two
-// primary amber buttons read as a pair: same font, weight, color, and
-// letter-spacing. The icon next to the label is what visually distinguishes
-// them. Black-on-amber for WCAG AA contrast (white-on-amber fails).
+// Scan VIN button — visually SECONDARY to btnLookup. Two amber-filled
+// buttons on the same screen create competing focal points; Scan VIN is a
+// shortcut/convenience, while RUN LOOKUP is the actual primary action.
+// Outline treatment (amber border + amber text) keeps the same brand feel
+// but lets RUN LOOKUP stay loudest.
 const scanButtonStyle = {
   width: '100%',
-  padding: 14,
+  padding: '11px 14px',
   marginBottom: 10,
-  background: 'var(--accent)',
-  color: '#000',
-  border: 'none',
+  background: 'transparent',
+  color: 'var(--accent)',
+  border: '1px solid var(--accent)',
   fontFamily: "'Bebas Neue', sans-serif",
-  fontSize: 22,
-  letterSpacing: 3,
+  fontSize: 17,
+  letterSpacing: 2.5,
   cursor: 'pointer',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  gap: 10,
-  minHeight: 46,
+  gap: 9,
+  minHeight: 42,
   WebkitTapHighlightColor: 'transparent',
 };
 
