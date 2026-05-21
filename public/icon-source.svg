@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  KeyRef Pro — App Icon
+  Master SVG source, 512×512.
+
+  Composition is centered with the key's "visual mass" (bow + blade) sitting
+  inside the inner 80% safe zone (the area Android adaptive icons never crop).
+  Generous outer padding so the icon reads clearly at 48px home-screen size.
+
+  Color palette:
+    --bg-amber:   #F5A623  (app accent — primary brand color)
+    --bg-deep:    #C47D0E  (accent-rim, used for the subtle inner bevel)
+    --key:        #1A1A1A  (near-black, same as app's --bg dark theme)
+    --rail:       #FFFFFF  (full white at 18% alpha — scan-rail accent)
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+
+  <!-- Background: rounded square in app accent.
+       rx = 96 (~19% of side) matches Apple/Android squircle convention. -->
+  <rect x="0" y="0" width="512" height="512" rx="96" ry="96" fill="#F5A623"/>
+
+  <!-- Subtle inner bevel: a slightly darker rounded-rect inset by 4px on
+       each side. Gives the icon a faint sense of depth without using
+       skeuomorphic shadows. -->
+  <rect x="0" y="0" width="512" height="512" rx="96" ry="96"
+        fill="none" stroke="#C47D0E" stroke-width="2"/>
+
+  <!-- The key, drawn flat. All in #1A1A1A so it reads as a single confident
+       silhouette. Bow on the left, blade extending right.
+
+       Coordinate plan:
+         bow center at (180, 256), bow outer radius 70
+         blade runs from x=240 to x=420, vertical center y=256, height 28
+         three cuts on the bottom edge of the blade at known x positions
+
+       Total span: bow left edge ~110 → blade right edge 420.
+       Vertical: bow top ~186 → bow bottom ~326. Blade height 28.
+       Both fit inside the 80% safe zone (51..461).
+  -->
+
+  <!-- Bow: outer circle -->
+  <circle cx="180" cy="256" r="70" fill="#1A1A1A"/>
+
+  <!-- Bow: inner cutout (negative space) — gives the key its iconic hole -->
+  <circle cx="180" cy="256" r="26" fill="#F5A623"/>
+
+  <!-- Blade body: rounded rectangle, slightly tapered via two paths so
+       the leading edge has a subtle bevel.
+       Top edge at y=242, bottom edge at y=270, but bottom is cut by teeth. -->
+  <path d="M 240 242
+           L 420 242
+           Q 426 242 426 248
+           L 426 264
+           Q 426 270 420 270
+           L 410 270
+           L 410 282
+           L 388 282
+           L 388 270
+           L 360 270
+           L 360 288
+           L 336 288
+           L 336 270
+           L 308 270
+           L 308 280
+           L 286 280
+           L 286 270
+           L 240 270
+           Z"
+        fill="#1A1A1A"/>
+
+  <!-- Accent rail: a thin horizontal line above the key, hinting at the
+       VIN-scanner viewfinder. Sits over the amber background as a subtle
+       precision/calibration detail. -->
+  <line x1="120" y1="180" x2="420" y2="180"
+        stroke="#FFFFFF" stroke-opacity="0.38" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Small registration tick marks at each end of the accent rail. -->
+  <line x1="120" y1="174" x2="120" y2="186"
+        stroke="#FFFFFF" stroke-opacity="0.38" stroke-width="2" stroke-linecap="round"/>
+  <line x1="420" y1="174" x2="420" y2="186"
+        stroke="#FFFFFF" stroke-opacity="0.38" stroke-width="2" stroke-linecap="round"/>
+
+</svg>
