@@ -157,7 +157,7 @@ export default function VinScannerModal({ onScan, onClose }) {
         const vin = await detectVinNative(video, detector);
         if (vin) {
           if (typeof navigator !== 'undefined' && navigator.vibrate) navigator.vibrate(80);
-          stopAll();
+          await stopAll();
           cancelledRef.current = true;
           onScan(vin);
           return;
@@ -166,7 +166,7 @@ export default function VinScannerModal({ onScan, onClose }) {
       rafRef.current = requestAnimationFrame(scanLoop);
     }
 
-    function stopAll() {
+    async function stopAll() {
       if (rafRef.current) {
         cancelAnimationFrame(rafRef.current);
         rafRef.current = null;
@@ -174,6 +174,17 @@ export default function VinScannerModal({ onScan, onClose }) {
       if (startupTimerRef.current) {
         clearTimeout(startupTimerRef.current);
         startupTimerRef.current = null;
+      }
+      // Explicitly turn the torch off and AWAIT the constraint before
+      // stopping the track. Without the await, track.stop() can fire
+      // first and clear the constraint queue, leaving the hardware LED
+      // on until the OS catches up — which is what the locksmith saw.
+      if (trackRef.current) {
+        try {
+          await trackRef.current
+            .applyConstraints({ advanced: [{ torch: false }] })
+            .catch(() => {}); // swallow async rejection if track ends mid-call
+        } catch { /* getCapabilities not implemented — proceed */ }
       }
       if (streamRef.current) {
         streamRef.current.getTracks().forEach(t => t.stop());
@@ -250,7 +261,7 @@ export default function VinScannerModal({ onScan, onClose }) {
 
       if (vin) {
         if (typeof navigator !== 'undefined' && navigator.vibrate) navigator.vibrate(80);
-        stopAllExternal();
+        await stopAllExternal();
         cancelledRef.current = true;
         onScan(vin);
         return;
@@ -271,9 +282,20 @@ export default function VinScannerModal({ onScan, onClose }) {
     }
   }
 
-  function stopAllExternal() {
+  async function stopAllExternal() {
     if (rafRef.current) cancelAnimationFrame(rafRef.current);
     if (startupTimerRef.current) clearTimeout(startupTimerRef.current);
+    // AWAIT the torch-off so the hardware command reaches the device
+    // before track.stop() releases the camera. See stopAll for full
+    // rationale. Without the await, the LED can stay on for noticeable
+    // time on some Android devices.
+    if (trackRef.current) {
+      try {
+        await trackRef.current
+          .applyConstraints({ advanced: [{ torch: false }] })
+          .catch(() => {});
+      } catch { /* not fatal */ }
+    }
     if (streamRef.current) {
       streamRef.current.getTracks().forEach(t => t.stop());
       streamRef.current = null;
@@ -281,9 +303,9 @@ export default function VinScannerModal({ onScan, onClose }) {
     trackRef.current = null;
   }
 
-  function handleClose() {
+  async function handleClose() {
     cancelledRef.current = true;
-    stopAllExternal();
+    await stopAllExternal();
     onClose();
   }
 
