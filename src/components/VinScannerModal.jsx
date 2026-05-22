@@ -157,7 +157,7 @@ export default function VinScannerModal({ onScan, onClose }) {
         const vin = await detectVinNative(video, detector);
         if (vin) {
           if (typeof navigator !== 'undefined' && navigator.vibrate) navigator.vibrate(80);
-          await stopAll();
+          stopAll();
           cancelledRef.current = true;
           onScan(vin);
           return;
@@ -166,7 +166,7 @@ export default function VinScannerModal({ onScan, onClose }) {
       rafRef.current = requestAnimationFrame(scanLoop);
     }
 
-    async function stopAll() {
+    function stopAll() {
       if (rafRef.current) {
         cancelAnimationFrame(rafRef.current);
         rafRef.current = null;
@@ -175,22 +175,33 @@ export default function VinScannerModal({ onScan, onClose }) {
         clearTimeout(startupTimerRef.current);
         startupTimerRef.current = null;
       }
-      // Explicitly turn the torch off and AWAIT the constraint before
-      // stopping the track. Without the await, track.stop() can fire
-      // first and clear the constraint queue, leaving the hardware LED
-      // on until the OS catches up — which is what the locksmith saw.
-      if (trackRef.current) {
-        try {
-          await trackRef.current
-            .applyConstraints({ advanced: [{ torch: false }] })
-            .catch(() => {}); // swallow async rejection if track ends mid-call
-        } catch { /* getCapabilities not implemented — proceed */ }
-      }
+      // ORDER MATTERS: stop the track FIRST. track.stop() is the
+      // authoritative OS-level "release this camera" call — it kills
+      // the stream AND the hardware torch in one synchronous operation.
+      //
+      // The previous "await applyConstraints({torch: false}) then stop"
+      // approach would hang on some Android devices because the
+      // constraint Promise never resolved (or rejected) — leaving the
+      // torch on until the entire page unloaded.
+      //
+      // After stopping the track we also fire a defensive torch-off as
+      // belt-and-suspenders, but fire-and-forget so we never block on it.
+      const track = trackRef.current;
       if (streamRef.current) {
         streamRef.current.getTracks().forEach(t => t.stop());
         streamRef.current = null;
       }
+      // Defensive secondary torch-off — no await, errors swallowed.
+      // This is harmless if the track is already dead; on the off chance
+      // the OS hasn't fully released the LED yet, this nudges it.
+      if (track) {
+        try {
+          track.applyConstraints({ advanced: [{ torch: false }] })
+            .catch(() => {});
+        } catch { /* track ended — fine */ }
+      }
       trackRef.current = null;
+      setTorchOn(false);
     }
 
     start();
@@ -261,7 +272,7 @@ export default function VinScannerModal({ onScan, onClose }) {
 
       if (vin) {
         if (typeof navigator !== 'undefined' && navigator.vibrate) navigator.vibrate(80);
-        await stopAllExternal();
+        stopAllExternal();
         cancelledRef.current = true;
         onScan(vin);
         return;
@@ -282,30 +293,31 @@ export default function VinScannerModal({ onScan, onClose }) {
     }
   }
 
-  async function stopAllExternal() {
+  function stopAllExternal() {
     if (rafRef.current) cancelAnimationFrame(rafRef.current);
     if (startupTimerRef.current) clearTimeout(startupTimerRef.current);
-    // AWAIT the torch-off so the hardware command reaches the device
-    // before track.stop() releases the camera. See stopAll for full
-    // rationale. Without the await, the LED can stay on for noticeable
-    // time on some Android devices.
-    if (trackRef.current) {
-      try {
-        await trackRef.current
-          .applyConstraints({ advanced: [{ torch: false }] })
-          .catch(() => {});
-      } catch { /* not fatal */ }
-    }
+    // Stop track first (OS-level release of camera + torch), then fire
+    // a defensive torch-off without awaiting. See stopAll for full
+    // rationale on why the await pattern was causing the LED to stay on
+    // until app exit.
+    const track = trackRef.current;
     if (streamRef.current) {
       streamRef.current.getTracks().forEach(t => t.stop());
       streamRef.current = null;
     }
+    if (track) {
+      try {
+        track.applyConstraints({ advanced: [{ torch: false }] })
+          .catch(() => {});
+      } catch { /* track ended — fine */ }
+    }
     trackRef.current = null;
+    setTorchOn(false);
   }
 
-  async function handleClose() {
+  function handleClose() {
     cancelledRef.current = true;
-    await stopAllExternal();
+    stopAllExternal();
     onClose();
   }
 
